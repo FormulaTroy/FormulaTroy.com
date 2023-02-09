@@ -7,15 +7,15 @@ This repo has all of the code for my base website, web apps, and utilities. Feel
 The overall structure of the site and quick links to docs.
 
 Index<br>
-├─ Apps<br>
-│  ├─ Canasta Score Tracker<br>
-│  ├─ Chessboard<br>
-│  ├─ Racing Fuel Calculator<br>
-├─ Themes<br>
-│  ├─ Discord Theme (WIP)<br>
-│  ├─ Google Calendar Dark Mode (WIP)<br>
-│  ├─ Steam Deck Boot Video Template (WIP)<br>
-│  ├─ Steam Deck Theme (WIP)<br>
+- Apps<br>
+  - Canasta Score Tracker<br>
+  - Chessboard<br>
+  - Racing Fuel Calculator<br>
+- Themes<br>
+  - Discord Theme (WIP)<br>
+  - [Google Calendar Dark Mode (WIP)](https://github.com/FormulaTroy/FormulaTroy.com#google-calendar-dark-mode-wip)<br>
+  - Steam Deck Boot Video Template (WIP)<br>
+  - Steam Deck Theme (WIP)<br>
 
 ---------------------------
 
