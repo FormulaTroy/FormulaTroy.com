@@ -6,37 +6,15 @@ This repo has all of the code for my base website, web apps, and utilities. Feel
 
 The overall structure of the site and quick links to docs.
 
-- 🌐 Apps
-  - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#canasta-score-tracker)
-  - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#chessboard)
-  - 🏎️ [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#racing-fuel-calculator)
 - 🎨 Themes
   - 💬 Discord Theme
-  - 📅 [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#google-calendar-dark-mode)
+  - 📅 [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#-google-calendar-dark-mode)
   - 📹 Steam Deck Boot Video Template (WIP)
   - 🎮 Steam Deck Theme (WIP)
-
----------------------------
-
-## 🌐 Apps
-
-(WIP) Desc
-
-### 🎴 Canasta Score Tracker
-
-(WIP) Desc
-
----------------------------
-
-### ♟️ Chessboard
-
-Just a simple chessboard to play locally that doesn't require you to sign up or display ads.
-
----------------------------
-
-### 🏎️ Racing Fuel Calculator
-
-(WIP) Desc
+- 🌐 Web Apps
+  - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#-canasta-score-tracker)
+  - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#-chessboard)
+  - 🏎️ [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#-racing-fuel-calculator)
 
 ---------------------------
 
@@ -62,6 +40,28 @@ This was originally forked from [OLED Dark Mode v1.6.15](https://github.com/Spec
 - (WIP) Install steps with FormulaTroy.com setup steps
 
 Now your Google Calendar should be in a spiffy dark mode UI theme! As I update the stylesheet to account for future updates to the Calendar UI, it will be automatically synced to your machine. If you don't want that, then be sure to add the css to Stylus as your own code instead of from a hosted source.
+
+---------------------------
+
+## 🌐 Web Apps
+
+Sometimes you just want a URL that does a thing. Without ads.
+
+### 🎴 Canasta Score Tracker
+
+(WIP) Desc
+
+---------------------------
+
+### ♟️ Chessboard
+
+Just a simple chessboard to play locally that doesn't require you to sign up or display ads.
+
+---------------------------
+
+### 🏎️ Racing Fuel Calculator
+
+(WIP) Desc
 
 ---------------------------
 
