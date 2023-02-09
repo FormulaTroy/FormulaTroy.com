@@ -6,7 +6,6 @@ This repo has all of the code for my base website, web apps, and utilities. Feel
 
 The overall structure of the site and quick links to docs.
 
-Index<br>
 - Apps<br>
   - Canasta Score Tracker<br>
   - Chessboard<br>
@@ -16,13 +15,6 @@ Index<br>
   - [Google Calendar Dark Mode (WIP)](https://github.com/FormulaTroy/FormulaTroy.com#google-calendar-dark-mode-wip)<br>
   - Steam Deck Boot Video Template (WIP)<br>
   - Steam Deck Theme (WIP)<br>
-
----------------------------
-
-## Root Site Lightning Round
-
-Yes, I meant to put the source code of my website on the internet.<br>
-No, there are no inline credentials or connection strings.
 
 ---------------------------
 
@@ -54,12 +46,6 @@ No, there are no inline credentials or connection strings.
 
 ---------------------------
 
-### Discord Theme (WIP)
-
-(WIP) Desc
-
----------------------------
-
 ### Google Calendar Dark Mode (WIP)
 
 FTGoogleCalDarkMode.user.css is a self-hosted user.css file powered by the Stylus browser extension. Google Calendar's UI is so bright it I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.
@@ -70,9 +56,10 @@ This was originally forked from [OLED Dark Mode v1.6.15](https://github.com/Spec
 
 #### Installation Steps
 
-1. Install the Stylus browser extension.<br>
-[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)<br>
-[Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
+1. Install the Stylus browser extension.
+  - <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne" target="_blank">Chrome</a><br>
+  - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)<br>
+  - [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
 
 2. (WIP) Install steps with FormulaTroy.com setup steps
 
