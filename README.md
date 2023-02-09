@@ -6,47 +6,47 @@ This repo has all of the code for my base website, web apps, and utilities. Feel
 
 The overall structure of the site and quick links to docs.
 
-- Apps
-  - [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#canasta-score-tracker)
-  - [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#chessboard)
-  - [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#racing-fuel-calculator)
-- Themes
-  - [Discord Theme (WIP)]()
-  - [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#google-calendar-dark-mode)
-  - [Steam Deck Boot Video Template (WIP)]()
-  - [Steam Deck Theme (WIP)]()
+- 🌐 Apps
+  - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#canasta-score-tracker)
+  - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#chessboard)
+  - 🏎️ [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#racing-fuel-calculator)
+- 🎨 Themes
+  - 💬 Discord Theme
+  - 📅 [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#google-calendar-dark-mode)
+  - 📹 Steam Deck Boot Video Template (WIP)
+  - 🎮 Steam Deck Theme (WIP)
 
 ---------------------------
 
-## Apps
+## 🌐 Apps
 
 (WIP) Desc
 
-### Canasta Score Tracker
+### 🎴 Canasta Score Tracker
 
 (WIP) Desc
 
 ---------------------------
 
-### Chessboard
+### ♟️ Chessboard
 
 Just a simple chessboard to play locally that doesn't require you to sign up or display ads.
 
 ---------------------------
 
-### Racing Fuel Calculator
+### 🏎️ Racing Fuel Calculator
 
 (WIP) Desc
 
 ---------------------------
 
-## Themes
+## 🎨 Themes
 
 In pursuit of Dark Modes and UIs with blue accent lines... Here are custom themes for various things.
 
 ---------------------------
 
-### Google Calendar Dark Mode
+### 📅 Google Calendar Dark Mode
 
 FTGoogleCalDarkMode.user.css is a self-hosted user.css file powered by the Stylus browser extension. Google Calendar's UI is so bright it I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.
 
@@ -71,4 +71,4 @@ Seriously stop
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 Why are you still scrolling?
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-The End
+The End 😊
