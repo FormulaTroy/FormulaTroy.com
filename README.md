@@ -13,8 +13,8 @@ The overall structure of the site and quick links to docs.
   - 🎮 Steam Deck Theme (WIP)
 - 🌐 Web Apps
   - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#-canasta-score-tracker)
-  - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#-chessboard)
-  - 🏎️ [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#-racing-fuel-calculator)
+  - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#%EF%B8%8F-chessboard)
+  - 🏎️ [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#%EF%B8%8F-racing-fuel-calculator)
 
 ---------------------------
 
