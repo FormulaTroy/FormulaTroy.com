@@ -4,23 +4,27 @@ This repo has all of the code for my base website, web apps, and utilities. Feel
 
 ## Sitemap
 
-The overall structure of the site and quicklinks to docs.
+The overall structure of the site and quick links to docs.
 
-Index
-├─ Apps
-│  ├─ Canasta Score Tracker
-│  ├─ Chessboard
-│  ├─ Racing Fuel Calculator
-├─ Themes
-│  ├─ Discord Theme (WIP)
-│  ├─ Google Calendar Dark Mode (WIP)
-│  ├─ Steam Deck Boot Video Template (WIP)
-│  ├─ Steam Deck Theme (WIP)
+Index<br>
+├─ Apps<br>
+│  ├─ Canasta Score Tracker<br>
+│  ├─ Chessboard<br>
+│  ├─ Racing Fuel Calculator<br>
+├─ Themes<br>
+│  ├─ Discord Theme (WIP)<br>
+│  ├─ Google Calendar Dark Mode (WIP)<br>
+│  ├─ Steam Deck Boot Video Template (WIP)<br>
+│  ├─ Steam Deck Theme (WIP)<br>
+
+---------------------------
 
 ### Root Site Lightning Round
 
-Yes, I meant to put the source code of my website on the internet.
+Yes, I meant to put the source code of my website on the internet.<br>
 No, there are no inline credentials or connection strings.
+
+---------------------------
 
 ### Apps
 
@@ -30,21 +34,31 @@ No, there are no inline credentials or connection strings.
 
 (WIP) Desc
 
+---------------------------
+
 #### Chessboard
 
 (WIP) Desc
+
+---------------------------
 
 #### Racing Fuel Calculator
 
 (WIP) Desc
 
+---------------------------
+
 ### Themes
 
 (WIP) Desc
 
+---------------------------
+
 #### Discord Theme (WIP)
 
 (WIP) Desc
+
+---------------------------
 
 #### Google Calendar Dark Mode (WIP)
 
@@ -61,3 +75,7 @@ This was originally forked from [OLED Dark Mode v1.6.15](https://github.com/Spec
 [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
 
 2. (WIP) Install steps with FormulaTroy.com setup steps
+
+---------------------------
+
+/stop reading me
