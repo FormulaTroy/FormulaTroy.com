@@ -56,13 +56,19 @@ This was originally forked from [OLED Dark Mode v1.6.15](https://github.com/Spec
 
 #### Installation Steps
 
-1. Install the Stylus browser extension.
-  1. [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-  2. [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
-2. (WIP) Install steps with FormulaTroy.com setup steps
+- Install the Stylus browser extension.
+  - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+  - [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
+- (WIP) Install steps with FormulaTroy.com setup steps
 
 Now your Google Calendar should be in a spiffy dark mode UI theme! As I update the stylesheet to account for future updates to the Calendar UI, it will be automatically synced to your machine. If you don't want that, then be sure to add the css to Stylus as your own code instead of from a hosted source.
 
 ---------------------------
 
 /stop reading me
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Seriously stop
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Why are you still scrolling?
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+The End
