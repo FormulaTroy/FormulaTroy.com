@@ -1,0 +1,71 @@
+// Colors
+$main: #c91019; // Primary Color
+$alt: #222222; // Secondary Color
+$alert: #ffba35; // Alert Color
+$success: #89c00f; // Success Color
+
+body, h1, h2, h3, h4, h5 {
+	color: $alt;
+}
+
+.form {
+	margin-top: 35px;
+}
+
+.error {
+	color: $main;
+}
+
+.success {
+	color: #008800;
+}
+
+.success:hover {
+	color: #006600;
+}
+
+.output {
+	color: $main;
+	font-weight: bold;
+}
+
+.bar {
+	margin-bottom: 20px;
+}
+
+.bar_title {
+	margin-bottom: 0px;
+	padding-left: 10px;
+}
+
+.clear {
+	clear:both;
+}
+
+#footer {
+	margin-top: 70px;
+}
+
+.heart {
+	font-size: 1.5em;
+	color: #f2a;
+}
+
+// ONLY SMALL
+@media only screen and (max-width: 40em) {
+	.hide-small {
+		display: none;
+	}
+
+	.help {
+		margin-bottom: 20px;
+	}
+}
+
+// MEDIUM AND UP
+@media only screen and (min-width: 40.063em) {
+	.help {
+		margin: 20px 0;
+	}
+}
+

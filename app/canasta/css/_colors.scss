@@ -1,0 +1,19 @@
+// Color Palette
+$orange: #ff530d;
+$darkOrange: #b33704;
+$black: #1c1c1c;
+$white: #eee;
+
+// Color BG Classes
+.greenbutton {@include greengrad();}
+.greenbutton:hover {@include greengradhover();}
+.green {@include greengrad();}
+.red {@include redgrad();}
+.yellow {@include yellowgrad();}
+.black {@include blackgrad();}
+
+// Special Color Text
+.greenheader {color:#249b14;}
+.redheader {color:#B20000;}
+.orangeheader {color:$orange;}
+.error {color:#B20000;}

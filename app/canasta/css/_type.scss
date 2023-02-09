@@ -1,0 +1,32 @@
+// Font sizing and custom font
+
+// Sketch Font
+@font-face {
+    font-family: Sketch, inherit;
+    src: url(sketch.ttf);
+}
+
+.sketch {
+	font-family: Sketch;
+	letter-spacing: 2px;
+	font-size:1.5em;
+	line-height:1em;
+}
+
+// Size Reset
+h1 {font-size:2.5em;}
+h2 {font-size:2.4em;}
+h3 {font-size:2em;}
+h4,h5,h6 {font-size:1.7em;}
+
+// Lists
+ol,ul {list-style-position:inside;}
+ul {list-style-type: circle;}
+ol {list-style-type: decimal;}
+
+// Line Height
+p,ol,ul {line-height:1.35em;}
+
+// I and B
+em {font-style: italic;}
+strong {font-weight: 600;}

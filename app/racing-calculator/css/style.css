@@ -1,0 +1,61 @@
+body, h1, h2, h3, h4, h5 {
+  color: #222222;
+}
+
+.form {
+  margin-top: 35px;
+}
+
+.error {
+  color: #c91019;
+}
+
+.success {
+  color: #008800;
+}
+
+.success:hover {
+  color: #006600;
+}
+
+.output {
+  color: #c91019;
+  font-weight: bold;
+}
+
+.bar {
+  margin-bottom: 20px;
+}
+
+.bar_title {
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+#footer {
+  margin-top: 70px;
+}
+
+.heart {
+  font-size: 1.5em;
+  color: #f2a;
+}
+
+@media only screen and (max-width: 40em) {
+  .hide-small {
+    display: none;
+  }
+
+  .help {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .help {
+    margin: 20px 0;
+  }
+}

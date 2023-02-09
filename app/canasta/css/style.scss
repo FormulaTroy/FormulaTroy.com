@@ -1,0 +1,392 @@
+@import 'reset';
+@import 'mixins';
+@import 'grid';
+@import 'type';
+@import 'colors';
+
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.1em;
+	color: $black;
+	background-color: $black;
+}
+
+// force scroll bar
+html {overflow-y: scroll;}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:300;
+	color: $orange;
+	padding-bottom: 16px;
+}
+
+// Non-header margin control
+p,ol,ul {
+	padding-bottom:14px;
+}
+
+img {
+	max-width:100%;
+}
+
+.pagewrapper {
+	margin:0 auto;
+	padding: 0 10px;
+	min-width: 380px;
+	max-width: 1020px;
+}
+
+.creditlink {
+
+	font-size: 0.7em;
+
+	a, a:link, a:hover, a:visited, a:active {
+		color: $orange;
+		text-decoration: none;
+		@include transition(color,500ms);
+	}
+
+	a:hover {
+		color: $darkOrange;
+		@include transition(color,500ms);
+	}
+}
+
+#header, #footer {
+	background-color:$black;
+}
+
+#header {
+	h1 {
+		padding: 10px 0;
+		font-size:1.8em;
+		color: $orange;
+	}
+
+	h2 {
+		font-size:0.9em;
+		font-style: italic;
+		color: $white;
+	}
+
+	a, a:link, a:hover, a:visited, a:active {
+		color:$orange;
+		text-decoration: none;
+		@include transition(color,500ms);
+	}
+
+	a:hover {
+		color: $darkOrange;
+		@include transition(color,500ms);
+	}
+
+	p {
+		padding: 0 0 10px;
+		font-size: 0.7em;
+	}
+}
+
+#appnav {
+	a {
+		padding-left:13px;
+	}
+	a:first-of-type {
+		padding-left:0px;
+	}
+	a, a:link, a:hover, a:visited, a:active {
+		color:$black;
+		text-decoration: none;
+		@include transition(color,500ms);
+	}
+
+	a:hover {
+		color: $darkOrange;
+		@include transition(color,500ms);
+	}
+}
+
+#content {
+	background-color: $white;
+	padding: 20px 0;
+
+	.contentlink, .contentlink:link, .contentlink:hover, .contentlink:visited, .contentlink:active {
+		color:$orange;
+		text-decoration: none;
+		@include transition(color,500ms);
+	}
+
+	.contentlink:hover {
+		color: $darkOrange;
+		@include transition(color,500ms);
+	}
+
+	.about {
+		text-align: left;
+	}
+
+}
+
+.bigbutton {
+	display:block;
+	border-radius:7px;
+	border:none;
+	cursor:pointer;
+	width: 60%;
+	margin:20px auto;
+	padding:14px;
+	text-decoration:none;
+	font-size: 1.2em;
+}
+
+.button {
+	display:block;
+	border-radius:7px;
+	border:none;
+	cursor:pointer;
+	width:250px;
+	margin:20px auto;
+	padding:14px;
+	text-decoration:none;
+	font-size: 1.2em;
+}
+
+// IMPORT THE FORMS STYLESHEET
+@import 'forms';
+
+// RESULTS
+.results-section {
+	.results-first {
+		font-size: 1em;
+	}
+	.results-name {
+		font-size: 1em;
+	}
+	.results-points {
+		font-size: 0.7em;
+	}
+	.results-place {
+		font-size: 0.8em;
+	}
+} //end results-section
+
+// PROGRESS BARS
+
+.progressbarback {
+	clear:both;
+	height:40px;
+	width:90%;
+	margin:0 auto 30px;
+	border-radius:5px;
+	@include blackgrad();
+	z-index:1;
+
+	p {
+		position: absolute;
+		text-align: center;
+		margin: 7px 0 0;
+		padding-left:50px;
+		z-index: 5;
+	}
+}
+
+.progressbarfront {
+	height:40px;
+	border-radius:5px;
+	z-index:3;
+}
+
+
+// ROUND BARS
+.roundscorebox {
+	.teamname {
+		font-size: 1.1em;
+		margin:0;
+		padding:0;
+	}
+}
+.roundbarback {
+	clear:both;
+	height:30px;
+	width:90%;
+	margin:5px auto 10px;
+	border-radius:5px;
+	@include blackgrad();
+	z-index:1;
+
+	p {
+		position: absolute;
+		text-align: center;
+		font-size: .9em;
+		margin: 7px 0 0;
+		padding-left:10px;
+		z-index: 5;
+	}
+}
+
+.roundbarfront {
+	height:30px;
+	border-radius:5px;
+	z-index:3;
+}
+
+#footer {
+	color:$white;
+
+	a, a:link, a:hover, a:visited, a:active {
+		color:$orange;
+		text-decoration: none;
+		@include transition(color,500ms);
+	}
+
+	a:hover {
+		color: $darkOrange;
+		@include transition(color,500ms);
+	}
+
+	h1 {
+		padding: 14px 0;
+		font-size:1.4em;
+	}
+
+	ul {
+
+		width: 100%;
+
+		li {
+
+			width: 100%;
+
+			list-style-type: none;
+
+			a, a:link, a:hover, a:visited, a:active {
+				text-decoration: none;
+				color: $white;
+				padding-right: 30%;
+				@include transition(color,500ms);
+			}
+
+			a:hover {
+				color: $orange;
+				@include transition(color,500ms);
+			}
+		}
+	}
+}
+
+
+// MEDIA QUERY MEDIUM +
+@media (min-width: 650px) {
+
+	.showmed {
+		display:block;
+	}
+
+	.showmedinline {
+		display: inline;
+	}
+
+	#header {
+		h1 {
+			font-size:2.5em;
+		}
+	}
+
+	#appnav {
+		a {
+			padding-left:0;
+			margin-left:60px;
+		}
+		a:first-of-type {
+			margin-left:0px;
+		}
+	}
+
+	.teamname {
+		height: 40px;
+		float:left;
+		width: 50%;
+		padding-top:7px;
+	}
+
+	.progressbarback {
+		float:left;
+		clear: none;
+		width:50%;
+	}
+
+	.roundscorebox {
+		.teamname {
+			height: 30px;
+			float:left;
+			width: 50%;
+			padding-top:11px;
+		}
+	}
+	.roundbarback {
+		float:left;
+		clear: none;
+		width:50%;
+	}
+
+	// RESULTS
+	.results-section {
+		.results-first {
+			font-size: 1.4em;
+		}
+		.results-name {
+			font-size: 1.2em;
+		}
+	} //end results-section
+
+	#footer {
+
+		h1 {
+			font-size:1.6em;
+		}
+
+		ul {
+
+			li {
+
+				display: inline;
+
+				a, a:link, a:hover, a:visited, a:active {
+					padding: 0 30px;
+				}
+
+				a:first-of-type {
+					padding-left:0;
+				}
+			}
+		}
+}
+
+} // end MQ
+
+
+// MEDIA QUERY LARGE +
+@media (min-width: 1020px) {
+
+	.showlarge {
+		display:block;
+	}
+
+	.creditlink {
+		text-align: center;
+		padding:14px 0 30px;
+	}
+
+	#header {
+		h1,h2 {
+			width:600px;
+			float:left;
+		}
+
+		p {
+			width:200px;
+			float:right;
+		}
+	}
+
+} // end MQ
