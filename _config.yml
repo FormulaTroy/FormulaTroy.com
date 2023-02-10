@@ -7,7 +7,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: FormulaTroy
 
 # Build settings
-theme: midnight
+theme: minima
 remote_theme: pages-themes/midnight@v0.2.0
 plugins:
   - jekyll-feed
