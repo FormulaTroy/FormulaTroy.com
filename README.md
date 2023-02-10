@@ -32,7 +32,7 @@ In pursuit of Dark Modes and UIs with blue accent lines... Here are custom theme
 
 1. Install the Stylus browser extension for either [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/).
 2. Click this install button:<br>
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/FormulaTroy/FormulaTroy.com/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://formulatroy.github.io/FormulaTroy.com/theme/google-cal-dark/FTGoogleCalDarkMode.user.css)
 3. Click "Install Style" in the top left.
 
 Now your Google Calendar should be in a spiffy dark mode UI theme! As I update the stylesheet to account for future updates to the Calendar UI, it will be automatically synced to you.
