@@ -7,7 +7,7 @@ This repo has all of the code for my base website, web apps, and utilities. Feel
 The overall structure of the site and quick links to docs.
 
 - 🎨 Themes
-  - 💬 Discord Theme
+  - 💬 Discord Theme (WIP)
   - 📅 [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#-google-calendar-dark-mode)
   - 📹 Steam Deck Boot Video Template (WIP)
   - 🎮 Steam Deck Theme (WIP)
@@ -30,12 +30,12 @@ In pursuit of Dark Modes and UIs with blue accent lines... Here are custom theme
 
 #### Installation Steps
 
-- Install the Stylus browser extension.
-  - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-  - [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
-- (WIP) Install steps with FormulaTroy.com setup steps
+1. Install the Stylus browser extension for either [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/).
+2. Click this install button:<br>
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/FormulaTroy/FormulaTroy.com/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css)
+3. Click "Install Style" in the top left.
 
-Now your Google Calendar should be in a spiffy dark mode UI theme! As I update the stylesheet to account for future updates to the Calendar UI, it will be automatically synced to you. If you don't want that, then be sure to add the css to Stylus as your own stylesheet instead of from a hosted source.
+Now your Google Calendar should be in a spiffy dark mode UI theme! As I update the stylesheet to account for future updates to the Calendar UI, it will be automatically synced to you.
 
 ---------------------------
 

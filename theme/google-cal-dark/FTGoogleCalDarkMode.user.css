@@ -1,13 +1,17 @@
 /* ==UserStyle==
-@name           FormulaTroy Google Calendar Dark Mode
-@namespace      FormulaTroy
+@name           Google Calendar Dark Mode
+@namespace      FTGCDM
 @version        1.0.0
-@description    Simple and spiffy Dark Mode for Calendar
+@description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
+@homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
+@updateURL      https://raw.githubusercontent.com/FormulaTroy/FormulaTroy.com/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css
+@license        MIT
 @preprocessor   less
 ==/UserStyle== */
+
 @-moz-document domain("calendar.google.com") {
-  /* Troy edits */
+
   /* Week counter sidebar styles */
   .akJTWe {
     background-color: #0055ff !important
@@ -15,8 +19,7 @@
   .XnnJrc.Wyo4Qe .TKMrfe {
     background-color: #333 !important
   }
-  /* Override background colors by replacing any
-  instance of "black" used as a value in this
-  css with "#111" instead. */
-  /* end Troy edits */
-}
+
+  /* background colors with "#111" */
+
+} /* end @-moz-document domain("calendar.google.com") */
