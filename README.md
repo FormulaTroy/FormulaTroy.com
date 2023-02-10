@@ -28,10 +28,6 @@ In pursuit of Dark Modes and UIs with blue accent lines... Here are custom theme
 
 **FTGoogleCalDarkMode.user.css** is a self-hosted user.css file powered by the Stylus browser extension. Google Calendar's UI is so bright it I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.
 
-It does not use shortcut-y global color inversion tricks, but by actually picking out classes to overwrite text and background colors. Credit to [@SpecialOperations](https://github.com/SpecialOperations) for the initial work there.
-
-This was originally forked from [OLED Dark Mode v1.6.15](https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/releases/tag/v1.6.15) to change it from pitch black to a dark grey. But it quickly expanded to include various additions such as support for the Week Number counter being enabled, Calendar's new background color syntax around the search bar, and more.
-
 #### Installation Steps
 
 - Install the Stylus browser extension.
