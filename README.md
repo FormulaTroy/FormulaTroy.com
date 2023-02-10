@@ -57,7 +57,7 @@ Just a simple chessboard to play locally that doesn't require you to sign up or 
 
 ### 🏎️ Racing Fuel Calculator
 
-(WIP) Desc
+Sim Racing fuel calculator! Just fill in basic info about the race and your fuel consumption. The calculator will tell you how much fuel you need to put in the tank as well as if and/or how many fuel stops you need. Supports both lap-based races (i.e. 27 laps) and time-based races (i.e. 45 minutes).
 
 ---------------------------
 
