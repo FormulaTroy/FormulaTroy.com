@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Dark Mode
 @namespace      FTGCDM
-@version        1.0.1
+@version        1.1.0
 @description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -12,14 +12,218 @@
 
 @-moz-document domain("calendar.google.com") {
 
-  /* Week counter sidebar styles */
-  .akJTWe {
-    background-color: #0055ff !important
+  /* Core Variables */
+  :root {
+
+    /* Init FT Color Scheme */
+    --ftblack: #111;
+    --ftdark: #333;
+    --ftgrey: #ccc;
+    --ftlight: #dedede;
+    --ftwhite: #fff;
+
+    /* Override Google Root Vars */
+    --primary: rgb(26, 115, 232);
+    --primary-variant: rgb(66, 133, 244);
+    --on-primary: var(--ftwhite);
+
+    --secondary: rgb(232, 240, 254);
+    --secondary-variant: rgb(210, 227, 252);
+    --on-secondary: rgb(25, 103, 210);
+    --on-secondary-variant: rgb(24, 90, 188);
+
+    --surface: var(--ftblack);
+    --surface-transparent: rgba(255, 255, 255, 0);
+    --on-surface: var(--ftwhite);
+    --on-surface-variant: rgb(95, 99, 104);
+    --on-surface-variant-agm: var(ftwhite);
+
+    --background: var(--ftblack);
+    --on-background: rgb(32, 33, 36);
+
+    --textfield-surface: var(--ftblack);
+    --textfield-primary: rgb(25, 103, 210);
+    --textfield-hairline: rgb(128, 134, 139);
+    --textfield-error: rgb(197, 34, 31);
+    --textfield-on-surface-variant: rgb(95, 99, 104);
+
+    --hairline: var(--ftdark);
+
+    --error: rgb(217, 48, 37);
+    --on-error: var(--ftwhite);
+
+    --shadow-1: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+    --shadow-5: 0px 4px 4px 0px rgba(60, 64, 67, 0.3), 0px 8px 12px 6px rgba(60, 64, 67, 0.15);
+    --fab: rgba(255, 255, 255, 0.502);
+    --fab-hover: #f6fafe;
+    --dimmed: rgba(125, 125, 126, .51);
+    --chip-hover: var(--ftdark);
+    --now: rgb(234, 67, 53);
   }
+
+  /* Global White Text Override (i.e. Titles, Descriptions, Input Field Text */
+  .NkK3Fc span[role=heading],
+  .JJyfjc,
+  .ec9Aq,
+  .gb_Ea svg,
+  .vRMGwf.oJeWuf,
+  .VfPpkd-V67aGc,
+  .shdZ7e .zHQkBf,
+  .OspAke,
+  .LV4Pme,
+  .tL9Q4c,
+  .GEhdLd,
+  .fKz7Od,
+  .ETkhPe,
+  .w8UdJc,
+  .oPF3Ce,
+  .a3PaRd,
+  .aDCdzb,
+  .T2Ybvb {
+    color: var(--ftwhite) !important;
+  }
+
+  /* Global Dark Background + White Text Override (i.e. Buttons) */
+  .VfPpkd-LgbsSe,
+  .VfPpkd-LgbsSe-OWXEXe-INsAgc,
+  .VfPpkd-LgbsSe-OWXEXe-Bz112c-UbuQg,
+  .VfPpkd-LgbsSe-OWXEXe-dgl2Hf,
+  .Rj2Mlf,
+  .OLiIxf,
+  .PDpWxe,
+  .LQeN7,
+  .yR9sJd {
+    background-color: var(--ftdark) !important;
+    color: var(--ftwhite) !important;
+  }
+
+  /* Global White Text Override (i.e. UI text on white backgrounds) */
+  .jO7h3c {
+    color: var(--ftblack) !important;
+  }
+
+  /* Header */
+  header {
+    background-color: var(--ftblack) !important;
+  }
+
+  /* Header Buttons (Today and Month) */
+  .VfPpkd-LgbsSe,
+  .VfPpkd-Bz112c-LgbsSe {
+    border-color: var(--ftblack) !important;
+  }
+
+  /* Create Button */
+  .c7fp5b > .lVYxmb {
+    background-image: radial-gradient(circle farthest-side, rgba(217, 211, 211, .99), rgb(255, 255, 255) 80%, rgb(255, 255, 255) 100%);
+  }
+  .b0mxw {
+    color: var(--ftlight) !important;
+  }
+  .b0mxw:hover {
+    color: var(--ftdark) !important;
+  }
+  .buGMKc .mAozAc {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: var(--ftdark) !important;
+  }
+
+  /* Dropdown menus (i.e. in Settings or Events) */
+  .ncFHed {
+    background-color: var(--ftblack);
+  }
+  .ncFHed .MocG8c.KKjvXb {
+    background-color: var(--ftdark);
+    /* on hover */
+  }
+
+  /* Time selector drop down */
+  .gHQcAb {
+    background-color: var(--ftblack);
+  }
+  .VKy0Ic[aria-selected="true"] {
+    background-color: var(--ftdark);
+    /* on hover */
+  }
+
+  /* Location search field in add event screen */
+  .PVQHSc.zIeiH .jBmls {
+    position: absolute;
+    width: 100%;
+    background-color: var(--ftblack);
+  }
+  .oKubKe[aria-selected=true] {
+    background-color: var(--ftdark);
+  }
+  .ULpymb .zHQkBf {
+    color: var(--ftwhite);
+  }
+
+  /* Settings menu: left menu tabs */
+  .nBzcnc.Wm6kRe.huVZvb:hover,
+  .GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
+  .nBzcnc.gk6SMd.huVZvb {
+    background-color: var(--ftdark);
+  }
+
+  /* Agenda View: Borders used as <hr>s */
+  .kxh2c.gUZKAc:not(.sMVRZe):not(.dBA1M),
+  .kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) {
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+    border-bottom-color: var(--ftdark) !important;
+  }
+  .kxh2c.gUZKAc:not(.sMVRZe):not(.AHjck),
+  .kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) {
+    margin-top: 7px;
+    padding-top: 8px;
+    border-bottom-color: var(--ftdark) !important;
+  }
+  .kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) {
+    border-top-color: var(--ftdark);
+    /* DON'T ADD !IMPORTANT HERE */
+  }
+
+  /* Calendar View: Day # Selectors */
+  .yzYBvd:hover {
+    background-color: var(--ftdark);
+  }
+
+  /* Date picker calendar hover effect */
+  .W0m3G .r4nke {
+    background: var(--ftblack) !important;
+  }
+  .r4nke:hover {
+    background: var(--ftdark) !important;
+  }
+
+  /* Past Events */
+  /* Filters forked from https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar */
+  .g3dbUc.UflSff {
+    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(105%) opacity(50%) !important;
+  }
+  .g3dbUc.UflSff span span {
+    color: var(--ftblack) !important;
+  }
+  .UflSff.afiDFd {
+    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(50%) brightness(150%) opacity(50%) !important;
+  }
+  .ayClmf.UflSff span,
+  .Jmftzc.gVNoLb.EiZ8Dd.UflSff {
+    color: var(--ftblack) !important;
+  }
+
+  /* Week Number Counter Sidebar */
+  .akJTWe,
   .XnnJrc.Wyo4Qe .TKMrfe {
-    background-color: #333 !important
+    color: var(--ftgrey) !important;
+    background-color: var(--ftdark) !important;
   }
 
-  /* background colors with "#111" */
-
-} /* end @-moz-document domain("calendar.google.com") */
+  /* Right Sidebar (Maps, etc) */
+  .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
+    background-color: var(--ftwhite) !important;
+  }
+}
+/* end @-moz-document domain("calendar.google.com") */
