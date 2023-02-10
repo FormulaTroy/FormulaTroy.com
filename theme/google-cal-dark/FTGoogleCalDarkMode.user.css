@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Dark Mode
 @namespace      FTGCDM
-@version        1.1.1
+@version        1.1.2
 @description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -184,6 +184,11 @@
     border-top-color: var(--ftdark);
     /* DON'T ADD !IMPORTANT HERE */
   }
+  
+  /* Calendar View: Day of the Week accent color */
+  .wy3aMe {
+    color: var(--primary-variant);
+  }
 
   /* Calendar View: Day # Selectors */
   .yzYBvd:hover {
@@ -195,7 +200,7 @@
     /* all days override */
     background: var(--ftblack) !important;
   }
-  .r4nke:hover {
+  .W0m3G .r4nke:hover {
     /* day:hover effect */
     background: var(--ftdark) !important;
   }
