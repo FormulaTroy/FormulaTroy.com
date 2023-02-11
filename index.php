@@ -22,6 +22,6 @@
     </style>
   </head>
   <body>
-    <h1>Site is currently under maintenance</h1>
+    <h1>Nothing to see here yet 😿</h1>
   </body>
 </html>

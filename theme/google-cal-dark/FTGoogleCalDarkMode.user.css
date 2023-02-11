@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Dark Mode
 @namespace      FTGCDM
-@version        1.1.2
+@version        1.1.3
 @description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -36,7 +36,7 @@
     --surface-transparent: rgba(255, 255, 255, 0);
     --on-surface: var(--ftwhite);
     --on-surface-variant: rgb(95, 99, 104);
-    --on-surface-variant-agm: var(ftwhite);
+    --on-surface-variant-agm: var(--ftwhite);
 
     --background: var(--ftblack);
     --on-background: rgb(32, 33, 36);
@@ -97,7 +97,7 @@
     color: var(--ftwhite) !important;
   }
 
-  /* Global White Text Override (i.e. UI text on white backgrounds) */
+  /* Global Dark Text Override (i.e. UI text on white backgrounds) */
   .jO7h3c {
     color: var(--ftblack) !important;
   }
@@ -184,7 +184,7 @@
     border-top-color: var(--ftdark);
     /* DON'T ADD !IMPORTANT HERE */
   }
-  
+
   /* Calendar View: Day of the Week accent color */
   .wy3aMe {
     color: var(--primary-variant);
@@ -239,8 +239,16 @@
   }
 
   /* Right Sidebar (Maps, etc) */
-  .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
-    background-color: var(--ftwhite) !important;
+  .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
+  .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc,
+  .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc-n0tgWb {
+    background-color: var(--ftdark) !important;
+  }
+  .Kk7lMc-DWWcKd-OomVLb-hgDUwe {
+    border-top: 1px solid var(--ftdark);
+  }
+  .ONKrsd-jrnDlb-LgbsSe.DWWcKd-OomVLb-LgbsSe:nth-of-type(7) .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
+    background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/white-24dp/1x/gm_add_white_24dp.png) !important;
   }
 }
 /* end @-moz-document domain("calendar.google.com") */

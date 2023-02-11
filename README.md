@@ -1,6 +1,6 @@
 # FormulaTroy.com Source Code
 
-This repo has all of the code for my base website, web apps, and utilities. Feel free to use or copy any of it.
+All of the code for my base website, web apps, and utilities. Feel free to use or copy any of it.
 
 ## Sitemap
 
@@ -26,6 +26,8 @@ In pursuit of Dark Modes and UIs with blue accent lines... Here are custom theme
 
 ### 📅 Google Calendar Dark Mode
 
+(WIP) Screenshot
+
 **FTGoogleCalDarkMode.user.css** is a self-hosted user.css file powered by the Stylus browser extension. Google Calendar's UI is so bright it I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.
 
 #### Installation Steps
@@ -45,19 +47,29 @@ Sometimes you just want a URL that does a thing. Without ads.
 
 ### 🎴 Canasta Score Tracker
 
+(WIP) Screenshot
 (WIP) Desc
+(WIP) Link
 
 ---------------------------
 
 ### ♟️ Chessboard
 
+(WIP) Screenshot
+
 Just a simple chessboard to play locally that doesn't require you to sign up or display ads.
+
+(WIP) Link
 
 ---------------------------
 
 ### 🏎️ Racing Fuel Calculator
 
+(WIP) Screenshot
+
 Sim Racing fuel calculator! Just fill in basic info about the race and your fuel consumption. The calculator will tell you how much fuel you need to put in the tank as well as if and/or how many fuel stops you need. Supports both lap-based races (i.e. 27 laps) and time-based races (i.e. 45 minutes).
+
+(WIP) Link
 
 ---------------------------
 
