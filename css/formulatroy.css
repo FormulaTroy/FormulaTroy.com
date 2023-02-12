@@ -25,6 +25,20 @@ nav {
   border-bottom: 1px solid var(--ftblue);
 }
 
+.navbar-brand img {
+  opacity: 1.0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+.navbar-brand img:hover, .navbar-brand img:focus {
+  opacity: 0.6;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
 .nav-link {
   color: var(--ftwhite);
 }
@@ -60,19 +74,23 @@ nav {
 }
 
 .card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   max-width: 100%;
   opacity: 1.0;
-  transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
 .card img:hover,
 .card img:focus {
   opacity: 0.6;
-  transition: opacity .55s ease-in-out;
-  -moz-transition: opacity .55s ease-in-out;
-  -webkit-transition: opacity .55s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
 
 /* App Tech Icon Badges */
