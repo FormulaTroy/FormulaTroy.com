@@ -15,107 +15,29 @@ include_once "php-inc/ft-header.php";
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
 
-
-
-
       <?php
 
       // Create the gallery of projects!
-      // Function Args: CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, $techArray, $iconClass, $yearMade, $summaryText)
+      // Function Args: CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, $techArray, $iconClass, $yearMade, $summaryText);
 
+      // Google Calendar Dark Mode
       $techArray = ["css"];
-      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This
-        stylesheet adds Dark Mode to Google Calendar.");
+      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.");
 
-      $techArray = ["css", "css"];
-      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This
-        stylesheet adds Dark Mode to Google Calendar.");
+      // Sim Racing Fuel Calculator
+      $techArray = ["php", "scss"];
+      CreateAppCard("Racing Fuel Calculator", true, "img/projects/racingcalc.png", "https://formulatroy.com/app/racing-calculator/", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/app/racing-calculator", $techArray, "bi-fuel-pump", "2016", "Sim Racing fuel calculator! The calculator will tell you how much fuel you need to put in the tank as well as if and/or how many fuel stops you need.");
 
-        $techArray = ["css", "css", "html"];
-      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This
-        stylesheet adds Dark Mode to Google Calendar.");
+      // Chessboard
+      $techArray = ["js", "html", "css"];
+      CreateAppCard("Chessboard", true, "img/projects/chess.png", "https://formulatroy.com/app/chess/", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/app/chess", $techArray, "bi-box-arrow-up-right", "2015", "Just a simple online chessboard to play locally that doesn't require you to sign up or display ads.");
 
+      // Canasta Score Tracker
+      $techArray = ["php", "js", "scss"];
+      CreateAppCard("Canasta Score Tracker", true, "img/projects/canasta.png", "https://formulatroy.com/app/canasta/", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/app/canasta", $techArray, "bi-suit-spade-fill", "2014", "Canasta card game score tracker and round results calculator.")
 
+        # End PHP
         ?>
-
-
-
-      <div class="col">
-        <div class="card shadow-sm">
-          <img src="img/projects/ftgcdm.png" alt="">
-          <div class="card-body">
-            <h3 class="fw-light">Google Calendar Dark Mode</h3>
-            <p class="fs-2"><i class="bi bi-filetype-css ft-css-badge"></i></p>
-            <p class="card-text">Google Calendar's UI is so bright I can see the floaters in my eyes. This
-              stylesheet adds Dark Mode to Google Calendar.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary"><i class="bi bi-calendar3"></i> Project Page</button>
-                <button type="button" class="btn btn-outline-secondary"><i class="bi bi-github"></i> Code</button>
-              </div>
-              <small class="text-muted"><i class="bi bi-code-slash"></i> 2023</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm">
-          <a href="#"><img src="img/projects/racingcalc.png" alt=""></a>
-          <div class="card-body">
-            <h3 class="fw-light">Racing Fuel Calculator</h3>
-
-            <p class="fs-2"><i class="bi bi-filetype-css ft-css-badge"></i></p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-primary" href="#" role="button"><i class="bi bi-fuel-pump"></i> Launch App</a>
-                <a class="btn btn-outline-secondary" href="#" role="button"><i class="bi bi-github"></i> Code</a>
-              </div>
-              <small class="text-muted"><i class="bi bi-code-slash"></i> 2016</small>
-            </div>
-            <p class="card-text pt-3">Sim Racing fuel calculator! The calculator will tell you how much fuel you need to
-              put in the tank as well as if and/or how many fuel stops you need.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm">
-          <img src="img/projects/chess.png" alt="">
-          <div class="card-body">
-            <h3 class="fw-light">Chessboard</h3>
-            <p class="fs-2"><i class="bi bi-filetype-css ft-css-badge"></i></p>
-            <p class="card-text">Just a simple online chessboard to play locally that doesn't require you to sign up or
-              display ads.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary"><i class="bi bi-box-arrow-up-right"></i> Launch
-                  App</button>
-                <button type="button" class="btn btn-outline-secondary"><i class="bi bi-github"></i> Code</button>
-              </div>
-              <small class="text-muted"><i class="bi bi-code-slash"></i> 2015</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm">
-          <img src="img/projects/canasta.png" alt="">
-          <div class="card-body">
-            <h3 class="fw-light">Canasta Score Tracker</h3>
-            <p class="fs-2"><i class="bi bi-filetype-css ft-css-badge"></i></p>
-            <p class="card-text">Canasta card game score tracker and round results calculator.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary"><i class="bi bi-suit-spade-fill"></i> Launch App</button>
-                <button type="button" class="btn btn-outline-secondary"><i class="bi bi-github"></i> Code</button>
-              </div>
-              <small class="text-muted"><i class="bi bi-code-slash"></i> 2014</small>
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
