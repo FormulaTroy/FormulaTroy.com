@@ -19,19 +19,9 @@
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
 
-
-
-
-
-
-
-
-
       <div class="col">
         <div class="card shadow-sm">
-
           <img src="img/projects/ftgcdm.png" alt="">
-
           <div class="card-body">
             <h3 class="fw-light">Google Calendar Dark Mode</h3>
             <p class="fs-2"><i class="bi bi-filetype-css ft-css-badge"></i></p>
@@ -50,11 +40,9 @@
 
       <div class="col">
         <div class="card shadow-sm">
-
-          <img src="https://marketplace.canva.com/EAE-xnqWvJk/1/0/1600w/canva-retro-smoke-and-round-light-desktop-wallpapers-JLofAI27pCg.jpg" alt="">
-
+          <img src="img/projects/racingcalc.png" alt="">
           <div class="card-body">
-            <h3 class="fw-light">Google Calendar Dark Mode</h3>
+            <h3 class="fw-light">Racing Fuel Calculator</h3>
             <p class="fs-2"><i class="bi bi-filetype-css ft-css-badge"></i></p>
             <p class="card-text">Google Calendar's UI is so bright it I can see the floaters in my eyes. This
               stylesheet adds Dark Mode to Google Calendar.</p>
@@ -71,11 +59,9 @@
 
       <div class="col">
         <div class="card shadow-sm">
-
-          <img src="img/projects/ftgcdm.png" alt="">
-
+          <img src="img/projects/canasta.png" alt="">
           <div class="card-body">
-            <h3 class="fw-light">Google Calendar Dark Mode</h3>
+            <h3 class="fw-light">Canasta Score Tracker</h3>
             <p class="fs-2"><i class="bi bi-filetype-css ft-css-badge"></i></p>
             <p class="card-text">Google Calendar's UI is so bright it I can see the floaters in my eyes. This
               stylesheet adds Dark Mode to Google Calendar.</p>
@@ -89,13 +75,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
 
     </div>
   </div>

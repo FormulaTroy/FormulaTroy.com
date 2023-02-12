@@ -53,9 +53,9 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="#"><i class="bi bi-fuel-pump"></i> Racing Fuel Calculator</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-up-right"></i> Chessboard</a></li>
                 <li><a class="dropdown-item" href="#"><i class="bi bi-suit-spade-fill"></i> Canasta Score Tracker</a>
                 </li>
-                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-up-right"></i> Chessboard</a></li>
               </ul>
             </li>
           </ul>
