@@ -1,18 +1,14 @@
-<?php include_once "php-inc/ft-header.php"; ?>
+<?php
+include_once "php-inc/ft-functions.php";
+include_once "php-inc/ft-header.php";
+?>
 
 <main>
 
-  <?php # Hero ?>
-  <section class="py-3 text-center container">
-    <div class="row py-lg-3">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">FormulaTroy Project Index</h1>
-        <p class="lead text-muted">
-          Everything is open source and free to be used or copied.
-        </p>
-      </div>
-    </div>
-  </section>
+  <?php
+  # Hero
+  HeroText("FormulaTroy Project Index", "Everything is open source and free to be used or copied.");
+  ?>
 
   <?php # Page ?>
   <div class="container">
