@@ -1,0 +1,24 @@
+/* Core Variables */
+:root {
+
+  /* Init FT Color Scheme */
+  --ftblack: #111;
+  --ftdark: #333;
+  --ftgrey: #ccc;
+  --ftlight: #dedede;
+  --ftwhite: #fff;
+
+  --css-badge-color: #3595cf;
+
+  /* Override Bootstrap Vars */
+  --bs-body-bg: var(--ftblack);
+  --bs-dropdown-link-hover-bg: var(--ftdark) !important;
+}
+
+.bg-ftblack {
+  background-color: var(--ftblack);
+}
+
+.ft-css-badge {
+  color: var(--css-badge-color);
+}
