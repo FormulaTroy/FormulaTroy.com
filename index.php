@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "Index";
 include_once "php-inc/ft-functions.php";
 include_once "php-inc/ft-header.php";
 ?>
@@ -21,7 +22,7 @@ include_once "php-inc/ft-header.php";
 
       // Google Calendar Dark Mode
       $techArray = ["css"];
-      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.");
+      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "/gc-dark", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.");
 
       // Sim Racing Fuel Calculator
       $techArray = ["php", "scss"];
