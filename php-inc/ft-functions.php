@@ -31,8 +31,25 @@ function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, 
   foreach ($techArray as $key => $tech) {
     // create cases for each tech option
     switch ($tech) {
+
+      case 'php':
+        echo "<i class=\"bi bi-filetype-php pe-3 ft-php-badge\"></i>";
+        break;
+
+      case 'js':
+        echo "<i class=\"bi bi-filetype-js pe-3 ft-js-badge\"></i>";
+        break;
+
+      case 'html':
+        echo "<i class=\"bi bi-filetype-html pe-3 ft-html-badge\"></i>";
+        break;
+
       case 'css':
         echo "<i class=\"bi bi-filetype-css pe-3 ft-css-badge\"></i>";
+        break;
+
+      case 'scss':
+        echo "<i class=\"bi bi-filetype-scss pe-3 ft-scss-badge\"></i>";
         break;
 
       default:

@@ -10,9 +10,6 @@
   --ftblue: #2a71ff;
   --ftorange: #ff5500;
 
-  /* App Icons */
-  --css-badge-color: #3595cf;
-
   /* Override Bootstrap Vars */
   --bs-body-bg: var(--ftblack);
   --bs-nav-link-color: var(--ftwhite);
@@ -94,8 +91,20 @@ nav {
 }
 
 /* App Tech Icon Badges */
+.ft-php-badge {
+  color: #a561fd;
+}
+.ft-js-badge {
+  color: #e4d04b;
+}
+.ft-html-badge {
+  color: #cf6246;
+}
 .ft-css-badge {
-  color: var(--css-badge-color);
+  color: #3595cf;
+}
+.ft-scss-badge {
+  color: #ce679a;
 }
 
 /* Footer */
