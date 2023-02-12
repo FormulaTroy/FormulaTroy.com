@@ -28,7 +28,7 @@ In pursuit of Dark Modes and UIs with blue accent lines... Here are custom theme
 
 (WIP) Screenshot
 
-**FTGoogleCalDarkMode.user.css** is a self-hosted user.css file powered by the Stylus browser extension. Google Calendar's UI is so bright it I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.
+**FTGoogleCalDarkMode.user.css** is a self-hosted user.css file powered by the Stylus browser extension. Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.
 
 #### Installation Steps
 
