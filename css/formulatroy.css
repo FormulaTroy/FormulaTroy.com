@@ -7,18 +7,52 @@
   --ftgrey: #ccc;
   --ftlight: #dedede;
   --ftwhite: #fff;
+  --ftblue: #2a71ff;
+  --ftorange: #ff5500;
 
+  /* App Icons */
   --css-badge-color: #3595cf;
 
   /* Override Bootstrap Vars */
   --bs-body-bg: var(--ftblack);
-  --bs-dropdown-link-hover-bg: var(--ftdark) !important;
+  --bs-nav-link-color: var(--ftwhite);
+  --bs-dropdown-link-disabled-color: var(--ftwhite);
+  --bs-dropdown-link-disabled-color: var(--ftgrey);
 }
 
+/* Header */
+nav {
+  border-bottom: 1px solid var(--ftblue);
+}
+
+.nav-link {
+  color: var(--ftwhite);
+}
+
+.dropdown-menu.show {
+  border: 1px solid var(--ftblue);
+}
+
+.dropdown-item {
+  color: var(--ftwhite);
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: var(--ftwhite);
+  background-color: var(--ftdark);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--ftblue);
+}
+
+/* Black background override */
 .bg-ftblack {
   background-color: var(--ftblack);
 }
 
+/* App Tech Icon Badges */
 .ft-css-badge {
   color: var(--css-badge-color);
 }
