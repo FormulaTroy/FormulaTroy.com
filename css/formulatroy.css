@@ -20,7 +20,7 @@
   --bs-dropdown-link-disabled-color: var(--ftgrey);
 }
 
-/* Header */
+/* Nav Bar */
 nav {
   border-bottom: 1px solid var(--ftblue);
 }
@@ -29,6 +29,12 @@ nav {
   color: var(--ftwhite);
 }
 
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--ftblue);
+}
+
+/* Nav Bar > Dropdown Menus */
 .dropdown-menu.show {
   border: 1px solid var(--ftblue);
 }
@@ -37,14 +43,10 @@ nav {
   color: var(--ftwhite);
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-item:hover,
+.dropdown-item:focus {
   color: var(--ftwhite);
   background-color: var(--ftdark);
-}
-
-.nav-link:focus,
-.nav-link:hover {
-  color: var(--ftblue);
 }
 
 /* Black background override */
@@ -55,4 +57,9 @@ nav {
 /* App Tech Icon Badges */
 .ft-css-badge {
   color: var(--css-badge-color);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--ftorange);
 }
