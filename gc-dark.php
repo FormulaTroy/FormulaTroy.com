@@ -41,6 +41,8 @@ include_once "php-inc/ft-header.php";
       </div>
       <div class="col-12 col-lg-6">
         <p><img src="img/projects/ftgcdm.png" class="img-fluid" alt=""></p>
+        <p><a class="btn btn-outline-secondary" href="https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css" role="button" target="_blank"><i class="bi bi-github"></i> View Code on GitHub</a></p>
+        <p class="fs-2"><i class="bi bi-filetype-css pe-3 ft-css-badge"></i></p>
       </div>
 
     </div>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Canasta | <?php echo $htmlTitle; ?> | Canasta Score Keeper</title>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
