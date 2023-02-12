@@ -7,13 +7,38 @@ include_once "php-inc/ft-header.php";
 
   <?php
   # Hero
-  HeroText("FormulaTroy Project Index", "Everything is open source and free to be used or copied.");
+  CreateHeroText("FormulaTroy Project Index", "Everything is open source and free to be used or copied.");
   ?>
 
   <?php # Page ?>
   <div class="container">
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+
+
+
+
+      <?php
+
+      // Create the gallery of projects!
+      // Function Args: CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, $techArray, $iconClass, $yearMade, $summaryText)
+
+      $techArray = ["css"];
+      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This
+        stylesheet adds Dark Mode to Google Calendar.");
+
+      $techArray = ["css", "css"];
+      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This
+        stylesheet adds Dark Mode to Google Calendar.");
+
+        $techArray = ["css", "css", "html"];
+      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "#", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This
+        stylesheet adds Dark Mode to Google Calendar.");
+
+
+        ?>
+
+
 
       <div class="col">
         <div class="card shadow-sm">
