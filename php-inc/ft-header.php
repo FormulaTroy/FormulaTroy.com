@@ -39,7 +39,7 @@
             <li class="nav-item ">
               <a class="nav-link px-md-4" aria-current="page" href="/"><i class="bi bi-house-heart"></i> Index</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-controller"></i> Games
               </a>
@@ -48,7 +48,7 @@
                 <li><a class="dropdown-item" href="/games/backlog"><i class="bi bi-database-add"></i> Backlog</a></li>
                 <li><a class="dropdown-item" href="/games/awards"><i class="bi bi-trophy"></i> Awards</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
