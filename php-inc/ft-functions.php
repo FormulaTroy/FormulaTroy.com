@@ -84,5 +84,108 @@ function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, 
 
 } // end function AppCard()
 
+# Create Rows in the Gaming Tables
+function AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath)
+{
+  // opening tag
+  echo "<tr>";
+
+  // rating and backlog status
+  switch ($rating) {
+
+    case "10":
+      echo 'td class="text-center" style="color:#ffcc66;"><i class="fs-1 bi bi-trophy-fill"></i><span class="d-none">10</span></td>';
+      break;
+
+    case '9':
+      echo '<td class="text-center" style="color:#66ff66;"><i class="fs-1 bi bi-9-square-fill"></i><span class="d-none">9</span></td>';
+      break;
+
+    case '8':
+      echo '<td class="text-center" style="color:#0277d2;"><i class="fs-1 bi bi-8-circle-fill"></i><span class="d-none">8</span></td>';
+      break;
+
+    case '7':
+      echo '<td class="text-center" style="color:#6e64ff;"><i class="fs-2 bi bi-7-square"></i><span class="d-none">7</span></td>';
+      break;
+
+    case '6':
+      echo '<td class="text-center" style="color:#a64aab;"><i class="fs-2 bi bi-6-square"></i><span class="d-none">6</span></td>';
+      break;
+
+    case '5':
+    case '4':
+    case '3':
+    case '2':
+    case '1':
+    case '0':
+      echo '<td class="text-center" style="color:#b22a3e;"><i class="fs-2 bi bi-' . $rating . '-circle"></i><span class="d-none">' . $rating . '</span></td>';
+      break;
+
+    case 'playing':
+      echo '<td class="text-center" style="color:#66ff66;"><i class="fs-1 bi bi-controller"></i><span class="d-none">9</span></td>';
+
+    case 'next':
+      echo '<td class="text-center" style="color:#0277d2;"><i class="fs-1 bi bi-upload"></i><span class="d-none">7</span></td>';
+
+    case 'backlog':
+      echo '<td class="text-center" style="color:#a64aab;"><i class="fs-2 bi bi-database"></i><span class="d-none">5</span></td>';
+
+    case 'wishlist':
+      echo '<td class="text-center" style="color:#b22a3e;"><i class="fs-2 bi bi-coin-circle"></i><span class="d-none">3</span></td>';
+
+    default:
+      echo "<td class=\"text-warning\">Error in rating!</td>";
+      break;
+  } // end switch ($rating)
+
+  // key art
+  if ($imgPath) {
+    echo '<td><img src="'.$imgPath.'" alt="" height="100px"></td>';
+  } else {
+    echo '<td></td>';
+  }
+
+  // title and comments
+  if ($notes && $name) {
+    echo '<td><span class="fs-3">'.$name.'</span><br><span>'.$notes.'</span></td>';
+  } else if ($name) {
+    echo '<td><span class="fs-3">'.$name.'</span></td>';
+  } else {
+    echo '<td></td>';
+  }
+
+  // platform
+  switch ($platform) {
+
+    case 'Steam':
+      echo '<td><span class="fs-2"><i class="bi bi-steam"></i></span><br>Steam</td>';
+      break;
+
+    case 'SD':
+    case 'Steam Deck':
+      echo '<td><span class="fs-2"><i class="bi bi-steam"></i></span><br>Steam Deck</td>';
+      break;
+
+    case 'Switch':
+      echo '<td><span class="fs-2" style="color:#e60012"><i class="bi bi-nintendo-switch"></i></span><br>Nintendo Switch</td>';
+      break;
+
+    default:
+    echo '<td>TBD</td>';
+      break;
+  }
+
+  // hours played or hours estimate
+  echo '<td>'.$hours.'</td>';
+
+  // date completed or date released
+  echo '<td>'.$date.'</td>';
+
+  // closing tag
+  echo "</tr>";
+}
+
 # end php
 ?>
+
