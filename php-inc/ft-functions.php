@@ -141,16 +141,16 @@ function AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath)
 
   // key art
   if ($imgPath) {
-    echo '<td><img src="'.$imgPath.'" alt="" height="100px"></td>';
+    echo '<td><img src="' . $imgPath . '" alt="" height="75px"></td>';
   } else {
     echo '<td></td>';
   }
 
   // title and comments
   if ($notes && $name) {
-    echo '<td><span class="fs-3">'.$name.'</span><br><span>'.$notes.'</span></td>';
+    echo '<td><span class="fs-3">' . $name . '</span><br><span>' . $notes . '</span></td>';
   } else if ($name) {
-    echo '<td><span class="fs-3">'.$name.'</span></td>';
+    echo '<td><span class="fs-3">' . $name . '</span></td>';
   } else {
     echo '<td></td>';
   }
@@ -159,21 +159,53 @@ function AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath)
   switch ($platform) {
 
     case 'Steam':
-      echo '<td><span class="fs-2"><i class="bi bi-steam"></i></span><br>Steam</td>';
-      break;
-
     case 'SD':
     case 'Steam Deck':
-      echo '<td><span class="fs-2"><i class="bi bi-steam"></i></span><br>Steam Deck</td>';
-      break;
+      echo '<td><span class="fs-2" style="color:#125587"><i class="bi bi-steam"></i></span><br>PC (Steam)</td>';
+    break;
+
+    case 'Epic':
+    case 'Epic Games':
+      echo '<td><span class="fs-2" style="color:#bb36b6"><i class="bi bi-unity"></i></span><br>PC (Epic Games)</td>';
+    break;
+
+    case 'PC':
+      echo '<td><span class="fs-2" style="color:#00a8e8"><i class="bi bi-windows"></i></span><br>PC</td>';
+    break;
+
+    case 'PS4':
+      echo '<td><span class="fs-2" style="color:#004094"><i class="bi bi-playstation"></i></span><br>PlayStation 4</td>';
+    break;
+
+    case 'PS3':
+      echo '<td><span class="fs-2" style="color:#004094"><i class="bi bi-playstation"></i></span><br>PlayStation 3</td>';
+    break;
+
+    case 'PS2':
+      echo '<td><span class="fs-2" style="color:#004094"><i class="bi bi-playstation"></i></span><br>PlayStation 2</td>';
+    break;
 
     case 'Switch':
       echo '<td><span class="fs-2" style="color:#e60012"><i class="bi bi-nintendo-switch"></i></span><br>Nintendo Switch</td>';
-      break;
+    break;
+
+    case 'Mobile':
+    case 'Android':
+      echo '<td><span class="fs-2" style="color:#73bb56"><i class="bi bi-android2"></i></span><br>Mobile</td>';
+    break;
+
+    case 'Game Pass':
+    case 'Xbox':
+      echo '<td><span class="fs-2" style="color:#0f780f"><i class="bi bi-xbox"></i></span><br>Game Pass</td>';
+    break;
+
+    case 'TBD':
+      echo '<td>TBD</td>';
+    break;
 
     default:
-    echo '<td>TBD</td>';
-      break;
+      echo '<td><span style="color:#e60012">Error in platform!</span></td>';
+    break;
   }
 
   // hours played or hours estimate

@@ -34,22 +34,28 @@ include_once "../php-inc/ft-header.php";
             </tr>
           </thead>
           <tbody>
-            <?php
-            # AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath);
+<?php
+# AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath);
 
-            AddGame("Borderlands 3: Psycho Krieg and the Fantastic Fustercluck", "2", "2021", "3", "Epic", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g3k.jpg");
+#AddGame("Borderlands 3: Psycho Krieg and the Fantastic Fustercluck", "2", "2021", "3", "Epic", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g3k.jpg");
+
+// 5.0 - 10
+// 4.5 - 9
+// 4.0 - 8
+// 3.5 - 7
+// 3.0 - 6
+// 2.5 - 5
+// 2.0 - 4
+// 1.5 - 3
+// 1.0 - 2
 
 
-            AddGame("Astral Chain FUNCTION 2", "9", "2014/05/02", "15", "Switch", "", "");
 
-
-
-
-
-
-
-
-            AddGame("Astral Chain FUNCTION 2", "9", "2014/05/02", "15", "Switch", "", "");
+AddGame("LEGO Stunt Rally", "3", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qk3.jpg");
+AddGame("LEGO Rock Raiders", "6", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co3si0.jpg");
+AddGame("LEGO Racers", "9", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co3whr.jpg");
+AddGame("LEGO Island", "3", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co3hp5.jpg");
+AddGame("LEGO Alpha Team", "5", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co1s1s.jpg");
 
 
 
