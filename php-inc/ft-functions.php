@@ -94,7 +94,7 @@ function AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath)
   switch ($rating) {
 
     case "10":
-      echo 'td class="text-center" style="color:#ffcc66;"><i class="fs-1 bi bi-trophy-fill"></i><span class="d-none">10</span></td>';
+      echo '<td class="text-center" style="color:#ffcc66;"><i class="fs-1 bi bi-trophy-fill"></i><span class="d-none">10</span></td>';
       break;
 
     case '9':
@@ -124,15 +124,19 @@ function AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath)
 
     case 'playing':
       echo '<td class="text-center" style="color:#66ff66;"><i class="fs-1 bi bi-controller"></i><span class="d-none">9</span></td>';
+      break;
 
     case 'next':
       echo '<td class="text-center" style="color:#0277d2;"><i class="fs-1 bi bi-upload"></i><span class="d-none">7</span></td>';
+      break;
 
     case 'backlog':
       echo '<td class="text-center" style="color:#a64aab;"><i class="fs-2 bi bi-database"></i><span class="d-none">5</span></td>';
+      break;
 
     case 'wishlist':
-      echo '<td class="text-center" style="color:#b22a3e;"><i class="fs-2 bi bi-coin-circle"></i><span class="d-none">3</span></td>';
+      echo '<td class="text-center" style="color:#b22a3e;"><i class="fs-2 bi bi-coin"></i><span class="d-none">3</span></td>';
+      break;
 
     default:
       echo "<td class=\"text-warning\">Error in rating!</td>";
@@ -148,9 +152,9 @@ function AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath)
 
   // title and comments
   if ($notes && $name) {
-    echo '<td><span class="fs-3">' . $name . '</span><br><span>' . $notes . '</span></td>';
+    echo '<td><span class="fs-4">' . $name . '</span><br><span>' . $notes . '</span></td>';
   } else if ($name) {
-    echo '<td><span class="fs-3">' . $name . '</span></td>';
+    echo '<td><span class="fs-4">' . $name . '</span></td>';
   } else {
     echo '<td></td>';
   }
@@ -197,6 +201,10 @@ function AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath)
     case 'Game Pass':
     case 'Xbox':
       echo '<td><span class="fs-2" style="color:#0f780f"><i class="bi bi-xbox"></i></span><br>Game Pass</td>';
+    break;
+
+    case 'GBA':
+      echo '<td><span class="fs-2" style="color:#00a8e8"><i class="bi bi-controller"></i></span><br>Game Boy Advance</td>';
     break;
 
     case 'TBD':

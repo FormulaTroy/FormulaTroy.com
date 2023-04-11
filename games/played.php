@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Google Calendar Dark Mode";
+$pageTitle = "Played Games";
 include_once "../php-inc/ft-functions.php";
 include_once "../php-inc/ft-header.php";
 ?>
@@ -19,7 +19,6 @@ include_once "../php-inc/ft-header.php";
 
 
 
-        <?php # AddGame("Game Name", "Rating", "Date", "Hours", "Platform", "Comments/Awards", "Img Path") ?>
 
         <table id="gamesPlayedTable"
           class="display table table-responsive table-borderless table-hover align-middle my-3">
@@ -35,7 +34,8 @@ include_once "../php-inc/ft-header.php";
           </thead>
           <tbody>
 <?php
-# AddGame($name, $rating, $date, $hours, $platform, $notes, $imgPath);
+# AddGame("Game Name", "Rating", "Date", "Hours", "Platform", "Comments/Awards", "Img Path")
+# AddGame($name,       $rating,  $date,  $hours,  $platform,  $notes,            $imgPath);
 
 #AddGame("Borderlands 3: Psycho Krieg and the Fantastic Fustercluck", "2", "2021", "3", "Epic", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g3k.jpg");
 
@@ -50,7 +50,18 @@ include_once "../php-inc/ft-header.php";
 // 1.0 - 2
 
 
+//AddGame("name", "#", "2001", "", "PC", "", "IMG");
 
+
+
+// 2001
+AddGame("Tony Hawk's Pro Skater 2", "7", "2001", "", "PC", "", "IMG");
+AddGame("Star Wars: Episode I - Racer", "3", "2001", "", "PC", "", "IMG");
+AddGame("Smuggler's Run", "6", "2001", "", "PS2", "", "IMG");
+AddGame("LEGO Chess", "7", "2001", "", "PC", "", "IMG");
+AddGame("Jak and Daxter: The Precursor Legacy", "10", "2001", "", "PS2", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w7q.jpg");
+AddGame("Jackie Chan Adventures: Legend of the Dark Hand", "5", "2001", "", "GBA", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co4e84.jpg");
+// 2000
 AddGame("LEGO Stunt Rally", "3", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qk3.jpg");
 AddGame("LEGO Rock Raiders", "6", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co3si0.jpg");
 AddGame("LEGO Racers", "9", "2000", "", "PC", "", "https://images.igdb.com/igdb/image/upload/t_cover_big/co3whr.jpg");
@@ -77,67 +88,8 @@ AddGame("LEGO Alpha Team", "5", "2000", "", "PC", "", "https://images.igdb.com/i
 
 
 
-
-            ?>
-
-
-
-
-            <!-- <tr>
-              <td class="text-center" style="color:#ffcc66;"><i class="fs-1 bi bi-trophy-fill"></i><span class="d-none">10</span></td>
-              <td><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1lzy.png" alt="" height="100px"></td>
-              <td><span class="fs-3">Astral Chain</span><br><span>2014 Rank 5</span></td>
-              <td>Switch</td>
-              <td>15</td>
-              <td>2015/05/01</td>
-            </tr>
-
-            <tr>
-              <td class="text-center" style="color:#66ff66;"><i class="fs-1 bi bi-9-square-fill"></i><span class="d-none">9</span></td>
-              <td><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1lzy.png" alt="" height="100px"></td>
-              <td><span class="fs-3">Astral Chain</span><br></td>
-              <td><span class="fs-2"><i class="bi bi-steam"></i></span><br>Steam Deck</td>
-              <td>150</td>
-              <td>2015/05/01</td>
-            </tr>
-
-            <tr>
-              <td class="text-center" style="color:#0277d2;"><i class="fs-1 bi bi-8-circle-fill"></i><span class="d-none">8</span></td>
-              <td><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1lzy.png" alt="" height="100px"></td>
-              <td><span class="fs-3">Astral Chain</span><br><span>2020 Game of the Year</span></td>
-              <td>PlayStation 2</td>
-              <td>15</td>
-              <td>2015/05/01</td>
-            </tr>
-
-            <tr>
-            <td class="text-center" style="color:#6e64ff;"><i class="fs-2 bi bi-7-square"></i><span class="d-none">7</span></td>
-              <td><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1lzy.png" alt="" height="100px"></td>
-              <td><span class="fs-3">Astral Chain</span><br></td>
-              <td>PlayStation 4</td>
-              <td>5</td>
-              <td>2015/05/01</td>
-            </tr>
-
-            <tr>
-            <td class="text-center" style="color:#a64aab;"><i class="fs-2 bi bi-6-square"></i><span class="d-none">6</span></td>
-              <td><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1lzy.png" alt="" height="100px"></td>
-              <td><span class="fs-3">Astral Chain</span><br></td>
-              <td>Game Pass</td>
-              <td>1</td>
-              <td>2015/05/01</td>
-            </tr>
-
-            <tr>
-              <td class="text-center" style="color:#b22a3e;"><i class="fs-2 bi bi-5-circle"></i><span class="d-none">5</span></td>
-              <td><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1lzy.png" alt="" height="100px"></td>
-              <td><span class="fs-3">Astral Chain</span><br></td>
-              <td>Game Pass</td>
-              <td>1</td>
-              <td>2015/05/01</td>
-            </tr> -->
-
-
+# End PHP
+?>
 
 
           </tbody>
