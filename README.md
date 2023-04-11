@@ -1,6 +1,6 @@
 # FormulaTroy.com Source Code
 
-All of the code for my base website, web apps, and utilities. Feel free to use or copy any of it.
+All of the code for my base website, web apps, and utilities.
 
 ## Sitemap
 
@@ -9,7 +9,6 @@ The overall structure of the site and quick links to docs.
 - 🎨 Themes
   - 💬 Discord Theme (WIP)
   - 📅 [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#-google-calendar-dark-mode)
-  - 📹 Steam Deck Boot Video Template (WIP)
   - 🎮 Steam Deck Theme (WIP)
 - 🌐 Web Apps
   - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#-canasta-score-tracker)
