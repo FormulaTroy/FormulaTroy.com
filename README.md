@@ -25,7 +25,7 @@ In pursuit of Dark Modes and UIs with blue accent lines... Here are custom theme
 
 ### 📅 Google Calendar Dark Mode
 
-![FormulaTroy Google Calendar Dark Mode Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/ftgcdm.png)
+[![FormulaTroy Google Calendar Dark Mode Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/ftgcdm.png)](https://formulatroy.com/gc-dark)
 
 **FTGoogleCalDarkMode.user.css** is a self-hosted user.css file powered by the Stylus browser extension. Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.
 
@@ -46,7 +46,7 @@ Sometimes you just want a URL that does a thing. Without ads.
 
 ### 🏎️ Racing Fuel Calculator
 
-![Racing Fuel Calculator Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/racingcalc.png)
+[![Racing Fuel Calculator Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/racingcalc.png)](https://formulatroy.com/app/racing-calculator/)
 
 Sim Racing fuel calculator! The calculator will tell you how much fuel you need to put in the tank as well as if and/or how many fuel stops you need.
 
@@ -56,7 +56,7 @@ Sim Racing fuel calculator! The calculator will tell you how much fuel you need 
 
 ### ♟️ Chessboard
 
-![Chessboard Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/chess.png)
+[![Chessboard Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/chess.png)](https://formulatroy.com/app/chess/)
 
 Just a simple chessboard to play locally that doesn't require you to sign up or display ads.
 
@@ -66,7 +66,7 @@ Just a simple chessboard to play locally that doesn't require you to sign up or 
 
 ### 🎴 Canasta Score Tracker
 
-![Canasta Score Tracker Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/canasta.png)
+[![Canasta Score Tracker Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/canasta.png)](https://formulatroy.com/app/canasta/)
 
 Canasta card game score tracker and round results calculator.
 
