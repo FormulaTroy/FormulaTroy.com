@@ -1,6 +1,6 @@
 # FormulaTroy.com Source Code
 
-All of the code for my base website, web apps, and utilities. The website and project index is available at [FormulaTroy.com](https://formulatroy.com).
+All of the [FormulaTroy.com](https://formulatroy.com) code for the base website, web apps, and utilities.
 
 ## Sitemap
 
