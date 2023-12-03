@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Dark Mode
 @namespace      FTGCDM
-@version        1.1.5
+@version        1.1.6
 @description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -71,6 +71,8 @@
   .shdZ7e .zHQkBf,
   .TgcD5e.CCDcoc .zHQkBf,
   .VfPpkd-Bz112c-LgbsSe,
+  .VfPpkd-fmcmS-wGMbrd,
+  .meh4fc,
   .OspAke,
   .LV4Pme,
   .tL9Q4c,
@@ -82,6 +84,7 @@
   .a3PaRd,
   .aDCdzb,
   .T2Ybvb,
+  .tzcF6 i,
   .gb_Lc svg,
   .NMm5M {
     color: var(--ftwhite) !important;
@@ -266,5 +269,4 @@
     background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/white-24dp/1x/gm_add_white_24dp.png) !important;
   }
 }
-
 /* end @-moz-document domain("calendar.google.com") */
