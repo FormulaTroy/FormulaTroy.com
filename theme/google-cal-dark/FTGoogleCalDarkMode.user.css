@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Dark Mode
 @namespace      FTGCDM
-@version        1.1.6
+@version        1.2.0
 @description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -98,6 +98,7 @@
   .VfPpkd-O1htCb-OWXEXe-XpnDCe,
   .VfPpkd-TkwUic,
   .VfPpkd-uusGie-fmcmS,
+  .VfPpkd-xl07Ob-XxIAqe,
   .Rj2Mlf,
   .OLiIxf,
   .PDpWxe,
@@ -135,6 +136,11 @@
     border: 1px black !important;
   }
 
+  /* Calendar View Selector */
+  .VfPpkd-rymPhb-Abojl {
+    color: var(--primary);
+  }
+
   /* Create Button */
   .c7fp5b > .lVYxmb {
     background-image: radial-gradient(circle farthest-side, rgba(217, 211, 211, .99), rgb(255, 255, 255) 80%, rgb(255, 255, 255) 100%);
@@ -159,6 +165,14 @@
     background-color: var(--ftdark);
     /* on hover */
   }
+  .VfPpkd-rymPhb-fpDzbe-fmcmS,
+  .OwNvm {
+    color: var(--ftwhite) !important;
+  }
+  .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd .VfPpkd-rymPhb-pZXsl {
+    background-color: var(--primary);
+    z-index:-1
+  }
 
   /* Time selector drop down */
   .gHQcAb {
@@ -169,6 +183,11 @@
     /* on hover */
   }
 
+  /* Find a Time button in create event modal */
+  .VuEIfc .Av5s2 button {
+    margin-left: 8px !important;
+  }
+
   /* Edit Event Screen Dropdown Menus */
   .ewPPR .VfPpkd-fmcmS-wGMbrd,
   .ewPPR .VfPpkd-fmcmS-OyKIhb {
@@ -177,7 +196,7 @@
     color: var(--ftwhite) !important;
   }
 
-  /* 'Add Notification' Button in Edit Event Screen */
+  /* Add Notification Button in Edit Event Screen */
   button.AAztme {
     margin-left:0;
   }
