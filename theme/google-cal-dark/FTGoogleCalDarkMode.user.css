@@ -12,9 +12,9 @@
 
 @-moz-document domain("calendar.google.com") {
 
-  /* Core Variables */
   :root {
 
+    /* Core Variables */
     /* Init FT Color Scheme */
     --ftblack: #111;
     --ftdark: #333;
@@ -95,10 +95,14 @@
   .VfPpkd-LgbsSe-OWXEXe-INsAgc,
   .VfPpkd-LgbsSe-OWXEXe-Bz112c-UbuQg,
   .VfPpkd-LgbsSe-OWXEXe-dgl2Hf,
+  .VfPpkd-O1htCb-OWXEXe-XpnDCe,
+  .VfPpkd-TkwUic,
+  .VfPpkd-uusGie-fmcmS,
   .Rj2Mlf,
   .OLiIxf,
   .PDpWxe,
   .LQeN7,
+  .gnQJle,
   .yR9sJd {
     background-color: var(--ftdark) !important;
     color: var(--ftwhite) !important;
@@ -163,6 +167,19 @@
   .VKy0Ic[aria-selected="true"] {
     background-color: var(--ftdark);
     /* on hover */
+  }
+
+  /* Edit Event Screen Dropdown Menus */
+  .ewPPR .VfPpkd-fmcmS-wGMbrd,
+  .ewPPR .VfPpkd-fmcmS-OyKIhb {
+    z-index: -1;
+    background-color: var(--ftdark) !important;
+    color: var(--ftwhite) !important;
+  }
+
+  /* 'Add Notification' Button in Edit Event Screen */
+  button.AAztme {
+    margin-left:0;
   }
 
   /* Location search field in add event screen */
