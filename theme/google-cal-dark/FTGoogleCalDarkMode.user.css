@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Dark Mode
 @namespace      FTGCDM
-@version        1.1.4
+@version        1.1.5
 @description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -70,6 +70,7 @@
   .VfPpkd-V67aGc,
   .shdZ7e .zHQkBf,
   .TgcD5e.CCDcoc .zHQkBf,
+  .VfPpkd-Bz112c-LgbsSe,
   .OspAke,
   .LV4Pme,
   .tL9Q4c,
@@ -80,7 +81,9 @@
   .oPF3Ce,
   .a3PaRd,
   .aDCdzb,
-  .T2Ybvb {
+  .T2Ybvb,
+  .gb_Lc svg,
+  .NMm5M {
     color: var(--ftwhite) !important;
   }
 
@@ -98,8 +101,14 @@
     color: var(--ftwhite) !important;
   }
 
+  /* Global Black Background Override (i.e. Search for People) */
+  .gOPnwc {
+    background-color: var(--ftblack) !important;
+  }
+
   /* Global Dark Text Override (i.e. UI text on white backgrounds) */
-  .jO7h3c {
+  .jO7h3c,
+  .erDb5d {
     color: var(--ftblack) !important;
   }
 
@@ -112,6 +121,11 @@
   .VfPpkd-LgbsSe,
   .VfPpkd-Bz112c-LgbsSe {
     border-color: var(--ftblack) !important;
+  }
+
+  /* Calendar/Task Lightswitch */
+  .VYBDae-Bz112c-LgbsSe {
+    border: 1px black !important;
   }
 
   /* Create Button */
@@ -252,4 +266,5 @@
     background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/white-24dp/1x/gm_add_white_24dp.png) !important;
   }
 }
+
 /* end @-moz-document domain("calendar.google.com") */
