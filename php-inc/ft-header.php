@@ -19,7 +19,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
   <link rel="stylesheet" href="/css/formulatroy.css">
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico"/>
 </head>
@@ -39,16 +38,6 @@
             <li class="nav-item ">
               <a class="nav-link px-md-4" aria-current="page" href="/"><i class="bi bi-house-heart"></i> Index</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-controller"></i> Games
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/games/played"><i class="bi bi-journal-check"></i> Played</a></li>
-                <li><a class="dropdown-item" href="/games/backlog"><i class="bi bi-database-add"></i> Backlog</a></li>
-                <li><a class="dropdown-item" href="/games/awards"><i class="bi bi-trophy"></i> Awards</a></li>
-              </ul>
-            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
