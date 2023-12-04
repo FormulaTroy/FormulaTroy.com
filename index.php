@@ -22,7 +22,11 @@ include_once "php-inc/ft-header.php";
 
       // Google Calendar Dark Mode
       $techArray = ["css"];
-      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "/gc-dark", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023", "Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.");
+      CreateAppCard("Google Calendar Dark Mode", false, "img/projects/ftgcdm.png", "/gc-dark", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023-2024", "Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.");
+
+      // Shutdown Macros
+      $techArray = ["exe"];
+      CreateAppCard("Shutdown Macros", false, "img/projects/shutdown.png", "/shutdown", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/script/shutdown", $techArray, "bi-power", "2023", "Shutdown scheduler scripts to be used with marco keys or Stream Decks. Available in Batch or PowerShell.");
 
       // Sim Racing Fuel Calculator
       $techArray = ["php", "scss"];

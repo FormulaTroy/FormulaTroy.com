@@ -52,6 +52,10 @@ function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, 
         echo "<i class=\"bi bi-filetype-scss pe-3 ft-scss-badge\"></i>";
         break;
 
+      case 'exe':
+        echo "<i class=\"bi bi-filetype-exe pe-3 ft-exe-badge\"></i>";
+        break;
+
       default:
         echo "<p class=\"text-warning\">Unknown Tech!</p>";
         break;

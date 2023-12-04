@@ -106,6 +106,9 @@ nav {
 .ft-scss-badge {
   color: #ce679a;
 }
+.ft-exe-badge {
+  color: #57ce5d;
+}
 
 /* Footer */
 footer {
