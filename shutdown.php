@@ -19,7 +19,7 @@ include_once "php-inc/ft-header.php";
         <p>The <strong>Shutdown Macros</strong> library is a collection of executable Batch (or PowerShell) scripts that automatically schedule a system shutdown on your machine for a set amount of hours in the future.</p>
         <p>For example, if you want to go to bed but your PC is still going to be downloading something for 90 minutes, you can quickly set a 2 hour shutdown timer so that the machine will auto shutoff after the download would have completed.</p>
         <p>There is also an abort script included if you want to have the option to cancel any pending shutdown.</p>
-        <p>These can be used with any software that can automatically launch applications, like keyboard macro drivers or an Elgato Stream Deck.</p>
+        <p>These can be used with any software that can automatically launch applications, like keyboard macro drivers or an Elgato Stream Deck. They can also just be run directly by double-clicking the files.</p>
         <p><a href="https://formulatroy.github.io/FormulaTroy.com/script/shutdown/download/ShutdownMacroScriptLibrary.zip" class="btn btn-primary"><i class="bi bi-download"></i> Download Scripts</a></p>
         <h4>Installation Steps</h4>
         <p><em>Using Stream Deck as an example</em></p>
