@@ -4,18 +4,14 @@ All of the [FormulaTroy.com](https://formulatroy.com) code for the base website,
 
 ## Sitemap
 
-The overall structure of the site and quick links to docs.
-
 - 🎨 Themes
-  - 📅 [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#-google-calendar-dark-mode)
-  - 🎮 Steam Deck Theme (WIP)
-  - 💬 Discord Theme (WIP)
+  - 📅 Google Calendar Dark Mode
 - 🌐 Web Apps
-  - 🏎️ [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#%EF%B8%8F-racing-fuel-calculator)
-  - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#%EF%B8%8F-chessboard)
-  - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#-canasta-score-tracker)
+  - 🏎️ Racing Fuel Calculator
+  - ♟️ Chessboard
+  - 🎴 Canasta Score Tracker
 - 📜 Scripts
-  - 🔌 [Shutdown Macros](https://github.com/FormulaTroy/FormulaTroy.com?tab=readme-ov-file#-shutdown-macros)
+  - 🔌 Shutdown Macros
 
 ---------------------------
 

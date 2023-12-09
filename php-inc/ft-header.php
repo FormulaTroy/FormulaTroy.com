@@ -7,8 +7,9 @@
 
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
-
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8QKSRXJ8R"></script>
+  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-V8QKSRXJ8R');</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php if ($pageTitle) {echo "$pageTitle | ";}?>FormulaTroy</title>
