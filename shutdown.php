@@ -40,6 +40,33 @@ include_once "php-inc/ft-header.php";
         <p><img src="img/projects/shutdown.png" class="img-fluid" alt=""></p>
         <p><a class="btn btn-outline-secondary" href="https://github.com/FormulaTroy/FormulaTroy.com/tree/main/script/shutdown" role="button" target="_blank"><i class="bi bi-github"></i> View Code on GitHub</a></p>
         <p class="fs-2"><i class="bi bi-filetype-exe pe-3 ft-exe-badge"></i></p>
+        <h4>Changelog</h4>
+        <div class="accordion" id="changelog">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#changelog11" aria-expanded="false" aria-controls="changelog11">
+                v1.1 The Bats
+              </button>
+            </h2>
+            <div id="changelog11" class="accordion-collapse collapse" data-bs-parent="#changelog">
+              <div class="accordion-body">
+                Convert to Bat files instead. These are directly usable with StreamDeck's Run Action, avoiding the need to use the WindowsScriptDeck plugin.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#changelog1" aria-expanded="false" aria-controls="changelog1">
+                v1.0 Init
+              </button>
+            </h2>
+            <div id="changelog1" class="accordion-collapse collapse" data-bs-parent="#changelog">
+              <div class="accordion-body">
+                Init the project as a collection of PowerShell scripts that schedule shutdowns with a message box confirmation.
+              </div>
+            </div>
+          </div>
+        </div><!-- end div.accordion -->
       </div>
     </div>
 
