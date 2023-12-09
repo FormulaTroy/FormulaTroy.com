@@ -8,7 +8,7 @@ include_once "php-inc/ft-header.php";
 
   <?php
   # Hero
-  CreateHeroText("FormulaTroy Project Index", "Everything is open source and free to be used or copied.");
+  CreateHeroText("FormulaTroy Project Index", "Everything is open source");
   ?>
 
   <?php # Page ?>
@@ -40,8 +40,8 @@ include_once "php-inc/ft-header.php";
       $techArray = ["php", "js", "scss"];
       CreateAppCard("Canasta Score Tracker", true, "img/projects/canasta.png", "https://formulatroy.com/app/canasta/", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/app/canasta", $techArray, "bi-suit-spade-fill", "2014", "Canasta card game score tracker and round results calculator.")
 
-        # End PHP
-        ?>
+      # End PHP
+      ?>
 
     </div>
   </div>
