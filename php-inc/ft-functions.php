@@ -1,8 +1,7 @@
 <?php
 
 # Create hero title and subtitle
-function CreateHeroText($title, $subtitle)
-{
+function CreateHeroText($title, $subtitle) {
   echo "
     <section class=\"py-3 text-center container\">
       <div class=\"row py-lg-3\">
@@ -15,8 +14,7 @@ function CreateHeroText($title, $subtitle)
 } // end function HeroText()
 
 # Create homepage app index gallery cards
-function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, &$techArray, $iconClass, $yearMade, $summaryText)
-{
+function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, &$techArray, $iconClass, $yearMade, $summaryText) {
 
   // echo opening tags, img, title
   echo "
@@ -24,7 +22,7 @@ function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, 
       <div class=\"card shadow-sm\">
         <a href=\"$linkPath\"><img src=\"$imgPath\" alt=\"\"></a>
         <div class=\"card-body\">
-          <h3 class=\"fw-light\">$projectTitle</h3>
+          <h3 class=\"fw-light\"><a href=\"$linkPath\">$projectTitle</a></h3>
           <p class=\"fs-2\">";
 
   // loop through the tech array and display a badge icon for each tech
