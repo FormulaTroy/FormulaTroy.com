@@ -8,7 +8,7 @@ include_once "php-inc/ft-header.php";
 
   <?php
   # Hero
-  CreateHeroText("Google Calendar Dark Mode", "Calendar is so bright I can see the floaters in my eyes.");
+  CreateHeroText("Google Calendar Dark Mode", "Calendar is so bright I can see the floaters in my eyes");
   ?>
 
   <?php # Page ?>

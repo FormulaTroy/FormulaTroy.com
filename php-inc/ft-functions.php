@@ -86,6 +86,21 @@ function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, 
 
 } // end function AppCard()
 
+# Create changelog entries on a project page
+function LogChange($ID, $changeTitle, $changeText) {
+  echo "
+    <div class=\"accordion-item\">
+      <h2 class=\"accordion-header\">
+        <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"
+          data-bs-target=\"#changelog$ID\" aria-expanded=\"false\"
+          aria-controls=\"changelog$ID\">$changeTitle</button>
+      </h2>
+      <div id=\"changelog$ID\" class=\"accordion-collapse collapse\" data-bs-parent=\"#changelog\">
+        <div class=\"accordion-body\">$changeText</div>
+      </div>
+    </div>";
+} // end LogChange()
+
 # end php
 ?>
 
