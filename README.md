@@ -15,7 +15,7 @@ The overall structure of the site and quick links to docs.
   - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#%EF%B8%8F-chessboard)
   - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#-canasta-score-tracker)
 - 📜 Scripts
-  - 🔌 Shutdown Macros
+  - 🔌 [Shutdown Macros](https://github.com/FormulaTroy/FormulaTroy.com?tab=readme-ov-file#-shutdown-macros)
 
 ---------------------------
 
