@@ -7,13 +7,15 @@ All of the [FormulaTroy.com](https://formulatroy.com) code for the base website,
 The overall structure of the site and quick links to docs.
 
 - 🎨 Themes
-  - 💬 Discord Theme (WIP)
   - 📅 [Google Calendar Dark Mode](https://github.com/FormulaTroy/FormulaTroy.com#-google-calendar-dark-mode)
   - 🎮 Steam Deck Theme (WIP)
+  - 💬 Discord Theme (WIP)
 - 🌐 Web Apps
   - 🏎️ [Racing Fuel Calculator](https://github.com/FormulaTroy/FormulaTroy.com#%EF%B8%8F-racing-fuel-calculator)
   - ♟️ [Chessboard](https://github.com/FormulaTroy/FormulaTroy.com#%EF%B8%8F-chessboard)
   - 🎴 [Canasta Score Tracker](https://github.com/FormulaTroy/FormulaTroy.com#-canasta-score-tracker)
+- 📜 Scripts
+  - 🔌 Shutdown Macros
 
 ---------------------------
 
@@ -71,6 +73,20 @@ Just a simple chessboard to play locally that doesn't require you to sign up or 
 Canasta card game score tracker and round results calculator.
 
 [Canasta Score Tracker Web App](https://formulatroy.com/app/canasta/)
+
+---------------------------
+
+## 📜 Scripts
+
+Little utility things.
+
+### 🔌 Shutdown Macros
+
+[![Shutdown Macros Screenshot](https://formulatroy.github.io/FormulaTroy.com/img/projects/shutdown.png)](https://formulatroy.com/shutdown)
+
+The Shutdown Macros library is a collection of executable Batch (or PowerShell) scripts that automatically schedule a system shutdown on your machine for a set amount of hours in the future.
+
+[Shutdown Macros Page](https://formulatroy.com/shutdown)
 
 ---------------------------
 
