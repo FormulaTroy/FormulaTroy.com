@@ -1,24 +1,17 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8QKSRXJ8R"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-V8QKSRXJ8R');</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Racing Calculator App</title>
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-56791233-1', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-    </script>
   </head>
   <body>
-    
+
     <div class="contain-to-grid sticky">
       <nav class="top-bar" data-topbar data-options="sticky_on: small">
          <ul class="title-area">
@@ -64,7 +57,7 @@
       <div class="small-12 columns">
       <h2>Race Data Results</h2>
     <?php // Resume
-    
+
     // Check all values are numeric or set, if not then set them to null
     if (is_numeric($_POST['race_length'])) {
       $race_length = $_POST['race_length'];
@@ -133,7 +126,7 @@
 
       // laps
       echo "<p>Race Laps: <span class=\"output\">$laps laps</span></p>";
-      
+
       // fuel needed
       echo "<p>Fuel Needed: <span class=\"output\">$fuel_needed liters</span><br>";
       echo "Fuel Tank Size: <span class=\"output\">$max_fuel liters</span></p>";
@@ -147,7 +140,7 @@
       } else {
         echo "<p>You <span class=\"output\">WILL NOT</span> need a fuel stop.</p>";
       }
-      
+
 
       // different graphs if a stop is needed or not
 
@@ -204,8 +197,8 @@
       }
 
       echo '</div>'; // End panel
-      
-      
+
+
     } // End parent if
 
     // End for HTML ?>
@@ -273,20 +266,20 @@
                   echo '<a href="index.php" class="button small">Reset Application</a>';
                 } else {
                   echo '<input class="button small" type="reset" value="Clear Form">';
-                }               
+                }
               ?>
           </div><!--end row collapse-->
 
         </div><!--end PW-->
-      </div><!--end row panel--> 
+      </div><!--end row panel-->
     </form>
 
     <div id="footer" class="row clear">
       <div class="small-12 columns text-center">
         <p>Made with <span class="heart">&hearts;</span> by <a href="https://www.formulatroy.com/">FormulaTroy</a></p>
       </div>
-    </div>  
-    
+    </div>
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
