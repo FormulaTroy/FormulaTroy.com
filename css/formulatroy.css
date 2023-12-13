@@ -150,3 +150,19 @@ nav {
 footer {
   border-top: 1px solid var(--ftorange);
 }
+
+footer .social-links a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}
+
+footer .social-links a:hover,
+footer .social-links a:hover {
+  color: var(--ftblue);
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}
