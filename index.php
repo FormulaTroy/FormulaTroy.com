@@ -26,7 +26,7 @@ include_once "php-inc/ft-header.php";
 
       // Shutdown Macros
       $techArray = ["exe"];
-      CreateAppCard("Shutdown Macros", false, "img/projects/shutdown.png", "/shutdown", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/script/shutdown", $techArray, "bi-power", "2023", "Shutdown scheduler scripts to be used with marco keys or Stream Decks. Available in Batch or PowerShell.");
+      CreateAppCard("Shutdown Macros", false, "img/projects/shutdown.png", "/shutdown", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/script/shutdown", $techArray, "bi-power", "2023", "Shutdown scheduler Batch scripts to be used with marco keys or Stream Decks.");
 
       // Sim Racing Fuel Calculator
       $techArray = ["php", "scss"];

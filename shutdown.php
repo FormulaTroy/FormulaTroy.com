@@ -16,7 +16,7 @@ include_once "php-inc/ft-header.php";
 
     <div class="row g-3">
       <div class="col-12 col-lg-6">
-        <p>The <strong>Shutdown Macros</strong> library is a collection of executable Batch (or PowerShell) scripts that automatically schedule a system shutdown on your machine for a set amount of hours in the future.</p>
+        <p>The <strong>Shutdown Macros</strong> library is a collection of executable Batch scripts that automatically schedule a system shutdown on your machine for a set amount of hours in the future.</p>
         <p>For example, if you want to go to bed but your PC is still going to be downloading something for 90 minutes, you can quickly set a 2 hour shutdown timer so that the machine will auto shutoff after the download would have completed.</p>
         <p>There is also an abort script included if you want to have the option to cancel any pending shutdown.</p>
         <p>These can be used with any software that can automatically launch applications, like keyboard macro drivers or an Elgato Stream Deck. They can also be run directly by double-clicking the files.</p>
@@ -43,6 +43,7 @@ include_once "php-inc/ft-header.php";
         <h4>Changelog</h4>
         <div class="accordion" id="changelog">
           <?php
+            # LogChange(12, "v1.2 Expand Functionality", "Added a shutdown now option. Added restart options for all 5 time intervals. Removed the PowerShell versions.");
             LogChange(11, "v1.1 The Bats", "Convert to Bat files instead. These are directly usable with StreamDeck's Run Action, avoiding the need to use the WindowsScriptDeck plugin.");
             LogChange(10, "v1.0 Init", "Init the project as a collection of PowerShell scripts that schedule shutdowns with a message box confirmation.");
           ?>
