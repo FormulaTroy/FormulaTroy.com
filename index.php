@@ -24,6 +24,10 @@ include_once "php-inc/ft-header.php";
       $techArray = ["css"];
       CreateAppCard("Google Cal<span class=\"d-md-none d-lg-inline d-xl-none d-xxl-inline\">endar</span> Dark Mode", false, "img/projects/ftgcdm.png", "/gc-dark", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-cal-dark/FTGoogleCalDarkMode.user.css", $techArray, "bi-calendar3", "2023-2024", "Google Calendar's UI is so bright I can see the floaters in my eyes. This stylesheet adds Dark Mode to Google Calendar.");
 
+      // Google Calendar Dark Mode
+      $techArray = ["css"];
+      CreateAppCard("Google Docs Dark Mode", false, "img/projects/ftgddm.png", "/gd-dark", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-docs-dark/FTGoogleDocsDarkMode.user.css", $techArray, "bi-file-earmark-text", "2023", "Using online documents shouldn't burn your eyes. This stylesheet adds Dark Mode to Google Docs, Sheets, and the Drive UI.");
+
       // Shutdown Macros
       $techArray = ["exe"];
       CreateAppCard("Shutdown Macros", false, "img/projects/shutdown.png", "/shutdown", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/script/shutdown", $techArray, "bi-power", "2023", "Shutdown scheduler Batch scripts to be used with marco keys or Stream Decks.");
