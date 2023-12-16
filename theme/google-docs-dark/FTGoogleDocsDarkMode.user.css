@@ -1,0 +1,44 @@
+/* ==UserStyle==
+@name           Google Docs Dark Mode
+@namespace      FTGDDM
+@version        1.0.0
+@description    Simple and spiffy dark mode UI for Google Docs and Drive
+@author         FormulaTroy
+@homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
+@updateURL      https://formulatroy.github.io/FormulaTroy.com/theme/google-docs-dark/FTGoogleDocsDarkMode.user.css
+@license        MIT
+@preprocessor   less
+==/UserStyle== */
+
+@-moz-document url-prefix(https://docs.google.com/document),
+               url-prefix(https://docs.google.com/spreadsheets),
+               url-prefix(https://drive.google.com) {
+
+  :root {
+    /* Core Variables */
+    /* Init FT Color Scheme */
+    --ftblack: #111;
+    --ftdark: #333;
+    --ftgrey: #ccc;
+    --ftlight: #dedede;
+    --ftwhite: #fff;
+    --ftblue: #2a71ff;
+    --ftorange: #ff5500;
+  }
+
+  /* Flip the entire page's hue */
+  html {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  /* Flip certain elements back to their normal hue */
+  video,
+  img {
+    filter: invert(1) hue-rotate(180deg)
+  }
+
+  /* Google Doc Overrides */
+
+  /* Google Drive Overrides */
+
+}/* end @-moz-document */
