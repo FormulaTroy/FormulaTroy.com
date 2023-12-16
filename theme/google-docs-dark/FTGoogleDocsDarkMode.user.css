@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Docs Dark Mode
 @namespace      FTGDDM
-@version        1.0.0
+@version        1.0.1
 @description    Simple and spiffy dark mode UI for Google Docs and Drive
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -11,34 +11,41 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix(https://docs.google.com/document),
-               url-prefix(https://docs.google.com/spreadsheets),
-               url-prefix(https://drive.google.com) {
+  url-prefix(https://docs.google.com/spreadsheets),
+  url-prefix(https://drive.google.com),
+  url-prefix("https://ogs.google.com/u/"),
+  url-prefix("https://docs.google.com/drivesharing/"),
+  url-prefix("https://drive.google.com/drivesharing/"),
+  url-prefix("https://docs.google.com/picker/"),
+  url-prefix("https://contacts.google.com/"),
+  url-prefix("https://accounts.google.com/") {
 
-  :root {
-    /* Core Variables */
-    /* Init FT Color Scheme */
-    --ftblack: #111;
-    --ftdark: #333;
-    --ftgrey: #ccc;
-    --ftlight: #dedede;
-    --ftwhite: #fff;
-    --ftblue: #2a71ff;
-    --ftorange: #ff5500;
-  }
+    /* Flip the entire page's hue */
+    html {
+      filter: invert(1) hue-rotate(180deg);
+    }
 
-  /* Flip the entire page's hue */
-  html {
-    filter: invert(1) hue-rotate(180deg);
-  }
+    /* Flip certain elements back to their normal hue */
+    video,
+    img,
+    iframe {
+      filter: invert(1) hue-rotate(180deg);
+    }
 
-  /* Flip certain elements back to their normal hue */
-  video,
-  img {
-    filter: invert(1) hue-rotate(180deg)
-  }
-
-  /* Google Doc Overrides */
-
-  /* Google Drive Overrides */
+    /*
+      Specific overrides for iFramed elements or background-img values go here.
+      Usually for iFrames (like profile pop-ups, embed from Drive modals, etc)
+      I needed to add another url-prefix() above for the iframe url, and then
+      add a class that was on their <body> element here. And/or also classes
+      from their pictures/icons that used a css background-img property instead
+      of being an actual img or svg tag that would be caught from the rule above.
+    */
+    .docs-homescreen-grid-item-thumbnail,
+    .docs-homescreen-icon,
+    .app-switcher-button-icon-container,
+    .Yb-Il-d-c-j,
+    .yDmH0d {
+      filter: invert(1) hue-rotate(180deg) !important;
+    }
 
 }/* end @-moz-document */
