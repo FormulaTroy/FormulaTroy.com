@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Dark Mode
 @namespace      FTGCDM
-@version        1.2.0
+@version        1.2.1
 @description    Simple and spiffy dark mode UI for Google Calendar
 @author         FormulaTroy
 @homepageURL    https://github.com/FormulaTroy/FormulaTroy.com
@@ -63,15 +63,18 @@
 
   /* Global White Text Override (i.e. Titles, Descriptions, Input Field Text */
   .NkK3Fc span[role=heading],
-  .JJyfjc,
-  .ec9Aq,
-  .gb_Ea svg,
-  .vRMGwf.oJeWuf,
-  .VfPpkd-V67aGc,
-  .shdZ7e .zHQkBf,
   .TgcD5e.CCDcoc .zHQkBf,
   .VfPpkd-Bz112c-LgbsSe,
   .VfPpkd-fmcmS-wGMbrd,
+  .VfPpkd-k2Wrsb-fmcmS,
+  .shdZ7e .zHQkBf,
+  .vRMGwf.oJeWuf,
+  .VfPpkd-V67aGc,
+  .gb_Ea svg,
+  .gb_Lc svg,
+  .tzcF6 i,
+  .JJyfjc,
+  .ec9Aq,
   .meh4fc,
   .OspAke,
   .LV4Pme,
@@ -84,21 +87,20 @@
   .a3PaRd,
   .aDCdzb,
   .T2Ybvb,
-  .tzcF6 i,
-  .gb_Lc svg,
   .NMm5M {
     color: var(--ftwhite) !important;
   }
 
   /* Global Dark Background + White Text Override (i.e. Buttons) */
-  .VfPpkd-LgbsSe,
-  .VfPpkd-LgbsSe-OWXEXe-INsAgc,
   .VfPpkd-LgbsSe-OWXEXe-Bz112c-UbuQg,
+  .VfPpkd-LgbsSe-OWXEXe-INsAgc,
   .VfPpkd-LgbsSe-OWXEXe-dgl2Hf,
   .VfPpkd-O1htCb-OWXEXe-XpnDCe,
-  .VfPpkd-TkwUic,
   .VfPpkd-uusGie-fmcmS,
   .VfPpkd-xl07Ob-XxIAqe,
+  .VfPpkd-LgbsSe,
+  .VfPpkd-P5QLlc,
+  .VfPpkd-TkwUic,
   .Rj2Mlf,
   .OLiIxf,
   .PDpWxe,
@@ -155,6 +157,22 @@
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background: var(--ftdark) !important;
+  }
+
+  /* Create Button: Drop Down */
+  .JAPqpe {
+    background-color: var(--ftdark) !important;
+    border-radius: 0px;
+  }
+  .JPdR6b, .QFf4q {
+    border-radius: 0px !important;
+  }
+  .QJXRJc:hover,
+  .QJXRJc:focus {
+    background-color: var(--primary) !important;
+  }
+  .jO7h3c {
+    color: var(--ftwhite) !important;
   }
 
   /* Dropdown menus (i.e. in Settings or Events) */

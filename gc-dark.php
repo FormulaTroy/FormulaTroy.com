@@ -46,6 +46,10 @@ include_once "php-inc/ft-header.php";
         <h4>Changelog</h4>
         <div class="accordion" id="changelog">
           <?php
+            LogChange(121, "v1.2.1 - December 15th, 2023", "<ul>
+              <li>Themed the Create button drop down menu.</li>
+              <li>Themed the Event Time Zone selection modal window.</li>
+            </ul>");
             LogChange(120, "v1.2.0 - December 2nd, 2023", "<ul>
                 <li>Clean up homepage UI discrepancies stemming from class name changes on Google's side.</li>
                 <li>Clean up Create/Edit Event screen discrepancies stemming from class name changes on Google's side.</li>
