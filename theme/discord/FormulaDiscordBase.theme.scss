@@ -15,7 +15,4 @@
 
 // include the compiled theme
 // cache break?
-@import url(https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscordBase.compiled.css?cache=#{$cacheBreaker});
-.test {
-  color: $cacheBreaker;
-}
+@import url(https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscordBase.compiled.css);
