@@ -1,0 +1,25 @@
+/**
+ * @name FormulaDiscord: Base Theme
+ * @author FormulaTroy
+ * @version 1.0.0
+ * @description Base dark mode theme with trim colors
+ * @source https://github.com/FormulaTroy/FormulaTroy.com/tree/main/theme/discord
+ * @website https://formulatroy.com
+*/
+
+// include base theme imports
+@import 'scss-inc/css-extends.scss';
+
+// include global variables
+@import 'scss-inc/vars-all.scss';
+
+// include variable overrides specific to this theme
+@import 'scss-inc/vars-formuladiscord.scss';
+
+// include global css rules
+@import 'scss-inc/rules-all.scss';
+
+// define theme-specific css rules
+// which.right-now {
+//   is: none;
+// }
