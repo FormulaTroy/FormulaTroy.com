@@ -1,0 +1,22 @@
+// global FormulaDiscord variables
+:root {
+
+  // sidebars
+  --channels-width: 240px;
+  --channel-color: rgba(255, 255, 255, 0.6);
+  --muted-color: rgba(255, 255, 255, 0.3);
+
+  // avatar status
+  --idle-color: #c7c7c7;
+  --rs-idle-color: #c7c7c7;
+  --dnd-color: #b82121;
+  --rs-dnd-color: #b82121;
+  --rs-small-spacing: 0px;
+  --rs-medium-spacing: 0px;
+  --rs-large-spacing: 0px;
+  --rs-small-width: 1.5px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 10%;
+
+} // end :root

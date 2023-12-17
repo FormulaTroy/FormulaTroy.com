@@ -1,0 +1,193 @@
+/* Core Variables */
+:root {
+
+  /* Init FT Color Scheme */
+  --ftblack: #111;
+  --ftdark: #333;
+  --ftgrey: #ccc;
+  --ftlight: #dedede;
+  --ftwhite: #fff;
+  --ftblue: #2a71ff;
+  --ftorange: #ff5500;
+
+  /* Override Bootstrap Vars */
+  --bs-body-bg: var(--ftblack);
+  --bs-nav-link-color: var(--ftwhite);
+  --bs-dropdown-link-disabled-color: var(--ftwhite);
+  --bs-dropdown-link-disabled-color: var(--ftgrey);
+}
+
+/* Nav Bar */
+nav {
+  border-bottom: 1px solid var(--ftblue);
+}
+
+.navbar-brand img {
+  opacity: 1.0;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.navbar-brand img:hover, .navbar-brand img:focus {
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.nav-link {
+  color: var(--ftwhite);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--ftblue);
+}
+
+/* Nav Bar > Dropdown Menus */
+.dropdown-menu.show {
+  border: 1px solid var(--ftblue);
+}
+
+.dropdown-item {
+  color: var(--ftwhite);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--ftwhite);
+  background-color: var(--ftdark);
+}
+
+/* Nav Bar > Dropdown Menus > Animation */
+/* Forked from https://jsfiddle.net/StartBootstrap/o7ev9czn/ */
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+@keyframes slideIn {
+  0% {transform: translateY(1rem);opacity: 0;}
+  100% {transform: translateY(0rem);opacity: 1;}
+  0% {transform: translateY(1rem);opacity: 0;}
+}
+@-webkit-keyframes slideIn {
+  0% {-webkit-transform: transform;-webkit-opacity: 0;}
+  100% {-webkit-transform: translateY(0);-webkit-opacity: 1;}
+  0% {-webkit-transform: translateY(1rem);-webkit-opacity: 0;}
+}
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/* Black background override */
+.bg-ftblack {
+  background-color: var(--ftblack);
+}
+
+/* App Gallery Cards */
+.card {
+  height: 100%;
+}
+
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  max-width: 100%;
+  opacity: 1.0;
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}
+
+.card img:hover,
+.card img:focus {
+  opacity: 0.6;
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}
+
+.card h3>a {
+  color: var(--ftwhite);
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}
+
+.card h3>a:hover,
+.card h3>a:focus {
+  color: var(--ftblue);
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}
+
+/* App Tech Icon Badges */
+.ft-php-badge {
+  color: #a561fd;
+}
+.ft-js-badge {
+  color: #e4d04b;
+}
+.ft-html-badge {
+  color: #cf6246;
+}
+.ft-css-badge {
+  color: #3595cf;
+}
+.ft-scss-badge {
+  color: #ce679a;
+}
+.ft-exe-badge {
+  color: #57ce5d;
+}
+
+/* Project Changelogs */
+.accordion-button {
+  padding: 10px 16px;
+}
+
+.accordion-body {
+  padding: 0px 16px 10px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--ftblue);
+  background-color: var(--ftblack);
+  box-shadow: none;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232a71ff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--ftorange);
+}
+
+footer .social-links a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}
+
+footer .social-links a:hover,
+footer .social-links a:hover {
+  color: var(--ftblue);
+  transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+}

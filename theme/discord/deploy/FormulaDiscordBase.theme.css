@@ -1,8 +1,8 @@
 /**
- * @name FormulaDiscord: Base Theme
+ * @name Dark Theme
+ * @description Base FormulaDiscord theme.
  * @author FormulaTroy
  * @version 1.0.0
- * @description Base dark mode theme with trim colors
  * @source https://github.com/FormulaTroy/FormulaTroy.com/tree/main/theme/discord
  * @website https://formulatroy.com
 */
@@ -105,5 +105,51 @@
 }
 
 :root {
-  --idle-color: #e6e6e6;
+  --channels-width: 240px;
+  --channel-color: rgba(255, 255, 255, 0.6);
+  --muted-color: rgba(255, 255, 255, 0.3);
+  --idle-color: #c7c7c7;
+  --rs-idle-color: #c7c7c7;
+  --dnd-color: #b82121;
+  --rs-dnd-color: #b82121;
+  --rs-small-spacing: 0px;
+  --rs-medium-spacing: 0px;
+  --rs-large-spacing: 0px;
+  --rs-small-width: 1.5px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 10%;
+}
+
+.name__590d6 {
+  font-weight: 900;
+}
+.name__590d6:before, .name__590d6:after {
+  height: 1px;
+  opacity: 0.35;
+}
+
+.sidebar_ded4b5 .containerDefault__23a29 .wrapper__9c483.collapsed__8fe3c .name__590d6 {
+  color: var(--channel-color);
+}
+
+.members__9f47b .membersGroup__85843:before,
+.members__9f47b .membersGroup__85843:after {
+  background: none;
+}
+
+#app-mount .wrapper_edb6e0 foreignObject[mask*=mobile]:after {
+  opacity: 0.9;
+  top: 52%;
+  left: 33px;
+  right: 0;
+}
+
+:root {
+  --background-image: url("");
+}
+
+.container_b2ce9c {
+  -webkit-box-shadow: -2px 16px 52px 0px var(--main-color);
+  box-shadow: -2px 16px 52px 0px var(--main-color);
 }

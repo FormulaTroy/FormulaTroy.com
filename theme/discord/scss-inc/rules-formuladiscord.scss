@@ -1,0 +1,39 @@
+// css rules used by all themes
+
+// channel group names in left sidebar
+.name__590d6 {
+  font-weight: 900;
+
+  // gradient lines next to channel group names
+  &:before,
+  &:after {
+    //background: none;
+    height: 1px;
+    opacity: 0.35;
+  }
+}
+
+// collapsed channel group names
+.sidebar_ded4b5 .containerDefault__23a29 .wrapper__9c483.collapsed__8fe3c .name__590d6 {
+  color: var(--channel-color);
+}
+
+// gradient lines next to roles/online/offline groups in right sidebar
+.members__9f47b .membersGroup__85843:before,
+.members__9f47b .membersGroup__85843:after {
+  background: none;
+}
+
+// position the mobile phone icon in the member list
+#app-mount .wrapper_edb6e0 foreignObject[mask*=mobile]:after {
+  opacity: .9;
+  top: 52%;
+  left: 33px;
+  right: 0;
+}
+
+// change the "ClearVision" text to say FormulaDiscord
+
+// make the scroll bar glow, primary color + shadow?
+
+// input field glows when active
