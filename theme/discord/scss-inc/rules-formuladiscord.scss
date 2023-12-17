@@ -1,4 +1,4 @@
-// css rules used by all themes
+// global FormulaDiscord css rules used by all themes
 
 // channel group names in left sidebar
 .name__590d6 {
@@ -32,6 +32,30 @@
   right: 0;
 }
 
+// glow effect when typing
+.channelTextArea__56a36:focus-within {
+  box-shadow: 0 0 16px 0px var(--main-color);
+}
+
+// window title bar text
+.typeWindows__5fa63 {
+  .wordmark__0d178 > svg {
+    display: none;
+  }
+  > .wordmark__0d178::before {
+    content: "FormulaDiscord";
+    text-shadow: 0 3px 10px var(--main-color);
+  }
+  >.wordmark__0d178:after {
+    content: "#{$version}";
+  }
+}
+.theme-dark .container_ca50b9:before {
+  content: "FormulaDiscord";
+}
+.theme-dark .container_ca50b9:after {
+  content: "v#{$version}";
+}
 // change the "ClearVision" text to say FormulaDiscord
 
 // make the scroll bar glow, primary color + shadow?

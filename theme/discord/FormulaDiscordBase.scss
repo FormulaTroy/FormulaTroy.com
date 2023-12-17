@@ -3,7 +3,7 @@
 
 /**
  * @name Dark Theme
- * @description Base FormulaDiscord theme.
+ * @description Base FormulaDiscord theme. Dark theme with blue accents.
  * @author #{$author}
  * @version #{$version}
  * @source #{$source}
@@ -24,7 +24,8 @@
 
 // define theme-specific variables
 :root {
-  --background-image: url("");
+  --main-color: #2a71ff;
+  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=#{$cacheBreaker}");
 }
 
 // define theme-specific css rules

@@ -1,8 +1,8 @@
 /**
  * @name Dark Theme
- * @description Base FormulaDiscord theme.
+ * @description Base FormulaDiscord theme. Dark theme with blue accents.
  * @author FormulaTroy
- * @version 1.0.0
+ * @version 0.1
  * @source https://github.com/FormulaTroy/FormulaTroy.com/tree/main/theme/discord
  * @website https://formulatroy.com
 */
@@ -145,8 +145,33 @@
   right: 0;
 }
 
+.channelTextArea__56a36:focus-within {
+  -webkit-box-shadow: 0 0 16px 0px var(--main-color);
+          box-shadow: 0 0 16px 0px var(--main-color);
+}
+
+.typeWindows__5fa63 .wordmark__0d178 > svg {
+  display: none;
+}
+.typeWindows__5fa63 > .wordmark__0d178::before {
+  content: "FormulaDiscord";
+  text-shadow: 0 3px 10px var(--main-color);
+}
+.typeWindows__5fa63 > .wordmark__0d178:after {
+  content: "0.1";
+}
+
+.theme-dark .container_ca50b9:before {
+  content: "FormulaDiscord";
+}
+
+.theme-dark .container_ca50b9:after {
+  content: "v0.1";
+}
+
 :root {
-  --background-image: url("");
+  --main-color: #2a71ff;
+  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.2365979971");
 }
 
 .container_b2ce9c {
