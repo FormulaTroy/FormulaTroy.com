@@ -163,7 +163,8 @@
 
 :root {
   --main-color: #2a71ff;
-  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.863372454");
+  --main-color: pink;
+  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.7000080317");
 }
 
 .container_b2ce9c {
