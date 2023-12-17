@@ -35,7 +35,7 @@ include_once "php-inc/ft-header.php";
       </div>
 
       <div class="col-12 col-lg-6">
-        <p><img src="img/projects/shutdown.png" class="img-fluid" alt=""></p>
+        <p><img src="img/projects/shutdown.png" class="img-fluid rounded" alt=""></p>
         <p><a class="btn btn-outline-secondary" href="https://github.com/FormulaTroy/FormulaTroy.com/tree/main/script/shutdown" role="button" target="_blank"><i class="bi bi-github"></i> View Code on GitHub</a></p>
         <p class="fs-2"><i class="bi bi-filetype-exe pe-3 ft-exe-badge"></i></p>
         <h4>Changelog</h4>

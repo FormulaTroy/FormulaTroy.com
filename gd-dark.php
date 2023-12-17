@@ -39,7 +39,7 @@ include_once "php-inc/ft-header.php";
         <p>This is not as hand-crafted as the <a href="/gc-dark">Google Calendar Dark Mode</a> theme, so there are some rough edges. But it gets (most) of the job done with a far simpler method.</p>
       </div>
       <div class="col-12 col-lg-6">
-        <p><img src="img/projects/ftgddm.png" class="img-fluid" alt=""></p>
+        <p><img src="img/projects/ftgddm.png" class="img-fluid rounded" alt=""></p>
         <p><a class="btn btn-outline-secondary" href="https://github.com/FormulaTroy/FormulaTroy.com/blob/main/theme/google-docs-dark/FTGoogleDocsDarkMode.user.css" role="button" target="_blank"><i class="bi bi-github"></i> View Code on GitHub</a></p>
         <p class="fs-2"><i class="bi bi-filetype-css pe-3 ft-css-badge"></i></p>
         <h4>Changelog</h4>

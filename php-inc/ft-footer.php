@@ -14,7 +14,7 @@
         <div class="col text-center">
           <p>
             <span class="fs-5">FormulaTroy</span><br>
-            &copy; <?php echo date("Y"); ?>
+            &copy; 2022-<?php echo date("Y"); ?> <i class="bi bi-code-slash"></i>
           </p>
         </div>
         <p>&nbsp;</p>
