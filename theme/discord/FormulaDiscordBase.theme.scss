@@ -1,0 +1,18 @@
+// this is the file that will actually be installed in discord
+
+// include project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set BetterDiscord theme info
+/**
+ * @name Dark Theme
+ * @description Base FormulaDiscord theme. Dark theme with blue accents.
+ * @author #{$author}
+ * @version #{$version}
+ * @source #{$source}
+ * @website #{$website}
+*/
+
+// include the compiled theme
+// cache break?
+@import 'https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscordBase.compiled.css';
