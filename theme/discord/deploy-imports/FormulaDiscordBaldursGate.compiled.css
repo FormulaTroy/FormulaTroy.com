@@ -1,0 +1,179 @@
+@import url("https://clearvision.github.io/ClearVision-v6/main.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --main-color: #2780e6;
+  --hover-color: #1e63b3;
+  --success-color: #43b581;
+  --danger-color: #982929;
+  --url-color: var(--main-color);
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --text-normal: rgb(220, 221, 222);
+  --text-muted: rgb(114, 118, 125);
+  --channels-width: 220px;
+  --members-width: 240px;
+  --background-shading: 100%;
+  --background-overlay: rgba(0, 0, 0, 0.6);
+  --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 100%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-invert: 0%;
+  --background-grayscale: 0%;
+  --background-sepia: 0%;
+  --background-blur: 0px;
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-position: center;
+  --home-size: 40px;
+  --channel-unread: var(--main-color);
+  --channel-color: rgba(255, 255, 255, 0.3);
+  --channel-text-selected: #fff;
+  --muted-color: rgba(255, 255, 255, 0.1);
+  --backdrop-overlay: rgba(0, 0, 0, 0.8);
+  --backdrop-image: var(--background-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: var(--background-brightness);
+  --backdrop-contrast: var(--background-contrast);
+  --backdrop-saturation: var(--background-saturation);
+  --backdrop-invert: var(--background-invert);
+  --backdrop-grayscale: var(--background-grayscale);
+  --backdrop-sepia: var(--background-sepia);
+  --backdrop-blur: var(--background-blur);
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-brightness: var(--background-brightness);
+  --user-popout-contrast: var(--background-contrast);
+  --user-popout-saturation: var(--background-saturation);
+  --user-popout-invert: var(--background-invert);
+  --user-popout-grayscale: var(--background-grayscale);
+  --user-popout-sepia: var(--background-sepia);
+  --user-popout-blur: calc(var(--background-blur) + 3px);
+  --user-popout-overlay: rgba(0, 0, 0, 0.6);
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-brightness: var(--background-brightness);
+  --user-modal-contrast: var(--background-contrast);
+  --user-modal-saturation: var(--background-saturation);
+  --user-modal-invert: var(--background-invert);
+  --user-modal-grayscale: var(--background-grayscale);
+  --user-modal-sepia: var(--background-sepia);
+  --user-modal-blur: calc(var(--background-blur) + 3px);
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 3px;
+  --rs-large-spacing: 4px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-invisible-color: #747f8d;
+  --rs-phone-color: var(--rs-online-color);
+  --rs-phone-visible: block;
+}
+
+:root {
+  --main-font: "Roboto", Helvetica, Arial, sans-serif;
+  --channels-width: 240px;
+  --channel-color: rgba(255, 255, 255, 0.5);
+  --muted-color: rgba(255, 255, 255, 0.2);
+  --online-color: #03c46d;
+  --rs-online-color: #03c46d;
+  --idle-color: #c4c4c4;
+  --rs-idle-color: #c4c4c4;
+  --dnd-color: #690505;
+  --rs-dnd-color: #690505;
+  --offline-color: #313131;
+  --rs-offline-color: #313131;
+  --rs-small-spacing: 0px;
+  --rs-medium-spacing: 0px;
+  --rs-large-spacing: 0px;
+  --rs-small-width: 1.5px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 10%;
+}
+
+.name__590d6 {
+  font-weight: 900;
+}
+.name__590d6:before, .name__590d6:after {
+  height: 1px;
+  opacity: 0.35;
+}
+
+.guildSeparator_dcb3cc {
+  display: none;
+}
+
+.sidebar_ded4b5 .containerDefault__23a29 .wrapper__9c483.collapsed__8fe3c .name__590d6 {
+  color: var(--channel-color);
+}
+
+.members__9f47b .membersGroup__85843:before,
+.members__9f47b .membersGroup__85843:after {
+  background: none;
+}
+
+#app-mount .wrapper_edb6e0 foreignObject[mask*=mobile]:after {
+  opacity: 0.9;
+  top: 48%;
+  left: 33px;
+  right: 0;
+}
+
+.channelTextArea__56a36:focus-within {
+  -webkit-box-shadow: 0 0 16px 0px var(--main-color);
+          box-shadow: 0 0 16px 0px var(--main-color);
+}
+
+.typeWindows__5fa63 .wordmark__0d178 > svg {
+  display: none;
+}
+.typeWindows__5fa63 > .wordmark__0d178::before {
+  content: "FormulaDiscord";
+  text-shadow: 0 3px 10px var(--main-color);
+}
+.typeWindows__5fa63 > .wordmark__0d178:after {
+  content: "1.0";
+}
+
+.theme-dark .container_ca50b9:before {
+  content: "FormulaDiscord";
+}
+
+.theme-dark .container_ca50b9:after {
+  content: "v1.0";
+}
+
+:root {
+  --main-color: #e4d721;
+  --hover-color: #a79f3c;
+  --background-shading: 50%;
+  --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=0.475260711");
+}

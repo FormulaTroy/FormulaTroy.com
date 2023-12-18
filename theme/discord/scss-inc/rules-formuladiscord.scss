@@ -16,6 +16,11 @@
   }
 }
 
+// hide the guild separator (line between home icon and servers)
+.guildSeparator_dcb3cc {
+  display: none;
+}
+
 // collapsed channel group names
 .sidebar_ded4b5 .containerDefault__23a29 .wrapper__9c483.collapsed__8fe3c .name__590d6 {
   color: var(--channel-color);
@@ -30,7 +35,7 @@
 // position the mobile phone icon in the member list
 #app-mount .wrapper_edb6e0 foreignObject[mask*=mobile]:after {
   opacity: .9;
-  top: 52%;
+  top: 48%;
   left: 33px;
   right: 0;
 }

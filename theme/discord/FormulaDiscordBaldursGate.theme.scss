@@ -1,0 +1,17 @@
+// this is the file that will actually be installed in discord
+
+// include project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set BetterDiscord theme info
+/**
+ * @name Baldur's Gate 3
+ * @description Baldur's Gate 3 theme with gold accents.
+ * @author #{$author}
+ * @version #{$version}
+ * @source #{$source}
+ * @website #{$website}
+*/
+
+// include the compiled theme
+@import url("https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscordBaldursGate.compiled.css");

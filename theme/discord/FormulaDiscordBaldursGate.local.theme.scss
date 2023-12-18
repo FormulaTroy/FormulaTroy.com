@@ -1,0 +1,18 @@
+// this is the file that will actually be installed in discord
+
+// include project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set BetterDiscord theme info
+/**
+ * @name Baldur's Gate 3 LOCAL
+ * @description Baldur's Gate 3 theme with gold accents.
+ * @author #{$author}
+ * @version #{$version}
+ * @source #{$source}
+ * @website #{$website}
+*/
+
+// include the UN-compiled theme! compile and prepros->output it to Discord theme directory
+// mirrors the compiled version, but doesn't wait for GitHub pages deployment
+@import 'FormulaDiscordBaldursGate.scss';

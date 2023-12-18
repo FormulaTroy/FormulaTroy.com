@@ -16,10 +16,12 @@
 // define theme-specific variables
 :root {
   --main-color: #a80f3a;
-  // PRODUCTION
-  // --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
-  // DEV
-  --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
+  --hover-color: #da1b51;
+  --background-shading: 50%;
+  // production
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
+  // dev
+  // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
 }
 
 // define theme-specific css rules

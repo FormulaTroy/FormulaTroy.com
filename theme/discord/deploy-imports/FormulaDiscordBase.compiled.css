@@ -127,6 +127,10 @@
   opacity: 0.35;
 }
 
+.guildSeparator_dcb3cc {
+  display: none;
+}
+
 .sidebar_ded4b5 .containerDefault__23a29 .wrapper__9c483.collapsed__8fe3c .name__590d6 {
   color: var(--channel-color);
 }
@@ -138,7 +142,7 @@
 
 #app-mount .wrapper_edb6e0 foreignObject[mask*=mobile]:after {
   opacity: 0.9;
-  top: 52%;
+  top: 48%;
   left: 33px;
   right: 0;
 }
@@ -169,7 +173,7 @@
 
 :root {
   --main-color: #2a71ff;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.5831022216");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.1825963069");
 }
 
 .container_b2ce9c {
