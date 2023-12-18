@@ -152,7 +152,7 @@
   text-shadow: 0 3px 10px var(--main-color);
 }
 .typeWindows__5fa63 > .wordmark__0d178:after {
-  content: "0.1";
+  content: "1.0";
 }
 
 .theme-dark .container_ca50b9:before {
@@ -160,13 +160,12 @@
 }
 
 .theme-dark .container_ca50b9:after {
-  content: "v0.1";
+  content: "v1.0";
 }
 
 :root {
   --main-color: #2a71ff;
-  --main-color: pink;
-  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.3107844299");
+  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.165904253");
 }
 
 .container_b2ce9c {

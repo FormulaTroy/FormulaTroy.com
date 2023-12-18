@@ -1,5 +1,8 @@
 // global FormulaDiscord css rules used by all themes
 
+// include project-level variables
+@import 'vars-project.scss';
+
 // channel group names in left sidebar
 .name__590d6 {
   font-weight: 900;
