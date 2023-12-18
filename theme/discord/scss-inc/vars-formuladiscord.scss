@@ -1,16 +1,21 @@
 // global FormulaDiscord variables used by all themes
 :root {
 
+  // type
+  --main-font: 'Roboto', Helvetica, Arial, sans-serif;
+
   // sidebars
   --channels-width: 240px;
-  --channel-color: rgba(255, 255, 255, 0.6);
-  --muted-color: rgba(255, 255, 255, 0.3);
+  --channel-color: rgba(255, 255, 255, 0.5);
+  --muted-color: rgba(255, 255, 255, 0.2);
 
   // avatar status color
-  --idle-color: #c7c7c7;
-  --rs-idle-color: #c7c7c7;
-  --dnd-color: #b82121;
-  --rs-dnd-color: #b82121;
+  --online-color: #03c46d;
+  --rs-online-color: #03c46d;
+  --idle-color: #c4c4c4;
+  --rs-idle-color: #c4c4c4;
+  --dnd-color: #690505;
+  --rs-dnd-color: #690505;
   --offline-color: #313131;
   --rs-offline-color: #313131;
 

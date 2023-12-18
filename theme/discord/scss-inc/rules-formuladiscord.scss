@@ -53,14 +53,11 @@
     content: "#{$version}";
   }
 }
+
+// version info in footer
 .theme-dark .container_ca50b9:before {
   content: "FormulaDiscord";
 }
 .theme-dark .container_ca50b9:after {
   content: "v#{$version}";
 }
-// change the "ClearVision" text to say FormulaDiscord
-
-// make the scroll bar glow, primary color + shadow?
-
-// input field glows when active

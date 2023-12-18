@@ -1,0 +1,25 @@
+// include project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// include base theme imports
+@import 'scss-inc/css-extends.scss';
+
+// include base theme variables
+@import 'scss-inc/vars-base.scss';
+
+// include global FormulaDiscord variables
+@import 'scss-inc/vars-formuladiscord.scss';
+
+// include global FormulaDiscord css rules
+@import 'scss-inc/rules-formuladiscord.scss';
+
+// define theme-specific variables
+:root {
+  --main-color: #a80f3a;
+  // PRODUCTION
+  // --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
+  // DEV
+  --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
+}
+
+// define theme-specific css rules

@@ -1,5 +1,6 @@
 @import url("https://clearvision.github.io/ClearVision-v6/main.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --main-color: #2780e6;
   --hover-color: #1e63b3;
@@ -97,13 +98,16 @@
 }
 
 :root {
+  --main-font: "Roboto", Helvetica, Arial, sans-serif;
   --channels-width: 240px;
-  --channel-color: rgba(255, 255, 255, 0.6);
-  --muted-color: rgba(255, 255, 255, 0.3);
-  --idle-color: #c7c7c7;
-  --rs-idle-color: #c7c7c7;
-  --dnd-color: #b82121;
-  --rs-dnd-color: #b82121;
+  --channel-color: rgba(255, 255, 255, 0.5);
+  --muted-color: rgba(255, 255, 255, 0.2);
+  --online-color: #03c46d;
+  --rs-online-color: #03c46d;
+  --idle-color: #c4c4c4;
+  --rs-idle-color: #c4c4c4;
+  --dnd-color: #690505;
+  --rs-dnd-color: #690505;
   --offline-color: #313131;
   --rs-offline-color: #313131;
   --rs-small-spacing: 0px;
@@ -165,7 +169,7 @@
 
 :root {
   --main-color: #2a71ff;
-  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.165904253");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.5831022216");
 }
 
 .container_b2ce9c {
