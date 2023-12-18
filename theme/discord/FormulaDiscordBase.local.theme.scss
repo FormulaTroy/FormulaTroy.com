@@ -5,7 +5,7 @@
 
 // set BetterDiscord theme info
 /**
- * @name Dark Theme
+ * @name Dark Theme LOCAL
  * @description Base FormulaDiscord theme. Dark theme with blue accents.
  * @author #{$author}
  * @version #{$version}
@@ -13,6 +13,7 @@
  * @website #{$website}
 */
 
-// include the compiled theme
-@import url(https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscordBase.compiled.css);
+// include the UN-compiled theme! compile and prepros->output it to Discord theme directory
+// mirrors the compiled version, but doesn't wait for GitHub pages deployment
+@import 'FormulaDiscordBase.scss';
 

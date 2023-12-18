@@ -104,6 +104,8 @@
   --rs-idle-color: #c7c7c7;
   --dnd-color: #b82121;
   --rs-dnd-color: #b82121;
+  --offline-color: #313131;
+  --rs-offline-color: #313131;
   --rs-small-spacing: 0px;
   --rs-medium-spacing: 0px;
   --rs-large-spacing: 0px;
@@ -163,8 +165,8 @@
 
 :root {
   --main-color: #2a71ff;
-  --main-color: red;
-  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.5150617703");
+  --main-color: pink;
+  --background-image: url("https://formulatroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.3107844299");
 }
 
 .container_b2ce9c {

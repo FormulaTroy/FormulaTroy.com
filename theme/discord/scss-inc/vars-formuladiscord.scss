@@ -6,11 +6,15 @@
   --channel-color: rgba(255, 255, 255, 0.6);
   --muted-color: rgba(255, 255, 255, 0.3);
 
-  // avatar status
+  // avatar status color
   --idle-color: #c7c7c7;
   --rs-idle-color: #c7c7c7;
   --dnd-color: #b82121;
   --rs-dnd-color: #b82121;
+  --offline-color: #313131;
+  --rs-offline-color: #313131;
+
+  // avatar status shape
   --rs-small-spacing: 0px;
   --rs-medium-spacing: 0px;
   --rs-large-spacing: 0px;
