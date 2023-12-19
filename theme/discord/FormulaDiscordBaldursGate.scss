@@ -18,10 +18,7 @@
   --main-color: #ef773b;
   --hover-color: #a14b20;
   --background-shading: 50%;
-  // production
-  // --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=#{$cacheBreaker}");
-  // dev
-  --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=#{$cacheBreaker}");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=#{$cacheBreaker}");
 }
 
 // define theme-specific css rules

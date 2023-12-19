@@ -8,12 +8,33 @@
   --danger-color: #982929; // danger accent color (hex, rgb or hsl) [default: #982929]
   --url-color: var(--main-color); // the color of url links [default: var(--main-color)]
 
-  // status colors
+  // status colors (+ radial status colors)
   --online-color: #43b581; // online status color (hex, rgb or hsl) [default: #43b581]
+  --rs-online-color: #43b581; // color for online status
   --idle-color: #faa61a; // idle status color (hex, rgb or hsl) [default: #faa61a]
+  --rs-idle-color: #faa61a; // color for idle status
   --dnd-color: #982929; // dnd status color (hex, rgb or hsl) [default: #982929]
+  --rs-dnd-color: #f04747; // color for dnd status
   --streaming-color: #593695; // streaming status color (hex, rgb or hsl) [default: #593695]
+  --rs-streaming-color: #643da7; // color for streaming status
   --offline-color: #808080; // offline/invisible status color (hex, rgb or hsl) [default: #808080]
+  --rs-offline-color: #636b75; // color for offline status
+  --rs-invisible-color: #747f8d; // color for invisible status - note: this will only show for your own invisibility
+
+  // radial status shape and size
+  --rs-avatar-shape: 50%; // 50% for round - 0% for square
+
+  --rs-small-spacing: 2px; // gap between avatar and status for members list/dms | must end in px
+  --rs-medium-spacing: 3px; // gap between avatar and status for user popout | must end in px
+  --rs-large-spacing: 4px; // gap between avatar and status for user profiles | must end in px
+
+  --rs-small-width: 1px; // thickness of status border for members list/dms | must end in px
+  --rs-medium-width: 2px; // thickness of status border for user popout | must end in px
+  --rs-large-width: 3px; // thickness of status border for user profile | must end in px
+
+  // phone status
+  --rs-phone-visible: block; // visibility of the phone icon next to a users avatar. | block = visible | none = hidden
+  --rs-phone-color: var(--rs-online-color); // color of the ring and phone icon when a user is on their phone |
 
   // general
   --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif; // main font for app (font must be installed) [default: gg sans, helvetica neue, helvetica, arial, sans-serif]
@@ -98,26 +119,5 @@
   --bd-blue: var(--main-color); // betterdiscord main color [default: var(--main-color)]
   --bd-blue-hover: var(--hover-color); // betterdiscord hover color [default: var(--hover-color)]
   --bd-blue-active: var(--hover-color); // betterdiscord active color [default: var(--hover-color)]
-
-  // radial status
-  --rs-small-spacing: 2px; // gap between avatar and status for members list/dms | must end in px
-  --rs-medium-spacing: 3px; // gap between avatar and status for user popout | must end in px
-  --rs-large-spacing: 4px; // gap between avatar and status for user profiles | must end in px
-
-  --rs-small-width: 2px; // thickness of status border for members list/dms | must end in px
-  --rs-medium-width: 3px; // thickness of status border for user popout | must end in px
-  --rs-large-width: 4px; // thickness of status border for user profile | must end in px
-
-  --rs-avatar-shape: 50%; // 50% for round - 0% for square
-
-  --rs-online-color: #43b581; // color for online status
-  --rs-idle-color: #faa61a; // color for idle status
-  --rs-dnd-color: #f04747; // color for dnd status
-  --rs-offline-color: #636b75; // color for offline status
-  --rs-streaming-color: #643da7; // color for streaming status
-  --rs-invisible-color: #747f8d; // color for invisible status - note: this will only show for your own invisibility
-  --rs-phone-color: var(--rs-online-color); // color of the ring and phone icon when a user is on their phone |
-
-  --rs-phone-visible: block; // visibility of the phone icon next to a users avatar. | block = visible | none = hidden
 
 }

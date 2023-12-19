@@ -8,10 +8,25 @@
   --danger-color: #982929;
   --url-color: var(--main-color);
   --online-color: #43b581;
+  --rs-online-color: #43b581;
   --idle-color: #faa61a;
+  --rs-idle-color: #faa61a;
   --dnd-color: #982929;
+  --rs-dnd-color: #f04747;
   --streaming-color: #593695;
+  --rs-streaming-color: #643da7;
   --offline-color: #808080;
+  --rs-offline-color: #636b75;
+  --rs-invisible-color: #747f8d;
+  --rs-avatar-shape: 50%;
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 3px;
+  --rs-large-spacing: 4px;
+  --rs-small-width: 1px;
+  --rs-medium-width: 2px;
+  --rs-large-width: 3px;
+  --rs-phone-visible: block;
+  --rs-phone-color: var(--rs-online-color);
   --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
   --text-normal: rgb(220, 221, 222);
@@ -80,21 +95,6 @@
   --bd-blue: var(--main-color);
   --bd-blue-hover: var(--hover-color);
   --bd-blue-active: var(--hover-color);
-  --rs-small-spacing: 2px;
-  --rs-medium-spacing: 3px;
-  --rs-large-spacing: 4px;
-  --rs-small-width: 2px;
-  --rs-medium-width: 3px;
-  --rs-large-width: 4px;
-  --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
-  --rs-invisible-color: #747f8d;
-  --rs-phone-color: var(--rs-online-color);
-  --rs-phone-visible: block;
 }
 
 :root {
@@ -127,17 +127,65 @@
   opacity: 0.35;
 }
 
-.guildSeparator_dcb3cc {
-  display: none;
-}
-
 .sidebar_ded4b5 .containerDefault__23a29 .wrapper__9c483.collapsed__8fe3c .name__590d6 {
   color: var(--channel-color);
 }
 
-.members__9f47b .membersGroup__85843:before,
-.members__9f47b .membersGroup__85843:after {
-  background: none;
+.guildSeparator_dcb3cc {
+  -webkit-box-shadow: 0 0 10px var(--main-color);
+          box-shadow: 0 0 10px var(--main-color);
+  background-color: var(--main-color);
+  height: 2px;
+}
+
+.sectionDivider__68d2a {
+  display: none;
+}
+
+.spoilerContent__37bfa {
+  -webkit-box-shadow: 0 0 16px 0px var(--main-color);
+          box-shadow: 0 0 16px 0px var(--main-color);
+}
+
+.channelTextArea__56a36:focus-within {
+  -webkit-box-shadow: 0 0 16px 0px var(--main-color);
+          box-shadow: 0 0 16px 0px var(--main-color);
+}
+
+.wrapper_edb6e0[aria-label*=Online i],
+.avatarWrapper[data-status=online] .wrapper_edb6e0 {
+  -webkit-box-shadow: 0 0 10px var(--rs-online-color);
+          box-shadow: 0 0 10px var(--rs-online-color);
+}
+
+.wrapper_edb6e0[aria-label*=Idle i],
+.avatarWrapper[data-status=idle] .wrapper_edb6e0 {
+  -webkit-box-shadow: 0 0 5px var(--rs-idle-color);
+          box-shadow: 0 0 5px var(--rs-idle-color);
+}
+
+.wrapper_edb6e0[aria-label*="Do Not disturb" i],
+.avatarWrapper[data-status=dnd] .wrapper_edb6e0 {
+  -webkit-box-shadow: 0 0 10px var(--rs-dnd-color);
+          box-shadow: 0 0 10px var(--rs-dnd-color);
+}
+
+.wrapper_edb6e0[aria-label*=Streaming i],
+.avatarWrapper[data-status=streaming] .wrapper_edb6e0 {
+  -webkit-box-shadow: 0 0 10px var(--rs-streaming-color);
+          box-shadow: 0 0 10px var(--rs-streaming-color);
+}
+
+.wrapper_edb6e0[aria-label*=Invisible i],
+.avatarWrapper[data-status=invisible] .wrapper_edb6e0 {
+  -webkit-box-shadow: 0 0 5px var(--rs-invisible-color);
+          box-shadow: 0 0 5px var(--rs-invisible-color);
+}
+
+.wrapper_edb6e0[aria-label*=Offline i],
+.avatarWrapper[data-status=offline] .wrapper_edb6e0 {
+  -webkit-box-shadow: 0 0 5px var(--rs-offline-color);
+          box-shadow: 0 0 5px var(--rs-offline-color);
 }
 
 #app-mount .wrapper_edb6e0 foreignObject[mask*=mobile]:after {
@@ -147,9 +195,11 @@
   right: 0;
 }
 
-.channelTextArea__56a36:focus-within {
-  -webkit-box-shadow: 0 0 16px 0px var(--main-color);
-          box-shadow: 0 0 16px 0px var(--main-color);
+.members__9f47b .membersGroup__85843 {
+  text-shadow: 0 0 10px var(--main-color);
+}
+.members__9f47b .membersGroup__85843:before, .members__9f47b .membersGroup__85843:after {
+  background: none;
 }
 
 .typeWindows__5fa63 .wordmark__0d178 > svg {
@@ -160,20 +210,20 @@
   text-shadow: 0 3px 10px var(--main-color);
 }
 .typeWindows__5fa63 > .wordmark__0d178:after {
-  content: "1.0";
+  content: "1.0.2";
 }
 
 .theme-dark .container_ca50b9:before {
-  content: "FormulaDiscord";
+  content: "";
 }
 
 .theme-dark .container_ca50b9:after {
-  content: "v1.0";
+  content: "";
 }
 
 :root {
   --main-color: #a80f3a;
   --hover-color: #da1b51;
   --background-shading: 50%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=0.3190076027");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=0.0624049894");
 }
