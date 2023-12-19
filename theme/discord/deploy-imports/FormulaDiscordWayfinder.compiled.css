@@ -222,8 +222,8 @@
 }
 
 :root {
-  --main-color: #a80f3a;
-  --hover-color: #da1b51;
-  --background-shading: 50%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=0.0683385571");
+  --main-color: #ae39dd;
+  --hover-color: #9917cc;
+  --background-shading: 20%;
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsWayfinder.png?cache=0.2071248394");
 }

@@ -1,0 +1,18 @@
+// this is the file that will actually be installed in discord
+
+// include project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set BetterDiscord theme info
+/**
+ * @name Wayfinder LOCAL
+ * @description Wayfinder theme with purple accents.
+ * @author #{$author}
+ * @version #{$version}
+ * @source #{$source}
+ * @website #{$website}
+*/
+
+// include the UN-compiled theme! compile and prepros->output it to Discord theme directory
+// mirrors the compiled version, but doesn't wait for GitHub pages deployment
+@import 'FormulaDiscordWayfinder.scss';

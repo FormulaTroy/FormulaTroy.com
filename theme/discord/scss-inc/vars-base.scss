@@ -23,11 +23,9 @@
 
   // radial status shape and size
   --rs-avatar-shape: 50%; // 50% for round - 0% for square
-
   --rs-small-spacing: 2px; // gap between avatar and status for members list/dms | must end in px
   --rs-medium-spacing: 3px; // gap between avatar and status for user popout | must end in px
   --rs-large-spacing: 4px; // gap between avatar and status for user profiles | must end in px
-
   --rs-small-width: 1px; // thickness of status border for members list/dms | must end in px
   --rs-medium-width: 2px; // thickness of status border for user popout | must end in px
   --rs-large-width: 3px; // thickness of status border for user profile | must end in px

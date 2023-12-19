@@ -54,7 +54,7 @@
 }
 .wrapper_edb6e0[aria-label*=Idle i],
 .avatarWrapper[data-status=idle] .wrapper_edb6e0 {
-  box-shadow: 0 0 5px var(--rs-idle-color);
+  box-shadow: 0 0 10px var(--rs-idle-color);
 }
 .wrapper_edb6e0[aria-label*="Do Not disturb" i],
 .avatarWrapper[data-status=dnd] .wrapper_edb6e0 {
@@ -83,7 +83,7 @@
 
 // member groups
 .members__9f47b .membersGroup__85843 {
-  text-shadow: 0 0 10px var(--main-color);
+  text-shadow: 0 0 5px var(--main-color);
 
   // gradient lines next to roles/online/offline groups
   &:before,

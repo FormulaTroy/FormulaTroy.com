@@ -1,0 +1,17 @@
+// this is the file that will actually be installed in discord
+
+// include project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set BetterDiscord theme info
+/**
+ * @name Wayfinder
+ * @description Wayfinder theme with red accents.
+ * @author #{$author}
+ * @version #{$version}
+ * @source #{$source}
+ * @website #{$website}
+*/
+
+// include the compiled theme
+@import url("https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscordWayfinder.compiled.css");
