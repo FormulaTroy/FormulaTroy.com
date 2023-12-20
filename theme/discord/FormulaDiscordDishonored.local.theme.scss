@@ -1,0 +1,20 @@
+// include sass project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set sass theme-level vars
+$themeMachineName: 'Dishonored';
+ $themeStringName: 'Dishonored 2';
+
+// set BetterDiscord theme info
+/**
+ * @name #{$themeStringName} LOCAL
+ * @description FormulaDiscord #{$themeStringName} theme.
+ * @author #{$author}
+ * @version #{$version}
+ * @source #{$source}
+ * @website #{$website}
+*/
+
+// include the UN-compiled theme! compile and prepros->output it to Discord theme directory
+// mirrors the compiled version, but doesn't wait for GitHub pages deployment
+@import 'FormulaDiscordDishonored.scss';

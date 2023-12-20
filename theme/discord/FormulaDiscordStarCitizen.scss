@@ -2,8 +2,8 @@
 @import 'scss-inc/vars-project.scss';
 
 // set sass theme-level vars
-$themeMachineName: 'Cyberpunk';
- $themeStringName: 'Cyberpunk 2077';
+$themeMachineName: 'StarCitizen';
+ $themeStringName: 'Star Citizen';
 
 // include base theme imports
 @import 'scss-inc/css-extends.scss';
@@ -19,11 +19,9 @@ $themeMachineName: 'Cyberpunk';
 
 // define theme-specific variables
 :root {
-  --main-color: #e03484;
-  --hover-color: #f54597;
-  --background-shading: 45%;
-  --background-contrast: 105%;
-  --background-blur: 1px;
+  --main-color: #4eafe7;
+  --hover-color: #61bff5;
+  --background-shading: 70%;
   // production (GitHub.io)
   --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
   // rapid test (FormulaTroy.com)

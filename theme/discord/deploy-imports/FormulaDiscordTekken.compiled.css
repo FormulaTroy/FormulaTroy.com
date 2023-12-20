@@ -214,7 +214,7 @@
 }
 
 .theme-dark .container_ca50b9:before {
-  content: "Cyberpunk 2077";
+  content: "Tekken 8";
 }
 
 .theme-dark .container_ca50b9:after {
@@ -222,10 +222,8 @@
 }
 
 :root {
-  --main-color: #e03484;
-  --hover-color: #f54597;
-  --background-shading: 45%;
-  --background-contrast: 105%;
-  --background-blur: 1px;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsCyberpunk.png?cache=0.7656507228");
+  --main-color: #a80f3a;
+  --hover-color: #da1b51;
+  --background-shading: 85%;
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsTekken.png?cache=0.7264751126");
 }
