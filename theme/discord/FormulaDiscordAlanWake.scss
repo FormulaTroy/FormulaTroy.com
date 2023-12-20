@@ -13,15 +13,22 @@
 // include global FormulaDiscord css rules
 @import 'scss-inc/rules-formuladiscord.scss';
 
+// set sass theme vars (local to this file)
+$themeMachineName: 'AlanWake';
+ $themeStringName: 'Alan Wake II';
+
 // define theme-specific variables
 :root {
   --main-color: #a80f3a;
   --hover-color: #da1b51;
   --background-shading: 50%;
   // production
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
   // dev
-  // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=#{$cacheBreaker}");
+  // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
 }
 
 // define theme-specific css rules
+// which.right-now {
+//   is: none;
+// }

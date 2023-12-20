@@ -3,10 +3,14 @@
 // include project-level variables
 @import 'scss-inc/vars-project.scss';
 
+// set sass theme vars (local to this file)
+$themeMachineName: 'AlanWake';
+ $themeStringName: 'Alan Wake II';
+
 // set BetterDiscord theme info
 /**
- * @name Alan Wake LOCAL
- * @description Alan Wake II theme with red accents.
+ * @name #{$themeStringName} LOCAL
+ * @description FormulaDiscord #{$themeStringName} theme.
  * @author #{$author}
  * @version #{$version}
  * @source #{$source}

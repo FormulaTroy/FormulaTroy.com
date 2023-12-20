@@ -210,7 +210,7 @@
   text-shadow: 0 3px 10px var(--main-color);
 }
 .typeWindows__5fa63 > .wordmark__0d178:after {
-  content: "1.0.2";
+  content: "1.0.3";
 }
 
 .theme-dark .container_ca50b9:before {
@@ -225,5 +225,5 @@
   --main-color: #ef773b;
   --hover-color: #a14b20;
   --background-shading: 50%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=0.2000693177");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=0.085528749");
 }

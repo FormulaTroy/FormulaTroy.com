@@ -3,10 +3,14 @@
 // include project-level variables
 @import 'scss-inc/vars-project.scss';
 
+// set theme vars (local to this file)
+$themeMachineName: 'AlanWake';
+ $themeStringName: 'Alan Wake II';
+
 // set BetterDiscord theme info
 /**
- * @name Alan Wake
- * @description Alan Wake II theme with red accents.
+ * @name #{$themeStringName}
+ * @description FormulaDiscord #{$themeStringName} theme.
  * @author #{$author}
  * @version #{$version}
  * @source #{$source}
@@ -14,4 +18,4 @@
 */
 
 // include the compiled theme
-@import url("https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscordAlanWake.compiled.css");
+@import url("https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscord#{$themeMachineName}.compiled.css");

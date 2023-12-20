@@ -210,7 +210,7 @@
   text-shadow: 0 3px 10px var(--main-color);
 }
 .typeWindows__5fa63 > .wordmark__0d178:after {
-  content: "1.0.2";
+  content: "1.0.3";
 }
 
 .theme-dark .container_ca50b9:before {
@@ -223,7 +223,7 @@
 
 :root {
   --main-color: #2a71ff;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.0778980376");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.8519076492");
 }
 
 .container_b2ce9c {
