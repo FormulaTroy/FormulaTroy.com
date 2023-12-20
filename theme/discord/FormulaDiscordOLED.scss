@@ -1,0 +1,31 @@
+// include sass project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set sass theme-level vars
+$themeMachineName: 'OLED';
+ $themeStringName: 'OLED Black Ink';
+
+// include base theme imports
+@import 'scss-inc/css-extends.scss';
+
+// include base theme variables
+@import 'scss-inc/vars-base.scss';
+
+// include global FormulaDiscord variables
+@import 'scss-inc/vars-formuladiscord.scss';
+
+// include global FormulaDiscord css rules
+@import 'scss-inc/rules-formuladiscord.scss';
+
+// define theme-specific variables
+:root {
+  --main-color: #92407f;
+  --hover-color: #744468;
+  --background-image: url();
+  --background-color: #000;
+}
+
+// define theme-specific css rules
+// which.right-now {
+//   is: none;
+// }

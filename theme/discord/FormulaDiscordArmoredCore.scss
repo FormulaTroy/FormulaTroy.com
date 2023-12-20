@@ -1,0 +1,34 @@
+// include sass project-level variables
+@import 'scss-inc/vars-project.scss';
+
+// set sass theme-level vars
+$themeMachineName: 'ArmoredCore';
+ $themeStringName: 'Armored Core 6';
+
+// include base theme imports
+@import 'scss-inc/css-extends.scss';
+
+// include base theme variables
+@import 'scss-inc/vars-base.scss';
+
+// include global FormulaDiscord variables
+@import 'scss-inc/vars-formuladiscord.scss';
+
+// include global FormulaDiscord css rules
+@import 'scss-inc/rules-formuladiscord.scss';
+
+// define theme-specific variables
+:root {
+  --main-color: #d82558;
+  --hover-color: #b61845;
+  --background-shading: 75%;
+  // production (GitHub.io)
+  // --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
+  // rapid test (FormulaTroy.com)
+  --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
+}
+
+// define theme-specific css rules
+// which.right-now {
+//   is: none;
+// }
