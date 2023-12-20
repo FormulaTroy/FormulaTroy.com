@@ -1,9 +1,7 @@
-// this is the file that will actually be installed in discord
-
-// include project-level variables
+// include sass project-level variables
 @import 'scss-inc/vars-project.scss';
 
-// set sass theme vars (local to this file)
+// set sass theme-level vars
 $themeMachineName: 'AlanWake';
  $themeStringName: 'Alan Wake II';
 

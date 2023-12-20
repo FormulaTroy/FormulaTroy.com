@@ -1,5 +1,9 @@
-// include project-level variables
+// include sass project-level variables
 @import 'scss-inc/vars-project.scss';
+
+// set sass theme-level vars
+$themeMachineName: 'Base';
+ $themeStringName: 'Dark Mode';
 
 // include base theme imports
 @import 'scss-inc/css-extends.scss';
@@ -16,7 +20,11 @@
 // define theme-specific variables
 :root {
   --main-color: #2a71ff;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=#{$cacheBreaker}");
+  --background-shading: 40%;
+  // production (GitHub.io)
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
+  // rapid test (FormulaTroy.com)
+  // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
 }
 
 // define theme-specific css rules

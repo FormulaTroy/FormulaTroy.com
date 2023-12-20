@@ -1,5 +1,9 @@
-// include project-level variables
+// include sass project-level variables
 @import 'scss-inc/vars-project.scss';
+
+// set sass theme-level vars
+$themeMachineName: 'AlanWake';
+ $themeStringName: 'Alan Wake II';
 
 // include base theme imports
 @import 'scss-inc/css-extends.scss';
@@ -13,18 +17,14 @@
 // include global FormulaDiscord css rules
 @import 'scss-inc/rules-formuladiscord.scss';
 
-// set sass theme vars (local to this file)
-$themeMachineName: 'AlanWake';
- $themeStringName: 'Alan Wake II';
-
 // define theme-specific variables
 :root {
   --main-color: #a80f3a;
   --hover-color: #da1b51;
   --background-shading: 50%;
-  // production
+  // production (GitHub.io)
   --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
-  // dev
+  // rapid test (FormulaTroy.com)
   // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
 }
 

@@ -1,5 +1,9 @@
-// include project-level variables
+// include sass project-level variables
 @import 'scss-inc/vars-project.scss';
+
+// set sass theme-level vars
+$themeMachineName: 'BaldursGate';
+ $themeStringName: 'Baldur\'s Gate 3';
 
 // include base theme imports
 @import 'scss-inc/css-extends.scss';
@@ -18,7 +22,13 @@
   --main-color: #ef773b;
   --hover-color: #a14b20;
   --background-shading: 50%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=#{$cacheBreaker}");
+  // production (GitHub.io)
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
+  // rapid test (FormulaTroy.com)
+  // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
 }
 
 // define theme-specific css rules
+// which.right-now {
+//   is: none;
+// }

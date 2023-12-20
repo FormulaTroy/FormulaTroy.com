@@ -1,6 +1,6 @@
 // global FormulaDiscord css rules used by all themes
 
-// include project-level variables
+// include sass project-level variables
 @import 'vars-project.scss';
 
 //// left sidebar ////
@@ -110,10 +110,8 @@
 //// footer ////
 // version info in footer
 .theme-dark .container_ca50b9:before {
-  //content: "FormulaDiscord";
-  content: "";
+  content: $themeStringName;
 }
 .theme-dark .container_ca50b9:after {
-  //content: "v#{$version}";
-  content: "";
+  content: "v#{$version}";
 }

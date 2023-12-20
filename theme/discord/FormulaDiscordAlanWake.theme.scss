@@ -1,9 +1,7 @@
-// this is the file that will actually be installed in discord
-
-// include project-level variables
+// include sass project-level variables
 @import 'scss-inc/vars-project.scss';
 
-// set theme vars (local to this file)
+// set sass theme-level vars
 $themeMachineName: 'AlanWake';
  $themeStringName: 'Alan Wake II';
 
@@ -17,5 +15,5 @@ $themeMachineName: 'AlanWake';
  * @website #{$website}
 */
 
-// include the compiled theme
+// include the compiled theme css from GitHub
 @import url("https://formulatroy.github.io/FormulaTroy.com/theme/discord/deploy-imports/FormulaDiscord#{$themeMachineName}.compiled.css");

@@ -214,16 +214,16 @@
 }
 
 .theme-dark .container_ca50b9:before {
-  content: "";
+  content: "Baldur's Gate 3";
 }
 
 .theme-dark .container_ca50b9:after {
-  content: "";
+  content: "v1.0.3";
 }
 
 :root {
   --main-color: #ef773b;
   --hover-color: #a14b20;
   --background-shading: 50%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=0.085528749");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBaldursGate.png?cache=0.5925159773");
 }

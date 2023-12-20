@@ -214,16 +214,16 @@
 }
 
 .theme-dark .container_ca50b9:before {
-  content: "";
+  content: "Wayfinder";
 }
 
 .theme-dark .container_ca50b9:after {
-  content: "";
+  content: "v1.0.3";
 }
 
 :root {
-  --main-color: #ae39dd;
+  --main-color: #a33ccc;
   --hover-color: #9917cc;
   --background-shading: 20%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsWayfinder.png?cache=0.8975869031");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsWayfinder.png?cache=0.0519758681");
 }

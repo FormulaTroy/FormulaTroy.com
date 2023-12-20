@@ -1,5 +1,9 @@
-// include project-level variables
+// include sass project-level variables
 @import 'scss-inc/vars-project.scss';
+
+// set sass theme-level vars
+$themeMachineName: 'Wayfinder';
+ $themeStringName: $themeMachineName;
 
 // include base theme imports
 @import 'scss-inc/css-extends.scss';
@@ -15,13 +19,13 @@
 
 // define theme-specific variables
 :root {
-  --main-color: #ae39dd;
+  --main-color: #a33ccc;
   --hover-color: #9917cc;
   --background-shading: 20%;
-  // production
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsWayfinder.png?cache=#{$cacheBreaker}");
-  // dev
-  // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgroundsWayfinder.png?cache=#{$cacheBreaker}");
+  // production (GitHub.io)
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
+  // rapid test (FormulaTroy.com)
+  // --background-image: url("https://www.formulatroy.com/img/discord/DiscordBackgrounds#{$themeMachineName}.png?cache=#{$cacheBreaker}");
 }
 
 // define theme-specific css rules

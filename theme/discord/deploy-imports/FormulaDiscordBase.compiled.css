@@ -214,16 +214,17 @@
 }
 
 .theme-dark .container_ca50b9:before {
-  content: "";
+  content: "Dark Mode";
 }
 
 .theme-dark .container_ca50b9:after {
-  content: "";
+  content: "v1.0.3";
 }
 
 :root {
   --main-color: #2a71ff;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.8519076492");
+  --background-shading: 40%;
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsBase.png?cache=0.2098667183");
 }
 
 .container_b2ce9c {
