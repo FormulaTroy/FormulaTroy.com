@@ -210,7 +210,7 @@
   text-shadow: 0 3px 10px var(--main-color);
 }
 .typeWindows__5fa63 > .wordmark__0d178:after {
-  content: "1.0.4";
+  content: "1.1.0";
 }
 
 .theme-dark .container_ca50b9:before {
@@ -218,12 +218,12 @@
 }
 
 .theme-dark .container_ca50b9:after {
-  content: "v1.0.4";
+  content: "v1.1.0";
 }
 
 :root {
   --main-color: #a80f3a;
   --hover-color: #da1b51;
   --background-shading: 50%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=0.9014637238");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsAlanWake.png?cache=0.7647897647");
 }

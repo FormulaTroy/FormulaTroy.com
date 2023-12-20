@@ -210,7 +210,7 @@
   text-shadow: 0 3px 10px var(--main-color);
 }
 .typeWindows__5fa63 > .wordmark__0d178:after {
-  content: "1.0.4";
+  content: "1.1.0";
 }
 
 .theme-dark .container_ca50b9:before {
@@ -218,12 +218,12 @@
 }
 
 .theme-dark .container_ca50b9:after {
-  content: "v1.0.4";
+  content: "v1.1.0";
 }
 
 :root {
   --main-color: #44bba1;
   --hover-color: #53c0a8;
   --background-shading: 0%;
-  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsDishonored.png?cache=0.4992386595");
+  --background-image: url("https://formulatroy.github.io/FormulaTroy.com/img/discord/DiscordBackgroundsDishonored.png?cache=0.4728172539");
 }
