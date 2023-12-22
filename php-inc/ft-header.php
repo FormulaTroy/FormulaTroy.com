@@ -42,9 +42,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuThemes" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-palette"></i> Themes</a>
               <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuThemes">
+                <li><a class="dropdown-item" href="/discord"><i class="bi bi-discord"></i> Discord Themes</a></li>
                 <li><a class="dropdown-item" href="/gc-dark"><i class="bi bi-calendar3"></i> Google Calendar Dark Mode</a></li>
                 <li><a class="dropdown-item" href="/gd-dark"><i class="bi bi-file-earmark-text"></i> Google Docs Dark Mode</a></li>
-                <li><a class="dropdown-item disabled" href="#"><i class="bi bi-discord"></i> Discord Themes (WIP)</a></li>
                 <li><a class="dropdown-item disabled" href="#"><i class="bi bi-steam"></i> Steam Deck Theme (WIP)</a></li>
               </ul>
             </li>

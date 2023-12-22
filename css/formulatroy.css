@@ -8,7 +8,7 @@
   --ftlight: #dedede;
   --ftwhite: #fff;
   --ftblue: #2a71ff;
-  --ftorange: #ff5500;
+  --ftorange: #e75c16;
 
   /* Override Bootstrap Vars */
   --bs-body-bg: var(--ftblack);
@@ -141,17 +141,27 @@ nav {
 .ft-html-badge {
   color: #cf6246;
 }
-.ft-css-badge {
-  color: #3595cf;
-}
 .ft-scss-badge {
   color: #ce679a;
+}
+.ft-css-badge {
+  color: #3595cf;
 }
 .ft-exe-badge {
   color: #57ce5d;
 }
 
-/* Project Changelogs */
+/* Discord Page Styles */
+.btn-bd-colors {
+  background-color: #3a71c1;
+  border: 1px solid #3a71c1;
+}
+
+/* Project Changelogs & FAQs */
+.accordion-item {
+  max-width: 550px;
+}
+
 .accordion-button {
   padding: 10px 16px;
 }
