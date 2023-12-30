@@ -9,30 +9,34 @@ extends Node
 # Class Definition
 class_name GameManager
 
-# Variables
+### Variables
+# String
 var name = "Aven"
+# Integer
 var health = 100
+# Array
 var worlds = [1, "Lava", "Three"]
-var properties = {
-  name: "Aven",
-  level: 4
-}
-var v2 = Vector2(1, 2)
+# Dictonary
+var properties = {name: "Aven", level: 4}
+# Vector2
+var position = Vector2(1, 2)
 
-# Functions
+### Functions
+# No arguments
+func healthPack():
+  health += 25
+
+# With parameters
 func heal(amount):
   health += amount
 
 func drawSquare(size):
-  move_forward(size)
-  turn_right(90)
-  move_forward(size)
-  turn_right(90)
-  move_forward(size)
-  turn_right(90)
-  move_forward(size)
+  for i in range(4):
+    move_forward(size)
+    turn_right(90)
 
-# Logic Structures
+### Logic Structures
+# If/Then/Else If/Else
 if health = 100:
   print("Fully healed!")
 elif health >= 1:
@@ -40,12 +44,15 @@ elif health >= 1:
 else:
   print("Gonzo")
 
+# For Loop
 for i in range(20):
   print(i)
 
+# While Loop
 while someNumber != 0:
   someNumber -= 1
 
+# Match (Case/Switch)
 match x:
   1:
     print("It's one!")
@@ -54,13 +61,14 @@ match x:
   _:
     print("It's not 1 or 2.")
 
-# Deltas
+### Deltas
 # Multiply by frame time delta to make the function time-based
 # instead of frame-based, thus fps won't affect results
+var angular_speed = 4
 func _process(delta):
-  rotate(0.3 * delta)
+  rotate(angular_speed * delta)
 
-# Keywords
+### Keywords
 keywords {
   $NodePath: 'Shorthand for get_node("NodePath")',
   %UniqueNode: 'Shorthand for get_node("%UniqueNode")',
