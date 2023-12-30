@@ -1,5 +1,5 @@
 -- From: https://github.com/aseprite/Aseprite-Script-Examples/tree/main
--- @FormulaTroy changes: None
+-- @FormulaTroy changes: Disable JSON output
 ----------------------------------------------------------------------
 -- Export each tag into a different sprite sheet
 local spr = app.activeSprite
@@ -12,7 +12,8 @@ local msg = {"Do you want to export/overwrite the following files?"}
 
 for i, tag in ipairs(spr.tags) do
     local fn = path .. title .. '-' .. tag.name
-    table.insert(msg, '-' .. fn .. '.[png|json]')
+    --table.insert(msg, '-' .. fn .. '.[png|json]')
+    table.insert(msg, '-' .. fn .. '.png')
 end
 
 if app.alert {
@@ -29,8 +30,8 @@ for i, tag in ipairs(spr.tags) do
         ui = false,
         type = SpriteSheetType.HORIZONTAL,
         textureFilename = fn .. '.png',
-        dataFilename = fn .. '.json',
-        dataFormat = SpriteSheetDataFormat.JSON_ARRAY,
+        --dataFilename = fn .. '.json',
+        --dataFormat = SpriteSheetDataFormat.JSON_ARRAY,
         tag = tag.name,
         listLayers = false,
         listTags = false,
