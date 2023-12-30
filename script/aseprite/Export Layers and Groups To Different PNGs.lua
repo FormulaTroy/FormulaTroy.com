@@ -1,17 +1,11 @@
--- From: https://github.com/adamyounis/Aseprite-Tools/tree/main
--- @FormulaTroy changes: None
+-- From: https://github.com/adamyounis/Aseprite-Tools
+-- Which is from: https://github.com/PKGaspi/AsepriteScripts
+-- @FormulaTroy changes: Code formatting, not functionality
 ----------------------------------------------------------------------
---[[
-Description:
-A script to save all different layers in different .png files.
-Made by Gaspi.
-   - Itch.io: https://gaspi.itch.io/
-   - Twitter: @_Gaspi
-
-Groups mod by Adam Younis.
-   - itch.io https://uppon-hill.itch.io/
-   - Twitter: @AdamCYounis
---]] -- Auxiliar functions.
+-- Save all different layers in different .png files by Gaspi
+-- Layer groups mod by Adam Younis
+----------------------------------------------------------------------
+-- Auxiliar functions.
 function getPath(str, sep)
     -- Source: https://stackoverflow.com/questions/9102126/lua-return-directory-path-from-path
     sep = sep or '/'
@@ -19,10 +13,9 @@ function getPath(str, sep)
 end
 
 function getFileName(str, sep)
-    --[[ Sources:
-     - https://codereview.stackexchange.com/questions/90177/get-file-name-with-extension-and-get-only-extension
-     - https://stackoverflow.com/questions/18884396/extracting-filename-only-with-pattern-matching
-  --]]
+    -- Sources:
+    -- https://codereview.stackexchange.com/questions/90177/get-file-name-with-extension-and-get-only-extension
+    -- https://stackoverflow.com/questions/18884396/extracting-filename-only-with-pattern-matching
     str = str:match("^.+" .. sep .. "(.+)$")
     return str:match("(.+)%..+")
 end
