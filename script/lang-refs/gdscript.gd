@@ -1,5 +1,5 @@
 #######################################
-# Language Syntax Cheatsheet
+# Language Syntax Cheat Sheet
 # Godot Script / GDScript
 #######################################
 
@@ -16,10 +16,22 @@ var name = "Aven"
 var health = 100
 # Array
 var worlds = [1, "Lava", "Three"]
-# Dictonary
+# Dictionary / Associative Array
 var properties = {name: "Aven", level: 4}
-# Vector2
-var position = Vector2(1, 2)
+var currentLevel = properties["level"]
+properties["level"] += 1
+# Vector2 (X, Y)
+var position = Vector2(100, 250)
+# Type Hints (you define the type)
+var health: int = 100
+var name: string = "Aven"
+# Type Inference (let Godot infer the type)
+var health_max := 100
+var weapon := "Sword"
+
+# Type Conversions
+str(health)
+int(potionsToBuy)
 
 ### Functions
 # No arguments
@@ -40,13 +52,22 @@ func drawSquare(size):
 if health = 100:
   print("Fully healed!")
 elif health >= 1:
-  print("Current health: " + health + "/100")
+  print("Current health: " + str(health) + "/100")
 else:
   print("Gonzo")
 
-# For Loop
+# For Loop (Counted)
 for i in range(20):
   print(i)
+
+# For each item in array
+for world in worlds:
+  print(world)
+
+# For each key in dictionary, the loop index is the key
+for item_name in inventory
+  var item_count = inventory[item_name]
+  print(item_name + ": " + str(item_count))
 
 # While Loop
 while someNumber != 0:
