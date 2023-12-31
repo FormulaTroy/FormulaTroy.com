@@ -23,8 +23,9 @@ properties["level"] += 1
 # Vector2 (X, Y)
 var position = Vector2(100, 250)
 # Type Hints (you define the type)
+# List of types: https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html#basic-built-in-types
 var health: int = 100
-var name: string = "Aven"
+var name: String = "Aven"
 # Type Inference (let Godot infer the type)
 var health_max := 100
 var weapon := "Sword"
