@@ -48,6 +48,19 @@ func drawSquare(size):
     move_forward(size)
     turn_right(90)
 
+### Core game loop functions
+# When node is loaded
+func _ready():
+  pass
+
+# Every frame
+func _process(delta):
+  pass
+
+# Every physics tick
+func _physics_process(delta):
+  pass
+
 ### Logic Structures
 # If/Then/Else If/Else
 if health = 100:
