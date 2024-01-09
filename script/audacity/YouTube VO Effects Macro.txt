@@ -3,8 +3,5 @@ FilterCurve:f0="97.855512" f1="500" FilterLength="8191" InterpolateLin="0" Inter
 FilterCurve:Use_Preset="Factory Preset:Low rolloff for speech"
 NoiseGate:ATTACK="10" DECAY="100" GATE-FREQ="0" HOLD="50" LEVEL-REDUCTION="-24" MODE="Gate" STEREO-LINK="LinkStereo" THRESHOLD="-30"
 Limiter:gain-L="0" gain-R="0" hold="10" makeup="No" thresh="-3" type="HardLimit"
-Select:End="5" Mode="Set" RelativeTo="ProjectStart" Start="0"
-NoiseReduction:Use_Preset="<Current Settings>"
-SelectAll:
 TruncateSilence:Action="Truncate Detected Silence" Compress="50" Independent="0" Minimum="0.75" Threshold="-30" Truncate="0.5"
 ChangeTempo:Percentage="4" SBSMS="0"
