@@ -249,7 +249,7 @@
           <affixes />
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
-          <minOnTheSameItem>1</minOnTheSameItem>
+          <minOnTheSameItem>0</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
@@ -260,7 +260,7 @@
       <levelDependent>false</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>100</maxLvl>
-      <emphasized>false</emphasized>
+      <emphasized>true</emphasized>
       <nameOverride>Build Enabling Idols || SETUP: Mark Class &amp; General Idol Affixes You DO Want To See, Can Uncheck Idol Base Types ||</nameOverride>
     </Rule>
     <Rule>
@@ -402,6 +402,45 @@
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
       <nameOverride>Rare Shattering Targets &gt;=T3</nameOverride>
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>427</int>
+            <int>715</int>
+            <int>28</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>2</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>5</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride>MAIN LOOT HUNT || SETUP: Mark All Affixes (Class, Build, and Universal) You DO Want To See ||</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1970,45 +2009,6 @@
       <maxLvl>0</maxLvl>
       <emphasized>true</emphasized>
       <nameOverride />
-    </Rule>
-    <Rule>
-      <type>HIGHLIGHT</type>
-      <conditions>
-        <Condition i:type="AffixCondition">
-          <affixes>
-            <int>25</int>
-            <int>36</int>
-            <int>52</int>
-            <int>505</int>
-            <int>80</int>
-            <int>17</int>
-            <int>13</int>
-            <int>10</int>
-            <int>24</int>
-            <int>19</int>
-            <int>7</int>
-            <int>46</int>
-            <int>45</int>
-            <int>97</int>
-            <int>427</int>
-            <int>715</int>
-            <int>28</int>
-          </affixes>
-          <comparsion>ANY</comparsion>
-          <comparsionValue>5</comparsionValue>
-          <minOnTheSameItem>2</minOnTheSameItem>
-          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
-          <combinedComparsionValue>5</combinedComparsionValue>
-          <advanced>true</advanced>
-        </Condition>
-      </conditions>
-      <color>5</color>
-      <isEnabled>true</isEnabled>
-      <levelDependent>false</levelDependent>
-      <minLvl>0</minLvl>
-      <maxLvl>0</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>MAIN LOOT HUNT || SETUP: Mark All Affixes (Class, Build, and Universal) You DO Want To See ||</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
