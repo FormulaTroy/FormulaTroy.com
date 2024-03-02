@@ -1,14 +1,18 @@
 ﻿<ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <name>1 - FormulaFilter Template</name>
-  <filterIcon>23</filterIcon>
-  <filterIconColor>16</filterIconColor>
-  <description>EDIT "SETUP" rules before use! Unchecked = optional. Main Loot Hunt progression in monos: increase tier total to 6, then 7, then only if also Exalted rarity.</description>
-  <lastModifiedInVersion>1.0.1.3</lastModifiedInVersion>
+  <name>FormulaFilter - TheBirbStays</name>
+  <filterIcon>4</filterIcon>
+  <filterIconColor>10</filterIconColor>
+  <description>Build agnostic loot filter template. Fill out the rules marked "SETUP". Return back to the "Main Loot Hunt" rule to increase tier total # over time.</description>
+  <lastModifiedInVersion>1.0.1.0</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
   <rules>
     <Rule>
       <type>HIDE</type>
-      <conditions />
+      <conditions>
+        <Condition i:type="RarityCondition">
+          <rarity>NORMAL MAGIC RARE UNIQUE SET EXALTED</rarity>
+        </Condition>
+      </conditions>
       <color>0</color>
       <isEnabled>true</isEnabled>
       <levelDependent>false</levelDependent>
@@ -18,52 +22,7 @@
       <nameOverride />
     </Rule>
     <Rule>
-      <type>SHOW</type>
-      <conditions>
-        <Condition i:type="RarityCondition">
-          <rarity>NORMAL</rarity>
-        </Condition>
-      </conditions>
-      <color>0</color>
-      <isEnabled>true</isEnabled>
-      <levelDependent>true</levelDependent>
-      <minLvl>1</minLvl>
-      <maxLvl>10</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>all Normals (1-10)</nameOverride>
-    </Rule>
-    <Rule>
-      <type>SHOW</type>
-      <conditions>
-        <Condition i:type="RarityCondition">
-          <rarity>MAGIC</rarity>
-        </Condition>
-      </conditions>
-      <color>13</color>
-      <isEnabled>true</isEnabled>
-      <levelDependent>true</levelDependent>
-      <minLvl>1</minLvl>
-      <maxLvl>20</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>all Magics (1-20)</nameOverride>
-    </Rule>
-    <Rule>
-      <type>SHOW</type>
-      <conditions>
-        <Condition i:type="RarityCondition">
-          <rarity>RARE</rarity>
-        </Condition>
-      </conditions>
-      <color>3</color>
-      <isEnabled>true</isEnabled>
-      <levelDependent>true</levelDependent>
-      <minLvl>1</minLvl>
-      <maxLvl>35</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>all Rares (1-35)</nameOverride>
-    </Rule>
-    <Rule>
-      <type>SHOW</type>
+      <type>HIDE</type>
       <conditions>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -80,115 +39,8 @@
           <subTypes />
         </Condition>
       </conditions>
-      <color>14</color>
-      <isEnabled>true</isEnabled>
-      <levelDependent>true</levelDependent>
-      <minLvl>1</minLvl>
-      <maxLvl>40</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>all Idols (1-40)</nameOverride>
-    </Rule>
-    <Rule>
-      <type>SHOW</type>
-      <conditions>
-        <Condition i:type="AffixCondition">
-          <affixes>
-            <int>701</int>
-            <int>700</int>
-            <int>702</int>
-            <int>703</int>
-            <int>704</int>
-            <int>705</int>
-            <int>706</int>
-            <int>698</int>
-            <int>699</int>
-            <int>707</int>
-            <int>708</int>
-            <int>758</int>
-            <int>676</int>
-            <int>677</int>
-            <int>678</int>
-            <int>679</int>
-            <int>673</int>
-            <int>674</int>
-            <int>675</int>
-            <int>710</int>
-            <int>711</int>
-            <int>712</int>
-            <int>713</int>
-            <int>714</int>
-          </affixes>
-          <comparsion>ANY</comparsion>
-          <comparsionValue>0</comparsionValue>
-          <minOnTheSameItem>1</minOnTheSameItem>
-          <combinedComparsion>ANY</combinedComparsion>
-          <combinedComparsionValue>1</combinedComparsionValue>
-          <advanced>false</advanced>
-        </Condition>
-      </conditions>
       <color>0</color>
-      <isEnabled>false</isEnabled>
-      <levelDependent>false</levelDependent>
-      <minLvl>0</minLvl>
-      <maxLvl>0</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>all Experimental &amp; Personal Affixes (Optional)</nameOverride>
-    </Rule>
-    <Rule>
-      <type>HIGHLIGHT</type>
-      <conditions>
-        <Condition i:type="AffixCondition">
-          <affixes>
-            <int>28</int>
-          </affixes>
-          <comparsion>MORE_OR_EQUAL</comparsion>
-          <comparsionValue>3</comparsionValue>
-          <minOnTheSameItem>1</minOnTheSameItem>
-          <combinedComparsion>ANY</combinedComparsion>
-          <combinedComparsionValue>5</combinedComparsionValue>
-          <advanced>true</advanced>
-        </Condition>
-      </conditions>
-      <color>2</color>
       <isEnabled>true</isEnabled>
-      <levelDependent>true</levelDependent>
-      <minLvl>1</minLvl>
-      <maxLvl>40</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>Movement Speed Boots &gt;=T3 (1-40)</nameOverride>
-    </Rule>
-    <Rule>
-      <type>HIGHLIGHT</type>
-      <conditions>
-        <Condition i:type="AffixCondition">
-          <affixes>
-            <int>28</int>
-          </affixes>
-          <comparsion>MORE_OR_EQUAL</comparsion>
-          <comparsionValue>5</comparsionValue>
-          <minOnTheSameItem>1</minOnTheSameItem>
-          <combinedComparsion>ANY</combinedComparsion>
-          <combinedComparsionValue>5</combinedComparsionValue>
-          <advanced>true</advanced>
-        </Condition>
-      </conditions>
-      <color>2</color>
-      <isEnabled>true</isEnabled>
-      <levelDependent>true</levelDependent>
-      <minLvl>1</minLvl>
-      <maxLvl>55</maxLvl>
-      <emphasized>true</emphasized>
-      <nameOverride>Movement Speed Boots &gt;=T5 (1-55)</nameOverride>
-    </Rule>
-    <Rule>
-      <type>SHOW</type>
-      <conditions>
-        <Condition i:type="RarityCondition">
-          <rarity>EXALTED</rarity>
-        </Condition>
-      </conditions>
-      <color>0</color>
-      <isEnabled>false</isEnabled>
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
@@ -196,51 +48,34 @@
       <nameOverride />
     </Rule>
     <Rule>
-      <type>HIGHLIGHT</type>
+      <type>HIDE</type>
       <conditions>
         <Condition i:type="SubTypeCondition">
           <type>
-            <EquipmentType>IDOL_1x1_ETERRA</EquipmentType>
-            <EquipmentType>IDOL_1x1_LAGON</EquipmentType>
-            <EquipmentType>IDOL_2x1</EquipmentType>
-            <EquipmentType>IDOL_1x2</EquipmentType>
-            <EquipmentType>IDOL_3x1</EquipmentType>
-            <EquipmentType>IDOL_1x3</EquipmentType>
-            <EquipmentType>IDOL_4x1</EquipmentType>
-            <EquipmentType>IDOL_1x4</EquipmentType>
-            <EquipmentType>IDOL_2x2</EquipmentType>
+            <EquipmentType>ONE_HANDED_AXE</EquipmentType>
+            <EquipmentType>ONE_HANDED_MACES</EquipmentType>
+            <EquipmentType>ONE_HANDED_SCEPTRE</EquipmentType>
+            <EquipmentType>ONE_HANDED_SWORD</EquipmentType>
+            <EquipmentType>WAND</EquipmentType>
+            <EquipmentType>ONE_HANDED_DAGGER</EquipmentType>
+            <EquipmentType>TWO_HANDED_AXE</EquipmentType>
+            <EquipmentType>TWO_HANDED_MACE</EquipmentType>
+            <EquipmentType>TWO_HANDED_SPEAR</EquipmentType>
+            <EquipmentType>TWO_HANDED_STAFF</EquipmentType>
+            <EquipmentType>TWO_HANDED_SWORD</EquipmentType>
+            <EquipmentType>CATALYST</EquipmentType>
+            <EquipmentType>SHIELD</EquipmentType>
           </type>
           <subTypes />
         </Condition>
-        <Condition i:type="AffixCondition">
-          <affixes>
-            <int>105</int>
-            <int>430</int>
-            <int>107</int>
-            <int>111</int>
-            <int>112</int>
-            <int>113</int>
-            <int>114</int>
-            <int>115</int>
-            <int>116</int>
-            <int>117</int>
-            <int>124</int>
-          </affixes>
-          <comparsion>ANY</comparsion>
-          <comparsionValue>0</comparsionValue>
-          <minOnTheSameItem>1</minOnTheSameItem>
-          <combinedComparsion>ANY</combinedComparsion>
-          <combinedComparsionValue>1</combinedComparsionValue>
-          <advanced>false</advanced>
-        </Condition>
       </conditions>
-      <color>14</color>
+      <color>0</color>
       <isEnabled>true</isEnabled>
-      <levelDependent>true</levelDependent>
-      <minLvl>1</minLvl>
-      <maxLvl>60</maxLvl>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Universal Good Idols, Single Affix (1-60)</nameOverride>
+      <nameOverride>Unused Weapon Types || SETUP ||</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -294,20 +129,24 @@
       <conditions>
         <Condition i:type="SubTypeCondition">
           <type>
-            <EquipmentType>IDOL_1x1_ETERRA</EquipmentType>
-            <EquipmentType>IDOL_1x1_LAGON</EquipmentType>
-            <EquipmentType>IDOL_2x1</EquipmentType>
-            <EquipmentType>IDOL_1x2</EquipmentType>
-            <EquipmentType>IDOL_3x1</EquipmentType>
-            <EquipmentType>IDOL_1x3</EquipmentType>
-            <EquipmentType>IDOL_4x1</EquipmentType>
-            <EquipmentType>IDOL_1x4</EquipmentType>
             <EquipmentType>IDOL_2x2</EquipmentType>
+            <EquipmentType>IDOL_1x1_LAGON</EquipmentType>
+            <EquipmentType>IDOL_1x3</EquipmentType>
           </type>
           <subTypes />
         </Condition>
         <Condition i:type="AffixCondition">
-          <affixes />
+          <affixes>
+            <int>743</int>
+            <int>492</int>
+            <int>110</int>
+            <int>105</int>
+            <int>109</int>
+            <int>134</int>
+            <int>491</int>
+            <int>476</int>
+            <int>107</int>
+          </affixes>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>1</minOnTheSameItem>
@@ -322,7 +161,64 @@
       <minLvl>1</minLvl>
       <maxLvl>100</maxLvl>
       <emphasized>true</emphasized>
-      <nameOverride>Build Enabling Idols || SETUP: Mark Class &amp; General Idol Affixes You DO Want To See, Can Uncheck Idol Base Types ||</nameOverride>
+      <nameOverride>Build Enabling Idols || SETUP ||</nameOverride>
+    </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="RarityCondition">
+          <rarity>UNIQUE</rarity>
+        </Condition>
+      </conditions>
+      <color>0</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>17</int>
+            <int>13</int>
+            <int>24</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+          </affixes>
+          <comparsion>MORE_OR_EQUAL</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>ANY</combinedComparsion>
+          <combinedComparsionValue>5</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+      </conditions>
+      <color>8</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride>Common Shattering Affix Targets</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -343,16 +239,631 @@
             <int>46</int>
             <int>45</int>
             <int>97</int>
-            <int>427</int>
-            <int>715</int>
             <int>28</int>
-            <int>50</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>3</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>RING</EquipmentType>
+          </type>
+          <subTypes>
+            <int>8</int>
+            <int>1</int>
+            <int>10</int>
+            <int>9</int>
+            <int>7</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
           </affixes>
           <comparsion>ANY</comparsion>
           <comparsionValue>5</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
-          <combinedComparsionValue>5</combinedComparsionValue>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>AMULET</EquipmentType>
+          </type>
+          <subTypes>
+            <int>4</int>
+            <int>7</int>
+            <int>9</int>
+            <int>2</int>
+            <int>5</int>
+            <int>8</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+            <int>712</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>3</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>BELT</EquipmentType>
+          </type>
+          <subTypes>
+            <int>7</int>
+            <int>8</int>
+            <int>9</int>
+            <int>10</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>2</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>RELIC</EquipmentType>
+          </type>
+          <subTypes>
+            <int>55</int>
+            <int>50</int>
+            <int>49</int>
+            <int>53</int>
+            <int>54</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+            <int>679</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>3</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>BOOTS</EquipmentType>
+          </type>
+          <subTypes>
+            <int>6</int>
+            <int>10</int>
+            <int>11</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+            <int>710</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>2</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>GLOVES</EquipmentType>
+          </type>
+          <subTypes>
+            <int>12</int>
+            <int>7</int>
+            <int>11</int>
+            <int>6</int>
+            <int>5</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>3</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>BODY_ARMOR</EquipmentType>
+          </type>
+          <subTypes>
+            <int>69</int>
+            <int>68</int>
+            <int>50</int>
+            <int>51</int>
+            <int>66</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>3</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>HELMET</EquipmentType>
+          </type>
+          <subTypes>
+            <int>50</int>
+            <int>68</int>
+            <int>69</int>
+            <int>49</int>
+            <int>66</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>57</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>6</int>
+            <int>431</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>3</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>QUIVER</EquipmentType>
+          </type>
+          <subTypes>
+            <int>2</int>
+            <int>5</int>
+          </subTypes>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>432</int>
+            <int>672</int>
+            <int>6</int>
+            <int>5</int>
+            <int>56</int>
+            <int>57</int>
+            <int>20</int>
+            <int>26</int>
+            <int>64</int>
+            <int>643</int>
+            <int>431</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>3</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>BOW</EquipmentType>
+          </type>
+          <subTypes />
+        </Condition>
+        <Condition i:type="RarityCondition">
+          <rarity>EXALTED</rarity>
+        </Condition>
+      </conditions>
+      <color>5</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>28</int>
+            <int>503</int>
+            <int>672</int>
+            <int>5</int>
+            <int>27</int>
+            <int>26</int>
+            <int>86</int>
+            <int>485</int>
+            <int>727</int>
+            <int>728</int>
+            <int>739</int>
+            <int>432</int>
+            <int>719</int>
+            <int>431</int>
+            <int>50</int>
+            <int>6</int>
+            <int>31</int>
+            <int>1</int>
+            <int>64</int>
+            <int>643</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>2</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>8</combinedComparsionValue>
           <advanced>true</advanced>
         </Condition>
       </conditions>
@@ -362,61 +873,7 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>MAIN LOOT HUNT || SETUP: Mark All Affixes (Class, Build, and Universal) You DO Want To See ||</nameOverride>
-    </Rule>
-    <Rule>
-      <type>HIDE</type>
-      <conditions>
-        <Condition i:type="SubTypeCondition">
-          <type />
-          <subTypes />
-        </Condition>
-      </conditions>
-      <color>0</color>
-      <isEnabled>false</isEnabled>
-      <levelDependent>false</levelDependent>
-      <minLvl>0</minLvl>
-      <maxLvl>0</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>Unused Weapon Types (Optional) || SETUP: Mark Weapons &amp; Off-Hands You DON'T Want To See ||</nameOverride>
-    </Rule>
-    <Rule>
-      <type>HIDE</type>
-      <conditions>
-        <Condition i:type="ClassCondition">
-          <req>None</req>
-        </Condition>
-      </conditions>
-      <color>0</color>
-      <isEnabled>false</isEnabled>
-      <levelDependent>false</levelDependent>
-      <minLvl>0</minLvl>
-      <maxLvl>0</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride>Unused Classes (Optional) || SETUP: Mark Classes You DON'T Want To See Gear For ||</nameOverride>
-    </Rule>
-    <Rule>
-      <type>HIGHLIGHT</type>
-      <conditions>
-        <Condition i:type="AffixCondition">
-          <affixes>
-            <int>36</int>
-          </affixes>
-          <comparsion>ANY</comparsion>
-          <comparsionValue>0</comparsionValue>
-          <minOnTheSameItem>1</minOnTheSameItem>
-          <combinedComparsion>ANY</combinedComparsion>
-          <combinedComparsionValue>1</combinedComparsionValue>
-          <advanced>false</advanced>
-        </Condition>
-      </conditions>
-      <color>7</color>
-      <isEnabled>true</isEnabled>
-      <levelDependent>false</levelDependent>
-      <minLvl>0</minLvl>
-      <maxLvl>0</maxLvl>
-      <emphasized>true</emphasized>
-      <nameOverride>Rare Affixes &gt;=T1 || SETUP: Mark Rare Affixes You Never Want To Miss, ie +1 To Skill ||</nameOverride>
+      <nameOverride>MAIN LOOT HUNT || SETUP ||</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1987,25 +2444,45 @@
       <nameOverride />
     </Rule>
     <Rule>
-      <type>SHOW</type>
+      <type>HIGHLIGHT</type>
       <conditions>
-        <Condition i:type="RarityCondition">
-          <rarity>SET</rarity>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>36</int>
+            <int>728</int>
+            <int>739</int>
+            <int>719</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>0</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>ANY</combinedComparsion>
+          <combinedComparsionValue>1</combinedComparsionValue>
+          <advanced>false</advanced>
         </Condition>
       </conditions>
-      <color>0</color>
+      <color>7</color>
       <isEnabled>true</isEnabled>
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
-      <emphasized>false</emphasized>
-      <nameOverride />
+      <emphasized>true</emphasized>
+      <nameOverride>Very Rare Shattering Targets &gt;=T1 || SETUP ||</nameOverride>
     </Rule>
     <Rule>
-      <type>SHOW</type>
+      <type>HIGHLIGHT</type>
       <conditions>
-        <Condition i:type="RarityCondition">
-          <rarity>UNIQUE</rarity>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>623</int>
+            <int>580</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>0</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>ANY</combinedComparsion>
+          <combinedComparsionValue>1</combinedComparsionValue>
+          <advanced>false</advanced>
         </Condition>
       </conditions>
       <color>0</color>
@@ -2013,7 +2490,7 @@
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
-      <emphasized>false</emphasized>
+      <emphasized>true</emphasized>
       <nameOverride />
     </Rule>
   </rules>

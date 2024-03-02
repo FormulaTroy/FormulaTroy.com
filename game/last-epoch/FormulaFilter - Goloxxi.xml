@@ -1,7 +1,7 @@
 ﻿<ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <name>1 - FormulaFilter Template</name>
-  <filterIcon>23</filterIcon>
-  <filterIconColor>16</filterIconColor>
+  <name>FormulaFilter - Goloxxi</name>
+  <filterIcon>1</filterIcon>
+  <filterIconColor>8</filterIconColor>
   <description>EDIT "SETUP" rules before use! Unchecked = optional. Main Loot Hunt progression in monos: increase tier total to 6, then 7, then only if also Exalted rarity.</description>
   <lastModifiedInVersion>1.0.1.3</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
@@ -294,20 +294,20 @@
       <conditions>
         <Condition i:type="SubTypeCondition">
           <type>
-            <EquipmentType>IDOL_1x1_ETERRA</EquipmentType>
-            <EquipmentType>IDOL_1x1_LAGON</EquipmentType>
-            <EquipmentType>IDOL_2x1</EquipmentType>
-            <EquipmentType>IDOL_1x2</EquipmentType>
-            <EquipmentType>IDOL_3x1</EquipmentType>
             <EquipmentType>IDOL_1x3</EquipmentType>
-            <EquipmentType>IDOL_4x1</EquipmentType>
-            <EquipmentType>IDOL_1x4</EquipmentType>
-            <EquipmentType>IDOL_2x2</EquipmentType>
+            <EquipmentType>IDOL_1x2</EquipmentType>
           </type>
           <subTypes />
         </Condition>
         <Condition i:type="AffixCondition">
-          <affixes />
+          <affixes>
+            <int>287</int>
+            <int>313</int>
+            <int>257</int>
+            <int>105</int>
+            <int>107</int>
+            <int>124</int>
+          </affixes>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>1</minOnTheSameItem>
@@ -322,7 +322,7 @@
       <minLvl>1</minLvl>
       <maxLvl>100</maxLvl>
       <emphasized>true</emphasized>
-      <nameOverride>Build Enabling Idols || SETUP: Mark Class &amp; General Idol Affixes You DO Want To See, Can Uncheck Idol Base Types ||</nameOverride>
+      <nameOverride>Build Enabling Idols || Done</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -347,6 +347,31 @@
             <int>715</int>
             <int>28</int>
             <int>50</int>
+            <int>502</int>
+            <int>31</int>
+            <int>1</int>
+            <int>92</int>
+            <int>425</int>
+            <int>330</int>
+            <int>26</int>
+            <int>70</int>
+            <int>643</int>
+            <int>410</int>
+            <int>73</int>
+            <int>102</int>
+            <int>64</int>
+            <int>419</int>
+            <int>192</int>
+            <int>572</int>
+            <int>580</int>
+            <int>623</int>
+            <int>647</int>
+            <int>649</int>
+            <int>650</int>
+            <int>679</int>
+            <int>714</int>
+            <int>579</int>
+            <int>719</int>
           </affixes>
           <comparsion>ANY</comparsion>
           <comparsionValue>5</comparsionValue>
@@ -362,38 +387,41 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>MAIN LOOT HUNT || SETUP: Mark All Affixes (Class, Build, and Universal) You DO Want To See ||</nameOverride>
+      <nameOverride>MAIN LOOT HUNT || Done</nameOverride>
     </Rule>
     <Rule>
       <type>HIDE</type>
       <conditions>
         <Condition i:type="SubTypeCondition">
-          <type />
+          <type>
+            <EquipmentType>QUIVER</EquipmentType>
+            <EquipmentType>BOW</EquipmentType>
+          </type>
           <subTypes />
         </Condition>
       </conditions>
       <color>0</color>
-      <isEnabled>false</isEnabled>
+      <isEnabled>true</isEnabled>
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Unused Weapon Types (Optional) || SETUP: Mark Weapons &amp; Off-Hands You DON'T Want To See ||</nameOverride>
+      <nameOverride>Unused Weapon Types (Optional) || Done</nameOverride>
     </Rule>
     <Rule>
       <type>HIDE</type>
       <conditions>
         <Condition i:type="ClassCondition">
-          <req>None</req>
+          <req>Primalist Mage Sentinel</req>
         </Condition>
       </conditions>
       <color>0</color>
-      <isEnabled>false</isEnabled>
+      <isEnabled>true</isEnabled>
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Unused Classes (Optional) || SETUP: Mark Classes You DON'T Want To See Gear For ||</nameOverride>
+      <nameOverride>Unused Classes (Optional) || Done</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -401,6 +429,11 @@
         <Condition i:type="AffixCondition">
           <affixes>
             <int>36</int>
+            <int>572</int>
+            <int>623</int>
+            <int>580</int>
+            <int>579</int>
+            <int>647</int>
           </affixes>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
@@ -416,7 +449,7 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>true</emphasized>
-      <nameOverride>Rare Affixes &gt;=T1 || SETUP: Mark Rare Affixes You Never Want To Miss, ie +1 To Skill ||</nameOverride>
+      <nameOverride>Rare Affixes &gt;=T1 || Done</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1994,7 +2027,7 @@
         </Condition>
       </conditions>
       <color>0</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
