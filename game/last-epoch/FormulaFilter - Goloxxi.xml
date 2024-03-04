@@ -25,7 +25,7 @@
         </Condition>
       </conditions>
       <color>0</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>10</maxLvl>
@@ -40,7 +40,7 @@
         </Condition>
       </conditions>
       <color>13</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>20</maxLvl>
@@ -55,7 +55,7 @@
         </Condition>
       </conditions>
       <color>3</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>35</maxLvl>
@@ -81,7 +81,7 @@
         </Condition>
       </conditions>
       <color>14</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>40</maxLvl>
@@ -235,7 +235,7 @@
         </Condition>
       </conditions>
       <color>14</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>60</maxLvl>
@@ -375,9 +375,74 @@
           </affixes>
           <comparsion>ANY</comparsion>
           <comparsionValue>5</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
+          <combinedComparsionValue>3</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+      </conditions>
+      <color>3</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>true</levelDependent>
+      <minLvl>1</minLvl>
+      <maxLvl>30</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride>MAIN LOOT HUNT || Leveling</nameOverride>
+    </Rule>
+    <Rule>
+      <type>HIGHLIGHT</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>25</int>
+            <int>36</int>
+            <int>52</int>
+            <int>505</int>
+            <int>80</int>
+            <int>17</int>
+            <int>13</int>
+            <int>10</int>
+            <int>24</int>
+            <int>19</int>
+            <int>7</int>
+            <int>46</int>
+            <int>45</int>
+            <int>97</int>
+            <int>427</int>
+            <int>715</int>
+            <int>28</int>
+            <int>50</int>
+            <int>502</int>
+            <int>31</int>
+            <int>1</int>
+            <int>92</int>
+            <int>425</int>
+            <int>330</int>
+            <int>26</int>
+            <int>70</int>
+            <int>643</int>
+            <int>410</int>
+            <int>73</int>
+            <int>102</int>
+            <int>64</int>
+            <int>419</int>
+            <int>192</int>
+            <int>572</int>
+            <int>580</int>
+            <int>623</int>
+            <int>647</int>
+            <int>649</int>
+            <int>650</int>
+            <int>679</int>
+            <int>714</int>
+            <int>579</int>
+            <int>719</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>5</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
-          <combinedComparsionValue>5</combinedComparsionValue>
+          <combinedComparsionValue>6</combinedComparsionValue>
           <advanced>true</advanced>
         </Condition>
       </conditions>
@@ -396,6 +461,13 @@
           <type>
             <EquipmentType>QUIVER</EquipmentType>
             <EquipmentType>BOW</EquipmentType>
+            <EquipmentType>ONE_HANDED_SWORD</EquipmentType>
+            <EquipmentType>TWO_HANDED_SWORD</EquipmentType>
+            <EquipmentType>ONE_HANDED_MACES</EquipmentType>
+            <EquipmentType>ONE_HANDED_DAGGER</EquipmentType>
+            <EquipmentType>TWO_HANDED_SPEAR</EquipmentType>
+            <EquipmentType>TWO_HANDED_MACE</EquipmentType>
+            <EquipmentType>SHIELD</EquipmentType>
           </type>
           <subTypes />
         </Condition>
@@ -434,6 +506,7 @@
             <int>580</int>
             <int>579</int>
             <int>647</int>
+            <int>419</int>
           </affixes>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
@@ -2027,7 +2100,7 @@
         </Condition>
       </conditions>
       <color>0</color>
-      <isEnabled>false</isEnabled>
+      <isEnabled>true</isEnabled>
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>

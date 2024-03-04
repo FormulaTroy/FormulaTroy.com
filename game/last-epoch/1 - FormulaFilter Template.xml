@@ -2,7 +2,7 @@
   <name>1 - FormulaFilter Template</name>
   <filterIcon>23</filterIcon>
   <filterIconColor>16</filterIconColor>
-  <description>EDIT "SETUP" rules before use! Unchecked = optional. Main Loot Hunt progression in monos: increase tier total to 6, then 7, then only if also Exalted rarity.</description>
+  <description>EDIT "SETUP" rules before use! Unchecked = optional. Main Loot Hunt progression: increase tier total to 5, then 6, then 7, then only if also Exalted rarity.</description>
   <lastModifiedInVersion>1.0.1.3</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
   <rules>
@@ -28,9 +28,9 @@
       <isEnabled>true</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
-      <maxLvl>10</maxLvl>
+      <maxLvl>5</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>all Normals (1-10)</nameOverride>
+      <nameOverride>all Normals (1-5)</nameOverride>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -43,9 +43,9 @@
       <isEnabled>true</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
-      <maxLvl>20</maxLvl>
+      <maxLvl>12</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>all Magics (1-20)</nameOverride>
+      <nameOverride>all Magics (1-12)</nameOverride>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -58,9 +58,9 @@
       <isEnabled>true</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
-      <maxLvl>35</maxLvl>
+      <maxLvl>22</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>all Rares (1-35)</nameOverride>
+      <nameOverride>all Rares (1-22)</nameOverride>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -81,12 +81,12 @@
         </Condition>
       </conditions>
       <color>14</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent>true</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>40</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>all Idols (1-40)</nameOverride>
+      <nameOverride>all Idols (1-40) (Optional)</nameOverride>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -105,6 +105,28 @@
             <int>707</int>
             <int>708</int>
             <int>758</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>0</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>ANY</combinedComparsion>
+          <combinedComparsionValue>1</combinedComparsionValue>
+          <advanced>false</advanced>
+        </Condition>
+      </conditions>
+      <color>0</color>
+      <isEnabled>false</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride>all Personal Affixes From One-Shot Campaign Chests (Optional)</nameOverride>
+    </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
             <int>676</int>
             <int>677</int>
             <int>678</int>
@@ -132,7 +154,7 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>all Experimental &amp; Personal Affixes (Optional)</nameOverride>
+      <nameOverride>all Experimental Affixes From Exiled Mages (Optional)</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -343,8 +365,6 @@
             <int>46</int>
             <int>45</int>
             <int>97</int>
-            <int>427</int>
-            <int>715</int>
             <int>28</int>
             <int>50</int>
           </affixes>
@@ -352,7 +372,7 @@
           <comparsionValue>5</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
-          <combinedComparsionValue>5</combinedComparsionValue>
+          <combinedComparsionValue>4</combinedComparsionValue>
           <advanced>true</advanced>
         </Condition>
       </conditions>
@@ -416,7 +436,7 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>true</emphasized>
-      <nameOverride>Rare Affixes &gt;=T1 || SETUP: Mark Rare Affixes You Never Want To Miss, ie +1 To Skill ||</nameOverride>
+      <nameOverride>Rare Affixes &gt;=T1 (Optional) || SETUP: Mark Rare Affixes You Never Want To Miss, ie +1 To Skill ||</nameOverride>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
