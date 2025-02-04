@@ -20,7 +20,7 @@ include_once "php-inc/ft-header.php";
         <p>For example, if you want to go to bed but your PC is still going to be downloading something for 90 minutes, you can quickly set a 2 hour shutdown timer so that the machine will auto shutoff after the download would have completed.</p>
         <p>There is also an abort script included if you want to have the option to cancel any pending shutdown.</p>
         <p>These can be used with any software that can automatically launch applications, like keyboard macro drivers or an Elgato Stream Deck. They can also be run directly by double-clicking the files.</p>
-        <p><a href="https://formulatroy.github.io/FormulaTroy.com/script/shutdown/download/ShutdownMacroScriptLibrary-v1.2.zip" class="btn btn-primary"><i class="bi bi-download"></i> Download Scripts v1.2</a></p>
+        <p><a href="https://formulatroy.github.io/FormulaTroy.com/script/shutdown/download/ShutdownMacroScriptLibrary-v1.2.zip" class="btn btn-primary"><i class="bi bi-download"></i> Download Shutdown Scripts v1.2</a></p>
         <h4>Installation Steps</h4>
         <p><em>Using Stream Deck as an example</em></p>
         <p>

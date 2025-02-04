@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8QKSRXJ8R"></script>
-  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-V8QKSRXJ8R');</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php if ($pageTitle) {echo "$pageTitle | ";}?>FormulaTroy</title>
@@ -31,11 +29,10 @@
             <li class="nav-item dropdown">
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuPrograms" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-code-slash"></i> Programs</a>
               <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuPrograms">
+                <li><a class="dropdown-item disabled" href="#" target="_blank"><i class="bi bi-fuel-pump"></i> Racing Fuel Calculator (v3 WIP)</a></li>
                 <li><a class="dropdown-item" href="/shutdown"><i class="bi bi-power"></i> Shutdown Macros</a></li>
-                <li><a class="dropdown-item" href="https://formulatroy.com/app/racing-calculator/" target="_blank"><i class="bi bi-fuel-pump"></i> Racing Fuel Calculator</a></li>
                 <li><a class="dropdown-item" href="https://formulatroy.com/app/chess/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Chessboard</a></li>
                 <li><a class="dropdown-item" href="https://formulatroy.com/app/canasta/" target="_blank"><i class="bi bi-suit-spade-fill"></i> Canasta Score Tracker</a></li>
-                <li><a class="dropdown-item disabled" href="#"><i class="bi bi-eye"></i> 20-20-20 Timer (WIP)</a></li>
                 <li><a class="dropdown-item disabled" href="#"><i class="bi bi-controller"></i> Game Score Generator (WIP)</a></li>
               </ul>
             </li>
@@ -43,9 +40,7 @@
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuThemes" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-palette"></i> Themes</a>
               <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuThemes">
                 <li><a class="dropdown-item" href="/discord"><i class="bi bi-discord"></i> Discord Themes</a></li>
-                <li><a class="dropdown-item" href="/gc-dark"><i class="bi bi-calendar3"></i> Google Calendar Dark Mode</a></li>
                 <li><a class="dropdown-item" href="/gd-dark"><i class="bi bi-file-earmark-text"></i> Google Docs Dark Mode</a></li>
-                <li><a class="dropdown-item disabled" href="#"><i class="bi bi-steam"></i> Steam Deck Theme (WIP)</a></li>
               </ul>
             </li>
           </ul>

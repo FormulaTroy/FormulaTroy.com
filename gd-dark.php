@@ -25,12 +25,7 @@ include_once "php-inc/ft-header.php";
               target="_blank">Chrome</a> or <i class="bi bi-browser-firefox"></i> <a
               href="https://addons.mozilla.org/firefox/addon/styl-us/" rel="nofollow" target="_blank">Firefox</a>.</li>
           <li>Click this install button:<br>
-            <a href="https://formulatroy.github.io/FormulaTroy.com/theme/google-docs-dark/FTGoogleDocsDarkMode.user.css"
-              rel="nofollow" target="_blank"><img
-                src="https://camo.githubusercontent.com/38f4a54cadb545b720f0fe2084fdc24b0293b0c00171df5bc0a4be3c55587b72/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f496e7374616c6c2532306469726563746c79253230776974682d5374796c75732d3233386238622e737667"
-                alt="Install directly with Stylus"
-                data-canonical-src="https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg"
-                style="max-width: 100%;" target="_blank"></a>
+            <a href="https://formulatroy.github.io/FormulaTroy.com/theme/google-docs-dark/FTGoogleDocsDarkMode.user.css" class="btn btn-primary btn-sm btn-bd-colors"><i class="bi bi-download"></i> Install Stylus Theme</a>
           </li>
           <li>Click "Install Style" in the top left.</li>
         </ol>
@@ -45,7 +40,7 @@ include_once "php-inc/ft-header.php";
         <h4>Changelog</h4>
         <div class="accordion" id="changelog">
           <?php
-            LogChange(101, "v1.0.1 - December 16th, 2023", "<ul>
+          LogChange(101, "v1.0.1 - December 16th, 2023", "<ul>
                 <li>First Release Candidate.</li>
                 <li>Init global hue shifts with counters for media, icons, and background images.</li>
                 <li>Let there be darkness!</li>
