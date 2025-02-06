@@ -46,11 +46,11 @@ include_once "php-inc/ft-header.php";
   </div>
 
   <div class="container mt-5">
-    <div class="row row-cols-3">
+    <div class="row">
       <div class="col">
-      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOldProjects" aria-expanded="false" aria-controls="collapseOldProjects">
-        Toggle Discontinued Projects
-      </button>
+        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOldProjects" aria-expanded="false" aria-controls="collapseOldProjects">
+          Toggle Discontinued Projects
+        </button>
       </div>
     </div>
   </div>

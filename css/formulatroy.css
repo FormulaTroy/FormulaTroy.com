@@ -17,6 +17,10 @@
   --bs-dropdown-link-disabled-color: var(--ftgrey);
 }
 
+body {
+  overflow-y: scroll;
+}
+
 /* Nav Bar */
 nav {
   border-bottom: 1px solid var(--ftblue);
