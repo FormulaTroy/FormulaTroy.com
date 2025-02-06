@@ -22,8 +22,8 @@ include_once "php-inc/ft-header.php";
           <input type="radio" class="btn-check" name="calcType" value="calcSprint" id="calcSprint" autocomplete="off" checked>
           <label class="btn btn-outline-primary" for="calcSprint">Sprint Race</label>
 
-          <input type="radio" class="btn-check" name="calcType" value="calcEndurance" id="calcEndurance" autocomplete="off">
-          <label class="btn btn-outline-primary" for="calcEndurance">Endurance Race</label>
+          <input type="radio" class="btn-check" name="calcType" value="calcEndurance" id="calcEndurance" autocomplete="off" disabled>
+          <label class="btn btn-outline-secondary" for="calcEndurance">Endurance Race</label>
         </div>
       </div>
     </div>
@@ -109,16 +109,15 @@ include_once "php-inc/ft-header.php";
           </div>
 
         </form>
-
       </div>
 
+      <!-- calculator results -->
       <div class="col-12 col-lg-6">
-        <h4>Calculation Results</h4>
-        <p>Fill out all the inputs on the left to generate results</p>
+        <h4>Strategy Results</h4>
+        <div id="results"></div>
       </div>
 
     </div>
-
   </div>
 
 </main>

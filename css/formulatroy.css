@@ -33,7 +33,8 @@ nav {
   -webkit-transition: all .5s ease-in-out;
 }
 
-.navbar-brand img:hover, .navbar-brand img:focus {
+.navbar-brand img:hover,
+.navbar-brand img:focus {
   opacity: 0.6;
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -74,16 +75,41 @@ nav {
     -webkit-animation-fill-mode: both;
   }
 }
+
 @keyframes slideIn {
-  0% {transform: translateY(1rem);opacity: 0;}
-  100% {transform: translateY(0rem);opacity: 1;}
-  0% {transform: translateY(1rem);opacity: 0;}
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
 }
+
 @-webkit-keyframes slideIn {
-  0% {-webkit-transform: transform;-webkit-opacity: 0;}
-  100% {-webkit-transform: translateY(0);-webkit-opacity: 1;}
-  0% {-webkit-transform: translateY(1rem);-webkit-opacity: 0;}
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
 }
+
 .slideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
@@ -139,18 +165,23 @@ nav {
 .ft-php-badge {
   color: #a561fd;
 }
+
 .ft-js-badge {
   color: #e4d04b;
 }
+
 .ft-html-badge {
   color: #cf6246;
 }
+
 .ft-scss-badge {
   color: #ce679a;
 }
+
 .ft-css-badge {
   color: #3595cf;
 }
+
 .ft-exe-badge {
   color: #57ce5d;
 }
@@ -159,6 +190,13 @@ nav {
 .btn-bd-colors {
   background-color: #3a71c1;
   border: 1px solid #3a71c1;
+}
+
+/* Fuel Calculator Page Styles */
+form#fuel-calc-form {
+  label {
+    color: var(--ftlight);
+  }
 }
 
 /* Project Changelogs & FAQs */
