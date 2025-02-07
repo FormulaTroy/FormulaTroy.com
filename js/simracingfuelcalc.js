@@ -93,6 +93,7 @@ $(document).ready(function () {
   $('input[name="calcType"]').on("change", function() {
     let calcType = $('input[name="calcType"]:checked').val();
     swapCalcTypeDisplay(calcType);
+    validateFormInputs();
   });
 
   // helper: toggle raceLapTime based on raceDistanceType
@@ -319,7 +320,7 @@ $(document).ready(function () {
     }
 
     // protect extra lap fuel buffer from being null
-    if (!raceFuelBufferLaps < 0) {raceFuelBufferLaps = 0}
+    if (!raceFuelBufferLaps) {raceFuelBufferLaps = 0}
 
     // calc final strategy numbers
     finalLapsWithBuffer = parseFloat(finalLaps) + parseFloat(raceFuelBufferLaps) + parseFloat(racePaceLapFuel); // add buffers

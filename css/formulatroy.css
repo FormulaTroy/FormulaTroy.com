@@ -202,6 +202,10 @@ form#fuel-calc-form {
   height: 3em;
   margin-bottom: 1.5em;
 }
+#results div.progress-bar {
+  font-size: 1.35em;
+  font-weight: bold;
+}
 
 /* Project Changelogs & FAQs */
 .accordion-item {

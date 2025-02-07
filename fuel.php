@@ -39,7 +39,7 @@ include_once "php-inc/ft-header.php";
             <p>The <strong>Shorthand</strong> calculator is a quick estimation formula for timed races with a single text box as the input. It does not offer many options.</p>
           </div>
           <div id="js-calc-type-desc-sprint">
-            <p>The <strong>Sprint Race</strong> calculator is a strategy formula based on the race format, lap times, and fuel usage. Perfect for races with 0-2 pit stops.</p>
+            <p>The <strong>Sprint Race</strong> calculator is a strategy formula based on the race format, lap times, and fuel usage.</p>
           </div>
           <div id="js-calc-type-desc-endurance" style="display: none;">
             <p>The <strong>Endurance Race</strong> calculator is a more precise estimation for longer races with several pit stops. It takes extra parameters, but tries to account for niche factors that could impact the final lap and fuel counts.</p>
@@ -64,7 +64,7 @@ include_once "php-inc/ft-header.php";
           </div>
 
           <div class="form-floating mb-3" id="raceDistanceUnitsWrapper">
-            <input type="number" class="form-control" id="raceDistanceUnits" placeholder="">
+            <input type="number" class="form-control" id="raceDistanceUnits" min="0" placeholder="">
             <label for="raceDistanceUnits">How Many Hours Is The Race?</label>
           </div>
 
@@ -74,17 +74,17 @@ include_once "php-inc/ft-header.php";
           </div>
 
           <div class="form-floating mb-3" id="raceFuelPerLapWrapper">
-            <input type="number" class="form-control" id="raceFuelPerLap" placeholder="">
+            <input type="number" class="form-control" id="raceFuelPerLap" min="0" placeholder="">
             <label for="raceFuelPerLap">Average Fuel Per Lap</label>
           </div>
 
           <div class="form-floating mb-3" id="raceFuelTankSizeWrapper">
-            <input type="number" class="form-control" id="raceFuelTankSize" placeholder="">
+            <input type="number" class="form-control" id="raceFuelTankSize" min="0" placeholder="">
             <label for="raceFuelTankSize">Max Fuel Tank Size</label>
           </div>
 
           <div class="form-floating mb-3" id="raceFuelBufferLapsWrapper">
-            <input type="number" class="form-control" id="raceFuelBufferLaps" placeholder="">
+            <input type="number" class="form-control" id="raceFuelBufferLaps" min="0" placeholder="">
             <label for="raceFuelBufferLaps">How Many Laps of Extra Fuel Buffer?</label>
           </div>
 
@@ -99,12 +99,12 @@ include_once "php-inc/ft-header.php";
           </div>
 
           <div class="form-floating mb-3" id="pitstopDeltaWrapper" style="display: none;">
-            <input type="number" class="form-control" id="pitstopDelta" placeholder="">
+            <input type="number" class="form-control" id="pitstopDelta" min="0" placeholder="">
             <label for="pitstopDelta">Pitstop Delta (in seconds)</label>
           </div>
 
           <div class="form-floating mb-3" id="fuelLeftAtPitstopWrapper" style="display: none;">
-            <input type="number" class="form-control" id="fuelLeftAtPitstop" placeholder="">
+            <input type="number" class="form-control" id="fuelLeftAtPitstop" min="0" placeholder="">
             <label for="fuelLeftAtPitstop">Remaining Fuel In Tank At Pitstop</label>
           </div>
 
