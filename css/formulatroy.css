@@ -198,6 +198,10 @@ form#fuel-calc-form {
     color: var(--ftlight);
   }
 }
+#results .progress {
+  height: 3em;
+  margin-bottom: 1.5em;
+}
 
 /* Project Changelogs & FAQs */
 .accordion-item {

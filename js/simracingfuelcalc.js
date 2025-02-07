@@ -120,15 +120,18 @@ $(document).ready(function () {
   // helper: convert time as string into seconds
   function convertTimeStringToSeconds(timeString) {
     try {
-      const parts = timeString.split(':');
-      const minutes = parseInt(parts[0]);
-      const secondsAndMilliseconds = parts[1].split('.');
-      const seconds = parseInt(secondsAndMilliseconds[0]);
-      const milliseconds = parseInt(secondsAndMilliseconds[1]) || 0; // Handle cases where milliseconds are missing
-      const totalSeconds = minutes * 60 + seconds + milliseconds / 1000;
+      let parts = timeString.split(':');
+      let minutes = parseInt(parts[0]);
+      if (minutes == null) {
+        minutes = 0;
+      }
+      let secondsAndMilliseconds = parts[1].split('.');
+      let seconds = parseInt(secondsAndMilliseconds[0]);
+      let milliseconds = parseInt(secondsAndMilliseconds[1]) || 0; // Handle cases where milliseconds are missing
+      let totalSeconds = minutes * 60 + seconds + milliseconds / 1000;
       return totalSeconds;
     } catch (error) {
-      console.log("Average Race Lap Time Didn't Meet Minimum Format of #:#")
+      //console.log("Average Race Lap Time Didn't Meet Minimum Format of #:#")
       //console.log(error);
       return false;
     }
@@ -191,7 +194,7 @@ $(document).ready(function () {
           let raceLapTimeRawValue = $("#raceLapTime").val();
           let raceLapTimeCleaned = raceLapTimeRawValue.replace(/[^0-9:.]/g, ''); // Remove invalid characters
           let raceLapTimeInSeconds = convertTimeStringToSeconds(raceLapTimeCleaned);
-          if (raceLapTimeInSeconds <= 0) {
+          if (raceLapTimeInSeconds <= 0 || raceLapTimeInSeconds == false) {
             results.append("<li>The average race lap time, examples:<ul class=\"mb-0\"><li>1:32.181</li><li>0:52</li><li>1:58.7</li></ul></li>");
             raceLapTime.addClass("is-invalid");
             isError = 1;
@@ -241,6 +244,43 @@ $(document).ready(function () {
 
   }
 
+  // helper: convert stint number into progress bar display
+  function stintsToProgressBars(finalStintsNeeded, raceFuelTankSize, results) {
+    // init local vars
+    let isFirst = true;
+    let strategyText = "";
+    let stintFractionToPercent = 0;
+    let finalStopFuel = 0;
+
+    // loop over stint count, display progress bars
+    while (finalStintsNeeded > 0) {
+      if (isFirst) {
+        strategyText = "Start with ";
+        isFirst = false;
+      } else {
+        strategyText = "Pit Stop for ";
+      }
+
+      if (finalStintsNeeded >= 1) {
+        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-success text-start" style="width: 100%">&nbsp;&nbsp;&nbsp;'+strategyText+raceFuelTankSize+' (100%)</div></div>');
+      } else if (finalStintsNeeded >= .20) {
+        stintFractionToPercent = finalStintsNeeded * 100;
+        stintFractionToPercent = parseFloat(stintFractionToPercent.toFixed(2));
+        finalStopFuel = raceFuelTankSize * finalStintsNeeded;
+        finalStopFuel = parseFloat(finalStopFuel.toFixed(2));
+        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-primary text-start" style="width: '+stintFractionToPercent+'%">&nbsp;&nbsp;&nbsp;'+strategyText+finalStopFuel+' ('+stintFractionToPercent+'%)</div></div>');
+      } else {
+        stintFractionToPercent = finalStintsNeeded * 100;
+        stintFractionToPercent = parseFloat(stintFractionToPercent.toFixed(2));
+        finalStopFuel = raceFuelTankSize * finalStintsNeeded;
+        finalStopFuel = parseFloat(finalStopFuel.toFixed(2));
+        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-danger text-start" style="width: '+stintFractionToPercent+'%">&nbsp;&nbsp;&nbsp;'+strategyText+finalStopFuel+' ('+stintFractionToPercent+'%)</div></div>');
+      }
+
+      finalStintsNeeded -= 1;
+    }
+  }
+
   // helper: calc results for shorthand input
   function calculateShorthandResults() {
     // get values directly, versus getting the field like in validation function
@@ -263,6 +303,7 @@ $(document).ready(function () {
     let results = $("#results");
     results.html("");
     let finalLaps = 0;
+    let finalLapsWithBuffer = 0;
     let finalFuelNeeded = 0;
     let finalStintsNeeded = 0;
 
@@ -278,22 +319,20 @@ $(document).ready(function () {
     }
 
     // protect extra lap fuel buffer from being null
-    if (!raceFuelBufferLaps >= 0) {raceFuelBufferLaps = 0}
+    if (!raceFuelBufferLaps < 0) {raceFuelBufferLaps = 0}
 
     // calc final strategy numbers
-    finalLaps = parseInt(finalLaps) + parseInt(raceFuelBufferLaps) + parseInt(racePaceLapFuel); // add buffers
-    finalFuelNeeded = finalLaps * raceFuelPerLap; // total fuel
-    finalFuelNeeded = +finalFuelNeeded.toFixed(2);
+    finalLapsWithBuffer = parseFloat(finalLaps) + parseFloat(raceFuelBufferLaps) + parseFloat(racePaceLapFuel); // add buffers
+    finalFuelNeeded = finalLapsWithBuffer * raceFuelPerLap; // total fuel
+    finalFuelNeeded = parseFloat(finalFuelNeeded.toFixed(2));
     finalStintsNeeded = finalFuelNeeded / raceFuelTankSize // number of stints
-    finalStintsNeeded = +finalStintsNeeded.toFixed(2);
+    finalStintsNeeded = parseFloat(finalStintsNeeded.toFixed(2));
 
     // display results
     results.append("<p>Total Race Laps: <strong>"+finalLaps+"</strong></p>");
     results.append("<p>Total Fuel: <strong>"+finalFuelNeeded+"</strong></p>");
     results.append("<p>Total Stints: <strong>"+finalStintsNeeded+"</strong></p>");
-
-
-
+    stintsToProgressBars(finalStintsNeeded, raceFuelTankSize, results);
 
   }
 
@@ -319,9 +358,9 @@ $(document).ready(function () {
   validateFormInputs();
 
   // DEBUG DEFAULTS
-  $("#raceDistanceUnits").val(2);
-  $("#raceLapTime").val("1:30.201");
-  $("#raceFuelPerLap").val(3);
-  $("#raceFuelTankSize").val(100);
+  // $("#raceDistanceUnits").val(2);
+  // $("#raceLapTime").val("1:30.201");
+  // $("#raceFuelPerLap").val(3);
+  // $("#raceFuelTankSize").val(80);
 
 });// end doc ready
