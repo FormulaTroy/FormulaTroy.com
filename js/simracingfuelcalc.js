@@ -54,7 +54,7 @@ $(document).ready(function () {
         raceDistanceTypeWrapper.show();
         raceDistanceUnitsWrapper.show();
         raceLapTimeWrapper.show();
-        areLapsNeeded();
+        isLapTimeFieldNeeded();
         raceFuelPerLapWrapper.show();
         raceFuelTankSizeWrapper.show();
         raceFuelBufferLapsWrapper.show();
@@ -74,7 +74,7 @@ $(document).ready(function () {
         raceDistanceTypeWrapper.show();
         raceDistanceUnitsWrapper.show();
         raceLapTimeWrapper.show();
-        areLapsNeeded();
+        isLapTimeFieldNeeded();
         raceFuelPerLapWrapper.show();
         raceFuelTankSizeWrapper.show();
         raceFuelBufferLapsWrapper.show();
@@ -96,9 +96,9 @@ $(document).ready(function () {
     validateFormInputs();
   });
 
-  // helper: toggle raceLapTime based on raceDistanceType
-  function areLapsNeeded() {
-    let raceDistanceTypeValue = $("#raceDistanceType").val()
+  // helper: toggle raceLapTime field based on raceDistanceType
+  function isLapTimeFieldNeeded() {
+    let raceDistanceTypeValue = $("#raceDistanceType").val();
     if (raceDistanceTypeValue == "Laps") {
       $("#raceLapTime").hide();
     } else {
@@ -106,22 +106,17 @@ $(document).ready(function () {
     }
   }
 
-  // helper: change field label of raceDistanceUnits
-  function updateDistanceUnitLabel(raceDistanceTypeValue) {
-    $('#raceDistanceUnitsWrapper label[for="raceDistanceUnits"]').html("How Many "+raceDistanceTypeValue+" Is The Race?");
-  }
-
   // trigger: update fields based on raceDistanceType
   $("#raceDistanceType").on("change",function(){
     let raceDistanceTypeValue = $(this).val();
-    areLapsNeeded();
-    updateDistanceUnitLabel(raceDistanceTypeValue);
+    isLapTimeFieldNeeded();
+    $('#raceDistanceUnitsWrapper label[for="raceDistanceUnits"]').html("How Many "+raceDistanceTypeValue+" Is The Race?");
   });
 
-  // helper: convert time as string into seconds
-  function convertTimeStringToSeconds(timeString) {
+  // helper: convert lap time as string (1:32.932) into seconds (92.932)
+  function convertLapTimeStringToSeconds(lapTimeString) {
     try {
-      let parts = timeString.split(':');
+      let parts = lapTimeString.split(':');
       let minutes = parseInt(parts[0]);
       if (minutes == null) {
         minutes = 0;
@@ -143,15 +138,12 @@ $(document).ready(function () {
   //// onchange events trigger validate functions, which if they pass,
   //// then call the calculation function
 
-  // trigger: call validation whenever any field changes
-  $("form").on("change", ":input", function() {
-    validateFormInputs();
-  });
-  $("form").on("keyup", ":input", function() {
+  // trigger: call validation whenever any field changes or key is pressed
+  $("form").on("change keyup", ":input", function() {
     validateFormInputs();
   });
 
-  // helper: validate
+  // helper: validate user inputs
   function validateFormInputs() {
     // reset result html
     let results = $("#results")
@@ -194,7 +186,7 @@ $(document).ready(function () {
         if (raceDistanceType.val() != "Laps") {
           let raceLapTimeRawValue = $("#raceLapTime").val();
           let raceLapTimeCleaned = raceLapTimeRawValue.replace(/[^0-9:.]/g, ''); // Remove invalid characters
-          let raceLapTimeInSeconds = convertTimeStringToSeconds(raceLapTimeCleaned);
+          let raceLapTimeInSeconds = convertLapTimeStringToSeconds(raceLapTimeCleaned);
           if (raceLapTimeInSeconds <= 0 || raceLapTimeInSeconds == false) {
             results.append("<li>The average race lap time, examples:<ul class=\"mb-0\"><li>1:32.181</li><li>0:52</li><li>1:58.7</li></ul></li>");
             raceLapTime.addClass("is-invalid");
@@ -245,16 +237,17 @@ $(document).ready(function () {
 
   }
 
-  // helper: convert stint number into progress bar display
-  function stintsToProgressBars(finalStintsNeeded, raceFuelTankSize, results) {
+  // helper: convert total fuel needed into progress bar display by stint
+  function stintsToProgressBars(finalFuelNeeded, raceFuelTankSize, results) {
     // init local vars
     let isFirst = true;
     let strategyText = "";
     let stintFractionToPercent = 0;
-    let finalStopFuel = 0;
 
-    // loop over stint count, display progress bars
-    while (finalStintsNeeded > 0) {
+    // loop over total fuel, display progress bars, subtract a full tank
+    while (finalFuelNeeded > 0) {
+
+      // strategy flavor text
       if (isFirst) {
         strategyText = "Start with ";
         isFirst = false;
@@ -262,23 +255,24 @@ $(document).ready(function () {
         strategyText = "Pit Stop for ";
       }
 
-      if (finalStintsNeeded >= 1) {
-        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-success text-start" style="width: 100%">&nbsp;&nbsp;&nbsp;'+strategyText+raceFuelTankSize+' (100%)</div></div>');
-      } else if (finalStintsNeeded >= .20) {
-        stintFractionToPercent = finalStintsNeeded * 100;
+      // TO DO: MAKE ITERATOR AND SET VALUE TO 0, then call it back and set value correctly
+
+      // if remaining fuel >= a full tank, add full stop, otherwise add final partial stop
+      if (finalFuelNeeded >= raceFuelTankSize) {
+        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible bg-success text-start" style="width: 100%">&nbsp;&nbsp;&nbsp;'+strategyText+raceFuelTankSize+' (100%)</div></div>');
+      } else if (finalFuelNeeded >= (.20*raceFuelTankSize) ) {
+        stintFractionToPercent = finalFuelNeeded / raceFuelTankSize * 100;
         stintFractionToPercent = parseFloat(stintFractionToPercent.toFixed(2));
-        finalStopFuel = raceFuelTankSize * finalStintsNeeded;
-        finalStopFuel = parseFloat(finalStopFuel.toFixed(2));
-        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-primary text-start" style="width: '+stintFractionToPercent+'%">&nbsp;&nbsp;&nbsp;'+strategyText+finalStopFuel+' ('+stintFractionToPercent+'%)</div></div>');
+        finalFuelNeeded = parseFloat(finalFuelNeeded.toFixed(2));
+        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-primary text-start" style="width: '+stintFractionToPercent+'%">&nbsp;&nbsp;&nbsp;'+strategyText+finalFuelNeeded+' ('+stintFractionToPercent+'%)</div></div>');
       } else {
-        stintFractionToPercent = finalStintsNeeded * 100;
+        stintFractionToPercent = finalFuelNeeded / raceFuelTankSize * 100;
         stintFractionToPercent = parseFloat(stintFractionToPercent.toFixed(2));
-        finalStopFuel = raceFuelTankSize * finalStintsNeeded;
-        finalStopFuel = parseFloat(finalStopFuel.toFixed(2));
-        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-danger text-start" style="width: '+stintFractionToPercent+'%">&nbsp;&nbsp;&nbsp;'+strategyText+finalStopFuel+' ('+stintFractionToPercent+'%)</div></div>');
+        finalFuelNeeded = parseFloat(finalFuelNeeded.toFixed(2));
+        results.append('<div class="progress" role="progressbar"><div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated bg-danger text-start" style="width: '+stintFractionToPercent+'%">&nbsp;&nbsp;&nbsp;'+strategyText+finalFuelNeeded+' ('+stintFractionToPercent+'%)</div></div>');
       }
 
-      finalStintsNeeded -= 1;
+      finalFuelNeeded -= raceFuelTankSize;
     }
   }
 
@@ -295,7 +289,7 @@ $(document).ready(function () {
     let raceDistanceUnits = $("#raceDistanceUnits").val();
     let raceLapTimeRawValue = $("#raceLapTime").val();
     let raceLapTimeCleaned = raceLapTimeRawValue.replace(/[^0-9:.]/g, '');
-    let raceLapTimeInSeconds = convertTimeStringToSeconds(raceLapTimeCleaned);
+    let raceLapTimeInSeconds = convertLapTimeStringToSeconds(raceLapTimeCleaned);
     let raceFuelPerLap = $("#raceFuelPerLap").val();
     let raceFuelTankSize = $("#raceFuelTankSize").val();
     let raceFuelBufferLaps = $("#raceFuelBufferLaps").val();
@@ -333,8 +327,7 @@ $(document).ready(function () {
     results.append("<p>Total Race Laps: <strong>"+finalLaps+"</strong></p>");
     results.append("<p>Total Fuel: <strong>"+finalFuelNeeded+"</strong></p>");
     results.append("<p>Total Stints: <strong>"+finalStintsNeeded+"</strong></p>");
-    stintsToProgressBars(finalStintsNeeded, raceFuelTankSize, results);
-
+    stintsToProgressBars(finalFuelNeeded, raceFuelTankSize, results);
   }
 
   // helper: calc results for endurance races
@@ -344,7 +337,7 @@ $(document).ready(function () {
     let raceDistanceUnits = $("#raceDistanceUnits").val();
     let raceLapTimeRawValue = $("#raceLapTime").val();
     let raceLapTimeCleaned = raceLapTimeRawValue.replace(/[^0-9:.]/g, '');
-    let raceLapTimeInSeconds = convertTimeStringToSeconds(raceLapTimeCleaned);
+    let raceLapTimeInSeconds = convertLapTimeStringToSeconds(raceLapTimeCleaned);
     let raceFuelPerLap = $("#raceFuelPerLap").val();
     let raceFuelTankSize = $("#raceFuelTankSize").val();
     let raceFuelBufferLaps = $("#raceFuelBufferLaps").val();
