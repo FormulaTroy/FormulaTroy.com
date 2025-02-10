@@ -68,7 +68,7 @@ function CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, 
 
   // display either "Launch App" or "Project Page" button
   if ($isApp) {
-    echo "<a class=\"btn btn-primary\" href=\"$linkPath\" role=\"button\" target=\"_blank\"><i class=\"bi $iconClass\"></i> Launch App</a>";
+    echo "<a class=\"btn btn-primary\" href=\"$linkPath\" role=\"button\"><i class=\"bi $iconClass\"></i> Launch App</a>";
   } else {
     echo "<a class=\"btn btn-primary\" href=\"$linkPath\" role=\"button\"><i class=\"bi $iconClass\"></i> Project Page</a>";
   }
@@ -103,4 +103,3 @@ function LogChange($ID, $changeTitle, $changeText) {
 
 # end php
 ?>
-

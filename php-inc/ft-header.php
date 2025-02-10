@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/css/formulatroy.min.css">
+  <link rel="stylesheet" href="/css/formulatroy.css">
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico"/>
 </head>
 
@@ -29,7 +29,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuPrograms" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-code-slash"></i> Programs</a>
               <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuPrograms">
-                <li><a class="dropdown-item disabled" href="#" target="_blank"><i class="bi bi-fuel-pump"></i> Racing Fuel Calculator (v3 WIP)</a></li>
+                <li><a class="dropdown-item" href="/fuel"><i class="bi bi-fuel-pump"></i> Racing Fuel Calculator</a></li>
                 <li><a class="dropdown-item" href="/shutdown"><i class="bi bi-power"></i> Shutdown Macros</a></li>
                 <li><a class="dropdown-item" href="https://formulatroy.com/app/chess/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Chessboard</a></li>
                 <li><a class="dropdown-item" href="https://formulatroy.com/app/canasta/" target="_blank"><i class="bi bi-suit-spade-fill"></i> Canasta Score Tracker</a></li>

@@ -17,7 +17,7 @@ $(document).ready(function () {
     let raceLapTimeWrapper = $("#raceLapTimeWrapper");
     let raceFuelPerLapWrapper = $("#raceFuelPerLapWrapper");
     let raceFuelTankSizeWrapper = $("#raceFuelTankSizeWrapper");
-    let raceFuelBufferLapsWrapper = $("#raceFuelBufferLapsWrapper");
+    let raceFuelReserveLapsWrapper = $("#raceFuelReserveLapsWrapper");
     let racePaceLapFuelWrapper = $("#racePaceLapFuelWrapper");
     let pitstopDeltaWrapper = $("#pitstopDeltaWrapper");
     let fuelLeftAtPitstopWrapper = $("#fuelLeftAtPitstopWrapper");
@@ -37,7 +37,7 @@ $(document).ready(function () {
         raceLapTimeWrapper.hide();
         raceFuelPerLapWrapper.hide();
         raceFuelTankSizeWrapper.hide();
-        raceFuelBufferLapsWrapper.hide();
+        raceFuelReserveLapsWrapper.hide();
         racePaceLapFuelWrapper.hide();
         pitstopDeltaWrapper.hide();
         fuelLeftAtPitstopWrapper.hide();
@@ -57,7 +57,7 @@ $(document).ready(function () {
         isLapTimeFieldNeeded();
         raceFuelPerLapWrapper.show();
         raceFuelTankSizeWrapper.show();
-        raceFuelBufferLapsWrapper.show();
+        raceFuelReserveLapsWrapper.show();
         racePaceLapFuelWrapper.show();
         pitstopDeltaWrapper.hide();
         fuelLeftAtPitstopWrapper.hide();
@@ -77,7 +77,7 @@ $(document).ready(function () {
         isLapTimeFieldNeeded();
         raceFuelPerLapWrapper.show();
         raceFuelTankSizeWrapper.show();
-        raceFuelBufferLapsWrapper.show();
+        raceFuelReserveLapsWrapper.show();
         racePaceLapFuelWrapper.show();
         pitstopDeltaWrapper.show();
         fuelLeftAtPitstopWrapper.show();
@@ -110,24 +110,18 @@ $(document).ready(function () {
   $("#raceDistanceType").on("change", function () {
     let raceDistanceTypeValue = $(this).val();
     isLapTimeFieldNeeded();
-    $('#raceDistanceUnitsWrapper label[for="raceDistanceUnits"]').html("How Many " + raceDistanceTypeValue + " Is The Race?");
+    $('#raceDistanceUnitsWrapper label[for="raceDistanceUnits"]').html("<i class='bi bi-clock-history'></i> How Many " + raceDistanceTypeValue + " Is The Race?");
   });
 
   // helper: convert lap time as string (1:32.932) into seconds (92.932)
   function convertLapTimeStringToSeconds(lapTimeString) {
     try {
       let parts = lapTimeString.split(':');
-      let minutes = parseInt(parts[0]);
-      if (minutes == null) {
-        minutes = 0;
-      }
-      let secondsAndMilliseconds = parts[1].split('.');
-      let seconds = parseInt(secondsAndMilliseconds[0]);
-      let milliseconds = parseInt(secondsAndMilliseconds[1]) || 0; // Handle cases where milliseconds are missing
-      let totalSeconds = minutes * 60 + seconds + milliseconds / 1000;
+      let minutes = parseInt(parts[0]) || 0;
+      let seconds = parseFloat(parts[1]) || 0;
+      let totalSeconds = minutes * 60 + seconds;
       return totalSeconds;
     } catch (error) {
-      //console.log("Average Race Lap Time Didn't Meet Minimum Format of #:#")
       //console.log(error);
       return false;
     }
@@ -205,7 +199,7 @@ $(document).ready(function () {
 
         if (isError == 1) {
           shorthandInput.addClass("is-invalid");
-          results.append("<h5>Shorthand Input</h5><p>This text field requires very specific formatting in order to calculate results. Each variable needs a single space between them. But make sure there is not an extra space at the end of your input.</p><ul><li>RaceMinutes: How long the race is in minutes (i.e. 1.5hrs = 90)</li><li>LapTime: The average race lap time formatted as MM:SS:MS</li><li>FuelPerLap: The average fuel used per lap</li><li>FuelTankSize: The maximum fuel tank capacity</li><li>AdditionalLaps (optional): Extra laps of fuel buffer, usually 1</li></ul><p>Examples of valid inputs:</p><ul><li>144 1:30.432 3.2 90 1</li><li>90 0:59 3.35 100</li><li>30 1:49.5 4.2 150 1.5</li></ul>");
+          results.append("<h5>Shorthand Input</h5><p>This text field requires very specific formatting in order to calculate results. Each variable needs a single space between them. But make sure there is not an extra space at the end of your input.</p><ul><li>RaceMinutes: How long the race is in minutes (i.e. 1.5hrs = 90)</li><li>LapTime: The average race lap time formatted as MM:SS:MS</li><li>FuelPerLap: The average fuel used per lap</li><li>FuelTankSize: The maximum fuel tank capacity</li><li>AdditionalLaps (optional): Extra laps of fuel reserve, usually 1</li></ul><p>Examples of valid inputs:</p><ul><li>144 1:30.432 3.2 90 1</li><li>90 0:59 3.35 100</li><li>30 1:49.5 4.2 150 1.5</li></ul>");
         } else {
           shorthandInput.removeClass("is-invalid");
           calculateShorthandResults(parseFloat(inputPartsArray[0]), inputPartsArray[1], parseFloat(inputPartsArray[2]), parseFloat(inputPartsArray[3]), parseFloat(inputPartsArray[4]));
@@ -320,7 +314,7 @@ $(document).ready(function () {
   }
 
   // helper: calc results for shorthand input
-  function calculateShorthandResults(raceMinutes, raceLapTimeRawValue, raceFuelPerLap, raceFuelTankSize, raceFuelBufferLaps) {
+  function calculateShorthandResults(raceMinutes, raceLapTimeRawValue, raceFuelPerLap, raceFuelTankSize, raceFuelReserveLaps) {
     // convert lap time
     let raceLapTimeCleaned = raceLapTimeRawValue.replace(/[^0-9:.]/g, '');
     let raceLapTimeInSeconds = convertLapTimeStringToSeconds(raceLapTimeCleaned);
@@ -328,24 +322,26 @@ $(document).ready(function () {
     let results = $("#results");
     results.html("");
     let finalLaps = 0;
-    let finalLapsWithBuffer = 0;
+    let finalLapsWithReserve = 0;
     let finalFuelNeeded = 0;
     let finalStintsNeeded = 0;
+    let reserveFuelTotal = 0;
 
     // strategy calc
     finalLaps = Math.ceil(raceMinutes * 60 / raceLapTimeInSeconds);
-    finalLapsWithBuffer = parseFloat(finalLaps) + parseFloat(raceFuelBufferLaps);
-    finalFuelNeeded = finalLapsWithBuffer * raceFuelPerLap; // total fuel
+    finalLapsWithReserve = parseFloat(finalLaps) + parseFloat(raceFuelReserveLaps);
+    reserveFuelTotal = parseFloat(raceFuelReserveLaps) * raceFuelPerLap; // reserve fuel
+    reserveFuelTotal = parseFloat(reserveFuelTotal.toFixed(2));
+    finalFuelNeeded = finalLapsWithReserve * raceFuelPerLap; // total fuel
     finalFuelNeeded = parseFloat(finalFuelNeeded.toFixed(2));
     finalStintsNeeded = finalFuelNeeded / raceFuelTankSize // number of stints
     finalStintsNeeded = parseFloat(finalStintsNeeded.toFixed(2));
 
     // display results
-    results.append("<p>Total Race Laps: <strong>" + finalLaps + "</strong></p>");
-    results.append("<p>Total Fuel: <strong>" + finalFuelNeeded + "</strong></p>");
-    results.append("<p>Total Stints: <strong>" + finalStintsNeeded + "</strong></p>");
+    results.append("<p><i class='bi bi-flag-fill'></i> Total Race Laps: <strong>" + finalLaps + "</strong></p>");
+    results.append("<p><i class='bi bi-fuel-pump'></i> Total Fuel: <strong>" + finalFuelNeeded + "</strong> ("+raceFuelPerLap+"/lap + "+reserveFuelTotal+" reserve)</p>");
+    results.append("<p><i class='bi bi-hexagon-half'></i> Total Stints: <strong>" + finalStintsNeeded + "</strong></p>");
     stintsToProgressBars(finalFuelNeeded, raceFuelTankSize, results);
-
   }
 
   // helper: calc results for sprint races
@@ -358,15 +354,16 @@ $(document).ready(function () {
     let raceLapTimeInSeconds = convertLapTimeStringToSeconds(raceLapTimeCleaned);
     let raceFuelPerLap = $("#raceFuelPerLap").val();
     let raceFuelTankSize = $("#raceFuelTankSize").val();
-    let raceFuelBufferLaps = $("#raceFuelBufferLaps").val();
+    let raceFuelReserveLaps = $("#raceFuelReserveLaps").val();
     let racePaceLapFuel = $("#racePaceLapFuel").val();
     // init final results vars
     let results = $("#results");
     results.html("");
     let finalLaps = 0;
-    let finalLapsWithBuffer = 0;
+    let finalLapsWithReserve = 0;
     let finalFuelNeeded = 0;
     let finalStintsNeeded = 0;
+    let reserveFuelTotal = 0;
 
     // if it's timed, find lap count, else use units directly if already lap-based
     if (raceDistanceType != "Laps") {
@@ -379,20 +376,22 @@ $(document).ready(function () {
       finalLaps = raceDistanceUnits;
     }
 
-    // protect extra lap fuel buffer from being null
-    if (!raceFuelBufferLaps) { raceFuelBufferLaps = 0 }
+    // protect extra lap fuel reserve from being null
+    if (!raceFuelReserveLaps) { raceFuelReserveLaps = 0 }
 
     // calc final strategy numbers
-    finalLapsWithBuffer = parseFloat(finalLaps) + parseFloat(raceFuelBufferLaps) + parseFloat(racePaceLapFuel); // add buffers
-    finalFuelNeeded = finalLapsWithBuffer * raceFuelPerLap; // total fuel
+    finalLapsWithReserve = parseFloat(finalLaps) + parseFloat(raceFuelReserveLaps) + parseFloat(racePaceLapFuel); // add reserves
+    reserveFuelTotal = (parseFloat(raceFuelReserveLaps) + parseFloat(racePaceLapFuel)) * raceFuelPerLap; // reserve fuel
+    reserveFuelTotal = parseFloat(reserveFuelTotal.toFixed(2));
+    finalFuelNeeded = finalLapsWithReserve * raceFuelPerLap; // total fuel
     finalFuelNeeded = parseFloat(finalFuelNeeded.toFixed(2));
     finalStintsNeeded = finalFuelNeeded / raceFuelTankSize // number of stints
     finalStintsNeeded = parseFloat(finalStintsNeeded.toFixed(2));
 
     // display results
-    results.append("<p>Total Race Laps: <strong>" + finalLaps + "</strong></p>");
-    results.append("<p>Total Fuel: <strong>" + finalFuelNeeded + "</strong></p>");
-    results.append("<p>Total Stints: <strong>" + finalStintsNeeded + "</strong></p>");
+    results.append("<p><i class='bi bi-flag-fill'></i> Total Race Laps: <strong>" + finalLaps + "</strong></p>");
+    results.append("<p><i class='bi bi-fuel-pump'></i> Total Fuel: <strong>" + finalFuelNeeded + "</strong> ("+raceFuelPerLap+"/lap + "+reserveFuelTotal+" reserve)</p>");
+    results.append("<p><i class='bi bi-hexagon-half'></i> Total Stints: <strong>" + finalStintsNeeded + "</strong></p>");
     stintsToProgressBars(finalFuelNeeded, raceFuelTankSize, results);
   }
 
@@ -406,15 +405,13 @@ $(document).ready(function () {
     let raceLapTimeInSeconds = convertLapTimeStringToSeconds(raceLapTimeCleaned);
     let raceFuelPerLap = $("#raceFuelPerLap").val();
     let raceFuelTankSize = $("#raceFuelTankSize").val();
-    let raceFuelBufferLaps = $("#raceFuelBufferLaps").val();
+    let raceFuelReserveLaps = $("#raceFuelReserveLaps").val();
     let racePaceLapFuel = $("#racePaceLapFuel").val();
     let pitstopDelta = $("#pitstopDelta").val();
     let fuelLeftAtPitstop = $("#fuelLeftAtPitstop").val();
   }
 
   // init post-load defaults
-  $("#raceFuelBufferLaps").val(1);
-  $("#pitstopDelta").val(45);
   validateFormInputs();
 
   // DEBUG DEFAULTS

@@ -7,18 +7,19 @@ include_once "php-inc/ft-header.php";
 <main>
 
   <?php
-  # Hero
   CreateHeroText("FormulaTroy Project Index", "Sharing random code things");
   ?>
 
-  <?php # Page
-  ?>
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
 
       <?php
       // Create the gallery of projects!
       // Function Args: CreateAppCard($projectTitle, $isApp, $imgPath, $linkPath, $githubPath, $techArray, $iconClass, $yearMade, $summaryText);
+
+      // Sim Racing Fuel Calculator v3
+      $techArray = ["js", "html", "css"];
+      CreateAppCard("Racing Fuel Calculator", true, "img/projects/racingcalc3.png", "/fuel", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/js/simracingfuelcalc.js", $techArray, "bi-fuel-pump", "2025", "Sim Racing fuel and strategy calculator based on the race format, lap times, and fuel usage.");
 
       // Discord Themes
       $techArray = ["scss", "css"];
@@ -34,7 +35,7 @@ include_once "php-inc/ft-header.php";
 
       // Chessboard
       $techArray = ["js", "html", "css"];
-      CreateAppCard("Chessboard", true, "img/projects/chess.png", "https://formulatroy.com/app/chess/", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/app/chess", $techArray, "bi-box-arrow-up-right", "2015", "Just a simple online chessboard to play locally that doesn't require you to sign up or display ads.");
+      CreateAppCard("Chessboard", true, "img/projects/chess.png", "https://formulatroy.com/app/chess/", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/app/chess", $techArray, "bi-box-arrow-up-right", "2015", "Just a simple online chessboard to play locally that doesn't display ads or require you to sign up.");
 
       // Canasta Score Tracker
       $techArray = ["php", "js", "scss"];

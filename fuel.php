@@ -60,32 +60,32 @@ include_once "php-inc/ft-header.php";
               <option value="Minutes">Minutes</option>
               <option value="Laps">Laps</option>
             </select>
-            <label for="raceDistanceType">Race Distance Type</label>
+            <label for="raceDistanceType"><i class="bi bi-flag-fill"></i> Race Distance Type</label>
           </div>
 
           <div class="form-floating mb-3" id="raceDistanceUnitsWrapper">
             <input type="number" class="form-control" id="raceDistanceUnits" min="0" placeholder="">
-            <label for="raceDistanceUnits">How Many Hours Is The Race?</label>
+            <label for="raceDistanceUnits"><i class="bi bi-clock-history"></i> How Many Hours Is The Race?</label>
           </div>
 
           <div class="form-floating mb-3" id="raceLapTimeWrapper">
             <input type="text" class="form-control" id="raceLapTime" placeholder="">
-            <label for="raceLapTime">Average Race Lap Time (format as MM:SS.MS)</label>
+            <label for="raceLapTime"><i class="bi bi-stopwatch"></i> Average Race Lap Time (format as MM:SS.MS)</label>
           </div>
 
           <div class="form-floating mb-3" id="raceFuelPerLapWrapper">
             <input type="number" class="form-control" id="raceFuelPerLap" min="0" placeholder="">
-            <label for="raceFuelPerLap">Average Fuel Per Lap</label>
+            <label for="raceFuelPerLap"><i class="bi bi-fuel-pump"></i> Average Fuel Per Lap</label>
           </div>
 
           <div class="form-floating mb-3" id="raceFuelTankSizeWrapper">
             <input type="number" class="form-control" id="raceFuelTankSize" min="0" placeholder="">
-            <label for="raceFuelTankSize">Max Fuel Tank Size</label>
+            <label for="raceFuelTankSize"><i class="bi bi-fuel-pump"></i> Max Fuel Tank Size</label>
           </div>
 
-          <div class="form-floating mb-3" id="raceFuelBufferLapsWrapper">
-            <input type="number" class="form-control" id="raceFuelBufferLaps" min="0" placeholder="">
-            <label for="raceFuelBufferLaps">How Many Laps of Extra Fuel Buffer?</label>
+          <div class="form-floating mb-3" id="raceFuelReserveLapsWrapper">
+            <input type="number" class="form-control" id="raceFuelReserveLaps" min="0" value="1" placeholder="">
+            <label for="raceFuelReserveLaps"><i class="bi bi-node-plus-fill"></i> How Many Laps of Extra Fuel Reserve?</label>
           </div>
 
           <div class="form-floating mb-3" id="racePaceLapFuelWrapper">
@@ -95,12 +95,12 @@ include_once "php-inc/ft-header.php";
               <option value="0.50">Yes - Add 50% of a lap extra fuel</option>
               <option value="0.25">Yes - Add 25% of a lap extra fuel</option>
             </select>
-            <label for="racePaceLapFuel">Is There A Pace Lap?</label>
+            <label for="racePaceLapFuel"><i class="bi bi-taxi-front-fill"></i> Is There A Pace Lap?</label>
           </div>
 
           <div class="form-floating mb-3" id="pitstopDeltaWrapper" style="display: none;">
-            <input type="number" class="form-control" id="pitstopDelta" min="0" placeholder="">
-            <label for="pitstopDelta">Pitstop Delta (in seconds)</label>
+            <input type="number" class="form-control" id="pitstopDelta" min="0" value="45" placeholder="">
+            <label for="pitstopDelta"><i class="bi bi-stopwatch"></i> Pitstop Delta (in seconds)</label>
           </div>
 
           <div class="form-floating mb-3" id="fuelLeftAtPitstopWrapper" style="display: none;">

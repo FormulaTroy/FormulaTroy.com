@@ -198,10 +198,16 @@ form#fuel-calc-form {
     color: var(--ftlight);
   }
 }
+
+form#fuel-calc-form .form-control.is-invalid {
+  border-color: var(--ftlight);
+}
+
 #results .progress {
   height: 3em;
   margin-bottom: 1.5em;
 }
+
 #results div.progress-bar {
   font-size: 1.35em;
   font-weight: bold;
