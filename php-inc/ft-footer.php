@@ -32,9 +32,11 @@
 if ($pageTitle == "Sim Racing Fuel Calculator") {
   echo "<script src=\"/js/simracingfuelcalc.js\"></script>";
 } elseif ($pageTitle == "CMS Driver Stratification") {
-  echo "<script src=\"/app/elo/js/cms-stratification-tables.js\"></script>";
+  $timestamp = time();
+  echo "<script src=\"/app/elo/js/cms-stratification-tables.js?v=" . $timestamp . "\"></script>";
 } elseif ($pageTitle == "CMS Race Result ELO") {
-  echo "<script src=\"/app/elo/js/cms-race-result-elo.js\"></script>";
+  $timestamp = time();
+  echo "<script src=\"/app/elo/js/cms-race-result-elo.js?v=" . $timestamp . "\"></script>";
 }
 ?>
 

@@ -16,14 +16,16 @@ include_once "../../php-inc/ft-header.php";
       <div class="col col-md-12">
 
         <div id="driverRatingInput-wrapper" class="mb-4">
-          <label for="driverRatingInput">Current Driver Rating CSV Table (Format: Driver, Flag, Rating, Races, Champ Bonuses, Last Changed Value, Last Changed Date)</label>
-          <textarea class="form-control" name="driverRatingInput" id="driverRatingInput" rows="3" placeholder="Troy Uyan, us, 1450, 90, 200, -14, 2/8/2025"></textarea>
+          <label for="driverRatingInput">Current Driver Rating CSV Table (Format: name, flag, rating, races, champBonuses, lastChangedValue, lastChangedDate)</label>
+          <textarea class="form-control" name="driverRatingInput" id="driverRatingInput" rows="3" placeholder=""></textarea>
+          <button id="test-driverRatingInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button>
         </div>
 
         <div id="raceResults-wrapper" class="mb-4">
-          <label for="raceResults">Race Results</label>
-          <textarea class="form-control" name="raceResults" id="raceResults" rows="5" placeholder="RACE DATE: 2/8/2025&#10;RESULT: HYPERCAR&#10;Troy Uyan&#10;John Smith"></textarea>
-          <button class="btn btn-outline-primary mt-2"><i class="bi bi-flag-fill"></i> Calculate ELO Rating Changes</button>
+          <label for="raceResultsInput">Race Results</label>
+          <textarea class="form-control" name="raceResultsInput" id="raceResultsInput" rows="5" placeholder="RACE DATE: 2/8/2025&#10;RESULT: HYPERCAR&#10;Troy Uyan&#10;John Smith"></textarea>
+          <button id="calc-elo" class="btn btn-outline-primary mt-2"><i class="bi bi-flag-fill"></i> Calculate ELO Rating Changes</button>
+          <button id="test-raceResultsInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button>
         </div>
       </div>
 
@@ -36,7 +38,7 @@ include_once "../../php-inc/ft-header.php";
       </div>
 
       <div class="col col-md-6">
-        <div id="driverLicenseChanges" class="mb-4">
+        <div id="driverLicenseChanges-wrapper" class="mb-4">
           <label for="driverLicenseChanges">License Changes</label>
           <textarea class="form-control" name="driverLicenseChanges" id="driverLicenseChanges" rows="3" placeholder="Troy Uyan, Promotion, Gold -> Platinum&#10;John Smith, Relegation, Gold -> Silver"></textarea>
         </div>
