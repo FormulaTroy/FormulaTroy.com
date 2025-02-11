@@ -12,16 +12,33 @@ $(document).ready(function () {
 
   // helper: add new driver to drivers array with defaults
   function addNewDriver(driverName) {
+
+    let defaultELO = 1500;
+
     let newDriver = {
       name: driverName,
       flag: "us",
-      rating: 1500,
+      rating: defaultELO,
+      races: 0,
+      champBonuses: 0,
+      lastChangedValue: 0,
+      lastChangedDate: "1/1/1970"
+    };
+    // make a separate object to put in the post-race array, breaks the memory reference
+    // caused by using the same var in both arrays. And keeps the new driver's rating from
+    // changing beyond the default when mid-race result calculations are happening
+    let newPostRaceDriver = {
+      name: driverName,
+      flag: "us",
+      rating: defaultELO,
       races: 0,
       champBonuses: 0,
       lastChangedValue: 0,
       lastChangedDate: "1/1/1970"
     };
     drivers.push(newDriver);
+    postRaceDrivers.push(newPostRaceDriver);
+    console.log("Added new driver: " + newDriver.name);
   }
 
   // helper: find driver object in drivers array by name string
@@ -36,6 +53,23 @@ $(document).ready(function () {
     // if driver was not found, add new driver, and return it
     addNewDriver(driverName);
     return drivers[drivers.length - 1]
+  }
+
+  // helper: clone the drivers array[object->prop] structure to a new variable
+  function createPostRaceDrivers(drivers) {
+    postRaceDrivers = $.map(drivers, function (driver) {
+      return $.extend(true, {}, driver); // deep copy, includes nested objects
+    });
+  }
+
+  // helper: find driver object in postRaceDrivers array by name string
+  function findPostRaceDriverByName(driverName) {
+    // loop over the postRaceDrivers array, and compare each name prop to the provided string
+    for (let i = 0; i < postRaceDrivers.length; i++) {
+      if (postRaceDrivers[i].name === driverName) {
+        return postRaceDrivers[i];
+      }
+    }
   }
 
   // helper: compare driver and opponent ratings to get expected result as a %
@@ -93,8 +127,6 @@ $(document).ready(function () {
       }
     }
 
-    console.log(maxRatingAdjustment)
-
     // total the expected and actual scores
     let expectedResultScore = 0;
     for (let i = 0; i < expectedResultsForRace.length; i++) {
@@ -106,9 +138,6 @@ $(document).ready(function () {
       actualResultScore += actualResultsForRace[i];
     }
 
-    console.log(expectedResultScore);
-    console.log(actualResultScore);
-
     // calculate a rating adjustment based on the expectedResult and actualResult
     // where maxRatingAdjustment clamps the value per matchup, but not per race
     let newDriverRating = driver.rating + maxRatingAdjustment * (actualResultScore - expectedResultScore);
@@ -116,6 +145,13 @@ $(document).ready(function () {
 
     // get the before/after delta for this race
     let ratingChange = newDriverRating - driver.rating;
+
+    // use the new driver rating to populate the post-race driver object with new stuffs
+    postRaceDriverObj = findPostRaceDriverByName(driver.name);
+    postRaceDriverObj.rating = newDriverRating;
+    postRaceDriverObj.races = postRaceDriverObj.races++;
+    postRaceDriverObj.lastChangedValue = ratingChange;
+    postRaceDriverObj.lastChangedDate = raceDate;
   }
 
   // trigger: calculate the elo changes based on current ratings and new race result
@@ -153,6 +189,9 @@ $(document).ready(function () {
       });
       //console.log(drivers);
 
+      // copy the driver objects for use in post-race results later
+      createPostRaceDrivers(drivers);
+
       // make sure the results are in the right format
       raceResultsLines = raceResultsInput.split('\n');
       if (raceResultsLines.length < 4) { // need at least 4 raceResultsLines (date, result, 2 drivers)
@@ -168,7 +207,7 @@ $(document).ready(function () {
         return false;
       }
 
-      const raceDate = raceDateLine.substring("RACE DATE:".length).trim();
+      raceDate = raceDateLine.substring("RACE DATE:".length).trim();
       //console.log(raceDate);
 
     } else {
@@ -178,7 +217,6 @@ $(document).ready(function () {
 
     // with the drivers array and valid results text, start parsing the results
     const raceResults = raceResultsLines.slice(2); // get the driver lines only out of the race results
-    console.log(raceResults);
 
     //// multi-dimensional loop starts here ////
     // loop over the results, driver by driver
@@ -224,13 +262,13 @@ $(document).ready(function () {
           return false;
         }
 
-
-      });// end looping over results for comparison
+      });// end looping over results again for comparison
 
       // now we have all expected (%) and actual (0 || 1) results
       // make sure they are the same length
       if (expectedResultsForRace.length == actualResultsForRace.length) {
 
+        // calc ELO rating adjustment for this driver
         updateDriverRatingELO(currentDriver, expectedResultsForRace, actualResultsForRace)
 
       } else {
@@ -240,33 +278,22 @@ $(document).ready(function () {
         return false;
       }
 
-
-
-
-
-      // add results to adjusted final driver ratings textbox, but not back to drivers array
-
-
-
-
-
-
-
-
-
     });// end looping over results
 
+    // debug databases
+    // console.log(drivers);
+    // console.log(postRaceDrivers);
 
+    // after all loopy-loops are done, use post-race driver array to create final ELO results
+    let resultTextCSV = "";
+    $.each(postRaceDrivers, function (index, driver) {
+      resultTextCSV += `${driver.name}, ${driver.flag}, ${driver.rating}, ${driver.races}, ${driver.champBonuses}, ${driver.lastChangedValue}, ${driver.lastChangedDate}\n`;
+    });
+    $("#driverRatingOutput").val(resultTextCSV);
 
-
-
+    // TODO use final results to populate the rating adjustment text area for any last change that was also the race date
+    // TODO, while doing rating calculations, add driver to a different global array if they cross a license break point, and then buff their rating by an amount?
 
   });// end $("#calc-elo").on("click"...
-
-
-
-
-
-
 
 });// end doc ready
