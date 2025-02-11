@@ -23,7 +23,7 @@ include_once "../../php-inc/ft-header.php";
 
         <div id="raceResults-wrapper" class="mb-4">
           <label for="raceResultsInput">Race Results</label>
-          <textarea class="form-control" name="raceResultsInput" id="raceResultsInput" rows="5" placeholder="RACE DATE: 2/8/2025&#10;RESULT: HYPERCAR&#10;Troy Uyan&#10;John Smith"></textarea>
+          <textarea class="form-control" name="raceResultsInput" id="raceResultsInput" rows="5" placeholder=""></textarea>
           <button id="calc-elo" class="btn btn-outline-primary mt-2"><i class="bi bi-flag-fill"></i> Calculate ELO Rating Changes</button>
           <button id="test-raceResultsInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button>
         </div>
@@ -47,8 +47,8 @@ include_once "../../php-inc/ft-header.php";
       <div class="col col-md-12">
         <div id="driverRatingOutput-wrapper" class="mb-4">
           <label for="driverRatingOutput">Adjusted Final Driver Ratings</label>
-          <textarea class="form-control" name="driverRatingOutput" id="driverRatingOutput" rows="9" placeholder="Troy Uyan, us, 1500, 91, 200, 50, 2/24/2025"></textarea>
-          <button class="btn btn-outline-primary mt-2"><i class="bi bi-database-fill-check"></i> Use Results As New Input (Go To Next Race)</button>
+          <textarea class="form-control" name="driverRatingOutput" id="driverRatingOutput" rows="9" placeholder=""></textarea>
+          <button id="next-race" class="btn btn-outline-primary mt-2"><i class="bi bi-database-fill-check"></i> Use Results As New Input (Go To Next Race)</button>
           <button class="btn btn-outline-success mt-2"><i class="bi bi-database-fill-down"></i> Save Results As CSV</button>
         </div>
       </div>

@@ -1,15 +1,5 @@
 $(document).ready(function () {
 
-  // testing functions
-  $("#test-driverRatingInput").on("click", function () {
-    $("#driverRatingInput").val("");
-    $("#driverRatingInput").val("Troy Uyan, us, 1450, 90, 200, -14, 2/8/2025\nJohn Smith, ca, 1390, 5, 0, 24, 2/1/2025\nMark Webber, au, 2100, 80, 100, -2, 1/15/2025");
-  });
-  $("#test-raceResultsInput").on("click", function () {
-    $("#raceResultsInput").val("");
-    $("#raceResultsInput").val("RACE DATE: 3/1/2025\nRESULT: HYPERCAR\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
-  });
-
   // helper: add new driver to drivers array with defaults
   function addNewDriver(driverName) {
 
@@ -91,6 +81,7 @@ $(document).ready(function () {
     expectedResultsForRace.push(expectedResult);
   }
 
+  // helper: compare expected and actual results and calculate rating adjustment
   function updateDriverRatingELO(driver, expectedResultsForRace, actualResultsForRace) {
     // set maximum possible rating adjustment per 1:1 driver comparison
     // aka the "K-Factor" in the ELO equation
@@ -104,11 +95,11 @@ $(document).ready(function () {
     // >=2400: 15
     //
     // 2025+ Results (DECIDE RANGES ONCE HISTORICAL RESULTS ARE ADDED)
-    // Copper (   0-1000): 30
-    // Bronze (1000-1499): 25
-    // Silver (1500-2399): 20
-    //   Gold (2400-3000): 15
-    //   Plat (3000+    ): 10
+    // Copper (   0-1000): 30?
+    // Bronze (1000-1499): 25?
+    // Silver (1500-2399): 20?
+    //   Gold (2400-3000): 15?
+    //   Plat (3000+    ): 10?
     let maxRatingAdjustment = 0;
 
     // use higher K-Factor during probation
@@ -295,5 +286,32 @@ $(document).ready(function () {
     // TODO, while doing rating calculations, add driver to a different global array if they cross a license break point, and then buff their rating by an amount?
 
   });// end $("#calc-elo").on("click"...
+
+  // trigger: copy rating output as new input, clear output & race results
+  $("#next-race").on("click", function () {
+    driverRatingInput = $("#driverRatingInput");
+    driverRatingOutput = $("#driverRatingOutput");
+    raceResultsInput = $("#raceResultsInput");
+
+    driverRatingInput.val(driverRatingOutput.val());
+    driverRatingOutput.val("");
+    raceResultsInput.val("");
+  });
+
+
+
+
+
+
+
+  // testing functions
+  $("#test-driverRatingInput").on("click", function () {
+    $("#driverRatingInput").val("");
+    $("#driverRatingInput").val("Troy Uyan, us, 1450, 90, 200, -14, 2/8/2025\nJohn Smith, ca, 1390, 5, 0, 24, 2/1/2025\nMark Webber, au, 2100, 80, 100, -2, 1/15/2025");
+  });
+  $("#test-raceResultsInput").on("click", function () {
+    $("#raceResultsInput").val("");
+    $("#raceResultsInput").val("RACE DATE: 3/1/2025\nRESULT: HYPERCAR\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
+  });
 
 });// end doc ready
