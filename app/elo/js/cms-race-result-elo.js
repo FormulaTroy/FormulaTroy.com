@@ -10,9 +10,8 @@ $(document).ready(function () {
       flag: "us",
       rating: defaultELO,
       races: 0,
-      champBonuses: 0,
       lastChangedValue: 0,
-      lastChangedDate: "1/1/1970"
+      lastChangedDate: "1970/01/01"
     };
     // make a separate object to put in the post-race array, breaks the memory reference
     // caused by using the same var in both arrays. And keeps the new driver's rating from
@@ -22,9 +21,8 @@ $(document).ready(function () {
       flag: "us",
       rating: defaultELO,
       races: 0,
-      champBonuses: 0,
       lastChangedValue: 0,
-      lastChangedDate: "1/1/1970"
+      lastChangedDate: "1970/01/01"
     };
     drivers.push(newDriver);
     postRaceDrivers.push(newPostRaceDriver);
@@ -140,7 +138,7 @@ $(document).ready(function () {
     // use the new driver rating to populate the post-race driver object with new stuffs
     postRaceDriverObj = findPostRaceDriverByName(driver.name);
     postRaceDriverObj.rating = newDriverRating;
-    postRaceDriverObj.races = postRaceDriverObj.races++;
+    postRaceDriverObj.races = postRaceDriverObj.races + 1;
     postRaceDriverObj.lastChangedValue = ratingChange;
     postRaceDriverObj.lastChangedDate = raceDate;
   }
@@ -160,17 +158,16 @@ $(document).ready(function () {
       drivers = []; // global var
 
       $.each(driverRatingInputLines, function (index, line) {
-        if (line.trim() !== "") { // Skip empty lines
+        if (line.trim() !== "") { // skip empty lines
           const values = line.split(',');
-          if (values.length === 7) { // Ensure all 7 values are present
+          if (values.length === 7) { // check all 7 values are present
             const driver = {
               name: values[0].trim(),
               flag: values[1].trim(),
               rating: parseInt(values[2].trim()),
               races: parseInt(values[3].trim()),
-              champBonuses: parseInt(values[4].trim()),
-              lastChangedValue: parseInt(values[5].trim()),
-              lastChangedDate: values[6].trim()
+              lastChangedValue: parseInt(values[4].trim()),
+              lastChangedDate: values[5].trim()
             };
             drivers.push(driver);
           } else {
@@ -278,7 +275,7 @@ $(document).ready(function () {
     // after all loopy-loops are done, use post-race driver array to create final ELO results
     let resultTextCSV = "";
     $.each(postRaceDrivers, function (index, driver) {
-      resultTextCSV += `${driver.name}, ${driver.flag}, ${driver.rating}, ${driver.races}, ${driver.champBonuses}, ${driver.lastChangedValue}, ${driver.lastChangedDate}\n`;
+      resultTextCSV += `${driver.name}, ${driver.flag}, ${driver.rating}, ${driver.races}, ${driver.lastChangedValue}, ${driver.lastChangedDate}\n`;
     });
     $("#driverRatingOutput").val(resultTextCSV);
 
@@ -298,20 +295,14 @@ $(document).ready(function () {
     raceResultsInput.val("");
   });
 
-
-
-
-
-
-
   // testing functions
-  $("#test-driverRatingInput").on("click", function () {
-    $("#driverRatingInput").val("");
-    $("#driverRatingInput").val("Troy Uyan, us, 1450, 90, 200, -14, 2/8/2025\nJohn Smith, ca, 1390, 5, 0, 24, 2/1/2025\nMark Webber, au, 2100, 80, 100, -2, 1/15/2025");
-  });
-  $("#test-raceResultsInput").on("click", function () {
-    $("#raceResultsInput").val("");
-    $("#raceResultsInput").val("RACE DATE: 3/1/2025\nRESULT: HYPERCAR\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
-  });
+  // $("#test-driverRatingInput").on("click", function () {
+  //   $("#driverRatingInput").val("");
+  //   $("#driverRatingInput").val("Troy Uyan, us, 1450, 90, -14, 2/8/2025\nJohn Smith, ca, 1390, 5, 24, 2/1/2025\nMark Webber, au, 2100, 80, -2, 1/15/2025");
+  // });
+  // $("#test-raceResultsInput").on("click", function () {
+  //   $("#raceResultsInput").val("");
+  //   $("#raceResultsInput").val("RACE DATE: 3/1/2025\nRESULT: HYPERCAR\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
+  // });
 
 });// end doc ready

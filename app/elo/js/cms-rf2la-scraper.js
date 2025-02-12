@@ -1,36 +1,132 @@
+//// extract RF2 race results by class
 //// rf2la has jQ already loaded
-// extract race results by class
+
+// core result containers
 let resultTableRowsRaw = $("table.r2la_table tr");
+let resultTableRows = resultTableRowsRaw.slice(1); // remove header row
+let driverCount = 0;
 
-resultTableRows = resultTableRowsRaw.slice(1); // remove header row
+// text output by class
+let unifiedClassResults = "";
+let hypercarResults = "";
+let lmgt3Results = "";
 
-$("table.r2la_table tr").each(function() {
+// helper: add driver to correct result list by class
+function addDriverToResults(driverName, carClass) {
+  switch (carClass) {
 
+    case "PRO":
+    case "PROAM":
+    case "AM":
+      unifiedClassResults += driverName + "\n"
+      break;
+
+    case "HYPERCAR":
+      hypercarResults += driverName + "\n"
+      break;
+
+    case "LMGT3":
+      lmgt3Results += driverName + "\n"
+      break;
+
+    default:
+      console.warn("Class not found: " + carClass + " driven by " + driverName)
+      break;
+  }
+  driverCount++;
+}
+
+// helper: convert the race date string to a sortable date string
+function convertRaceDateString(dateString) {
+  // date string format: 09 November 2023
+  let dateStringParts = dateString.split(" ");
+  let year = dateStringParts[2];
+  let month = dateStringParts[1];
+  let day = dateStringParts[0];
+
+  const monthMap = new Map([
+    ["january", "01"],
+    ["february", "02"],
+    ["march", "03"],
+    ["april", "04"],
+    ["may", "05"],
+    ["june", "06"],
+    ["july", "07"],
+    ["august", "08"],
+    ["september", "09"],
+    ["october", "10"],
+    ["november", "11"],
+    ["december", "12"],
+  ]);
+
+  const lowerCaseMonthName = month.toLowerCase();
+
+  month = monthMap.get(lowerCaseMonthName) || "Invalid month name";
+
+  return "\nRACE DATE: " + year + "/" + month + "/" + day + "\n"
+}
+
+// helper: combine all the class results into a single output
+function outputResults() {
+
+  let textExportContents = "";
+  let dateString = convertRaceDateString($("div.uk-margin-medium-bottom div.uk-badge.uk-badge-white.uk-badge-borderless:nth-child(3)").html().trim())
+
+  // if a class result was added to, output that class
+  if (unifiedClassResults != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: UNIFIED CLASS =============\n";
+    textExportContents += unifiedClassResults;
+  }
+  if (hypercarResults != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: HYPERCAR =============\n";
+    textExportContents += hypercarResults;
+  }
+  if (lmgt3Results != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: LMGT3 =============\n";
+    textExportContents += lmgt3Results;
+  }
+
+  textExportContents = textExportContents.trim();
+
+  // add export results to a text box
+  let textarea = $("<textarea id='textExportContainer'></textarea>");
+  textarea.css("height", "750px").css("width", "1128px");
+  textarea.val(textExportContents);
+  $("nav").prepend(textarea);
+
+
+
+  console.log(driverCount + " total drivers added to results");
+}
+
+// loop over the driver finishing order
+resultTableRows.each(function () {
+
+  // grab the columns for this row
   let cells = $(this).find("td, th");
 
+  // make sure there's enough columns
   if (cells.length >= 4) {
 
-
+    // get driver data
     let carClass = $(cells[2]).text().trim();
-
-    carClass = carClass.substring(0, carClass.indexOf("|"));
-
+    carClass = carClass.substring(0, carClass.indexOf("|")); // turn "Class|Pos #" into "Class"
+    carClass = carClass.toUpperCase();
     let driverName = $(cells[3]).text().trim();
+    let timeGapStatus = $(cells[7]).text().trim();
 
-    // Do something with the extracted data.  Examples:
-    console.log(carClass, driverName);
-
-    // Or store them in an array of objects:
-    // extractedData.push({
-    //   third: thirdColumn,
-    //   fourth: fourthColumn
-    // });
+    // if not a "DNS", add to results
+    if (timeGapStatus != "DNS") {
+      addDriverToResults(driverName, carClass)
+    }
 
   } else {
-    console.warn("Row does not have enough columns:", this);
+    console.warn("Row does not have enough columns: ", this);
   }
-});
 
+});// end result loop
 
-
-// NARS VMSC 2023
+outputResults()
