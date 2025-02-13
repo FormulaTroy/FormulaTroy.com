@@ -85,12 +85,12 @@ $(document).ready(function () {
     // aka the "K-Factor" in the ELO equation
     //
     // Probation Periods
-    //  0-20 Races: 40
-    // 20-40 Races: 35
+    //  0-20 Races: 4.0
+    // 20-40 Races: 3.5
     //
     // '23-24 Results
-    //  <2399: 25
-    // >=2400: 15
+    //  <2399: 2.5
+    // >=2400: 1.5
     //
     // 2025+ Results (DECIDE RANGES ONCE HISTORICAL RESULTS ARE ADDED)
     // Copper (   0-1000): 30?
@@ -102,17 +102,17 @@ $(document).ready(function () {
 
     // use higher K-Factor during probation
     if (driver.races < 20) {
-      maxRatingAdjustment = 40;
+      maxRatingAdjustment = 4.0;
     } else if (driver.races < 40) {
-      maxRatingAdjustment = 35;
+      maxRatingAdjustment = 3.5;
 
       // after probation:
     } else {
       // implements historical result table '23-24
       if (driver.rating >= 2400) {
-        maxRatingAdjustment = 15
+        maxRatingAdjustment = 1.5
       } else {
-        maxRatingAdjustment = 25
+        maxRatingAdjustment = 2.5
       }
     }
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
       $.each(driverRatingInputLines, function (index, line) {
         if (line.trim() !== "") { // skip empty lines
           const values = line.split(',');
-          if (values.length === 7) { // check all 7 values are present
+          if (values.length === 6) { // check all 6 values are present
             const driver = {
               name: values[0].trim(),
               flag: values[1].trim(),
@@ -274,6 +274,9 @@ $(document).ready(function () {
 
     // after all loopy-loops are done, use post-race driver array to create final ELO results
     let resultTextCSV = "";
+    postRaceDrivers.sort(function(a, b) {
+      return b.rating - a.rating; // sort drivers by elo, highest to lowest
+    });
     $.each(postRaceDrivers, function (index, driver) {
       resultTextCSV += `${driver.name}, ${driver.flag}, ${driver.rating}, ${driver.races}, ${driver.lastChangedValue}, ${driver.lastChangedDate}\n`;
     });

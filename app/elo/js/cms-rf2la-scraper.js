@@ -92,6 +92,7 @@ function outputResults() {
   textExportContents = textExportContents.trim();
 
   // add export results to a text box
+  $("textarea#textExportContainer").remove();
   let textarea = $("<textarea id='textExportContainer'></textarea>");
   textarea.css("height", "750px").css("width", "1128px");
   textarea.val(textExportContents);
