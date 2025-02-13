@@ -50,6 +50,14 @@ $(document).ready(function () {
     });
   }
 
+  // helper: when doing multiple results at the same time,
+  // have the resulting ratings DB of one race be the starting driver DB for the next
+  function overwritePreRaceDriversWithNewResult(postRaceDrivers) {
+    drivers = $.map(postRaceDrivers, function (postRaceDriver) {
+      return $.extend(true, {}, postRaceDriver); // deep copy, includes nested objects
+    });
+  }
+
   // helper: find driver object in postRaceDrivers array by name string
   function findPostRaceDriverByName(driverName) {
     // loop over the postRaceDrivers array, and compare each name prop to the provided string
@@ -58,6 +66,32 @@ $(document).ready(function () {
         return postRaceDrivers[i];
       }
     }
+  }
+
+  // helper: split results input into multiple race results by splitting on "RACE DATE" line
+  function parseRaceResultsInputIntoRaces(raceResultsInput) {
+    // split by "RACE DATE" text
+    // ["", "RACE DATE: 2023/01/19", "RESULT: ...", "RACE DATE: 2023/01/20", "RESULT: ...", ""]
+    const raceBlocks = raceResultsInput.split(/(RACE DATE: \d{4}\/\d{2}\/\d{2})/);
+
+    const results = [];
+
+    // loop 2 iterations at a time to get each race result block from the split array above
+    for (let i = 1; i < raceBlocks.length; i += 2) {
+      const date = raceBlocks[i].trim();
+      const resultBlock = raceBlocks[i + 1].trim();
+
+      // regex for extracting category and drivers
+      const categoryMatch = resultBlock.match(/RESULT: (.+?) =============\n/);
+      if (categoryMatch) {
+        const category = categoryMatch[1].trim();
+        const drivers = resultBlock.split("=============\n")[1].trim().split("\n").map(driver => driver.trim()).filter(driver => driver !== "");
+
+        // add to results array as a race result object
+        results.push({ date: date, category: category, drivers: drivers });
+      }
+    }
+    return results;
   }
 
   // helper: compare driver and opponent ratings to get expected result as a %
@@ -85,8 +119,7 @@ $(document).ready(function () {
     // aka the "K-Factor" in the ELO equation
     //
     // Probation Periods
-    //  0-20 Races: 4.0
-    // 20-40 Races: 3.5
+    //  0-10 Races: 4.0
     //
     // '23-24 Results
     //  <2399: 2.5
@@ -204,69 +237,81 @@ $(document).ready(function () {
     }
 
     // with the drivers array and valid results text, start parsing the results
-    const raceResults = raceResultsLines.slice(2); // get the driver lines only out of the race results
+    // split the input into each race and into each class
+    const individualRaceResults = parseRaceResultsInputIntoRaces(raceResultsInput);
 
-    //// multi-dimensional loop starts here ////
-    // loop over the results, driver by driver
-    $.each(raceResults, function (index, driverLine) {
+    // loop over each race->class result
+    $.each(individualRaceResults, function (index, resultBlock) {
 
-      // the current position's driver
-      const driverName = driverLine.trim();
-      if (driverName !== "") {
-        currentDriver = findDriverByName(driverName);
-      } else {
-        alert("empty driver? at position: " + index)
-        return false;
-      }
+      const raceResults = resultBlock.drivers
 
-      // since the results loop is sequential, start by assuming you lost to the first driver
-      beatOpponent = 0
-      // reset the storage array for comparisons
-      expectedResultsForRace = [];
-      actualResultsForRace = [];
+      //// multi-dimensional loop starts here ////
+      // loop over the results, driver by driver
+      $.each(raceResults, function (index, driverLine) {
 
-      // start looping the results again to compare the current driver to every other driver
-      $.each(raceResults, function (compareIndex, driverLine) {
-
-        // the comparison position's driver
-        const opponentDriverName = driverLine.trim();
-
-        if (opponentDriverName == driverName) {
-
-          // skip comparing to self, but now it means everyone after you won against
-          beatOpponent = 1;
-
-        } else if (opponentDriverName !== "") {
-
-          // get opponent driver's data
-          let opponentDriver = findDriverByName(opponentDriverName);
-
-          // add elo rating comparison to expectedResultsForRace, and actual result to actualResultsForRace
-          addExpectedResultELO(currentDriver.rating, opponentDriver.rating, expectedResultsForRace)
-          actualResultsForRace.push(beatOpponent);
-
+        // the current position's driver
+        const driverName = driverLine.trim();
+        if (driverName !== "") {
+          currentDriver = findDriverByName(driverName);
         } else {
-          alert("empty driver? at position: " + compareIndex)
+          alert("empty driver? at position: " + index)
           return false;
         }
 
-      });// end looping over results again for comparison
+        // since the results loop is sequential, start by assuming you lost to the first driver
+        beatOpponent = 0
+        // reset the storage array for comparisons
+        expectedResultsForRace = [];
+        actualResultsForRace = [];
 
-      // now we have all expected (%) and actual (0 || 1) results
-      // make sure they are the same length
-      if (expectedResultsForRace.length == actualResultsForRace.length) {
+        // start looping the results again to compare the current driver to every other driver
+        $.each(raceResults, function (compareIndex, driverLine) {
 
-        // calc ELO rating adjustment for this driver
-        updateDriverRatingELO(currentDriver, expectedResultsForRace, actualResultsForRace)
+          // the comparison position's driver
+          const opponentDriverName = driverLine.trim();
 
-      } else {
-        alert("expected and actual result arrays were different lengths, see console for values");
-        console.log(expectedResultsForRace);
-        console.log(actualResultsForRace);
-        return false;
-      }
+          if (opponentDriverName == driverName) {
 
-    });// end looping over results
+            // skip comparing to self, but now it means everyone after you won against
+            beatOpponent = 1;
+
+          } else if (opponentDriverName !== "") {
+
+            // get opponent driver's data
+            let opponentDriver = findDriverByName(opponentDriverName);
+
+            // add elo rating comparison to expectedResultsForRace, and actual result to actualResultsForRace
+            addExpectedResultELO(currentDriver.rating, opponentDriver.rating, expectedResultsForRace)
+            actualResultsForRace.push(beatOpponent);
+
+          } else {
+            alert("empty driver? at position: " + compareIndex)
+            return false;
+          }
+
+        });// end looping over results again for comparison
+
+        // now we have all expected (%) and actual (0 || 1) results
+        // make sure they are the same length
+        if (expectedResultsForRace.length == actualResultsForRace.length) {
+
+          // calc ELO rating adjustment for this driver
+          updateDriverRatingELO(currentDriver, expectedResultsForRace, actualResultsForRace)
+
+        } else {
+          alert("expected and actual result arrays were different lengths, see console for values");
+          console.log(expectedResultsForRace);
+          console.log(actualResultsForRace);
+          return false;
+        }
+
+      });// end looping over results
+
+      // turn the resulting postRaceDrivers DB into the new Drivers DB
+      // (so the second next races uses the new ratings for the first race, and so on)
+      overwritePreRaceDriversWithNewResult(postRaceDrivers)
+
+    });// end loop over each race->class result
 
     // debug databases
     // console.log(drivers);
@@ -274,7 +319,7 @@ $(document).ready(function () {
 
     // after all loopy-loops are done, use post-race driver array to create final ELO results
     let resultTextCSV = "";
-    postRaceDrivers.sort(function(a, b) {
+    postRaceDrivers.sort(function (a, b) {
       return b.rating - a.rating; // sort drivers by elo, highest to lowest
     });
     $.each(postRaceDrivers, function (index, driver) {
@@ -299,13 +344,13 @@ $(document).ready(function () {
   });
 
   // testing functions
-  // $("#test-driverRatingInput").on("click", function () {
-  //   $("#driverRatingInput").val("");
-  //   $("#driverRatingInput").val("Troy Uyan, us, 1450, 90, -14, 2/8/2025\nJohn Smith, ca, 1390, 5, 24, 2/1/2025\nMark Webber, au, 2100, 80, -2, 1/15/2025");
-  // });
-  // $("#test-raceResultsInput").on("click", function () {
-  //   $("#raceResultsInput").val("");
-  //   $("#raceResultsInput").val("RACE DATE: 3/1/2025\nRESULT: HYPERCAR\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
-  // });
+  $("#test-driverRatingInput").on("click", function () {
+    $("#driverRatingInput").val("");
+    $("#driverRatingInput").val("Troy Uyan, us, 1450, 90, -14, 2/8/2025\nJohn Smith, ca, 1390, 5, 24, 2/1/2025\nMark Webber, au, 2100, 80, -2, 1/15/2025");
+  });
+  $("#test-raceResultsInput").on("click", function () {
+    $("#raceResultsInput").val("");
+    $("#raceResultsInput").val("RACE DATE: 3/1/2025\nRESULT: HYPERCAR\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
+  });
 
 });// end doc ready

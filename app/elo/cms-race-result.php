@@ -18,7 +18,7 @@ include_once "../../php-inc/ft-header.php";
         <div id="driverRatingInput-wrapper" class="mb-4">
           <label for="driverRatingInput">Current Driver Rating CSV Table (Format: name, flag, rating, races, lastChangedValue, lastChangedDate)</label>
           <textarea class="form-control" name="driverRatingInput" id="driverRatingInput" rows="3" placeholder=""></textarea>
-          <!-- <button id="test-driverRatingInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button> -->
+          <button id="test-driverRatingInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button>
         </div>
 
         <div id="raceResults-wrapper" class="mb-4">

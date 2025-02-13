@@ -18,6 +18,7 @@ function addDriverToResults(driverName, carClass) {
     case "PRO":
     case "PROAM":
     case "AM":
+    case "BTCC":
       unifiedClassResults += driverName + "\n"
       break;
 
@@ -63,7 +64,7 @@ function convertRaceDateString(dateString) {
 
   month = monthMap.get(lowerCaseMonthName) || "Invalid month name";
 
-  return "\nRACE DATE: " + year + "/" + month + "/" + day + "\n"
+  return "RACE DATE: " + year + "/" + month + "/" + day + "\n"
 }
 
 // helper: combine all the class results into a single output
@@ -91,16 +92,12 @@ function outputResults() {
 
   textExportContents = textExportContents.trim();
 
-  // add export results to a text box
-  $("textarea#textExportContainer").remove();
-  let textarea = $("<textarea id='textExportContainer'></textarea>");
-  textarea.css("height", "750px").css("width", "1128px");
-  textarea.val(textExportContents);
-  $("nav").prepend(textarea);
-
-
-
+  // add export results to the text box
+  let textareaExisting = $("textarea#textExportContainer");
+  let combinedText = textareaExisting.val() + "\n" + textExportContents;
+  textareaExisting.val(combinedText);
   console.log(driverCount + " total drivers added to results");
+
 }
 
 // loop over the driver finishing order
@@ -130,4 +127,11 @@ resultTableRows.each(function () {
 
 });// end result loop
 
+// make the text area
+let textarea = $("<textarea id='textExportContainer'></textarea>");
+textarea.css("height", "750px").css("width", "1128px");
+textarea.val("");
+$("nav").prepend(textarea);
+
+// output results to said textarea
 outputResults()
