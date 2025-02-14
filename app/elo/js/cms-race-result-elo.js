@@ -134,12 +134,8 @@ $(document).ready(function () {
     let maxRatingAdjustment = 0;
 
     // use higher K-Factor during probation
-    if (driver.races < 20) {
+    if (driver.races < 10) {
       maxRatingAdjustment = 4.0;
-    } else if (driver.races < 40) {
-      maxRatingAdjustment = 3.5;
-
-      // after probation:
     } else {
       // implements historical result table '23-24
       if (driver.rating >= 2400) {
@@ -221,15 +217,13 @@ $(document).ready(function () {
       }
 
       const raceDateLine = raceResultsLines[0].trim();
+      console.log(raceDateLine)
       const resultLine = raceResultsLines[1].trim();
 
       if (!raceDateLine.startsWith("RACE DATE:") || !resultLine.startsWith("RESULT")) {
         alert("Invalid race results format: First two lines incorrect.");
         return false;
       }
-
-      raceDate = raceDateLine.substring("RACE DATE:".length).trim();
-      //console.log(raceDate);
 
     } else {
       alert("driverRatingInput and raceResults need to be filled in");
@@ -238,14 +232,33 @@ $(document).ready(function () {
 
     // with the drivers array and valid results text, start parsing the results
     // split the input into each race and into each class
-    const individualRaceResults = parseRaceResultsInputIntoRaces(raceResultsInput);
+    let individualRaceResults = parseRaceResultsInputIntoRaces(raceResultsInput);
+
+    // sort the race results by race date
+    individualRaceResults.sort(function(a, b) {
+      if (a.date < b.date) {
+        return -1; // a comes before b
+      }
+      if (a.date > b.date) {
+        return 1; // a comes after b
+      }
+      return 0; // same date string
+    });
+
+    console.log(individualRaceResults);
+
+    //// multi-dimensional loop starts here ////
+    /// LOOP 1: CLASS RESULT                 ///
+    /// LOOP 2: DRIVER                       ///
+    /// LOOP 3: DRIVER VS OTHER DRIVERS      ///
 
     // loop over each race->class result
     $.each(individualRaceResults, function (index, resultBlock) {
 
-      const raceResults = resultBlock.drivers
+      const raceResults = resultBlock.drivers;
+      raceDate = resultBlock.date;
+      raceDate = raceDate.substring(raceDate.lastIndexOf(":") + 2);
 
-      //// multi-dimensional loop starts here ////
       // loop over the results, driver by driver
       $.each(raceResults, function (index, driverLine) {
 

@@ -19,6 +19,7 @@ function addDriverToResults(driverName, carClass) {
     case "PROAM":
     case "AM":
     case "BTCC":
+    case "SPEC":
       unifiedClassResults += driverName + "\n"
       break;
 
@@ -92,11 +93,19 @@ function outputResults() {
 
   textExportContents = textExportContents.trim();
 
-  // add export results to the text box
+  // add export results to the text box, create if not there yet
   let textareaExisting = $("textarea#textExportContainer");
-  let combinedText = textareaExisting.val() + "\n" + textExportContents;
-  textareaExisting.val(combinedText);
-  console.log(driverCount + " total drivers added to results");
+
+  if (textareaExisting.val() == null) {
+    let textarea = $("<textarea id='textExportContainer'></textarea>");
+    textarea.css("height", "750px").css("width", "1128px");
+    textarea.val(textExportContents);
+    $("nav").prepend(textarea);
+  } else {
+    let combinedText = textareaExisting.val() + "\n" + textExportContents;
+    textareaExisting.val(combinedText);
+    console.log(driverCount + " total drivers added to results");
+  }
 
 }
 
@@ -106,32 +115,48 @@ resultTableRows.each(function () {
   // grab the columns for this row
   let cells = $(this).find("td, th");
 
-  // make sure there's enough columns
-  if (cells.length >= 4) {
+  // reset vars
+  let carClass = "";
+  let driverName = "";
+  let timeGapStatus = "";
 
-    // get driver data
-    let carClass = $(cells[2]).text().trim();
+  // make sure there's enough columns, and see if there's a "Cat" (class) column or not
+  if (cells.length = 13) {
+    // get driver data, extract class from Car / Vehicle # column ("#24 Hypercar")
+    carClass = $(cells[4]).text().trim();
+    if (carClass.includes("Hypercar")) {
+      carClass = "HYPERCAR"
+    } else if (carClass.includes("LMGT3")) {
+      carClass = "LMGT3"
+    } else if (carClass.includes("SpecMiata")) {
+      carClass = "SPEC"
+    } else {
+      carClass = "Unknown!";
+      console.warn("Car class extraction from Vehicle column failed");
+    }
+    carClass = carClass.toUpperCase();
+    driverName = $(cells[2]).text().trim();
+    timeGapStatus = $(cells[6]).text().trim();
+  } else if (cells.length = 14) {
+    // get driver data, get class from Category column ("Hypercar|2")
+    carClass = $(cells[2]).text().trim();
     carClass = carClass.substring(0, carClass.indexOf("|")); // turn "Class|Pos #" into "Class"
     carClass = carClass.toUpperCase();
-    let driverName = $(cells[3]).text().trim();
-    let timeGapStatus = $(cells[7]).text().trim();
-
-    // if not a "DNS", add to results
-    if (timeGapStatus != "DNS") {
-      addDriverToResults(driverName, carClass)
-    }
-
+    driverName = $(cells[3]).text().trim();
+    timeGapStatus = $(cells[7]).text().trim();
   } else {
-    console.warn("Row does not have enough columns: ", this);
+    console.warn("Results row does not have enough columns?");
+  }
+
+  // if not a "DNS", add to results
+  if (timeGapStatus != "DNS") {
+    addDriverToResults(driverName, carClass)
   }
 
 });// end result loop
 
 // make the text area
-let textarea = $("<textarea id='textExportContainer'></textarea>");
-textarea.css("height", "750px").css("width", "1128px");
-textarea.val("");
-$("nav").prepend(textarea);
+
 
 // output results to said textarea
 outputResults()
