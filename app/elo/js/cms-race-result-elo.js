@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     let driverMachineName = getDriverMachineName(driverName);
 
-    let defaultELO = 1200;
+    let defaultELO = 1320; // low Gold
 
     let newDriver = {
       [driverMachineName]: {
@@ -33,7 +33,7 @@ $(document).ready(function () {
     // extend the existing json structures with new driver
     $.extend(drivers, newDriver);
     $.extend(postRaceDrivers, newPostRaceDriver);
-    console.log("Added new driver: " + newDriver);
+    // console.log("Added new driver: " + drivers[driverMachineName].name);
   }
 
   // helper: convert driver name to machine name
@@ -41,44 +41,49 @@ $(document).ready(function () {
     return driverName.toLowerCase().replace(/\s+/g, '_');
   }
 
-  // helper: find driver object in drivers array by name string
+  // helper: find driver object in drivers json by name string
   function findDriverByName(driverName) {
 
-    foundDriver = drivers[driverName];
+    let driverMachineName = getDriverMachineName(driverName);
 
-    // if we got data back, return it, else create a new driver
-    try {
-      if (foundDriver.rating) {
-        return foundDriver;
-      }
-    } catch {
+    // console.log(driverMachineName);
+
+    foundDriver = drivers[driverMachineName];
+
+    // console.log(foundDriver);
+
+    // if we got data back, return it, else create a new driver and return that
+    if (foundDriver != null) {
+      // console.log("Found existing driver: "+driverName)
+      return foundDriver;
+    } else {
       addNewDriver(driverName);
+      return drivers[driverMachineName];
     }
-
   }
 
   // helper: clone the drivers array[object->prop] structure to a new variable
   function createPostRaceDrivers(drivers) {
-    postRaceDrivers = $.map(drivers, function (driver) {
-      return $.extend(true, {}, driver); // deep copy, includes nested objects
-    });
+    postRaceDrivers = structuredClone(drivers); // deep copy, includes nested objects
   }
 
   // helper: when doing multiple results at the same time,
   // have the resulting ratings DB of one race be the starting driver DB for the next
   function overwritePreRaceDriversWithNewResult(postRaceDrivers) {
-    drivers = $.map(postRaceDrivers, function (postRaceDriver) {
-      return $.extend(true, {}, postRaceDriver); // deep copy, includes nested objects
-    });
+    drivers = structuredClone(postRaceDrivers);
   }
 
-  // helper: find driver object in postRaceDrivers array by name string
+  // helper: find driver object in postRaceDrivers json by name string
   function findPostRaceDriverByName(driverName) {
-    // loop over the postRaceDrivers array, and compare each name prop to the provided string
-    for (let i = 0; i < postRaceDrivers.length; i++) {
-      if (postRaceDrivers[i].name === driverName) {
-        return postRaceDrivers[i];
-      }
+    let driverMachineName = getDriverMachineName(driverName);
+    foundDriver = postRaceDrivers[driverMachineName];
+
+    // if we got data back, return it, else create a new driver and return that
+    if (foundDriver != null) {
+      return foundDriver;
+    } else {
+      addNewDriver(driverName);
+      return postRaceDrivers[driverMachineName];
     }
   }
 
@@ -129,33 +134,46 @@ $(document).ready(function () {
 
   // helper: compare expected and actual results and calculate rating adjustment
   function updateDriverRatingELO(driver, expectedResultsForRace, actualResultsForRace) {
+
+    // console.log("updating elo for");
+    // console.log(driver);
+    // console.log(expectedResultsForRace);
+    // console.log(actualResultsForRace);
+
     // set maximum possible rating adjustment per 1:1 driver comparison
     // aka the "K-Factor" in the ELO equation
     //
-    // Probation Periods
-    //  0-10 Races: 4.0
+    // Probation Period
+    //  0-10 Races
     //
-    // '23-24 Results
-    //  <2399: 2.5
-    // >=2400: 1.5
-    //
-    // 2025+ Results (DECIDE RANGES ONCE HISTORICAL RESULTS ARE ADDED)
-    // Copper (   0-1000): 30?
-    // Bronze (1000-1499): 25?
-    // Silver (1500-2399): 20?
-    //   Gold (2400-3000): 15?
-    //   Plat (3000+    ): 10?
+    // Licensed Results
+    // Copper (   0- 899)
+    // Bronze ( 900-1099)
+    // Silver (1100-1299)
+    //   Gold (1300-1499)
+    //   Plat (1500+    )
     let maxRatingAdjustment = 0;
 
     // use higher K-Factor during probation
     if (driver.races < 10) {
-      maxRatingAdjustment = 4.0;
+      maxRatingAdjustment = 10.0;
     } else {
-      // implements historical result table '23-24
-      if (driver.rating >= 2000) {
-        maxRatingAdjustment = 1.5
+      // adjust K-Factor based on license
+      if (driver.rating <= 899) {
+        // Copper
+        maxRatingAdjustment = 8
+      } else if (driver.rating <= 1099) {
+        // Bronze
+        maxRatingAdjustment = 7
+      } else if (driver.rating <= 1299) {
+        // Silver
+        maxRatingAdjustment = 6
+      } else if (driver.rating <= 1499) {
+        // Gold
+        maxRatingAdjustment = 5
       } else {
-        maxRatingAdjustment = 2.5
+        // Platinum
+        maxRatingAdjustment = 4
       }
     }
 
@@ -172,17 +190,13 @@ $(document).ready(function () {
 
     // calculate a rating adjustment based on the expectedResult and actualResult
     // where maxRatingAdjustment clamps the value per matchup, but not per race
-    let newDriverRating = driver.rating + maxRatingAdjustment * (actualResultScore - expectedResultScore); // RATING TO DO
-    newDriverRating = Math.round(newDriverRating); // RATING TO DO
-
-    // get the before/after delta for this race
-    let ratingChange = newDriverRating - driver.rating; // RATING TO DO
+    let newDriverRating = driver.rating[driver.rating.length - 1] + maxRatingAdjustment * (actualResultScore - expectedResultScore);
+    newDriverRating = Math.round(newDriverRating);
 
     // use the new driver rating to populate the post-race driver object with new stuffs
-    postRaceDriverObj = findPostRaceDriverByName(driver.name);
-    postRaceDriverObj.rating = newDriverRating; // RATING TO DO
+    postRaceDriverObj = findPostRaceDriverByName(driver.name.toString());
+    postRaceDriverObj.rating.push(newDriverRating);
     postRaceDriverObj.races = postRaceDriverObj.races + 1;
-    postRaceDriverObj.lastChangedValue = ratingChange; // RATING TO DO
     postRaceDriverObj.lastChangedDate = raceDate;
   }
 
@@ -191,7 +205,7 @@ $(document).ready(function () {
 
     // get current ratings and new results
     let driverRatingInput = $("#driverRatingInput").val();
-    console.log(driverRatingInput);
+    // console.log(driverRatingInput);
     let raceResultsInput = $("#raceResultsInput").val();
     //console.log(driverRatingInput);
     //console.log(raceResultsInput);
@@ -200,9 +214,6 @@ $(document).ready(function () {
 
       // load the input driver json / objects
       drivers = JSON.parse(driverRatingInput); // global var
-
-
-      console.log(drivers);
 
       // copy the driver objects for use in post-race results later
       createPostRaceDrivers(drivers);
@@ -263,7 +274,7 @@ $(document).ready(function () {
         const driverName = driverLine.trim();
 
         if (driverName !== "") {
-          console.log("looking for: " + driverName)
+          // console.log("Looking for Driver: " + driverName)
           currentDriver = findDriverByName(driverName);
         } else {
           alert("empty driver? at position: " + index)
@@ -275,6 +286,8 @@ $(document).ready(function () {
         // reset the storage array for comparisons
         expectedResultsForRace = [];
         actualResultsForRace = [];
+
+        // console.log(currentDriver);
 
         // start looping the results again to compare the current driver to every other driver
         $.each(raceResults, function (compareIndex, driverLine) {
@@ -292,8 +305,13 @@ $(document).ready(function () {
             // get opponent driver's data
             let opponentDriver = findDriverByName(opponentDriverName);
 
+            let currentDriverRating = currentDriver.rating[currentDriver.rating.length - 1];
+            let opponentDriverRating = opponentDriver.rating[opponentDriver.rating.length - 1];
+
+            // console.log("ratings returned: "+currentDriverRating+" and "+opponentDriverRating);
+
             // add elo rating comparison to expectedResultsForRace, and actual result to actualResultsForRace
-            addExpectedResultELO(currentDriver.rating[currentDriver.rating.length - 1], opponentDriver.rating[opponentDriver.rating.length - 1], expectedResultsForRace);
+            addExpectedResultELO(currentDriverRating, opponentDriverRating, expectedResultsForRace);
             actualResultsForRace.push(beatOpponent);
 
           } else {
@@ -321,33 +339,16 @@ $(document).ready(function () {
 
       // turn the resulting postRaceDrivers DB into the new Drivers DB
       // (so the second next races uses the new ratings for the first race, and so on)
-      overwritePreRaceDriversWithNewResult(postRaceDrivers)
+      overwritePreRaceDriversWithNewResult(postRaceDrivers);
 
     });// end loop over each race->class result
 
     // debug databases
     // console.log(drivers);
-    // console.log(postRaceDrivers);
+    console.log(postRaceDrivers);
 
     // after all loopy-loops are done, use post-race driver array to create final ELO results
-    let resultTextCSV = "";
-
-
-
-    // DISABLED FOR NOW
-    // RATING TO DO
-    // postRaceDrivers.sort(function (a, b) {
-    //   return b.rating[b.rating.length-1] - a.rating[a.rating.length-1]; // sort drivers by elo, highest to lowest
-    // });
-
-
-
-
-
-    $.each(postRaceDrivers, function (index, driver) {
-      resultTextCSV += `${driver.name}, ${driver.flag}, ${driver.rating}, ${driver.races}, ${driver.lastChangedDate}\n`;
-    });
-    $("#driverRatingOutput").val(resultTextCSV);
+    $("#driverRatingOutput").val(JSON.stringify(postRaceDrivers));
 
     // TODO use final results to populate the rating adjustment text area for any last change that was also the race date
     // TODO, while doing rating calculations, add driver to a different global array if they cross a license break point, and then buff their rating by an amount?
@@ -368,7 +369,7 @@ $(document).ready(function () {
   // testing functions
   $("#test-driverRatingInput").on("click", function () {
     $("#driverRatingInput").val("");
-    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","flag": "us","rating": [1300,1500,1350],"races": 3,"lastUpdated": "2005/03/04"}}');
+    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","flag": "us","rating": [1320],"races": 0,"lastChangedDate": "1970/01/01"}}');
   });
   $("#test-raceResultsInput").on("click", function () {
     $("#raceResultsInput").val("");
