@@ -1,46 +1,60 @@
 $(document).ready(function () {
 
-  // helper: add new driver to drivers array with defaults
+  // helper: add new driver to drivers json with defaults
   function addNewDriver(driverName) {
 
-    let defaultELO = 1500;
+    let driverMachineName = getDriverMachineName(driverName);
+
+    let defaultELO = 1200;
 
     let newDriver = {
-      name: driverName,
-      flag: "us",
-      rating: defaultELO,
-      races: 0,
-      lastChangedValue: 0,
-      lastChangedDate: "1970/01/01"
+      [driverMachineName]: {
+        "name": driverName,
+        "flag": "us",
+        "rating": [defaultELO],
+        "races": 0,
+        "lastChangedDate": "1970/01/01"
+      }
     };
-    // make a separate object to put in the post-race array, breaks the memory reference
-    // caused by using the same var in both arrays. And keeps the new driver's rating from
+
+    // make a separate object to put in the post-race json, breaks the memory reference
+    // caused by using the same var in both jsons. And keeps the new driver's rating from
     // changing beyond the default when mid-race result calculations are happening
     let newPostRaceDriver = {
-      name: driverName,
-      flag: "us",
-      rating: defaultELO,
-      races: 0,
-      lastChangedValue: 0,
-      lastChangedDate: "1970/01/01"
+      [driverMachineName]: {
+        "name": driverName,
+        "flag": "us",
+        "rating": [defaultELO],
+        "races": 0,
+        "lastChangedDate": "1970/01/01"
+      }
     };
-    drivers.push(newDriver);
-    postRaceDrivers.push(newPostRaceDriver);
-    console.log("Added new driver: " + newDriver.name);
+
+    // extend the existing json structures with new driver
+    $.extend(drivers, newDriver);
+    $.extend(postRaceDrivers, newPostRaceDriver);
+    console.log("Added new driver: " + newDriver);
+  }
+
+  // helper: convert driver name to machine name
+  function getDriverMachineName(driverName) {
+    return driverName.toLowerCase().replace(/\s+/g, '_');
   }
 
   // helper: find driver object in drivers array by name string
   function findDriverByName(driverName) {
-    // loop over the drivers array, and compare each name prop to the provided string
-    for (let i = 0; i < drivers.length; i++) {
-      if (drivers[i].name === driverName) {
-        return drivers[i];
+
+    foundDriver = drivers[driverName];
+
+    // if we got data back, return it, else create a new driver
+    try {
+      if (foundDriver.rating) {
+        return foundDriver;
       }
+    } catch {
+      addNewDriver(driverName);
     }
 
-    // if driver was not found, add new driver, and return it
-    addNewDriver(driverName);
-    return drivers[drivers.length - 1]
   }
 
   // helper: clone the drivers array[object->prop] structure to a new variable
@@ -138,7 +152,7 @@ $(document).ready(function () {
       maxRatingAdjustment = 4.0;
     } else {
       // implements historical result table '23-24
-      if (driver.rating >= 2400) {
+      if (driver.rating >= 2000) {
         maxRatingAdjustment = 1.5
       } else {
         maxRatingAdjustment = 2.5
@@ -158,17 +172,17 @@ $(document).ready(function () {
 
     // calculate a rating adjustment based on the expectedResult and actualResult
     // where maxRatingAdjustment clamps the value per matchup, but not per race
-    let newDriverRating = driver.rating + maxRatingAdjustment * (actualResultScore - expectedResultScore);
-    newDriverRating = Math.round(newDriverRating);
+    let newDriverRating = driver.rating + maxRatingAdjustment * (actualResultScore - expectedResultScore); // RATING TO DO
+    newDriverRating = Math.round(newDriverRating); // RATING TO DO
 
     // get the before/after delta for this race
-    let ratingChange = newDriverRating - driver.rating;
+    let ratingChange = newDriverRating - driver.rating; // RATING TO DO
 
     // use the new driver rating to populate the post-race driver object with new stuffs
     postRaceDriverObj = findPostRaceDriverByName(driver.name);
-    postRaceDriverObj.rating = newDriverRating;
+    postRaceDriverObj.rating = newDriverRating; // RATING TO DO
     postRaceDriverObj.races = postRaceDriverObj.races + 1;
-    postRaceDriverObj.lastChangedValue = ratingChange;
+    postRaceDriverObj.lastChangedValue = ratingChange; // RATING TO DO
     postRaceDriverObj.lastChangedDate = raceDate;
   }
 
@@ -177,34 +191,18 @@ $(document).ready(function () {
 
     // get current ratings and new results
     let driverRatingInput = $("#driverRatingInput").val();
+    console.log(driverRatingInput);
     let raceResultsInput = $("#raceResultsInput").val();
     //console.log(driverRatingInput);
     //console.log(raceResultsInput);
 
     if (driverRatingInput != "" && raceResultsInput != "") {
-      // make an array of drivers as objects
-      let driverRatingInputLines = driverRatingInput.split('\n');
-      drivers = []; // global var
 
-      $.each(driverRatingInputLines, function (index, line) {
-        if (line.trim() !== "") { // skip empty lines
-          const values = line.split(',');
-          if (values.length === 6) { // check all 6 values are present
-            const driver = {
-              name: values[0].trim(),
-              flag: values[1].trim(),
-              rating: parseInt(values[2].trim()),
-              races: parseInt(values[3].trim()),
-              lastChangedValue: parseInt(values[4].trim()),
-              lastChangedDate: values[5].trim()
-            };
-            drivers.push(driver);
-          } else {
-            console.error("Invalid data format on line:", line);
-          }
-        }
-      });
-      //console.log(drivers);
+      // load the input driver json / objects
+      drivers = JSON.parse(driverRatingInput); // global var
+
+
+      console.log(drivers);
 
       // copy the driver objects for use in post-race results later
       createPostRaceDrivers(drivers);
@@ -217,7 +215,6 @@ $(document).ready(function () {
       }
 
       const raceDateLine = raceResultsLines[0].trim();
-      console.log(raceDateLine)
       const resultLine = raceResultsLines[1].trim();
 
       if (!raceDateLine.startsWith("RACE DATE:") || !resultLine.startsWith("RESULT")) {
@@ -235,7 +232,7 @@ $(document).ready(function () {
     let individualRaceResults = parseRaceResultsInputIntoRaces(raceResultsInput);
 
     // sort the race results by race date
-    individualRaceResults.sort(function(a, b) {
+    individualRaceResults.sort(function (a, b) {
       if (a.date < b.date) {
         return -1; // a comes before b
       }
@@ -264,7 +261,9 @@ $(document).ready(function () {
 
         // the current position's driver
         const driverName = driverLine.trim();
+
         if (driverName !== "") {
+          console.log("looking for: " + driverName)
           currentDriver = findDriverByName(driverName);
         } else {
           alert("empty driver? at position: " + index)
@@ -294,7 +293,7 @@ $(document).ready(function () {
             let opponentDriver = findDriverByName(opponentDriverName);
 
             // add elo rating comparison to expectedResultsForRace, and actual result to actualResultsForRace
-            addExpectedResultELO(currentDriver.rating, opponentDriver.rating, expectedResultsForRace)
+            addExpectedResultELO(currentDriver.rating[currentDriver.rating.length - 1], opponentDriver.rating[opponentDriver.rating.length - 1], expectedResultsForRace);
             actualResultsForRace.push(beatOpponent);
 
           } else {
@@ -332,11 +331,21 @@ $(document).ready(function () {
 
     // after all loopy-loops are done, use post-race driver array to create final ELO results
     let resultTextCSV = "";
-    postRaceDrivers.sort(function (a, b) {
-      return b.rating - a.rating; // sort drivers by elo, highest to lowest
-    });
+
+
+
+    // DISABLED FOR NOW
+    // RATING TO DO
+    // postRaceDrivers.sort(function (a, b) {
+    //   return b.rating[b.rating.length-1] - a.rating[a.rating.length-1]; // sort drivers by elo, highest to lowest
+    // });
+
+
+
+
+
     $.each(postRaceDrivers, function (index, driver) {
-      resultTextCSV += `${driver.name}, ${driver.flag}, ${driver.rating}, ${driver.races}, ${driver.lastChangedValue}, ${driver.lastChangedDate}\n`;
+      resultTextCSV += `${driver.name}, ${driver.flag}, ${driver.rating}, ${driver.races}, ${driver.lastChangedDate}\n`;
     });
     $("#driverRatingOutput").val(resultTextCSV);
 
@@ -359,11 +368,11 @@ $(document).ready(function () {
   // testing functions
   $("#test-driverRatingInput").on("click", function () {
     $("#driverRatingInput").val("");
-    $("#driverRatingInput").val("Troy Uyan, us, 1450, 90, -14, 2/8/2025\nJohn Smith, ca, 1390, 5, 24, 2/1/2025\nMark Webber, au, 2100, 80, -2, 1/15/2025");
+    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","flag": "us","rating": [1300,1500,1350],"races": 3,"lastUpdated": "2005/03/04"}}');
   });
   $("#test-raceResultsInput").on("click", function () {
     $("#raceResultsInput").val("");
-    $("#raceResultsInput").val("RACE DATE: 3/1/2025\nRESULT: HYPERCAR\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
+    $("#raceResultsInput").val("RACE DATE: 2025/03/01\nRESULT: HYPERCAR =============\nNew Guy\nTroy Uyan\nMark Webber\nJohn Smith\nNew AM Guy");
   });
 
 });// end doc ready

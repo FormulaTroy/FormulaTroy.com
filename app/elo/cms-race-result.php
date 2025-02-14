@@ -16,7 +16,7 @@ include_once "../../php-inc/ft-header.php";
       <div class="col col-md-12">
 
         <div id="driverRatingInput-wrapper" class="mb-4">
-          <label for="driverRatingInput">Current Driver Rating CSV Table (Format: name, flag, rating, races, lastChangedValue, lastChangedDate)</label>
+          <label for="driverRatingInput">Current Driver Rating JSON (Format: {"troy_uyan": {"name": "Troy Uyan","flag": "us","rating": [1300,1500,1350],"races": 3,"lastUpdated": "2005/03/04"}} )</label>
           <textarea class="form-control" name="driverRatingInput" id="driverRatingInput" rows="3" placeholder=""></textarea>
           <button id="test-driverRatingInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button>
         </div>
@@ -25,7 +25,7 @@ include_once "../../php-inc/ft-header.php";
           <label for="raceResultsInput">Race Results</label>
           <textarea class="form-control" name="raceResultsInput" id="raceResultsInput" rows="5" placeholder=""></textarea>
           <button id="calc-elo" class="btn btn-outline-primary mt-2"><i class="bi bi-flag-fill"></i> Calculate ELO Rating Changes</button>
-          <!-- <button id="test-raceResultsInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button> -->
+          <button id="test-raceResultsInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button>
         </div>
       </div>
 
