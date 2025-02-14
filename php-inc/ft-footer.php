@@ -33,6 +33,8 @@ if ($pageTitle == "Sim Racing Fuel Calculator") {
   echo "<script src=\"/js/simracingfuelcalc.js\"></script>";
 } elseif ($pageTitle == "CMS Driver Stratification") {
   $timestamp = time();
+  echo '<script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>';
+  echo '<script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>';
   echo "<script src=\"/app/elo/js/cms-stratification-tables.js?v=" . $timestamp . "\"></script>";
 } elseif ($pageTitle == "CMS Race Result ELO") {
   $timestamp = time();

@@ -155,8 +155,8 @@ $(document).ready(function () {
     let maxRatingAdjustment = 0;
 
     // use higher K-Factor during probation
-    if (driver.races < 10) {
-      maxRatingAdjustment = 10.0;
+    if (driver.races <= 10) {
+      maxRatingAdjustment = 12;
     } else {
       // adjust K-Factor based on license
       if (driver.rating <= 899) {
