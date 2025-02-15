@@ -32,20 +32,14 @@ include_once "../../php-inc/ft-header.php";
         <table id="cms-strat-modern" class="display table table-striped table-hover dataTable" style="width:100%">
           <!-- <thead>
             <tr>
+              <th></th>
               <th>Driver</th>
+              <th>Class</th>
               <th>Rating</th>
               <th>Races</th>
               <th>Updated</th>
             </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th>Driver</th>
-              <th>Rating</th>
-              <th>Races</th>
-              <th>Updated</th>
-            </tr>
-          </tfoot> -->
+          </thead> -->
         </table>
 
         <p class="text-center mt-4">If your flag is incorrect or you have any questions, please contact Troy Uyan on the CMS Discord Server.</p>

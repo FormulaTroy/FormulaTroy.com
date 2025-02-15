@@ -8,6 +8,12 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="/css/formulatroy.css">
+  <?php # add page-specific CSS
+  if ($pageTitle == "CMS Driver Stratification") {
+    echo '<link rel="stylesheet" href="/img/flag-icons/css/flag-icons.min.css">';
+    echo '<link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">';
+  }
+  ?>
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico"/>
 </head>
 

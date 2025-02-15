@@ -10,7 +10,6 @@ $(document).ready(function () {
     let newDriver = {
       [driverMachineName]: {
         "name": driverName,
-        "flag": "us",
         "rating": [defaultELO],
         "races": 0,
         "lastChangedDate": "1970/01/01"
@@ -23,7 +22,6 @@ $(document).ready(function () {
     let newPostRaceDriver = {
       [driverMachineName]: {
         "name": driverName,
-        "flag": "us",
         "rating": [defaultELO],
         "races": 0,
         "lastChangedDate": "1970/01/01"
@@ -147,9 +145,9 @@ $(document).ready(function () {
     //  0-10 Races
     //
     // Licensed Results
-    // Copper (   0- 899)
-    // Bronze ( 900-1099)
-    // Silver (1100-1299)
+    // Copper (   0- 999)
+    // Bronze (1000-1199)
+    // Silver (1200-1299)
     //   Gold (1300-1499)
     //   Plat (1500+    )
     let maxRatingAdjustment = 0;
@@ -159,10 +157,10 @@ $(document).ready(function () {
       maxRatingAdjustment = 12;
     } else {
       // adjust K-Factor based on license
-      if (driver.rating <= 899) {
+      if (driver.rating <= 999) {
         // Copper
         maxRatingAdjustment = 8
-      } else if (driver.rating <= 1099) {
+      } else if (driver.rating <= 1199) {
         // Bronze
         maxRatingAdjustment = 7
       } else if (driver.rating <= 1299) {
@@ -369,7 +367,7 @@ $(document).ready(function () {
   // testing functions
   $("#test-driverRatingInput").on("click", function () {
     $("#driverRatingInput").val("");
-    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","flag": "us","rating": [1320],"races": 0,"lastChangedDate": "1970/01/01"}}');
+    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","rating": [1320],"races": 0,"lastChangedDate": "1970/01/01"}}');
   });
   $("#test-raceResultsInput").on("click", function () {
     $("#raceResultsInput").val("");

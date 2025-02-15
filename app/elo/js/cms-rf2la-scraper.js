@@ -9,7 +9,9 @@ let driverCount = 0;
 // text output by class
 let unifiedClassResults = "";
 let hypercarResults = "";
+let lmp2Results = "";
 let lmgt3Results = "";
+let gt4Results = "";
 
 // helper: add driver to correct result list by class
 function addDriverToResults(driverName, carClass) {
@@ -20,6 +22,7 @@ function addDriverToResults(driverName, carClass) {
     case "AM":
     case "BTCC":
     case "SPEC":
+    case "TA2":
       unifiedClassResults += driverName + "\n"
       break;
 
@@ -27,8 +30,16 @@ function addDriverToResults(driverName, carClass) {
       hypercarResults += driverName + "\n"
       break;
 
+    case "LMP2":
+      lmp2Results += driverName + "\n"
+      break;
+
     case "LMGT3":
       lmgt3Results += driverName + "\n"
+      break;
+
+    case "GT4":
+      gt4Results += driverName + "\n"
       break;
 
     default:
@@ -85,10 +96,20 @@ function outputResults() {
     textExportContents += "RESULT: HYPERCAR =============\n";
     textExportContents += hypercarResults;
   }
+  if (lmp2Results != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: LMP2 =============\n";
+    textExportContents += lmp2Results;
+  }
   if (lmgt3Results != "") {
     textExportContents += dateString
     textExportContents += "RESULT: LMGT3 =============\n";
     textExportContents += lmgt3Results;
+  }
+  if (gt4Results != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: GT4 =============\n";
+    textExportContents += gt4Results;
   }
 
   textExportContents = textExportContents.trim();
@@ -101,11 +122,14 @@ function outputResults() {
     textarea.css("height", "750px").css("width", "1128px");
     textarea.val(textExportContents);
     $("nav").prepend(textarea);
+    console.log(driverCount + " total drivers added to results");
   } else {
     let combinedText = textareaExisting.val() + "\n" + textExportContents;
     textareaExisting.val(combinedText);
     console.log(driverCount + " total drivers added to results");
   }
+
+  return true;
 
 }
 
@@ -121,7 +145,7 @@ resultTableRows.each(function () {
   let timeGapStatus = "";
 
   // make sure there's enough columns, and see if there's a "Cat" (class) column or not
-  if (cells.length = 13) {
+  if (cells.length == 13) {
     // get driver data, extract class from Car / Vehicle # column ("#24 Hypercar")
     carClass = $(cells[4]).text().trim();
     if (carClass.includes("Hypercar")) {
@@ -137,7 +161,7 @@ resultTableRows.each(function () {
     carClass = carClass.toUpperCase();
     driverName = $(cells[2]).text().trim();
     timeGapStatus = $(cells[6]).text().trim();
-  } else if (cells.length = 14) {
+  } else if (cells.length == 14) {
     // get driver data, get class from Category column ("Hypercar|2")
     carClass = $(cells[2]).text().trim();
     carClass = carClass.substring(0, carClass.indexOf("|")); // turn "Class|Pos #" into "Class"

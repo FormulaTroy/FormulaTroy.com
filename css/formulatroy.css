@@ -213,6 +213,42 @@ form#fuel-calc-form .form-control.is-invalid {
   font-weight: bold;
 }
 
+/* CMS Stratification Page Styles */
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+  text-align: left !important;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>*,.table-striped>tbody>tr:nth-of-type(even)>* {
+  color: var(--ftlight);
+}
+.medal {
+  color: white;
+  text-align: center;
+  font-size: .78em;
+  background-size: 100% 100%;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  display: inline-block;
+  min-width: 100px;
+}
+.medal-copper {
+  background-image: linear-gradient(200deg, #D09050, #A06020, #703000);
+}
+
+.medal-bronze {
+  background-image: linear-gradient(200deg, #efba6a, #C08020, #6e3f04);
+}
+
+.medal-silver {
+  background-image: linear-gradient(200deg, #ffffff, #cfcfcf, #808080);
+}
+
+.medal-gold {
+  background-image: linear-gradient(200deg, #FFFF80, #FFCC00, #B38F00);
+}
+
+.medal-platinum {
+  background-image: linear-gradient(200deg, #f3f3f3, #c5b9f3, #999999);
+}
+
 /* Project Changelogs & FAQs */
 .accordion-item {
   max-width: 550px;
