@@ -145,8 +145,8 @@ $(document).ready(function () {
     //  0-10 Races
     //
     // Licensed Results
-    // Copper (   0- 999)
-    // Bronze (1000-1199)
+    // Copper (   0-1099)
+    // Bronze (1100-1199)
     // Silver (1200-1299)
     //   Gold (1300-1499)
     //   Plat (1500+    )
@@ -157,7 +157,7 @@ $(document).ready(function () {
       maxRatingAdjustment = 12;
     } else {
       // adjust K-Factor based on license
-      if (driver.rating <= 999) {
+      if (driver.rating <= 1099) {
         // Copper
         maxRatingAdjustment = 8
       } else if (driver.rating <= 1199) {

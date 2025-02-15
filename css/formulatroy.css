@@ -22,7 +22,7 @@ body {
 }
 
 /* Nav Bar */
-nav {
+header nav {
   border-bottom: 1px solid var(--ftblue);
 }
 
@@ -214,21 +214,28 @@ form#fuel-calc-form .form-control.is-invalid {
 }
 
 /* CMS Stratification Page Styles */
-table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date {
   text-align: left !important;
 }
-.table-striped>tbody>tr:nth-of-type(odd)>*,.table-striped>tbody>tr:nth-of-type(even)>* {
+
+.table-striped>tbody>tr:nth-of-type(odd)>*,
+.table-striped>tbody>tr:nth-of-type(even)>* {
   color: var(--ftlight);
 }
+
 .medal {
   color: white;
   text-align: center;
-  font-size: .78em;
+  font-size: .8em;
   background-size: 100% 100%;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
   display: inline-block;
   min-width: 100px;
 }
+
 .medal-copper {
   background-image: linear-gradient(200deg, #D09050, #A06020, #703000);
 }
@@ -247,6 +254,14 @@ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataT
 
 .medal-platinum {
   background-image: linear-gradient(200deg, #f3f3f3, #c5b9f3, #999999);
+}
+
+.arrow-red {
+  color: #ce5757;
+}
+
+.arrow-green {
+  color: #57ce5d;
 }
 
 /* Project Changelogs & FAQs */

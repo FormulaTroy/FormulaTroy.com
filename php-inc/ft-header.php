@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php if ($pageTitle) {echo "$pageTitle | ";}?>FormulaTroy</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title><?php if ($pageTitle) {echo "$pageTitle | ";} ?>FormulaTroy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="/css/formulatroy.css">
   <?php # add page-specific CSS
@@ -14,7 +14,7 @@
     echo '<link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">';
   }
   ?>
-  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
 </head>
 
 <body>

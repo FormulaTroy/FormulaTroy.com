@@ -1056,7 +1056,7 @@ Daniel Kirby
 Eric Schmieder
 Matheus Santos
 Caetano Paiva
-oliver day
+Oliver Day
 Jamie Zolecki
 Daniel Faas
 Karl Strouhal
@@ -1106,7 +1106,7 @@ Sean Kelly
 James Bowders
 Tom Nasella
 Caetano Paiva
-oliver day
+Oliver Day
 Daniel Kirby
 Norm Graf
 Darrel Kruger
@@ -1132,7 +1132,7 @@ Norm Graf
 Josh Lipetri
 Jason Whited
 Mack Sunthonlap
-oliver day
+Oliver Day
 Darrel Kruger
 Eugene Mazur
 James Bowders
@@ -1161,7 +1161,7 @@ Daniel Faas
 Mack Sunthonlap
 Eugene Mazur
 Josh Lipetri
-oliver day
+Oliver Day
 Erik Jacobs
 Vinicius de Oliveira
 Tommy Teasdale
@@ -1194,7 +1194,7 @@ Vinicius de Oliveira
 Daniel Kirby
 Danny Corriveau
 Darrel Kruger
-oliver day
+Oliver Day
 Gilles Lalonde
 Sean Kelly
 Gino Bardelli
@@ -1242,7 +1242,7 @@ Vinicius de Oliveira
 Jason Whited
 Tom Nasella
 Gilles Lalonde
-oliver day
+Oliver Day
 Philippe Henrique
 RACE DATE: 2023/10/12
 RESULT: UNIFIED CLASS =============
@@ -1250,7 +1250,7 @@ Daniel Kirby
 Tommy Teasdale
 Matheus Santos
 Norm Graf
-oliver day
+Oliver Day
 Matthew Overton
 Micah Locke
 John Maher
@@ -1293,7 +1293,7 @@ Daniel Faas
 Josh Lipetri
 James Bowders
 Jerry Hamilton
-oliver day
+Oliver Day
 Darrel Kruger
 Sean Kelly
 Jason Whited
@@ -1325,14 +1325,14 @@ Jerry Hamilton
 JT Tami
 Craig Gallagher
 Eugene Mazur
-oliver day
+Oliver Day
 Jason Whited
 RACE DATE: 2023/10/26
 RESULT: UNIFIED CLASS =============
 Adam Baldwin
 Matheus Santos
 Matthew Overton
-oliver day
+Oliver Day
 Vinicius de Oliveira
 JT Tami
 Mack Sunthonlap
@@ -1624,7 +1624,7 @@ Josh McGlinsky
 Paul Ibbotson
 Ross Smith
 Stephen Miller
-oliver day
+Oliver Day
 Gino Bardelli
 Stuart Barge
 Eugene Mazur
@@ -1789,7 +1789,7 @@ Vinicius Goncalves
 Willian Schlichting
 Mack Sunthonlap
 Ross Smith
-oliver day
+Oliver Day
 Sean Kelly
 Stephen Miller
 Matthew Overton
@@ -1825,7 +1825,7 @@ Ross Smith
 Erik Jacobs
 Cole McMillan
 James Walker
-oliver day
+Oliver Day
 Micah Locke
 Stephen Miller
 Josh McGlinsky
@@ -1879,7 +1879,7 @@ Ryan-Paulbert Reyes
 Erik Jacobs
 Mack Sunthonlap
 Sean Kelly
-oliver day
+Oliver Day
 Vinicius Goncalves
 Alexander McQuerry
 Tom Nasella
@@ -1914,7 +1914,7 @@ Ryan-Paulbert Reyes
 Micah Doern
 Vinicius Goncalves
 Cole McMillan
-oliver day
+Oliver Day
 Stephen Miller
 John Maher
 James Bowders
@@ -2041,7 +2041,7 @@ JT Tami
 Jason Whited
 Micah Locke
 Ben Kesby
-oliver day
+Oliver Day
 Jon Uyan
 Paul Ibbotson
 Jerry Chen
@@ -2091,7 +2091,7 @@ Eugene Mazur
 Erik Jacobs
 John Maher
 Dave Cours
-oliver day
+Oliver Day
 Gino Bardelli
 Paul Ibbotson
 Josh Lipetri
@@ -2122,7 +2122,7 @@ Angus Tong
 Jerry Chen
 John Maher
 Mack Sunthonlap
-oliver day
+Oliver Day
 David Anderson
 Gilles Lalonde
 Karl Strouhal
@@ -2149,7 +2149,7 @@ Ben Kesby
 Micah Locke
 Wayne Galvan
 Angus Tong
-oliver day
+Oliver Day
 Jerry Chen
 Eugene Mazur
 Gilles Lalonde
@@ -2176,7 +2176,7 @@ JT Tami
 Johnny Gutierrez
 Adam Baldwin
 Angus Tong
-oliver day
+Oliver Day
 Erik Jacobs
 Jerry Chen
 John Maher
@@ -2208,7 +2208,7 @@ JT Tami
 Micah Locke
 Mack Sunthonlap
 Josh Lipetri
-oliver day
+Oliver Day
 Norm Graf
 John Maher
 Jerry Chen
@@ -2236,7 +2236,7 @@ Johnny Gutierrez
 Angus Tong
 Mack Sunthonlap
 Norm Graf
-oliver day
+Oliver Day
 Erik Jacobs
 David Anderson
 Matthew Overton
@@ -2569,12 +2569,12 @@ Dave Cours
 Karl Strouhal
 Eduardo Beninca
 Willian Schlichting
-shawn erik
+Shawn Erik
 Ryan-Paulbert Reyes
 Erik Jacobs
 Scar Pope
 Sean Kelly
-oliver day
+Oliver Day
 Stacie Scotts
 Cole McMillan
 Ege Karabacak
@@ -2583,7 +2583,7 @@ RACE DATE: 2024/10/31
 RESULT: UNIFIED CLASS =============
 Daniel Kirby
 Ben Kesby
-shawn erik
+Shawn Erik
 Norm Graf
 Eduardo Beninca
 JT Tami
@@ -2604,16 +2604,16 @@ Darrel Kruger
 Matthew Overton
 Philippe Dicartti
 Tony Boynton
-oliver day
+Oliver Day
 RACE DATE: 2024/10/31
 RESULT: UNIFIED CLASS =============
 Daniel Kirby
 Ben Kesby
 JT Tami
 Ege Karabacak
-shawn erik
+Shawn Erik
 Johnny Gutierrez
-oliver day
+Oliver Day
 John Maher
 Norm Graf
 Gilles Lalonde
@@ -2640,7 +2640,7 @@ Ben Kesby
 Ege Karabacak
 Erik Jacobs
 Johnny Gutierrez
-shawn erik
+Shawn Erik
 Norm Graf
 John Maher
 Ryan-Paulbert Reyes
@@ -2648,7 +2648,7 @@ Karl Strouhal
 Matthew Overton
 Scar Pope
 Dave Cours
-oliver day
+Oliver Day
 Paul Ibbotson
 Mack Sunthonlap
 Alexander McQuerry
@@ -2679,8 +2679,8 @@ Sean Kelly
 Scar Pope
 Tom Nasella
 Matthew Overton
-oliver day
-shawn erik
+Oliver Day
+Shawn Erik
 Daniel Kirby
 Ryan-Paulbert Reyes
 RACE DATE: 2024/11/07
@@ -2690,7 +2690,7 @@ Daniel Kirby
 Tommy Teasdale
 Ben Kesby
 Ege Karabacak
-shawn erik
+Shawn Erik
 Johnny Gutierrez
 Mike Bell
 Matthew Overton
@@ -2704,7 +2704,7 @@ Dave Cours
 Paul Ibbotson
 Ryan-Paulbert Reyes
 Karl Strouhal
-oliver day
+Oliver Day
 Sean Kelly
 Norm Graf
 Scar Pope
@@ -2717,9 +2717,9 @@ Tommy Teasdale
 Johnny Gutierrez
 JT Tami
 Eduardo Beninca
-oliver day
+Oliver Day
 Mike Bell
-shawn erik
+Shawn Erik
 Jonathan Ethier
 Norm Graf
 Dave Cours
@@ -2750,19 +2750,19 @@ Norm Graf
 Sean Kelly
 Tom Nasella
 Gilles Lalonde
-shawn erik
+Shawn Erik
 Matthew Overton
-oliver day
+Oliver Day
 Scar Pope
 RACE DATE: 2024/11/21
 RESULT: UNIFIED CLASS =============
 Eduardo Beninca
-shawn erik
+Shawn Erik
 Norm Graf
 Jonathan Ethier
 Tommy Teasdale
 Johnny Gutierrez
-oliver day
+Oliver Day
 Mack Sunthonlap
 Mike Bell
 Sean Kelly
@@ -2789,7 +2789,7 @@ Mike Bell
 Ege Karabacak
 Johnny Gutierrez
 Jonathan Ethier
-shawn erik
+Shawn Erik
 Brian Hall
 Mack Sunthonlap
 Paul Ibbotson
@@ -2798,7 +2798,7 @@ Mike Freund
 Scar Pope
 Gilles Lalonde
 Karl Strouhal
-oliver day
+Oliver Day
 Tom Mountjoy
 Stacie Scotts
 Norm Graf
@@ -2806,11 +2806,11 @@ Tom Nasella
 RACE DATE: 2024/11/21
 RESULT: UNIFIED CLASS =============
 Ben Kesby
-oliver day
+Oliver Day
 Scar Pope
 Daniel Kirby
 Norm Graf
-shawn erik
+Shawn Erik
 Karl Strouhal
 Brian Hall
 Eduardo Beninca
@@ -2837,11 +2837,11 @@ Norm Graf
 Gilles Lalonde
 Scar Pope
 Karl Strouhal
-oliver day
+Oliver Day
 Darrel Kruger
 Sean Kelly
 Stacie Scotts
-shawn erik
+Shawn Erik
 Matthew Overton
 Tommy Teasdale
 RACE DATE: 2024/12/05
@@ -2850,7 +2850,7 @@ Ege Karabacak
 Johnny Gutierrez
 JT Tami
 Eduardo Beninca
-shawn erik
+Shawn Erik
 Ben Kesby
 Jonathan Ethier
 Paul Ibbotson
@@ -2868,7 +2868,7 @@ Eduardo Beninca
 Tommy Teasdale
 Ege Karabacak
 Gilles Lalonde
-shawn erik
+Shawn Erik
 Jonathan Ethier
 Norm Graf
 JT Tami
@@ -2885,7 +2885,7 @@ Jonathan Ethier
 Eduardo Beninca
 Mack Sunthonlap
 JT Tami
-shawn erik
+Shawn Erik
 Karl Strouhal
 Paul Ibbotson
 Gilles Lalonde
@@ -2902,7 +2902,7 @@ Jonathan Ethier
 Tommy Teasdale
 Ege Karabacak
 Johnny Gutierrez
-shawn erik
+Shawn Erik
 John Maher
 Norm Graf
 Scar Pope
@@ -2921,7 +2921,7 @@ Tommy Teasdale
 Johnny Gutierrez
 Ege Karabacak
 Norm Graf
-oliver day
+Oliver Day
 Pedro Crulas Gomes
 Gilles Lalonde
 Karl Strouhal
@@ -2932,7 +2932,7 @@ Erik Jacobs
 Sean Kelly
 Matthew Overton
 Paul Ibbotson
-shawn erik
+Shawn Erik
 RACE DATE: 2024/12/19
 RESULT: UNIFIED CLASS =============
 Johnny Gutierrez
@@ -2941,11 +2941,11 @@ Ege Karabacak
 JT Tami
 John Maher
 Mack Sunthonlap
-oliver day
+Oliver Day
 Paul Ibbotson
 Norm Graf
 Gilles Lalonde
-shawn erik
+Shawn Erik
 Erik Jacobs
 Karl Strouhal
 Sean Kelly
@@ -3425,7 +3425,7 @@ Scar Pope
 Gilles Lalonde
 Karl Strouhal
 Oscar Dancourt
-oliver day
+Oliver Day
 Alec King
 Philippe Dicartti
 Josh McGlinsky
@@ -3439,10 +3439,10 @@ Josh McGlinsky
 Scar Pope
 Alec King
 Oscar Dancourt
-oliver day
+Oliver Day
 RACE DATE: 2024/11/19
 RESULT: UNIFIED CLASS =============
-oliver day
+Oliver Day
 Willian Schlichting
 Scar Pope
 Bo Stamper
@@ -3454,7 +3454,7 @@ JT Tami
 RACE DATE: 2024/11/19
 RESULT: UNIFIED CLASS =============
 Willian Schlichting
-oliver day
+Oliver Day
 Gilles Lalonde
 Karl Strouhal
 Peter Stefani
@@ -3468,7 +3468,7 @@ Gilles Lalonde
 Willian Schlichting
 Scar Pope
 Karl Strouhal
-oliver day
+Oliver Day
 Oscar Dancourt
 RACE DATE: 2024/12/10
 RESULT: UNIFIED CLASS =============
@@ -3477,11 +3477,11 @@ Willian Schlichting
 Karl Strouhal
 Scar Pope
 Gilles Lalonde
-oliver day
+Oliver Day
 Oscar Dancourt
 RACE DATE: 2024/12/17
 RESULT: UNIFIED CLASS =============
-oliver day
+Oliver Day
 Rhys Gardiner
 Gilles Lalonde
 Willian Schlichting
@@ -3490,7 +3490,7 @@ Karl Strouhal
 Oscar Dancourt
 RACE DATE: 2024/12/17
 RESULT: UNIFIED CLASS =============
-oliver day
+Oliver Day
 Gilles Lalonde
 Willian Schlichting
 Rhys Gardiner
@@ -3574,14 +3574,14 @@ Bradley Sellars
 Jeffrey Elliss
 Oliver Newman
 Karl Strouhal
-oliver day
+Oliver Day
 Stacie Scotts
 RACE DATE: 2024/11/19
 RESULT: UNIFIED CLASS =============
 Mike Bell
 Bradley Sellars
 Oliver Newman
-oliver day
+Oliver Day
 Karl Strouhal
 Jeffrey Elliss
 RACE DATE: 2024/11/26
@@ -3590,7 +3590,7 @@ Daniel Hurlock
 Mike Bell
 Oliver Newman
 Scar Pope
-oliver day
+Oliver Day
 Karl Strouhal
 Peter Stefani
 Stacie Scotts
@@ -3600,7 +3600,7 @@ Daniel Hurlock
 Mike Bell
 Oliver Newman
 Scar Pope
-oliver day
+Oliver Day
 Peter Stefani
 Karl Strouhal
 Hubert van Gashoven
@@ -3610,13 +3610,13 @@ Eelco Bussink
 Mike Bell
 Oliver Newman
 Stephen Wenham
-oliver day
+Oliver Day
 RACE DATE: 2024/12/10
 RESULT: UNIFIED CLASS =============
 Eelco Bussink
 Oliver Newman
 Mike Bell
-oliver day
+Oliver Day
 RACE DATE: 2024/12/17
 RESULT: UNIFIED CLASS =============
 Bradley Sellars
@@ -3625,7 +3625,7 @@ Jeffrey Elliss
 Scar Pope
 Wouter de Bruijn
 Mike Bell
-oliver day
+Oliver Day
 Karl Strouhal
 Stacie Scotts
 Oliver Newman
@@ -3634,7 +3634,7 @@ RESULT: UNIFIED CLASS =============
 Bradley Sellars
 Eelco Bussink
 Oliver Newman
-oliver day
+Oliver Day
 Wouter de Bruijn
 Mike Bell
 Daniel Hurlock
@@ -3881,7 +3881,7 @@ Lanny Hall
 Diego Rodrigues
 John Maher
 Karl Strouhal
-oliver day
+Oliver Day
 Norm Graf
 RACE DATE: 2025/01/30
 RESULT: LMP2 =============
@@ -3938,7 +3938,7 @@ W. Mike Buice
 Matthew Buice
 Wayne Hutchison
 Eric Moinet
-oliver day
+Oliver Day
 Magnus Dahlgren
 George Angelidis
 Troy Uyan
@@ -4007,7 +4007,7 @@ Mack Sunthonlap
 Dave Cours
 Karl Strouhal
 Cole McMillan
-shawn erik
+Shawn Erik
 Ryan-Paulbert Reyes
 RACE DATE: 2025/02/11
 RESULT: GT4 =============
@@ -4025,7 +4025,7 @@ RACE DATE: 2025/02/11
 RESULT: UNIFIED CLASS =============
 JT Tami
 Alec King
-shawn erik
+Shawn Erik
 Micah Locke
 Ryan-Paulbert Reyes
 Dave Cours
