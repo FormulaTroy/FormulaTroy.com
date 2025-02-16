@@ -254,6 +254,7 @@ table.dataTable td.dt-type-date {
 
 .medal-platinum {
   background-image: linear-gradient(200deg, #f3f3f3, #c5b9f3, #999999);
+  box-shadow: 0 0 4px 2px rgb(128 97 255);
 }
 
 .arrow-red {

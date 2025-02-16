@@ -29,7 +29,7 @@ include_once "../../php-inc/ft-header.php";
         </div>
       </div>
 
-      <div class="col col-md-6">
+      <!-- <div class="col col-md-6">
         <div id="driverRatingDeltas-wrapper" class="mb-4">
           <label for="driverRatingDeltas">Rating Adjustments</label>
           <textarea class="form-control" name="driverRatingDeltas" id="driverRatingDeltas" rows="3" placeholder="Troy Uyan: +50&#10;John Smith: -125"></textarea>
@@ -42,7 +42,7 @@ include_once "../../php-inc/ft-header.php";
           <label for="driverLicenseChanges">License Changes</label>
           <textarea class="form-control" name="driverLicenseChanges" id="driverLicenseChanges" rows="3" placeholder="Troy Uyan, Promotion, Gold -> Platinum&#10;John Smith, Relegation, Gold -> Silver"></textarea>
         </div>
-      </div>
+      </div> -->
 
       <div class="col col-md-12">
         <div id="driverRatingOutput-wrapper" class="mb-4">
