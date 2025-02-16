@@ -4,17 +4,17 @@ $(document).ready(function () {
   // Licensed Results
   // Copper (   0-1099)
   // Bronze (1100-1199)
-  // Silver (1200-1299)
-  //   Gold (1300-1499)
-  //   Plat (1500+    )
+  // Silver (1200-1349)
+  //   Gold (1350-1599)
+  //   Plat (1600+    )
   function getLicenseIcon(rating) {
     if (rating <= 1099) {
       return "<span class='badge medal medal-copper'>Copper</span>";
     } else if (rating <= 1199) {
       return "<span class='badge medal medal-bronze'>Bronze</span>";
-    } else if (rating <= 1299) {
+    } else if (rating <= 1349) {
       return "<span class='badge medal medal-silver'>Silver</span>";
-    } else if (rating <= 1499) {
+    } else if (rating <= 1599) {
       return "<span class='badge medal medal-gold'>Gold</span>";
     } else {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
@@ -26,15 +26,53 @@ $(document).ready(function () {
   function getFlag(name) {
     let flagCode = "xx";
     switch (name) {
+
+      case "Adam Gray":
+      case "Alexander Serraima":
+      case "Becky Ely-Clark":
+      case "Ben Boorman":
+      case "Ben Kesby":
+      case "Bradley Sellars":
+      case "Cameron Barker":
+      case "Cian Pullen":
+      case "Craig Pullen":
+      case "Daniel Hurlock":
+      case "Eelco Bussink":
+      case "Luke Mitchell":
+      case "Mike Bell":
+      case "Oliver Newman":
+      case "Robin Moelling":
+      case "Tom Lane":
+      case "William Snowden":
+        flagCode = "gb"; // United Kingdom
+        break;
+
+      case "Brandon Gant":
+      case "Gilles Lalonde":
+      case "James Walker":
+      case "John Maher":
+      case "Kyle Vesa":
+      case "Matthew Overton":
+      case "Oliver Day":
+      case "Stephen Miller":
+      case "Wayne Hutchison":
+        flagCode = "ca"; // Canada
+        break;
+
       case "Troy Uyan":
       case "Jon Uyan":
-        flagCode = "tr";
+      case "Ege Karabacak":
+        flagCode = "tr"; // Turkey
         break;
-      case "Matthew Overton":
-        flagCode = "ca";
+
+      case "Alain Le Francois":
+      case "Eric Moinet":
+      case "Tony McOffoven":
+        flagCode = "fr"; // France
         break;
+
       default:
-        flagCode = "us";
+        flagCode = "us"; // United States
         break;
     }
     return '<span class="fi fi-' + flagCode + '"></span>';
@@ -51,13 +89,9 @@ $(document).ready(function () {
     }
   }
 
-  // helper: check if the driver is on probation
-  function checkIfProbation(raceCount) {
-    if (raceCount <= 10) {
-      return raceCount + ' <i class="bi bi-person-fill-add" title="First 10 races are subject to bigger rating adjustments"></i>';
-    } else {
-      return raceCount;
-    }
+  // helper: display badge based on class and suggested color
+  function displayClassBadge(carClass, tagColor) {
+    return '<span class="badge badge-class-' + tagColor + '">' + carClass + '</span>&nbsp;';
   }
 
   // event: open up the inspect modal for a particular driver
@@ -68,34 +102,113 @@ $(document).ready(function () {
     console.log("Driver Data:", driver);
 
     // reset the modal html for the new driver
-    $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name + " (Modern)");
+    $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name);
     $('#modalBody').empty();
     let modalBodyHTML = '<div class="container-fluid"><div class="row">';
 
     // TO DO chart thingy probably at the top?
     //driver.rating is the array of liiiiiife
+    modalBodyHTML += driver.rating + '</div><div class="row">';
 
     // left side (stats)
     modalBodyHTML += '<div class="col">';
-    modalBodyHTML += '<h4>Stats</h4>';
-    modalBodyHTML += '<p>' + getLicenseIcon(driver.rating[driver.rating.length - 1]) + '</p>';
-    modalBodyHTML += '<p><strong>Rating:</strong> ' + driver.rating[driver.rating.length - 1] + ' (' + (prettyRatingChange(driver.rating[driver.rating.length - 1] - driver.rating[driver.rating.length - 2])) + ')</p>';
+    modalBodyHTML += '<h4>Modern License</h4>';
+    let currentRating = driver.rating[driver.rating.length - 1];
+    modalBodyHTML += '<p>' + getLicenseIcon(currentRating) + '</p>';
+    modalBodyHTML += '<p><strong>Rating:</strong> ' + currentRating + ' (' + (prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2])) + ')</p>';
     modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + driver.races + '</p>';
     modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.lastChangedDate + '</p>';
     if (driver.races <= 10) {
-      modalBodyHTML += '<div class="alert alert-light" role="alert"><i class="bi bi-exclamation-triangle-fill" style="color:yellow"></i> ' + driver.name + ' is on probation (first 10 races) and is subject to faster rating adjustments.</div>';
+      modalBodyHTML += '<div class="alert alert-light" role="alert"><i class="bi bi-exclamation-triangle-fill" style="color:#ffca2c"></i> ' + driver.name + ' is on probation and subject to faster rating adjustments.<br><br>This will expire after 10 races.</div>';
     }
-
-
 
     // right side (eligible car classes)
     modalBodyHTML += '</div><div class="col">';
-    // TO DO get class icons
-    // make grid of what you're allowed to race right now
+    modalBodyHTML += '<h4>Modern Class Eligibility</h4>';
+    let licenseLevel = null;
+    // Licensed Results
+    // Copper (   0-1099)
+    // Bronze (1100-1199)
+    // Silver (1200-1349)
+    //   Gold (1350-1599)
+    //   Plat (1600+    )
+    if (currentRating <= 1099) {
+      licenseLevel = 0; // copper
+    } else if (currentRating <= 1199) {
+      licenseLevel = 1; // bronze
+    } else if (currentRating <= 1349) {
+      licenseLevel = 2; // silver
+    } else if (currentRating <= 1599) {
+      licenseLevel = 3; // gold
+    } else {
+      licenseLevel = 4; // plat
+    }
 
+    // class displays for each active series
+    // colors: red, blue, green, orange, cyan
+    // modalBodyHTML += '<h6>Virtual World Sportscar Championship</h6>';
+    // modalBodyHTML += '<p>';
+    // if (licenseLevel >= 3) {
+    //   modalBodyHTML += displayClassBadge("HyperCar Pro","red");
+    //   modalBodyHTML += displayClassBadge("LMGT3 Pro","green");
+    // } else {
+    //   modalBodyHTML += displayClassBadge("HyperCar Am","blue");
+    //   modalBodyHTML += displayClassBadge("LMGT3 Am","orange");
+    // }
+    // modalBodyHTML += '</p>';
 
+    modalBodyHTML += '<h6>NARS Modern Sportscar Championship</h6>';
+    modalBodyHTML += '<p>';
+    if (licenseLevel == 4) {
+      modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
+      modalBodyHTML += displayClassBadge("LMP2", "cyan");
+    } else if (licenseLevel == 3) {
+      modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
+      modalBodyHTML += displayClassBadge("LMP2", "cyan");
+      modalBodyHTML += displayClassBadge("LMGT3 Pro", "green");
+    } else if (licenseLevel == 2 || licenseLevel == 1) {
+      modalBodyHTML += displayClassBadge("HyperCar Am", "blue");
+      modalBodyHTML += displayClassBadge("LMP2", "cyan");
+      modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
+    } else {
+      modalBodyHTML += displayClassBadge("LMP2", "cyan");
+      modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
+    }
+    modalBodyHTML += '</p>';
+
+    modalBodyHTML += '<h6>NARS Porsche Cup</h6>';
+    modalBodyHTML += '<p>';
+    if (licenseLevel >= 3) {
+      modalBodyHTML += displayClassBadge("PCC Pro", "red");
+    } else {
+      modalBodyHTML += displayClassBadge("PCC Am", "blue");
+    }
+    modalBodyHTML += '</p>';
+
+    modalBodyHTML += '<h6>NARS Australian TA2</h6>';
+    modalBodyHTML += '<p>';
+    if (licenseLevel == 4) {
+      modalBodyHTML += displayClassBadge("TA2 Pro", "red");
+    } else if (licenseLevel == 3) {
+      modalBodyHTML += displayClassBadge("TA2 Pro-Am", "green");
+    } else {
+      modalBodyHTML += displayClassBadge("TA2 Am", "blue");
+    }
+    modalBodyHTML += '</p>';
+
+    modalBodyHTML += '<h6>MNRL VP Sportscar Challenge</h6>';
+    modalBodyHTML += '<p>';
+    if (licenseLevel >= 3) {
+      modalBodyHTML += displayClassBadge("LMP3 Pro", "red");
+      modalBodyHTML += displayClassBadge("GT4 Pro", "green");
+    } else {
+      modalBodyHTML += displayClassBadge("LMP3 Am", "blue");
+      modalBodyHTML += displayClassBadge("GT4 Am", "orange");
+    }
+    modalBodyHTML += '</p>';
 
     // write the results
+    modalBodyHTML += '<p>Anything not listed here, please check with the series admin.</p></div></div></div>';
     $('#modalBody').append(modalBodyHTML);
 
   });
@@ -172,8 +285,8 @@ $(document).ready(function () {
         }
       }
     ],
-    order: [[6, 'desc'], [3, 'desc']], // sort by date and then by rating
-    //order: [[3, 'desc']], // sort by rating
+    //order: [[6, 'desc'], [3, 'desc']], // sort by date and then by rating
+    order: [[3, 'desc']], // sort by rating
     pageLength: 25,
     lengthMenu: [
       [10, 25, 50, 100, -1],

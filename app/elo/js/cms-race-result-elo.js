@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     let driverMachineName = getDriverMachineName(driverName);
 
-    let defaultELO = 1320; // low Gold
+    let defaultELO = 1320; // low Gold, low siler now??
 
     let newDriver = {
       [driverMachineName]: {

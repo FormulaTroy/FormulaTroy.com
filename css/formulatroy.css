@@ -264,6 +264,26 @@ table.dataTable td.dt-type-date {
   color: #57ce5d;
 }
 
+.badge-class-red {
+  background-color: #e21e19;
+}
+
+.badge-class-blue {
+  background-color: #005096;
+}
+
+.badge-class-green {
+  background-color: #009635;
+}
+
+.badge-class-orange {
+  background-color: #d3660d;
+}
+
+.badge-class-cyan {
+  background-color: #00a8e6;
+}
+
 /* Project Changelogs & FAQs */
 .accordion-item {
   max-width: 550px;

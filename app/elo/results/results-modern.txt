@@ -12,7 +12,7 @@ Norm Graf
 Gilles Lalonde
 Guilherme Bencke
 Ross Smith
-Philippe Henrique
+Philippe Dicartti
 Adrian Rice
 Aiden Coleman
 Cameron Sansano
@@ -46,7 +46,7 @@ Norm Graf
 Jerry Chen
 Brian Hall
 George Angelidis
-Philippe Henrique
+Philippe Dicartti
 Ben Boorman
 Nathaniel Davis
 Lanny Hall
@@ -82,7 +82,7 @@ Johnny Gutierrez
 Jon Uyan
 JT Tami
 Colin Blackman
-Philippe Henrique
+Philippe Dicartti
 Brian Hall
 Norm Graf
 Barry Dimarzo
@@ -118,7 +118,7 @@ Guilherme Bencke
 Lanny Hall
 Gilles Lalonde
 Don Fryman
-Philippe Henrique
+Philippe Dicartti
 Nathaniel Davis
 Jason Whited
 Jerry Hamilton
@@ -152,7 +152,7 @@ Jon Uyan
 Brian Hall
 John Maher
 Diego Rodrigues
-Philippe Henrique
+Philippe Dicartti
 Paul Ibbotson
 Gui Cevert
 Jerry Chen
@@ -187,7 +187,7 @@ Gilles Lalonde
 Tony Boynton
 James Bowders
 Mack Sunthonlap
-Philippe Henrique
+Philippe Dicartti
 Tom Nasella
 Gui Cevert
 Jon Uyan
@@ -222,7 +222,7 @@ Matthew Overton
 Vinicius Goncalves
 JT Tami
 Brian Hall
-Philippe Henrique
+Philippe Dicartti
 Lanny Hall
 Jerry Hamilton
 RACE DATE: 2023/04/06
@@ -266,7 +266,7 @@ Mia Rose
 Mike Bell
 Brian Hall
 George Angelidis
-Philippe Henrique
+Philippe Dicartti
 Diego Rodrigues
 Ross Smith
 Jason Whited
@@ -319,7 +319,7 @@ Karl Strouhal
 Erik Jacobs
 Mike Olson
 Jason Whited
-Philippe Henrique
+Philippe Dicartti
 RACE DATE: 2023/05/04
 RESULT: UNIFIED CLASS =============
 Daniel Kirby
@@ -468,7 +468,7 @@ Matthew Overton
 Jerry Hamilton
 Jason Whited
 Nathaniel Davis
-Philippe Henrique
+Philippe Dicartti
 Vinicius Goncalves
 Diego Rodrigues
 RACE DATE: 2023/06/01
@@ -543,7 +543,7 @@ Brian Hall
 Norm Graf
 Vinicius Goncalves
 Diego Rodrigues
-Philippe Henrique
+Philippe Dicartti
 Ken Scott
 Jerry Hamilton
 Jason Whited
@@ -651,7 +651,7 @@ Brian Hall
 Ross Smith
 Norm Graf
 Vinicius Goncalves
-Philippe Henrique
+Philippe Dicartti
 Jerry Chen
 Alec King
 Matthew Overton
@@ -691,7 +691,7 @@ Jason Whited
 Jerry Chen
 Norm Graf
 Ross Smith
-Philippe Henrique
+Philippe Dicartti
 Gilles Lalonde
 Alec King
 Jerry Hamilton
@@ -722,7 +722,7 @@ Brian Hall
 Ross Smith
 Jerry Chen
 Vinicius Goncalves
-Philippe Henrique
+Philippe Dicartti
 Diego Rodrigues
 Lanny Hall
 Gilles Lalonde
@@ -759,7 +759,7 @@ Gilles Lalonde
 Jerry Chen
 Norm Graf
 Diego Rodrigues
-Philippe Henrique
+Philippe Dicartti
 Ross Smith
 Matthew Overton
 Lanny Hall
@@ -826,7 +826,7 @@ Brian Hall
 Lanny Hall
 Vinicius Goncalves
 Jerry Chen
-Philippe Henrique
+Philippe Dicartti
 Diego Rodrigues
 Jon Uyan
 Norm Graf
@@ -860,7 +860,7 @@ Ross Smith
 Lanny Hall
 George Angelidis
 Gilles Lalonde
-Philippe Henrique
+Philippe Dicartti
 RACE DATE: 2023/11/09
 RESULT: LMGT3 =============
 Adam Baldwin
@@ -1070,7 +1070,7 @@ Jason Whited
 John Maher
 Gino Bardelli
 Erik Jacobs
-Philippe Henrique
+Philippe Dicartti
 Mack Sunthonlap
 Darrel Kruger
 Nick Schuetz
@@ -1112,7 +1112,7 @@ Norm Graf
 Darrel Kruger
 Jason Whited
 Jamie Zolecki
-Philippe Henrique
+Philippe Dicartti
 Ayrton de Lima
 Diego Rodrigues
 Craig Gallagher
@@ -1137,7 +1137,7 @@ Darrel Kruger
 Eugene Mazur
 James Bowders
 Matthew Overton
-Philippe Henrique
+Philippe Dicartti
 Erik Jacobs
 Karl Strouhal
 Tom Nasella
@@ -1171,7 +1171,7 @@ James Bowders
 Karl Strouhal
 Nick Schuetz
 Danny Corriveau
-Philippe Henrique
+Philippe Dicartti
 Sean Kelly
 Tom Nasella
 Brian Hall
@@ -1203,7 +1203,7 @@ Karl Strouhal
 James Bowders
 Paul Ibbotson
 Tom Nasella
-Philippe Henrique
+Philippe Dicartti
 Mack Sunthonlap
 Craig Gallagher
 Chris Hamilton
@@ -1243,7 +1243,7 @@ Jason Whited
 Tom Nasella
 Gilles Lalonde
 Oliver Day
-Philippe Henrique
+Philippe Dicartti
 RACE DATE: 2023/10/12
 RESULT: UNIFIED CLASS =============
 Daniel Kirby
@@ -2249,7 +2249,7 @@ James Bowders
 Gilles Lalonde
 Josh Lipetri
 Paul Ibbotson
-Ryan Reyes
+Ryan-Paulbert Reyes
 Karl Strouhal
 Tom Nasella
 Pedro Crulas Gomes
@@ -2279,7 +2279,7 @@ Matthew Overton
 Sean Kelly
 Tom Nasella
 Angus Tong
-Ryan Reyes
+Ryan-Paulbert Reyes
 RACE DATE: 2024/03/28
 RESULT: UNIFIED CLASS =============
 JT Tami
@@ -2335,7 +2335,7 @@ Mack Sunthonlap
 Karl Strouhal
 Sean Kelly
 JT Tami
-Ryan Reyes
+Ryan-Paulbert Reyes
 Gilles Lalonde
 Alec King
 Jason Whited
@@ -2354,7 +2354,7 @@ Sean Kelly
 Paul Ibbotson
 Mack Sunthonlap
 Karl Strouhal
-Ryan Reyes
+Ryan-Paulbert Reyes
 RACE DATE: 2024/05/16
 RESULT: UNIFIED CLASS =============
 Ben Kesby
@@ -3058,7 +3058,7 @@ Ross Smith
 Josh Lipetri
 Matthew Buice
 W. Mike Buice
-Ryan Reyes
+Ryan-Paulbert Reyes
 James Bowders
 Stuart Barge
 RACE DATE: 2024/04/27
@@ -3110,7 +3110,7 @@ Stephen Buice
 Filippo Marazzi
 W. Mike Buice
 Stephen Miller
-Ryan Reyes
+Ryan-Paulbert Reyes
 Karl Strouhal
 Joe Wilks
 James Bowders
@@ -3657,7 +3657,7 @@ Jerry Chen
 Micah Locke
 Eric Moinet
 Jason Whited
-Philippe Henrique
+Philippe Dicartti
 Louie Hesketh
 Guilherme Bencke
 Joe Falls
@@ -3696,7 +3696,7 @@ Gilles Lalonde
 Ross Smith
 Micah Locke
 Matthew Overton
-Philippe Henrique
+Philippe Dicartti
 Wayne Hutchison
 Benjamin Porteous-Heath
 William Miller
@@ -3738,7 +3738,7 @@ George Angelidis
 Benjamin Porteous-Heath
 Gilles Lalonde
 Alexander Schulz
-Philippe Henrique
+Philippe Dicartti
 Eric Moinet
 Jerry Chen
 Jason Whited
@@ -3788,7 +3788,7 @@ Louie Hesketh
 Matthew Overton
 Brian Hall
 Guilherme Bencke
-Philippe Henrique
+Philippe Dicartti
 RACE DATE: 2023/11/11
 RESULT: LMGT3 =============
 Becky Ely-Clark
