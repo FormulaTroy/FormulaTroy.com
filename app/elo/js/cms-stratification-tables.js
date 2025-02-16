@@ -12,9 +12,9 @@ $(document).ready(function () {
       return "<span class='badge medal medal-copper'>Copper</span>";
     } else if (rating <= 1199) {
       return "<span class='badge medal medal-bronze'>Bronze</span>";
-    } else if (rating <= 1349) {
+    } else if (rating <= 1299) {
       return "<span class='badge medal medal-silver'>Silver</span>";
-    } else if (rating <= 1599) {
+    } else if (rating <= 1499) {
       return "<span class='badge medal medal-gold'>Gold</span>";
     } else {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
@@ -32,6 +32,7 @@ $(document).ready(function () {
       case "Becky Ely-Clark":
       case "Ben Boorman":
       case "Ben Kesby":
+      case "Benjamin Porteous-Heath":
       case "Bradley Sellars":
       case "Cameron Barker":
       case "Cian Pullen":
@@ -59,6 +60,28 @@ $(document).ready(function () {
         flagCode = "ca"; // Canada
         break;
 
+      case "Eduardo Beninca":
+      case "Elisio Netto":
+      case "Gui Cevert":
+      case "Guilherme Bencke":
+      case "Luciano Ichazo":
+      case "Pedro Crulas Gomes":
+      case "Philippe Henrique":
+      case "Vinicius de Oliveira":
+      case "Vinicius Goncalves":
+      case "Willian Schlichting":
+        flagCode = "br"; // Brazil
+        break;
+
+      case "Timon Soovik":
+      case "Alexander Schulz":
+      case "Peter Meier":
+      case "Sachin Sobers":
+      case "Maximilian Putrafki":
+      case "Jascha Schmidt":
+        flagCode = "de" // Germany
+        break;
+
       case "Troy Uyan":
       case "Jon Uyan":
       case "Ege Karabacak":
@@ -71,10 +94,67 @@ $(document).ready(function () {
         flagCode = "fr"; // France
         break;
 
+      case "Mia Rose":
+      case "Rhys Gardiner":
+      case "Adrian Rice":
+        flagCode = "au" // Australia
+        break;
+
+      case "Vasilis Katerinakis":
+      case "George Angelidis":
+        flagCode = "gr" // Greece
+        break;
+
+      case "Wouter de Bruijn":
+      case "Brian van Beusekom":
+        flagCode = "nl" // Netherlands
+        break;
+
+      case "Magnus Dahlgren":
+        flagCode = "se" // Sweden
+        break;
+
+      case "David Jundt":
+        flagCode = "ch" // Switzerland
+        break;
+
+      case "Oscar Dancourt":
+        flagCode = "pe" // Peru
+        break;
+
+      case "Scar Pope":
+        flagCode = "pg" // Papua New Guinea
+        break;
+
+      case "Yuki Takanashi":
+        flagCode = "jp" // Japan
+        break;
+
+      case "Jerry Chen":
+        flagCode = "nz" // New Zealand
+        break;
+
+      case "Jaroslav Zacek":
+        flagCode = "cz" // Czech Republic
+        break;
+
+      case "Filippo Marazzi":
+        flagCode = "it" // Italy
+        break;
+
+      case "Gagan Dev":
+        flagCode = "in" // India
+        break;
+
+      case "Diego Rodrigues":
+        flagCode = "ar" // Argentina
+        break;
+
       default:
         flagCode = "us"; // United States
         break;
     }
+
     return '<span class="fi fi-' + flagCode + '"></span>';
   }
 

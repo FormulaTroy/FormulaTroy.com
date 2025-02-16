@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     let driverMachineName = getDriverMachineName(driverName);
 
-    let defaultELO = 1320; // low Gold, low siler now??
+    let defaultELO = 1000; // low Gold, low siler now?? // craziness that we can't decide??
 
     let newDriver = {
       [driverMachineName]: {
@@ -150,30 +150,32 @@ $(document).ready(function () {
     // Silver (1200-1299)
     //   Gold (1300-1499)
     //   Plat (1500+    )
-    let maxRatingAdjustment = 0;
+    let maxRatingAdjustment = 4;
 
     // use higher K-Factor during probation
-    if (driver.races <= 10) {
-      maxRatingAdjustment = 12;
-    } else {
-      // adjust K-Factor based on license
-      if (driver.rating <= 1099) {
-        // Copper
-        maxRatingAdjustment = 8
-      } else if (driver.rating <= 1199) {
-        // Bronze
-        maxRatingAdjustment = 7
-      } else if (driver.rating <= 1299) {
-        // Silver
-        maxRatingAdjustment = 6
-      } else if (driver.rating <= 1499) {
-        // Gold
-        maxRatingAdjustment = 5
-      } else {
-        // Platinum
-        maxRatingAdjustment = 4
-      }
-    }
+    // if (driver.races <= 10) {
+    //   maxRatingAdjustment = 6;
+    // } else {
+    //   maxRatingAdjustment = 4;
+    //   // adjust K-Factor based on license
+    //   // if (driver.rating <= 1099) {
+    //   //   // Copper
+    //   //   maxRatingAdjustment = 8
+    //   // } else if (driver.rating <= 1199) {
+    //   //   // Bronze
+    //   //   maxRatingAdjustment = 7
+    //   // } else if (driver.rating <= 1299) {
+    //   //   // Silver
+    //   //   maxRatingAdjustment = 6
+    //   // } else if (driver.rating <= 1499) {
+    //   //   // Gold
+    //   //   maxRatingAdjustment = 5
+    //   // } else {
+    //   //   // Platinum
+    //   //   maxRatingAdjustment = 4
+    //   // }
+
+    // }
 
     // total the expected and actual scores
     let expectedResultScore = 0;
