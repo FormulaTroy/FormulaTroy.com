@@ -2,19 +2,23 @@ $(document).ready(function () {
 
   // helper: return license column text data based on elo rating
   // Licensed Results
-  // Copper (   0-1099)
-  // Bronze (1100-1199)
-  // Silver (1200-1349)
-  //   Gold (1350-1599)
-  //   Plat (1600+    )
-  function getLicenseIcon(rating) {
-    if (rating <= 1099) {
+  // Copper (   0-1799)
+  // Bronze (1800-1899)
+  // Silver (1900-1999)
+  //   Gold (2000-2159)
+  //   Plat (2260+    )
+  function getModernLicense(rating) {
+
+    // use an average of the last 5 races for your license, rather than just the last
+    driver.rating[driver.rating.length - 1]
+
+    if (rating <= 1799) {
       return "<span class='badge medal medal-copper'>Copper</span>";
-    } else if (rating <= 1199) {
+    } else if (rating <= 1899) {
       return "<span class='badge medal medal-bronze'>Bronze</span>";
-    } else if (rating <= 1299) {
+    } else if (rating <= 1999) {
       return "<span class='badge medal medal-silver'>Silver</span>";
-    } else if (rating <= 1499) {
+    } else if (rating <= 2159) {
       return "<span class='badge medal medal-gold'>Gold</span>";
     } else {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
@@ -188,13 +192,13 @@ $(document).ready(function () {
 
     // TO DO chart thingy probably at the top?
     //driver.rating is the array of liiiiiife
-    modalBodyHTML += driver.rating + '</div><div class="row">';
+    modalBodyHTML += '<p>'+driver.rating +'</p>'+ '</div><div class="row">';
 
     // left side (stats)
     modalBodyHTML += '<div class="col">';
     modalBodyHTML += '<h4>Modern License</h4>';
     let currentRating = driver.rating[driver.rating.length - 1];
-    modalBodyHTML += '<p>' + getLicenseIcon(currentRating) + '</p>';
+    modalBodyHTML += '<p>' + getModernLicense(currentRating) + '</p>';
     modalBodyHTML += '<p><strong>Rating:</strong> ' + currentRating + ' (' + (prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2])) + ')</p>';
     modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + driver.races + '</p>';
     modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.lastChangedDate + '</p>';
@@ -332,7 +336,7 @@ $(document).ready(function () {
             // map data to json values or send json values to functions to get returns back
             rowData.flagImage = getFlag(driverData.name);
             rowData.name = driverData.name;
-            rowData.driverLicense = getLicenseIcon(driverData.rating[driverData.rating.length - 1]);
+            rowData.driverLicense = getModernLicense(driverData.rating[driverData.rating.length - 1]);
             rowData.rating = driverData.rating[driverData.rating.length - 1];
             rowData.ratingChange = prettyRatingChange(driverData.rating[driverData.rating.length - 1] - driverData.rating[driverData.rating.length - 2]);
             rowData.races = driverData.races;
