@@ -150,7 +150,7 @@ $(document).ready(function () {
     // Silver (1200-1299)
     //   Gold (1300-1499)
     //   Plat (1500+    )
-    let maxRatingAdjustment = 4;
+    let maxRatingAdjustment = 2;
 
     // use higher K-Factor during probation
     // if (driver.races <= 10) {

@@ -6,13 +6,17 @@ $(document).ready(function () {
 
     // set minimum 5 race averages needed to obtain a license
     let platinumBreakpoint = 1150;
-    let goldBreakpoint = 1000;
-    let silverBreakpoint = 900;
-    let bronzeBreakpoint = 800;
+    let goldBreakpoint = 1025;
+    let silverBreakpoint = 970;
+    let bronzeBreakpoint = 900;
 
     // get current and previous average ratings
-    let last5AvgRating = getLast5RatingAverage(ratingArray);
-    let previousLast5AvgRating = getPreviousLast5RatingAverage(ratingArray);
+    // let last5AvgRating = getLast5RatingAverage(ratingArray);
+    // let previousLast5AvgRating = getPreviousLast5RatingAverage(ratingArray);
+
+    // get current and previous ratings
+    let currentRating = ratingArray[ratingArray.length - 1];
+    let previousRating = ratingArray[ratingArray.length - 2];
 
     // helper functions to determine if a license threshold was just crossed
     const checkBreakpoint = (rating, breakpoint) => {
@@ -26,32 +30,32 @@ $(document).ready(function () {
     }
 
     // determine if a license threshold was just crossed, and if so, display a modified medal
-    if (checkCrossed(previousLast5AvgRating, last5AvgRating, platinumBreakpoint)) {
+    if (checkCrossed(previousRating, currentRating, platinumBreakpoint)) {
       return "<span class='badge medal medal-platinum'><i class='bi bi-caret-up-fill'></i> Platinum <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkCrossed(previousLast5AvgRating, last5AvgRating, goldBreakpoint)) {
+    } else if (checkCrossed(previousRating, currentRating, goldBreakpoint)) {
       return "<span class='badge medal medal-gold'><i class='bi bi-caret-up-fill'></i> Gold <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkCrossed(previousLast5AvgRating, last5AvgRating, silverBreakpoint)) {
+    } else if (checkCrossed(previousRating, currentRating, silverBreakpoint)) {
       return "<span class='badge medal medal-silver'><i class='bi bi-caret-up-fill'></i> Silver <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkCrossed(previousLast5AvgRating, last5AvgRating, bronzeBreakpoint)) {
+    } else if (checkCrossed(previousRating, currentRating, bronzeBreakpoint)) {
       return "<span class='badge medal medal-bronze'><i class='bi bi-caret-up-fill'></i> Bronze <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkDropped(previousLast5AvgRating, last5AvgRating, platinumBreakpoint)) {
+    } else if (checkDropped(previousRating, currentRating, platinumBreakpoint)) {
       return "<span class='badge medal medal-gold'><i class='bi bi-caret-down-fill'></i> Gold <i class='bi bi-caret-down-fill'></i></span>";
-    } else if (checkDropped(previousLast5AvgRating, last5AvgRating, goldBreakpoint)) {
+    } else if (checkDropped(previousRating, currentRating, goldBreakpoint)) {
       return "<span class='badge medal medal-silver'><i class='bi bi-caret-down-fill'></i> Silver <i class='bi bi-caret-down-fill'></i></span>";
-    } else if (checkDropped(previousLast5AvgRating, last5AvgRating, silverBreakpoint)) {
+    } else if (checkDropped(previousRating, currentRating, silverBreakpoint)) {
       return "<span class='badge medal medal-bronze'><i class='bi bi-caret-down-fill'></i> Bronze <i class='bi bi-caret-down-fill'></i></span>";
-    } else if (checkDropped(previousLast5AvgRating, last5AvgRating, bronzeBreakpoint)) {
+    } else if (checkDropped(previousRating, currentRating, bronzeBreakpoint)) {
       return "<span class='badge medal medal-copper'><i class='bi bi-caret-down-fill'></i> Copper <i class='bi bi-caret-down-fill'></i></span>";
     }
 
     // if there was no license change, just display the correct medal without arrows
-    if (last5AvgRating >= platinumBreakpoint) {
+    if (currentRating >= platinumBreakpoint) {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
-    } else if (last5AvgRating >= goldBreakpoint) {
+    } else if (currentRating >= goldBreakpoint) {
       return "<span class='badge medal medal-gold'>Gold</span>";
-    } else if (last5AvgRating >= silverBreakpoint) {
+    } else if (currentRating >= silverBreakpoint) {
       return "<span class='badge medal medal-silver'>Silver</span>";
-    } else if (last5AvgRating >= bronzeBreakpoint) {
+    } else if (currentRating >= bronzeBreakpoint) {
       return "<span class='badge medal medal-bronze'>Bronze</span>";
     } else {
       return "<span class='badge medal medal-copper'>Copper</span>";
@@ -229,17 +233,33 @@ $(document).ready(function () {
         break;
     }
 
+
+
+
+
+
+
+
+
+    // HIDE THE STUFF MODE
+    flagCode = "xx";
+
+
+
+
+
+
     return '<span class="fi fi-' + flagCode + '"></span>';
   }
 
   // helper: take a rating adjustment int and turn it into a display with icons
   function prettyRatingChange(ratingChange) {
     if (ratingChange < 0) {
-      return '<i class="bi bi-arrow-down arrow-red"></i> ' + Math.abs(ratingChange);
+      return '<i class="bi bi-arrow-down arrow-red"></i>' + Math.abs(ratingChange);
     } else if (ratingChange == 0) {
-      return '<i class="bi bi-dash-lg"></i> ' + ratingChange;
+      return '<i class="bi bi-dash"></i>' + ratingChange;
     } else {
-      return '<i class="bi bi-arrow-up arrow-green"></i> ' + ratingChange;
+      return '<i class="bi bi-arrow-up arrow-green"></i>' + ratingChange;
     }
   }
 
@@ -270,15 +290,15 @@ $(document).ready(function () {
     modalBodyHTML += '<p>' + getModernLicense(driver.rating) + '</p>';
 
     // license rating, average Elo rating of last 5 races
-    let last5AvgRating = getLast5RatingAverage(driver.rating);
-    let previousLast5AvgRating = getPreviousLast5RatingAverage(driver.rating)
-    let licenseRating = Math.round(last5AvgRating);
-    let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
-    modalBodyHTML += '<p><strong>License Rating:</strong> ' + licenseRating + ' (' + prettyRatingChange(averageRatingChange) + ')</p>';
+    // let last5AvgRating = getLast5RatingAverage(driver.rating);
+    // let previousLast5AvgRating = getPreviousLast5RatingAverage(driver.rating)
+    // let licenseRating = Math.round(last5AvgRating);
+    // let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
+    // modalBodyHTML += '<p><strong>License Rating:</strong> ' + licenseRating + ' (' + prettyRatingChange(averageRatingChange) + ')</p>';
 
     // current, most recent Elo
     let currentRating = driver.rating[driver.rating.length - 1];
-    modalBodyHTML += '<p><strong>Active Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
+    modalBodyHTML += '<p><strong>Elo Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
 
     // rest of driver data
     modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + driver.races + '</p>';
@@ -417,12 +437,33 @@ $(document).ready(function () {
             rowData.flagImage = getFlag(driverData.name);
             rowData.name = driverData.name;
             rowData.driverLicense = getModernLicense(driverData.rating);
+
+
+            let rating = driverData.rating[driverData.rating.length - 1];
+            let previousRating = driverData.rating[driverData.rating.length - 2];
+            rowData.rating = rating;
+            rowData.ratingChange = prettyRatingChange(rating - previousRating);
+
+
+
+
+
+
+            // HIDE THE STUFF MODE
+            rowData.name = "driverData.name;"
+
+
             // use average ratings over recent races, rather than the last rating
-            let last5AvgRating = getLast5RatingAverage(driverData.rating);
-            let previousLast5AvgRating = getPreviousLast5RatingAverage(driverData.rating)
-            let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
-            rowData.rating = Math.round(last5AvgRating);
-            rowData.ratingChange = prettyRatingChange(averageRatingChange);
+            // let last5AvgRating = getLast5RatingAverage(driverData.rating);
+            // let previousLast5AvgRating = getPreviousLast5RatingAverage(driverData.rating)
+            // let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
+            // rowData.rating = Math.round(last5AvgRating);
+            // rowData.ratingChange = prettyRatingChange(averageRatingChange);
+
+
+
+
+
             // rest of table data
             rowData.races = driverData.races;
             rowData.lastChangedDate = driverData.lastChangedDate;
