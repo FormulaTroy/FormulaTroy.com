@@ -5,10 +5,10 @@ $(document).ready(function () {
   function getModernLicense(ratingArray) {
 
     // set minimum 5 race averages needed to obtain a license
-    let platinumBreakpoint = 2160;
-    let goldBreakpoint = 2000;
-    let silverBreakpoint = 1900;
-    let bronzeBreakpoint = 1800;
+    let platinumBreakpoint = 1150;
+    let goldBreakpoint = 1000;
+    let silverBreakpoint = 900;
+    let bronzeBreakpoint = 800;
 
     // get current and previous average ratings
     let last5AvgRating = getLast5RatingAverage(ratingArray);
@@ -57,9 +57,6 @@ $(document).ready(function () {
       return "<span class='badge medal medal-copper'>Copper</span>";
     }
 
-
-
-
   }
 
   // helper: get an average ELO rating over the last 5 races
@@ -97,8 +94,6 @@ $(document).ready(function () {
 
     return previousLast5Total / previousNumOfRaces;
   }
-
-
 
   // helper: return different flags based on the driver's name
   // note: this is decoupled from the json so it doesn't have to be re-entered if the json is regenerated
@@ -273,13 +268,21 @@ $(document).ready(function () {
     modalBodyHTML += '<div class="col">';
     modalBodyHTML += '<h4>Modern License</h4>';
     modalBodyHTML += '<p>' + getModernLicense(driver.rating) + '</p>';
+
+    // license rating, average Elo rating of last 5 races
+    let last5AvgRating = getLast5RatingAverage(driver.rating);
+    let previousLast5AvgRating = getPreviousLast5RatingAverage(driver.rating)
+    let licenseRating = Math.round(last5AvgRating);
+    let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
+    modalBodyHTML += '<p><strong>License Rating:</strong> ' + licenseRating + ' (' + prettyRatingChange(averageRatingChange) + ')</p>';
+
+    // current, most recent Elo
     let currentRating = driver.rating[driver.rating.length - 1];
-    modalBodyHTML += '<p><strong>Rating:</strong> ' + currentRating + ' (' + (prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2])) + ')</p>';
+    modalBodyHTML += '<p><strong>Active Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
+
+    // rest of driver data
     modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + driver.races + '</p>';
     modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.lastChangedDate + '</p>';
-    if (driver.races <= 10) {
-      modalBodyHTML += '<div class="alert alert-light" role="alert"><i class="bi bi-exclamation-triangle-fill" style="color:#ffca2c"></i> ' + driver.name + ' is on probation and subject to faster rating adjustments.<br><br>This will expire after 10 races.</div>';
-    }
 
     // right side (eligible car classes)
     modalBodyHTML += '</div><div class="col">';
@@ -291,17 +294,17 @@ $(document).ready(function () {
     // Silver (1200-1349)
     //   Gold (1350-1599)
     //   Plat (1600+    )
-    if (currentRating <= 1099) {
-      licenseLevel = 0; // copper
-    } else if (currentRating <= 1199) {
-      licenseLevel = 1; // bronze
-    } else if (currentRating <= 1349) {
-      licenseLevel = 2; // silver
-    } else if (currentRating <= 1599) {
-      licenseLevel = 3; // gold
-    } else {
-      licenseLevel = 4; // plat
-    }
+    // if (currentRating <= 1099) {
+    //   licenseLevel = 0; // copper
+    // } else if (currentRating <= 1199) {
+    //   licenseLevel = 1; // bronze
+    // } else if (currentRating <= 1349) {
+    //   licenseLevel = 2; // silver
+    // } else if (currentRating <= 1599) {
+    //   licenseLevel = 3; // gold
+    // } else {
+    //   licenseLevel = 4; // plat
+    // }
 
     // class displays for each active series
     // colors: red, blue, green, orange, cyan
@@ -316,55 +319,57 @@ $(document).ready(function () {
     // }
     // modalBodyHTML += '</p>';
 
-    modalBodyHTML += '<h6>NARS Modern Sportscar Championship</h6>';
-    modalBodyHTML += '<p>';
-    if (licenseLevel == 4) {
-      modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
-      modalBodyHTML += displayClassBadge("LMP2", "cyan");
-    } else if (licenseLevel == 3) {
-      modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
-      modalBodyHTML += displayClassBadge("LMP2", "cyan");
-      modalBodyHTML += displayClassBadge("LMGT3 Pro", "green");
-    } else if (licenseLevel == 2 || licenseLevel == 1) {
-      modalBodyHTML += displayClassBadge("HyperCar Am", "blue");
-      modalBodyHTML += displayClassBadge("LMP2", "cyan");
-      modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
-    } else {
-      modalBodyHTML += displayClassBadge("LMP2", "cyan");
-      modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
-    }
-    modalBodyHTML += '</p>';
+    // modalBodyHTML += '<h5>These are broken right now:::</h5>';
 
-    modalBodyHTML += '<h6>NARS Porsche Cup</h6>';
-    modalBodyHTML += '<p>';
-    if (licenseLevel >= 3) {
-      modalBodyHTML += displayClassBadge("PCC Pro", "red");
-    } else {
-      modalBodyHTML += displayClassBadge("PCC Am", "blue");
-    }
-    modalBodyHTML += '</p>';
+    // modalBodyHTML += '<h6>NARS Modern Sportscar Championship</h6>';
+    // modalBodyHTML += '<p>';
+    // if (licenseLevel == 4) {
+    //   modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
+    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
+    // } else if (licenseLevel == 3) {
+    //   modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
+    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
+    //   modalBodyHTML += displayClassBadge("LMGT3 Pro", "green");
+    // } else if (licenseLevel == 2 || licenseLevel == 1) {
+    //   modalBodyHTML += displayClassBadge("HyperCar Am", "blue");
+    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
+    //   modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
+    // } else {
+    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
+    //   modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
+    // }
+    // modalBodyHTML += '</p>';
 
-    modalBodyHTML += '<h6>NARS Australian TA2</h6>';
-    modalBodyHTML += '<p>';
-    if (licenseLevel == 4) {
-      modalBodyHTML += displayClassBadge("TA2 Pro", "red");
-    } else if (licenseLevel == 3) {
-      modalBodyHTML += displayClassBadge("TA2 Pro-Am", "green");
-    } else {
-      modalBodyHTML += displayClassBadge("TA2 Am", "blue");
-    }
-    modalBodyHTML += '</p>';
+    // modalBodyHTML += '<h6>NARS Porsche Cup</h6>';
+    // modalBodyHTML += '<p>';
+    // if (licenseLevel >= 3) {
+    //   modalBodyHTML += displayClassBadge("PCC Pro", "red");
+    // } else {
+    //   modalBodyHTML += displayClassBadge("PCC Am", "blue");
+    // }
+    // modalBodyHTML += '</p>';
 
-    modalBodyHTML += '<h6>MNRL VP Sportscar Challenge</h6>';
-    modalBodyHTML += '<p>';
-    if (licenseLevel >= 3) {
-      modalBodyHTML += displayClassBadge("LMP3 Pro", "red");
-      modalBodyHTML += displayClassBadge("GT4 Pro", "green");
-    } else {
-      modalBodyHTML += displayClassBadge("LMP3 Am", "blue");
-      modalBodyHTML += displayClassBadge("GT4 Am", "orange");
-    }
-    modalBodyHTML += '</p>';
+    // modalBodyHTML += '<h6>NARS Australian TA2</h6>';
+    // modalBodyHTML += '<p>';
+    // if (licenseLevel == 4) {
+    //   modalBodyHTML += displayClassBadge("TA2 Pro", "red");
+    // } else if (licenseLevel == 3) {
+    //   modalBodyHTML += displayClassBadge("TA2 Pro-Am", "green");
+    // } else {
+    //   modalBodyHTML += displayClassBadge("TA2 Am", "blue");
+    // }
+    // modalBodyHTML += '</p>';
+
+    // modalBodyHTML += '<h6>MNRL VP Sportscar Challenge</h6>';
+    // modalBodyHTML += '<p>';
+    // if (licenseLevel >= 3) {
+    //   modalBodyHTML += displayClassBadge("LMP3 Pro", "red");
+    //   modalBodyHTML += displayClassBadge("GT4 Pro", "green");
+    // } else {
+    //   modalBodyHTML += displayClassBadge("LMP3 Am", "blue");
+    //   modalBodyHTML += displayClassBadge("GT4 Am", "orange");
+    // }
+    // modalBodyHTML += '</p>';
 
     // write the results
     modalBodyHTML += '<p>Anything not listed here, please check with the series admin.</p></div></div></div>';
@@ -412,8 +417,13 @@ $(document).ready(function () {
             rowData.flagImage = getFlag(driverData.name);
             rowData.name = driverData.name;
             rowData.driverLicense = getModernLicense(driverData.rating);
-            rowData.rating = driverData.rating[driverData.rating.length - 1];
-            rowData.ratingChange = prettyRatingChange(driverData.rating[driverData.rating.length - 1] - driverData.rating[driverData.rating.length - 2]);
+            // use average ratings over recent races, rather than the last rating
+            let last5AvgRating = getLast5RatingAverage(driverData.rating);
+            let previousLast5AvgRating = getPreviousLast5RatingAverage(driverData.rating)
+            let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
+            rowData.rating = Math.round(last5AvgRating);
+            rowData.ratingChange = prettyRatingChange(averageRatingChange);
+            // rest of table data
             rowData.races = driverData.races;
             rowData.lastChangedDate = driverData.lastChangedDate;
             rowData.driverData = driverData; // store the entire driver's object for the inspect modal

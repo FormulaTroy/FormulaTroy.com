@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     let driverMachineName = getDriverMachineName(driverName);
 
-    let defaultELO = 2000; // low Gold, low siler now?? // craziness that we can't decide??
+    let defaultELO = 1000; // low Gold, low siler now?? // craziness that we can't decide??
 
     let newDriver = {
       [driverMachineName]: {
@@ -369,7 +369,7 @@ $(document).ready(function () {
   // testing functions
   $("#test-driverRatingInput").on("click", function () {
     $("#driverRatingInput").val("");
-    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","rating": [1320],"races": 0,"lastChangedDate": "1970/01/01"}}');
+    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","rating": [1000],"races": 0,"lastChangedDate": "1970/01/01"}}');
   });
   $("#test-raceResultsInput").on("click", function () {
     $("#raceResultsInput").val("");
