@@ -5,10 +5,10 @@ $(document).ready(function () {
   function getModernLicense(ratingArray) {
 
     // set minimum 5 race averages needed to obtain a license
-    let platinumBreakpoint = 1150;
-    let goldBreakpoint = 1025;
+    let platinumBreakpoint = 1130;
+    let goldBreakpoint = 1030;
     let silverBreakpoint = 970;
-    let bronzeBreakpoint = 900;
+    let bronzeBreakpoint = 920;
 
     // get current and previous average ratings
     // let last5AvgRating = getLast5RatingAverage(ratingArray);
@@ -233,21 +233,8 @@ $(document).ready(function () {
         break;
     }
 
-
-
-
-
-
-
-
-
     // HIDE THE STUFF MODE
-    flagCode = "xx";
-
-
-
-
-
+    //flagCode = "xx";
 
     return '<span class="fi fi-' + flagCode + '"></span>';
   }
@@ -274,6 +261,9 @@ $(document).ready(function () {
     // load driver data from json
     let driver = $(this).data('driverData');
     console.log("Driver Data:", driver);
+
+    // HIDE THE STUFF MODE
+    //driver.name = "driverData.name;";
 
     // reset the modal html for the new driver
     $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name);
@@ -450,7 +440,7 @@ $(document).ready(function () {
 
 
             // HIDE THE STUFF MODE
-            rowData.name = "driverData.name;"
+            //rowData.name = "driverData.name;"
 
 
             // use average ratings over recent races, rather than the last rating
