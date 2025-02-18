@@ -25,24 +25,50 @@ include_once "../../php-inc/ft-header.php";
       </div>
     </div>
 
-    <!-- content -->
+
+
+
+
+
+
+
+
+    <!-- elo rating distribution chart -->
+    <div class="row mt-4">
+      <div class="col-8">
+        <canvas id="ratingBarChart"></canvas>
+      </div>
+      <div class="col-4">
+        <p>Some intro text? This is an Elo rating, blah blah</p>
+        <p>License breakpoints with medal display icons</p>
+        <p>let platinumBreakpoint = 1130;</p>
+        <p>let goldBreakpoint = 1030;</p>
+        <p>let silverBreakpoint = 970;</p>
+        <p>let bronzeBreakpoint = 920;</p>
+        <p>If your flag is incorrect, please contact Troy Uyan on the CMS Discord Server.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- strat tables -->
     <div class="row mt-5">
       <div class="col">
-
-        <table id="cms-strat-modern" class="display table table-striped table-hover dataTable" style="width:100%">
-          <!-- <thead>
-            <tr>
-              <th></th>
-              <th>Driver</th>
-              <th>Class</th>
-              <th>Rating</th>
-              <th>Races</th>
-              <th>Updated</th>
-            </tr>
-          </thead> -->
-        </table>
-
-        <p class="text-center mt-4">If your flag is incorrect or you have any questions, please contact Troy Uyan on the CMS Discord Server.</p>
+        <table id="cms-strat-modern" class="display table table-striped table-hover dataTable" style="width:100%"></table>
       </div>
     </div>
 

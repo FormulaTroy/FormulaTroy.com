@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
+  // set global variables for license breakpoints, used by several functions
+  let platinumBreakpoint = 1130;
+  let goldBreakpoint = 1030;
+  let silverBreakpoint = 970;
+  let bronzeBreakpoint = 920;
+
   // helper: return license column text data based on elo rating
   // use an average of the last 5 races for your license
   function getModernLicense(ratingArray) {
-
-    // set minimum 5 race averages needed to obtain a license
-    let platinumBreakpoint = 1130;
-    let goldBreakpoint = 1030;
-    let silverBreakpoint = 970;
-    let bronzeBreakpoint = 920;
 
     // get current and previous average ratings
     // let last5AvgRating = getLast5RatingAverage(ratingArray);
@@ -387,24 +387,6 @@ $(document).ready(function () {
 
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // init the modern stratification datatable
   $('#cms-strat-modern').DataTable({
     ajax: {
@@ -428,20 +410,14 @@ $(document).ready(function () {
             rowData.name = driverData.name;
             rowData.driverLicense = getModernLicense(driverData.rating);
 
-
+            // elo rating and latest change
             let rating = driverData.rating[driverData.rating.length - 1];
             let previousRating = driverData.rating[driverData.rating.length - 2];
             rowData.rating = rating;
             rowData.ratingChange = prettyRatingChange(rating - previousRating);
 
-
-
-
-
-
             // HIDE THE STUFF MODE
             //rowData.name = "driverData.name;"
-
 
             // use average ratings over recent races, rather than the last rating
             // let last5AvgRating = getLast5RatingAverage(driverData.rating);
@@ -449,10 +425,6 @@ $(document).ready(function () {
             // let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
             // rowData.rating = Math.round(last5AvgRating);
             // rowData.ratingChange = prettyRatingChange(averageRatingChange);
-
-
-
-
 
             // rest of table data
             rowData.races = driverData.races;
@@ -487,10 +459,123 @@ $(document).ready(function () {
     ],
     //order: [[6, 'desc'], [3, 'desc']], // sort by date and then by rating
     order: [[3, 'desc']], // sort by rating
-    pageLength: 25,
+    pageLength: 50,
     lengthMenu: [
       [10, 25, 50, 100, -1],
       ['10', '25', '50', '100', 'All']
     ],
   });
+
+
+
+
+
+
+
+
+
+  // chart testing
+
+  const eloData = [1364, 1355, 1305, 1280, 1251, 1239, 1210, 1194, 1172, 1160, 1139, 1131, 1130, 1127, 1123, 1120, 1117, 1116, 1114, 1113, 1104, 1100, 1100, 1096, 1091, 1087, 1086, 1077, 1075, 1074, 1073, 1070, 1069, 1067, 1066, 1065, 1064, 1056, 1052, 1049, 1039, 1022, 1022, 1022, 1021, 1021, 1019, 1018, 1018, 1018, 1017, 1016, 1014, 1013, 1012, 1012, 1012, 1010, 1010, 1010, 1009, 1009, 1009, 1008, 1006, 1005, 1004, 1002, 1001, 1001, 1000, 999, 999, 999, 999, 998, 996, 996, 996, 996, 996, 995, 994, 994, 994, 994, 993, 992, 992, 991, 991, 991, 990, 990, 989, 989, 989, 988, 988, 987, 987, 987, 986, 985, 985, 985, 984, 984, 984, 984, 983, 983, 983, 981, 981, 980, 979, 979, 977, 976, 975, 971, 971, 970, 968, 968, 968, 967, 965, 965, 965, 963, 961, 960, 959, 959, 958, 955, 954, 954, 951, 950, 944, 940, 937, 933, 933, 932, 931, 930, 930, 930, 929, 925, 923, 922, 916, 914, 914, 911, 907, 906, 905, 905, 898, 897, 895, 886, 884, 871, 865, 844, 834, 825, 822, 808, 799, 789, 773, 699];
+
+  function groupEloRatings(data, rangeSize) {
+    const ranges = {};
+    const minElo = 770;
+    const maxElo = 1370;
+
+    for (let i = minElo; i <= maxElo; i += rangeSize) {
+      ranges[`${i}-${i + rangeSize - 1}`] = { count: 0, color: null }; // Store count and color
+    }
+
+    data.forEach(elo => {
+      for (let i = minElo; i <= maxElo; i += rangeSize) {
+        if (elo >= i && elo < i + rangeSize) {
+          ranges[`${i}-${i + rangeSize - 1}`].count++;
+
+          // Determine color based on breakpoints
+          if (elo >= platinumBreakpoint) {
+            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(203, 119, 228, 0.75)'; // Platinum (teal)
+          } else if (elo >= goldBreakpoint) {
+            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 217, 0, 0.75)'; // Gold
+          } else if (elo >= silverBreakpoint) {
+            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 255, 255, 0.75)'; // Silver
+          } else if (elo >= bronzeBreakpoint) {
+            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(219, 108, 18, 0.75)'; // Bronze
+          } else {
+            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(235, 96, 54, 0.75)'; // Copper
+          }
+          break;
+        }
+      }
+    });
+    return ranges;
+  }
+
+  const groupedData = groupEloRatings(eloData, 10);
+
+  const labels = Object.keys(groupedData);
+  const data = Object.values(groupedData).map(range => range.count);
+  const backgroundColors = Object.values(groupedData).map(range => range.color); // Array of colors
+
+  const ratingBarChartCanvas = document.getElementById('ratingBarChart').getContext('2d');
+  const myChart = new Chart(ratingBarChartCanvas, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Number of Drivers',
+        data: data,
+        backgroundColor: backgroundColors,
+        borderColor: "#cccccc",
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: false,
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            display: false
+          },
+          title: {
+            display: true,
+            text: 'Elo Ranges'
+          }
+        },
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Number of Drivers'
+          },
+        }
+      }
+    }
+  });
+
+
+  console.log(myChart.options.scales)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });// end doc ready
