@@ -6,13 +6,9 @@ $(document).ready(function () {
   let silverBreakpoint = 970;
   let bronzeBreakpoint = 920;
 
-  // global date object for comparing to 3 months ago
-  let threeMonthsAgoDateObj = new Date();
-  threeMonthsAgoDateObj.setMonth(threeMonthsAgoDateObj.getMonth() - 3);
-
   // helper: return license column text data based on elo rating
   // use an average of the last 5 races for your license
-  function getModernLicense(ratingArray, lastRaceDate) {
+  function getModernLicense(ratingArray, active) {
 
     // get current and previous average ratings
     // let last5AvgRating = getLast5RatingAverage(ratingArray);
@@ -22,27 +18,8 @@ $(document).ready(function () {
     let currentRating = ratingArray[ratingArray.length - 1];
     let previousRating = ratingArray[ratingArray.length - 2];
 
-    // get and validate last race date
-    const lastRaceDateParts = lastRaceDate.split('/');
-    if (lastRaceDateParts.length !== 3) {
-      console.error("Invalid last changed date format; Expected YYYY/MM/DD.");
-      console.log(lastRaceDateParts);
-      return false;
-    }
-    const lastRaceYear = parseInt(lastRaceDateParts[0], 10);
-    const lastRaceMonth = parseInt(lastRaceDateParts[1], 10) - 1; // Date() month is 0-indexed, subtract 1
-    const lastRaceDay = parseInt(lastRaceDateParts[2], 10);
-    if (isNaN(lastRaceYear) || isNaN(lastRaceMonth) || isNaN(lastRaceDay)) {
-      console.error("Invalid date components.");
-      console.log(lastChangedDateParts);
-      return false;
-    }
-
-    // use the date string parts to make a new date object
-    const lastRaceDateObj = new Date(lastRaceYear, lastRaceMonth, lastRaceDay);
-
     // if driver raced in last 3 months, see if the license just changed
-    if (lastRaceDateObj > threeMonthsAgoDateObj) {
+    if (active) {
 
       // helper functions to determine if a license threshold was just crossed
       const checkLicenseBreakpoint = (rating, breakpoint) => {
@@ -266,6 +243,8 @@ $(document).ready(function () {
     //driver.rating is the array of liiiiiife
     modalBodyHTML += '<p>' + driver.rating + '</p>' + '</div><div class="row">';
     modalBodyHTML += '<p>' + driver.date + '</p>' + '</div><div class="row">';
+    modalBodyHTML += '<p>' + driver.finishPos + '</p>' + '</div><div class="row">';
+    modalBodyHTML += '<p>' + driver.totalCars + '</p>' + '</div><div class="row">';
 
     // left side (stats)
     modalBodyHTML += '<div class="col">';
@@ -277,7 +256,7 @@ $(document).ready(function () {
     modalBodyHTML += '<p><strong>Elo Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
 
     // rest of driver data
-    modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + (driver.rating.length - 1) + '</p>';
+    modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + driver.races + '</p>';
     modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.date[driver.date.length - 1] + '</p>';
 
     // right side (eligible car classes)
@@ -376,7 +355,7 @@ $(document).ready(function () {
   // init the modern stratification datatable
   $('#cms-strat-modern').DataTable({
     ajax: {
-      url: 'driver-jsons/elo-modern.json',
+      url: 'driver-jsons/elo-cms-drivers.json',
       dataSrc: function (json) {
 
         var data = [];
@@ -394,19 +373,23 @@ $(document).ready(function () {
             // map data to json values or send json values to functions to get returns back
             rowData.flagImage = getFlag(driverData.name);
             rowData.name = driverData.name;
-            rowData.driverLicense = getModernLicense(driverData.rating, driverData.date[driverData.date.length - 1]);
+            rowData.driverLicense = getModernLicense(driverData.rating, driverData.active);
 
-            // elo rating and latest change
+            // elo rating and pretty latest change
             let rating = driverData.rating[driverData.rating.length - 1];
             let previousRating = driverData.rating[driverData.rating.length - 2];
             rowData.rating = rating;
             rowData.ratingChange = prettyRatingChange(rating - previousRating);
 
-            // rest of table data
-            rowData.races = driverData.rating.length - 1; // lenth of ratings array - 1 is number of races
-            rowData.date = driverData.date;
+            // rest of table column data
+            rowData.races = driverData.races;
+            rowData.wins = (driverData.finishPos).filter(value => value === 1).length;
+            rowData.podiums = (driverData.finishPos).filter(value => value <= 3 && value != 0).length;
+            rowData.avgFinishPos = driverData.avgFinishPos;
             rowData.lastChangedDate = driverData.date[driverData.date.length - 1];
-            rowData.driverData = driverData; // store the entire driver's object for the inspect modal
+
+            // store the entire driver's object for the inspect modal
+            rowData.driverData = driverData;
 
             // add object to the overall data return
             data.push(rowData);
@@ -420,9 +403,12 @@ $(document).ready(function () {
       { title: "", data: "flagImage", orderable: false, width: "20px" },
       { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, width: "25%" },
       { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", orderable: false },
-      { title: "<i class='bi bi-trophy-fill'></i> Rating", data: "rating", orderable: true },
-      { title: "<i class='bi bi-graph-up-arrow'></i> Change", data: "ratingChange", orderable: false },
-      { title: "<i class='bi bi-car-front-fill'></i> Races", data: "races", orderable: true },
+      { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true },
+      { title: "<span title='Latest Elo Change'><i class='bi bi-graph-up-arrow'></i></span>", data: "ratingChange", orderable: false },
+      { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true },
+      { title: "<span title='Podiums'><i class='bi bi-list-ol'></i> P</span>", data: "podiums", orderable: true },
+      { title: "<span title='Races'><i class='bi bi-car-front-fill'></i> R</span>", data: "races", orderable: true },
+      { title: "<span title='Average Finish'><i class='bi bi-flag-fill'></i> Avg</span>", data: "avgFinishPos", orderable: true },
       { title: "<i class='bi bi-calendar2-check-fill'></i> Updated", data: "lastChangedDate", orderable: true },
       {
         title: "<i class='bi bi-search'></i> Details",
@@ -465,7 +451,7 @@ $(document).ready(function () {
     const maxElo = 1370;
 
     for (let i = minElo; i <= maxElo; i += rangeSize) {
-      ranges[`${i}-${i + rangeSize - 1}`] = { count: 0, color: null }; // Store count and color
+      ranges[`${i}-${i + rangeSize - 1}`] = { count: 0, color: null }; // store count and color
     }
 
     data.forEach(elo => {
@@ -473,7 +459,7 @@ $(document).ready(function () {
         if (elo >= i && elo < i + rangeSize) {
           ranges[`${i}-${i + rangeSize - 1}`].count++;
 
-          // Determine color based on breakpoints
+          // determine color based on breakpoints
           if (elo >= platinumBreakpoint) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(203, 119, 228, 0.75)'; // Platinum (teal)
           } else if (elo >= goldBreakpoint) {
@@ -485,7 +471,6 @@ $(document).ready(function () {
           } else {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(235, 96, 54, 0.75)'; // Copper
           }
-          break;
         }
       }
     });

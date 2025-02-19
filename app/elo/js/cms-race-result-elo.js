@@ -5,13 +5,18 @@ $(document).ready(function () {
 
     let driverMachineName = getDriverMachineName(driverName);
 
-    let defaultELO = 1000; // low Gold, low siler now?? // craziness that we can't decide??
+    let defaultELO = 1000;
 
     let newDriver = {
       [driverMachineName]: {
         "name": driverName,
+        "races": 0,
         "rating": [defaultELO],
-        "date": ["Start"]
+        "date": ["Start"],
+        "finishPos": [0],
+        "totalCars": [0],
+        "avgFinishPos": 0,
+        "active": 0
       }
     };
 
@@ -21,8 +26,13 @@ $(document).ready(function () {
     let newPostRaceDriver = {
       [driverMachineName]: {
         "name": driverName,
+        "races": 0,
         "rating": [defaultELO],
-        "date": ["Start"]
+        "date": ["Start"],
+        "finishPos": [0],
+        "totalCars": [0],
+        "avgFinishPos": 0,
+        "active": 0
       }
     };
 
@@ -153,9 +163,12 @@ $(document).ready(function () {
 
     // use the new driver rating to populate the post-race driver object with new stuffs
     postRaceDriverObj = findPostRaceDriverByName(driver.name.toString());
+    postRaceDriverObj.races = postRaceDriverObj.races + 1;
     postRaceDriverObj.rating.push(newDriverRating);
     postRaceDriverObj.date.push(raceDate);
   }
+
+
 
   // trigger: calculate the elo changes based on current ratings and new race result
   $("#calc-elo").on("click", function () {
@@ -166,6 +179,10 @@ $(document).ready(function () {
     let raceResultsInput = $("#raceResultsInput").val();
     //console.log(driverRatingInput);
     //console.log(raceResultsInput);
+
+    // global date object for comparing to 3 months ago
+    let threeMonthsAgoDateObj = new Date();
+    threeMonthsAgoDateObj.setMonth(threeMonthsAgoDateObj.getMonth() - 3);
 
     if (driverRatingInput != "" && raceResultsInput != "") {
 
@@ -213,16 +230,28 @@ $(document).ready(function () {
     console.log(individualRaceResults);
 
     //// multi-dimensional loop starts here ////
-    /// LOOP 1: CLASS RESULT                 ///
-    /// LOOP 2: DRIVER                       ///
+    /// LOOP 1: CLASS RESULTS                ///
+    /// LOOP 2: DRIVERS                      ///
     /// LOOP 3: DRIVER VS OTHER DRIVERS      ///
 
     // loop over each race->class result
     $.each(individualRaceResults, function (index, resultBlock) {
 
       const raceResults = resultBlock.drivers;
+      const driversInClass = resultBlock.drivers.length;
       raceDate = resultBlock.date;
       raceDate = raceDate.substring(raceDate.lastIndexOf(":") + 2);
+
+
+
+      // store the number of drivers in this class result
+
+      // use the loop index to place the position array
+
+
+
+
+
 
       // loop over the results, driver by driver
       $.each(raceResults, function (index, driverLine) {
@@ -292,6 +321,11 @@ $(document).ready(function () {
           return false;
         }
 
+        // add the finish position data for this driver on this race
+        let postRaceDriverObj = findPostRaceDriverByName(currentDriver.name.toString());
+        postRaceDriverObj.finishPos.push(index + 1);
+        postRaceDriverObj.totalCars.push(driversInClass);
+
       });// end looping over results
 
       // turn the resulting postRaceDrivers DB into the new Drivers DB
@@ -299,6 +333,48 @@ $(document).ready(function () {
       overwritePreRaceDriversWithNewResult(postRaceDrivers);
 
     });// end loop over each race->class result
+
+    // after the multi-dimensional result parsing loops are done
+    // calculate additional properties on each driver object
+    // this effectively caches the results so the front end is faster later
+    $.each(postRaceDrivers, function (index, postRaceDriver) {
+
+      // determine average finishing position
+      // start the loop from i1 to skip the first placeholder element
+      let sumOfFinishingPositions = 0;
+      let raceCount = 0;
+      for (let i = 1; i < postRaceDriver.finishPos.length; i++) {
+        sumOfFinishingPositions += postRaceDriver.finishPos[i];
+        raceCount++;
+      }
+      postRaceDriver.avgFinishPos = (sumOfFinishingPositions / raceCount).toFixed(1);
+
+      // determine if the driver is considered active
+      const lastRaceDateParts = postRaceDriver.date[postRaceDriver.date.length - 1].split('/');
+      if (lastRaceDateParts.length !== 3) {
+        console.error("Invalid last changed date format; Expected YYYY/MM/DD.");
+        console.log(lastRaceDateParts);
+        return false;
+      }
+
+      const lastRaceYear = parseInt(lastRaceDateParts[0], 10);
+      const lastRaceMonth = parseInt(lastRaceDateParts[1], 10) - 1; // Date() month is 0-indexed, subtract 1
+      const lastRaceDay = parseInt(lastRaceDateParts[2], 10);
+      if (isNaN(lastRaceYear) || isNaN(lastRaceMonth) || isNaN(lastRaceDay)) {
+        console.error("Invalid date components.");
+        console.log(lastChangedDateParts);
+        return false;
+      }
+
+      const lastRaceDateObj = new Date(lastRaceYear, lastRaceMonth, lastRaceDay); // use the date string parts to make a new date object
+
+      if (lastRaceDateObj > threeMonthsAgoDateObj) { // if driver raced in last 3 months, they are active
+        postRaceDriver.active = 1
+      } else {
+        postRaceDriver.active = 0
+      }
+
+    });
 
     // debug databases
     // console.log(drivers);
@@ -323,7 +399,7 @@ $(document).ready(function () {
   // testing functions
   $("#test-driverRatingInput").on("click", function () {
     $("#driverRatingInput").val("");
-    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","rating": [1000],"date": ["Start"]}}');
+    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","races": 0,"rating": [1000],"date": ["Start"],"finishPos": [0],"totalCars": [0],"avgFinishPos": 0,"active": 0}}');
   });
   $("#test-raceResultsInput").on("click", function () {
     $("#raceResultsInput").val("");
