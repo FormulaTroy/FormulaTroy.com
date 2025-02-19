@@ -6,9 +6,13 @@ $(document).ready(function () {
   let silverBreakpoint = 970;
   let bronzeBreakpoint = 920;
 
+  // global date object for comparing to 3 months ago
+  let threeMonthsAgoDateObj = new Date();
+  threeMonthsAgoDateObj.setMonth(threeMonthsAgoDateObj.getMonth() - 3);
+
   // helper: return license column text data based on elo rating
   // use an average of the last 5 races for your license
-  function getModernLicense(ratingArray) {
+  function getModernLicense(ratingArray, lastChangedDate) {
 
     // get current and previous average ratings
     // let last5AvgRating = getLast5RatingAverage(ratingArray);
@@ -18,37 +22,60 @@ $(document).ready(function () {
     let currentRating = ratingArray[ratingArray.length - 1];
     let previousRating = ratingArray[ratingArray.length - 2];
 
-    // helper functions to determine if a license threshold was just crossed
-    const checkBreakpoint = (rating, breakpoint) => {
-      return rating >= breakpoint;
-    };
-    const checkCrossed = (prevRating, currentRating, breakpoint) => {
-      return !checkBreakpoint(prevRating, breakpoint) && checkBreakpoint(currentRating, breakpoint);
+    // get and validate last race date
+    const lastChangedDateParts = lastChangedDate.split('/');
+    if (lastChangedDateParts.length !== 3) {
+      console.error("Invalid last changed date format; Expected YYYY/MM/DD.");
+      console.log(lastChangedDateParts);
+      return false;
     }
-    const checkDropped = (prevRating, currentRating, breakpoint) => {
-      return checkBreakpoint(prevRating, breakpoint) && !checkBreakpoint(currentRating, breakpoint);
-    }
-
-    // determine if a license threshold was just crossed, and if so, display a modified medal
-    if (checkCrossed(previousRating, currentRating, platinumBreakpoint)) {
-      return "<span class='badge medal medal-platinum'><i class='bi bi-caret-up-fill'></i> Platinum <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkCrossed(previousRating, currentRating, goldBreakpoint)) {
-      return "<span class='badge medal medal-gold'><i class='bi bi-caret-up-fill'></i> Gold <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkCrossed(previousRating, currentRating, silverBreakpoint)) {
-      return "<span class='badge medal medal-silver'><i class='bi bi-caret-up-fill'></i> Silver <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkCrossed(previousRating, currentRating, bronzeBreakpoint)) {
-      return "<span class='badge medal medal-bronze'><i class='bi bi-caret-up-fill'></i> Bronze <i class='bi bi-caret-up-fill'></i></span>";
-    } else if (checkDropped(previousRating, currentRating, platinumBreakpoint)) {
-      return "<span class='badge medal medal-gold'><i class='bi bi-caret-down-fill'></i> Gold <i class='bi bi-caret-down-fill'></i></span>";
-    } else if (checkDropped(previousRating, currentRating, goldBreakpoint)) {
-      return "<span class='badge medal medal-silver'><i class='bi bi-caret-down-fill'></i> Silver <i class='bi bi-caret-down-fill'></i></span>";
-    } else if (checkDropped(previousRating, currentRating, silverBreakpoint)) {
-      return "<span class='badge medal medal-bronze'><i class='bi bi-caret-down-fill'></i> Bronze <i class='bi bi-caret-down-fill'></i></span>";
-    } else if (checkDropped(previousRating, currentRating, bronzeBreakpoint)) {
-      return "<span class='badge medal medal-copper'><i class='bi bi-caret-down-fill'></i> Copper <i class='bi bi-caret-down-fill'></i></span>";
+    const updateYear = parseInt(lastChangedDateParts[0], 10);
+    const updateMonth = parseInt(lastChangedDateParts[1], 10) - 1; // Date() month is 0-indexed, subtract 1
+    const updateDay = parseInt(lastChangedDateParts[2], 10);
+    if (isNaN(updateYear) || isNaN(updateMonth) || isNaN(updateDay)) {
+      console.error("Invalid date components.");
+      console.log(lastChangedDateParts);
+      return false;
     }
 
-    // if there was no license change, just display the correct medal without arrows
+    // use the date string parts to make a new date object
+    const lastRaceDateObj = new Date(updateYear, updateMonth, updateDay);
+
+    // if driver raced in last 3 months, see if the license just changed
+    if (lastRaceDateObj > threeMonthsAgoDateObj) {
+
+      // helper functions to determine if a license threshold was just crossed
+      const checkLicenseBreakpoint = (rating, breakpoint) => {
+        return rating >= breakpoint;
+      };
+      const checkPromoted = (prevRating, currentRating, breakpoint) => {
+        return !checkLicenseBreakpoint(prevRating, breakpoint) && checkLicenseBreakpoint(currentRating, breakpoint);
+      }
+      const checkRelegated = (prevRating, currentRating, breakpoint) => {
+        return checkLicenseBreakpoint(prevRating, breakpoint) && !checkLicenseBreakpoint(currentRating, breakpoint);
+      }
+
+      // determine if a license threshold was just crossed, and if so, display a modified medal
+      if (checkPromoted(previousRating, currentRating, platinumBreakpoint)) {
+        return "<span class='badge medal medal-platinum'><i class='bi bi-caret-up-fill'></i> Platinum <i class='bi bi-caret-up-fill'></i></span>";
+      } else if (checkPromoted(previousRating, currentRating, goldBreakpoint)) {
+        return "<span class='badge medal medal-gold'><i class='bi bi-caret-up-fill'></i> Gold <i class='bi bi-caret-up-fill'></i></span>";
+      } else if (checkPromoted(previousRating, currentRating, silverBreakpoint)) {
+        return "<span class='badge medal medal-silver'><i class='bi bi-caret-up-fill'></i> Silver <i class='bi bi-caret-up-fill'></i></span>";
+      } else if (checkPromoted(previousRating, currentRating, bronzeBreakpoint)) {
+        return "<span class='badge medal medal-bronze'><i class='bi bi-caret-up-fill'></i> Bronze <i class='bi bi-caret-up-fill'></i></span>";
+      } else if (checkRelegated(previousRating, currentRating, platinumBreakpoint)) {
+        return "<span class='badge medal medal-gold'><i class='bi bi-caret-down-fill'></i> Gold <i class='bi bi-caret-down-fill'></i></span>";
+      } else if (checkRelegated(previousRating, currentRating, goldBreakpoint)) {
+        return "<span class='badge medal medal-silver'><i class='bi bi-caret-down-fill'></i> Silver <i class='bi bi-caret-down-fill'></i></span>";
+      } else if (checkRelegated(previousRating, currentRating, silverBreakpoint)) {
+        return "<span class='badge medal medal-bronze'><i class='bi bi-caret-down-fill'></i> Bronze <i class='bi bi-caret-down-fill'></i></span>";
+      } else if (checkRelegated(previousRating, currentRating, bronzeBreakpoint)) {
+        return "<span class='badge medal medal-copper'><i class='bi bi-caret-down-fill'></i> Copper <i class='bi bi-caret-down-fill'></i></span>";
+      }
+    }
+
+    // if there was no license change, or it's been over 3 months, just display the correct medal without arrows
     if (currentRating >= platinumBreakpoint) {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
     } else if (currentRating >= goldBreakpoint) {
@@ -277,7 +304,7 @@ $(document).ready(function () {
     // left side (stats)
     modalBodyHTML += '<div class="col">';
     modalBodyHTML += '<h4>Modern License</h4>';
-    modalBodyHTML += '<p>' + getModernLicense(driver.rating) + '</p>';
+    modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.lastChangedDate) + '</p>';
 
     // license rating, average Elo rating of last 5 races
     // let last5AvgRating = getLast5RatingAverage(driver.rating);
@@ -408,7 +435,7 @@ $(document).ready(function () {
             // map data to json values or send json values to functions to get returns back
             rowData.flagImage = getFlag(driverData.name);
             rowData.name = driverData.name;
-            rowData.driverLicense = getModernLicense(driverData.rating);
+            rowData.driverLicense = getModernLicense(driverData.rating, driverData.lastChangedDate);
 
             // elo rating and latest change
             let rating = driverData.rating[driverData.rating.length - 1];
@@ -522,7 +549,7 @@ $(document).ready(function () {
   const backgroundColors = Object.values(groupedData).map(range => range.color); // Array of colors
 
   const ratingBarChartCanvas = document.getElementById('ratingBarChart').getContext('2d');
-  const myChart = new Chart(ratingBarChartCanvas, {
+  const ratingBarChart = new Chart(ratingBarChartCanvas, {
     type: 'bar',
     data: {
       labels: labels,
@@ -561,12 +588,6 @@ $(document).ready(function () {
       }
     }
   });
-
-
-  console.log(myChart.options.scales)
-
-
-
 
 
 
