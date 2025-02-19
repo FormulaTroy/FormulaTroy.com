@@ -25,47 +25,24 @@ include_once "../../php-inc/ft-header.php";
       </div>
     </div>
 
-
-
-
-
-
-
-
-
     <!-- elo rating distribution chart -->
     <div class="row mt-4">
       <div class="col-8">
         <canvas id="ratingBarChart"></canvas>
       </div>
       <div class="col-4">
-        <p>Some intro text? This is an Elo rating, blah blah</p>
-        <p>License breakpoints with medal display icons</p>
-        <p>let platinumBreakpoint = 1130;</p>
-        <p>let goldBreakpoint = 1030;</p>
-        <p>let silverBreakpoint = 970;</p>
-        <p>let bronzeBreakpoint = 920;</p>
+        <p>The Champion Motorsports Driver Stratification analyzes official races and assigns Elo ratings to each driver.</p>
+        <p>Drivers are also given a medal based on their rating. The license breakpoints are as follows:</p>
+        <p><span class='badge medal medal-platinum'>Platinum</span> 1130+<br>
+          <span class='badge medal medal-gold'>Gold</span> 1030+<br>
+          <span class='badge medal medal-silver'>Silver</span> 970+<br>
+          <span class='badge medal medal-bronze'>Bronze</span> 920+
+        </p>
         <p>If your flag is incorrect, please contact Troy Uyan on the CMS Discord Server.</p>
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- strat tables -->
+    <!-- stratification tables -->
     <div class="row mt-5">
       <div class="col">
         <table id="cms-strat-modern" class="display table table-striped table-hover dataTable" style="width:100%"></table>

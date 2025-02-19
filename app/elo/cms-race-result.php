@@ -16,7 +16,7 @@ include_once "../../php-inc/ft-header.php";
       <div class="col col-md-12">
 
         <div id="driverRatingInput-wrapper" class="mb-4">
-          <label for="driverRatingInput">Current Driver Rating JSON (Format: {"troy_uyan": {"name": "Troy Uyan","rating": [1300,1500,1350],"races": 3,"lastUpdated": "2005/03/04"}} )</label>
+          <label for="driverRatingInput">Current Driver Rating JSON (Format: {"troy_uyan": {"name": "Troy Uyan","rating": [1000],"date": ["New Driver"]}} )</label>
           <textarea class="form-control" name="driverRatingInput" id="driverRatingInput" rows="3" placeholder=""></textarea>
           <button id="test-driverRatingInput" class="btn btn-outline-warning mt-2"><i class="bi bi-gear"></i> Fill Sample Starting Data</button>
         </div>

@@ -11,8 +11,7 @@ $(document).ready(function () {
       [driverMachineName]: {
         "name": driverName,
         "rating": [defaultELO],
-        "races": 0,
-        "lastChangedDate": "1970/01/01"
+        "date": ["Start"]
       }
     };
 
@@ -23,8 +22,7 @@ $(document).ready(function () {
       [driverMachineName]: {
         "name": driverName,
         "rating": [defaultELO],
-        "races": 0,
-        "lastChangedDate": "1970/01/01"
+        "date": ["Start"]
       }
     };
 
@@ -133,49 +131,9 @@ $(document).ready(function () {
   // helper: compare expected and actual results and calculate rating adjustment
   function updateDriverRatingELO(driver, expectedResultsForRace, actualResultsForRace) {
 
-    // console.log("updating elo for");
-    // console.log(driver);
-    // console.log(expectedResultsForRace);
-    // console.log(actualResultsForRace);
-
     // set maximum possible rating adjustment per 1:1 driver comparison
     // aka the "K-Factor" in the ELO equation
-    //
-    // Probation Period
-    //  0-10 Races
-    //
-    // Licensed Results
-    // Copper (   0-1099)
-    // Bronze (1100-1199)
-    // Silver (1200-1299)
-    //   Gold (1300-1499)
-    //   Plat (1500+    )
     let maxRatingAdjustment = 2;
-
-    // use higher K-Factor during probation
-    // if (driver.races <= 10) {
-    //   maxRatingAdjustment = 6;
-    // } else {
-    //   maxRatingAdjustment = 4;
-    //   // adjust K-Factor based on license
-    //   // if (driver.rating <= 1099) {
-    //   //   // Copper
-    //   //   maxRatingAdjustment = 8
-    //   // } else if (driver.rating <= 1199) {
-    //   //   // Bronze
-    //   //   maxRatingAdjustment = 7
-    //   // } else if (driver.rating <= 1299) {
-    //   //   // Silver
-    //   //   maxRatingAdjustment = 6
-    //   // } else if (driver.rating <= 1499) {
-    //   //   // Gold
-    //   //   maxRatingAdjustment = 5
-    //   // } else {
-    //   //   // Platinum
-    //   //   maxRatingAdjustment = 4
-    //   // }
-
-    // }
 
     // total the expected and actual scores
     let expectedResultScore = 0;
@@ -196,8 +154,7 @@ $(document).ready(function () {
     // use the new driver rating to populate the post-race driver object with new stuffs
     postRaceDriverObj = findPostRaceDriverByName(driver.name.toString());
     postRaceDriverObj.rating.push(newDriverRating);
-    postRaceDriverObj.races = postRaceDriverObj.races + 1;
-    postRaceDriverObj.lastChangedDate = raceDate;
+    postRaceDriverObj.date.push(raceDate);
   }
 
   // trigger: calculate the elo changes based on current ratings and new race result
@@ -350,9 +307,6 @@ $(document).ready(function () {
     // after all loopy-loops are done, use post-race driver array to create final ELO results
     $("#driverRatingOutput").val(JSON.stringify(postRaceDrivers));
 
-    // TODO use final results to populate the rating adjustment text area for any last change that was also the race date
-    // TODO, while doing rating calculations, add driver to a different global array if they cross a license break point, and then buff their rating by an amount?
-
   });// end $("#calc-elo").on("click"...
 
   // trigger: copy rating output as new input, clear output & race results
@@ -369,7 +323,7 @@ $(document).ready(function () {
   // testing functions
   $("#test-driverRatingInput").on("click", function () {
     $("#driverRatingInput").val("");
-    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","rating": [1000],"races": 0,"lastChangedDate": "1970/01/01"}}');
+    $("#driverRatingInput").val('{"troy_uyan": {"name": "Troy Uyan","rating": [1000],"date": ["Start"]}}');
   });
   $("#test-raceResultsInput").on("click", function () {
     $("#raceResultsInput").val("");

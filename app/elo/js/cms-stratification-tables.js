@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   // helper: return license column text data based on elo rating
   // use an average of the last 5 races for your license
-  function getModernLicense(ratingArray, lastChangedDate) {
+  function getModernLicense(ratingArray, lastRaceDate) {
 
     // get current and previous average ratings
     // let last5AvgRating = getLast5RatingAverage(ratingArray);
@@ -23,23 +23,23 @@ $(document).ready(function () {
     let previousRating = ratingArray[ratingArray.length - 2];
 
     // get and validate last race date
-    const lastChangedDateParts = lastChangedDate.split('/');
-    if (lastChangedDateParts.length !== 3) {
+    const lastRaceDateParts = lastRaceDate.split('/');
+    if (lastRaceDateParts.length !== 3) {
       console.error("Invalid last changed date format; Expected YYYY/MM/DD.");
-      console.log(lastChangedDateParts);
+      console.log(lastRaceDateParts);
       return false;
     }
-    const updateYear = parseInt(lastChangedDateParts[0], 10);
-    const updateMonth = parseInt(lastChangedDateParts[1], 10) - 1; // Date() month is 0-indexed, subtract 1
-    const updateDay = parseInt(lastChangedDateParts[2], 10);
-    if (isNaN(updateYear) || isNaN(updateMonth) || isNaN(updateDay)) {
+    const lastRaceYear = parseInt(lastRaceDateParts[0], 10);
+    const lastRaceMonth = parseInt(lastRaceDateParts[1], 10) - 1; // Date() month is 0-indexed, subtract 1
+    const lastRaceDay = parseInt(lastRaceDateParts[2], 10);
+    if (isNaN(lastRaceYear) || isNaN(lastRaceMonth) || isNaN(lastRaceDay)) {
       console.error("Invalid date components.");
       console.log(lastChangedDateParts);
       return false;
     }
 
     // use the date string parts to make a new date object
-    const lastRaceDateObj = new Date(updateYear, updateMonth, updateDay);
+    const lastRaceDateObj = new Date(lastRaceYear, lastRaceMonth, lastRaceDay);
 
     // if driver raced in last 3 months, see if the license just changed
     if (lastRaceDateObj > threeMonthsAgoDateObj) {
@@ -88,42 +88,6 @@ $(document).ready(function () {
       return "<span class='badge medal medal-copper'>Copper</span>";
     }
 
-  }
-
-  // helper: get an average ELO rating over the last 5 races
-  function getLast5RatingAverage(ratingArray) {
-    if (!Array.isArray(ratingArray) || ratingArray.length <= 1) {
-      console.log("getLast5RatingAverage failed with rating array: ");
-      console.log(ratingArray);
-      return false;
-    }
-
-    const numOfRaces = Math.min(5, ratingArray.length);
-    let last5Total = 0;
-
-    for (let i = ratingArray.length - numOfRaces; i < ratingArray.length; i++) {
-      last5Total += ratingArray[i];
-    }
-
-    return last5Total / numOfRaces;
-  }
-
-  // helper: get an average ELO rating over the last 5 races, prior to the latest race
-  function getPreviousLast5RatingAverage(ratingArray) {
-    if (!Array.isArray(ratingArray) || ratingArray.length < 2) {
-      console.log("getPreviousLast5RatingAverage failed with rating array: ");
-      console.log(ratingArray);
-    }
-
-    const previousNumOfRaces = Math.min(5, ratingArray.length - 1);
-    let previousLast5Total = 0;
-    const startIndex = ratingArray.length - previousNumOfRaces - 1;
-
-    for (let i = startIndex; i < ratingArray.length - 1; i++) {
-      previousLast5Total += ratingArray[i];
-    }
-
-    return previousLast5Total / previousNumOfRaces;
   }
 
   // helper: return different flags based on the driver's name
@@ -215,6 +179,11 @@ $(document).ready(function () {
         flagCode = "nl" // Netherlands
         break;
 
+      case "Diego Rodrigues":
+      case "Martin Esquivel":
+        flagCode = "ar" // Argentina
+        break;
+
       case "Magnus Dahlgren":
         flagCode = "se" // Sweden
         break;
@@ -249,10 +218,6 @@ $(document).ready(function () {
 
       case "Gagan Dev":
         flagCode = "in" // India
-        break;
-
-      case "Diego Rodrigues":
-        flagCode = "ar" // Argentina
         break;
 
       default:
@@ -300,26 +265,20 @@ $(document).ready(function () {
     // TO DO chart thingy probably at the top?
     //driver.rating is the array of liiiiiife
     modalBodyHTML += '<p>' + driver.rating + '</p>' + '</div><div class="row">';
+    modalBodyHTML += '<p>' + driver.date + '</p>' + '</div><div class="row">';
 
     // left side (stats)
     modalBodyHTML += '<div class="col">';
     modalBodyHTML += '<h4>Modern License</h4>';
-    modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.lastChangedDate) + '</p>';
-
-    // license rating, average Elo rating of last 5 races
-    // let last5AvgRating = getLast5RatingAverage(driver.rating);
-    // let previousLast5AvgRating = getPreviousLast5RatingAverage(driver.rating)
-    // let licenseRating = Math.round(last5AvgRating);
-    // let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
-    // modalBodyHTML += '<p><strong>License Rating:</strong> ' + licenseRating + ' (' + prettyRatingChange(averageRatingChange) + ')</p>';
+    modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.date[driver.date.length - 1]) + '</p>';
 
     // current, most recent Elo
     let currentRating = driver.rating[driver.rating.length - 1];
     modalBodyHTML += '<p><strong>Elo Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
 
     // rest of driver data
-    modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + driver.races + '</p>';
-    modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.lastChangedDate + '</p>';
+    modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + (driver.rating.length - 1) + '</p>';
+    modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.date[driver.date.length - 1] + '</p>';
 
     // right side (eligible car classes)
     modalBodyHTML += '</div><div class="col">';
@@ -435,7 +394,7 @@ $(document).ready(function () {
             // map data to json values or send json values to functions to get returns back
             rowData.flagImage = getFlag(driverData.name);
             rowData.name = driverData.name;
-            rowData.driverLicense = getModernLicense(driverData.rating, driverData.lastChangedDate);
+            rowData.driverLicense = getModernLicense(driverData.rating, driverData.date[driverData.date.length - 1]);
 
             // elo rating and latest change
             let rating = driverData.rating[driverData.rating.length - 1];
@@ -443,19 +402,10 @@ $(document).ready(function () {
             rowData.rating = rating;
             rowData.ratingChange = prettyRatingChange(rating - previousRating);
 
-            // HIDE THE STUFF MODE
-            //rowData.name = "driverData.name;"
-
-            // use average ratings over recent races, rather than the last rating
-            // let last5AvgRating = getLast5RatingAverage(driverData.rating);
-            // let previousLast5AvgRating = getPreviousLast5RatingAverage(driverData.rating)
-            // let averageRatingChange = Math.round(last5AvgRating - previousLast5AvgRating)
-            // rowData.rating = Math.round(last5AvgRating);
-            // rowData.ratingChange = prettyRatingChange(averageRatingChange);
-
             // rest of table data
-            rowData.races = driverData.races;
-            rowData.lastChangedDate = driverData.lastChangedDate;
+            rowData.races = driverData.rating.length - 1; // lenth of ratings array - 1 is number of races
+            rowData.date = driverData.date;
+            rowData.lastChangedDate = driverData.date[driverData.date.length - 1];
             rowData.driverData = driverData; // store the entire driver's object for the inspect modal
 
             // add object to the overall data return
