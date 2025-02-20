@@ -4654,7 +4654,7 @@ Scar Pope
 Karl Strouhal
 Jerry Chen
 Brian Hall
-oliver day
+Oliver Day
 Jason Whited
 RACE DATE: 2024/09/17
 RESULT: UNIFIED CLASS =============
@@ -4664,7 +4664,7 @@ Gilles Lalonde
 Norm Graf
 Brian Hall
 Matthew Overton
-oliver day
+Oliver Day
 Jerry Chen
 Karl Strouhal
 David Baca Celedon
@@ -4672,7 +4672,7 @@ RACE DATE: 2024/09/24
 RESULT: UNIFIED CLASS =============
 JT Tami
 Gilles Lalonde
-oliver day
+Oliver Day
 Adrian Rice
 Karl Strouhal
 Norm Graf
@@ -4681,7 +4681,7 @@ Stacie Scotts
 RACE DATE: 2024/10/08
 RESULT: UNIFIED CLASS =============
 JT Tami
-oliver day
+Oliver Day
 Karl Strouhal
 Gilles Lalonde
 Adrian Rice
@@ -4693,7 +4693,7 @@ JT Tami
 Ben Kesby
 Gilles Lalonde
 Brian Hall
-oliver day
+Oliver Day
 Micah Locke
 Norm Graf
 Karl Strouhal
@@ -4712,7 +4712,7 @@ Gilles Lalonde
 Willian Schlichting
 Karl Strouhal
 Lanny Hall
-oliver day
+Oliver Day
 Scar Pope
 Stephen Miller
 Philippe Dicartti
@@ -4729,7 +4729,7 @@ John Maher
 Stephen Miller
 Matthew Overton
 Karl Strouhal
-oliver day
+Oliver Day
 Lanny Hall
 Sean Kelly
 Norm Graf
@@ -4738,7 +4738,7 @@ RESULT: UNIFIED CLASS =============
 JT Tami
 Brian Hall
 Gilles Lalonde
-oliver day
+Oliver Day
 Stephen Miller
 Karl Strouhal
 Paul Ibbotson
@@ -4766,7 +4766,7 @@ Cole McMillan
 Declan Grady
 Peter Meier
 Craig Pullen
-oliver day
+Oliver Day
 Craig Gallagher
 Stephen Wenham
 RACE DATE: 2024/03/13
@@ -4780,7 +4780,7 @@ Anton Tammenga
 Ben Kesby
 Philippe Dicartti
 Scar Pope
-oliver day
+Oliver Day
 Magnus Dahlgren
 Stephen Wenham
 Craig Pullen
@@ -4808,7 +4808,7 @@ Jason Whited
 Craig Gallagher
 Stephen Wenham
 Don Hunter
-oliver day
+Oliver Day
 RACE DATE: 2024/03/20
 RESULT: UNIFIED CLASS =============
 Tony McOffoven
@@ -4834,7 +4834,7 @@ Oliver Newman
 Cole McMillan
 Filippo Marazzi
 Declan Grady
-oliver day
+Oliver Day
 RACE DATE: 2024/04/03
 RESULT: UNIFIED CLASS =============
 Bradley Sellars
@@ -4850,7 +4850,7 @@ Tony McOffoven
 Eelco Bussink
 Oliver Newman
 David Molero de Avila
-oliver day
+Oliver Day
 Boby Vakuinof
 Daniel Hurlock
 Craig Pullen
@@ -4864,7 +4864,7 @@ RESULT: UNIFIED CLASS =============
 Jeffrey Elliss
 Eelco Bussink
 Tony McOffoven
-oliver day
+Oliver Day
 Boby Vakuinof
 Oliver Newman
 Daniel Hurlock
@@ -4883,7 +4883,7 @@ Mike Bell
 Daniel Hurlock
 Oliver Newman
 Jason Whited
-oliver day
+Oliver Day
 Filippo Marazzi
 Cian Pullen
 David Molero de Avila
@@ -4896,7 +4896,7 @@ Mike Bell
 Daniel Hurlock
 Eelco Bussink
 Oliver Newman
-oliver day
+Oliver Day
 Tony McOffoven
 David Molero de Avila
 Cian Pullen
@@ -4908,7 +4908,7 @@ RESULT: UNIFIED CLASS =============
 Mike Bell
 Boby Vakuinof
 Bradley Sellars
-oliver day
+Oliver Day
 Alberto Zanotti
 David Molero de Avila
 Oliver Newman
@@ -4923,7 +4923,7 @@ Boby Vakuinof
 Mike Bell
 Daniel Hurlock
 Oliver Newman
-oliver day
+Oliver Day
 Stephen Wenham
 Filippo Marazzi
 Mike Olson
@@ -4938,7 +4938,7 @@ Boby Vakuinof
 Oliver Newman
 Eelco Bussink
 David Molero de Avila
-oliver day
+Oliver Day
 Mike Bell
 Jason Whited
 Tony McOffoven
@@ -4953,7 +4953,7 @@ Eelco Bussink
 Oliver Newman
 Mike Bell
 David Molero de Avila
-oliver day
+Oliver Day
 Luca Tavernari
 Jason Whited
 Filippo Marazzi
@@ -4963,7 +4963,7 @@ RACE DATE: 2024/05/22
 RESULT: UNIFIED CLASS =============
 Mike Bell
 Tony McOffoven
-shawn erik
+Shawn Erik
 Tom Lane
 Oliver Newman
 Luca Tavernari
@@ -4972,20 +4972,20 @@ Karl Strouhal
 Stephen Wenham
 Jason Whited
 Filippo Marazzi
-oliver day
+Oliver Day
 RACE DATE: 2024/05/22
 RESULT: UNIFIED CLASS =============
 Boby Vakuinof
 Luca Tavernari
 Mike Bell
-shawn erik
+Shawn Erik
 Tom Lane
 Oliver Newman
 Filippo Marazzi
 Karl Strouhal
 Stephen Wenham
 Jason Whited
-oliver day
+Oliver Day
 Tony McOffoven
 RACE DATE: 2024/05/29
 RESULT: UNIFIED CLASS =============
@@ -4995,7 +4995,7 @@ Oliver Newman
 Filippo Marazzi
 Stephen Wenham
 Stacie Scotts
-oliver day
+Oliver Day
 RACE DATE: 2024/05/29
 RESULT: UNIFIED CLASS =============
 Tony McOffoven
@@ -5004,7 +5004,7 @@ Oliver Newman
 Filippo Marazzi
 Stephen Wenham
 Stacie Scotts
-oliver day
+Oliver Day
 RACE DATE: 2024/06/05
 RESULT: UNIFIED CLASS =============
 Tony McOffoven
@@ -5012,20 +5012,20 @@ Mike Bell
 Eelco Bussink
 Oliver Newman
 Stephen Wenham
-oliver day
+Oliver Day
 RACE DATE: 2024/06/05
 RESULT: UNIFIED CLASS =============
 Eelco Bussink
 Mike Bell
 Oliver Newman
 Karl Strouhal
-oliver day
+Oliver Day
 Stephen Wenham
 Tony McOffoven
 RACE DATE: 2024/06/12
 RESULT: UNIFIED CLASS =============
 Mike Bell
-oliver day
+Oliver Day
 Filippo Marazzi
 Karl Strouhal
 Stacie Scotts
@@ -5033,7 +5033,7 @@ Stephen Wenham
 RACE DATE: 2024/06/12
 RESULT: UNIFIED CLASS =============
 Mike Bell
-oliver day
+Oliver Day
 Karl Strouhal
 Filippo Marazzi
 Stephen Wenham
@@ -5047,13 +5047,13 @@ Daniel Hurlock
 Matthew Overton
 Stephen Wenham
 Filippo Marazzi
-oliver day
+Oliver Day
 Stacie Scotts
 RACE DATE: 2024/06/19
 RESULT: UNIFIED CLASS =============
 Tony McOffoven
 Daniel Hurlock
-oliver day
+Oliver Day
 Mike Bell
 Stacie Scotts
 Stephen Wenham
@@ -5065,7 +5065,7 @@ RESULT: UNIFIED CLASS =============
 Mike Bell
 Tony McOffoven
 Boby Vakuinof
-oliver day
+Oliver Day
 Jukka Hautanen
 Karl Strouhal
 Jason Whited
@@ -5076,7 +5076,7 @@ RACE DATE: 2024/06/26
 RESULT: UNIFIED CLASS =============
 Tony McOffoven
 Mike Bell
-oliver day
+Oliver Day
 Cole McMillan
 Karl Strouhal
 Stephen Wenham
@@ -5091,7 +5091,7 @@ Jeffrey Elliss
 Adrian Rice
 Brette Brooks
 Gilles Lalonde
-oliver day
+Oliver Day
 Scar Pope
 Jon Uyan
 Alfredo Cabrera
@@ -5111,7 +5111,7 @@ Mike Bell
 Jeffrey Elliss
 Jon Uyan
 Scar Pope
-oliver day
+Oliver Day
 Gilles Lalonde
 Brette Brooks
 Mack Sunthonlap
@@ -5129,7 +5129,7 @@ Philippe Dicartti
 RACE DATE: 2024/03/19
 RESULT: UNIFIED CLASS =============
 Jeffrey Elliss
-oliver day
+Oliver Day
 Adrian Rice
 Mike Bell
 JT Tami
@@ -5152,7 +5152,7 @@ Brette Brooks
 JT Tami
 Scar Pope
 Adrian Rice
-oliver day
+Oliver Day
 Mike Bell
 Alfredo Cabrera
 Jon Uyan
@@ -5167,7 +5167,7 @@ RESULT: UNIFIED CLASS =============
 Jeffrey Elliss
 JT Tami
 Ross Smith
-oliver day
+Oliver Day
 Alfredo Cabrera
 Brian Hall
 Cole McMillan
@@ -5191,7 +5191,7 @@ Gilles Lalonde
 Mack Sunthonlap
 Brian Hall
 Scar Pope
-oliver day
+Oliver Day
 Brette Brooks
 Alfredo Cabrera
 Jerry Hamilton
@@ -5204,7 +5204,7 @@ JT Tami
 Scar Pope
 Brette Brooks
 Alfredo Cabrera
-oliver day
+Oliver Day
 Gilles Lalonde
 Adrian Rice
 Matthew Overton
@@ -5221,7 +5221,7 @@ Adrian Rice
 Scar Pope
 Ross Smith
 Gilles Lalonde
-oliver day
+Oliver Day
 Brette Brooks
 Alfredo Cabrera
 Karl Strouhal
@@ -5236,7 +5236,7 @@ Ross Smith
 Gilles Lalonde
 JT Tami
 Adrian Rice
-oliver day
+Oliver Day
 Dave Cours
 Mack Sunthonlap
 Alfredo Cabrera
@@ -5248,7 +5248,7 @@ RACE DATE: 2024/04/23
 RESULT: UNIFIED CLASS =============
 Ross Smith
 JT Tami
-oliver day
+Oliver Day
 Gilles Lalonde
 Scar Pope
 Dave Cours
@@ -5262,8 +5262,8 @@ Adrian Rice
 RACE DATE: 2024/05/07
 RESULT: UNIFIED CLASS =============
 Adrian Rice
-shawn erik
-oliver day
+Shawn Erik
+Oliver Day
 Ross Smith
 JT Tami
 Brette Brooks
@@ -5278,13 +5278,13 @@ Jason Whited
 RACE DATE: 2024/05/07
 RESULT: UNIFIED CLASS =============
 Adrian Rice
-shawn erik
+Shawn Erik
 Mack Sunthonlap
 Gilles Lalonde
 JT Tami
 Brette Brooks
 Karl Strouhal
-oliver day
+Oliver Day
 Stacie Scotts
 Oscar Dancourt
 Craig Gallagher
@@ -5293,10 +5293,10 @@ Jerry Hamilton
 RACE DATE: 2024/05/14
 RESULT: UNIFIED CLASS =============
 Adrian Rice
-shawn erik
+Shawn Erik
 Brian Hall
 Mack Sunthonlap
-oliver day
+Oliver Day
 Karl Strouhal
 Jerry Hamilton
 Gilles Lalonde
@@ -5308,10 +5308,10 @@ Stacie Scotts
 RACE DATE: 2024/05/14
 RESULT: UNIFIED CLASS =============
 Adrian Rice
-shawn erik
+Shawn Erik
 Brian Hall
 Mack Sunthonlap
-oliver day
+Oliver Day
 Gilles Lalonde
 Karl Strouhal
 Jerry Hamilton
@@ -5322,8 +5322,8 @@ Ross Smith
 RACE DATE: 2024/05/21
 RESULT: UNIFIED CLASS =============
 Adrian Rice
-oliver day
-shawn erik
+Oliver Day
+Shawn Erik
 Karl Strouhal
 Brette Brooks
 Gilles Lalonde
@@ -5333,9 +5333,9 @@ Craig Gallagher
 Ross Smith
 RACE DATE: 2024/05/21
 RESULT: UNIFIED CLASS =============
-shawn erik
+Shawn Erik
 Gilles Lalonde
-oliver day
+Oliver Day
 Ross Smith
 Karl Strouhal
 Brette Brooks
@@ -5347,9 +5347,9 @@ RACE DATE: 2024/05/28
 RESULT: UNIFIED CLASS =============
 Adrian Rice
 Daniel Kirby
-shawn erik
+Shawn Erik
 Ross Smith
-oliver day
+Oliver Day
 Brian Hall
 Gilles Lalonde
 Karl Strouhal
@@ -5363,9 +5363,9 @@ RACE DATE: 2024/05/28
 RESULT: UNIFIED CLASS =============
 Daniel Kirby
 Adrian Rice
-shawn erik
+Shawn Erik
 Gilles Lalonde
-oliver day
+Oliver Day
 Brian Hall
 Brette Brooks
 Jerry Hamilton
@@ -5377,9 +5377,9 @@ Ross Smith
 RACE DATE: 2024/06/04
 RESULT: UNIFIED CLASS =============
 Adrian Rice
-oliver day
+Oliver Day
 Ross Smith
-shawn erik
+Shawn Erik
 Mack Sunthonlap
 Brian Hall
 Karl Strouhal
@@ -5395,24 +5395,24 @@ Gilles Lalonde
 Brette Brooks
 Adrian Rice
 Ross Smith
-shawn erik
+Shawn Erik
 Mack Sunthonlap
 Karl Strouhal
 Scar Pope
 Brian Hall
 Jerry Hamilton
 Oscar Dancourt
-oliver day
+Oliver Day
 Craig Gallagher
 RACE DATE: 2024/06/11
 RESULT: UNIFIED CLASS =============
 Troy Uyan
-oliver day
+Oliver Day
 Mike Bell
 Ross Smith
 Scar Pope
 Brian Hall
-shawn erik
+Shawn Erik
 Adrian Rice
 Karl Strouhal
 Brette Brooks
@@ -5427,8 +5427,8 @@ Adrian Rice
 Brian Hall
 Ross Smith
 Troy Uyan
-oliver day
-shawn erik
+Oliver Day
+Shawn Erik
 Mack Sunthonlap
 Brette Brooks
 Karl Strouhal
@@ -5440,8 +5440,8 @@ Oscar Dancourt
 Gilles Lalonde
 RACE DATE: 2024/06/18
 RESULT: UNIFIED CLASS =============
-shawn erik
-oliver day
+Shawn Erik
+Oliver Day
 Troy Uyan
 Mack Sunthonlap
 Brette Brooks
@@ -5459,7 +5459,7 @@ Adrian Rice
 RACE DATE: 2024/06/18
 RESULT: UNIFIED CLASS =============
 Scar Pope
-oliver day
+Oliver Day
 Mack Sunthonlap
 Adrian Rice
 Brette Brooks
@@ -5467,7 +5467,7 @@ Jerry Hamilton
 Troy Uyan
 Karl Strouhal
 Oscar Dancourt
-shawn erik
+Shawn Erik
 Ross Smith
 Craig Gallagher
 Jason Whited
@@ -5478,8 +5478,8 @@ RACE DATE: 2024/06/25
 RESULT: UNIFIED CLASS =============
 Adrian Rice
 Troy Uyan
-oliver day
-shawn erik
+Oliver Day
+Shawn Erik
 Ross Smith
 Mack Sunthonlap
 Karl Strouhal
@@ -5491,7 +5491,7 @@ Oscar Dancourt
 Alexander McQuerry
 Craig Gallagher
 Scar Pope
-Ryan Reyes
+Ryan-Paulbert Reyes
 Stacie Scotts
 RACE DATE: 2024/06/25
 RESULT: UNIFIED CLASS =============
@@ -5499,16 +5499,16 @@ Scar Pope
 Brian Hall
 Adrian Rice
 Gilles Lalonde
-oliver day
+Oliver Day
 Ross Smith
 Brette Brooks
-shawn erik
+Shawn Erik
 Troy Uyan
 Karl Strouhal
 Jerry Hamilton
 Mack Sunthonlap
 Alexander McQuerry
-Ryan Reyes
+Ryan-Paulbert Reyes
 Oscar Dancourt
 Craig Gallagher
 Stacie Scotts
@@ -5517,8 +5517,8 @@ RESULT: UNIFIED CLASS =============
 Scar Pope
 Troy Uyan
 Gilles Lalonde
-oliver day
-shawn erik
+Oliver Day
+Shawn Erik
 Karl Strouhal
 Brian Hall
 Jerry Hamilton
@@ -5532,9 +5532,9 @@ Jason Whited
 RACE DATE: 2024/07/09
 RESULT: UNIFIED CLASS =============
 Scar Pope
-shawn erik
+Shawn Erik
 Mack Sunthonlap
-oliver day
+Oliver Day
 Brian Hall
 Gilles Lalonde
 Jason Whited
@@ -5700,7 +5700,7 @@ Daniel Kirby
 Ethan Funk
 Jon Uyan
 Brian Hall
-oliver day
+Oliver Day
 Brette Brooks
 George Angelidis
 Lanny Hall
@@ -5723,7 +5723,7 @@ George Angelidis
 Becky Ely-Clark
 Gilles Lalonde
 Lanny Hall
-oliver day
+Oliver Day
 Philippe Dicartti
 Stephen Miller
 Jason Whited
@@ -5746,7 +5746,7 @@ Philippe Dicartti
 Stephen Miller
 Karl Strouhal
 Lanny Hall
-oliver day
+Oliver Day
 Jerry Hamilton
 Jon Uyan
 Mike Olson
@@ -5762,7 +5762,7 @@ Daniel Kirby
 Brian Hall
 Jon Uyan
 Lanny Hall
-oliver day
+Oliver Day
 George Angelidis
 Gilles Lalonde
 Stephen Miller
@@ -5786,7 +5786,7 @@ Stephen Miller
 Brette Brooks
 Jerry Hamilton
 Tom Mountjoy
-oliver day
+Oliver Day
 RACE DATE: 2023/11/21
 RESULT: LMGT2 =============
 Ross Smith
@@ -5796,7 +5796,7 @@ Mike Olson
 RACE DATE: 2023/11/28
 RESULT: LMGT1 =============
 Daniel Kirby
-oliver day
+Oliver Day
 Brian Hall
 Lanny Hall
 Philippe Dicartti
@@ -5821,7 +5821,7 @@ Brian Hall
 Magnus Dahlgren
 Barry Dimarzo
 George Angelidis
-oliver day
+Oliver Day
 Wayne Hutchison
 Gilles Lalonde
 Stephen Miller
@@ -5847,7 +5847,7 @@ Becky Ely-Clark
 Jason Whited
 Stephen Miller
 George Angelidis
-oliver day
+Oliver Day
 Ross Smith
 Matthew Overton
 Peter Meier
@@ -5874,7 +5874,7 @@ George Angelidis
 Gilles Lalonde
 Barry Dimarzo
 Stephen Miller
-oliver day
+Oliver Day
 Wayne Hutchison
 Alex Gericke
 Alexander Schulz
@@ -5898,7 +5898,7 @@ Magnus Dahlgren
 Jason Whited
 Jon Uyan
 Brian Hall
-oliver day
+Oliver Day
 Alexander Schulz
 George Angelidis
 Philippe Dicartti
@@ -5939,7 +5939,7 @@ Peter Meier
 Pekka Ylitalo
 Gilles Lalonde
 Vasilis Katerinakis
-oliver day
+Oliver Day
 Eric Moinet
 Becky Ely-Clark
 RACE DATE: 2023/04/04
@@ -5949,7 +5949,7 @@ Risto Korpi
 Brette Brooks
 Gilles Lalonde
 Frank McCurdy
-oliver day
+Oliver Day
 Ross Smith
 Oscar Dancourt
 Joe Miller
@@ -5957,7 +5957,7 @@ Santiago Dancourt
 RACE DATE: 2023/04/11
 RESULT: UNIFIED CLASS =============
 Risto Korpi
-oliver day
+Oliver Day
 Brette Brooks
 Frank McCurdy
 Gilles Lalonde
@@ -5971,7 +5971,7 @@ RESULT: UNIFIED CLASS =============
 Tommy Teasdale
 Risto Korpi
 Frank McCurdy
-oliver day
+Oliver Day
 Brette Brooks
 Dale Ballweg
 Joe Miller
@@ -5982,7 +5982,7 @@ RESULT: UNIFIED CLASS =============
 Risto Korpi
 Tommy Teasdale
 Frank McCurdy
-oliver day
+Oliver Day
 Gilles Lalonde
 Karl Strouhal
 Brette Brooks
@@ -5991,7 +5991,7 @@ Mike Olson
 RACE DATE: 2023/05/09
 RESULT: UNIFIED CLASS =============
 Risto Korpi
-oliver day
+Oliver Day
 Ross Smith
 Tommy Teasdale
 Gilles Lalonde
@@ -6004,13 +6004,13 @@ Risto Korpi
 Brette Brooks
 Gilles Lalonde
 Tommy Teasdale
-oliver day
+Oliver Day
 Jerry Hamilton
 Ross Smith
 RACE DATE: 2023/05/30
 RESULT: UNIFIED CLASS =============
 Risto Korpi
-oliver day
+Oliver Day
 Tommy Teasdale
 Gilles Lalonde
 Jerry Hamilton
@@ -6026,11 +6026,11 @@ Gilles Lalonde
 Ross Smith
 Caleb Marklein
 Jerry Hamilton
-oliver day
+Oliver Day
 RACE DATE: 2023/06/13
 RESULT: UNIFIED CLASS =============
 Risto Korpi
-oliver day
+Oliver Day
 Tommy Teasdale
 Caleb Marklein
 Brette Brooks
@@ -6039,7 +6039,7 @@ Jerry Hamilton
 Ross Smith
 RACE DATE: 2023/06/20
 RESULT: UNIFIED CLASS =============
-oliver day
+Oliver Day
 Risto Korpi
 Tommy Teasdale
 Brette Brooks
@@ -6049,7 +6049,7 @@ Pedro Crulas Gomes
 Ross Smith
 RACE DATE: 2023/06/27
 RESULT: UNIFIED CLASS =============
-oliver day
+Oliver Day
 Risto Korpi
 Tommy Teasdale
 Brette Brooks
@@ -6060,7 +6060,7 @@ Mike Olson
 RACE DATE: 2023/07/11
 RESULT: UNIFIED CLASS =============
 Risto Korpi
-oliver day
+Oliver Day
 Ross Smith
 Tony Boynton
 Jerry Hamilton
@@ -6073,13 +6073,13 @@ Risto Korpi
 Tommy Teasdale
 Jerry Hamilton
 Brette Brooks
-oliver day
+Oliver Day
 Ross Smith
 Karl Strouhal
 Tony Boynton
 RACE DATE: 2023/08/01
 RESULT: UNIFIED CLASS =============
-oliver day
+Oliver Day
 Risto Korpi
 Tommy Teasdale
 Karl Strouhal
@@ -6099,7 +6099,7 @@ Brette Brooks
 Ross Smith
 Jerry Hamilton
 Karl Strouhal
-oliver day
+Oliver Day
 Risto Korpi
 RACE DATE: 2023/10/03
 RESULT: UNIFIED CLASS =============
@@ -6277,7 +6277,7 @@ Don Hunter
 Ross Smith
 Scar Pope
 Brian Hall
-oliver day
+Oliver Day
 George Angelidis
 Philippe Dicartti
 Lanny Hall
@@ -6302,7 +6302,7 @@ Brian Hall
 Don Hunter
 Ross Smith
 George Angelidis
-oliver day
+Oliver Day
 Lanny Hall
 Scar Pope
 Jason Whited
@@ -6326,7 +6326,7 @@ RACE DATE: 2024/03/26
 RESULT: LMGT3 =============
 Ross Smith
 Brian Hall
-oliver day
+Oliver Day
 Don Hunter
 JT Tami
 George Angelidis
@@ -6346,7 +6346,7 @@ Oscar Dancourt
 RACE DATE: 2024/04/09
 RESULT: LMGT3 =============
 JT Tami
-oliver day
+Oliver Day
 Craig Gallagher
 Ross Smith
 George Angelidis
@@ -6374,7 +6374,7 @@ Ross Smith
 Brian Hall
 Scar Pope
 Lanny Hall
-oliver day
+Oliver Day
 Jason Whited
 RACE DATE: 2024/07/02
 RESULT: LMGT2 =============
@@ -6386,7 +6386,7 @@ Oscar Dancourt
 Stacie Scotts
 RACE DATE: 2024/07/02
 RESULT: LMGT3 =============
-oliver day
+Oliver Day
 Ross Smith
 Jason Whited
 George Angelidis
@@ -6405,7 +6405,7 @@ RACE DATE: 2024/07/23
 RESULT: LMGT3 =============
 Ross Smith
 JT Tami
-oliver day
+Oliver Day
 Jason Whited
 Craig Gallagher
 George Angelidis
@@ -6424,7 +6424,7 @@ RESULT: LMGT3 =============
 JT Tami
 Brian Hall
 George Angelidis
-oliver day
+Oliver Day
 Ross Smith
 Lanny Hall
 Craig Gallagher
@@ -6446,7 +6446,7 @@ RESULT: LMGT3 =============
 Ethan Funk
 JT Tami
 Ross Smith
-oliver day
+Oliver Day
 Brian Hall
 George Angelidis
 RACE DATE: 2024/10/01
@@ -6461,7 +6461,7 @@ RACE DATE: 2024/10/01
 RESULT: LMGT3 =============
 Scar Pope
 JT Tami
-oliver day
+Oliver Day
 Ross Smith
 George Angelidis
 RACE DATE: 2024/10/22
@@ -6478,7 +6478,7 @@ Ross Smith
 Don Hunter
 George Angelidis
 Craig Gallagher
-oliver day
+Oliver Day
 RACE DATE: 2024/11/12
 RESULT: LMGT2 =============
 Ben Boorman
@@ -6488,7 +6488,7 @@ Jon Uyan
 Oscar Dancourt
 RACE DATE: 2024/11/12
 RESULT: LMGT3 =============
-oliver day
+Oliver Day
 JT Tami
 Ross Smith
 Scar Pope
@@ -6501,7 +6501,7 @@ Jon Uyan
 Ben Boorman
 RACE DATE: 2024/11/26
 RESULT: LMGT3 =============
-oliver day
+Oliver Day
 Scar Pope
 JT Tami
 Ross Smith
@@ -6517,7 +6517,7 @@ Stacie Scotts
 Jon Uyan
 RACE DATE: 2024/12/03
 RESULT: LMGT3 =============
-oliver day
+Oliver Day
 Scar Pope
 Ross Smith
 George Angelidis
@@ -6533,7 +6533,7 @@ Eelco Bussink
 Daniel Hurlock
 David Jundt
 Diego Castro
-oliver day
+Oliver Day
 Alexander Nekhoroshkov
 Scar Pope
 Craig Pullen
@@ -6579,7 +6579,7 @@ RESULT: LMGT2 =============
 Jon Uyan
 Becky Ely-Clark
 Daniel Kirby
-oliver day
+Oliver Day
 David Jundt
 Eelco Bussink
 Diego Castro
@@ -6625,7 +6625,7 @@ Rhys Gardiner
 Eelco Bussink
 Senne Stofmeel
 Alexander Nekhoroshkov
-oliver day
+Oliver Day
 Cameron Barker
 Gilles Lalonde
 Luca Tavernari
@@ -6682,7 +6682,7 @@ Micah Locke
 Scar Pope
 Eric Moinet
 Adam Gray
-oliver day
+Oliver Day
 Oliver Newman
 Filippo Marazzi
 Tom Mountjoy
@@ -6729,7 +6729,7 @@ Rhys Gardiner
 Jon Uyan
 Gilles Lalonde
 Eduardo Beninca
-oliver day
+Oliver Day
 Neil Wood
 Adam Gray
 Eric Moinet
@@ -6770,7 +6770,7 @@ Eric Moinet
 Daniel Scott
 Fernando Ferreira
 Craig Pullen
-oliver day
+Oliver Day
 RACE DATE: 2024/07/27
 RESULT: LMGT3 =============
 Niklas Kirsten
@@ -6792,7 +6792,7 @@ Daniel Hurlock
 Eelco Bussink
 Luca Tavernari
 Rhys Gardiner
-oliver day
+Oliver Day
 Neil Wood
 Jon Uyan
 Adam Gray
@@ -6827,7 +6827,7 @@ Daniel Hurlock
 Rhys Gardiner
 Becky Ely-Clark
 Luca Tavernari
-oliver day
+Oliver Day
 Neil Wood
 Scar Pope
 Gilles Lalonde
@@ -6861,7 +6861,7 @@ Robin Moelling
 Cameron Barker
 David Jundt
 Daniel Hurlock
-oliver day
+Oliver Day
 Luca Tavernari
 Ben Boorman
 Scar Pope
@@ -6895,7 +6895,7 @@ Rhys Gardiner
 David Jundt
 Ben Boorman
 Oliver Newman
-oliver day
+Oliver Day
 Andi  Schremser
 Becky Ely-Clark
 Gilles Lalonde
@@ -6930,7 +6930,7 @@ Ben Boorman
 Becky Ely-Clark
 Daniel Hurlock
 Luca Tavernari
-oliver day
+Oliver Day
 Eelco Bussink
 Neil Wood
 Scar Pope
@@ -6956,7 +6956,7 @@ RESULT: LMGT2 =============
 Tony McOffoven
 Eelco Bussink
 Daniel Hurlock
-oliver day
+Oliver Day
 Scar Pope
 Gilles Lalonde
 Oliver Newman
@@ -6991,7 +6991,7 @@ RACE DATE: 2024/11/30
 RESULT: LMGT2 =============
 Becky Ely-Clark
 Daniel Hurlock
-oliver day
+Oliver Day
 Eelco Bussink
 Rhys Gardiner
 Luca Tavernari
@@ -7184,11 +7184,11 @@ RACE DATE: 2025/02/04
 RESULT: UNIFIED CLASS =============
 JT Tami
 Ethan Funk
-oliver day
+Oliver Day
 Scar Pope
 Alec King
 Troy Uyan
-shawn erik
+Shawn Erik
 Jon Uyan
 Karl Strouhal
 Stephen Miller
@@ -7227,7 +7227,7 @@ RESULT: UNIFIED CLASS =============
 Daniel Hurlock
 JT Tami
 Scar Pope
-oliver day
+Oliver Day
 Eduardo Beninca
 Mike Bell
 Risto Korpi
@@ -7332,7 +7332,7 @@ RACE DATE: 2025/02/18
 RESULT: UNIFIED CLASS =============
 JT Tami
 Alec King
-shawn erik
+Shawn Erik
 Karl Strouhal
 Stacie Scotts
 RACE DATE: 2025/02/18
@@ -7342,14 +7342,14 @@ Troy Uyan
 Eduardo Beninca
 John Maher
 Gilles Lalonde
-oliver day
+Oliver Day
 Martin Esquivel
 Olivier Gervais
 RACE DATE: 2025/02/18
 RESULT: UNIFIED CLASS =============
 Alec King
 JT Tami
-shawn erik
+Shawn Erik
 Karl Strouhal
 RACE DATE: 2025/02/18
 RESULT: GT4 =============
@@ -7359,5 +7359,5 @@ Troy Uyan
 John Maher
 Gilles Lalonde
 Olivier Gervais
-oliver day
+Oliver Day
 Martin Esquivel

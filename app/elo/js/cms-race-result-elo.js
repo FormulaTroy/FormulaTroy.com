@@ -143,7 +143,7 @@ $(document).ready(function () {
 
     // set maximum possible rating adjustment per 1:1 driver comparison
     // aka the "K-Factor" in the ELO equation
-    let maxRatingAdjustment = 2;
+    let maxRatingAdjustment = 2.25;
 
     // total the expected and actual scores
     let expectedResultScore = 0;
@@ -167,8 +167,6 @@ $(document).ready(function () {
     postRaceDriverObj.rating.push(newDriverRating);
     postRaceDriverObj.date.push(raceDate);
   }
-
-
 
   // trigger: calculate the elo changes based on current ratings and new race result
   $("#calc-elo").on("click", function () {
@@ -241,17 +239,6 @@ $(document).ready(function () {
       const driversInClass = resultBlock.drivers.length;
       raceDate = resultBlock.date;
       raceDate = raceDate.substring(raceDate.lastIndexOf(":") + 2);
-
-
-
-      // store the number of drivers in this class result
-
-      // use the loop index to place the position array
-
-
-
-
-
 
       // loop over the results, driver by driver
       $.each(raceResults, function (index, driverLine) {
