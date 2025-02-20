@@ -10,6 +10,8 @@ let driverCount = 0;
 let unifiedClassResults = "";
 let hypercarResults = "";
 let lmp2Results = "";
+let lmgt1Results = "";
+let lmgt2Results = "";
 let lmgt3Results = "";
 let gt4Results = "";
 
@@ -23,6 +25,8 @@ function addDriverToResults(driverName, carClass) {
     case "BTCC":
     case "SPEC":
     case "TA2":
+    case "GT":
+    case "C1":
       unifiedClassResults += driverName + "\n"
       break;
 
@@ -32,6 +36,14 @@ function addDriverToResults(driverName, carClass) {
 
     case "LMP2":
       lmp2Results += driverName + "\n"
+      break;
+
+    case "LMGT1":
+      lmgt1Results += driverName + "\n"
+      break;
+
+    case "LMGT2":
+      lmgt2Results += driverName + "\n"
       break;
 
     case "LMGT3":
@@ -101,6 +113,16 @@ function outputResults() {
     textExportContents += "RESULT: LMP2 =============\n";
     textExportContents += lmp2Results;
   }
+  if (lmgt1Results != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: LMGT1 =============\n";
+    textExportContents += lmgt1Results;
+  }
+  if (lmgt2Results != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: LMGT2 =============\n";
+    textExportContents += lmgt2Results;
+  }
   if (lmgt3Results != "") {
     textExportContents += dateString
     textExportContents += "RESULT: LMGT3 =============\n";
@@ -144,7 +166,7 @@ resultTableRows.each(function () {
   let driverName = "";
   let timeGapStatus = "";
 
-  // make sure there's enough columns, and see if there's a "Cat" (class) column or not
+  // DEFAULT SCRAPER: make sure there's enough columns, and see if there's a "Cat" (class) column or not
   if (cells.length == 13) {
     // get driver data, extract class from Car / Vehicle # column ("#24 Hypercar")
     carClass = $(cells[4]).text().trim();
@@ -171,6 +193,22 @@ resultTableRows.each(function () {
   } else {
     console.warn("Results row does not have enough columns?");
   }
+
+  // ALTERNATE SCRAPER: no cat column, vehicles don't show class, unify results
+  // carClass = "SPEC";
+  // driverName = $(cells[2]).text().trim();
+  // timeGapStatus = $(cells[6]).text().trim();
+
+  // ALTERNATE SCRAPER: cat is vague, vehicles do show class, split results
+  // carClass = $(cells[5]).text().trim();
+  // if (carClass.includes("Div I-II")  || carClass.includes("Div I + II") ) {
+  //   carClass = "LMGT2"
+  // } else if (carClass.includes("Div III")) {
+  //   carClass = "LMGT3"
+  // } else {
+  //   carClass = "Unknown!";
+  //   console.warn("Car class extraction from Vehicle column failed");
+  // }
 
   // if not a "DNS", add to results
   if (timeGapStatus != "DNS") {

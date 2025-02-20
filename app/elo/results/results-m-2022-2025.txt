@@ -1,3 +1,833 @@
+RACE DATE: 2022/01/20
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+George Angelidis
+James Walker
+Erik Jacobs
+Zander Tallman
+David Anderson
+Thomas DiLibero
+Stuart Barge
+Paul Ibbotson
+Eugene Mazur
+Tom Nasella
+Tony Boynton
+Morgan McCalister
+Chris Hamilton
+Nicolas Cortes
+Jerry Hamilton
+Bruce Hopkins
+RACE DATE: 2022/01/20
+RESULT: HYPERCAR =============
+Daniel Kirby
+Ross Smith
+Colin Moore
+JT Tami
+Sahil Mustac
+Ben Boorman
+Troy Uyan
+Kyle Vesa
+John Maher
+Brian Hall
+Matthew Overton
+Wayne Galvan
+Tom Aiken
+Guilherme Bencke
+Jerry Chen
+Marcelo Vaz
+Jason Whited
+Norm Graf
+Tom Mountjoy
+Abdelal  ElBakhar
+Jon Uyan
+Rodger Gabryszak
+Cameron Sansano
+Gilles Lalonde
+Lanny Hall
+RACE DATE: 2022/02/10
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+George Angelidis
+James Walker
+Zander Tallman
+Paul Ibbotson
+David Anderson
+Erik Jacobs
+Stephen Miller
+Stuart Barge
+Thomas DiLibero
+James Bowders
+Eugene Mazur
+Dan Minges
+Barry Dimarzo
+Tom Nasella
+Tony Boynton
+Brendan McVeigh
+Nicolas Cortes
+RACE DATE: 2022/02/10
+RESULT: HYPERCAR =============
+Daniel Kirby
+Ben Boorman
+Jon Uyan
+Norm Graf
+Brian Hall
+Jason Whited
+JT Tami
+Jerry Chen
+Lanny Hall
+Matthew Overton
+John Maher
+Tom Mountjoy
+Guilherme Bencke
+Ross Smith
+Rick Hendriksen
+Colin Moore
+RACE DATE: 2022/04/14
+RESULT: UNIFIED CLASS =============
+Ahmed Abdalla
+James Walker
+Eduardo Beninca
+Don Fryman
+Zander Tallman
+Nicolas Cortes
+Paul Ibbotson
+Thomas DiLibero
+Stephen Miller
+Eugene Mazur
+James Bowders
+Wes Deir
+Stuart Barge
+Tom Nasella
+Tony Boynton
+RACE DATE: 2022/04/14
+RESULT: HYPERCAR =============
+Daniel Kirby
+Jon Uyan
+JT Tami
+Brian Hall
+Troy Uyan
+Gilles Lalonde
+John Maher
+Ben Boorman
+Matthew Overton
+Norm Graf
+Jason Whited
+Lanny Hall
+Guilherme Bencke
+Jerry Chen
+Ross Smith
+RACE DATE: 2022/04/21
+RESULT: UNIFIED CLASS =============
+George Angelidis
+Barry Dimarzo
+Stuart Barge
+Thomas DiLibero
+Stephen Miller
+Chris Brew
+James Bowders
+Paul Ibbotson
+Eugene Mazur
+Steve Carman
+Wes Deir
+Eduardo Beninca
+Erik Jacobs
+RACE DATE: 2022/04/21
+RESULT: HYPERCAR =============
+Jon Uyan
+Daniel Kirby
+JT Tami
+Jason Whited
+Brian Hall
+Troy Uyan
+Matthew Overton
+Jerry Chen
+Norm Graf
+Gilles Lalonde
+Lanny Hall
+Ben Boorman
+John Maher
+Ross Smith
+Ernest Bernaldo
+RACE DATE: 2022/04/28
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+Zander Tallman
+Chris Brew
+George Angelidis
+Eugene Mazur
+Paul Ibbotson
+James Bowders
+Erik Jacobs
+Thomas DiLibero
+Tom Nasella
+Nicolas Cortes
+RACE DATE: 2022/04/28
+RESULT: HYPERCAR =============
+Daniel Kirby
+Brian Hall
+Matthew Overton
+Norm Graf
+Troy Uyan
+JT Tami
+John Maher
+Ross Smith
+Ben Boorman
+Jason Whited
+Gilles Lalonde
+Lanny Hall
+Jon Uyan
+Jerry Chen
+RACE DATE: 2022/06/16
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+Chris Brew
+George Angelidis
+Maciej Kasprzyk
+Stuart Barge
+Erik Jacobs
+Paul Ibbotson
+Stephen Miller
+Tom Nasella
+Eugene Mazur
+Vinicius de Oliveira
+Francisco Costa
+Elisio Netto
+Vinicius Goncalves
+Bruce Hopkins
+RACE DATE: 2022/06/16
+RESULT: HYPERCAR =============
+Daniel Kirby
+JT Tami
+Sahil Mustac
+Ross Smith
+Matthew Overton
+Brian Hall
+Jason Whited
+Jerry Chen
+Gilles Lalonde
+Lanny Hall
+Ben Boorman
+Norm Graf
+RACE DATE: 2022/06/23
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+Elisio Netto
+Chris Brew
+Vinicius de Oliveira
+George Angelidis
+Stephen Miller
+Stuart Barge
+Eugene Mazur
+Bruce Hopkins
+Erik Jacobs
+James Bowders
+Jerry Hamilton
+Paul Ibbotson
+Thomas DiLibero
+Tom Nasella
+RACE DATE: 2022/06/23
+RESULT: HYPERCAR =============
+Luca Gray
+Daniel Kirby
+JT Tami
+Brian Hall
+Ben Boorman
+Jason Whited
+Tom Mountjoy
+Matthew Overton
+Jerry Chen
+Guilherme Bencke
+Sahil Mustac
+Norm Graf
+Bob Roberson
+Ross Smith
+RACE DATE: 2022/07/14
+RESULT: UNIFIED CLASS =============
+Elisio Netto
+Eduardo Beninca
+Chris Brew
+Stephen Miller
+George Angelidis
+Tom Nasella
+Jerry Hamilton
+Eugene Mazur
+Stuart Barge
+James Bowders
+Matheus Falabretti
+Otavio Barros
+Filipe Barreto
+Salvatore Pastore
+Vinicius de Oliveira
+RACE DATE: 2022/07/14
+RESULT: HYPERCAR =============
+Nicola Pastore
+JT Tami
+Daniel Kirby
+Brian Hall
+Norm Graf
+Gilles Lalonde
+Jerry Chen
+Jason Whited
+John Maher
+Ross Smith
+Guilherme Bencke
+Lanny Hall
+Matthew Overton
+Giuseppe Pastore
+RACE DATE: 2022/07/21
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+Elisio Netto
+George Angelidis
+Erik Jacobs
+David Anderson
+Stephen Miller
+Eugene Mazur
+Tom Nasella
+Otavio Barros
+RACE DATE: 2022/07/21
+RESULT: HYPERCAR =============
+Daniel Kirby
+JT Tami
+Sahil Mustac
+Brian Hall
+Gilles Lalonde
+Jason Whited
+Ross Smith
+Jerry Chen
+John Maher
+Norm Graf
+Lanny Hall
+Matthew Overton
+RACE DATE: 2022/08/11
+RESULT: UNIFIED CLASS =============
+Elisio Netto
+James Walker
+Eduardo Beninca
+Vinicius de Oliveira
+George Angelidis
+David Anderson
+Erik Jacobs
+Paul Ibbotson
+James Bowders
+Eugene Mazur
+Bruce Hopkins
+Tom Nasella
+Stuart Barge
+Jerry Hamilton
+RACE DATE: 2022/08/11
+RESULT: HYPERCAR =============
+Daniel Kirby
+JT Tami
+Sahil Mustac
+Jon Uyan
+Brian Hall
+Norm Graf
+Jerry Chen
+Matthew Overton
+Jason Whited
+Ross Smith
+Guilherme Bencke
+Lanny Hall
+Tom Mountjoy
+John Maher
+Ben Boorman
+RACE DATE: 2022/09/01
+RESULT: UNIFIED CLASS =============
+George Angelidis
+Elisio Netto
+Vinicius de Oliveira
+Erik Jacobs
+Paul Ibbotson
+Eugene Mazur
+Stuart Barge
+Stephen Miller
+Barry Dimarzo
+David Anderson
+James Bowders
+Jerry Hamilton
+Tom Nasella
+RACE DATE: 2022/09/01
+RESULT: HYPERCAR =============
+Norm Graf
+JT Tami
+Matthew Overton
+Daniel Kirby
+Ross Smith
+Lanny Hall
+Guilherme Bencke
+Brian Hall
+John Maher
+Jerry Chen
+Jason Whited
+Ben Boorman
+Gilles Lalonde
+Tom Mountjoy
+RACE DATE: 2022/10/06
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+Stuart Barge
+George Angelidis
+Erik Jacobs
+Paul Ibbotson
+Eugene Mazur
+James Bowders
+Jerry Hamilton
+Stephen Miller
+RACE DATE: 2022/10/06
+RESULT: HYPERCAR =============
+JT Tami
+Daniel Kirby
+Ben Boorman
+Jerry Chen
+Sahil Mustac
+Lanny Hall
+Gilles Lalonde
+Brian Hall
+John Maher
+Ross Smith
+Jon Uyan
+Guilherme Bencke
+RACE DATE: 2022/11/03
+RESULT: UNIFIED CLASS =============
+Paul Ibbotson
+George Angelidis
+Stuart Barge
+Eduardo Beninca
+James Walker
+Erik Jacobs
+Stephen Miller
+Eugene Mazur
+Bruce Hopkins
+James Bowders
+Tom Nasella
+RACE DATE: 2022/11/03
+RESULT: HYPERCAR =============
+Daniel Kirby
+Sahil Mustac
+Norm Graf
+Brian Hall
+Ross Smith
+Jerry Chen
+John Maher
+Gilles Lalonde
+Guilherme Bencke
+Lanny Hall
+Jason Whited
+Matthew Overton
+RACE DATE: 2022/08/04
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Pedro Crulas Gomes
+Jamie Zolecki
+Brian Hall
+Vinicius de Oliveira
+Norm Graf
+Lanny Hall
+Jerry Chen
+Tony Boynton
+Stuart Barge
+Tom Nasella
+RACE DATE: 2022/08/04
+RESULT: GT4 =============
+Eduardo Beninca
+JT Tami
+Jon Uyan
+Matthew Overton
+Paul Ibbotson
+James Bowders
+David Anderson
+Jason Whited
+RACE DATE: 2022/08/18
+RESULT: UNIFIED CLASS =============
+Brian Hall
+Jerry Chen
+Daniel Kirby
+Tiago Lopes
+Guilherme Bencke
+Tony Boynton
+Lanny Hall
+Norm Graf
+Pedro Crulas Gomes
+Ross Smith
+Tom Nasella
+RACE DATE: 2022/08/18
+RESULT: GT4 =============
+Eduardo Beninca
+JT Tami
+Matthew Overton
+David Anderson
+Paul Ibbotson
+James Bowders
+Jason Whited
+RACE DATE: 2022/08/25
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Jamie Zolecki
+Tom Mountjoy
+Norm Graf
+Jerry Chen
+Tiago Lopes
+Lanny Hall
+Ross Smith
+Tony Boynton
+Tom Nasella
+Vinicius de Oliveira
+RACE DATE: 2022/08/25
+RESULT: GT4 =============
+Eduardo Beninca
+Paul Ibbotson
+JT Tami
+David Anderson
+James Bowders
+Matthew Overton
+Jason Whited
+RACE DATE: 2022/09/08
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Jamie Zolecki
+Adrian Rice
+Jerry Chen
+Norm Graf
+Brian Hall
+Ross Smith
+Tiago Lopes
+Tom Nasella
+Lanny Hall
+Phillip Stocks
+Gilles Lalonde
+Vinicius de Oliveira
+Tony Boynton
+RACE DATE: 2022/09/08
+RESULT: GT4 =============
+JT Tami
+Eduardo Beninca
+John Maher
+James Bowders
+Jason Whited
+RACE DATE: 2022/09/15
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Ross Smith
+Jerry Chen
+Norm Graf
+Brian Hall
+Lanny Hall
+Tiago Lopes
+Jamie Zolecki
+Gilles Lalonde
+Phillip Stocks
+Tom Mountjoy
+Tom Nasella
+RACE DATE: 2022/09/15
+RESULT: GT4 =============
+JT Tami
+John Maher
+Matthew Overton
+Jason Whited
+James Bowders
+Eduardo Beninca
+RACE DATE: 2022/09/22
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Ross Smith
+Jamie Zolecki
+Jerry Chen
+Norm Graf
+Gilles Lalonde
+Tiago Lopes
+Tom Mountjoy
+Lanny Hall
+Jerry Hamilton
+Tom Nasella
+Brian Hall
+Phillip Stocks
+RACE DATE: 2022/09/22
+RESULT: GT4 =============
+JT Tami
+Eduardo Beninca
+Jason Whited
+Matthew Overton
+James Bowders
+Paul Ibbotson
+John Maher
+RACE DATE: 2022/09/29
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Jerry Chen
+Brian Hall
+Adrian Rice
+Tiago Lopes
+Jerry Hamilton
+Lanny Hall
+Tony Boynton
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2022/09/29
+RESULT: GT4 =============
+Eduardo Beninca
+JT Tami
+Paul Ibbotson
+Jason Whited
+RACE DATE: 2022/10/13
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Brian Hall
+Adrian Rice
+Ross Smith
+Norm Graf
+Jerry Hamilton
+Tom Nasella
+Jerry Chen
+Lanny Hall
+Tiago Lopes
+Tony Boynton
+Phillip Stocks
+Jamie Zolecki
+RACE DATE: 2022/10/13
+RESULT: GT4 =============
+JT Tami
+Eduardo Beninca
+John Maher
+James Bowders
+Matthew Overton
+Jason Whited
+RACE DATE: 2022/10/27
+RESULT: UNIFIED CLASS =============
+Ahmed Abdalla
+Daniel Kirby
+Eduardo Beninca
+Ben Boorman
+JT Tami
+Norm Graf
+Brian Hall
+Gilles Lalonde
+John Maher
+Don Fryman
+Jerry Chen
+Ross Smith
+George Angelidis
+Paul Ibbotson
+Dave Cours
+Tiago Lopes
+Jason Whited
+Tom Nasella
+Lanny Hall
+Tony Boynton
+James Bowders
+Kris Hudson
+Jerry Hamilton
+Matthew Overton
+Phillip Stocks
+Jose Florez
+Philippe  Henrique
+William Miller
+RACE DATE: 2022/11/10
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Eduardo Beninca
+JT Tami
+Jose Florez
+Ben Boorman
+Jerry Chen
+Ross Smith
+Paul Ibbotson
+Matthew Overton
+James Bowders
+Norm Graf
+Lanny Hall
+Erik Jacobs
+Jason Whited
+Gilles Lalonde
+Jamie Zolecki
+Adrian Rice
+Philippe  Henrique
+Tony Boynton
+Tom Nasella
+Joaquin Coudriet
+RACE DATE: 2022/11/17
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Eduardo Beninca
+JT Tami
+Brian Hall
+Jose Florez
+Jason Whited
+George Angelidis
+Ben Boorman
+Don Fryman
+Norm Graf
+Erik Jacobs
+Jerry Chen
+Adrian Rice
+Kris Hudson
+Lanny Hall
+Dave Cours
+Paul Ibbotson
+Tom Nasella
+Philippe  Henrique
+Tiago Lopes
+Jerry Hamilton
+Gilles Lalonde
+Phillip Stocks
+James Bowders
+Matthew Overton
+Tony Boynton
+John Maher
+RACE DATE: 2022/12/01
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Brian Hall
+Matthew Overton
+Ben Boorman
+Jerry Chen
+George Angelidis
+Joaquin Coudriet
+Dave Cours
+Norm Graf
+Erik Jacobs
+Eduardo Beninca
+Paul Ibbotson
+James Bowders
+Jerry Hamilton
+Lanny Hall
+Gilles Lalonde
+Pete Holm
+Jason Whited
+Tom Nasella
+Kris Hudson
+RACE DATE: 2022/12/08
+RESULT: UNIFIED CLASS =============
+JT Tami
+Brian Hall
+Ben Boorman
+Daniel Kirby
+Gilles Lalonde
+Lanny Hall
+Jerry Chen
+Jerry Hamilton
+Paul Ibbotson
+Norm Graf
+James Bowders
+Phillip Stocks
+Tiago Lopes
+Eduardo Beninca
+Tom Nasella
+RACE DATE: 2022/12/15
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Brian Hall
+Gilles Lalonde
+Ben Boorman
+Jerry Chen
+Joaquin Coudriet
+Lanny Hall
+Joe Miller
+Paul Ibbotson
+James Bowders
+Norm Graf
+Tom Nasella
+RACE DATE: 2022/12/22
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Johnny Gutierrez
+JT Tami
+Brian Hall
+Paul Ibbotson
+Jerry Chen
+Joaquin Coudriet
+Tom Nasella
+Gilles Lalonde
+James Bowders
+Josh McGlinsky
+Lanny Hall
+Philippe  Henrique
+Norm Graf
+Ben Boorman
+RACE DATE: 2023/01/05
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Alec King
+Dave Cours
+Matthew Overton
+Norm Graf
+Jerry Chen
+Gilles Lalonde
+Lanny Hall
+Joaquin Coudriet
+Josh McGlinsky
+Jerry Hamilton
+Tom Nasella
+James Bowders
+Johnny Gutierrez
+Ben Boorman
+Salvador Santolucito
+Guilherme Bencke
+Tony Boynton
+Aiden Coleman
+Nathaniel Davis
+RACE DATE: 2023/01/12
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Brian Hall
+Johnny Gutierrez
+Ben Boorman
+Jerry Chen
+Matthew Overton
+Jerry Hamilton
+JT Tami
+Lanny Hall
+James Bowders
+Paul Ibbotson
+Norm Graf
+Gilles Lalonde
+Dave Cours
+Tom Nasella
+Jamie Zolecki
+Tony Boynton
+RACE DATE: 2023/02/02
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Alec King
+JT Tami
+Brian Hall
+Johnny Gutierrez
+Ben Boorman
+Josh McGlinsky
+Gilles Lalonde
+Dave Cours
+Jerry Hamilton
+Lanny Hall
+James Bowders
+Sean Kelly
+Jamie Zolecki
+Jerry Chen
+Tom Nasella
+Matthew Overton
+Paul Ibbotson
+Ross Smith
+RACE DATE: 2023/02/16
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Johnny Gutierrez
+Brian Hall
+JT Tami
+Matthew Overton
+Ross Smith
+Ben Boorman
+Gilles Lalonde
+Jerry Chen
+James Bowders
+George Angelidis
+Paul Ibbotson
+Lanny Hall
+Chivan Ballou
+Jerry Hamilton
+Gino Bardelli
+Tom Nasella
 RACE DATE: 2023/01/19
 RESULT: HYPERCAR =============
 Daniel Kirby
