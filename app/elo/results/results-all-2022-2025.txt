@@ -620,7 +620,7 @@ Jerry Hamilton
 Matthew Overton
 Phillip Stocks
 Jose Florez
-Philippe  Henrique
+Philippe Dicartti
 William Miller
 RACE DATE: 2022/11/10
 RESULT: UNIFIED CLASS =============
@@ -641,7 +641,7 @@ Jason Whited
 Gilles Lalonde
 Jamie Zolecki
 Adrian Rice
-Philippe  Henrique
+Philippe Dicartti
 Tony Boynton
 Tom Nasella
 Joaquin Coudriet
@@ -665,7 +665,7 @@ Lanny Hall
 Dave Cours
 Paul Ibbotson
 Tom Nasella
-Philippe  Henrique
+Philippe Dicartti
 Tiago Lopes
 Jerry Hamilton
 Gilles Lalonde
@@ -743,7 +743,7 @@ Gilles Lalonde
 James Bowders
 Josh McGlinsky
 Lanny Hall
-Philippe  Henrique
+Philippe Dicartti
 Norm Graf
 Ben Boorman
 RACE DATE: 2023/01/05
@@ -5619,7 +5619,7 @@ Stephen Miller
 Lanny Hall
 Tom Mountjoy
 JT Tami
-Philippe  Henrique
+Philippe Dicartti
 Gilles Lalonde
 Jon Uyan
 Tony Boynton

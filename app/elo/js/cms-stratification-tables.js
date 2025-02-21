@@ -3,7 +3,7 @@ $(document).ready(function () {
   // set global variables for license breakpoints, used by several functions
   let platinumBreakpoint = 1150;
   let goldBreakpoint = 1020;
-  let silverBreakpoint = 960;
+  let silverBreakpoint = 970;
   let bronzeBreakpoint = 890;
 
   // global chart variables
@@ -237,9 +237,10 @@ $(document).ready(function () {
     const ranges = {};
 
     for (let i = minElo; i <= maxElo; i += rangeSize) {
-      ranges[`${i}-${i + rangeSize - 1}`] = { count: 0, color: null }; // store count and color
+      ranges[`${i}-${i + rangeSize - 1}`] = { count: 0, color: null }; // init count for each elo range
     }
 
+    // loop over the elos and incremeant each elo bar chart range as needed
     data.forEach(elo => {
       for (let i = minElo; i <= maxElo; i += rangeSize) {
         if (elo >= i && elo < i + rangeSize) {
@@ -247,7 +248,7 @@ $(document).ready(function () {
 
           // determine color based on breakpoints
           if (elo >= platinumBreakpoint) {
-            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(203, 119, 228, 0.75)'; // Platinum (teal)
+            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(203, 119, 228, 0.75)'; // Platinum
           } else if (elo >= goldBreakpoint) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 217, 0, 0.75)'; // Gold
           } else if (elo >= silverBreakpoint) {
@@ -266,8 +267,6 @@ $(document).ready(function () {
   // trigger: call the creation of the elo distribution graph after all of the array data is ready
   function drawEloDistributionBarChart() {
 
-    console.log(eloDistributionGraphData)
-
     // split array into elo buckets by X range
     const groupedData = groupEloRatings(eloDistributionGraphData, distributionGraphIncrements);
 
@@ -279,15 +278,12 @@ $(document).ready(function () {
     // chart.js: draw bar chart
     const ratingBarChartCanvas = document.getElementById('ratingBarChart').getContext('2d');
 
-
-    console.log(Chart.getChart("ratingBarChart"))
-
     let ratingBarChart = new Chart(ratingBarChartCanvas, {
       type: 'bar',
       data: {
         labels: labels,
         datasets: [{
-          label: 'Number of Drivers',
+          label: 'Drivers',
           data: data,
           backgroundColor: backgroundColors,
           //borderColor: "#444444",
@@ -315,7 +311,7 @@ $(document).ready(function () {
             beginAtZero: true,
             title: {
               display: true,
-              text: 'Number of Drivers'
+              text: 'Drivers'
             },
           }
         }
@@ -349,7 +345,7 @@ $(document).ready(function () {
 
     // left side (stats)
     modalBodyHTML += '<div class="col">';
-    modalBodyHTML += '<h4>Modern License</h4>';
+    modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> License</h4>';
     modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.date[driver.date.length - 1]) + '</p>';
 
     // current, most recent Elo
@@ -362,8 +358,22 @@ $(document).ready(function () {
 
     // right side (eligible car classes)
     modalBodyHTML += '</div><div class="col">';
-    modalBodyHTML += '<h4>Modern Class Eligibility</h4>';
-    let licenseLevel = null;
+    modalBodyHTML += '<h4><i class="bi bi-trophy-fill"></i> Stats</h4>';
+    modalBodyHTML += '<p><strong>Wins:</strong> ' + (driver.finishPos).filter(value => value === 1).length; + '</p>';
+    modalBodyHTML += '<p><strong>Podiums:</strong> ' + (driver.finishPos).filter(value => value <= 3 && value != 0).length; + '</p>';
+    modalBodyHTML += '<p><strong>Top 10s:</strong> ' + (driver.finishPos).filter(value => value <= 10 && value != 0).length; + '</p>';
+    modalBodyHTML += '<p><strong>Avg. Finish:</strong> ' + driver.avgFinishPos + '</p>';
+
+
+
+
+
+
+
+
+
+    // modalBodyHTML += '<h4>Modern Class Eligibility</h4>';
+    // let licenseLevel = null;
     // Licensed Results
     // Copper (   0-1099)
     // Bronze (1100-1199)
@@ -445,10 +455,10 @@ $(document).ready(function () {
     //   modalBodyHTML += displayClassBadge("LMP3 Am", "blue");
     //   modalBodyHTML += displayClassBadge("GT4 Am", "orange");
     // }
-    // modalBodyHTML += '</p>';
+    // modalBodyHTML += '</p><p>Anything not listed here, please check with the series admin.</p>';
 
     // write the results
-    modalBodyHTML += '<p>Anything not listed here, please check with the series admin.</p></div></div></div>';
+    modalBodyHTML += '</div></div></div>';
     $('#modalBody').append(modalBodyHTML);
 
   });

@@ -13,7 +13,7 @@ include_once "../../php-inc/ft-header.php";
   <div class="container">
 
     <!-- page selector -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col text-center">
         <div class="btn-group" role="group">
           <input type="radio" class="btn-check" name="calcType" value="modernTab" id="modernTab" autocomplete="off" checked>
@@ -23,7 +23,7 @@ include_once "../../php-inc/ft-header.php";
           <label class="btn btn-outline-secondary" for="historicTab"><i class="bi bi-h-circle-fill"></i> Historic</label>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- elo rating distribution chart -->
     <div class="row mt-4">
@@ -33,10 +33,10 @@ include_once "../../php-inc/ft-header.php";
       <div class="col-4">
         <p>The Champion Motorsports Driver Stratification analyzes official races and assigns Elo ratings to each driver.</p>
         <p>Drivers are also given a medal based on their rating. The license breakpoints are as follows:</p>
-        <p><span class='badge medal medal-platinum'>Platinum</span> 1130+<br>
-          <span class='badge medal medal-gold'>Gold</span> 1030+<br>
+        <p><span class='badge medal medal-platinum'>Platinum</span> 1150+<br>
+          <span class='badge medal medal-gold'>Gold</span> 1020+<br>
           <span class='badge medal medal-silver'>Silver</span> 970+<br>
-          <span class='badge medal medal-bronze'>Bronze</span> 920+
+          <span class='badge medal medal-bronze'>Bronze</span> 890+
         </p>
         <p>If your flag is incorrect, please contact Troy Uyan on the CMS Discord Server.</p>
       </div>
