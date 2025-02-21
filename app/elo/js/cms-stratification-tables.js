@@ -102,6 +102,7 @@ $(document).ready(function () {
 
       case "Brandon Gant":
       case "Gilles Lalonde":
+      case "Gilles Villeneuve":
       case "James Walker":
       case "John Maher":
       case "Kyle Vesa":
@@ -114,6 +115,7 @@ $(document).ready(function () {
 
       case "Eduardo Beninca":
       case "Elisio Netto":
+      case "Ayrton de Lima":
       case "Gui Cevert":
       case "Guilherme Bencke":
       case "Luciano Ichazo":
@@ -128,10 +130,18 @@ $(document).ready(function () {
       case "Timon Soovik":
       case "Alexander Schulz":
       case "Peter Meier":
+      case "Nick Schuetz":
       case "Sachin Sobers":
       case "Maximilian Putrafki":
       case "Jascha Schmidt":
-        flagCode = "de" // Germany
+        flagCode = "de"; // Germany
+        break;
+
+      case "Jukka Hautanen":
+      case "Olli Karjanlahti":
+      case "Risto Korpi":
+      case "Pekka Ylitalo":
+        flagCode = "fi"; // Finland
         break;
 
       case "Troy Uyan":
@@ -142,6 +152,7 @@ $(document).ready(function () {
 
       case "Alain Le Francois":
       case "Eric Moinet":
+      case "Joaquin Coudriet":
       case "Tony McOffoven":
         flagCode = "fr"; // France
         break;
@@ -149,58 +160,80 @@ $(document).ready(function () {
       case "Mia Rose":
       case "Rhys Gardiner":
       case "Adrian Rice":
-        flagCode = "au" // Australia
+        flagCode = "au"; // Australia
         break;
 
       case "Vasilis Katerinakis":
+      case "Antonis Paparinopoulos":
       case "George Angelidis":
-        flagCode = "gr" // Greece
+        flagCode = "gr"; // Greece
         break;
 
       case "Wouter de Bruijn":
+      case "Hubert van Gashoven":
+      case "Ahmed Abdalla":
       case "Brian van Beusekom":
-        flagCode = "nl" // Netherlands
+        flagCode = "nl"; // Netherlands
+        break;
+
+      case "Maciej Kasprzyk":
+      case "Michael Wojcik":
+        flagCode = "pl"; // Poland
+        break;
+
+      case "Alexander Nekhoroshkov":
+      case "Pavel Chernoburov":
+        flagCode = "ru"; // Russia
         break;
 
       case "Diego Rodrigues":
       case "Martin Esquivel":
-        flagCode = "ar" // Argentina
-        break;
-
-      case "Magnus Dahlgren":
-        flagCode = "se" // Sweden
-        break;
-
-      case "David Jundt":
-        flagCode = "ch" // Switzerland
-        break;
-
-      case "Oscar Dancourt":
-        flagCode = "pe" // Peru
-        break;
-
-      case "Scar Pope":
-        flagCode = "pg" // Papua New Guinea
-        break;
-
-      case "Yuki Takanashi":
-        flagCode = "jp" // Japan
-        break;
-
-      case "Jerry Chen":
-        flagCode = "nz" // New Zealand
-        break;
-
-      case "Jaroslav Zacek":
-        flagCode = "cz" // Czech Republic
+        flagCode = "ar"; // Argentina
         break;
 
       case "Filippo Marazzi":
-        flagCode = "it" // Italy
+      case "Alberto Ferrari":
+        flagCode = "it"; // Italy
+        break;
+
+      case "Magnus Dahlgren":
+        flagCode = "se"; // Sweden
+        break;
+
+      case "David Jundt":
+        flagCode = "ch"; // Switzerland
+        break;
+
+      case "Franco Alvarez":
+        flagCode = "es"; // Spain
+        break;
+
+      case "Oscar Dancourt":
+        flagCode = "pe"; // Peru
+        break;
+
+      case "Abdelal ElBakhar":
+        flagCode = "eg"; // Egypt
+        break;
+
+      case "Scar Pope":
+        flagCode = "pg"; // Papua New Guinea
+        break;
+
+      case "Yuki Takanashi":
+        flagCode = "jp"; // Japan
+        break;
+
+      case "Jerry Chen":
+        flagCode = "nz"; // New Zealand
+        break;
+
+      case "Jaroslav Zacek":
+        flagCode = "cz"; // Czech Republic
         break;
 
       case "Gagan Dev":
-        flagCode = "in" // India
+        flagCode = "in"; // India
         break;
 
       default:
@@ -324,7 +357,7 @@ $(document).ready(function () {
   // event: open up the inspect modal for a particular driver
   $('#cms-strat-modern').on('click', '.inspect-button', function () {
 
-    // load driver data from json
+    // load driver data from json "data" parameter in the rowData of the table
     let driver = $(this).data('driverData');
     console.log("Driver Data:", driver);
 
@@ -338,10 +371,10 @@ $(document).ready(function () {
 
     // TO DO chart thingy probably at the top?
     //driver.rating is the array of liiiiiife
-    modalBodyHTML += '<p>' + driver.rating + '</p>' + '</div><div class="row">';
-    modalBodyHTML += '<p>' + driver.date + '</p>' + '</div><div class="row">';
-    modalBodyHTML += '<p>' + driver.finishPos + '</p>' + '</div><div class="row">';
-    modalBodyHTML += '<p>' + driver.totalCars + '</p>' + '</div><div class="row">';
+    modalBodyHTML += '<p>' + driver.rating + '</p>';
+    modalBodyHTML += '<p>' + driver.date + '</p>';
+    modalBodyHTML += '<p>' + driver.finishPos + '</p>';
+    modalBodyHTML += '<p>' + driver.totalCars + '</p>';
 
     // left side (stats)
     modalBodyHTML += '<div class="col">';
@@ -532,7 +565,7 @@ $(document).ready(function () {
         }
       }
     ],
-    //order: [[6, 'desc'], [3, 'desc']], // sort by date and then by rating
+    //order: [[9, 'desc'], [3, 'desc']], // sort by date and then by rating
     order: [[3, 'desc']], // sort by rating
     pageLength: 50,
     lengthMenu: [
