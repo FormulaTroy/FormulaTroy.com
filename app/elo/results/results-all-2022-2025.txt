@@ -38,7 +38,7 @@ Marcelo Vaz
 Jason Whited
 Norm Graf
 Tom Mountjoy
-Abdelal  ElBakhar
+Abdelal ElBakhar
 Jon Uyan
 Rodger Gabryszak
 Cameron Sansano
@@ -6105,7 +6105,7 @@ RACE DATE: 2023/10/03
 RESULT: UNIFIED CLASS =============
 Alec King
 Philippe Dicartti
-John  Pfeifer
+John Pfeifer
 Jason Whited
 Kevan Torrance
 Ross Smith
@@ -6150,7 +6150,7 @@ Oscar Dancourt
 David Anderson
 Gilles Lalonde
 Brette Brooks
-John  Pfeifer
+John Pfeifer
 Jerry Hamilton
 Craig Gallagher
 Kevan Torrance
@@ -6896,7 +6896,7 @@ David Jundt
 Ben Boorman
 Oliver Newman
 Oliver Day
-Andi  Schremser
+Andi Schremser
 Becky Ely-Clark
 Gilles Lalonde
 Neil Wood

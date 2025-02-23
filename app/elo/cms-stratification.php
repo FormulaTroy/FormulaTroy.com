@@ -13,7 +13,7 @@ include_once "../../php-inc/ft-header.php";
   <div class="container">
 
     <!-- page selector -->
-    <!-- <div class="row">
+    <div class="row">
       <div class="col text-center">
         <div class="btn-group" role="group">
           <input type="radio" class="btn-check" name="calcType" value="modernTab" id="modernTab" autocomplete="off" checked>
@@ -23,21 +23,34 @@ include_once "../../php-inc/ft-header.php";
           <label class="btn btn-outline-secondary" for="historicTab"><i class="bi bi-h-circle-fill"></i> Historic</label>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- elo rating distribution chart -->
     <div class="row mt-4">
-      <div class="col-8">
+      <div class="col-12 col-xl-8">
         <canvas id="ratingBarChart"></canvas>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-xl-4">
         <p>The Champion Motorsports Driver Stratification analyzes official races and assigns Elo ratings to each driver.</p>
         <p>Drivers are also given a medal based on their rating. The license breakpoints are as follows:</p>
-        <p><span class='badge medal medal-platinum'>Platinum</span> 1150+<br>
-          <span class='badge medal medal-gold'>Gold</span> 1020+<br>
-          <span class='badge medal medal-silver'>Silver</span> 970+<br>
-          <span class='badge medal medal-bronze'>Bronze</span> 890+
-        </p>
+        <div class="row">
+          <div class="col-6">
+            <h5>Modern</h5>
+            <p><span class='badge medal medal-platinum'>Platinum</span> 1140+<br>
+              <span class='badge medal medal-gold'>Gold</span> 1020+<br>
+              <span class='badge medal medal-silver'>Silver</span> 970+<br>
+              <span class='badge medal medal-bronze'>Bronze</span> 890+
+            </p>
+          </div>
+          <div class="col-6">
+            <h5>Historic</h5>
+            <p><span class='badge medal medal-platinum'>Platinum</span> REDO<br>
+              <span class='badge medal medal-gold'>Gold</span> REDO<br>
+              <span class='badge medal medal-silver'>Silver</span> REDO<br>
+              <span class='badge medal medal-bronze'>Bronze</span> REDO
+            </p>
+          </div>
+        </div>
         <p>If your flag is incorrect, please contact Troy Uyan on the CMS Discord Server.</p>
       </div>
     </div>

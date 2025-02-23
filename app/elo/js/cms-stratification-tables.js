@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
   // set global variables for license breakpoints, used by several functions
-  let platinumBreakpoint = 1150;
-  let goldBreakpoint = 1020;
-  let silverBreakpoint = 970;
-  let bronzeBreakpoint = 890;
+  let platinumBreakpointModern = 1140;
+  let goldBreakpointModern = 1020;
+  let silverBreakpointModern = 970;
+  let bronzeBreakpointModern = 890;
 
   // global chart variables
   let eloDistributionGraphData = [];
-  const minElo = 700;
-  const maxElo = 1419;
+  const minElo = 750;
+  const maxElo = 1409;
   const distributionGraphIncrements = 10;
 
   // helper: return license column text data based on elo rating
@@ -39,33 +39,33 @@ $(document).ready(function () {
       }
 
       // determine if a license threshold was just crossed, and if so, display a modified medal
-      if (checkPromoted(previousRating, currentRating, platinumBreakpoint)) {
+      if (checkPromoted(previousRating, currentRating, platinumBreakpointModern)) {
         return "<span class='badge medal medal-platinum'><i class='bi bi-caret-up-fill'></i> Platinum <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkPromoted(previousRating, currentRating, goldBreakpoint)) {
+      } else if (checkPromoted(previousRating, currentRating, goldBreakpointModern)) {
         return "<span class='badge medal medal-gold'><i class='bi bi-caret-up-fill'></i> Gold <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkPromoted(previousRating, currentRating, silverBreakpoint)) {
+      } else if (checkPromoted(previousRating, currentRating, silverBreakpointModern)) {
         return "<span class='badge medal medal-silver'><i class='bi bi-caret-up-fill'></i> Silver <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkPromoted(previousRating, currentRating, bronzeBreakpoint)) {
+      } else if (checkPromoted(previousRating, currentRating, bronzeBreakpointModern)) {
         return "<span class='badge medal medal-bronze'><i class='bi bi-caret-up-fill'></i> Bronze <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, platinumBreakpoint)) {
+      } else if (checkRelegated(previousRating, currentRating, platinumBreakpointModern)) {
         return "<span class='badge medal medal-gold'><i class='bi bi-caret-down-fill'></i> Gold <i class='bi bi-caret-down-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, goldBreakpoint)) {
+      } else if (checkRelegated(previousRating, currentRating, goldBreakpointModern)) {
         return "<span class='badge medal medal-silver'><i class='bi bi-caret-down-fill'></i> Silver <i class='bi bi-caret-down-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, silverBreakpoint)) {
+      } else if (checkRelegated(previousRating, currentRating, silverBreakpointModern)) {
         return "<span class='badge medal medal-bronze'><i class='bi bi-caret-down-fill'></i> Bronze <i class='bi bi-caret-down-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, bronzeBreakpoint)) {
+      } else if (checkRelegated(previousRating, currentRating, bronzeBreakpointModern)) {
         return "<span class='badge medal medal-copper'><i class='bi bi-caret-down-fill'></i> Copper <i class='bi bi-caret-down-fill'></i></span>";
       }
     }
 
     // if there was no license change, or it's been over 3 months, just display the correct medal without arrows
-    if (currentRating >= platinumBreakpoint) {
+    if (currentRating >= platinumBreakpointModern) {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
-    } else if (currentRating >= goldBreakpoint) {
+    } else if (currentRating >= goldBreakpointModern) {
       return "<span class='badge medal medal-gold'>Gold</span>";
-    } else if (currentRating >= silverBreakpoint) {
+    } else if (currentRating >= silverBreakpointModern) {
       return "<span class='badge medal medal-silver'>Silver</span>";
-    } else if (currentRating >= bronzeBreakpoint) {
+    } else if (currentRating >= bronzeBreakpointModern) {
       return "<span class='badge medal medal-bronze'>Bronze</span>";
     } else {
       return "<span class='badge medal medal-copper'>Copper</span>";
@@ -95,6 +95,7 @@ $(document).ready(function () {
       case "Mike Bell":
       case "Oliver Newman":
       case "Robin Moelling":
+      case "Sahil Mustac":
       case "Tom Lane":
       case "William Snowden":
         flagCode = "gb"; // United Kingdom
@@ -284,13 +285,13 @@ $(document).ready(function () {
           ranges[`${i}-${i + rangeSize - 1}`].count++;
 
           // determine color based on breakpoints
-          if (elo >= platinumBreakpoint) {
+          if (elo >= platinumBreakpointModern) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(203, 119, 228, 0.75)'; // Platinum
-          } else if (elo >= goldBreakpoint) {
+          } else if (elo >= goldBreakpointModern) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 217, 0, 0.75)'; // Gold
-          } else if (elo >= silverBreakpoint) {
+          } else if (elo >= silverBreakpointModern) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 255, 255, 0.75)'; // Silver
-          } else if (elo >= bronzeBreakpoint) {
+          } else if (elo >= bronzeBreakpointModern) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(219, 108, 18, 0.75)'; // Bronze
           } else {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(235, 96, 54, 0.75)'; // Copper
@@ -365,9 +366,6 @@ $(document).ready(function () {
     let driver = $(this).data('driverData');
     console.log("Driver Data:", driver);
 
-    // HIDE THE STUFF MODE
-    //driver.name = "driverData.name;";
-
     // reset the modal html for the new driver
     $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name);
     $('#modalBody').empty();
@@ -382,7 +380,7 @@ $(document).ready(function () {
 
     // left side (stats)
     modalBodyHTML += '<div class="col">';
-    modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> License</h4>';
+    modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> Modern License</h4>';
     modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.date[driver.date.length - 1]) + '</p>';
 
     // current, most recent Elo
@@ -395,7 +393,7 @@ $(document).ready(function () {
 
     // right side (eligible car classes)
     modalBodyHTML += '</div><div class="col">';
-    modalBodyHTML += '<h4><i class="bi bi-trophy-fill"></i> Stats</h4>';
+    modalBodyHTML += '<h4><i class="bi bi-trophy-fill"></i> Modern Stats</h4>';
     modalBodyHTML += '<p><strong>Wins:</strong> ' + (driver.finishPos).filter(value => value === 1).length; + '</p>';
     modalBodyHTML += '<p><strong>Podiums:</strong> ' + (driver.finishPos).filter(value => value <= 3 && value != 0).length; + '</p>';
     modalBodyHTML += '<p><strong>Top 10s:</strong> ' + (driver.finishPos).filter(value => value <= 10 && value != 0).length; + '</p>';
