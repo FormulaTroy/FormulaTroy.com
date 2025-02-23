@@ -212,6 +212,10 @@ $(document).ready(function () {
         flagCode = "pe"; // Peru
         break;
 
+      case "Stacie Scotts":
+        flagCode = "gb-sct"; // Scotland
+        break;
+
       case "Abdelal ElBakhar":
         flagCode = "eg"; // Egypt
         break;
@@ -546,15 +550,15 @@ $(document).ready(function () {
     },
     columns: [
       { title: "", data: "flagImage", orderable: false, width: "20px" },
-      { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, width: "25%" },
+      { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, orderSequence: ['asc','desc'], width: "25%" },
       { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", orderable: false },
-      { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true },
+      { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true, orderSequence: ['desc','asc'] },
       { title: "<span title='Latest Elo Change'><i class='bi bi-graph-up-arrow'></i></span>", data: "ratingChange", orderable: false },
-      { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true },
-      { title: "<span title='Podiums'><i class='bi bi-list-ol'></i> P</span>", data: "podiums", orderable: true },
-      { title: "<span title='Races'><i class='bi bi-car-front-fill'></i> R</span>", data: "races", orderable: true },
-      { title: "<span title='Average Finish'><i class='bi bi-flag-fill'></i> Avg</span>", data: "avgFinishPos", orderable: true },
-      { title: "<i class='bi bi-calendar2-check-fill'></i> Updated", data: "lastChangedDate", orderable: true },
+      { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true, orderSequence: ['desc']},
+      { title: "<span title='Podiums'><i class='bi bi-list-ol'></i> P</span>", data: "podiums", orderable: true, orderSequence: ['desc'] },
+      { title: "<span title='Races'><i class='bi bi-car-front-fill'></i> R</span>", data: "races", orderable: true, orderSequence: ['desc'] },
+      { title: "<span title='Average Finish'><i class='bi bi-flag-fill'></i> Avg</span>", data: "avgFinishPos", orderable: true, orderSequence: ['asc','desc'] },
+      { title: "<i class='bi bi-calendar2-check-fill'></i> Updated", data: "lastChangedDate", orderable: true, orderSequence: ['desc','asc'] },
       {
         title: "<i class='bi bi-search'></i> Details",
         data: "driverData",
