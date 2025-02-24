@@ -6,6 +6,11 @@ $(document).ready(function () {
   let silverBreakpointModern = 970;
   let bronzeBreakpointModern = 890;
 
+  let platinumBreakpointHistoric = 1110;
+  let goldBreakpointHistoric = 1020;
+  let silverBreakpointHistoric = 980;
+  let bronzeBreakpointHistoric = 900;
+
   // global chart variables
   let eloDistributionGraphData = [];
   const minElo = 750;
@@ -363,23 +368,19 @@ $(document).ready(function () {
   $('#cms-strat-modern').on('click', '.inspect-button', function () {
 
     // load driver data from json "data" parameter in the rowData of the table
+    //console.log("Driver Data:", driver);
     let driver = $(this).data('driverData');
-    console.log("Driver Data:", driver);
 
     // reset the modal html for the new driver
     $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name);
     $('#modalBody').empty();
-    let modalBodyHTML = '<div class="container-fluid"><div class="row">';
+    let modalBodyHTML = '<div class="container-fluid"><h4><i class="bi bi-graph-up-arrow"></i> Modern Rating Over Time</h4>';
 
-    // TO DO chart thingy probably at the top?
-    //driver.rating is the array of liiiiiife
-    modalBodyHTML += '<p>' + driver.rating + '</p>';
-    modalBodyHTML += '<p>' + driver.date + '</p>';
-    modalBodyHTML += '<p>' + driver.finishPos + '</p>';
-    modalBodyHTML += '<p>' + driver.totalCars + '</p>';
+    // elo rating over time chart container
+    modalBodyHTML += '<div class="row"><div class="col"><canvas id="driverEloOverTimeChart"></canvas></div></div>';
 
     // left side (stats)
-    modalBodyHTML += '<div class="col">';
+    modalBodyHTML += '<div class="row mt-4"><div class="col">';
     modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> Modern License</h4>';
     modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.date[driver.date.length - 1]) + '</p>';
 
@@ -496,6 +497,128 @@ $(document).ready(function () {
     modalBodyHTML += '</div></div></div>';
     $('#modalBody').append(modalBodyHTML);
 
+    // after the modal html is all set, generate the elo rating over time chart
+    let ctx = document.getElementById('driverEloOverTimeChart').getContext('2d');
+
+    let driverEloOverTimeChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: driver.date,
+        datasets: [
+          {
+            label: 'Driver Rating',
+            data: driver.rating,
+            borderColor: 'rgba(54, 162, 235, 0.8)',
+            fill: false,
+            pointHoverRadius: 7,
+            pointHoverBackgroundColor: 'rgba(54, 162, 235, 0.8)',
+          },
+          {
+            label: 'Platinum Line',
+            data: driver.date.map(() => platinumBreakpointModern),
+            borderColor: 'rgba(203, 119, 228, 0.75)',
+            borderWidth: 1,
+            borderDash: [10, 10],
+            pointRadius: 0,
+            fill: false,
+          },
+          {
+            label: 'Gold Line',
+            data: driver.date.map(() => goldBreakpointModern),
+            borderColor: 'rgba(255, 217, 0, 0.75)',
+            borderWidth: 1,
+            borderDash: [10, 10],
+            pointRadius: 0,
+            fill: false,
+          },
+          {
+            label: 'Silver Line',
+            data: driver.date.map(() => silverBreakpointModern),
+            borderColor: 'rgba(255, 255, 255, 0.75)',
+            borderWidth: 1,
+            borderDash: [10, 10],
+            pointRadius: 0,
+            fill: false,
+          },
+          {
+            label: 'Bronze Line',
+            data: driver.date.map(() => bronzeBreakpointModern),
+            borderColor: 'rgba(219, 108, 18, 0.75)',
+            borderWidth: 1,
+            borderDash: [10, 10],
+            pointRadius: 0,
+            fill: false,
+          },
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+          tooltip: {
+            // build tooltip contents when hovering over an elo
+            callbacks: {
+              title: function (context) {
+
+                // is this forcing dashed lines to show context 0's label anyway?
+                // console log context here?
+                if (typeof context[0].label !== undefined) {
+                  return 'Date: ' + context[0].label;
+                }
+
+              },
+              label: function (context) {
+
+                let index = context.dataIndex;
+                let rating = driver.rating[index];
+                let finishPos = driver.finishPos[index];
+                let totalCars = driver.totalCars[index];
+
+                return [
+                  'Rating: ' + rating,
+                  'Position: ' + finishPos + ' of ' + totalCars
+                ];
+              }
+            },
+            filter: function (tooltipItem) {
+              return tooltipItem.datasetIndex === 0; // filter out tooltips for dashed lines
+            }
+          },
+        }
+      }
+
+    });
+
+    // Override handleEvent to prevent tooltips on dashed lines
+    driverEloOverTimeChart.handleEvent = function (e, replay) {
+      const res = Chart.prototype.handleEvent.call(this, e, replay);
+      if (res && res.length > 0) {
+        const firstDatasetIndex = res[0].datasetIndex;
+        if (firstDatasetIndex !== 0) {
+          // If the first dataset hovered is not the main one, return false.
+          return false;
+        }
+      }
+      return res;
+    };
+
+
+
+
+
+
+
+
+
+
   });
 
   // init the modern stratification datatable
@@ -542,21 +665,21 @@ $(document).ready(function () {
             data.push(rowData);
           }
         }
-        console.log(data);
+        //console.log(data);
         return data;
       }
     },
     columns: [
       { title: "", data: "flagImage", orderable: false, width: "20px" },
-      { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, orderSequence: ['asc','desc'], width: "25%" },
+      { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, orderSequence: ['asc', 'desc'], width: "25%" },
       { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", orderable: false },
-      { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true, orderSequence: ['desc','asc'] },
+      { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true, orderSequence: ['desc', 'asc'] },
       { title: "<span title='Latest Elo Change'><i class='bi bi-graph-up-arrow'></i></span>", data: "ratingChange", orderable: false },
-      { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true, orderSequence: ['desc']},
+      { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true, orderSequence: ['desc'] },
       { title: "<span title='Podiums'><i class='bi bi-list-ol'></i> P</span>", data: "podiums", orderable: true, orderSequence: ['desc'] },
       { title: "<span title='Races'><i class='bi bi-car-front-fill'></i> R</span>", data: "races", orderable: true, orderSequence: ['desc'] },
-      { title: "<span title='Average Finish'><i class='bi bi-flag-fill'></i> Avg</span>", data: "avgFinishPos", orderable: true, orderSequence: ['asc','desc'] },
-      { title: "<i class='bi bi-calendar2-check-fill'></i> Updated", data: "lastChangedDate", orderable: true, orderSequence: ['desc','asc'] },
+      { title: "<span title='Average Finish'><i class='bi bi-flag-fill'></i> Avg</span>", data: "avgFinishPos", orderable: true, orderSequence: ['asc', 'desc'] },
+      { title: "<i class='bi bi-calendar2-check-fill'></i> Updated", data: "lastChangedDate", orderable: true, orderSequence: ['desc', 'asc'] },
       {
         title: "<i class='bi bi-search'></i> Details",
         data: "driverData",
