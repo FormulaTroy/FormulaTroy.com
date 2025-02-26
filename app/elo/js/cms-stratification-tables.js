@@ -379,34 +379,53 @@ $(document).ready(function () {
     // elo rating over time chart container
     modalBodyHTML += '<div class="row"><div class="col"><canvas id="driverEloOverTimeChart"></canvas></div></div>';
 
-    // left side (stats)
+    // left side (rating and activity)
     modalBodyHTML += '<div class="row mt-4"><div class="col">';
     modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> Modern License</h4>';
     modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.date[driver.date.length - 1]) + '</p>';
 
     // current, most recent Elo
     let currentRating = driver.rating[driver.rating.length - 1];
-    modalBodyHTML += '<p><strong>Elo Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
+    modalBodyHTML += '<p><strong>Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
 
-    // rest of driver data
-    modalBodyHTML += '<p><strong>Ranked Races:</strong> ' + driver.races + '</p>';
+    // activity data
+    if (driver.active == 1) {
+      modalBodyHTML += '<p><strong>Status:</strong> <span class="arrow-green">Active</p>';
+    } else {
+      modalBodyHTML += '<p><strong>Status:</strong> <span class="arrow-red">Inactive</span></p>';
+    }
     modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.date[driver.date.length - 1] + '</p>';
 
-    // right side (eligible car classes)
+    // right side (race stats)
     modalBodyHTML += '</div><div class="col">';
     modalBodyHTML += '<h4><i class="bi bi-trophy-fill"></i> Modern Stats</h4>';
-    modalBodyHTML += '<p><strong>Wins:</strong> ' + (driver.finishPos).filter(value => value === 1).length; + '</p>';
-    modalBodyHTML += '<p><strong>Podiums:</strong> ' + (driver.finishPos).filter(value => value <= 3 && value != 0).length; + '</p>';
-    modalBodyHTML += '<p><strong>Top 10s:</strong> ' + (driver.finishPos).filter(value => value <= 10 && value != 0).length; + '</p>';
-    modalBodyHTML += '<p><strong>Avg. Finish:</strong> ' + driver.avgFinishPos + '</p>';
 
+    let wins = (driver.finishPos).filter(value => value === 1).length;
+    let podiums = (driver.finishPos).filter(value => value <= 3 && value != 0).length;
+    let top10s = (driver.finishPos).filter(value => value <= 10 && value != 0).length;
 
+    if (wins == 1) {
+      modalBodyHTML += '<p><strong>' + wins + '</strong> Win</p>';
+    } else if (wins > 1) {
+      modalBodyHTML += '<p><strong>' + wins + '</strong> Wins</p>';
+    }
+    if (podiums == 1) {
+      modalBodyHTML += '<p><strong>' + podiums + '</strong> Podium</p>';
+    } else if (podiums > 1) {
+      modalBodyHTML += '<p><strong>' + podiums + '</strong> Podiums</p>';
+    }
+    if (top10s == 1) {
+      modalBodyHTML += '<p><strong>' + top10s + '</strong> Top 10</p>';
+    } else if (top10s > 1) {
+      modalBodyHTML += '<p><strong>' + top10s + '</strong> Top 10s</p>';
+    }
+    if (driver.races == 1) {
+      modalBodyHTML += '<p><strong>' + driver.races + '</strong> Ranked Race</p>';
+    } else {
+      modalBodyHTML += '<p><strong>' + driver.races + '</strong> Ranked Races</p>';
+    }
 
-
-
-
-
-
+    modalBodyHTML += '<p><strong>' + driver.avgFinishPos + '</strong> Avg. Finish</p>';
 
     // modalBodyHTML += '<h4>Modern Class Eligibility</h4>';
     // let licenseLevel = null;
@@ -499,7 +518,6 @@ $(document).ready(function () {
 
     // after the modal html is all set, generate the elo rating over time chart
     let ctx = document.getElementById('driverEloOverTimeChart').getContext('2d');
-
     let driverEloOverTimeChart = new Chart(ctx, {
       type: 'line',
       data: {
@@ -568,10 +586,12 @@ $(document).ready(function () {
             callbacks: {
               title: function (context) {
 
-                // is this forcing dashed lines to show context 0's label anyway?
-                // console log context here?
-                if (typeof context[0].label !== undefined) {
-                  return 'Date: ' + context[0].label;
+                // see if this context has a label (should only be the elo rating, not the license breakpoints)
+                // the ? question mark is for optional chaining, which allows safe access to
+                // nested properties without causing an error if an intermediate property is null or undefined
+                let label = context[0]?.label;
+                if (label !== undefined) {
+                  return 'Date: ' + label;
                 }
 
               },
@@ -594,31 +614,7 @@ $(document).ready(function () {
           },
         }
       }
-
     });
-
-    // Override handleEvent to prevent tooltips on dashed lines
-    driverEloOverTimeChart.handleEvent = function (e, replay) {
-      const res = Chart.prototype.handleEvent.call(this, e, replay);
-      if (res && res.length > 0) {
-        const firstDatasetIndex = res[0].datasetIndex;
-        if (firstDatasetIndex !== 0) {
-          // If the first dataset hovered is not the main one, return false.
-          return false;
-        }
-      }
-      return res;
-    };
-
-
-
-
-
-
-
-
-
-
   });
 
   // init the modern stratification datatable

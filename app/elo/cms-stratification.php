@@ -7,7 +7,7 @@ include_once "../../php-inc/ft-header.php";
 <main>
 
   <?php
-  CreateHeroText("CMS Driver Stratification", "License and driver ratings for Champion Motorsports rFactor 2");
+  CreateHeroText("<img src='img/cms-logo.png' alt=''> Driver Stratification", "License and driver ratings for Champion Motorsports rFactor 2");
   ?>
 
   <div class="container">
