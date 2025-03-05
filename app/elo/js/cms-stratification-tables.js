@@ -1,21 +1,32 @@
 $(document).ready(function () {
 
   // set global variables for license breakpoints, used by several functions
-  let platinumBreakpointModern = 1140;
-  let goldBreakpointModern = 1020;
-  let silverBreakpointModern = 970;
-  let bronzeBreakpointModern = 890;
+  const platinumBreakpointModern = 1140;
+  const goldBreakpointModern = 1020;
+  const silverBreakpointModern = 970;
+  const bronzeBreakpointModern = 890;
 
-  let platinumBreakpointHistoric = 1110;
-  let goldBreakpointHistoric = 1020;
-  let silverBreakpointHistoric = 980;
-  let bronzeBreakpointHistoric = 900;
+  const platinumBreakpointHistoric = 1110;
+  const goldBreakpointHistoric = 1020;
+  const silverBreakpointHistoric = 970;
+  const bronzeBreakpointHistoric = 910;
 
-  // global chart variables
+  // global chart & table variables
+  let currentTableMode = "Modern"; // or "Historic"
   let eloDistributionGraphData = [];
-  const minElo = 750;
-  const maxElo = 1409;
+
+  const minEloModern = 750;
+  const maxEloModern = 1409;
+  const minEloHistoric = 770;
+  const maxEloHistoric = 1249;
+  let minEloActive = minEloModern;
+  let maxEloActive = maxEloModern;
+
   const distributionGraphIncrements = 10;
+
+  // table and graph containers to be able to be destroyed and recreated
+  let activeDatatable = null;
+  let activeRatingBarChart = null;
 
   // helper: return license column text data based on elo rating
   // use an average of the last 5 races for your license
@@ -28,6 +39,28 @@ $(document).ready(function () {
     // get current and previous ratings
     let currentRating = ratingArray[ratingArray.length - 1];
     let previousRating = ratingArray[ratingArray.length - 2];
+
+    // get license breakpoints
+    let platinumBreakpointActive = 0;
+    let goldBreakpointActive = 0;
+    let silverBreakpointActive = 0;
+    let bronzeBreakpointActive = 0;
+    if (currentTableMode == "Modern") {
+      platinumBreakpointActive = platinumBreakpointModern;
+      goldBreakpointActive = goldBreakpointModern;
+      silverBreakpointActive = silverBreakpointModern;
+      bronzeBreakpointActive = bronzeBreakpointModern;
+    } else if (currentTableMode == "Historic") {
+      platinumBreakpointActive = platinumBreakpointHistoric;
+      goldBreakpointActive = goldBreakpointHistoric;
+      silverBreakpointActive = silverBreakpointHistoric;
+      bronzeBreakpointActive = bronzeBreakpointHistoric;
+    } else {
+      platinumBreakpointActive = null;
+      goldBreakpointActive = null;
+      silverBreakpointActive = null;
+      bronzeBreakpointActive = null;
+    }
 
     // if driver raced in last 3 months, see if the license just changed
     if (active) {
@@ -44,33 +77,33 @@ $(document).ready(function () {
       }
 
       // determine if a license threshold was just crossed, and if so, display a modified medal
-      if (checkPromoted(previousRating, currentRating, platinumBreakpointModern)) {
+      if (checkPromoted(previousRating, currentRating, platinumBreakpointActive)) {
         return "<span class='badge medal medal-platinum'><i class='bi bi-caret-up-fill'></i> Platinum <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkPromoted(previousRating, currentRating, goldBreakpointModern)) {
+      } else if (checkPromoted(previousRating, currentRating, goldBreakpointActive)) {
         return "<span class='badge medal medal-gold'><i class='bi bi-caret-up-fill'></i> Gold <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkPromoted(previousRating, currentRating, silverBreakpointModern)) {
+      } else if (checkPromoted(previousRating, currentRating, silverBreakpointActive)) {
         return "<span class='badge medal medal-silver'><i class='bi bi-caret-up-fill'></i> Silver <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkPromoted(previousRating, currentRating, bronzeBreakpointModern)) {
+      } else if (checkPromoted(previousRating, currentRating, bronzeBreakpointActive)) {
         return "<span class='badge medal medal-bronze'><i class='bi bi-caret-up-fill'></i> Bronze <i class='bi bi-caret-up-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, platinumBreakpointModern)) {
+      } else if (checkRelegated(previousRating, currentRating, platinumBreakpointActive)) {
         return "<span class='badge medal medal-gold'><i class='bi bi-caret-down-fill'></i> Gold <i class='bi bi-caret-down-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, goldBreakpointModern)) {
+      } else if (checkRelegated(previousRating, currentRating, goldBreakpointActive)) {
         return "<span class='badge medal medal-silver'><i class='bi bi-caret-down-fill'></i> Silver <i class='bi bi-caret-down-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, silverBreakpointModern)) {
+      } else if (checkRelegated(previousRating, currentRating, silverBreakpointActive)) {
         return "<span class='badge medal medal-bronze'><i class='bi bi-caret-down-fill'></i> Bronze <i class='bi bi-caret-down-fill'></i></span>";
-      } else if (checkRelegated(previousRating, currentRating, bronzeBreakpointModern)) {
+      } else if (checkRelegated(previousRating, currentRating, bronzeBreakpointActive)) {
         return "<span class='badge medal medal-copper'><i class='bi bi-caret-down-fill'></i> Copper <i class='bi bi-caret-down-fill'></i></span>";
       }
     }
 
     // if there was no license change, or it's been over 3 months, just display the correct medal without arrows
-    if (currentRating >= platinumBreakpointModern) {
+    if (currentRating >= platinumBreakpointActive) {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
-    } else if (currentRating >= goldBreakpointModern) {
+    } else if (currentRating >= goldBreakpointActive) {
       return "<span class='badge medal medal-gold'>Gold</span>";
-    } else if (currentRating >= silverBreakpointModern) {
+    } else if (currentRating >= silverBreakpointActive) {
       return "<span class='badge medal medal-silver'>Silver</span>";
-    } else if (currentRating >= bronzeBreakpointModern) {
+    } else if (currentRating >= bronzeBreakpointActive) {
       return "<span class='badge medal medal-bronze'>Bronze</span>";
     } else {
       return "<span class='badge medal medal-copper'>Copper</span>";
@@ -277,26 +310,59 @@ $(document).ready(function () {
   // helper: split array of elos into specific elo range buckets for the bar chart
   function groupEloRatings(data, rangeSize) {
 
+    if (currentTableMode == "Modern") {
+      minEloActive = minEloModern;
+      maxEloActive = maxEloModern;
+    } else if (currentTableMode == "Historic") {
+      minEloActive = minEloHistoric;
+      maxEloActive = maxEloHistoric;
+    } else {
+      minEloActive = 0;
+      maxEloActive = 2500;
+    }
+
+    // get license breakpoints
+    let platinumBreakpointActive = 0;
+    let goldBreakpointActive = 0;
+    let silverBreakpointActive = 0;
+    let bronzeBreakpointActive = 0;
+    if (currentTableMode == "Modern") {
+      platinumBreakpointActive = platinumBreakpointModern;
+      goldBreakpointActive = goldBreakpointModern;
+      silverBreakpointActive = silverBreakpointModern;
+      bronzeBreakpointActive = bronzeBreakpointModern;
+    } else if (currentTableMode == "Historic") {
+      platinumBreakpointActive = platinumBreakpointHistoric;
+      goldBreakpointActive = goldBreakpointHistoric;
+      silverBreakpointActive = silverBreakpointHistoric;
+      bronzeBreakpointActive = bronzeBreakpointHistoric;
+    } else {
+      platinumBreakpointActive = null;
+      goldBreakpointActive = null;
+      silverBreakpointActive = null;
+      bronzeBreakpointActive = null;
+    }
+
     const ranges = {};
 
-    for (let i = minElo; i <= maxElo; i += rangeSize) {
+    for (let i = minEloActive; i <= maxEloActive; i += rangeSize) {
       ranges[`${i}-${i + rangeSize - 1}`] = { count: 0, color: null }; // init count for each elo range
     }
 
     // loop over the elos and incremeant each elo bar chart range as needed
     data.forEach(elo => {
-      for (let i = minElo; i <= maxElo; i += rangeSize) {
+      for (let i = minEloActive; i <= maxEloActive; i += rangeSize) {
         if (elo >= i && elo < i + rangeSize) {
           ranges[`${i}-${i + rangeSize - 1}`].count++;
 
           // determine color based on breakpoints
-          if (elo >= platinumBreakpointModern) {
+          if (elo >= platinumBreakpointActive) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(203, 119, 228, 0.75)'; // Platinum
-          } else if (elo >= goldBreakpointModern) {
+          } else if (elo >= goldBreakpointActive) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 217, 0, 0.75)'; // Gold
-          } else if (elo >= silverBreakpointModern) {
+          } else if (elo >= silverBreakpointActive) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 255, 255, 0.75)'; // Silver
-          } else if (elo >= bronzeBreakpointModern) {
+          } else if (elo >= bronzeBreakpointActive) {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(219, 108, 18, 0.75)'; // Bronze
           } else {
             ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(235, 96, 54, 0.75)'; // Copper
@@ -321,7 +387,7 @@ $(document).ready(function () {
     // chart.js: draw bar chart
     const ratingBarChartCanvas = document.getElementById('ratingBarChart').getContext('2d');
 
-    let ratingBarChart = new Chart(ratingBarChartCanvas, {
+    activeRatingBarChart = new Chart(ratingBarChartCanvas, {
       type: 'bar',
       data: {
         labels: labels,
@@ -365,7 +431,7 @@ $(document).ready(function () {
 
   // core logic (table, modal) //
   // event: open up the inspect modal for a particular driver
-  $('#cms-strat-modern').on('click', '.inspect-button', function () {
+  $('#cms-strat-table').on('click', '.inspect-button', function () {
 
     // load driver data from json "data" parameter in the rowData of the table
     //console.log("Driver Data:", driver);
@@ -374,14 +440,14 @@ $(document).ready(function () {
     // reset the modal html for the new driver
     $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name);
     $('#modalBody').empty();
-    let modalBodyHTML = '<div class="container-fluid"><h4><i class="bi bi-graph-up-arrow"></i> Modern Rating Over Time</h4>';
+    let modalBodyHTML = '<div class="container-fluid"><h4><i class="bi bi-graph-up-arrow"></i> ' + currentTableMode + ' Rating Over Time</h4>';
 
     // elo rating over time chart container
     modalBodyHTML += '<div class="row"><div class="col"><canvas id="driverEloOverTimeChart"></canvas></div></div>';
 
     // left side (rating and activity)
     modalBodyHTML += '<div class="row mt-4"><div class="col">';
-    modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> Modern License</h4>';
+    modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> ' + currentTableMode + ' License</h4>';
     modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.date[driver.date.length - 1]) + '</p>';
 
     // current, most recent Elo
@@ -398,7 +464,7 @@ $(document).ready(function () {
 
     // right side (race stats)
     modalBodyHTML += '</div><div class="col">';
-    modalBodyHTML += '<h4><i class="bi bi-trophy-fill"></i> Modern Stats</h4>';
+    modalBodyHTML += '<h4><i class="bi bi-trophy-fill"></i> ' + currentTableMode + ' Stats</h4>';
 
     let wins = (driver.finishPos).filter(value => value === 1).length;
     let podiums = (driver.finishPos).filter(value => value <= 3 && value != 0).length;
@@ -449,18 +515,6 @@ $(document).ready(function () {
 
     // class displays for each active series
     // colors: red, blue, green, orange, cyan
-    // modalBodyHTML += '<h6>Virtual World Sportscar Championship</h6>';
-    // modalBodyHTML += '<p>';
-    // if (licenseLevel >= 3) {
-    //   modalBodyHTML += displayClassBadge("HyperCar Pro","red");
-    //   modalBodyHTML += displayClassBadge("LMGT3 Pro","green");
-    // } else {
-    //   modalBodyHTML += displayClassBadge("HyperCar Am","blue");
-    //   modalBodyHTML += displayClassBadge("LMGT3 Am","orange");
-    // }
-    // modalBodyHTML += '</p>';
-
-    // modalBodyHTML += '<h5>These are broken right now:::</h5>';
 
     // modalBodyHTML += '<h6>NARS Modern Sportscar Championship</h6>';
     // modalBodyHTML += '<p>';
@@ -481,35 +535,6 @@ $(document).ready(function () {
     // }
     // modalBodyHTML += '</p>';
 
-    // modalBodyHTML += '<h6>NARS Porsche Cup</h6>';
-    // modalBodyHTML += '<p>';
-    // if (licenseLevel >= 3) {
-    //   modalBodyHTML += displayClassBadge("PCC Pro", "red");
-    // } else {
-    //   modalBodyHTML += displayClassBadge("PCC Am", "blue");
-    // }
-    // modalBodyHTML += '</p>';
-
-    // modalBodyHTML += '<h6>NARS Australian TA2</h6>';
-    // modalBodyHTML += '<p>';
-    // if (licenseLevel == 4) {
-    //   modalBodyHTML += displayClassBadge("TA2 Pro", "red");
-    // } else if (licenseLevel == 3) {
-    //   modalBodyHTML += displayClassBadge("TA2 Pro-Am", "green");
-    // } else {
-    //   modalBodyHTML += displayClassBadge("TA2 Am", "blue");
-    // }
-    // modalBodyHTML += '</p>';
-
-    // modalBodyHTML += '<h6>MNRL VP Sportscar Challenge</h6>';
-    // modalBodyHTML += '<p>';
-    // if (licenseLevel >= 3) {
-    //   modalBodyHTML += displayClassBadge("LMP3 Pro", "red");
-    //   modalBodyHTML += displayClassBadge("GT4 Pro", "green");
-    // } else {
-    //   modalBodyHTML += displayClassBadge("LMP3 Am", "blue");
-    //   modalBodyHTML += displayClassBadge("GT4 Am", "orange");
-    // }
     // modalBodyHTML += '</p><p>Anything not listed here, please check with the series admin.</p>';
 
     // write the results
@@ -517,6 +542,28 @@ $(document).ready(function () {
     $('#modalBody').append(modalBodyHTML);
 
     // after the modal html is all set, generate the elo rating over time chart
+    let platinumBreakpointActive = 0;
+    let goldBreakpointActive = 0;
+    let silverBreakpointActive = 0;
+    let bronzeBreakpointActive = 0;
+
+    if (currentTableMode == "Modern") {
+      platinumBreakpointActive = platinumBreakpointModern;
+      goldBreakpointActive = goldBreakpointModern;
+      silverBreakpointActive = silverBreakpointModern;
+      bronzeBreakpointActive = bronzeBreakpointModern;
+    } else if (currentTableMode == "Historic") {
+      platinumBreakpointActive = platinumBreakpointHistoric;
+      goldBreakpointActive = goldBreakpointHistoric;
+      silverBreakpointActive = silverBreakpointHistoric;
+      bronzeBreakpointActive = bronzeBreakpointHistoric;
+    } else {
+      platinumBreakpointActive = null;
+      goldBreakpointActive = null;
+      silverBreakpointActive = null;
+      bronzeBreakpointActive = null;
+    }
+
     let ctx = document.getElementById('driverEloOverTimeChart').getContext('2d');
     let driverEloOverTimeChart = new Chart(ctx, {
       type: 'line',
@@ -533,7 +580,7 @@ $(document).ready(function () {
           },
           {
             label: 'Platinum Line',
-            data: driver.date.map(() => platinumBreakpointModern),
+            data: driver.date.map(() => platinumBreakpointActive),
             borderColor: 'rgba(203, 119, 228, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -542,7 +589,7 @@ $(document).ready(function () {
           },
           {
             label: 'Gold Line',
-            data: driver.date.map(() => goldBreakpointModern),
+            data: driver.date.map(() => goldBreakpointActive),
             borderColor: 'rgba(255, 217, 0, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -551,7 +598,7 @@ $(document).ready(function () {
           },
           {
             label: 'Silver Line',
-            data: driver.date.map(() => silverBreakpointModern),
+            data: driver.date.map(() => silverBreakpointActive),
             borderColor: 'rgba(255, 255, 255, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -560,7 +607,7 @@ $(document).ready(function () {
           },
           {
             label: 'Bronze Line',
-            data: driver.date.map(() => bronzeBreakpointModern),
+            data: driver.date.map(() => bronzeBreakpointActive),
             borderColor: 'rgba(219, 108, 18, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -617,85 +664,128 @@ $(document).ready(function () {
     });
   });
 
-  // init the modern stratification datatable
-  $('#cms-strat-modern').DataTable({
-    ajax: {
-      url: 'driver-jsons/elo-cms-drivers.json',
-      dataSrc: function (json) {
+  // event: switch the stratification table (modern or historic)
+  $('input[name="stratLicenseSelector"]').on('change', function () {
 
-        var data = [];
+    activeDatatable.destroy(); // datatable.js destroy()
+    activeRatingBarChart.destroy(); // chart.js destroy()
 
-        // loop over every driverMachineName key
-        for (var key in json) {
-          if (json.hasOwnProperty(key)) {
+    currentTableMode = $('input[name="stratLicenseSelector"]:checked').val();
+    initStratTable(currentTableMode);
 
-            // load the driver's json
-            var driverData = json[key];
+  });
 
-            // create an object for each row
-            var rowData = {};
+  // helper: generate the stratification datatable from json
+  function initStratTable(licenseToDisplay) {
 
-            // map data to json values or send json values to functions to get returns back
-            rowData.flagImage = getFlag(driverData.name);
-            rowData.name = driverData.name;
-            rowData.driverLicense = getModernLicense(driverData.rating, driverData.active);
+    eloDistributionGraphData = []; // reset the global var for bar chart
 
-            // elo rating and pretty latest change
-            let rating = driverData.rating[driverData.rating.length - 1];
-            let previousRating = driverData.rating[driverData.rating.length - 2];
-            rowData.rating = rating;
-            eloDistributionGraphData.push(rating); // add to chart data
-            rowData.ratingChange = prettyRatingChange(rating - previousRating);
+    // strat table vars
+    let jsonUrl = "";
+    switch (licenseToDisplay) {
+      case "Modern":
+        jsonUrl = "driver-jsons/elo-cms-drivers-modern.json";
+        break;
 
-            // rest of table column data
-            rowData.races = driverData.races;
-            rowData.wins = (driverData.finishPos).filter(value => value === 1).length;
-            rowData.podiums = (driverData.finishPos).filter(value => value <= 3 && value != 0).length;
-            rowData.avgFinishPos = driverData.avgFinishPos;
-            rowData.lastChangedDate = driverData.date[driverData.date.length - 1];
+      case "Historic":
+        jsonUrl = "driver-jsons/elo-cms-drivers-historic.json";
+        break;
 
-            // store the entire driver's object for the inspect modal
-            rowData.driverData = driverData;
+      default:
+        jsonUrl = null;
+        break;
+    }
 
-            // add object to the overall data return
-            data.push(rowData);
+    // use the json file to generate the datatables display
+    activeDatatable = $('#cms-strat-table').DataTable({
+      ajax: {
+        url: jsonUrl,
+        dataSrc: function (json) {
+
+          var data = [];
+
+          // loop over every driverMachineName key
+          for (var key in json) {
+            if (json.hasOwnProperty(key)) {
+
+              // load the driver's json
+              var driverData = json[key];
+
+              // create an object for each row
+              var rowData = {};
+
+              // map data to json values or send json values to functions to get returns back
+              rowData.flagImage = getFlag(driverData.name);
+              rowData.name = driverData.name;
+              rowData.driverLicense = getModernLicense(driverData.rating, driverData.active);
+
+              // elo rating and pretty latest change
+              let rating = driverData.rating[driverData.rating.length - 1];
+              let previousRating = driverData.rating[driverData.rating.length - 2];
+              rowData.rating = rating;
+              eloDistributionGraphData.push(rating); // add to chart data
+              if (driverData.active == 1) {
+                rowData.ratingChange = prettyRatingChange(rating - previousRating);
+              } else {
+                rowData.ratingChange = "";
+              }
+
+              // rest of table column data
+              rowData.races = driverData.races;
+              rowData.wins = (driverData.finishPos).filter(value => value === 1).length;
+              rowData.podiums = (driverData.finishPos).filter(value => value <= 3 && value != 0).length;
+              rowData.avgFinishPos = driverData.avgFinishPos;
+              rowData.lastChangedDate = driverData.date[driverData.date.length - 1];
+
+              // store the entire driver's object for the inspect modal
+              rowData.driverData = driverData;
+
+              // add object to the overall data return
+              data.push(rowData);
+            }
+          }
+          //console.log(data);
+          return data;
+        }
+      },
+      columns: [
+        { title: "", data: "flagImage", orderable: false, width: "20px" },
+        { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, orderSequence: ['asc', 'desc'], width: "25%" },
+        { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", orderable: false },
+        { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true, orderSequence: ['desc', 'asc'] },
+        { title: "<span title='Latest Elo Change'><i class='bi bi-graph-up-arrow'></i></span>", data: "ratingChange", orderable: false },
+        { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true, orderSequence: ['desc'] },
+        { title: "<span title='Podiums'><i class='bi bi-list-ol'></i> P</span>", data: "podiums", orderable: true, orderSequence: ['desc'] },
+        { title: "<span title='Races'><i class='bi bi-car-front-fill'></i> R</span>", data: "races", orderable: true, orderSequence: ['desc'] },
+        { title: "<span title='Average Finish'><i class='bi bi-flag-fill'></i> Avg</span>", data: "avgFinishPos", orderable: true, orderSequence: ['asc', 'desc'] },
+        { title: "<i class='bi bi-calendar2-check-fill'></i> Updated", data: "lastChangedDate", orderable: true, orderSequence: ['desc', 'asc'] },
+        {
+          title: "<i class='bi bi-search'></i> Details",
+          data: "driverData",
+          orderable: false,
+          render: function (data, type, row) {
+            return '<a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover inspect-button" data-bs-toggle="modal" data-bs-target="#driverModal" data-driver-data=\'' + JSON.stringify(data) + '\'>Inspect</a>';
           }
         }
-        //console.log(data);
-        return data;
+      ],
+      //order: [[9, 'desc'], [3, 'desc']], // sort by date and then by rating (used for recent race screenshots)
+      order: [[3, 'desc']], // sort by rating
+      pageLength: 50,
+      lengthMenu: [
+        [10, 25, 50, 100, -1],
+        ['10', '25', '50', '100', 'All']
+      ],
+      initComplete: function (settings) {
+        drawEloDistributionBarChart(); // after the table loads, call the chart draw function
       }
-    },
-    columns: [
-      { title: "", data: "flagImage", orderable: false, width: "20px" },
-      { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, orderSequence: ['asc', 'desc'], width: "25%" },
-      { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", orderable: false },
-      { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true, orderSequence: ['desc', 'asc'] },
-      { title: "<span title='Latest Elo Change'><i class='bi bi-graph-up-arrow'></i></span>", data: "ratingChange", orderable: false },
-      { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true, orderSequence: ['desc'] },
-      { title: "<span title='Podiums'><i class='bi bi-list-ol'></i> P</span>", data: "podiums", orderable: true, orderSequence: ['desc'] },
-      { title: "<span title='Races'><i class='bi bi-car-front-fill'></i> R</span>", data: "races", orderable: true, orderSequence: ['desc'] },
-      { title: "<span title='Average Finish'><i class='bi bi-flag-fill'></i> Avg</span>", data: "avgFinishPos", orderable: true, orderSequence: ['asc', 'desc'] },
-      { title: "<i class='bi bi-calendar2-check-fill'></i> Updated", data: "lastChangedDate", orderable: true, orderSequence: ['desc', 'asc'] },
-      {
-        title: "<i class='bi bi-search'></i> Details",
-        data: "driverData",
-        orderable: false,
-        render: function (data, type, row) {
-          //return '<button type="button" class="btn btn-outline-light btn-sm inspect-button" data-bs-toggle="modal" data-bs-target="#driverModal" data-driver-data=\'' + JSON.stringify(data) + '\'>Inspect</button>';
-          return '<a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover inspect-button" data-bs-toggle="modal" data-bs-target="#driverModal" data-driver-data=\'' + JSON.stringify(data) + '\'>Inspect</a>';
-        }
-      }
-    ],
-    //order: [[9, 'desc'], [3, 'desc']], // sort by date and then by rating
-    order: [[3, 'desc']], // sort by rating
-    pageLength: 50,
-    lengthMenu: [
-      [10, 25, 50, 100, -1],
-      ['10', '25', '50', '100', 'All']
-    ],
-    initComplete: function (settings) {
-      drawEloDistributionBarChart(); // after the table loads, call the chart draw function
-    }
-  });
+    });
+
+  }// end initStratTable()
+
+  // on load, write breakpoint variables to visual display within intro text
+  $("#js-license-breakpoint-display").append("<div class='col-6'><h5>Modern</h5><p><span class='badge medal medal-platinum'>Platinum</span> " + platinumBreakpointModern + "<br><span class='badge medal medal-gold'>Gold</span> " + goldBreakpointModern + "<br><span class='badge medal medal-silver'>Silver</span> " + silverBreakpointModern + "<br><span class='badge medal medal-bronze'>Bronze</span> " + bronzeBreakpointModern + "</p></div><div class='col-6'><h5>Historic</h5><p><span class='badge medal medal-platinum'>Platinum</span> " + platinumBreakpointHistoric + "<br><span class='badge medal medal-gold'>Gold</span> " + goldBreakpointHistoric + "<br><span class='badge medal medal-silver'>Silver</span> " + silverBreakpointHistoric + "<br><span class='badge medal medal-bronze'>Bronze</span> " + bronzeBreakpointHistoric + "</p></div>");
+
+  // on load, display the default table (modern)
+  initStratTable(currentTableMode);
 
 });// end doc ready

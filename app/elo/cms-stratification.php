@@ -16,11 +16,11 @@ include_once "../../php-inc/ft-header.php";
     <div class="row">
       <div class="col text-center">
         <div class="btn-group" role="group">
-          <input type="radio" class="btn-check" name="calcType" value="modernTab" id="modernTab" autocomplete="off" checked>
+          <input type="radio" class="btn-check" name="stratLicenseSelector" value="Modern" id="modernTab" autocomplete="off" checked>
           <label class="btn btn-outline-primary" for="modernTab"><i class="bi bi-person-vcard-fill"></i> Modern</label>
 
-          <input type="radio" class="btn-check" name="calcType" value="historicTab" id="historicTab" autocomplete="off" disabled>
-          <label class="btn btn-outline-secondary" for="historicTab"><i class="bi bi-h-circle-fill"></i> Historic</label>
+          <input type="radio" class="btn-check" name="stratLicenseSelector" value="Historic" id="historicTab" autocomplete="off">
+          <label class="btn btn-outline-primary" for="historicTab"><i class="bi bi-h-circle-fill"></i> Historic</label>
         </div>
       </div>
     </div>
@@ -33,24 +33,7 @@ include_once "../../php-inc/ft-header.php";
       <div class="col-12 col-xl-4">
         <p>The Champion Motorsports Driver Stratification analyzes official races and assigns Elo ratings to each driver.</p>
         <p>Drivers are also given a medal based on their rating. The license breakpoints are as follows:</p>
-        <div class="row">
-          <div class="col-6">
-            <h5>Modern</h5>
-            <p><span class='badge medal medal-platinum'>Platinum</span> 1140+<br>
-              <span class='badge medal medal-gold'>Gold</span> 1020+<br>
-              <span class='badge medal medal-silver'>Silver</span> 970+<br>
-              <span class='badge medal medal-bronze'>Bronze</span> 890+
-            </p>
-          </div>
-          <div class="col-6">
-            <h5>Historic</h5>
-            <p><span class='badge medal medal-platinum'>Platinum</span> REDO<br>
-              <span class='badge medal medal-gold'>Gold</span> REDO<br>
-              <span class='badge medal medal-silver'>Silver</span> REDO<br>
-              <span class='badge medal medal-bronze'>Bronze</span> REDO
-            </p>
-          </div>
-        </div>
+        <div id="js-license-breakpoint-display" class="row"></div>
         <p>If your flag is incorrect, please contact Troy Uyan on the CMS Discord Server.</p>
       </div>
     </div>
@@ -58,7 +41,7 @@ include_once "../../php-inc/ft-header.php";
     <!-- stratification tables -->
     <div class="row mt-5">
       <div class="col">
-        <table id="cms-strat-modern" class="display table table-striped table-hover dataTable" style="width:100%"></table>
+        <table id="cms-strat-table" class="display table table-striped table-hover dataTable" style="width:100%"></table>
       </div>
     </div>
 
