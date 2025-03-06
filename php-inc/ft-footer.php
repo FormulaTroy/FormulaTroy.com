@@ -34,6 +34,8 @@ if ($pageTitle == "Sim Racing Fuel Calculator") {
   $timestamp = time();
   echo '<script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>';
   echo '<script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>';
+  echo '<script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>';
+  echo '<script src="https://cdn.datatables.net/responsive/3.0.4/js/responsive.bootstrap5.js"></script>';
   echo '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>';
   echo "<script src=\"/app/elo/js/cms-stratification-tables.js?v=" . $timestamp . "\"></script>";
 } elseif ($pageTitle == "CMS Race Result ELO") {

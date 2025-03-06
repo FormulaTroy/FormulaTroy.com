@@ -748,10 +748,11 @@ $(document).ready(function () {
           return data;
         }
       },
+      responsive: true,
       columns: [
         { title: "", data: "flagImage", orderable: false, width: "20px" },
-        { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", orderable: true, orderSequence: ['asc', 'desc'], width: "25%" },
-        { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", orderable: false },
+        { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", responsivePriority: 5, orderable: true, orderSequence: ['asc', 'desc'], width: "25%" },
+        { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", responsivePriority: 6, orderable: false },
         { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true, orderSequence: ['desc', 'asc'] },
         { title: "<span title='Latest Elo Change'><i class='bi bi-graph-up-arrow'></i></span>", data: "ratingChange", orderable: false },
         { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true, orderSequence: ['desc'] },
@@ -762,6 +763,7 @@ $(document).ready(function () {
         {
           title: "<i class='bi bi-search'></i> Details",
           data: "driverData",
+          responsivePriority: 5,
           orderable: false,
           render: function (data, type, row) {
             return '<a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover inspect-button" data-bs-toggle="modal" data-bs-target="#driverModal" data-driver-data=\'' + JSON.stringify(data) + '\'>Inspect</a>';

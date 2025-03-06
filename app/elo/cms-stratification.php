@@ -41,7 +41,7 @@ include_once "../../php-inc/ft-header.php";
     <!-- stratification tables -->
     <div class="row mt-5">
       <div class="col">
-        <table id="cms-strat-table" class="display table table-striped table-hover dataTable" style="width:100%"></table>
+        <table id="cms-strat-table" class="display nowrap table table-striped table-hover dataTable" style="width:100%"></table>
       </div>
     </div>
 
