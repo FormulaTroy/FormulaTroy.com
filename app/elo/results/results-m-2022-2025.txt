@@ -4837,7 +4837,7 @@ Mack Sunthonlap
 Dave Cours
 Karl Strouhal
 Cole McMillan
-Shawn Erik
+shawn erik
 Ryan-Paulbert Reyes
 RACE DATE: 2025/02/11
 RESULT: GT4 =============
@@ -4855,7 +4855,7 @@ RACE DATE: 2025/02/11
 RESULT: UNIFIED CLASS =============
 JT Tami
 Alec King
-Shawn Erik
+shawn erik
 Micah Locke
 Ryan-Paulbert Reyes
 Dave Cours
@@ -4904,7 +4904,6 @@ JT Tami
 Alec King
 shawn erik
 Karl Strouhal
-Stacie Scotts
 RACE DATE: 2025/02/18
 RESULT: GT4 =============
 Johnny Gutierrez
@@ -4915,6 +4914,7 @@ Gilles Lalonde
 oliver day
 Martin Esquivel
 Olivier Gervais
+Stacie Scotts
 RACE DATE: 2025/02/18
 RESULT: UNIFIED CLASS =============
 Alec King
@@ -5042,3 +5042,51 @@ Tom Nasella
 Daniel Kent
 Dave Cours
 Olivier Gervais
+RACE DATE: 2025/03/06
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Johnny Gutierrez
+JT Tami
+Willian Schlichting
+Micah Locke
+Gilles Lalonde
+Troy Uyan
+John Maher
+Ryan-Paulbert Reyes
+Erik Jacobs
+Luciano Ichazo
+Jamie Zolecki
+Paul Ibbotson
+Karl Strouhal
+Norm Graf
+Matthew Overton
+Alexander McQuerry
+David Anderson
+Tom Nasella
+Stacie Scotts
+Mack Sunthonlap
+Frank Radosti
+Ross Luckhurst
+RACE DATE: 2025/03/06
+RESULT: UNIFIED CLASS =============
+JT Tami
+Daniel Kirby
+Troy Uyan
+Johnny Gutierrez
+John Maher
+Paul Ibbotson
+Karl Strouhal
+Luciano Ichazo
+Gilles Lalonde
+Mack Sunthonlap
+David Anderson
+Erik Jacobs
+Matthew Overton
+Micah Locke
+Alexander McQuerry
+Tom Nasella
+Stacie Scotts
+Frank Radosti
+Ryan-Paulbert Reyes
+Willian Schlichting
+Norm Graf
