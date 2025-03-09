@@ -753,7 +753,7 @@ $(document).ready(function () {
         { title: "", data: "flagImage", orderable: false, width: "20px" },
         { title: "<i class='bi bi-person-fill'></i> Driver", data: "name", responsivePriority: 5, orderable: true, orderSequence: ['asc', 'desc'], width: "25%" },
         { title: "<i class='bi bi-person-vcard-fill'></i> License", data: "driverLicense", responsivePriority: 6, orderable: false },
-        { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", data: "rating", orderable: true, orderSequence: ['desc', 'asc'] },
+        { title: "<span title='Active Elo Rating'><i class='bi bi-hash'></i> Rating</span>", responsivePriority: 5, data: "rating", orderable: true, orderSequence: ['desc', 'asc'] },
         { title: "<span title='Latest Elo Change'><i class='bi bi-graph-up-arrow'></i></span>", data: "ratingChange", orderable: false },
         { title: "<span title='Wins'><i class='bi bi-trophy-fill'></i> W</span>", data: "wins", orderable: true, orderSequence: ['desc'] },
         { title: "<span title='Podiums'><i class='bi bi-list-ol'></i> P</span>", data: "podiums", orderable: true, orderSequence: ['desc'] },
