@@ -36,10 +36,11 @@
               <a class="nav-link px-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuPrograms" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-code-slash"></i> Programs</a>
               <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuPrograms">
                 <li><a class="dropdown-item" href="/fuel"><i class="bi bi-fuel-pump"></i> Racing Fuel Calculator</a></li>
+                <li><a class="dropdown-item" href="/app/elo/cms-stratification"><i class="bi bi-trophy-fill"></i> CMS Driver Stratification</a></li>
                 <li><a class="dropdown-item" href="/shutdown"><i class="bi bi-power"></i> Shutdown Macros</a></li>
                 <li><a class="dropdown-item" href="https://formulatroy.com/app/chess/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Chessboard</a></li>
                 <li><a class="dropdown-item" href="https://formulatroy.com/app/canasta/" target="_blank"><i class="bi bi-suit-spade-fill"></i> Canasta Score Tracker</a></li>
-                <li><a class="dropdown-item disabled" href="#"><i class="bi bi-controller"></i> Game Score Generator (WIP)</a></li>
+                <!-- <li><a class="dropdown-item disabled" href="#"><i class="bi bi-controller"></i> Game Score Generator (WIP)</a></li> -->
               </ul>
             </li>
             <li class="nav-item dropdown">
