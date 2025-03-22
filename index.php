@@ -21,6 +21,10 @@ include_once "php-inc/ft-header.php";
       $techArray = ["js", "html", "css"];
       CreateAppCard("Racing Fuel Calculator", true, "img/projects/racingcalc3.png", "/fuel", "https://github.com/FormulaTroy/FormulaTroy.com/blob/main/js/simracingfuelcalc.js", $techArray, "bi-fuel-pump", "2025", "Sim Racing fuel and strategy calculator based on the race format, lap times, and fuel usage.");
 
+      // CMS League Driver Stratification
+      $techArray = ["js", "html", "css"];
+      CreateAppCard("CMS Driver Stratification", true, "img/projects/cms-stratification.png", "/app/elo/cms-stratification", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/app/elo/js", $techArray, "bi-trophy-fill", "2025", "The Champion Motorsports Driver Stratification analyzes official races and assigns Elo ratings to each driver.");
+
       // Discord Themes
       $techArray = ["scss", "css"];
       CreateAppCard("Discord Themes", false, "img/projects/formuladiscord.png", "/discord", "https://github.com/FormulaTroy/FormulaTroy.com/tree/main/theme/discord", $techArray, "bi-discord", "2023-2024", "FormulaDiscord is an auto-updating set of over 10 themes for Discord that includes games like Baldur's Gate 3, Armored Core 6, and more!");
