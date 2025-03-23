@@ -5187,3 +5187,53 @@ Norm Graf
 Gilles Lalonde
 Paul Ibbotson
 Karl Strouhal
+RACE DATE: 2025/03/22
+RESULT: HYPERCAR =============
+Daniel Kirby
+Magnus Dahlgren
+Johnny Gutierrez
+Troy Uyan
+Cameron Barker
+Daniel Hurlock
+Ben Kesby
+Timon Soovik
+Jon Uyan
+Micah Locke
+Robin Moelling
+Wouter de Bruijn
+Antonis Paparinopoulos
+Jerry Chen
+John Maher
+Eric Moinet
+Guilherme Bencke
+George Angelidis
+Matthew Buice
+W. Mike Buice
+Gilles Lalonde
+Mike Bell
+Sean Kelly
+Vinicius Goncalves
+Wayne Hutchison
+Luke Mitchell
+Tom Lane
+Karl Strouhal
+RACE DATE: 2025/03/22
+RESULT: LMGT3 =============
+JT Tami
+David Jundt
+Allen Holden
+Peter Grau
+Alexander McQuerry
+Willian Schlichting
+Jamie Zolecki
+Luciano Ichazo
+Peter Meier
+Matthew Overton
+James Walker
+Adam Gray
+Mack Sunthonlap
+Brian van Beusekom
+Eelco Bussink
+Stacie Scotts
+Stephen Miller
+Ryan-Paulbert Reyes
