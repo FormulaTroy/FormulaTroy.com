@@ -5250,3 +5250,28 @@ Karl Strouhal
 oliver day
 Matthew Overton
 Scar Pope
+RACE DATE: 2025/04/01
+RESULT: UNIFIED CLASS =============
+JT Tami
+Micah Locke
+Karl Strouhal
+RACE DATE: 2025/04/01
+RESULT: GT4 =============
+Johnny Gutierrez
+Troy Uyan
+Gilles Lalonde
+Alejandro Brown
+Francis Zavaleta
+Frank Radosti
+RACE DATE: 2025/04/01
+RESULT: GT4 =============
+Troy Uyan
+JT Tami
+Johnny Gutierrez
+Micah Locke
+Gilles Lalonde
+Alejandro Brown
+Francis Zavaleta
+Ricardo Gomez
+Karl Strouhal
+Frank Radosti

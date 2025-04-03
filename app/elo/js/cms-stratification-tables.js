@@ -128,7 +128,7 @@ $(document).ready(function () {
       case "Cian Pullen":
       case "Craig Pullen":
       case "Daniel Hurlock":
-      case "Eelco Bussink":
+
       case "Luke Mitchell":
       case "Mike Bell":
       case "Oliver Newman":
@@ -208,10 +208,11 @@ $(document).ready(function () {
         flagCode = "gr"; // Greece
         break;
 
-      case "Wouter de Bruijn":
-      case "Hubert van Gashoven":
       case "Ahmed Abdalla":
       case "Brian van Beusekom":
+      case "Eelco Bussink":
+      case "Hubert van Gashoven":
+      case "Wouter de Bruijn":
         flagCode = "nl"; // Netherlands
         break;
 
