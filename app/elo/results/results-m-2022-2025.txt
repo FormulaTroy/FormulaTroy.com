@@ -5340,3 +5340,47 @@ Stephen Miller
 Matthew Overton
 Stacie Scotts
 Alexander McQuerry
+RACE DATE: 2025/04/08
+RESULT: UNIFIED CLASS =============
+Micah Locke
+JT Tami
+Tommy Teasdale
+Mack Sunthonlap
+shawn erik
+Karl Strouhal
+RACE DATE: 2025/04/08
+RESULT: GT4 =============
+Johnny Gutierrez
+Troy Uyan
+Gilles Lalonde
+Francis Zavaleta
+Alejandro Brown
+Ricardo Gomez
+Frank Radosti
+RACE DATE: 2025/04/08
+RESULT: UNIFIED CLASS =============
+JT Tami
+Micah Locke
+shawn erik
+Mack Sunthonlap
+Karl Strouhal
+RACE DATE: 2025/04/08
+RESULT: GT4 =============
+Troy Uyan
+Johnny Gutierrez
+Tommy Teasdale
+Francis Zavaleta
+Gilles Lalonde
+Ricardo Gomez
+Frank Radosti
+Alejandro Brown
+RACE DATE: 2025/04/10
+RESULT: UNIFIED CLASS =============
+John Maher
+JT Tami
+Matthew Overton
+Norm Graf
+Karl Strouhal
+Salvador Santolucito
+oliver day
+Gilles Lalonde
