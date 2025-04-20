@@ -2,7 +2,7 @@
   <name>1 - FormulaFilter Template</name>
   <filterIcon>23</filterIcon>
   <filterIconColor>16</filterIconColor>
-  <description>EDIT "SETUP" rules before use! Unchecked = optional. Main Loot Hunt progression: increase tier total to 5, then 6, then 7, then only if also Exalted rarity.</description>
+  <description>EDIT "SETUP" rules before use! Unchecked = optional. Main Loot Hunt progression: increase tier total to 5, then 6, then 7. Updated for v1.2</description>
   <lastModifiedInVersion>1.2.0.6</lastModifiedInVersion>
   <lootFilterVersion>3</lootFilterVersion>
   <rules>
@@ -372,17 +372,6 @@
         </Condition>
         <Condition i:type="AffixCondition">
           <affixes>
-            <int>105</int>
-            <int>430</int>
-            <int>107</int>
-            <int>111</int>
-            <int>112</int>
-            <int>113</int>
-            <int>114</int>
-            <int>115</int>
-            <int>116</int>
-            <int>117</int>
-            <int>124</int>
             <int>892</int>
             <int>894</int>
             <int>895</int>
@@ -441,7 +430,7 @@
           <affixes />
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
-          <minOnTheSameItem>1</minOnTheSameItem>
+          <minOnTheSameItem>0</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
@@ -2520,8 +2509,8 @@
           <rarity>UNIQUE</rarity>
           <minLegendaryPotential>2</minLegendaryPotential>
           <maxLegendaryPotential i:nil="true" />
-          <minWeaversWill i:nil="true" />
-          <maxWeaversWill>20</maxWeaversWill>
+          <minWeaversWill>20</minWeaversWill>
+          <maxWeaversWill i:nil="true" />
           <advanced_DEPRECATED>false</advanced_DEPRECATED>
           <requiredLegendaryPotential_DEPRECATED>0</requiredLegendaryPotential_DEPRECATED>
           <requiredWeaversWill_DEPRECATED>0</requiredWeaversWill_DEPRECATED>
