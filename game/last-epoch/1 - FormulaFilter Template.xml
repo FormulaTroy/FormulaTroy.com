@@ -452,7 +452,7 @@
       <levelDependent>false</levelDependent>
       <minLvl>1</minLvl>
       <maxLvl>100</maxLvl>
-      <emphasized>true</emphasized>
+      <emphasized>false</emphasized>
       <nameOverride>Build Enabling Idols || SETUP: Mark Class &amp; General Idol Affixes You DO Want To See, Can Uncheck Idol Base Types ||</nameOverride>
     </Rule>
     <Rule>
@@ -544,7 +544,7 @@
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
-      <emphasized>true</emphasized>
+      <emphasized>false</emphasized>
       <nameOverride>Rare Affixes &gt;=T1 (Optional) || SETUP: Mark Rare Affixes You Never Want To Miss, ie +1 To Skill ||</nameOverride>
     </Rule>
     <Rule>
@@ -2498,7 +2498,7 @@
           <rarity>UNIQUE</rarity>
           <minLegendaryPotential>1</minLegendaryPotential>
           <maxLegendaryPotential i:nil="true" />
-          <minWeaversWill i:nil="true" />
+          <minWeaversWill>14</minWeaversWill>
           <maxWeaversWill i:nil="true" />
           <advanced_DEPRECATED>false</advanced_DEPRECATED>
           <requiredLegendaryPotential_DEPRECATED>0</requiredLegendaryPotential_DEPRECATED>
@@ -2521,7 +2521,7 @@
           <minLegendaryPotential>2</minLegendaryPotential>
           <maxLegendaryPotential i:nil="true" />
           <minWeaversWill i:nil="true" />
-          <maxWeaversWill i:nil="true" />
+          <maxWeaversWill>20</maxWeaversWill>
           <advanced_DEPRECATED>false</advanced_DEPRECATED>
           <requiredLegendaryPotential_DEPRECATED>0</requiredLegendaryPotential_DEPRECATED>
           <requiredWeaversWill_DEPRECATED>0</requiredWeaversWill_DEPRECATED>
