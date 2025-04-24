@@ -2521,3 +2521,49 @@ Wayne Hutchison
 Adrian Rice
 Stacie Scotts
 Timon Soovik
+RACE DATE: 2025/04/15
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Adrian Rice
+shawn erik
+Philippe Dicartti
+Karl Strouhal
+oliver day
+Stacie Scotts
+RACE DATE: 2025/04/15
+RESULT: UNIFIED CLASS =============
+Adrian Rice
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Philippe Dicartti
+oliver day
+RACE DATE: 2025/04/22
+RESULT: UNIFIED CLASS =============
+Tom Lane
+shawn erik
+Troy Uyan
+Brian Hall
+Tommy Teasdale
+Karl Strouhal
+Philippe Dicartti
+Gilles Lalonde
+Francis Zavaleta
+oliver day
+Frank Radosti
+Mack Sunthonlap
+IAN BERMAN
+RACE DATE: 2025/04/22
+RESULT: UNIFIED CLASS =============
+Tom Lane
+Tommy Teasdale
+Troy Uyan
+shawn erik
+Brian Hall
+oliver day
+Karl Strouhal
+Gilles Lalonde
+Mack Sunthonlap
+IAN BERMAN
+Francis Zavaleta
+Philippe Dicartti

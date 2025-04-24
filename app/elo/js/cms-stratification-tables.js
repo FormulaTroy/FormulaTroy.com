@@ -16,7 +16,7 @@ $(document).ready(function () {
   let eloDistributionGraphData = [];
 
   const minEloModern = 750;
-  const maxEloModern = 1429;
+  const maxEloModern = 1449;
   const minEloHistoric = 770;
   const maxEloHistoric = 1249;
   let minEloActive = minEloModern;
