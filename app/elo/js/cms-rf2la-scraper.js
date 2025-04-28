@@ -47,6 +47,7 @@ function addDriverToResults(driverName, carClass) {
       break;
 
     case "LMGT3":
+    case "GT3":
       lmgt3Results += driverName + "\n"
       break;
 
@@ -172,7 +173,7 @@ resultTableRows.each(function () {
     carClass = $(cells[4]).text().trim();
     if (carClass.includes("Hypercar")) {
       carClass = "HYPERCAR"
-    } else if (carClass.includes("LMGT3")) {
+    } else if (carClass.includes("GT3")) {
       carClass = "LMGT3"
     } else if (carClass.includes("SpecMiata")) {
       carClass = "SPEC"

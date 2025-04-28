@@ -4,8 +4,8 @@
       <div class="col text-center social-links">
         <p>
           <a href="https://github.com/FormulaTroy" target="_blank"><i class="bi bi-github"></i> GitHub</a><br>
+          <a href="https://www.twitch.tv/FormulaTroy" target="_blank"><i class="bi bi-twitch"></i> Twitch</a><br>
           <a href="https://www.backloggd.com/u/FormulaTroy/" target="_blank"><i class="bi bi-controller"></i> Backloggd</a><br>
-          <!-- <a href="https://www.youtube.com/FormulaTroy" target="_blank"><i class="bi bi-youtube"></i> YouTube</a><br> -->
         </p>
       </div>
       <div class="col text-center">

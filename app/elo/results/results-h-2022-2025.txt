@@ -2552,7 +2552,7 @@ Francis Zavaleta
 oliver day
 Frank Radosti
 Mack Sunthonlap
-IAN BERMAN
+Ian Berman
 RACE DATE: 2025/04/22
 RESULT: UNIFIED CLASS =============
 Tom Lane
@@ -2564,6 +2564,6 @@ oliver day
 Karl Strouhal
 Gilles Lalonde
 Mack Sunthonlap
-IAN BERMAN
+Ian Berman
 Francis Zavaleta
 Philippe Dicartti
