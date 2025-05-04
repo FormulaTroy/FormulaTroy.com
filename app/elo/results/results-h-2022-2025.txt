@@ -2567,3 +2567,49 @@ Mack Sunthonlap
 Ian Berman
 Francis Zavaleta
 Philippe Dicartti
+RACE DATE: 2025/04/29
+RESULT: UNIFIED CLASS =============
+JT Tami
+Scar Pope
+Troy Uyan
+Ross Smith
+Philippe Dicartti
+Oscar Dancourt
+Brian Hall
+Stephen Miller
+oliver day
+Adrian Rice
+Santiago Dancourt
+Stacie Scotts
+RACE DATE: 2025/05/03
+RESULT: UNIFIED CLASS =============
+Scar Pope
+Eduardo Beninca
+Daniel Hurlock
+Eelco Bussink
+Tom Lane
+Wouter de Bruijn
+Tony McOffoven
+Robin Moelling
+Ross Smith
+oliver day
+Troy Uyan
+Timon Soovik
+Magnus Dahlgren
+Antonis Paparinopoulos
+Peter Meier
+George Angelidis
+Jerry Chen
+Vinicius Goncalves
+Philippe Dicartti
+Stephen Miller
+Stacie Scotts
+Ethan Funk
+Gui Cevert
+Adrian Rice
+Jon Uyan
+Adam Gray
+Daniel Scott
+Matthew Sibanyoni
+Santiago Dancourt
+Maximilian Putrafki
