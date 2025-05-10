@@ -18,7 +18,7 @@ $(document).ready(function () {
   const minEloModern = 750;
   const maxEloModern = 1449;
   const minEloHistoric = 770;
-  const maxEloHistoric = 1249;
+  const maxEloHistoric = 1269;
   let minEloActive = minEloModern;
   let maxEloActive = maxEloModern;
 

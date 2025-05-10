@@ -178,9 +178,11 @@ $(document).ready(function () {
     //console.log(driverRatingInput);
     //console.log(raceResultsInput);
 
-    // global date object for comparing to 3 months ago
-    let threeMonthsAgoDateObj = new Date();
+    // global date objects for comparing dates later
+    const threeMonthsAgoDateObj = new Date();
     threeMonthsAgoDateObj.setMonth(threeMonthsAgoDateObj.getMonth() - 3);
+    const oneYearAgoDateObj = new Date();
+    oneYearAgoDateObj.setFullYear(oneYearAgoDateObj.getFullYear() - 1);
 
     if (driverRatingInput != "" && raceResultsInput != "") {
 
@@ -355,10 +357,19 @@ $(document).ready(function () {
 
       const lastRaceDateObj = new Date(lastRaceYear, lastRaceMonth, lastRaceDay); // use the date string parts to make a new date object
 
-      if (lastRaceDateObj > threeMonthsAgoDateObj) { // if driver raced in last 3 months, they are active
-        postRaceDriver.active = 1
+      // determine activity level based on the driver's last race
+      // driver raced within 3 months: active
+      // driver raced within 1 year: inactive, but still included in json
+      // driver raced over 1 year: inactive, but also excluded from json entirely
+      if (lastRaceDateObj < oneYearAgoDateObj) {
+        console.log("Deleting driver: " + postRaceDriver.name);
+        delete postRaceDrivers[index];
       } else {
-        postRaceDriver.active = 0
+        if (lastRaceDateObj > threeMonthsAgoDateObj) {
+          postRaceDriver.active = 1;
+        } else {
+          postRaceDriver.active = 0;
+        }
       }
 
     });
