@@ -1,7 +1,6 @@
 *All times in Pacific, see schedule tab on channel page for your time zone*
 
 **May**\
-08 @ 6pm - Porsche Cup Detroit (2 Races)\
 15 @ 6pm - Hypercar/GT3 1.5hrs of Detroit\
 17 @ 11am - Hypercar/GT3 1.5hrs of Qatar\
 18 @ 1pm - Mustang Challenge at Sebring (LMU)\
