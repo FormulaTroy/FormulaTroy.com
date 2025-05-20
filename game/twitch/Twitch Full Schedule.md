@@ -1,14 +1,11 @@
 *All times in Pacific, see schedule tab on channel page for your time zone*
 
 **May**\
-15 @ 6pm - Hypercar/GT3 1.5hrs of Detroit\
-17 @ 11am - Hypercar/GT3 1.5hrs of Qatar\
-18 @ 1pm - Mustang Challenge at Sebring (LMU)\
 20 @ 8pm - Formula 3 Sprint\
-27 @ 8pm - GT3 Sprint\
-30 @ 6pm - Hypercar/GT3 1.2hrs of Bahrain (LMU)
+27 @ 8pm - GT3 Sprint
 
 **June**\
+03 @ 8pm - 90s Touring\
 05 @ 6pm - Porsche Cup Watkins Glen (2 Races)\
 07 @ 8am - Hypercar/GT3 4.8hrs of Le Mans\
 10 @ 8pm - Formula 3 Sprint\
