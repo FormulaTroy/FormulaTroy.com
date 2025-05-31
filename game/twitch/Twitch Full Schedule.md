@@ -1,17 +1,13 @@
 *All times in Pacific, see schedule tab on channel page for your time zone*
 
-**May**\
-20 @ 8pm - Formula 3 Sprint\
-27 @ 8pm - GT3 Sprint
-
 **June**\
 03 @ 8pm - 90s Touring\
 05 @ 6pm - Porsche Cup Watkins Glen (2 Races)\
 07 @ 8am - Hypercar/GT3 4.8hrs of Le Mans\
 10 @ 8pm - Formula 3 Sprint\
-17 @ 8pm - GT3 Sprint\
 12 @ 6pm - Hypercar/LMP2/GT3 1.5hrs of the Glen\
-21 @ 11am - Hypercar/GT3 60L of the Glen
+17 @ 8pm - GT3 Sprint\
+28 @ 11am - Hypercar/GT3 60L of the Glen
 
 **July**\
 01 @ 6pm - Group C '85 Monza\
