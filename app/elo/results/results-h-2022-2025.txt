@@ -2685,3 +2685,37 @@ oliver day
 Tommy Teasdale
 Gilles Lalonde
 Karl Strouhal
+RACE DATE: 2025/06/03
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+oliver day
+Gilles Lalonde
+Brian Hall
+Francis Zavaleta
+IAN BERMAN
+Karl Strouhal
+Mike Olson
+RACE DATE: 2025/06/03
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+oliver day
+Francis Zavaleta
+Brian Hall
+Gilles Lalonde
+Karl Strouhal
+RACE DATE: 2025/06/10
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Gilles Lalonde
+shawn erik
+Brian Hall
+Karl Strouhal
+oliver day
+RACE DATE: 2025/06/10
+RESULT: UNIFIED CLASS =============
+Gilles Lalonde
+Karl Strouhal
+Brian Hall
+shawn erik
+oliver day
+Tommy Teasdale
