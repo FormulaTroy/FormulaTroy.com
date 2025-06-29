@@ -5709,3 +5709,69 @@ Stephen Miller
 David Anderson
 Tom Nasella
 Don Fryman
+RACE DATE: 2025/06/19
+RESULT: UNIFIED CLASS =============
+Scar Pope
+JT Tami
+Paul Ibbotson
+Norm Graf
+John Maher
+Gilles Lalonde
+Karl Strouhal
+RACE DATE: 2025/06/26
+RESULT: LMP2 =============
+Ben Kesby
+Johnny Gutierrez
+Ege Karabacak
+Micah Locke
+John Maher
+Norm Graf
+Karl Strouhal
+Gilles Lalonde
+Brian Hall
+RACE DATE: 2025/06/26
+RESULT: LMP3 =============
+Santiago Gonzalez
+Daniel Kirby
+Luciano Ichazo
+JT Tami
+Matthew Overton
+Jon Uyan
+Paul Ibbotson
+Olivier Gervais
+Mack Sunthonlap
+Ryan-Paulbert Reyes
+RACE DATE: 2025/06/28
+RESULT: HYPERCAR =============
+Daniel Kirby
+Cameron Barker
+Daniel Hurlock
+Ben Kesby
+Johnny Gutierrez
+Timon Soovik
+Magnus Dahlgren
+John Maher
+Jerry Chen
+Vinicius Goncalves
+Jon Uyan
+Matthew Buice
+Gilles Lalonde
+George Angelidis
+W. Mike Buice
+Philippe Dicartti
+RACE DATE: 2025/06/28
+RESULT: LMGT3 =============
+JT Tami
+David Jundt
+James Walker
+Matthew Overton
+Brian van Beusekom
+Eelco Bussink
+Alexander McQuerry
+Peter Meier
+Allen Holden
+Adam Gray
+Stephen Miller
+Alan Santo
+Ryan-Paulbert Reyes
+Vasilis Katerinakis

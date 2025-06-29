@@ -10,6 +10,7 @@ let driverCount = 0;
 let unifiedClassResults = "";
 let hypercarResults = "";
 let lmp2Results = "";
+let lmp3Results = "";
 let lmgt1Results = "";
 let lmgt2Results = "";
 let lmgt3Results = "";
@@ -36,6 +37,10 @@ function addDriverToResults(driverName, carClass) {
 
     case "LMP2":
       lmp2Results += driverName + "\n"
+      break;
+
+    case "LMP3":
+      lmp3Results += driverName + "\n"
       break;
 
     case "LMGT1":
@@ -113,6 +118,11 @@ function outputResults() {
     textExportContents += dateString
     textExportContents += "RESULT: LMP2 =============\n";
     textExportContents += lmp2Results;
+  }
+  if (lmp3Results != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: LMP3 =============\n";
+    textExportContents += lmp3Results;
   }
   if (lmgt1Results != "") {
     textExportContents += dateString
