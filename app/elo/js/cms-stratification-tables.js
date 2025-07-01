@@ -147,6 +147,7 @@ $(document).ready(function () {
       case "Kyle Vesa":
       case "Matthew Overton":
       case "Oliver Day":
+      case "Olivier Gervais":
       case "Stephen Miller":
       case "Wayne Hutchison":
         flagCode = "ca"; // Canada

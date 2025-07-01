@@ -362,7 +362,7 @@ $(document).ready(function () {
       // driver raced within 1 year: inactive, but still included in json
       // driver raced over 1 year: inactive, but also excluded from json entirely
       if (lastRaceDateObj < oneYearAgoDateObj) {
-        console.log("Deleting driver: " + postRaceDriver.name);
+        console.log("Hiding driver " + postRaceDriver.name + " (" + postRaceDriver.rating[postRaceDriver.rating.length - 1] + ") for 1 year inactivity clean up rule.");
         delete postRaceDrivers[index];
       } else {
         if (lastRaceDateObj > threeMonthsAgoDateObj) {
