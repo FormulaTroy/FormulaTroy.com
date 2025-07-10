@@ -11,6 +11,12 @@ include_once "php-inc/ft-header.php";
   CreateHeroText("FormulaDiscord", "Auto-updating collection of Discord themes");
   ?>
 
+  <div class="container">
+    <div class="alert alert-warning" role="alert">
+      These themes currently are not working as intended as ClearVision (the base theme) had a major version update recently.
+    </div>
+  </div>
+
   <?php # Page ?>
   <div class="container">
 
