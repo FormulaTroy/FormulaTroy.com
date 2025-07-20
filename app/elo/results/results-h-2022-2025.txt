@@ -2719,6 +2719,32 @@ Brian Hall
 shawn erik
 oliver day
 Tommy Teasdale
+RACE DATE: 2025/06/17
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Karl Strouhal
+Gilles Lalonde
+oliver day
+RACE DATE: 2025/06/17
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Gilles Lalonde
+oliver day
+Karl Strouhal
+RACE DATE: 2025/06/24
+RESULT: UNIFIED CLASS =============
+oliver day
+Liudas Askinis
+Gilles Lalonde
+Tommy Teasdale
+Karl Strouhal
+RACE DATE: 2025/06/24
+RESULT: UNIFIED CLASS =============
+oliver day
+Gilles Lalonde
+Liudas Askinis
+Tommy Teasdale
+Karl Strouhal
 RACE DATE: 2025/07/01
 RESULT: UNIFIED CLASS =============
 Scar Pope
@@ -2765,3 +2791,19 @@ Antonis Paparinopoulos
 Gui Cevert
 Peter Meier
 Timon Soovik
+RACE DATE: 2025/07/15
+RESULT: UNIFIED CLASS =============
+Rhys Gardiner
+Tommy Teasdale
+Gilles Lalonde
+shawn erik
+Oliver Day
+Karl Strouhal
+RACE DATE: 2025/07/15
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Gilles Lalonde
+Karl Strouhal
+Tommy Teasdale
+Rhys Gardiner
+shawn erik
