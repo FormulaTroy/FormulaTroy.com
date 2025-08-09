@@ -5916,3 +5916,34 @@ David Anderson
 James Bowders
 Allen Holden
 Tom Nasella
+RACE DATE: 2025/07/31
+RESULT: LMP2 =============
+Micah Locke
+Johnny Gutierrez
+John Maher
+Gilles Lalonde
+Norm Graf
+Karl Strouhal
+RACE DATE: 2025/07/31
+RESULT: LMP3 =============
+Santiago Gonzalez
+JT Tami
+Luciano Ichazo
+Mack Sunthonlap
+Matthew Overton
+Olivier Gervais
+RACE DATE: 2025/08/07
+RESULT: LMP2 =============
+Johnny Gutierrez
+Micah Locke
+John Maher
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/08/07
+RESULT: LMP3 =============
+Daniel Kirby
+Mack Sunthonlap
+Matthew Overton
+JT Tami
+Karl Strouhal
+Stuart Barge

@@ -2850,3 +2850,60 @@ Peter Meier
 Scar Pope
 Tom Lane
 Matthew Sibanyoni
+RACE DATE: 2025/07/29
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+shawn erik
+Oliver Day
+Brian Hall
+Karl Strouhal
+Gilles Lalonde
+Mike Olson
+RACE DATE: 2025/07/29
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Brian Hall
+Karl Strouhal
+Gilles Lalonde
+Oliver Day
+RACE DATE: 2025/08/05
+RESULT: UNIFIED CLASS =============
+Scar Pope
+Oliver Day
+JT Tami
+Gilles Lalonde
+Brian Hall
+Troy Uyan
+Adrian Rice
+Micah Locke
+Karl Strouhal
+Philippe Dicartti
+Oscar Dancourt
+Ross Smith
+RACE DATE: 2025/08/09
+RESULT: UNIFIED CLASS =============
+Daniel Hurlock
+Eduardo Beninca
+Oliver Day
+Magnus Dahlgren
+Tom Lane
+Timon Soovik
+Becky Ely-Clark
+Robin Moelling
+Scar Pope
+Ross Smith
+Ethan Funk
+Micah Doern
+Wouter de Bruijn
+Peter Meier
+George Angelidis
+Jerry Chen
+Karl Strouhal
+Philippe Dicartti
+Vinicius Goncalves
+Darrel Kruger
+Gilles Lalonde
+Maximilian Putrafki
+Matthew Sibanyoni
+Daniel Scott
+Tony McOffoven
