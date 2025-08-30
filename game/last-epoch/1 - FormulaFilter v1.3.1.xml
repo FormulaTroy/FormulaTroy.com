@@ -18,7 +18,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>32</Order>
+      <Order>33</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -47,7 +47,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>31</Order>
+      <Order>32</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -76,7 +76,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>30</Order>
+      <Order>31</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -105,7 +105,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>29</Order>
+      <Order>30</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -134,7 +134,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>28</Order>
+      <Order>29</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -161,7 +161,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>2</BeamId>
-      <Order>27</Order>
+      <Order>28</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -191,7 +191,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>2</BeamId>
-      <Order>26</Order>
+      <Order>27</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -221,7 +221,7 @@
       <nameOverride />
       <SoundId>4</SoundId>
       <BeamId>2</BeamId>
-      <Order>25</Order>
+      <Order>26</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -240,6 +240,31 @@
             <int>707</int>
             <int>708</int>
             <int>758</int>
+          </affixes>
+          <comparsion>ANY</comparsion>
+          <comparsionValue>0</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>ANY</combinedComparsion>
+          <combinedComparsionValue>1</combinedComparsionValue>
+          <advanced>false</advanced>
+        </Condition>
+      </conditions>
+      <color>0</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent_deprecated>false</levelDependent_deprecated>
+      <minLvl_deprecated>0</minLvl_deprecated>
+      <maxLvl_deprecated>0</maxLvl_deprecated>
+      <emphasized>false</emphasized>
+      <nameOverride>One-Shot Campaign Items (Optional)</nameOverride>
+      <SoundId>0</SoundId>
+      <BeamId>0</BeamId>
+      <Order>25</Order>
+    </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="AffixCondition">
+          <affixes>
             <int>766</int>
             <int>767</int>
             <int>768</int>
@@ -269,7 +294,7 @@
       <minLvl_deprecated>0</minLvl_deprecated>
       <maxLvl_deprecated>0</maxLvl_deprecated>
       <emphasized>false</emphasized>
-      <nameOverride>all Personal Affixes from Champions + One-Shot Campaign Chests (Optional)</nameOverride>
+      <nameOverride>Champion Affixes (Optional)</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
       <Order>24</Order>
@@ -306,7 +331,7 @@
       <minLvl_deprecated>0</minLvl_deprecated>
       <maxLvl_deprecated>0</maxLvl_deprecated>
       <emphasized>false</emphasized>
-      <nameOverride>all Experimental Affixes From Exiled Mages (Optional)</nameOverride>
+      <nameOverride>Experimental Affixes From Exiled Mages (Optional)</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
       <Order>23</Order>
@@ -987,7 +1012,7 @@
       <minLvl_deprecated>0</minLvl_deprecated>
       <maxLvl_deprecated>0</maxLvl_deprecated>
       <emphasized>false</emphasized>
-      <nameOverride>Class Affixes &gt;=T5 (Optional)</nameOverride>
+      <nameOverride>All Class Affixes &gt;=T5 (Optional)</nameOverride>
       <SoundId>7</SoundId>
       <BeamId>8</BeamId>
       <Order>14</Order>
@@ -9469,7 +9494,7 @@
           </Uniques>
         </Condition>
       </conditions>
-      <color>6</color>
+      <color>7</color>
       <isEnabled>true</isEnabled>
       <levelDependent_deprecated>false</levelDependent_deprecated>
       <minLvl_deprecated>0</minLvl_deprecated>
