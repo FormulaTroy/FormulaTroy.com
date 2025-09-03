@@ -18,7 +18,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>33</Order>
+      <Order>34</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -47,7 +47,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>32</Order>
+      <Order>33</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -76,7 +76,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>31</Order>
+      <Order>32</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -105,7 +105,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>30</Order>
+      <Order>31</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -134,7 +134,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>29</Order>
+      <Order>30</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -161,7 +161,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>2</BeamId>
-      <Order>28</Order>
+      <Order>29</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -191,7 +191,7 @@
       <nameOverride />
       <SoundId>0</SoundId>
       <BeamId>2</BeamId>
-      <Order>27</Order>
+      <Order>28</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -221,7 +221,7 @@
       <nameOverride />
       <SoundId>4</SoundId>
       <BeamId>2</BeamId>
-      <Order>26</Order>
+      <Order>27</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -258,7 +258,7 @@
       <nameOverride>One-Shot Campaign Items (Optional)</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>25</Order>
+      <Order>26</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -297,7 +297,7 @@
       <nameOverride>Champion Affixes Sealed By Champions (Optional)</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>24</Order>
+      <Order>25</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -334,7 +334,7 @@
       <nameOverride>Experimental Affixes From Exiled Mages (Optional)</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>23</Order>
+      <Order>24</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -367,7 +367,7 @@
       <nameOverride>all Idols (player level 1-30)</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>22</Order>
+      <Order>23</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -421,7 +421,7 @@
       <nameOverride>Universal Good Idols, Single Affix (player level 1-50)</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>21</Order>
+      <Order>22</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -472,7 +472,7 @@
       <nameOverride>Universal Good Weaver Idols, Single Affix (player level 1-70)</nameOverride>
       <SoundId>2</SoundId>
       <BeamId>0</BeamId>
-      <Order>20</Order>
+      <Order>21</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -530,7 +530,7 @@
       <nameOverride>Universal Good Idols &amp; Weaver Idols, Double Affix</nameOverride>
       <SoundId>2</SoundId>
       <BeamId>0</BeamId>
-      <Order>19</Order>
+      <Order>20</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -568,7 +568,7 @@
       <nameOverride>Build Enabling Idols || SETUP: Mark Class &amp; General Idol Affixes You DO Want To See, Can Uncheck Idol Base Types ||</nameOverride>
       <SoundId>3</SoundId>
       <BeamId>4</BeamId>
-      <Order>18</Order>
+      <Order>19</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -612,7 +612,7 @@
       <nameOverride>Universal Good Defensive Gear (Health, Resists, Crit Avoid) (player level 1-30)</nameOverride>
       <SoundId>3</SoundId>
       <BeamId>1</BeamId>
-      <Order>17</Order>
+      <Order>18</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -652,7 +652,7 @@
       <nameOverride>Universal Good Defensive Gear (Double Affix)</nameOverride>
       <SoundId>3</SoundId>
       <BeamId>1</BeamId>
-      <Order>16</Order>
+      <Order>17</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -686,7 +686,7 @@
       <nameOverride>CoF Lvl2 Ascension Hunt (Optional), 45% Chance Not To Consume Rune || SETUP: Select Unique Base Types To Collect ||</nameOverride>
       <SoundId>6</SoundId>
       <BeamId>0</BeamId>
-      <Order>15</Order>
+      <Order>16</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -1007,7 +1007,7 @@
       <nameOverride>Class Affixes &gt;=T5 for Shattering (Optional)</nameOverride>
       <SoundId>7</SoundId>
       <BeamId>8</BeamId>
-      <Order>14</Order>
+      <Order>15</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -1037,7 +1037,7 @@
       <nameOverride>MAIN LOOT HUNT || SETUP: Mark All Affixes (Class, Build, and Universal) You DO Want To See, Resists Optional ||</nameOverride>
       <SoundId>3</SoundId>
       <BeamId>3</BeamId>
-      <Order>13</Order>
+      <Order>14</Order>
     </Rule>
     <Rule>
       <type>HIDE</type>
@@ -1056,7 +1056,7 @@
       <nameOverride>Unused Weapon Types (Optional) || SETUP: Mark Weapons &amp; Off-Hands You DON'T Want To See ||</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>12</Order>
+      <Order>13</Order>
     </Rule>
     <Rule>
       <type>HIDE</type>
@@ -1074,7 +1074,7 @@
       <nameOverride>Unused Classes (Optional) || SETUP: Mark Classes You DON'T Want To See Gear For ||</nameOverride>
       <SoundId>0</SoundId>
       <BeamId>0</BeamId>
-      <Order>11</Order>
+      <Order>12</Order>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -1100,6 +1100,48 @@
       <nameOverride>Rare Affixes &gt;=T1 || SETUP: Mark Rare Affixes You Never Want To Miss, ie +1 To Skill ||</nameOverride>
       <SoundId>9</SoundId>
       <BeamId>5</BeamId>
+      <Order>11</Order>
+    </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="RarityCondition">
+          <rarity>EXALTED</rarity>
+          <minLegendaryPotential i:nil="true" />
+          <maxLegendaryPotential i:nil="true" />
+          <minWeaversWill i:nil="true" />
+          <maxWeaversWill i:nil="true" />
+          <advanced_DEPRECATED>false</advanced_DEPRECATED>
+          <requiredLegendaryPotential_DEPRECATED>0</requiredLegendaryPotential_DEPRECATED>
+          <requiredWeaversWill_DEPRECATED>0</requiredWeaversWill_DEPRECATED>
+        </Condition>
+        <Condition i:type="SubTypeCondition">
+          <type>
+            <EquipmentType>BOOTS</EquipmentType>
+          </type>
+          <subTypes />
+        </Condition>
+        <Condition i:type="AffixCondition">
+          <affixes>
+            <int>28</int>
+          </affixes>
+          <comparsion>MORE_OR_EQUAL</comparsion>
+          <comparsionValue>6</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>ANY</combinedComparsion>
+          <combinedComparsionValue>6</combinedComparsionValue>
+          <advanced>true</advanced>
+        </Condition>
+      </conditions>
+      <color>10</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent_deprecated>false</levelDependent_deprecated>
+      <minLvl_deprecated>0</minLvl_deprecated>
+      <maxLvl_deprecated>0</maxLvl_deprecated>
+      <emphasized>false</emphasized>
+      <nameOverride />
+      <SoundId>10</SoundId>
+      <BeamId>7</BeamId>
       <Order>10</Order>
     </Rule>
     <Rule>
