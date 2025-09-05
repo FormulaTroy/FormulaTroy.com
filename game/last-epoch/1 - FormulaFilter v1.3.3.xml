@@ -999,12 +999,12 @@
         </Condition>
       </conditions>
       <color>3</color>
-      <isEnabled>true</isEnabled>
+      <isEnabled>false</isEnabled>
       <levelDependent_deprecated>false</levelDependent_deprecated>
       <minLvl_deprecated>0</minLvl_deprecated>
       <maxLvl_deprecated>0</maxLvl_deprecated>
       <emphasized>false</emphasized>
-      <nameOverride>Class Affixes &gt;=T5 for Shattering (Optional)</nameOverride>
+      <nameOverride>Class Affixes &gt;=T5 (Optional)</nameOverride>
       <SoundId>7</SoundId>
       <BeamId>8</BeamId>
       <Order>17</Order>
