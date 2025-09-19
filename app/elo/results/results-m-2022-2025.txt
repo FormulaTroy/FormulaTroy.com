@@ -6169,3 +6169,49 @@ Adam Gray
 Matthew Overton
 Ryan-Paulbert Reyes
 Alexander McQuerry
+RACE DATE: 2025/09/16
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Matthew Overton
+Norm Graf
+shawn erik
+Martin Rossi
+Darrel Kruger
+Gilles Lalonde
+Karl Strouhal
+Mack Sunthonlap
+RACE DATE: 2025/09/16
+RESULT: UNIFIED CLASS =============
+Oliver Day
+shawn erik
+Matthew Overton
+Mack Sunthonlap
+Gilles Lalonde
+Norm Graf
+Martin Rossi
+Darrel Kruger
+Karl Strouhal
+RACE DATE: 2025/09/18
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Ryan-Paulbert Reyes
+Alexander McQuerry
+Matthew Overton
+Mack Sunthonlap
+Gilles Lalonde
+Norm Graf
+Karl Strouhal
+Olivier Gervais
+RACE DATE: 2025/09/18
+RESULT: UNIFIED CLASS =============
+JT Tami
+Ryan-Paulbert Reyes
+Daniel Kirby
+Gilles Lalonde
+Mack Sunthonlap
+Alexander McQuerry
+Matthew Overton
+Norm Graf
+Karl Strouhal
+Olivier Gervais
