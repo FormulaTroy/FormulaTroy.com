@@ -6215,3 +6215,87 @@ Matthew Overton
 Norm Graf
 Karl Strouhal
 Olivier Gervais
+RACE DATE: 2025/09/23
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Norm Graf
+Gilles Lalonde
+Brian Hall
+Darrel Kruger
+RACE DATE: 2025/09/23
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+Norm Graf
+shawn erik
+Karl Strouhal
+Gilles Lalonde
+Darrel Kruger
+Brian Hall
+RACE DATE: 2025/09/25
+RESULT: HYPERCAR =============
+Troy Uyan
+Daniel Kirby
+Gilles Lalonde
+Johnny Gutierrez
+Jerry Chen
+John Maher
+Adrian Rice
+Norm Graf
+Lanny Hall
+Brian Hall
+Karl Strouhal
+RACE DATE: 2025/09/25
+RESULT: LMP2 =============
+Alec King
+JT Tami
+Micah Locke
+RACE DATE: 2025/09/25
+RESULT: LMGT3 =============
+Ryan-Paulbert Reyes
+Paul Ibbotson
+Mack Sunthonlap
+Alexander McQuerry
+Matthew Overton
+Erik Jacobs
+Allen Holden
+James Bowders
+Olivier Gervais
+Tom Nasella
+Stephen Miller
+RACE DATE: 2025/09/27
+RESULT: HYPERCAR =============
+Magnus Dahlgren
+Robin Moelling
+Daniel Kirby
+Cameron Barker
+Wouter de Bruijn
+Johnny Gutierrez
+Troy Uyan
+Timon Soovik
+Matthew Buice
+Alexander Schulz
+George Angelidis
+Jon Uyan
+John Maher
+Vinicius Goncalves
+Eric Moinet
+Gilles Lalonde
+W. Mike Buice
+Karl Strouhal
+RACE DATE: 2025/09/27
+RESULT: LMGT3 =============
+Eelco Bussink
+David Jundt
+JT Tami
+Ryan-Paulbert Reyes
+Brian van Beusekom
+Allen Holden
+Alexander McQuerry
+Matthew Overton
+Stephen Miller
+Adam Gray
+Peter Meier
