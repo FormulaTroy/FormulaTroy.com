@@ -2974,3 +2974,35 @@ Tommy Teasdale
 Brian Hall
 Gilles Lalonde
 Karl Strouhal
+RACE DATE: 2025/09/30
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Scar Pope
+JT Tami
+Karl Strouhal
+Micah Locke
+Gilles Lalonde
+Troy Uyan
+Brian Hall
+RACE DATE: 2025/10/04
+RESULT: UNIFIED CLASS =============
+Daniel Hurlock
+Magnus Dahlgren
+Tom Lane
+Timon Soovik
+JT Tami
+Robin Moelling
+Oliver Day
+Wouter de Bruijn
+Alessandro Smeraldi
+Maximilian Putrafki
+Ross Smith
+Eduardo Beninca
+Jerry Chen
+Jon Uyan
+George Angelidis
+Brian Hall
+Alexander Schulz
+Karl Strouhal
+Eelco Bussink
+Tony McOffoven

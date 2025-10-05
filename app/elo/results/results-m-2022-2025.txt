@@ -6299,3 +6299,41 @@ Matthew Overton
 Stephen Miller
 Adam Gray
 Peter Meier
+RACE DATE: 2025/10/02
+RESULT: UNIFIED CLASS =============
+Eduardo Beninca
+Johnny Gutierrez
+Daniel Kirby
+JT Tami
+shawn erik
+Micah Locke
+Jon Uyan
+Brian Hall
+Gilles Lalonde
+Matthew Overton
+Mack Sunthonlap
+Alexander McQuerry
+Tom Nasella
+James Bowders
+Norm Graf
+Karl Strouhal
+Ryan-Paulbert Reyes
+RACE DATE: 2025/10/02
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Jon Uyan
+shawn erik
+Micah Locke
+Mack Sunthonlap
+Brian Hall
+Norm Graf
+Johnny Gutierrez
+Eduardo Beninca
+James Bowders
+Alexander McQuerry
+Karl Strouhal
+Ryan-Paulbert Reyes
+Tom Nasella
+Matthew Overton
+Gilles Lalonde
