@@ -6337,3 +6337,57 @@ Ryan-Paulbert Reyes
 Tom Nasella
 Matthew Overton
 Gilles Lalonde
+RACE DATE: 2025/10/07
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Norm Graf
+Darrel Kruger
+RACE DATE: 2025/10/07
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Darrel Kruger
+Karl Strouhal
+Norm Graf
+RACE DATE: 2025/10/09
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Eduardo Beninca
+JT Tami
+Paul Ibbotson
+shawn erik
+Micah Locke
+Alexander McQuerry
+Norm Graf
+Gilles Lalonde
+Brian Hall
+Johnny Gutierrez
+Karl Strouhal
+Jon Uyan
+Matthew Overton
+James Bowders
+Tom Nasella
+Sean Kelly
+RACE DATE: 2025/10/09
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Micah Locke
+Alexander McQuerry
+Brian Hall
+Jon Uyan
+shawn erik
+Eduardo Beninca
+Matthew Overton
+Gilles Lalonde
+Norm Graf
+Johnny Gutierrez
+James Bowders
+Karl Strouhal
+Sean Kelly
+Tom Nasella
+Paul Ibbotson
