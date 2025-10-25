@@ -6391,3 +6391,103 @@ Karl Strouhal
 Sean Kelly
 Tom Nasella
 Paul Ibbotson
+RACE DATE: 2025/10/16
+RESULT: UNIFIED CLASS =============
+JT Tami
+Paul Ibbotson
+Alexander McQuerry
+Norm Graf
+Mack Sunthonlap
+Karl Strouhal
+Olivier Gervais
+Gilles Lalonde
+RACE DATE: 2025/10/16
+RESULT: UNIFIED CLASS =============
+JT Tami
+Alexander McQuerry
+Gilles Lalonde
+Mack Sunthonlap
+Norm Graf
+Paul Ibbotson
+Karl Strouhal
+Olivier Gervais
+RACE DATE: 2025/10/21
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Norm Graf
+Gilles Lalonde
+Darrel Kruger
+Karl Strouhal
+RACE DATE: 2025/10/21
+RESULT: UNIFIED CLASS =============
+Oliver Day
+shawn erik
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+Tommy Teasdale
+RACE DATE: 2025/10/23
+RESULT: HYPERCAR =============
+Troy Uyan
+Gilles Lalonde
+John Maher
+Brian Hall
+Lanny Hall
+Adrian Rice
+Daniel Kirby
+Norm Graf
+Jerry Chen
+Johnny Gutierrez
+Jon Uyan
+RACE DATE: 2025/10/23
+RESULT: LMP2 =============
+Alec King
+JT Tami
+Micah Locke
+RACE DATE: 2025/10/23
+RESULT: LMGT3 =============
+Ryan-Paulbert Reyes
+Paul Ibbotson
+Allen Holden
+Erik Jacobs
+Jaz Whitfield
+James Bowders
+Alexander McQuerry
+Matthew Overton
+Stephen Miller
+Olivier Gervais
+Mack Sunthonlap
+Tom Nasella
+RACE DATE: 2025/10/25
+RESULT: HYPERCAR =============
+Daniel Kirby
+Cameron Barker
+Timon Soovik
+Magnus Dahlgren
+Robin Moelling
+Jon Uyan
+John Maher
+Vinicius Goncalves
+Micah Locke
+Jerry Chen
+George Angelidis
+Gilles Lalonde
+Johnny Gutierrez
+Eric Moinet
+Maximilian Putrafki
+RACE DATE: 2025/10/25
+RESULT: LMGT3 =============
+JT Tami
+David Jundt
+Alexander McQuerry
+Ryan-Paulbert Reyes
+Matthew Overton
+Adam Gray
+Allen Holden
+Stephen Miller
+Jaz Whitfield
+Vasilis Katerinakis
+Eelco Bussink

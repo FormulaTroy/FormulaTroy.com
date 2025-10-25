@@ -3006,3 +3006,38 @@ Alexander Schulz
 Karl Strouhal
 Eelco Bussink
 Tony McOffoven
+RACE DATE: 2025/10/14
+RESULT: UNIFIED CLASS =============
+Ben Boorman
+JT Tami
+Oliver Day
+Scar Pope
+Adrian Rice
+Jon Uyan
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+Ross Smith
+RACE DATE: 2025/10/18
+RESULT: UNIFIED CLASS =============
+Daniel Hurlock
+Eelco Bussink
+Ben Boorman
+Eduardo Beninca
+Timon Soovik
+JT Tami
+Jon Uyan
+Maximilian Putrafki
+Wouter de Bruijn
+Jerry Chen
+George Angelidis
+Gilles Lalonde
+Vinicius Goncalves
+Darrel Kruger
+Ross Smith
+Alexander Schulz
+Oliver Day
+Alessandro Smeraldi
+Magnus Dahlgren
+Karl Strouhal
+Tom Lane
