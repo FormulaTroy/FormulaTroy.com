@@ -39,7 +39,7 @@
   "CastleMinimumDistanceInFloors": 2,
   "ClanSize": 10,
   "BloodDrainModifier": 1.0,
-  "DurabilityDrainModifier": 0.5,
+  "DurabilityDrainModifier": 0.0,
   "GarlicAreaStrengthModifier": 1.0,
   "HolyAreaStrengthModifier": 1.0,
   "SilverStrengthModifier": 1.0,
@@ -118,22 +118,22 @@
     "PrisonCellLimit": 24,
     "HeartLimits": {
       "Level1": {
-        "FloorLimit": 50,
+        "FloorLimit": 100,
         "ServantLimit": 1,
         "HeightLimit": 3
       },
       "Level2": {
-        "FloorLimit": 140,
+        "FloorLimit": 225,
         "ServantLimit": 3,
         "HeightLimit": 3
       },
       "Level3": {
-        "FloorLimit": 240,
+        "FloorLimit": 300,
         "ServantLimit": 5,
         "HeightLimit": 3
       },
       "Level4": {
-        "FloorLimit": 360,
+        "FloorLimit": 400,
         "ServantLimit": 7,
         "HeightLimit": 3
       },
@@ -144,7 +144,7 @@
       }
     },
     "CastleHeartLimitType": "User",
-    "CastleLimit": 2,
+    "CastleLimit": 3,
     "NetherGateLimit": 1,
     "ThroneOfDarknessLimit": 1,
     "ArenaStationLimit": 5,
@@ -178,7 +178,7 @@
     }
   },
   "TraderModifiers": {
-    "StockModifier": 1.0,
+    "StockModifier": 3.0,
     "PriceModifier": 1.0,
     "RestockTimerModifier": 1.0
   },
