@@ -6491,3 +6491,34 @@ Stephen Miller
 Jaz Whitfield
 Vasilis Katerinakis
 Eelco Bussink
+RACE DATE: 2025/10/30
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Brian Hall
+Gilles Lalonde
+Micah Locke
+shawn erik
+Jon Uyan
+Willian Schlichting
+Karl Strouhal
+James Bowders
+Norm Graf
+Paul Ibbotson
+Matthew Overton
+Johnny Gutierrez
+RACE DATE: 2025/10/30
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Jon Uyan
+Johnny Gutierrez
+Gilles Lalonde
+Paul Ibbotson
+JT Tami
+Matthew Overton
+Brian Hall
+shawn erik
+James Bowders
+Micah Locke
+Karl Strouhal
+Norm Graf

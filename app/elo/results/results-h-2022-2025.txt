@@ -3041,3 +3041,39 @@ Alessandro Smeraldi
 Magnus Dahlgren
 Karl Strouhal
 Tom Lane
+RACE DATE: 2025/10/28
+RESULT: UNIFIED CLASS =============
+Micah Locke
+Scar Pope
+Oliver Day
+Darrel Kruger
+Karl Strouhal
+JT Tami
+Adrian Rice
+Jon Uyan
+Ross Smith
+RACE DATE: 2025/11/01
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Magnus Dahlgren
+Timon Soovik
+Oliver Day
+Daniel Hurlock
+JT Tami
+Wouter de Bruijn
+Robin Moelling
+Alessandro Smeraldi
+Tony McOffoven
+Alexander Schulz
+Jerry Chen
+Jon Uyan
+George Angelidis
+Ross Smith
+Darrel Kruger
+Karl Strouhal
+Gilles Lalonde
+Maximilian Putrafki
+Brian Hall
+Eduardo Beninca
+Adrian Rice
+Scar Pope
