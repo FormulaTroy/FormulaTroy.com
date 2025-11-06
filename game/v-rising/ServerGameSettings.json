@@ -6,7 +6,7 @@
   "PlayerDamageMode": "Always",
   "CastleHeartDamageMode": "CanBeDestroyedOnlyWhenDecaying",
   "PvPProtectionMode": "Medium",
-  "DeathContainerPermission": "Anyone",
+  "DeathContainerPermission": "OnlySelf",
   "RelicSpawnType": "Plentiful",
   "SoulShard_DurabilityLossRate": 1.0,
   "CanLootEnemyContainers": false,
@@ -57,7 +57,7 @@
   "ShowSiegeWeaponMapIcon": false,
   "BuildCostModifier": 1.0,
   "RecipeCostModifier": 1.0,
-  "CraftRateModifier": 2.0,
+  "CraftRateModifier": 6.0,
   "ResearchCostModifier": 1.0,
   "RefinementCostModifier": 1.0,
   "RefinementRateModifier": 2.0,
@@ -118,29 +118,29 @@
     "PrisonCellLimit": 24,
     "HeartLimits": {
       "Level1": {
-        "FloorLimit": 100,
-        "ServantLimit": 1,
-        "HeightLimit": 3
+        "FloorLimit": 800,
+        "ServantLimit": 4,
+        "HeightLimit": 6
       },
       "Level2": {
-        "FloorLimit": 225,
-        "ServantLimit": 3,
-        "HeightLimit": 3
+        "FloorLimit": 800,
+        "ServantLimit": 6,
+        "HeightLimit": 6
       },
       "Level3": {
-        "FloorLimit": 300,
-        "ServantLimit": 5,
-        "HeightLimit": 3
+        "FloorLimit": 800,
+        "ServantLimit": 8,
+        "HeightLimit": 6
       },
       "Level4": {
-        "FloorLimit": 400,
-        "ServantLimit": 7,
-        "HeightLimit": 3
+        "FloorLimit": 800,
+        "ServantLimit": 10,
+        "HeightLimit": 6
       },
       "Level5": {
-        "FloorLimit": 550,
-        "ServantLimit": 8,
-        "HeightLimit": 3
+        "FloorLimit": 800,
+        "ServantLimit": 12,
+        "HeightLimit": 6
       }
     },
     "CastleHeartLimitType": "User",

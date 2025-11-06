@@ -12,4 +12,3 @@ VRisingServer.exe
 -hideIpAddress true
 -lowerFPSWhenEmpty true
 -lowerFPSWhenEmptyValue 5
--listOnEOS true
