@@ -6522,3 +6522,105 @@ James Bowders
 Micah Locke
 Karl Strouhal
 Norm Graf
+RACE DATE: 2025/11/04
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/11/04
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Darrel Kruger
+Karl Strouhal
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/11/06
+RESULT: UNIFIED CLASS =============
+Alexander McQuerry
+JT Tami
+Micah Locke
+Daniel Kirby
+Paul Ibbotson
+Gilles Lalonde
+Karl Strouhal
+Brian Hall
+Matthew Overton
+Tom Nasella
+James Bowders
+Mack Sunthonlap
+Norm Graf
+Jon Uyan
+Johnny Gutierrez
+RACE DATE: 2025/11/06
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Mack Sunthonlap
+Gilles Lalonde
+Jon Uyan
+Norm Graf
+Alexander McQuerry
+Matthew Overton
+Johnny Gutierrez
+Micah Locke
+Paul Ibbotson
+James Bowders
+Tom Nasella
+Karl Strouhal
+Brian Hall
+RACE DATE: 2025/11/11
+RESULT: UNIFIED CLASS =============
+Norm Graf
+shawn erik
+Jaz Whitfield
+Darrel Kruger
+Karl Strouhal
+Gilles Lalonde
+Oliver Day
+RACE DATE: 2025/11/11
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Norm Graf
+Jaz Whitfield
+Karl Strouhal
+shawn erik
+Gilles Lalonde
+Darrel Kruger
+RACE DATE: 2025/11/13
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Johnny Gutierrez
+Paul Ibbotson
+Micah Locke
+Jerry Chen
+Matthew Overton
+Norm Graf
+James Bowders
+Alexander McQuerry
+Karl Strouhal
+Olivier Gervais
+Mack Sunthonlap
+Gilles Lalonde
+Willian Schlichting
+RACE DATE: 2025/11/13
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Matthew Overton
+Norm Graf
+Mack Sunthonlap
+Micah Locke
+Gilles Lalonde
+Karl Strouhal
+James Bowders
+Jerry Chen
+Olivier Gervais
+Paul Ibbotson
+Johnny Gutierrez
+Alexander McQuerry
+Willian Schlichting
