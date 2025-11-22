@@ -6624,3 +6624,81 @@ Paul Ibbotson
 Johnny Gutierrez
 Alexander McQuerry
 Willian Schlichting
+RACE DATE: 2025/11/15
+RESULT: HYPERCAR =============
+Magnus Dahlgren
+Daniel Kirby
+Johnny Gutierrez
+Robin Moelling
+Troy Uyan
+Timon Soovik
+Jon Uyan
+Micah Locke
+Vinicius Goncalves
+John Maher
+Jerry Chen
+Gilles Lalonde
+Ryan-Paulbert Reyes
+Daniel Scott
+Eric Moinet
+RACE DATE: 2025/11/15
+RESULT: LMGT3 =============
+JT Tami
+James Walker
+Allen Holden
+Alexander McQuerry
+Adam Gray
+Stephen Miller
+Vasilis Katerinakis
+Matthew Overton
+Jaz Whitfield
+RACE DATE: 2025/11/18
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Norm Graf
+Jaz Whitfield
+Gilles Lalonde
+shawn erik
+Karl Strouhal
+Darrel Kruger
+RACE DATE: 2025/11/18
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Gilles Lalonde
+shawn erik
+Jaz Whitfield
+Norm Graf
+Karl Strouhal
+Darrel Kruger
+RACE DATE: 2025/11/20
+RESULT: HYPERCAR =============
+Daniel Kirby
+Troy Uyan
+Johnny Gutierrez
+Jerry Chen
+Norm Graf
+Lanny Hall
+Gilles Lalonde
+John Maher
+Ryan-Paulbert Reyes
+Brian Hall
+Adrian Rice
+RACE DATE: 2025/11/20
+RESULT: LMP2 =============
+Alec King
+Micah Locke
+JT Tami
+RACE DATE: 2025/11/20
+RESULT: LMGT3 =============
+Alexander McQuerry
+Paul Ibbotson
+Erik Jacobs
+James Bowders
+Mack Sunthonlap
+Allen Holden
+Olivier Gervais
+Stephen Miller
+Matthew Overton
+Tom Nasella
