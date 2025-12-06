@@ -3077,3 +3077,36 @@ Brian Hall
 Eduardo Beninca
 Adrian Rice
 Scar Pope
+RACE DATE: 2025/12/02
+RESULT: UNIFIED CLASS =============
+JT Tami
+Oliver Day
+Adrian Rice
+Darrel Kruger
+Gilles Lalonde
+Jon Uyan
+Karl Strouhal
+Ross Smith
+RACE DATE: 2025/12/06
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Alessandro Smeraldi
+JT Tami
+Daniel Hurlock
+Oliver Day
+Tom Lane
+Tony McOffoven
+Mike Bell
+Magnus Dahlgren
+Wouter de Bruijn
+Adrian Rice
+Maximilian Putrafki
+Gilles Lalonde
+Ross Smith
+Timon Soovik
+George Angelidis
+Vinicius Goncalves
+Jerry Chen
+Darrel Kruger
+Karl Strouhal
+Vasilis Katerinakis

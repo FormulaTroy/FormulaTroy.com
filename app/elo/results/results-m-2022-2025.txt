@@ -6702,3 +6702,74 @@ Olivier Gervais
 Stephen Miller
 Matthew Overton
 Tom Nasella
+RACE DATE: 2025/11/25
+RESULT: UNIFIED CLASS =============
+shawn erik
+Tommy Teasdale
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Oliver Day
+Darrel Kruger
+RACE DATE: 2025/11/25
+RESULT: UNIFIED CLASS =============
+Oliver Day
+shawn erik
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+Tommy Teasdale
+RACE DATE: 2025/11/27
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+shawn erik
+Jon Uyan
+Gilles Lalonde
+Norm Graf
+Karl Strouhal
+Tom Nasella
+James Bowders
+Sean Kelly
+Matthew Overton
+John Maher
+RACE DATE: 2025/11/27
+RESULT: UNIFIED CLASS =============
+Jon Uyan
+Norm Graf
+shawn erik
+Matthew Overton
+Johnny Gutierrez
+James Bowders
+Tom Nasella
+Gilles Lalonde
+Karl Strouhal
+Sean Kelly
+RACE DATE: 2025/12/04
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Jon Uyan
+Micah Locke
+Johnny Gutierrez
+Gilles Lalonde
+Matthew Overton
+Brian Hall
+Mack Sunthonlap
+Karl Strouhal
+James Bowders
+Norm Graf
+RACE DATE: 2025/12/04
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Brian Hall
+Norm Graf
+Johnny Gutierrez
+James Bowders
+Matthew Overton
+Micah Locke
+Gilles Lalonde
+Jon Uyan
+Karl Strouhal
+Mack Sunthonlap
