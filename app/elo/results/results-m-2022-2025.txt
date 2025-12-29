@@ -6773,3 +6773,104 @@ Gilles Lalonde
 Jon Uyan
 Karl Strouhal
 Mack Sunthonlap
+RACE DATE: 2025/12/09
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+Tommy Teasdale
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+RACE DATE: 2025/12/09
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Norm Graf
+Johnny Gutierrez
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+Tommy Teasdale
+RACE DATE: 2025/12/11
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Johnny Gutierrez
+Jon Uyan
+Gilles Lalonde
+Micah Locke
+Paul Ibbotson
+shawn erik
+Daniel Faas
+Karl Strouhal
+Matthew Overton
+JT Tami
+Norm Graf
+Sean Kelly
+Mack Sunthonlap
+James Bowders
+Tom Nasella
+RACE DATE: 2025/12/11
+RESULT: UNIFIED CLASS =============
+JT Tami
+Daniel Kirby
+Micah Locke
+Daniel Faas
+shawn erik
+Matthew Overton
+Karl Strouhal
+Johnny Gutierrez
+James Bowders
+Paul Ibbotson
+Norm Graf
+Sean Kelly
+Jon Uyan
+Gilles Lalonde
+Mack Sunthonlap
+RACE DATE: 2025/12/16
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+shawn erik
+Tommy Teasdale
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/12/16
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Tommy Teasdale
+Oliver Day
+Karl Strouhal
+Norm Graf
+Darrel Kruger
+Gilles Lalonde
+shawn erik
+RACE DATE: 2025/12/18
+RESULT: UNIFIED CLASS =============
+Jon Uyan
+Johnny Gutierrez
+Oliver Day
+Daniel Faas
+James Bowders
+Karl Strouhal
+RACE DATE: 2025/12/23
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Gilles Lalonde
+Darrel Kruger
+Norm Graf
+RACE DATE: 2025/12/23
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+shawn erik
+Tommy Teasdale
+Norm Graf
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
