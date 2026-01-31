@@ -3371,3 +3371,119 @@ shawn erik
 Norm Graf
 Gilles Lalonde
 Karl Strouhal
+RACE DATE: 2026/01/06
+RESULT: Gr5 2L =============
+JT Tami
+Johnny Gutierrez
+Ross Smith
+Jon Uyan
+Gilles Lalonde
+Oliver Day
+Steve Carman
+Darrel Kruger
+RACE DATE: 2026/01/06
+RESULT: Gr5 U2L =============
+John Maher
+Matthew Overton
+Oscar Dancourt
+RACE DATE: 2026/01/10
+RESULT: Gr5 2L =============
+Eduardo Beninca
+Daniel Hurlock
+Johnny Gutierrez
+Timon Soovik
+Alessandro Smeraldi
+Magnus Dahlgren
+Oliver Day
+Wouter de Bruijn
+Jon Uyan
+Maximilian Putrafki
+Jerry Chen
+Ross Smith
+Mike Bell
+Darrel Kruger
+Vinicius Goncalves
+Niklas Kirsten
+Steve Carman
+George Angelidis
+Gilles Lalonde
+Daniel Faas
+Ben Kesby
+Ryan-Paulbert Reyes
+Tom Lane
+RACE DATE: 2026/01/10
+RESULT: Gr5 U2L =============
+JT Tami
+Benjamin Le Tallec
+Alexander Schulz
+Ethan Funk
+Tony McOffoven
+John Maher
+Matthew Overton
+Daniel Forler
+Eelco Bussink
+Eric Moinet
+Gui Cevert
+Ben Boorman
+James Andrews
+Adrian Rice
+RACE DATE: 2026/01/13
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Brian Hall
+Tommy Teasdale
+Karl Strouhal
+Gilles Lalonde
+shawn erik
+Oscar Dancourt
+Ross Smith
+RACE DATE: 2026/01/13
+RESULT: UNIFIED CLASS =============
+Brian Hall
+Tommy Teasdale
+Oliver Day
+Karl Strouhal
+Gilles Lalonde
+Oscar Dancourt
+shawn erik
+RACE DATE: 2026/01/20
+RESULT: UNIFIED CLASS =============
+shawn erik
+Tommy Teasdale
+Oliver Day
+Karl Strouhal
+Ross Smith
+Craig Gallagher
+Gilles Lalonde
+RACE DATE: 2026/01/20
+RESULT: UNIFIED CLASS =============
+shawn erik
+Oliver Day
+Gilles Lalonde
+Karl Strouhal
+Tommy Teasdale
+Craig Gallagher
+RACE DATE: 2026/01/27
+RESULT: UNIFIED CLASS =============
+shawn erik
+Tommy Teasdale
+Oliver Day
+Brian Hall
+Gilles Lalonde
+Karl Strouhal
+Morne du Plooy
+Alex McBean
+Craig Gallagher
+Oscar Dancourt
+RACE DATE: 2026/01/27
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Gilles Lalonde
+Brian Hall
+Morne du Plooy
+Karl Strouhal
+Alex McBean
+Craig Gallagher
+Oscar Dancourt
