@@ -15,6 +15,8 @@ let lmgt1Results = "";
 let lmgt2Results = "";
 let lmgt3Results = "";
 let gt4Results = "";
+let gr52lResults = "";
+let gr5u2lResults = "";
 
 // helper: add driver to correct result list by class
 function addDriverToResults(driverName, carClass) {
@@ -58,6 +60,14 @@ function addDriverToResults(driverName, carClass) {
 
     case "GT4":
       gt4Results += driverName + "\n"
+      break;
+
+    case "2L":
+      gr52lResults += driverName + "\n"
+      break;
+
+    case "U2L":
+      gr5u2lResults += driverName + "\n"
       break;
 
     default:
@@ -143,6 +153,16 @@ function outputResults() {
     textExportContents += dateString
     textExportContents += "RESULT: GT4 =============\n";
     textExportContents += gt4Results;
+  }
+  if (gr52lResults != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: Gr5 2L =============\n";
+    textExportContents += gr52lResults;
+  }
+  if (gr5u2lResults != "") {
+    textExportContents += dateString
+    textExportContents += "RESULT: Gr5 U2L =============\n";
+    textExportContents += gr5u2lResults;
   }
 
   textExportContents = textExportContents.trim();
