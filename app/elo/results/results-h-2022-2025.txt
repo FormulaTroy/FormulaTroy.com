@@ -3110,3 +3110,264 @@ Jerry Chen
 Darrel Kruger
 Karl Strouhal
 Vasilis Katerinakis
+RACE DATE: 2025/09/02
+RESULT: UNIFIED CLASS =============
+Norm Graf
+Karl Strouhal
+Tommy Teasdale
+Gilles Lalonde
+Darrel Kruger
+shawn erik
+Oliver Day
+Philippe Dicartti
+Bo Stamper
+RACE DATE: 2025/09/02
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Norm Graf
+Darrel Kruger
+Gilles Lalonde
+shawn erik
+Philippe Dicartti
+Karl Strouhal
+Tommy Teasdale
+Bo Stamper
+RACE DATE: 2025/09/09
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Norm Graf
+Philippe Dicartti
+Darrel Kruger
+Karl Strouhal
+Gilles Lalonde
+RACE DATE: 2025/09/09
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Norm Graf
+Darrel Kruger
+Karl Strouhal
+Gilles Lalonde
+RACE DATE: 2025/09/16
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Matthew Overton
+Norm Graf
+shawn erik
+Martin Rossi
+Darrel Kruger
+Gilles Lalonde
+Karl Strouhal
+Mack Sunthonlap
+RACE DATE: 2025/09/16
+RESULT: UNIFIED CLASS =============
+Oliver Day
+shawn erik
+Matthew Overton
+Mack Sunthonlap
+Gilles Lalonde
+Norm Graf
+Martin Rossi
+Darrel Kruger
+Karl Strouhal
+RACE DATE: 2025/09/23
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Norm Graf
+Gilles Lalonde
+Brian Hall
+Darrel Kruger
+RACE DATE: 2025/09/23
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+Norm Graf
+shawn erik
+Karl Strouhal
+Gilles Lalonde
+Darrel Kruger
+Brian Hall
+RACE DATE: 2025/10/07
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Norm Graf
+Darrel Kruger
+RACE DATE: 2025/10/07
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Darrel Kruger
+Karl Strouhal
+Norm Graf
+RACE DATE: 2025/10/21
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Norm Graf
+Gilles Lalonde
+Darrel Kruger
+Karl Strouhal
+RACE DATE: 2025/10/21
+RESULT: UNIFIED CLASS =============
+Oliver Day
+shawn erik
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+Tommy Teasdale
+RACE DATE: 2025/11/04
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/11/04
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Darrel Kruger
+Karl Strouhal
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/11/11
+RESULT: UNIFIED CLASS =============
+Norm Graf
+shawn erik
+Jaz Whitfield
+Darrel Kruger
+Karl Strouhal
+Gilles Lalonde
+Oliver Day
+RACE DATE: 2025/11/11
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Norm Graf
+Jaz Whitfield
+Karl Strouhal
+shawn erik
+Gilles Lalonde
+Darrel Kruger
+RACE DATE: 2025/11/18
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Norm Graf
+Jaz Whitfield
+Gilles Lalonde
+shawn erik
+Karl Strouhal
+Darrel Kruger
+RACE DATE: 2025/11/18
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Gilles Lalonde
+shawn erik
+Jaz Whitfield
+Norm Graf
+Karl Strouhal
+Darrel Kruger
+RACE DATE: 2025/11/25
+RESULT: UNIFIED CLASS =============
+shawn erik
+Tommy Teasdale
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Oliver Day
+Darrel Kruger
+RACE DATE: 2025/11/25
+RESULT: UNIFIED CLASS =============
+Oliver Day
+shawn erik
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+Tommy Teasdale
+RACE DATE: 2025/12/09
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+Tommy Teasdale
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+RACE DATE: 2025/12/09
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Norm Graf
+Johnny Gutierrez
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+Tommy Teasdale
+RACE DATE: 2025/12/16
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+shawn erik
+Tommy Teasdale
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/12/16
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Tommy Teasdale
+Oliver Day
+Karl Strouhal
+Norm Graf
+Darrel Kruger
+Gilles Lalonde
+shawn erik
+RACE DATE: 2025/12/23
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Gilles Lalonde
+Darrel Kruger
+Norm Graf
+RACE DATE: 2025/12/23
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Oliver Day
+shawn erik
+Tommy Teasdale
+Norm Graf
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+RACE DATE: 2025/12/30
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Johnny Gutierrez
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2025/12/30
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+Johnny Gutierrez
+shawn erik
+Norm Graf
+Gilles Lalonde
+Karl Strouhal
