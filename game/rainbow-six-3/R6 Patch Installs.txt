@@ -1,0 +1,15 @@
+1. RS2.0 patch installed to the correct steamapps\common parent folder
+
+
+2. R63_2020OptimizationPatch.zip
+
+Drop mods and system folder with the zip into root folder: \steamapps\common\Rainbow Six 3 Gold
+
+
+
+
+3. OpenRVS-v1.6.zip
+and
+4. R6GameService.dll
+
+Drop into SYSTEM folder: \steamapps\common\Rainbow Six 3 Gold\system
