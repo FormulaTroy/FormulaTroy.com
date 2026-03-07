@@ -3487,3 +3487,216 @@ Karl Strouhal
 Alex McBean
 Craig Gallagher
 Oscar Dancourt
+RACE DATE: 2026/01/31
+RESULT: Gr5 2L =============
+Alessandro Smeraldi
+Daniel Hurlock
+Niklas Kirsten
+Eduardo Beninca
+Olli Karjanlahti
+Johnny Gutierrez
+Wouter de Bruijn
+Bradley Sellars
+Timon Soovik
+Jon Uyan
+Magnus Dahlgren
+Mike Bell
+George Angelidis
+Vinicius Goncalves
+Gilles Lalonde
+Oliver Day
+Jerry Chen
+Steve Carman
+Brian Hall
+Darrel Kruger
+Ryan-Paulbert Reyes
+RACE DATE: 2026/01/31
+RESULT: Gr5 U2L =============
+JT Tami
+Ben Boorman
+Ethan Funk
+Alan Smith
+Becky Ely-Clark
+Matt Wright
+Eelco Bussink
+Benjamin Le Tallec
+Tony McOffoven
+Christian Dauger
+Karl Strouhal
+John Maher
+Alexander Schulz
+Matthew Overton
+Mack Sunthonlap
+Matthew Williams
+Alex McBean
+Eric Moinet
+Vasilis Katerinakis
+RACE DATE: 2026/02/03
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+shawn erik
+Karl Strouhal
+Brian Hall
+Gilles Lalonde
+Alex McBean
+Oscar Dancourt
+Craig Gallagher
+RACE DATE: 2026/02/03
+RESULT: UNIFIED CLASS =============
+shawn erik
+Oliver Day
+Tommy Teasdale
+Brian Hall
+Gilles Lalonde
+Karl Strouhal
+Alex McBean
+Oscar Dancourt
+Craig Gallagher
+RACE DATE: 2026/02/10
+RESULT: UNIFIED CLASS =============
+shawn erik
+Gilles Lalonde
+Oliver Day
+Tommy Teasdale
+Brian Hall
+Karl Strouhal
+Ross Smith
+Craig Gallagher
+Oscar Dancourt
+RACE DATE: 2026/02/10
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Brian Hall
+Karl Strouhal
+Gilles Lalonde
+Craig Gallagher
+Oscar Dancourt
+RACE DATE: 2026/02/14
+RESULT: Gr5 2L =============
+Niklas Kirsten
+Daniel Hurlock
+Daniel Kirby
+Oliver Day
+Magnus Dahlgren
+Eduardo Beninca
+Johnny Gutierrez
+Jon Uyan
+Ross Smith
+Jerry Chen
+Maximilian Putrafki
+Steve Carman
+George Angelidis
+Gilles Lalonde
+Vinicius Goncalves
+Ryan-Paulbert Reyes
+Darrel Kruger
+Wouter de Bruijn
+Olli Karjanlahti
+Mike Bell
+Bradley Sellars
+RACE DATE: 2026/02/14
+RESULT: Gr5 U2L =============
+JT Tami
+Becky Ely-Clark
+Ben Boorman
+Alan Smith
+Eelco Bussink
+Ethan Funk
+Benjamin Le Tallec
+Matthew Overton
+Karl Strouhal
+Christian Dauger
+Tony McOffoven
+RACE DATE: 2026/02/17
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Brian Hall
+Gilles Lalonde
+Karl Strouhal
+Ross Smith
+shawn erik
+Oscar Dancourt
+Craig Gallagher
+Oliver Day
+RACE DATE: 2026/02/17
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Gilles Lalonde
+Brian Hall
+Oscar Dancourt
+Craig Gallagher
+RACE DATE: 2026/02/24
+RESULT: Gr5 2L =============
+JT Tami
+Ross Smith
+Matt Wright
+Brian Hall
+Jon Uyan
+Oliver Day
+Gilles Lalonde
+Steve Carman
+Lanny Hall
+Darrel Kruger
+RACE DATE: 2026/02/24
+RESULT: Gr5 U2L =============
+John Maher
+Karl Strouhal
+Oscar Dancourt
+RACE DATE: 2026/02/28
+RESULT: Gr5 2L =============
+Niklas Kirsten
+Eduardo Beninca
+Oliver Day
+Alessandro Smeraldi
+Robin Moelling
+Ross Smith
+Mike Bell
+Magnus Dahlgren
+Jon Uyan
+Daniel Hurlock
+Jerry Chen
+Timon Soovik
+Maximilian Putrafki
+Steve Carman
+Gilles Lalonde
+Ryan-Paulbert Reyes
+Vinicius Goncalves
+Darrel Kruger
+Bradley Sellars
+RACE DATE: 2026/02/28
+RESULT: Gr5 U2L =============
+JT Tami
+Matt Wright
+Ethan Funk
+Tony McOffoven
+Becky Ely-Clark
+John Maher
+Ben Boorman
+Karl Strouhal
+Matthew Overton
+Alan Smith
+Christian Dauger
+Benjamin Le Tallec
+RACE DATE: 2026/03/03
+RESULT: Gr5 2L =============
+JT Tami
+Johnny Gutierrez
+Oliver Day
+Matt Wright
+Ross Smith
+Gilles Lalonde
+Jon Uyan
+Steve Carman
+RACE DATE: 2026/03/03
+RESULT: Gr5 U2L =============
+Ben Boorman
+Ethan Funk
+John Maher
+Oscar Dancourt
+Matthew Overton
+Karl Strouhal
