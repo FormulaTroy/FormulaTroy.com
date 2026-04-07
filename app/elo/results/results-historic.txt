@@ -3700,3 +3700,76 @@ John Maher
 Oscar Dancourt
 Matthew Overton
 Karl Strouhal
+RACE DATE: 2026/03/07
+RESULT: Gr5 2L =============
+Niklas Kirsten
+Bradley Sellars
+Wouter de Bruijn
+Johnny Gutierrez
+Eduardo Beninca
+Magnus Dahlgren
+Ross Smith
+Jon Uyan
+Timon Soovik
+Vinicius Goncalves
+Jerry Chen
+Steve Carman
+George Angelidis
+Daniel Hurlock
+Oliver Day
+Maximilian Putrafki
+Mike Bell
+Gilles Lalonde
+Joey Smith
+RACE DATE: 2026/03/07
+RESULT: Gr5 U2L =============
+Ethan Funk
+Matt Wright
+Alan Smith
+JT Tami
+Christian Dauger
+Eelco Bussink
+John Maher
+Alexander Schulz
+Daniel Forler
+Matthew Overton
+RACE DATE: 2026/03/10
+RESULT: UNIFIED CLASS =============
+shawn erik
+Gilles Lalonde
+Tommy Teasdale
+Oliver Day
+Karl Strouhal
+Joey Smith
+Craig Gallagher
+RACE DATE: 2026/03/10
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+shawn erik
+Gilles Lalonde
+Karl Strouhal
+Joey Smith
+Craig Gallagher
+Oliver Day
+RACE DATE: 2026/03/17
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+shawn erik
+Karl Strouhal
+Brian Hall
+Gilles Lalonde
+Oliver Day
+Steve Carman
+Adrian Rice
+Alex McBean
+Jaz Whitfield
+RACE DATE: 2026/03/24
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Brian Hall
+Karl Strouhal
+Alex McBean
+Craig Gallagher
+Oliver Day
+Darrel Kruger
+Gilles Lalonde

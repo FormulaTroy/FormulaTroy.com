@@ -128,7 +128,6 @@ $(document).ready(function () {
       case "Cian Pullen":
       case "Craig Pullen":
       case "Daniel Hurlock":
-
       case "Luke Mitchell":
       case "Mike Bell":
       case "Oliver Newman":
@@ -194,6 +193,7 @@ $(document).ready(function () {
       case "Eric Moinet":
       case "Joaquin Coudriet":
       case "Tony McOffoven":
+      case "Zachary Chauveau":
         flagCode = "fr"; // France
         break;
 

@@ -6754,3 +6754,125 @@ Stephen Miller
 Jon Uyan
 Daniel Forler
 Alexander Schulz
+RACE DATE: 2026/03/05
+RESULT: UNIFIED CLASS =============
+JT Tami
+Daniel Kirby
+Johnny Gutierrez
+John Maher
+Jerry Chen
+Norm Graf
+Gilles Lalonde
+Mack Sunthonlap
+Frank Radosti
+James Bowders
+Olivier Gervais
+Matthew Overton
+Karl Strouhal
+Allen Holden
+Tom Nasella
+RACE DATE: 2026/03/05
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Johnny Gutierrez
+Jerry Chen
+John Maher
+Mack Sunthonlap
+Olivier Gervais
+Frank Radosti
+Gilles Lalonde
+James Bowders
+Karl Strouhal
+Matthew Overton
+Allen Holden
+Norm Graf
+RACE DATE: 2026/03/12
+RESULT: HYPERCAR =============
+Ben Kesby
+JT Tami
+Brian Hall
+Johnny Gutierrez
+Jerry Chen
+Ryan-Paulbert Reyes
+Norm Graf
+Lanny Hall
+Gilles Lalonde
+RACE DATE: 2026/03/12
+RESULT: LMGT3 =============
+Daniel Kirby
+Micah Locke
+Allen Holden
+Mack Sunthonlap
+Alexander McQuerry
+Jon Uyan
+John Maher
+Stephen Miller
+Olivier Gervais
+Matthew Overton
+James Bowders
+Darrel Kruger
+Frank Radosti
+Erik Jacobs
+Tom Nasella
+RACE DATE: 2026/03/14
+RESULT: HYPERCAR =============
+Tom Lane
+Ben Kesby
+Ege Karabacak
+Troy Uyan
+Bradley Sellars
+Riley Koenig
+Timon Soovik
+Wouter de Bruijn
+Johnny Gutierrez
+Magnus Dahlgren
+Luciano Ichazo
+John Maher
+Ryan-Paulbert Reyes
+Stephen Buice
+Matthew Buice
+Zachary Chauveau
+Alan Smith
+George Angelidis
+Norm Graf
+Dean Clark
+Eric Moinet
+W. Mike Buice
+Oliver Day
+Brian Hall
+Gilles Lalonde
+Kavin Gahlaut
+Jerry Chen
+RACE DATE: 2026/03/14
+RESULT: LMGT3 =============
+Daniel Kirby
+JT Tami
+William Snowden
+Allen Holden
+Jon Uyan
+Maximilian Putrafki
+Alexander Schulz
+Peter Meier
+Matthew Overton
+Stephen Miller
+Daniel Forler
+Vasilis Katerinakis
+Darrel Kruger
+David Jundt
+Stuart Barge
+Simon Kingsbury
+RACE DATE: 2026/03/19
+RESULT: UNIFIED CLASS =============
+Micah Locke
+Daniel Kirby
+Norm Graf
+John Maher
+Brian Hall
+Matthew Overton
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+James Bowders
+Frank Radosti
+Tom Nasella
