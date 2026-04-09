@@ -200,6 +200,7 @@ $(document).ready(function () {
       case "Mia Rose":
       case "Rhys Gardiner":
       case "Adrian Rice":
+      case "Matt Wright":
         flagCode = "au"; // Australia
         break;
 
