@@ -197,10 +197,10 @@ $(document).ready(function () {
         flagCode = "fr"; // France
         break;
 
-      case "Mia Rose":
-      case "Rhys Gardiner":
       case "Adrian Rice":
       case "Matt Wright":
+      case "Mia Rose":
+      case "Rhys Gardiner":
         flagCode = "au"; // Australia
         break;
 
@@ -218,6 +218,12 @@ $(document).ready(function () {
         flagCode = "nl"; // Netherlands
         break;
 
+      case "Alberto Ferrari":
+      case "Alessandro Smeraldi":
+      case "Filippo Marazzi":
+        flagCode = "it"; // Italy
+        break;
+
       case "Maciej Kasprzyk":
       case "Michael Wojcik":
         flagCode = "pl"; // Poland
@@ -231,11 +237,6 @@ $(document).ready(function () {
       case "Diego Rodrigues":
       case "Martin Esquivel":
         flagCode = "ar"; // Argentina
-        break;
-
-      case "Filippo Marazzi":
-      case "Alberto Ferrari":
-        flagCode = "it"; // Italy
         break;
 
       case "Magnus Dahlgren":
