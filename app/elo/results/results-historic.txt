@@ -3773,3 +3773,128 @@ Craig Gallagher
 Oliver Day
 Darrel Kruger
 Gilles Lalonde
+RACE DATE: 2026/03/31
+RESULT: UNIFIED CLASS =============
+Brian Hall
+Oliver Day
+Darrel Kruger
+Tommy Teasdale
+Karl Strouhal
+shawn erik
+Craig Gallagher
+Jaz Whitfield
+RACE DATE: 2026/04/07
+RESULT: UNIFIED CLASS =============
+shawn erik
+Oliver Day
+Tommy Teasdale
+Ross Smith
+Gilles Lalonde
+Craig Gallagher
+Karl Strouhal
+RACE DATE: 2026/04/07
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Gilles Lalonde
+shawn erik
+Craig Gallagher
+Karl Strouhal
+RACE DATE: 2026/04/11
+RESULT: Gr5 2L =============
+Bradley Sellars
+Wouter de Bruijn
+Johnny Gutierrez
+Magnus Dahlgren
+Daniel Hurlock
+Niklas Kirsten
+Alessandro Smeraldi
+Eduardo Beninca
+Timon Soovik
+Jerry Chen
+George Angelidis
+Ross Smith
+Robin Moelling
+Steve Carman
+Jon Uyan
+Gilles Lalonde
+Vinicius Goncalves
+Oliver Day
+Adrian Rice
+Mike Bell
+Daniel Scott
+Santiago Dancourt
+Maximilian Putrafki
+RACE DATE: 2026/04/11
+RESULT: Gr5 U2L =============
+JT Tami
+Matt Wright
+Alan Smith
+Olli Karjanlahti
+Peter Meier
+Becky Ely-Clark
+Ben Boorman
+Alexander Schulz
+RACE DATE: 2026/04/14
+RESULT: Gr5 2L =============
+JT Tami
+Matt Wright
+Johnny Gutierrez
+Jon Uyan
+Gilles Lalonde
+Oliver Day
+Ross Smith
+Steve Carman
+RACE DATE: 2026/04/14
+RESULT: Gr5 U2L =============
+Adrian Rice
+Lanny Hall
+Karl Strouhal
+Matthew Overton
+John Maher
+RACE DATE: 2026/04/21
+RESULT: UNIFIED CLASS =============
+shawn erik
+Oliver Day
+Tommy Teasdale
+Karl Strouhal
+Craig Gallagher
+Ross Smith
+Gilles Lalonde
+RACE DATE: 2026/04/21
+RESULT: UNIFIED CLASS =============
+shawn erik
+Oliver Day
+Gilles Lalonde
+Tommy Teasdale
+Craig Gallagher
+Karl Strouhal
+RACE DATE: 2026/04/28
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+shawn erik
+Oliver Day
+Gilles Lalonde
+Karl Strouhal
+Craig Gallagher
+RACE DATE: 2026/04/28
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+shawn erik
+Oliver Day
+Gilles Lalonde
+Karl Strouhal
+Craig Gallagher
+RACE DATE: 2026/05/05
+RESULT: Gr5 2L =============
+Johnny Gutierrez
+Ross Smith
+Gilles Lalonde
+Darrel Kruger
+Matt Wright
+RACE DATE: 2026/05/05
+RESULT: Gr5 U2L =============
+Matthew Overton
+John Maher
+Karl Strouhal
+Adrian Rice

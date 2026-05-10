@@ -6876,3 +6876,213 @@ Gilles Lalonde
 James Bowders
 Frank Radosti
 Tom Nasella
+RACE DATE: 2026/03/26
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Micah Locke
+Brian Hall
+Matthew Overton
+Karl Strouhal
+Frank Radosti
+James Bowders
+Darrel Kruger
+Tom Nasella
+Gilles Lalonde
+Norm Graf
+RACE DATE: 2026/04/02
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Micah Locke
+Luciano Ichazo
+John Maher
+James Bowders
+Karl Strouhal
+Brian Hall
+Frank Radosti
+Matthew Overton
+Paul Ibbotson
+Darrel Kruger
+Norm Graf
+Tom Nasella
+RACE DATE: 2026/04/09
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Allen Holden
+John Maher
+Brian Hall
+Jerry Chen
+Johnny Gutierrez
+Karl Strouhal
+Olivier Gervais
+Mack Sunthonlap
+Norm Graf
+James Bowders
+Paul Ibbotson
+Frank Radosti
+Gilles Lalonde
+Tom Nasella
+RACE DATE: 2026/04/09
+RESULT: UNIFIED CLASS =============
+Johnny Gutierrez
+Paul Ibbotson
+JT Tami
+Norm Graf
+Brian Hall
+John Maher
+Gilles Lalonde
+Allen Holden
+James Bowders
+Frank Radosti
+Mack Sunthonlap
+Karl Strouhal
+Daniel Kirby
+Olivier Gervais
+Jerry Chen
+RACE DATE: 2026/04/16
+RESULT: HYPERCAR =============
+Daniel Kirby
+Ben Kesby
+JT Tami
+Ryan-Paulbert Reyes
+Gilles Lalonde
+Norm Graf
+Lanny Hall
+Sahil Mustac
+Brian Hall
+Jerry Chen
+RACE DATE: 2026/04/16
+RESULT: LMGT3 =============
+Allen Holden
+Alexander McQuerry
+Mack Sunthonlap
+Jon Uyan
+Matthew Overton
+Stephen Miller
+Paul Ibbotson
+Darrel Kruger
+Olivier Gervais
+James Bowders
+Karl Strouhal
+John Maher
+Tom Nasella
+RACE DATE: 2026/04/23
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Paul Ibbotson
+John Maher
+Karl Strouhal
+Norm Graf
+Jerry Chen
+Matthew Overton
+Mack Sunthonlap
+James Bowders
+Gilles Lalonde
+Frank Radosti
+Olivier Gervais
+Tom Nasella
+RACE DATE: 2026/04/23
+RESULT: UNIFIED CLASS =============
+JT Tami
+Daniel Kirby
+Matthew Overton
+John Maher
+Norm Graf
+Frank Radosti
+Karl Strouhal
+Gilles Lalonde
+Mack Sunthonlap
+James Bowders
+Olivier Gervais
+Jerry Chen
+Paul Ibbotson
+RACE DATE: 2026/04/25
+RESULT: HYPERCAR =============
+Ben Kesby
+Tom Lane
+Becky Ely-Clark
+Johnny Gutierrez
+Timon Soovik
+Magnus Dahlgren
+Micah Locke
+Troy Uyan
+Alan Smith
+George Angelidis
+Oliver Day
+Jerry Chen
+Riley Koenig
+Vinicius Goncalves
+Stephen Buice
+Ben Boorman
+Matthew Buice
+Zachary Chauveau
+John Maher
+W. Mike Buice
+Norm Graf
+Hubert van Gashoven
+Axel La Flamme
+Karl Strouhal
+Daniel Scott
+Robin Moelling
+Bradley Sellars
+RACE DATE: 2026/04/25
+RESULT: LMGT3 =============
+Daniel Kirby
+JT Tami
+William Snowden
+Senne Stofmeel
+David Jundt
+Maximilian Putrafki
+Jon Uyan
+Vasilis Katerinakis
+Allen Holden
+Peter Meier
+Darrel Kruger
+Stephen Miller
+Matthew Overton
+Brian van Beusekom
+Stuart Barge
+RACE DATE: 2026/04/30
+RESULT: HYPERCAR =============
+Ben Kesby
+JT Tami
+Sahil Mustac
+Norm Graf
+Gilles Lalonde
+Lanny Hall
+Oliver Day
+RACE DATE: 2026/04/30
+RESULT: LMGT3 =============
+Daniel Kirby
+Micah Locke
+Mack Sunthonlap
+Paul Ibbotson
+Allen Holden
+Erik Jacobs
+Jon Uyan
+John Maher
+Darrel Kruger
+Stephen Miller
+James Bowders
+Olivier Gervais
+Karl Strouhal
+Matthew Overton
+Frank Radosti
+David Anderson
+Stuart Barge
+Tom Nasella
+RACE DATE: 2026/05/07
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+Micah Locke
+Matthew Overton
+Paul Ibbotson
+Gilles Lalonde
+Karl Strouhal
+Darrel Kruger
+James Bowders
+Norm Graf
+Frank Radosti
