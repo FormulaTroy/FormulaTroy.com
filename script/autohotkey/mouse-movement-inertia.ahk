@@ -2,7 +2,6 @@
 #SingleInstance Force
 #UseHook
 
-; Run as Admin to ensure it works inside the game window
 if !A_IsAdmin {
     Run('*RunAs "' A_ScriptFullPath '"')
     ExitApp()
@@ -13,83 +12,94 @@ if !A_IsAdmin {
 }
 
 ; --- CONFIGURATION ---
-global Friction := 0.95            ; How fast the drift slows down (0.70 = quick stop, 0.95 = long slide)
-global ActivationThreshold := 0.0  ; MINIMUM raw velocity (pixels) required to trigger drift.
-                                   ; Anything below this is treated as a micro-correction and ignored.
-global CutoffVelocity := 0.01      ; The baseline speed where the drift completely stops running
-global SampleRate := 1            ; How often (in ms) the script checks your mouse speed
+global Friction := 0.89
+global ActivationThreshold := 0.0
+global CutoffVelocity := 0.00000001
+
+global EnableY := false
+
+global CaptureRate := 1
+global OutputRate := 10
 ; ---------------------
 
-global toggle := true ; Script starts on or off
+global toggle := true
 `:: {
     global toggle := !toggle
-    SoundBeep(toggle ? 1000 : 500, 100) ; Quick beep to let you know if it's on/off
+    SoundBeep(toggle ? 1000 : 500, 100)
 }
 
-; Initialize positions globally
 global LastX := 0, LastY := 0
+global VelX := 0, VelY := 0
+global IsMovingHand := false
+
 MouseGetPos(&LastX, &LastY)
 
-SetTimer(TrackAndSmooth, SampleRate)
+SetTimer(CaptureInput, CaptureRate)
+SetTimer(ApplyForces, OutputRate)
 
-TrackAndSmooth() {
-    global Friction, ActivationThreshold, CutoffVelocity, SampleRate, toggle, LastX, LastY
-    static VelX := 0, VelY := 0
+CaptureInput() {
+    global toggle, LastX, LastY, VelX, VelY, IsMovingHand, EnableY
+    static DynamicThreshold := 0
+
+    if (!toggle) {
+        return
+    }
+
+    MouseGetPos(&CurrentX, &CurrentY)
+    DeltaX := CurrentX - LastX
+    DeltaY := CurrentY - LastY
+
+    if (DeltaX != 0 || DeltaY != 0) {
+        IsMovingHand := true
+
+        VelX := (VelX * 0.4) + (DeltaX * 0.6)
+        VelY := (VelY * 0.4) + ((EnableY ? DeltaY : 0) * 0.6)
+
+        LastX := CurrentX
+        LastY := CurrentY
+
+        DynamicThreshold := A_TickCount
+    } else if (A_TickCount - DynamicThreshold > 15) {
+        IsMovingHand := false
+    }
+}
+
+ApplyForces() {
+    global toggle, VelX, VelY, IsMovingHand, Friction, CutoffVelocity, LastX, LastY
     static DriftActive := false
 
     if (!toggle) {
         return
     }
 
-    ; Get the current mouse position
-    MouseGetPos(&CurrentX, &CurrentY)
-
-    ; Calculate how far the mouse physically moved since the last check
-    DeltaX := CurrentX - LastX
-    DeltaY := CurrentY - LastY
-
-    ; CASE 1: You are actively moving the physical mouse
-    if (DeltaX != 0 || DeltaY != 0) {
-        ; Calculate total directional movement using absolute values
-        TotalDelta := Max(Abs(DeltaX), Abs(DeltaY))
-
-        ; Only capture velocity if movement exceeds our configuration threshold
-        if (TotalDelta >= ActivationThreshold) {
-            VelX := DeltaX
-            VelY := DeltaY
-        } else {
-            ; For micro-corrections, keep tracking mouse position but wipe the velocity buffer
-            VelX := 0
-            VelY := 0
-        }
+    ; While you are moving your hand, let the math settle cleanly
+    if (IsMovingHand) {
         DriftActive := false
+        return
     }
-    ; CASE 2: Your hand stopped, but we have stored velocity to bleed off
-    else if (Abs(VelX) > CutoffVelocity || Abs(VelY) > CutoffVelocity) {
+
+    ; When your hand stops, it takes the final accurately weighted velocity and bleeds it out
+    if (Abs(VelX) > CutoffVelocity || Abs(VelY) > CutoffVelocity) {
         DriftActive := true
 
-        ; Apply friction to slow down the speed for the next loop
         VelX *= Friction
         VelY *= Friction
 
-        ; debug, turn off Y value for now, only smooth on X
-        VelY := 0
+        if (Round(VelX) == 0 && Round(VelY) == 0) {
+            VelX := 0
+            VelY := 0
+            DriftActive := false
+            return
+        }
 
-        ; Inject the raw, decaying relative movement packet into the game
         DllCall("mouse_event", "UInt", 1, "Int", Round(VelX), "Int", Round(VelY), "UInt", 0, "UPtr", 0)
+
+        ; Sync coordinates to avoid reading our own artificial drift
+        MouseGetPos(&LastX, &LastY)
     }
-    ; CASE 3: Mouse is completely still and drift has finished
     else {
         VelX := 0
         VelY := 0
         DriftActive := false
-    }
-
-    ; Update coordinates for the next loop iteration
-    if (DriftActive) {
-        MouseGetPos(&LastX, &LastY)
-    } else {
-        LastX := CurrentX
-        LastY := CurrentY
     }
 }
