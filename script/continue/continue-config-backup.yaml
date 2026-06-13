@@ -1,0 +1,49 @@
+# Ollama local client + Continue VS Code setup commands & config
+# Helpful commands
+## Install/update models; ollama pull qwen2.5-coder:14b; ollama pull qwen2.5-coder:7b; ollama pull llama3.1:8b; ollama pull qwen2.5-coder:1.5b-base; ollama pull nomic-embed-text:latest
+## View current models; ollama list
+## Delete model; ollama rm <model_name>
+
+name: Local Config
+version: 1.0.0
+schema: v1
+
+# All models that can be used in the sidebar
+models:
+  - name: Qwen 2.5 Coder 14B (Heavy Coding)
+    provider: ollama
+    model: qwen2.5-coder:14b
+    roles:
+      - chat
+      - edit
+      - apply
+
+  - name: Qwen 2.5 Coder 7B (Fast Coding)
+    provider: ollama
+    model: qwen2.5-coder:7b
+    roles:
+      - chat
+      - edit
+      - apply
+
+  - name: Llama 3.1 8B (Conversational/General)
+    provider: ollama
+    model: llama3.1:8b
+    roles:
+      - chat
+
+  - name: Qwen 2.5 Coder 1.5B (Autocomplete Only)
+    provider: ollama
+    model: qwen2.5-coder:1.5b-base
+    roles:
+      - autocomplete
+
+  - name: Nomic Embed (No idea what this does tbh)
+    provider: ollama
+    model: nomic-embed-text:latest
+    roles:
+      - embed
+
+# This enables Agent Mode capabilities for the active chat model
+capabilities:
+  - tool_use
