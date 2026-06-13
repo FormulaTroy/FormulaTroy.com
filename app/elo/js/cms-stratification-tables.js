@@ -15,10 +15,10 @@ $(document).ready(function () {
   let currentTableMode = "Modern"; // or "Historic"
   let eloDistributionGraphData = [];
 
-  const minEloModern = 750;
-  const maxEloModern = 1449;
-  const minEloHistoric = 770;
-  const maxEloHistoric = 1269;
+  const minEloModern = 800;
+  const maxEloModern = 1299;
+  const minEloHistoric = 800;
+  const maxEloHistoric = 1299;
   let minEloActive = minEloModern;
   let maxEloActive = maxEloModern;
 
@@ -349,31 +349,50 @@ $(document).ready(function () {
 
     const ranges = {};
 
+    // init graph labels for the various elo groupings
     for (let i = minEloActive; i <= maxEloActive; i += rangeSize) {
-      ranges[`${i}-${i + rangeSize - 1}`] = { count: 0, color: null }; // init count for each elo range
+      let label;
+      if (i === minEloActive) {
+        label = `${i} & below`;
+      } else if (i + rangeSize > maxEloActive) {
+        label = `${i} & above`;
+      } else {
+        label = `${i}-${i + rangeSize - 1}`;
+      }
+      ranges[label] = { count: 0, color: null };
     }
+    const rangeKeys = Object.keys(ranges);
 
-    // loop over the elos and incremeant each elo bar chart range as needed
+    // loop over the elos securely and add them to their respective buckets
     data.forEach(elo => {
-      for (let i = minEloActive; i <= maxEloActive; i += rangeSize) {
-        if (elo >= i && elo < i + rangeSize) {
-          ranges[`${i}-${i + rangeSize - 1}`].count++;
 
-          // determine color based on breakpoints
+      // clamp the values of elos so the aliens don't go outside the charts
+      elo = Math.max(minEloActive, Math.min(maxEloActive, elo));
+
+      for (let key = 0; key < rangeKeys.length; key++) {
+        const label = rangeKeys[key];
+        const currentRangeStart = parseInt(label);
+
+        // check if this Elo belongs in this bucket range
+        if (elo >= currentRangeStart && elo < currentRangeStart + rangeSize) {
+          ranges[label].count++;
+
+          // Determine color based on breakpoints
           if (elo >= platinumBreakpointActive) {
-            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(203, 119, 228, 0.75)'; // Platinum
+            ranges[label].color = 'rgba(203, 119, 228, 0.75)'; // Platinum
           } else if (elo >= goldBreakpointActive) {
-            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 217, 0, 0.75)'; // Gold
+            ranges[label].color = 'rgba(255, 217, 0, 0.75)'; // Gold
           } else if (elo >= silverBreakpointActive) {
-            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(255, 255, 255, 0.75)'; // Silver
+            ranges[label].color = 'rgba(255, 255, 255, 0.75)'; // Silver
           } else if (elo >= bronzeBreakpointActive) {
-            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(219, 108, 18, 0.75)'; // Bronze
+            ranges[label].color = 'rgba(219, 108, 18, 0.75)'; // Bronze
           } else {
-            ranges[`${i}-${i + rangeSize - 1}`].color = 'rgba(235, 96, 54, 0.75)'; // Copper
+            ranges[label].color = 'rgba(235, 96, 54, 0.75)'; // Copper
           }
         }
       }
     });
+
     return ranges;
   }
 
