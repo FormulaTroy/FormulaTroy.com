@@ -21,7 +21,7 @@ $(document).ready(function () {
     };
 
     // make a separate object to put in the post-race json, breaks the memory reference
-    // caused by using the same var in both jsons. And keeps the new driver's rating from
+    // caused by using the same var in both json files. And keeps the new driver's rating from
     // changing beyond the default when mid-race result calculations are happening
     let newPostRaceDriver = {
       [driverMachineName]: {
@@ -179,10 +179,13 @@ $(document).ready(function () {
     //console.log(raceResultsInput);
 
     // global date objects for comparing dates later
-    const threeMonthsAgoDateObj = new Date();
-    threeMonthsAgoDateObj.setMonth(threeMonthsAgoDateObj.getMonth() - 3);
-    const oneYearAgoDateObj = new Date();
-    oneYearAgoDateObj.setFullYear(oneYearAgoDateObj.getFullYear() - 1);
+    // driver raced within 6 months: active
+    // driver raced within 2 years: inactive, but still included in json
+    // driver raced over 2 years: inactive, but also excluded from json entirely
+    const activeCutOffDateObj = new Date();
+    activeCutOffDateObj.setMonth(activeCutOffDateObj.getMonth() - 6);
+    const visibleCutOffDateObj = new Date();
+    visibleCutOffDateObj.setFullYear(visibleCutOffDateObj.getFullYear() - 2);
 
     if (driverRatingInput != "" && raceResultsInput != "") {
 
@@ -358,14 +361,11 @@ $(document).ready(function () {
       const lastRaceDateObj = new Date(lastRaceYear, lastRaceMonth, lastRaceDay); // use the date string parts to make a new date object
 
       // determine activity level based on the driver's last race
-      // driver raced within 3 months: active
-      // driver raced within 1 year: inactive, but still included in json
-      // driver raced over 1 year: inactive, but also excluded from json entirely
-      if (lastRaceDateObj < oneYearAgoDateObj) {
+      if (lastRaceDateObj < visibleCutOffDateObj) {
         console.log("Hiding driver " + postRaceDriver.name + " (" + postRaceDriver.rating[postRaceDriver.rating.length - 1] + ") for 1 year inactivity clean up rule.");
         delete postRaceDrivers[index];
       } else {
-        if (lastRaceDateObj > threeMonthsAgoDateObj) {
+        if (lastRaceDateObj > activeCutOffDateObj) {
           postRaceDriver.active = 1;
         } else {
           postRaceDriver.active = 0;
