@@ -118,6 +118,7 @@ $(document).ready(function () {
     switch (name) {
 
       case "Adam Gray":
+      case "Alan Smith":
       case "Alexander Serraima":
       case "Becky Ely-Clark":
       case "Ben Boorman":
