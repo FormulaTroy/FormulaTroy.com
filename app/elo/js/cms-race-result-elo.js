@@ -183,9 +183,9 @@ $(document).ready(function () {
     // driver raced within 2 years: inactive, but still included in json
     // driver raced over 2 years: inactive, but also excluded from json entirely
     const activeCutOffDateObj = new Date();
-    activeCutOffDateObj.setMonth(activeCutOffDateObj.getMonth() - 6);
+    activeCutOffDateObj.setMonth(activeCutOffDateObj.getMonth() - 3);
     const visibleCutOffDateObj = new Date();
-    visibleCutOffDateObj.setFullYear(visibleCutOffDateObj.getFullYear() - 2);
+    visibleCutOffDateObj.setFullYear(visibleCutOffDateObj.getFullYear() - 1);
 
     if (driverRatingInput != "" && raceResultsInput != "") {
 
@@ -361,15 +361,15 @@ $(document).ready(function () {
       const lastRaceDateObj = new Date(lastRaceYear, lastRaceMonth, lastRaceDay); // use the date string parts to make a new date object
 
       // determine activity level based on the driver's last race
-      if (lastRaceDateObj < visibleCutOffDateObj) {
-        console.log("Hiding driver " + postRaceDriver.name + " (" + postRaceDriver.rating[postRaceDriver.rating.length - 1] + ") for 1 year inactivity clean up rule.");
-        delete postRaceDrivers[index];
+      if (lastRaceDateObj >= activeCutOffDateObj) {
+        postRaceDriver.active = 1;
+        postRaceDriver.visible = 1;
+      } else if (lastRaceDateObj >= visibleCutOffDateObj) {
+        postRaceDriver.active = 0;
+        postRaceDriver.visible = 1;
       } else {
-        if (lastRaceDateObj > activeCutOffDateObj) {
-          postRaceDriver.active = 1;
-        } else {
-          postRaceDriver.active = 0;
-        }
+        postRaceDriver.active = 0;
+        postRaceDriver.visible = 0;
       }
 
     });

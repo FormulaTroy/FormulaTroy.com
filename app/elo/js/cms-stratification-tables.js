@@ -733,14 +733,37 @@ $(document).ready(function () {
         break;
     }
 
+    // custom DataTables search filter for inactive driver visibility
+    let showAllDrivers = false;
+    $.fn.dataTable.ext.search.push(
+      function (settings, data, dataIndex, rowData) {
+        if (showAllDrivers) return true;
+        // only active drivers by default
+        return rowData.visible !== 0;
+      }
+    );
+
     // use the json file to generate the datatables display
     activeDatatable = $('#cms-strat-table').DataTable({
       dom: 'Bfrtip',
-      // export to excel / csv buttons
+      // export to excel / csv buttons, show all drivers button
       buttons: [
         {
+          text: '<i class="bi bi-eye"></i> Show Inactive',
+          className: 'btn btn-outline-secondary btn-sm me-2',
+          action: function (e, dt, node, config) {
+            showAllDrivers = !showAllDrivers;
+            if (showAllDrivers) {
+              this.text('<i class="bi bi-eye-slash"></i> Hide Inactive');
+            } else {
+              this.text('<i class="bi bi-eye"></i> Show Inactive');
+            }
+            dt.draw();
+          }
+        },
+        {
           extend: 'excelHtml5',
-          text: '<i class="bi bi-file-earmark-excel"></i> Export to Excel',
+          text: '<i class="bi bi-file-earmark-excel"></i> Excel',
           className: 'btn btn-success btn-sm me-2',
           exportOptions: {
             // exclude the 'Flag' (index 0), 'Rating Change' (index 4) and 'Details' (index 10) columns from export
@@ -749,7 +772,7 @@ $(document).ready(function () {
         },
         {
           extend: 'csvHtml5',
-          text: '<i class="bi bi-file-earmark-csv"></i> Export to CSV',
+          text: '<i class="bi bi-filetype-csv"></i> CSV',
           className: 'btn btn-secondary btn-sm',
           exportOptions: {
             columns: [1, 2, 3, 5, 6, 7, 8, 9],
@@ -801,6 +824,9 @@ $(document).ready(function () {
               rowData.podiums = (driverData.finishPos).filter(value => value <= 3 && value != 0).length;
               rowData.avgFinishPos = driverData.avgFinishPos;
               rowData.lastChangedDate = driverData.date[driverData.date.length - 1];
+
+              // store the driver's visibility flag for inactive driver filtering
+              rowData.visible = driverData.visible !== undefined ? driverData.visible : 1;
 
               // store the entire driver's object for the inspect modal
               rowData.driverData = driverData;
