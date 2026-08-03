@@ -71,10 +71,10 @@ $(document).ready(function () {
       };
       const checkPromoted = (prevRating, currentRating, breakpoint) => {
         return !checkLicenseBreakpoint(prevRating, breakpoint) && checkLicenseBreakpoint(currentRating, breakpoint);
-      }
+      };
       const checkRelegated = (prevRating, currentRating, breakpoint) => {
         return checkLicenseBreakpoint(prevRating, breakpoint) && !checkLicenseBreakpoint(currentRating, breakpoint);
-      }
+      };
 
       // determine if a license threshold was just crossed, and if so, display a modified medal
       if (checkPromoted(previousRating, currentRating, platinumBreakpointActive)) {

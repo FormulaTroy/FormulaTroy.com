@@ -30,48 +30,48 @@ function addDriverToResults(driverName, carClass) {
     case "TA2":
     case "GT":
     case "C1":
-      unifiedClassResults += driverName + "\n"
+      unifiedClassResults += driverName + "\n";
       break;
 
     case "HYPERCAR":
-      hypercarResults += driverName + "\n"
+      hypercarResults += driverName + "\n";
       break;
 
     case "LMP2":
-      lmp2Results += driverName + "\n"
+      lmp2Results += driverName + "\n";
       break;
 
     case "LMP3":
-      lmp3Results += driverName + "\n"
+      lmp3Results += driverName + "\n";
       break;
 
     case "LMGT1":
-      lmgt1Results += driverName + "\n"
+      lmgt1Results += driverName + "\n";
       break;
 
     case "LMGT2":
-      lmgt2Results += driverName + "\n"
+      lmgt2Results += driverName + "\n";
       break;
 
     case "LMGT3":
     case "GT3":
-      lmgt3Results += driverName + "\n"
+      lmgt3Results += driverName + "\n";
       break;
 
     case "GT4":
-      gt4Results += driverName + "\n"
+      gt4Results += driverName + "\n";
       break;
 
     case "2L":
-      gr52lResults += driverName + "\n"
+      gr52lResults += driverName + "\n";
       break;
 
     case "U2L":
-      gr5u2lResults += driverName + "\n"
+      gr5u2lResults += driverName + "\n";
       break;
 
     default:
-      console.warn("Class not found: " + carClass + " driven by " + driverName)
+      console.warn("Class not found: " + carClass + " driven by " + driverName);
       break;
   }
   driverCount++;
@@ -104,63 +104,63 @@ function convertRaceDateString(dateString) {
 
   month = monthMap.get(lowerCaseMonthName) || "Invalid month name";
 
-  return "RACE DATE: " + year + "/" + month + "/" + day + "\n"
+  return "RACE DATE: " + year + "/" + month + "/" + day + "\n";
 }
 
 // helper: combine all the class results into a single output
 function outputResults() {
 
   let textExportContents = "";
-  let dateString = convertRaceDateString($("div.uk-margin-medium-bottom div.uk-badge.uk-badge-white.uk-badge-borderless:nth-child(3)").html().trim())
+  let dateString = convertRaceDateString($("div.uk-margin-medium-bottom div.uk-badge.uk-badge-white.uk-badge-borderless:nth-child(3)").html().trim());
 
   // if a class result was added to, output that class
   if (unifiedClassResults != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: UNIFIED CLASS =============\n";
     textExportContents += unifiedClassResults;
   }
   if (hypercarResults != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: HYPERCAR =============\n";
     textExportContents += hypercarResults;
   }
   if (lmp2Results != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: LMP2 =============\n";
     textExportContents += lmp2Results;
   }
   if (lmp3Results != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: LMP3 =============\n";
     textExportContents += lmp3Results;
   }
   if (lmgt1Results != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: LMGT1 =============\n";
     textExportContents += lmgt1Results;
   }
   if (lmgt2Results != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: LMGT2 =============\n";
     textExportContents += lmgt2Results;
   }
   if (lmgt3Results != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: LMGT3 =============\n";
     textExportContents += lmgt3Results;
   }
   if (gt4Results != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: GT4 =============\n";
     textExportContents += gt4Results;
   }
   if (gr52lResults != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: Gr5 2L =============\n";
     textExportContents += gr52lResults;
   }
   if (gr5u2lResults != "") {
-    textExportContents += dateString
+    textExportContents += dateString;
     textExportContents += "RESULT: Gr5 U2L =============\n";
     textExportContents += gr5u2lResults;
   }
@@ -202,11 +202,11 @@ resultTableRows.each(function () {
     // get driver data, extract class from Car / Vehicle # column ("#24 Hypercar")
     carClass = $(cells[4]).text().trim();
     if (carClass.includes("Hypercar")) {
-      carClass = "HYPERCAR"
+      carClass = "HYPERCAR";
     } else if (carClass.includes("GT3")) {
-      carClass = "LMGT3"
+      carClass = "LMGT3";
     } else if (carClass.includes("SpecMiata")) {
-      carClass = "SPEC"
+      carClass = "SPEC";
     } else {
       carClass = "Unknown!";
       console.warn("Car class extraction from Vehicle column failed");
@@ -243,7 +243,7 @@ resultTableRows.each(function () {
 
   // if not a "DNS", add to results
   if (timeGapStatus != "DNS") {
-    addDriverToResults(driverName, carClass)
+    addDriverToResults(driverName, carClass);
   }
 
 });// end result loop
@@ -252,4 +252,4 @@ resultTableRows.each(function () {
 
 
 // output results to said textarea
-outputResults()
+outputResults();

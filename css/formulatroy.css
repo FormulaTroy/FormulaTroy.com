@@ -214,16 +214,20 @@ form#fuel-calc-form .form-control.is-invalid {
 }
 
 /* CMS Stratification Page Styles */
-table.dataTable th.dt-type-numeric,
-table.dataTable th.dt-type-date,
-table.dataTable td.dt-type-numeric,
-table.dataTable td.dt-type-date {
+table#cms-strat-table>tbody>tr:nth-of-type(odd)>*,
+table#cms-strat-table>tbody>tr:nth-of-type(even)>* {
+  color: var(--ftlight);
+}
+
+table#cms-strat-table th.dt-type-numeric,
+table#cms-strat-table th.dt-type-date,
+table#cms-strat-table td.dt-type-numeric,
+table#cms-strat-table td.dt-type-date {
   text-align: center !important;
 }
 
-.table-striped>tbody>tr:nth-of-type(odd)>*,
-.table-striped>tbody>tr:nth-of-type(even)>* {
-  color: var(--ftlight);
+table#cms-strat-table tr td:nth-child(2) {
+  padding-left: 0;
 }
 
 .medal {
