@@ -30,21 +30,28 @@ $(document).ready(function () {
 
   // helper: return license column text data based on elo rating
   // use an average of the last 5 races for your license
-  function getModernLicense(ratingArray, active) {
+  function getModernLicense(driverData) {
 
-    // get current and previous average ratings
-    // let last5AvgRating = getLast5RatingAverage(ratingArray);
-    // let previousLast5AvgRating = getPreviousLast5RatingAverage(ratingArray);
+    // Current rating is stored as a top-level scalar property
+    let currentRating = driverData.rating !== undefined ? driverData.rating : 1000;
 
-    // get current and previous ratings
-    let currentRating = ratingArray[ratingArray.length - 1];
-    let previousRating = ratingArray[ratingArray.length - 2];
+    // Get previous rating from racesHistory if available
+    let history = driverData.racesHistory || [];
+    let previousRating = currentRating; // fallback if 0 or 1 race recorded
+
+    if (history.length >= 2) {
+      previousRating = history[history.length - 2].rating;
+    } else if (history.length === 1) {
+      // Initial baseline ELO before first race
+      previousRating = 1000;
+    }
 
     // get license breakpoints
     let platinumBreakpointActive = 0;
     let goldBreakpointActive = 0;
     let silverBreakpointActive = 0;
     let bronzeBreakpointActive = 0;
+
     if (currentTableMode == "Modern") {
       platinumBreakpointActive = platinumBreakpointModern;
       goldBreakpointActive = goldBreakpointModern;
@@ -63,7 +70,7 @@ $(document).ready(function () {
     }
 
     // if driver raced in last 3 months, see if the license just changed
-    if (active) {
+    if (driverData.active) {
 
       // helper functions to determine if a license threshold was just crossed
       const checkLicenseBreakpoint = (rating, breakpoint) => {
@@ -96,7 +103,7 @@ $(document).ready(function () {
       }
     }
 
-    // if there was no license change, or it's been over 3 months, just display the correct medal without arrows
+    // if there was no license change, or it's been over 3 months, display standard medal
     if (currentRating >= platinumBreakpointActive) {
       return "<span class='badge medal medal-platinum'>Platinum</span>";
     } else if (currentRating >= goldBreakpointActive) {
@@ -108,7 +115,6 @@ $(document).ready(function () {
     } else {
       return "<span class='badge medal medal-copper'>Copper</span>";
     }
-
   }
 
   // helper: return different flags based on the driver's name
@@ -457,9 +463,8 @@ $(document).ready(function () {
   // event: open up the inspect modal for a particular driver
   $('#cms-strat-table').on('click', '.inspect-button', function () {
 
-    // load driver data from json "data" parameter in the rowData of the table
-    //console.log("Driver Data:", driver);
     let driver = $(this).data('driverData');
+    let history = driver.racesHistory || [];
 
     // reset the modal html for the new driver
     $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name);
@@ -476,27 +481,42 @@ $(document).ready(function () {
     // left side (rating and activity)
     modalBodyHTML += '<div class="row mt-4"><div class="col">';
     modalBodyHTML += '<h4><i class="bi bi-person-vcard-fill"></i> ' + currentTableMode + ' License</h4>';
-    modalBodyHTML += '<p>' + getModernLicense(driver.rating, driver.date[driver.date.length - 1]) + '</p>';
+    modalBodyHTML += '<p>' + getModernLicense(driver) + '</p>';
 
     // current, most recent Elo
-    let currentRating = driver.rating[driver.rating.length - 1];
-    modalBodyHTML += '<p><strong>Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - driver.rating[driver.rating.length - 2]) + ')</p>';
+    let currentRating = driver.rating !== undefined ? driver.rating : 1000;
+    let previousRating = 1000;
+
+    if (history.length >= 2) {
+      previousRating = history[history.length - 2].rating;
+    } else if (history.length === 1) {
+      previousRating = 1000;
+    }
+
+    if (driver.active === 1) {
+      modalBodyHTML += '<p><strong>Rating:</strong> ' + currentRating + ' (' + prettyRatingChange(currentRating - previousRating) + ')</p>';
+    } else {
+      modalBodyHTML += '<p><strong>Rating:</strong> ' + currentRating + '</p>';
+    }
 
     // activity data
     if (driver.active == 1) {
-      modalBodyHTML += '<p><strong>Status:</strong> <span class="arrow-green">Active</p>';
+      modalBodyHTML += '<p><strong>Status:</strong> <span class="arrow-green">Active</span></p>';
     } else {
       modalBodyHTML += '<p><strong>Status:</strong> <span class="arrow-red">Inactive</span></p>';
     }
-    modalBodyHTML += '<p><strong>Last Race:</strong> ' + driver.date[driver.date.length - 1] + '</p>';
 
-    // right side (race stats)
+    let lastRaceDate = history.length > 0 ? history[history.length - 1].date : "N/A";
+    modalBodyHTML += '<p><strong>Last Race:</strong> ' + lastRaceDate + '</p>';
+
+    // right side (race stats calculated from racesHistory)
     modalBodyHTML += '</div><div class="col">';
     modalBodyHTML += '<h4><i class="bi bi-trophy-fill"></i> ' + currentTableMode + ' Stats</h4>';
 
-    let wins = (driver.finishPos).filter(value => value === 1).length;
-    let podiums = (driver.finishPos).filter(value => value <= 3 && value != 0).length;
-    let top10s = (driver.finishPos).filter(value => value <= 10 && value != 0).length;
+    let wins = history.filter(race => race.finishPos === 1).length;
+    let podiums = history.filter(race => race.finishPos >= 1 && race.finishPos <= 3).length;
+    let top10s = history.filter(race => race.finishPos >= 1 && race.finishPos <= 10).length;
+    let totalRaces = history.length;
 
     if (wins == 1) {
       modalBodyHTML += '<p><strong>' + wins + '</strong> Win</p>';
@@ -513,19 +533,19 @@ $(document).ready(function () {
     } else if (top10s > 1) {
       modalBodyHTML += '<p><strong>' + top10s + '</strong> Top 10s</p>';
     }
-    if (driver.races == 1) {
-      modalBodyHTML += '<p><strong>' + driver.races + '</strong> Ranked Race</p>';
+    if (totalRaces == 1) {
+      modalBodyHTML += '<p><strong>' + totalRaces + '</strong> Ranked Race</p>';
     } else {
-      modalBodyHTML += '<p><strong>' + driver.races + '</strong> Ranked Races</p>';
+      modalBodyHTML += '<p><strong>' + totalRaces + '</strong> Ranked Races</p>';
     }
 
-    modalBodyHTML += '<p><strong>' + driver.avgFinishPos + '</strong> Avg. Finish</p>';
+    modalBodyHTML += '<p><strong>' + (driver.avgFinishPos || "N/A") + '</strong> Avg. Finish</p>';
 
     // write the results
     modalBodyHTML += '</div></div></div>';
     $('#modalBody').append(modalBodyHTML);
 
-    // after the modal html is all set, generate the elo rating over time chart
+    // after the modal html is set, compute breakpoints
     let platinumBreakpointActive = 0;
     let goldBreakpointActive = 0;
     let silverBreakpointActive = 0;
@@ -548,35 +568,37 @@ $(document).ready(function () {
       bronzeBreakpointActive = null;
     }
 
-    // slice data arrays to display the last 50 entries initially
+    // slice racesHistory array for chart
     const recentRaceAmount = 50;
-    let isShowingFullHistory = driver.date.length <= recentRaceAmount;
+    let isShowingFullHistory = history.length <= recentRaceAmount;
 
-    // helper function to extract dataset slices
     function getChartData(showAll) {
-      if (showAll || driver.date.length <= recentRaceAmount) {
-        return {
-          dates: driver.date,
-          ratings: driver.rating,
-          finishPos: driver.finishPos,
-          totalCars: driver.totalCars
-        };
+      let slice = (showAll || history.length <= recentRaceAmount) ? history : history.slice(-recentRaceAmount);
+
+      // Extract arrays from history
+      let dates = slice.map(race => race.date);
+      let ratings = slice.map(race => race.rating);
+      let finishPos = slice.map(race => race.finishPos);
+      let totalCars = slice.map(race => race.totalCars);
+
+      // If viewing full history, prepend the initial 1000 rating baseline
+      if (showAll || history.length <= recentRaceAmount) {
+        dates.unshift(dates.length > 0 ? dates[0] : 'Start');
+        ratings.unshift(1000);
+        finishPos.unshift('N/A');
+        totalCars.unshift('N/A');
       }
-      return {
-        dates: driver.date.slice(-recentRaceAmount),
-        ratings: driver.rating.slice(-recentRaceAmount),
-        finishPos: driver.finishPos.slice(-recentRaceAmount),
-        totalCars: driver.totalCars.slice(-recentRaceAmount)
-      };
+
+      return { dates, ratings, finishPos, totalCars };
     }
 
     let activeChartData = getChartData(isShowingFullHistory);
 
     // hide toggle button if driver has 50 or fewer races overall
-    if (driver.date.length <= recentRaceAmount) {
+    if (history.length <= recentRaceAmount) {
       $('#btn-toggle-history').hide();
     } else {
-      $('#btn-toggle-history').text('Show Full History (' + driver.date.length + ' races)');
+      $('#btn-toggle-history').text('Show Full History (' + history.length + ' races)');
     }
 
     let ctx = document.getElementById('driverEloOverTimeChart').getContext('2d');
@@ -644,13 +666,8 @@ $(document).ready(function () {
             display: false,
           },
           tooltip: {
-            // build tooltip contents when hovering over an elo
             callbacks: {
               title: function (context) {
-
-                // see if this context has a label (should only be the elo rating, not the license breakpoints)
-                // the ? question mark is for optional chaining, which allows safe access to
-                // nested properties without causing an error if an intermediate property is null or undefined
                 let label = context[0]?.label;
                 if (label !== undefined) {
                   return 'Date: ' + label;
@@ -662,14 +679,37 @@ $(document).ready(function () {
                 let finishPos = activeChartData.finishPos[index];
                 let totalCars = activeChartData.totalCars[index];
 
+                // Baseline initial entry
+                if (finishPos === 'N/A') {
+                  return [
+                    'Rating: ' + rating,
+                    'Initial Starting Rating'
+                  ];
+                }
+
+                // Calculate plain-text ELO change for canvas rendering
+                let eloChangeText = '';
+                if (index > 0) {
+                  let previousRating = activeChartData.ratings[index - 1];
+                  let diff = rating - previousRating;
+
+                  if (diff > 0) {
+                    eloChangeText = ' (▲ +' + diff + ')';
+                  } else if (diff < 0) {
+                    eloChangeText = ' (▼ ' + diff + ')';
+                  } else {
+                    eloChangeText = ' (=)';
+                  }
+                }
+
                 return [
-                  'Rating: ' + rating,
+                  'Rating: ' + rating + eloChangeText,
                   'Position: ' + finishPos + ' of ' + totalCars
                 ];
               }
             },
             filter: function (tooltipItem) {
-              return tooltipItem.datasetIndex === 0; // filter out tooltips for dashed lines
+              return tooltipItem.datasetIndex === 0;
             }
           },
         }
@@ -681,7 +721,6 @@ $(document).ready(function () {
       isShowingFullHistory = !isShowingFullHistory;
       activeChartData = getChartData(isShowingFullHistory);
 
-      // Update chart data arrays and dashed threshold lines
       driverEloOverTimeChart.data.labels = activeChartData.dates;
       driverEloOverTimeChart.data.datasets[0].data = activeChartData.ratings;
       driverEloOverTimeChart.data.datasets[1].data = activeChartData.dates.map(() => platinumBreakpointActive);
@@ -689,14 +728,12 @@ $(document).ready(function () {
       driverEloOverTimeChart.data.datasets[3].data = activeChartData.dates.map(() => silverBreakpointActive);
       driverEloOverTimeChart.data.datasets[4].data = activeChartData.dates.map(() => bronzeBreakpointActive);
 
-      // Redraw chart canvas
       driverEloOverTimeChart.update();
 
-      // Toggle button text
       if (isShowingFullHistory) {
         $(this).text('Show Last 50 Races');
       } else {
-        $(this).text('Show Full History (' + driver.date.length + ' races)');
+        $(this).text('Show Full History (' + history.length + ' races)');
       }
     });
   });
@@ -801,41 +838,47 @@ $(document).ready(function () {
 
               // create an object for each row
               var rowData = {};
+              var history = driverData.racesHistory || [];
 
-              // map data to json values or send json values to functions to get returns back
+              // Flag, name, and license
               rowData.flagImage = getFlag(driverData.name);
               rowData.name = driverData.name;
-              rowData.driverLicense = getModernLicense(driverData.rating, driverData.active);
+              rowData.driverLicense = getModernLicense(driverData);
 
-              // elo rating and pretty latest change
-              let rating = driverData.rating[driverData.rating.length - 1];
-              let previousRating = driverData.rating[driverData.rating.length - 2];
+              // Rating and Rating Change
+              let rating = driverData.rating !== undefined ? driverData.rating : 1000;
               rowData.rating = rating;
-              eloDistributionGraphData.push(rating); // add to chart data
-              if (driverData.active == 1) {
-                rowData.ratingChange = prettyRatingChange(rating - previousRating);
+              eloDistributionGraphData.push(rating);
+
+              if (driverData.active === 1 && history.length >= 2) {
+                let currentRaceRating = history[history.length - 1].rating;
+                let previousRaceRating = history[history.length - 2].rating;
+                rowData.ratingChange = prettyRatingChange(currentRaceRating - previousRaceRating);
+              } else if (driverData.active === 1 && history.length === 1) {
+                // First race comparison against default baseline ELO (1000)
+                rowData.ratingChange = prettyRatingChange(history[0].rating - 1000);
               } else {
                 rowData.ratingChange = "";
               }
 
-              // rest of table column data
-              rowData.races = driverData.races;
-              rowData.wins = (driverData.finishPos).filter(value => value === 1).length;
-              rowData.podiums = (driverData.finishPos).filter(value => value <= 3 && value != 0).length;
+              // Stats computed from racesHistory
+              rowData.races = history.length;
+              rowData.wins = history.filter(race => race.finishPos === 1).length;
+              rowData.podiums = history.filter(race => race.finishPos >= 1 && race.finishPos <= 3).length;
               rowData.avgFinishPos = driverData.avgFinishPos;
-              rowData.lastChangedDate = driverData.date[driverData.date.length - 1];
 
-              // store the driver's visibility flag for inactive driver filtering
+              // Last race date
+              rowData.lastChangedDate = history.length > 0 ? history[history.length - 1].date : "N/A";
+
+              // Visibility flag
               rowData.visible = driverData.visible !== undefined ? driverData.visible : 1;
 
-              // store the entire driver's object for the inspect modal
+              // Full object pass-through for modals/inspection
               rowData.driverData = driverData;
 
-              // add object to the overall data return
               data.push(rowData);
             }
           }
-          //console.log(data);
           return data;
         }
       },
@@ -861,7 +904,7 @@ $(document).ready(function () {
           }
         }
       ],
-      order: [[3, 'desc']], // sort by rating
+      order: [[3, 'desc']],
       pageLength: 50,
       lengthMenu: [
         [10, 25, 50, 100, -1],
