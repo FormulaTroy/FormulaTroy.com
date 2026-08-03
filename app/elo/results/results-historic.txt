@@ -3921,3 +3921,105 @@ Karl Strouhal
 Gilles Lalonde
 Tommy Teasdale
 Brian Hall
+RACE DATE: 2026/05/26
+RESULT: Gr5 2L =============
+JT Tami
+Jon Uyan
+Oliver Day
+Ross Smith
+Johnny Gutierrez
+Brian Hall
+Gilles Lalonde
+Darrel Kruger
+RACE DATE: 2026/05/26
+RESULT: Gr5 U2L =============
+Adrian Rice
+Matthew Overton
+Karl Strouhal
+RACE DATE: 2026/06/02
+RESULT: Gr5 2L =============
+JT Tami
+Johnny Gutierrez
+Ross Smith
+Jon Uyan
+Oliver Day
+Brian Hall
+Gilles Lalonde
+Lanny Hall
+RACE DATE: 2026/06/02
+RESULT: Gr5 U2L =============
+Adrian Rice
+John Maher
+Matthew Overton
+Karl Strouhal
+RACE DATE: 2026/06/09
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Adrian Rice
+shawn erik
+Brian Hall
+Jon Uyan
+Gilles Lalonde
+Craig Gallagher
+Tommy Teasdale
+Mike Olson
+Karl Strouhal
+RACE DATE: 2026/06/09
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+shawn erik
+Gilles Lalonde
+Jon Uyan
+Karl Strouhal
+Craig Gallagher
+Adrian Rice
+Brian Hall
+RACE DATE: 2026/06/16
+RESULT: Gr5 2L =============
+JT Tami
+Oliver Day
+Ross Smith
+Brian Hall
+Jon Uyan
+Gilles Lalonde
+RACE DATE: 2026/06/16
+RESULT: Gr5 U2L =============
+Matthew Overton
+Karl Strouhal
+RACE DATE: 2026/06/23
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Tommy Teasdale
+Brian Hall
+shawn erik
+Darrel Kruger
+Gilles Lalonde
+Craig Gallagher
+RACE DATE: 2026/06/30
+RESULT: UNIFIED CLASS =============
+Oliver Day
+Brian Hall
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+shawn erik
+Tommy Teasdale
+RACE DATE: 2026/07/07
+RESULT: UNIFIED CLASS =============
+Tommy Teasdale
+Oliver Day
+Gilles Lalonde
+Darrel Kruger
+Karl Strouhal
+Craig Gallagher
+Paul Ibbotson
+RACE DATE: 2026/07/14
+RESULT: UNIFIED CLASS =============
+Oliver Day
+shawn erik
+Karl Strouhal
+Darrel Kruger
+Gilles Lalonde
+Bo Stamper
+Craig Gallagher
