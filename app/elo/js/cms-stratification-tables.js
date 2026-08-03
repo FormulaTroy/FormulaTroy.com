@@ -27,6 +27,8 @@ $(document).ready(function () {
   // table and graph containers to be able to be destroyed and recreated
   let activeDatatable = null;
   let activeRatingBarChart = null;
+  let showAllDrivers = false;
+  let inactiveDriverSearchFilter = null;
 
   // helper: return license column text data based on elo rating
   // use an average of the last 5 races for your license
@@ -773,14 +775,20 @@ $(document).ready(function () {
     }
 
     // custom DataTables search filter for inactive driver visibility
-    let showAllDrivers = false;
-    $.fn.dataTable.ext.search.push(
-      function (settings, data, dataIndex, rowData) {
-        if (showAllDrivers) return true;
-        // only active drivers by default
-        return rowData.visible !== 0;
-      }
-    );
+    showAllDrivers = false;
+    if (inactiveDriverSearchFilter) {
+      $.fn.dataTable.ext.search = $.fn.dataTable.ext.search.filter(function (searchFn) {
+        return searchFn !== inactiveDriverSearchFilter;
+      });
+    }
+
+    inactiveDriverSearchFilter = function (settings, data, dataIndex, rowData) {
+      if (showAllDrivers) return true;
+      // only active drivers by default
+      return rowData.visible !== 0;
+    };
+
+    $.fn.dataTable.ext.search.push(inactiveDriverSearchFilter);
 
     // use the json file to generate the datatables display
     activeDatatable = $('#cms-strat-table').DataTable({
