@@ -12,6 +12,7 @@
   if ($pageTitle == "CMS Driver Stratification") {
     echo '<link rel="stylesheet" href="/img/flag-icons/css/flag-icons.min.css">';
     echo '<link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">';
+    echo '<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">';
   }
   ?>
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />

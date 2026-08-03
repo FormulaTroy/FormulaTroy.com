@@ -464,9 +464,13 @@ $(document).ready(function () {
     // reset the modal html for the new driver
     $('#driverModalLabel').html(getFlag(driver.name) + " " + driver.name);
     $('#modalBody').empty();
-    let modalBodyHTML = '<div class="container-fluid"><h4><i class="bi bi-graph-up-arrow"></i> ' + currentTableMode + ' Rating Over Time</h4>';
+    let modalBodyHTML = '';
 
     // elo rating over time chart container
+    modalBodyHTML += '<div class="row align-items-center mb-2">';
+    modalBodyHTML += '<div class="col"><h4 class="m-0"><i class="bi bi-graph-up-arrow"></i> ' + currentTableMode + ' Rating Over Time</h4></div>';
+    modalBodyHTML += '<div class="col-auto"><button id="btn-toggle-history" class="btn btn-outline-primary btn-sm">Show Full History</button></div>';
+    modalBodyHTML += '</div>';
     modalBodyHTML += '<div class="row"><div class="col"><canvas id="driverEloOverTimeChart"></canvas></div></div>';
 
     // left side (rating and activity)
@@ -517,50 +521,6 @@ $(document).ready(function () {
 
     modalBodyHTML += '<p><strong>' + driver.avgFinishPos + '</strong> Avg. Finish</p>';
 
-    // modalBodyHTML += '<h4>Modern Class Eligibility</h4>';
-    // let licenseLevel = null;
-    // Licensed Results
-    // Copper (   0-1099)
-    // Bronze (1100-1199)
-    // Silver (1200-1349)
-    //   Gold (1350-1599)
-    //   Plat (1600+    )
-    // if (currentRating <= 1099) {
-    //   licenseLevel = 0; // copper
-    // } else if (currentRating <= 1199) {
-    //   licenseLevel = 1; // bronze
-    // } else if (currentRating <= 1349) {
-    //   licenseLevel = 2; // silver
-    // } else if (currentRating <= 1599) {
-    //   licenseLevel = 3; // gold
-    // } else {
-    //   licenseLevel = 4; // plat
-    // }
-
-    // class displays for each active series
-    // colors: red, blue, green, orange, cyan
-
-    // modalBodyHTML += '<h6>NARS Modern Sportscar Championship</h6>';
-    // modalBodyHTML += '<p>';
-    // if (licenseLevel == 4) {
-    //   modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
-    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
-    // } else if (licenseLevel == 3) {
-    //   modalBodyHTML += displayClassBadge("HyperCar Pro", "red");
-    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
-    //   modalBodyHTML += displayClassBadge("LMGT3 Pro", "green");
-    // } else if (licenseLevel == 2 || licenseLevel == 1) {
-    //   modalBodyHTML += displayClassBadge("HyperCar Am", "blue");
-    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
-    //   modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
-    // } else {
-    //   modalBodyHTML += displayClassBadge("LMP2", "cyan");
-    //   modalBodyHTML += displayClassBadge("LMGT3 Am", "orange");
-    // }
-    // modalBodyHTML += '</p>';
-
-    // modalBodyHTML += '</p><p>Anything not listed here, please check with the series admin.</p>';
-
     // write the results
     modalBodyHTML += '</div></div></div>';
     $('#modalBody').append(modalBodyHTML);
@@ -588,15 +548,46 @@ $(document).ready(function () {
       bronzeBreakpointActive = null;
     }
 
+    // slice data arrays to display the last 50 entries initially
+    const recentRaceAmount = 50;
+    let isShowingFullHistory = driver.date.length <= recentRaceAmount;
+
+    // helper function to extract dataset slices
+    function getChartData(showAll) {
+      if (showAll || driver.date.length <= recentRaceAmount) {
+        return {
+          dates: driver.date,
+          ratings: driver.rating,
+          finishPos: driver.finishPos,
+          totalCars: driver.totalCars
+        };
+      }
+      return {
+        dates: driver.date.slice(-recentRaceAmount),
+        ratings: driver.rating.slice(-recentRaceAmount),
+        finishPos: driver.finishPos.slice(-recentRaceAmount),
+        totalCars: driver.totalCars.slice(-recentRaceAmount)
+      };
+    }
+
+    let activeChartData = getChartData(isShowingFullHistory);
+
+    // hide toggle button if driver has 50 or fewer races overall
+    if (driver.date.length <= recentRaceAmount) {
+      $('#btn-toggle-history').hide();
+    } else {
+      $('#btn-toggle-history').text('Show Full History (' + driver.date.length + ' races)');
+    }
+
     let ctx = document.getElementById('driverEloOverTimeChart').getContext('2d');
     let driverEloOverTimeChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: driver.date,
+        labels: activeChartData.dates,
         datasets: [
           {
             label: 'Driver Rating',
-            data: driver.rating,
+            data: activeChartData.ratings,
             borderColor: 'rgba(54, 162, 235, 0.8)',
             fill: false,
             pointHoverRadius: 7,
@@ -604,7 +595,7 @@ $(document).ready(function () {
           },
           {
             label: 'Platinum Line',
-            data: driver.date.map(() => platinumBreakpointActive),
+            data: activeChartData.dates.map(() => platinumBreakpointActive),
             borderColor: 'rgba(203, 119, 228, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -613,7 +604,7 @@ $(document).ready(function () {
           },
           {
             label: 'Gold Line',
-            data: driver.date.map(() => goldBreakpointActive),
+            data: activeChartData.dates.map(() => goldBreakpointActive),
             borderColor: 'rgba(255, 217, 0, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -622,7 +613,7 @@ $(document).ready(function () {
           },
           {
             label: 'Silver Line',
-            data: driver.date.map(() => silverBreakpointActive),
+            data: activeChartData.dates.map(() => silverBreakpointActive),
             borderColor: 'rgba(255, 255, 255, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -631,7 +622,7 @@ $(document).ready(function () {
           },
           {
             label: 'Bronze Line',
-            data: driver.date.map(() => bronzeBreakpointActive),
+            data: activeChartData.dates.map(() => bronzeBreakpointActive),
             borderColor: 'rgba(219, 108, 18, 0.75)',
             borderWidth: 1,
             borderDash: [10, 10],
@@ -664,14 +655,12 @@ $(document).ready(function () {
                 if (label !== undefined) {
                   return 'Date: ' + label;
                 }
-
               },
               label: function (context) {
-
                 let index = context.dataIndex;
-                let rating = driver.rating[index];
-                let finishPos = driver.finishPos[index];
-                let totalCars = driver.totalCars[index];
+                let rating = activeChartData.ratings[index];
+                let finishPos = activeChartData.finishPos[index];
+                let totalCars = activeChartData.totalCars[index];
 
                 return [
                   'Rating: ' + rating,
@@ -684,6 +673,30 @@ $(document).ready(function () {
             }
           },
         }
+      }
+    });
+
+    // Event Handler: Expand / Collapse Rating History
+    $('#btn-toggle-history').off('click').on('click', function () {
+      isShowingFullHistory = !isShowingFullHistory;
+      activeChartData = getChartData(isShowingFullHistory);
+
+      // Update chart data arrays and dashed threshold lines
+      driverEloOverTimeChart.data.labels = activeChartData.dates;
+      driverEloOverTimeChart.data.datasets[0].data = activeChartData.ratings;
+      driverEloOverTimeChart.data.datasets[1].data = activeChartData.dates.map(() => platinumBreakpointActive);
+      driverEloOverTimeChart.data.datasets[2].data = activeChartData.dates.map(() => goldBreakpointActive);
+      driverEloOverTimeChart.data.datasets[3].data = activeChartData.dates.map(() => silverBreakpointActive);
+      driverEloOverTimeChart.data.datasets[4].data = activeChartData.dates.map(() => bronzeBreakpointActive);
+
+      // Redraw chart canvas
+      driverEloOverTimeChart.update();
+
+      // Toggle button text
+      if (isShowingFullHistory) {
+        $(this).text('Show Last 50 Races');
+      } else {
+        $(this).text('Show Full History (' + driver.date.length + ' races)');
       }
     });
   });
@@ -722,6 +735,34 @@ $(document).ready(function () {
 
     // use the json file to generate the datatables display
     activeDatatable = $('#cms-strat-table').DataTable({
+      dom: 'Bfrtip',
+      // export to excel / csv buttons
+      buttons: [
+        {
+          extend: 'excelHtml5',
+          text: '<i class="bi bi-file-earmark-excel"></i> Export to Excel',
+          className: 'btn btn-success btn-sm me-2',
+          exportOptions: {
+            // exclude the 'Flag' (index 0), 'Rating Change' (index 4) and 'Details' (index 10) columns from export
+            columns: [1, 2, 3, 5, 6, 7, 8, 9]
+          }
+        },
+        {
+          extend: 'csvHtml5',
+          text: '<i class="bi bi-file-earmark-csv"></i> Export to CSV',
+          className: 'btn btn-secondary btn-sm',
+          exportOptions: {
+            columns: [1, 2, 3, 5, 6, 7, 8, 9],
+            format: {
+              body: function (data, row, column, node) {
+                // remove HTML elements to output clean text for License/Rating change columns
+                return typeof data === 'string' ? data.replace(/<[^>]*>/g, '').trim() : data;
+              }
+            }
+          }
+        }
+      ],
+      // load the elo json file
       ajax: {
         url: jsonUrl,
         dataSrc: function (json) {
@@ -794,7 +835,6 @@ $(document).ready(function () {
           }
         }
       ],
-      //order: [[9, 'desc'], [3, 'desc']], // sort by date and then by rating (used for recent race screenshots)
       order: [[3, 'desc']], // sort by rating
       pageLength: 50,
       lengthMenu: [
