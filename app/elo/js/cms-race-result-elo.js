@@ -78,12 +78,32 @@ $(document).ready(function () {
       const categoryMatch = resultBlock.match(/RESULT: (.+?) =============\n/);
       if (categoryMatch) {
         const category = categoryMatch[1].trim();
-        const extractedDrivers = resultBlock
+        const rawDriverLines = resultBlock
           .split("=============\n")[1]
           .trim()
           .split("\n")
           .map(driver => driver.trim())
           .filter(driver => driver !== "");
+
+        const extractedDrivers = rawDriverLines.map((line, index) => {
+          // Check for "Driver Name (FinishPosition/TotalDrivers)" pattern, else standard ordering
+          const manualMatch = line.match(/^(.+?)\s*\(\s*(\d+)\s*\/\s*(\d+)\s*\)$/);
+          if (manualMatch) {
+            return {
+              name: manualMatch[1].trim(),
+              finishPos: parseInt(manualMatch[2], 10),
+              totalCars: parseInt(manualMatch[3], 10),
+              isManual: true
+            };
+          } else {
+            return {
+              name: line,
+              finishPos: index + 1,
+              totalCars: rawDriverLines.length,
+              isManual: false
+            };
+          }
+        });
 
         results.push({ date: date, category: category, drivers: extractedDrivers });
       }
@@ -173,23 +193,36 @@ $(document).ready(function () {
     // loop over each race->class result
     $.each(individualRaceResults, function (index, resultBlock) {
       const raceResults = resultBlock.drivers;
-      const driversInClass = resultBlock.drivers.length;
       let rawDate = resultBlock.date;
       let raceDate = rawDate.substring(rawDate.lastIndexOf(":") + 2).trim();
 
-      $.each(raceResults, function (driverIndex, driverLine) {
-        const driverName = driverLine.trim();
-        if (driverName === "") return true;
+      $.each(raceResults, function (driverIndex, driverData) {
+        const driverName = driverData.name;
+        if (!driverName) return true;
 
         let currentDriver = findDriverByName(driverName);
+        let postRaceDriverObj = findPostRaceDriverByName(currentDriver.name.toString());
+
+        // Bypasses Elo calculations for manually entered entries
+        if (driverData.isManual) {
+          postRaceDriverObj.racesHistory.push({
+            date: raceDate,
+            rating: postRaceDriverObj.rating !== undefined ? postRaceDriverObj.rating : 1000,
+            finishPos: driverData.finishPos,
+            totalCars: driverData.totalCars
+          });
+          return true;
+        }
+
         let expectedResultsForRace = [];
         let actualResultsForRace = [];
 
-        $.each(raceResults, function (compareIndex, opponentLine) {
-          const opponentDriverName = opponentLine.trim();
+        $.each(raceResults, function (compareIndex, opponentData) {
+          if (opponentData.isManual) return true;
+          const opponentDriverName = opponentData.name;
 
           // Skip self comparison
-          if (compareIndex === driverIndex || opponentDriverName === "") {
+          if (compareIndex === driverIndex || !opponentDriverName) {
             return true;
           }
 
@@ -211,11 +244,9 @@ $(document).ready(function () {
           return false;
         }
 
-        let postRaceDriverObj = findPostRaceDriverByName(currentDriver.name.toString());
-
         if (postRaceDriverObj._currentRace) {
-          postRaceDriverObj._currentRace.finishPos = driverIndex + 1;
-          postRaceDriverObj._currentRace.totalCars = driversInClass;
+          postRaceDriverObj._currentRace.finishPos = driverData.finishPos;
+          postRaceDriverObj._currentRace.totalCars = driverData.totalCars;
 
           postRaceDriverObj.racesHistory.push(postRaceDriverObj._currentRace);
           delete postRaceDriverObj._currentRace;
@@ -237,7 +268,7 @@ $(document).ready(function () {
       }
 
       let sumOfFinishingPositions = history.reduce((sum, race) => sum + race.finishPos, 0);
-      postRaceDriver.avgFinishPos = (sumOfFinishingPositions / history.length).toFixed(1);
+      postRaceDriver.avgFinishPos = parseFloat((sumOfFinishingPositions / history.length).toFixed(1));
 
       const lastRace = history[history.length - 1];
       const lastRaceDateParts = lastRace.date.split('/');
@@ -279,7 +310,7 @@ $(document).ready(function () {
       "troy_uyan": {
         "name": "Troy Uyan",
         "rating": 1000,
-        "avgFinishPos": "0.0",
+        "avgFinishPos": 0,
         "active": 0,
         "visible": 1,
         "racesHistory": []

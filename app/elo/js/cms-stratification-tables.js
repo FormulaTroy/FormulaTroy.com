@@ -502,6 +502,8 @@ $(document).ready(function () {
     // activity data
     if (driver.active == 1) {
       modalBodyHTML += '<p><strong>Status:</strong> <span class="arrow-green">Active</span></p>';
+    } else if (driver.visible === 1) {
+      modalBodyHTML += '<p><strong>Status:</strong> <span class="">Recently Active</span></p>';
     } else {
       modalBodyHTML += '<p><strong>Status:</strong> <span class="arrow-red">Inactive</span></p>';
     }

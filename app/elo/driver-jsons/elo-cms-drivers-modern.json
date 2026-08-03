@@ -2,7 +2,7 @@
   "troy_uyan": {
     "name": "Troy Uyan",
     "rating": 1264,
-    "avgFinishPos": "4.7",
+    "avgFinishPos": 4.6,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -365,13 +365,19 @@
         "rating": 1264,
         "finishPos": 7,
         "totalCars": 14
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1264,
+        "finishPos": 4,
+        "totalCars": 10
       }
     ]
   },
   "eduardo_beninca": {
     "name": "Eduardo Beninca",
     "rating": 1272,
-    "avgFinishPos": "4.3",
+    "avgFinishPos": 4.3,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -890,7 +896,7 @@
   "george_angelidis": {
     "name": "George Angelidis",
     "rating": 996,
-    "avgFinishPos": "10.2",
+    "avgFinishPos": 10.1,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -1229,13 +1235,19 @@
         "rating": 996,
         "finishPos": 5,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 996,
+        "finishPos": 4,
+        "totalCars": 11
       }
     ]
   },
   "james_walker": {
     "name": "James Walker",
     "rating": 1183,
-    "avgFinishPos": "5.4",
+    "avgFinishPos": 5.4,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -1520,7 +1532,7 @@
   "erik_jacobs": {
     "name": "Erik Jacobs",
     "rating": 995,
-    "avgFinishPos": "9.4",
+    "avgFinishPos": 9.4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -2303,13 +2315,19 @@
         "rating": 995,
         "finishPos": 8,
         "totalCars": 16
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 995,
+        "finishPos": 8,
+        "totalCars": 10
       }
     ]
   },
   "zander_tallman": {
     "name": "Zander Tallman",
     "rating": 1016,
-    "avgFinishPos": "6.8",
+    "avgFinishPos": 6.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -2348,7 +2366,7 @@
   "david_anderson": {
     "name": "David Anderson",
     "rating": 934,
-    "avgFinishPos": "11.2",
+    "avgFinishPos": 11.2,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -2597,7 +2615,7 @@
   "thomas_dilibero": {
     "name": "Thomas DiLibero",
     "rating": 990,
-    "avgFinishPos": "8.7",
+    "avgFinishPos": 8.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -2642,7 +2660,7 @@
   "stuart_barge": {
     "name": "Stuart Barge",
     "rating": 876,
-    "avgFinishPos": "11.4",
+    "avgFinishPos": 11.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -2969,13 +2987,19 @@
         "rating": 876,
         "finishPos": 14,
         "totalCars": 14
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 876,
+        "finishPos": 5,
+        "totalCars": 10
       }
     ]
   },
   "paul_ibbotson": {
     "name": "Paul Ibbotson",
     "rating": 994,
-    "avgFinishPos": "9.7",
+    "avgFinishPos": 9.7,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -4022,7 +4046,7 @@
   "eugene_mazur": {
     "name": "Eugene Mazur",
     "rating": 1084,
-    "avgFinishPos": "10.5",
+    "avgFinishPos": 10.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -4475,7 +4499,7 @@
   "tom_nasella": {
     "name": "Tom Nasella",
     "rating": 615,
-    "avgFinishPos": "15.2",
+    "avgFinishPos": 15.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -5432,7 +5456,7 @@
   "tony_boynton": {
     "name": "Tony Boynton",
     "rating": 778,
-    "avgFinishPos": "15.9",
+    "avgFinishPos": 15.9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -5591,7 +5615,7 @@
   "morgan_mccalister": {
     "name": "Morgan McCalister",
     "rating": 991,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -5606,7 +5630,7 @@
   "chris_hamilton": {
     "name": "Chris Hamilton",
     "rating": 963,
-    "avgFinishPos": "20.3",
+    "avgFinishPos": 20.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -5633,7 +5657,7 @@
   "nicolas_cortes": {
     "name": "Nicolas Cortes",
     "rating": 965,
-    "avgFinishPos": "12.5",
+    "avgFinishPos": 12.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -5666,7 +5690,7 @@
   "jerry_hamilton": {
     "name": "Jerry Hamilton",
     "rating": 799,
-    "avgFinishPos": "13.9",
+    "avgFinishPos": 13.9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -5927,7 +5951,7 @@
   "bruce_hopkins": {
     "name": "Bruce Hopkins",
     "rating": 955,
-    "avgFinishPos": "12.2",
+    "avgFinishPos": 12.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -5966,7 +5990,7 @@
   "daniel_kirby": {
     "name": "Daniel Kirby",
     "rating": 1529,
-    "avgFinishPos": "2.7",
+    "avgFinishPos": 2.7,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -7223,15 +7247,21 @@
         "rating": 1529,
         "finishPos": 1,
         "totalCars": 14
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1529,
+        "finishPos": 2,
+        "totalCars": 10
       }
     ]
   },
   "ross_smith": {
     "name": "Ross Smith",
     "rating": 993,
-    "avgFinishPos": "8.5",
-    "active": 0,
-    "visible": 0,
+    "avgFinishPos": 8.5,
+    "active": 1,
+    "visible": 1,
     "racesHistory": [
       {
         "date": "2022/01/20",
@@ -7742,13 +7772,19 @@
         "rating": 993,
         "finishPos": 8,
         "totalCars": 9
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 993,
+        "finishPos": 7,
+        "totalCars": 10
       }
     ]
   },
   "colin_moore": {
     "name": "Colin Moore",
     "rating": 1005,
-    "avgFinishPos": "9.5",
+    "avgFinishPos": 9.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -7769,7 +7805,7 @@
   "jt_tami": {
     "name": "JT Tami",
     "rating": 1444,
-    "avgFinishPos": "3.2",
+    "avgFinishPos": 3.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -9284,13 +9320,19 @@
         "rating": 1444,
         "finishPos": 1,
         "totalCars": 7
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1444,
+        "finishPos": 3,
+        "totalCars": 10
       }
     ]
   },
   "sahil_mustac": {
     "name": "Sahil Mustac",
     "rating": 1044,
-    "avgFinishPos": "5.9",
+    "avgFinishPos": 5.9,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -9395,7 +9437,7 @@
   "ben_boorman": {
     "name": "Ben Boorman",
     "rating": 1035,
-    "avgFinishPos": "8.7",
+    "avgFinishPos": 8.6,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -9554,13 +9596,19 @@
         "rating": 1035,
         "finishPos": 21,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1035,
+        "finishPos": 6,
+        "totalCars": 11
       }
     ]
   },
   "kyle_vesa": {
     "name": "Kyle Vesa",
     "rating": 1106,
-    "avgFinishPos": "5.3",
+    "avgFinishPos": 5.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -9629,7 +9677,7 @@
   "john_maher": {
     "name": "John Maher",
     "rating": 1056,
-    "avgFinishPos": "9.0",
+    "avgFinishPos": 9,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -10718,7 +10766,7 @@
   "brian_hall": {
     "name": "Brian Hall",
     "rating": 1032,
-    "avgFinishPos": "7.2",
+    "avgFinishPos": 7.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -11585,7 +11633,7 @@
   "matthew_overton": {
     "name": "Matthew Overton",
     "rating": 944,
-    "avgFinishPos": "9.3",
+    "avgFinishPos": 9.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -12878,13 +12926,19 @@
         "rating": 944,
         "finishPos": 13,
         "totalCars": 16
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 944,
+        "finishPos": 5,
+        "totalCars": 10
       }
     ]
   },
   "wayne_galvan": {
     "name": "Wayne Galvan",
     "rating": 1017,
-    "avgFinishPos": "10.5",
+    "avgFinishPos": 10.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -12989,7 +13043,7 @@
   "tom_aiken": {
     "name": "Tom Aiken",
     "rating": 1000,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -13004,7 +13058,7 @@
   "guilherme_bencke": {
     "name": "Guilherme Bencke",
     "rating": 864,
-    "avgFinishPos": "14.2",
+    "avgFinishPos": 14.2,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -13229,7 +13283,7 @@
   "jerry_chen": {
     "name": "Jerry Chen",
     "rating": 1028,
-    "avgFinishPos": "8.8",
+    "avgFinishPos": 8.7,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -13934,13 +13988,19 @@
         "rating": 1028,
         "finishPos": 9,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1028,
+        "finishPos": 5,
+        "totalCars": 11
       }
     ]
   },
   "marcelo_vaz": {
     "name": "Marcelo Vaz",
     "rating": 993,
-    "avgFinishPos": "16.0",
+    "avgFinishPos": 16,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -13955,7 +14015,7 @@
   "jason_whited": {
     "name": "Jason Whited",
     "rating": 820,
-    "avgFinishPos": "12.9",
+    "avgFinishPos": 12.9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -14606,7 +14666,7 @@
   "norm_graf": {
     "name": "Norm Graf",
     "rating": 931,
-    "avgFinishPos": "9.0",
+    "avgFinishPos": 9,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -16061,7 +16121,7 @@
   "tom_mountjoy": {
     "name": "Tom Mountjoy",
     "rating": 891,
-    "avgFinishPos": "13.3",
+    "avgFinishPos": 13.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -16160,7 +16220,7 @@
   "abdelal_elbakhar": {
     "name": "Abdelal ElBakhar",
     "rating": 984,
-    "avgFinishPos": "20.0",
+    "avgFinishPos": 20,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -16175,7 +16235,7 @@
   "jon_uyan": {
     "name": "Jon Uyan",
     "rating": 1075,
-    "avgFinishPos": "7.3",
+    "avgFinishPos": 7.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -16718,13 +16778,19 @@
         "rating": 1075,
         "finishPos": 16,
         "totalCars": 16
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1075,
+        "finishPos": 2,
+        "totalCars": 10
       }
     ]
   },
   "rodger_gabryszak": {
     "name": "Rodger Gabryszak",
     "rating": 980,
-    "avgFinishPos": "22.0",
+    "avgFinishPos": 22,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -16739,7 +16805,7 @@
   "cameron_sansano": {
     "name": "Cameron Sansano",
     "rating": 966,
-    "avgFinishPos": "19.5",
+    "avgFinishPos": 19.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -16760,7 +16826,7 @@
   "gilles_lalonde": {
     "name": "Gilles Lalonde",
     "rating": 927,
-    "avgFinishPos": "9.7",
+    "avgFinishPos": 9.7,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -18395,13 +18461,19 @@
         "rating": 927,
         "finishPos": 3,
         "totalCars": 7
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 927,
+        "finishPos": 3,
+        "totalCars": 11
       }
     ]
   },
   "lanny_hall": {
     "name": "Lanny Hall",
     "rating": 883,
-    "avgFinishPos": "10.0",
+    "avgFinishPos": 10,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -18836,7 +18908,7 @@
   "stephen_miller": {
     "name": "Stephen Miller",
     "rating": 879,
-    "avgFinishPos": "10.6",
+    "avgFinishPos": 10.5,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -19319,13 +19391,19 @@
         "rating": 879,
         "finishPos": 9,
         "totalCars": 16
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 879,
+        "finishPos": 6,
+        "totalCars": 10
       }
     ]
   },
   "james_bowders": {
     "name": "James Bowders",
     "rating": 820,
-    "avgFinishPos": "12.2",
+    "avgFinishPos": 12.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -20264,7 +20342,7 @@
   "dan_minges": {
     "name": "Dan Minges",
     "rating": 992,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20279,7 +20357,7 @@
   "barry_dimarzo": {
     "name": "Barry Dimarzo",
     "rating": 1021,
-    "avgFinishPos": "8.2",
+    "avgFinishPos": 8.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20324,7 +20402,7 @@
   "brendan_mcveigh": {
     "name": "Brendan McVeigh",
     "rating": 1009,
-    "avgFinishPos": "9.0",
+    "avgFinishPos": 9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20375,7 +20453,7 @@
   "rick_hendriksen": {
     "name": "Rick Hendriksen",
     "rating": 986,
-    "avgFinishPos": "15.0",
+    "avgFinishPos": 15,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20390,7 +20468,7 @@
   "ahmed_abdalla": {
     "name": "Ahmed Abdalla",
     "rating": 1045,
-    "avgFinishPos": "1.0",
+    "avgFinishPos": 1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20411,7 +20489,7 @@
   "don_fryman": {
     "name": "Don Fryman",
     "rating": 987,
-    "avgFinishPos": "10.7",
+    "avgFinishPos": 10.7,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -20564,7 +20642,7 @@
   "wes_deir": {
     "name": "Wes Deir",
     "rating": 981,
-    "avgFinishPos": "11.3",
+    "avgFinishPos": 11.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20591,7 +20669,7 @@
   "chris_brew": {
     "name": "Chris Brew",
     "rating": 1042,
-    "avgFinishPos": "3.4",
+    "avgFinishPos": 3.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20630,7 +20708,7 @@
   "steve_carman": {
     "name": "Steve Carman",
     "rating": 993,
-    "avgFinishPos": "10.0",
+    "avgFinishPos": 10,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20645,7 +20723,7 @@
   "ernest_bernaldo": {
     "name": "Ernest Bernaldo",
     "rating": 1011,
-    "avgFinishPos": "12.3",
+    "avgFinishPos": 12.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20708,7 +20786,7 @@
   "maciej_kasprzyk": {
     "name": "Maciej Kasprzyk",
     "rating": 1009,
-    "avgFinishPos": "4.0",
+    "avgFinishPos": 4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20723,7 +20801,7 @@
   "vinicius_de_oliveira": {
     "name": "Vinicius de Oliveira",
     "rating": 945,
-    "avgFinishPos": "11.6",
+    "avgFinishPos": 11.6,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -20900,7 +20978,7 @@
   "francisco_costa": {
     "name": "Francisco Costa",
     "rating": 965,
-    "avgFinishPos": "15.0",
+    "avgFinishPos": 15,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -20927,7 +21005,7 @@
   "elisio_netto": {
     "name": "Elisio Netto",
     "rating": 1096,
-    "avgFinishPos": "4.8",
+    "avgFinishPos": 4.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21008,7 +21086,7 @@
   "vinicius_goncalves": {
     "name": "Vinicius Goncalves",
     "rating": 965,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 12.9,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -21293,13 +21371,19 @@
         "rating": 965,
         "finishPos": 10,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 965,
+        "finishPos": 8,
+        "totalCars": 11
       }
     ]
   },
   "luca_gray": {
     "name": "Luca Gray",
     "rating": 1015,
-    "avgFinishPos": "1.0",
+    "avgFinishPos": 1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21314,7 +21398,7 @@
   "bob_roberson": {
     "name": "Bob Roberson",
     "rating": 988,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21329,7 +21413,7 @@
   "matheus_falabretti": {
     "name": "Matheus Falabretti",
     "rating": 993,
-    "avgFinishPos": "11.0",
+    "avgFinishPos": 11,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21344,7 +21428,7 @@
   "otavio_barros": {
     "name": "Otavio Barros",
     "rating": 983,
-    "avgFinishPos": "10.5",
+    "avgFinishPos": 10.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21365,7 +21449,7 @@
   "filipe_barreto": {
     "name": "Filipe Barreto",
     "rating": 989,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21380,7 +21464,7 @@
   "salvatore_pastore": {
     "name": "Salvatore Pastore",
     "rating": 987,
-    "avgFinishPos": "14.0",
+    "avgFinishPos": 14,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21395,7 +21479,7 @@
   "nicola_pastore": {
     "name": "Nicola Pastore",
     "rating": 1015,
-    "avgFinishPos": "1.0",
+    "avgFinishPos": 1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21410,7 +21494,7 @@
   "giuseppe_pastore": {
     "name": "Giuseppe Pastore",
     "rating": 985,
-    "avgFinishPos": "14.0",
+    "avgFinishPos": 14,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21425,7 +21509,7 @@
   "pedro_crulas_gomes": {
     "name": "Pedro Crulas Gomes",
     "rating": 891,
-    "avgFinishPos": "12.9",
+    "avgFinishPos": 12.9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21548,7 +21632,7 @@
   "jamie_zolecki": {
     "name": "Jamie Zolecki",
     "rating": 971,
-    "avgFinishPos": "10.9",
+    "avgFinishPos": 10.9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21749,7 +21833,7 @@
   "tiago_lopes": {
     "name": "Tiago Lopes",
     "rating": 969,
-    "avgFinishPos": "9.6",
+    "avgFinishPos": 9.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21818,7 +21902,7 @@
   "adrian_rice": {
     "name": "Adrian Rice",
     "rating": 982,
-    "avgFinishPos": "10.5",
+    "avgFinishPos": 10.5,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -22061,7 +22145,7 @@
   "phillip_stocks": {
     "name": "Phillip Stocks",
     "rating": 913,
-    "avgFinishPos": "16.1",
+    "avgFinishPos": 16.1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22118,7 +22202,7 @@
   "dave_cours": {
     "name": "Dave Cours",
     "rating": 981,
-    "avgFinishPos": "12.2",
+    "avgFinishPos": 12.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22235,7 +22319,7 @@
   "kris_hudson": {
     "name": "Kris Hudson",
     "rating": 964,
-    "avgFinishPos": "19.0",
+    "avgFinishPos": 19,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22262,7 +22346,7 @@
   "jose_florez": {
     "name": "Jose Florez",
     "rating": 1012,
-    "avgFinishPos": "11.7",
+    "avgFinishPos": 11.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22289,7 +22373,7 @@
   "philippe_dicartti": {
     "name": "Philippe Dicartti",
     "rating": 766,
-    "avgFinishPos": "15.9",
+    "avgFinishPos": 15.9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22568,7 +22652,7 @@
   "william_miller": {
     "name": "William Miller",
     "rating": 903,
-    "avgFinishPos": "19.3",
+    "avgFinishPos": 19.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22619,7 +22703,7 @@
   "joaquin_coudriet": {
     "name": "Joaquin Coudriet",
     "rating": 994,
-    "avgFinishPos": "10.6",
+    "avgFinishPos": 10.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22658,7 +22742,7 @@
   "pete_holm": {
     "name": "Pete Holm",
     "rating": 985,
-    "avgFinishPos": "18.0",
+    "avgFinishPos": 18,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22673,7 +22757,7 @@
   "joe_miller": {
     "name": "Joe Miller",
     "rating": 996,
-    "avgFinishPos": "9.0",
+    "avgFinishPos": 9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22688,7 +22772,7 @@
   "johnny_gutierrez": {
     "name": "Johnny Gutierrez",
     "rating": 1276,
-    "avgFinishPos": "4.6",
+    "avgFinishPos": 4.6,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -23573,13 +23657,19 @@
         "rating": 1276,
         "finishPos": 3,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1276,
+        "finishPos": 3,
+        "totalCars": 11
       }
     ]
   },
   "josh_mcglinsky": {
     "name": "Josh McGlinsky",
     "rating": 998,
-    "avgFinishPos": "10.3",
+    "avgFinishPos": 10.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -23696,7 +23786,7 @@
   "alec_king": {
     "name": "Alec King",
     "rating": 1158,
-    "avgFinishPos": "3.7",
+    "avgFinishPos": 3.7,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -23957,7 +24047,7 @@
   "salvador_santolucito": {
     "name": "Salvador Santolucito",
     "rating": 961,
-    "avgFinishPos": "9.2",
+    "avgFinishPos": 9.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -24002,7 +24092,7 @@
   "aiden_coleman": {
     "name": "Aiden Coleman",
     "rating": 970,
-    "avgFinishPos": "17.5",
+    "avgFinishPos": 17.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -24023,7 +24113,7 @@
   "nathaniel_davis": {
     "name": "Nathaniel Davis",
     "rating": 937,
-    "avgFinishPos": "15.8",
+    "avgFinishPos": 15.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -24062,7 +24152,7 @@
   "luciano_ichazo": {
     "name": "Luciano Ichazo",
     "rating": 1055,
-    "avgFinishPos": "7.1",
+    "avgFinishPos": 7.1,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -24245,7 +24335,7 @@
   "mack_sunthonlap": {
     "name": "Mack Sunthonlap",
     "rating": 983,
-    "avgFinishPos": "9.8",
+    "avgFinishPos": 9.8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -25286,7 +25376,7 @@
   "sean_kelly": {
     "name": "Sean Kelly",
     "rating": 701,
-    "avgFinishPos": "15.9",
+    "avgFinishPos": 15.9,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -25877,7 +25967,7 @@
   "ken_scott": {
     "name": "Ken Scott",
     "rating": 899,
-    "avgFinishPos": "15.8",
+    "avgFinishPos": 15.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -25934,7 +26024,7 @@
   "mike_olson": {
     "name": "Mike Olson",
     "rating": 905,
-    "avgFinishPos": "14.5",
+    "avgFinishPos": 14.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26015,7 +26105,7 @@
   "mia_rose": {
     "name": "Mia Rose",
     "rating": 1080,
-    "avgFinishPos": "2.4",
+    "avgFinishPos": 2.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26054,7 +26144,7 @@
   "chivan_ballou": {
     "name": "Chivan Ballou",
     "rating": 1075,
-    "avgFinishPos": "6.7",
+    "avgFinishPos": 6.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26129,7 +26219,7 @@
   "gino_bardelli": {
     "name": "Gino Bardelli",
     "rating": 920,
-    "avgFinishPos": "18.0",
+    "avgFinishPos": 18,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26222,7 +26312,7 @@
   "colin_blackman": {
     "name": "Colin Blackman",
     "rating": 1002,
-    "avgFinishPos": "9.3",
+    "avgFinishPos": 9.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26387,7 +26477,7 @@
   "diego_rodrigues": {
     "name": "Diego Rodrigues",
     "rating": 916,
-    "avgFinishPos": "12.1",
+    "avgFinishPos": 12.1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26510,7 +26600,7 @@
   "gui_cevert": {
     "name": "Gui Cevert",
     "rating": 981,
-    "avgFinishPos": "15.5",
+    "avgFinishPos": 15.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26531,7 +26621,7 @@
   "michael_wojcik": {
     "name": "Michael Wojcik",
     "rating": 981,
-    "avgFinishPos": "19.0",
+    "avgFinishPos": 19,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26546,7 +26636,7 @@
   "franco_alvarez": {
     "name": "Franco Alvarez",
     "rating": 1114,
-    "avgFinishPos": "5.8",
+    "avgFinishPos": 5.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26651,7 +26741,7 @@
   "doug_adhikari": {
     "name": "Doug Adhikari",
     "rating": 992,
-    "avgFinishPos": "10.7",
+    "avgFinishPos": 10.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26702,7 +26792,7 @@
   "elyess_bouzouita": {
     "name": "Elyess Bouzouita",
     "rating": 983,
-    "avgFinishPos": "17.0",
+    "avgFinishPos": 17,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -26717,7 +26807,7 @@
   "mike_bell": {
     "name": "Mike Bell",
     "rating": 1210,
-    "avgFinishPos": "5.1",
+    "avgFinishPos": 5.1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -27008,7 +27098,7 @@
   "jeffrey_elliss": {
     "name": "Jeffrey Elliss",
     "rating": 1001,
-    "avgFinishPos": "6.8",
+    "avgFinishPos": 6.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -27089,7 +27179,7 @@
   "cole_mcmillan": {
     "name": "Cole McMillan",
     "rating": 894,
-    "avgFinishPos": "13.6",
+    "avgFinishPos": 13.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -27218,7 +27308,7 @@
   "karl_strouhal": {
     "name": "Karl Strouhal",
     "rating": 823,
-    "avgFinishPos": "11.0",
+    "avgFinishPos": 11,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -28439,7 +28529,7 @@
   "brendan_warner": {
     "name": "Brendan Warner",
     "rating": 963,
-    "avgFinishPos": "13.6",
+    "avgFinishPos": 13.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -28478,7 +28568,7 @@
   "becky_ely-clark": {
     "name": "Becky Ely-Clark",
     "rating": 1146,
-    "avgFinishPos": "3.7",
+    "avgFinishPos": 3.7,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -28577,7 +28667,7 @@
   "joe_falls": {
     "name": "Joe Falls",
     "rating": 933,
-    "avgFinishPos": "11.5",
+    "avgFinishPos": 11.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -28664,7 +28754,7 @@
   "matheus_santos": {
     "name": "Matheus Santos",
     "rating": 1175,
-    "avgFinishPos": "6.2",
+    "avgFinishPos": 6.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -28769,7 +28859,7 @@
   "jean_urena": {
     "name": "Jean Urena",
     "rating": 1011,
-    "avgFinishPos": "6.8",
+    "avgFinishPos": 6.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -28802,7 +28892,7 @@
   "nick_schuetz": {
     "name": "Nick Schuetz",
     "rating": 852,
-    "avgFinishPos": "20.2",
+    "avgFinishPos": 20.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -28871,7 +28961,7 @@
   "lubos_rosolanka": {
     "name": "Lubos Rosolanka",
     "rating": 985,
-    "avgFinishPos": "12.5",
+    "avgFinishPos": 12.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -28892,7 +28982,7 @@
   "micah_locke": {
     "name": "Micah Locke",
     "rating": 1224,
-    "avgFinishPos": "6.4",
+    "avgFinishPos": 6.4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -29717,13 +29807,19 @@
         "rating": 1224,
         "finishPos": 1,
         "totalCars": 16
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1224,
+        "finishPos": 1,
+        "totalCars": 11
       }
     ]
   },
   "marty_turner": {
     "name": "Marty Turner",
     "rating": 976,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -29744,7 +29840,7 @@
   "josh_lipetri": {
     "name": "Josh Lipetri",
     "rating": 927,
-    "avgFinishPos": "15.1",
+    "avgFinishPos": 15.1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -29921,7 +30017,7 @@
   "tom_lane": {
     "name": "Tom Lane",
     "rating": 1189,
-    "avgFinishPos": "7.1",
+    "avgFinishPos": 6.9,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -30056,13 +30152,19 @@
         "rating": 1189,
         "finishPos": 1,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1189,
+        "finishPos": 2,
+        "totalCars": 11
       }
     ]
   },
   "magnus_dahlgren": {
     "name": "Magnus Dahlgren",
     "rating": 1252,
-    "avgFinishPos": "6.3",
+    "avgFinishPos": 6.4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -30239,13 +30341,19 @@
         "rating": 1252,
         "finishPos": 2,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1252,
+        "finishPos": 11,
+        "totalCars": 11
       }
     ]
   },
   "timon_soovik": {
     "name": "Timon Soovik",
     "rating": 1170,
-    "avgFinishPos": "8.1",
+    "avgFinishPos": 8.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -30416,13 +30524,19 @@
         "rating": 1170,
         "finishPos": 18,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1170,
+        "finishPos": 11,
+        "totalCars": 11
       }
     ]
   },
   "wouter_de_bruijn": {
     "name": "Wouter de Bruijn",
     "rating": 1152,
-    "avgFinishPos": "6.6",
+    "avgFinishPos": 6.6,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -30611,7 +30725,7 @@
   "wayne_hutchison": {
     "name": "Wayne Hutchison",
     "rating": 978,
-    "avgFinishPos": "15.4",
+    "avgFinishPos": 15.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -30650,8 +30764,8 @@
   "eric_moinet": {
     "name": "Eric Moinet",
     "rating": 895,
-    "avgFinishPos": "17.0",
-    "active": 0,
+    "avgFinishPos": 16.5,
+    "active": 1,
     "visible": 1,
     "racesHistory": [
       {
@@ -30797,13 +30911,19 @@
         "rating": 895,
         "finishPos": 21,
         "totalCars": 27
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 895,
+        "finishPos": 5,
+        "totalCars": 11
       }
     ]
   },
   "louie_hesketh": {
     "name": "Louie Hesketh",
     "rating": 978,
-    "avgFinishPos": "16.0",
+    "avgFinishPos": 16,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -30824,7 +30944,7 @@
   "benjamin_porteous-heath": {
     "name": "Benjamin Porteous-Heath",
     "rating": 881,
-    "avgFinishPos": "19.4",
+    "avgFinishPos": 19.4,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -30911,7 +31031,7 @@
   "brandon_gant": {
     "name": "Brandon Gant",
     "rating": 1021,
-    "avgFinishPos": "8.4",
+    "avgFinishPos": 8.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -30950,7 +31070,7 @@
   "matthew_marlow": {
     "name": "Matthew Marlow",
     "rating": 1011,
-    "avgFinishPos": "4.0",
+    "avgFinishPos": 4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -30965,7 +31085,7 @@
   "alain_le_francois": {
     "name": "Alain Le Francois",
     "rating": 1010,
-    "avgFinishPos": "8.0",
+    "avgFinishPos": 8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -30992,7 +31112,7 @@
   "matthew_buice": {
     "name": "Matthew Buice",
     "rating": 935,
-    "avgFinishPos": "14.0",
+    "avgFinishPos": 13.8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -31133,13 +31253,19 @@
         "rating": 935,
         "finishPos": 19,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 935,
+        "finishPos": 10,
+        "totalCars": 11
       }
     ]
   },
   "craig_pullen": {
     "name": "Craig Pullen",
     "rating": 907,
-    "avgFinishPos": "15.8",
+    "avgFinishPos": 15.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -31226,8 +31352,8 @@
   "peter_meier": {
     "name": "Peter Meier",
     "rating": 981,
-    "avgFinishPos": "9.3",
-    "active": 0,
+    "avgFinishPos": 9.3,
+    "active": 1,
     "visible": 1,
     "racesHistory": [
       {
@@ -31343,13 +31469,19 @@
         "rating": 981,
         "finishPos": 10,
         "totalCars": 15
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 981,
+        "finishPos": 9,
+        "totalCars": 10
       }
     ]
   },
   "w._mike_buice": {
     "name": "W. Mike Buice",
     "rating": 878,
-    "avgFinishPos": "15.8",
+    "avgFinishPos": 15.8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -31496,8 +31628,8 @@
   "adam_gray": {
     "name": "Adam Gray",
     "rating": 900,
-    "avgFinishPos": "13.4",
-    "active": 0,
+    "avgFinishPos": 13,
+    "active": 1,
     "visible": 1,
     "racesHistory": [
       {
@@ -31619,13 +31751,19 @@
         "rating": 900,
         "finishPos": 5,
         "totalCars": 9
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 900,
+        "finishPos": 6,
+        "totalCars": 10
       }
     ]
   },
   "adam_baldwin": {
     "name": "Adam Baldwin",
     "rating": 1301,
-    "avgFinishPos": "1.9",
+    "avgFinishPos": 1.9,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -31754,7 +31892,7 @@
   "eric_schmieder": {
     "name": "Eric Schmieder",
     "rating": 1136,
-    "avgFinishPos": "5.7",
+    "avgFinishPos": 5.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -31817,7 +31955,7 @@
   "caetano_paiva": {
     "name": "Caetano Paiva",
     "rating": 1010,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -31838,7 +31976,7 @@
   "oliver_day": {
     "name": "Oliver Day",
     "rating": 929,
-    "avgFinishPos": "11.0",
+    "avgFinishPos": 11,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -32255,7 +32393,7 @@
   "daniel_faas": {
     "name": "Daniel Faas",
     "rating": 1001,
-    "avgFinishPos": "10.9",
+    "avgFinishPos": 10.9,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -32450,7 +32588,7 @@
   "hayden_calnan": {
     "name": "Hayden Calnan",
     "rating": 1074,
-    "avgFinishPos": "7.4",
+    "avgFinishPos": 7.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -32543,7 +32681,7 @@
   "darrel_kruger": {
     "name": "Darrel Kruger",
     "rating": 867,
-    "avgFinishPos": "13.3",
+    "avgFinishPos": 13.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -32840,13 +32978,19 @@
         "rating": 867,
         "finishPos": 6,
         "totalCars": 16
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 867,
+        "finishPos": 7,
+        "totalCars": 10
       }
     ]
   },
   "rodrigo_beltrame": {
     "name": "Rodrigo Beltrame",
     "rating": 988,
-    "avgFinishPos": "19.0",
+    "avgFinishPos": 19,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -32867,7 +33011,7 @@
   "ayrton_de_lima": {
     "name": "Ayrton de Lima",
     "rating": 947,
-    "avgFinishPos": "28.0",
+    "avgFinishPos": 28,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -32888,7 +33032,7 @@
   "craig_gallagher": {
     "name": "Craig Gallagher",
     "rating": 786,
-    "avgFinishPos": "18.8",
+    "avgFinishPos": 18.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33023,7 +33167,7 @@
   "tommy_teasdale": {
     "name": "Tommy Teasdale",
     "rating": 1240,
-    "avgFinishPos": "5.6",
+    "avgFinishPos": 5.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33308,9 +33452,9 @@
   "yuki_takanashi": {
     "name": "Yuki Takanashi",
     "rating": 1015,
-    "avgFinishPos": "10.2",
-    "active": 0,
-    "visible": 0,
+    "avgFinishPos": 8.7,
+    "active": 1,
+    "visible": 1,
     "racesHistory": [
       {
         "date": "2023/09/23",
@@ -33341,13 +33485,19 @@
         "rating": 1015,
         "finishPos": 17,
         "totalCars": 26
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1015,
+        "finishPos": 1,
+        "totalCars": 10
       }
     ]
   },
   "daniel_doig": {
     "name": "Daniel Doig",
     "rating": 996,
-    "avgFinishPos": "10.7",
+    "avgFinishPos": 10.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33374,7 +33524,7 @@
   "vasilis_katerinakis": {
     "name": "Vasilis Katerinakis",
     "rating": 951,
-    "avgFinishPos": "10.2",
+    "avgFinishPos": 10.1,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -33503,13 +33653,19 @@
         "rating": 951,
         "finishPos": 12,
         "totalCars": 14
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 951,
+        "finishPos": 8,
+        "totalCars": 10
       }
     ]
   },
   "sachin_sobers": {
     "name": "Sachin Sobers",
     "rating": 983,
-    "avgFinishPos": "16.0",
+    "avgFinishPos": 16,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33524,7 +33680,7 @@
   "danny_corriveau": {
     "name": "Danny Corriveau",
     "rating": 1011,
-    "avgFinishPos": "13.7",
+    "avgFinishPos": 13.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33575,7 +33731,7 @@
   "bruno_pagiola": {
     "name": "Bruno Pagiola",
     "rating": 966,
-    "avgFinishPos": "32.0",
+    "avgFinishPos": 32,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33590,7 +33746,7 @@
   "alexander_schulz": {
     "name": "Alexander Schulz",
     "rating": 995,
-    "avgFinishPos": "13.1",
+    "avgFinishPos": 13.1,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -33653,7 +33809,7 @@
   "kevan_torrance": {
     "name": "Kevan Torrance",
     "rating": 967,
-    "avgFinishPos": "15.7",
+    "avgFinishPos": 15.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33680,7 +33836,7 @@
   "roland_hagenaars": {
     "name": "Roland Hagenaars",
     "rating": 983,
-    "avgFinishPos": "19.0",
+    "avgFinishPos": 19,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33695,7 +33851,7 @@
   "jessy_monrose": {
     "name": "Jessy Monrose",
     "rating": 989,
-    "avgFinishPos": "13.5",
+    "avgFinishPos": 13.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33716,7 +33872,7 @@
   "oliver_newman": {
     "name": "Oliver Newman",
     "rating": 1003,
-    "avgFinishPos": "6.2",
+    "avgFinishPos": 6.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33827,7 +33983,7 @@
   "mihail_todoranov": {
     "name": "Mihail Todoranov",
     "rating": 923,
-    "avgFinishPos": "16.4",
+    "avgFinishPos": 16.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -33866,7 +34022,7 @@
   "alexander_mcquerry": {
     "name": "Alexander McQuerry",
     "rating": 991,
-    "avgFinishPos": "11.1",
+    "avgFinishPos": 11.1,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -34355,7 +34511,7 @@
   "tucker_martin": {
     "name": "Tucker Martin",
     "rating": 994,
-    "avgFinishPos": "8.0",
+    "avgFinishPos": 8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -34400,8 +34556,8 @@
   "ben_kesby": {
     "name": "Ben Kesby",
     "rating": 1322,
-    "avgFinishPos": "5.3",
-    "active": 0,
+    "avgFinishPos": 5.2,
+    "active": 1,
     "visible": 1,
     "racesHistory": [
       {
@@ -34931,13 +35087,19 @@
         "rating": 1322,
         "finishPos": 1,
         "totalCars": 7
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1322,
+        "finishPos": 1,
+        "totalCars": 11
       }
     ]
   },
   "angus_tong": {
     "name": "Angus Tong",
     "rating": 1012,
-    "avgFinishPos": "14.6",
+    "avgFinishPos": 14.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -34988,7 +35150,7 @@
   "don_hunter": {
     "name": "Don Hunter",
     "rating": 964,
-    "avgFinishPos": "17.5",
+    "avgFinishPos": 17.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35033,7 +35195,7 @@
   "michail_dinu": {
     "name": "Michail Dinu",
     "rating": 1059,
-    "avgFinishPos": "3.0",
+    "avgFinishPos": 3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35054,7 +35216,7 @@
   "cameron_barker": {
     "name": "Cameron Barker",
     "rating": 1204,
-    "avgFinishPos": "5.8",
+    "avgFinishPos": 5.8,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -35171,7 +35333,7 @@
   "tony_mcoffoven": {
     "name": "Tony McOffoven",
     "rating": 1024,
-    "avgFinishPos": "7.3",
+    "avgFinishPos": 7.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35204,7 +35366,7 @@
   "daniel_hurlock": {
     "name": "Daniel Hurlock",
     "rating": 1245,
-    "avgFinishPos": "4.7",
+    "avgFinishPos": 4.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35357,7 +35519,7 @@
   "luke_goodlife": {
     "name": "Luke Goodlife",
     "rating": 925,
-    "avgFinishPos": "18.1",
+    "avgFinishPos": 18.1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35414,7 +35576,7 @@
   "peter_stefani": {
     "name": "Peter Stefani",
     "rating": 957,
-    "avgFinishPos": "12.2",
+    "avgFinishPos": 12.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35459,7 +35621,7 @@
   "jascha_schmidt": {
     "name": "Jascha Schmidt",
     "rating": 955,
-    "avgFinishPos": "27.0",
+    "avgFinishPos": 27,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35480,7 +35642,7 @@
   "william_snowden": {
     "name": "William Snowden",
     "rating": 1024,
-    "avgFinishPos": "8.0",
+    "avgFinishPos": 8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -35519,8 +35681,8 @@
   "david_jundt": {
     "name": "David Jundt",
     "rating": 1198,
-    "avgFinishPos": "3.3",
-    "active": 0,
+    "avgFinishPos": 3.3,
+    "active": 1,
     "visible": 1,
     "racesHistory": [
       {
@@ -35678,13 +35840,19 @@
         "rating": 1198,
         "finishPos": 5,
         "totalCars": 15
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1198,
+        "finishPos": 3,
+        "totalCars": 10
       }
     ]
   },
   "joe_wilks": {
     "name": "Joe Wilks",
     "rating": 1003,
-    "avgFinishPos": "10.8",
+    "avgFinishPos": 10.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35717,7 +35885,7 @@
   "stephen_buice": {
     "name": "Stephen Buice",
     "rating": 967,
-    "avgFinishPos": "13.4",
+    "avgFinishPos": 13.4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -35810,7 +35978,7 @@
   "filippo_marazzi": {
     "name": "Filippo Marazzi",
     "rating": 977,
-    "avgFinishPos": "16.0",
+    "avgFinishPos": 16,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -35831,7 +35999,7 @@
   "stacie_scotts": {
     "name": "Stacie Scotts",
     "rating": 753,
-    "avgFinishPos": "16.3",
+    "avgFinishPos": 16.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -36014,7 +36182,7 @@
   "ryan-paulbert_reyes": {
     "name": "Ryan-Paulbert Reyes",
     "rating": 960,
-    "avgFinishPos": "10.5",
+    "avgFinishPos": 10.5,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -36431,13 +36599,19 @@
         "rating": 960,
         "finishPos": 23,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 960,
+        "finishPos": 10,
+        "totalCars": 10
       }
     ]
   },
   "scar_pope": {
     "name": "Scar Pope",
     "rating": 989,
-    "avgFinishPos": "8.6",
+    "avgFinishPos": 8.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -36794,7 +36968,7 @@
   "allen_holden": {
     "name": "Allen Holden",
     "rating": 1062,
-    "avgFinishPos": "7.3",
+    "avgFinishPos": 7.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -37103,7 +37277,7 @@
   "luke_mitchell": {
     "name": "Luke Mitchell",
     "rating": 1059,
-    "avgFinishPos": "10.3",
+    "avgFinishPos": 10.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -37148,7 +37322,7 @@
   "bradley_sellars": {
     "name": "Bradley Sellars",
     "rating": 1107,
-    "avgFinishPos": "5.6",
+    "avgFinishPos": 5.6,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -37253,7 +37427,7 @@
   "alexander_serraima": {
     "name": "Alexander Serraima",
     "rating": 998,
-    "avgFinishPos": "14.8",
+    "avgFinishPos": 14.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -37298,7 +37472,7 @@
   "robert_strachan": {
     "name": "Robert Strachan",
     "rating": 1025,
-    "avgFinishPos": "7.5",
+    "avgFinishPos": 7.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -37331,7 +37505,7 @@
   "senne_stofmeel": {
     "name": "Senne Stofmeel",
     "rating": 1026,
-    "avgFinishPos": "6.5",
+    "avgFinishPos": 6.5,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -37352,7 +37526,7 @@
   "jaroslav_zacek": {
     "name": "Jaroslav Zacek",
     "rating": 994,
-    "avgFinishPos": "19.0",
+    "avgFinishPos": 19,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -37367,7 +37541,7 @@
   "willian_schlichting": {
     "name": "Willian Schlichting",
     "rating": 1066,
-    "avgFinishPos": "7.0",
+    "avgFinishPos": 7,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -37676,7 +37850,7 @@
   "michael_mudge": {
     "name": "Michael Mudge",
     "rating": 990,
-    "avgFinishPos": "15.0",
+    "avgFinishPos": 15,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -37691,7 +37865,7 @@
   "ege_karabacak": {
     "name": "Ege Karabacak",
     "rating": 1142,
-    "avgFinishPos": "6.9",
+    "avgFinishPos": 6.9,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -37886,7 +38060,7 @@
   "kris_duhdum": {
     "name": "Kris Duhdum",
     "rating": 1056,
-    "avgFinishPos": "5.0",
+    "avgFinishPos": 5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -37919,7 +38093,7 @@
   "eelco_bussink": {
     "name": "Eelco Bussink",
     "rating": 1024,
-    "avgFinishPos": "6.1",
+    "avgFinishPos": 6.1,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -38000,7 +38174,7 @@
   "daniel_scott": {
     "name": "Daniel Scott",
     "rating": 939,
-    "avgFinishPos": "15.3",
+    "avgFinishPos": 15.3,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -38075,7 +38249,7 @@
   "pierre_moreno": {
     "name": "Pierre Moreno",
     "rating": 1003,
-    "avgFinishPos": "10.0",
+    "avgFinishPos": 10,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38114,7 +38288,7 @@
   "robin_moelling": {
     "name": "Robin Moelling",
     "rating": 1105,
-    "avgFinishPos": "7.5",
+    "avgFinishPos": 7.5,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -38219,7 +38393,7 @@
   "gagan_dev": {
     "name": "Gagan Dev",
     "rating": 961,
-    "avgFinishPos": "22.5",
+    "avgFinishPos": 22.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38240,7 +38414,7 @@
   "micah_doern": {
     "name": "Micah Doern",
     "rating": 1005,
-    "avgFinishPos": "8.7",
+    "avgFinishPos": 8.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38285,7 +38459,7 @@
   "escofil_sanfre": {
     "name": "Escofil Sanfre",
     "rating": 990,
-    "avgFinishPos": "18.0",
+    "avgFinishPos": 18,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38300,7 +38474,7 @@
   "tom_valladou": {
     "name": "Tom Valladou",
     "rating": 998,
-    "avgFinishPos": "13.0",
+    "avgFinishPos": 13,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38315,7 +38489,7 @@
   "alexandre_arraes": {
     "name": "Alexandre Arraes",
     "rating": 1002,
-    "avgFinishPos": "8.0",
+    "avgFinishPos": 8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38330,8 +38504,8 @@
   "maximilian_putrafki": {
     "name": "Maximilian Putrafki",
     "rating": 970,
-    "avgFinishPos": "13.4",
-    "active": 0,
+    "avgFinishPos": 12.3,
+    "active": 1,
     "visible": 1,
     "racesHistory": [
       {
@@ -38363,13 +38537,19 @@
         "rating": 970,
         "finishPos": 6,
         "totalCars": 15
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 970,
+        "finishPos": 7,
+        "totalCars": 10
       }
     ]
   },
   "david_baca_celedon": {
     "name": "David Baca Celedon",
     "rating": 995,
-    "avgFinishPos": "8.0",
+    "avgFinishPos": 8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38390,7 +38570,7 @@
   "shawn_erik": {
     "name": "Shawn Erik",
     "rating": 1084,
-    "avgFinishPos": "6.8",
+    "avgFinishPos": 6.8,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -38627,7 +38807,7 @@
   "oscar_dancourt": {
     "name": "Oscar Dancourt",
     "rating": 956,
-    "avgFinishPos": "7.1",
+    "avgFinishPos": 7.1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38684,7 +38864,7 @@
   "stephen_wenham": {
     "name": "Stephen Wenham",
     "rating": 988,
-    "avgFinishPos": "5.7",
+    "avgFinishPos": 5.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38711,7 +38891,7 @@
   "jonathan_ethier": {
     "name": "Jonathan Ethier",
     "rating": 1112,
-    "avgFinishPos": "5.5",
+    "avgFinishPos": 5.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38792,7 +38972,7 @@
   "mike_freund": {
     "name": "Mike Freund",
     "rating": 960,
-    "avgFinishPos": "16.0",
+    "avgFinishPos": 16,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38831,7 +39011,7 @@
   "bo_stamper": {
     "name": "Bo Stamper",
     "rating": 994,
-    "avgFinishPos": "6.0",
+    "avgFinishPos": 6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38852,7 +39032,7 @@
   "hubert_van_gashoven": {
     "name": "Hubert van Gashoven",
     "rating": 979,
-    "avgFinishPos": "14.3",
+    "avgFinishPos": 13,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -38873,13 +39053,19 @@
         "rating": 979,
         "finishPos": 13,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 979,
+        "finishPos": 9,
+        "totalCars": 11
       }
     ]
   },
   "rhys_gardiner": {
     "name": "Rhys Gardiner",
     "rating": 1004,
-    "avgFinishPos": "3.0",
+    "avgFinishPos": 3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38900,7 +39086,7 @@
   "ross_luckhurst": {
     "name": "Ross Luckhurst",
     "rating": 932,
-    "avgFinishPos": "15.5",
+    "avgFinishPos": 15.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38945,7 +39131,7 @@
   "damon_nadrasik": {
     "name": "Damon Nadrasik",
     "rating": 986,
-    "avgFinishPos": "10.5",
+    "avgFinishPos": 10.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38966,7 +39152,7 @@
   "preston_mcnair": {
     "name": "Preston Mcnair",
     "rating": 976,
-    "avgFinishPos": "7.5",
+    "avgFinishPos": 7.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39011,7 +39197,7 @@
   "luiz_lemos": {
     "name": "Luiz Lemos",
     "rating": 989,
-    "avgFinishPos": "14.0",
+    "avgFinishPos": 14,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39026,7 +39212,7 @@
   "brian_van_beusekom": {
     "name": "Brian van Beusekom",
     "rating": 1007,
-    "avgFinishPos": "8.0",
+    "avgFinishPos": 8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39089,7 +39275,7 @@
   "cian_pullen": {
     "name": "Cian Pullen",
     "rating": 982,
-    "avgFinishPos": "20.0",
+    "avgFinishPos": 20,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39104,7 +39290,7 @@
   "martin_esquivel": {
     "name": "Martin Esquivel",
     "rating": 991,
-    "avgFinishPos": "7.5",
+    "avgFinishPos": 7.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39125,7 +39311,7 @@
   "olivier_gervais": {
     "name": "Olivier Gervais",
     "rating": 841,
-    "avgFinishPos": "10.2",
+    "avgFinishPos": 10.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39380,7 +39566,7 @@
   "daniel_kent": {
     "name": "Daniel Kent",
     "rating": 989,
-    "avgFinishPos": "11.0",
+    "avgFinishPos": 11,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39395,7 +39581,7 @@
   "frank_radosti": {
     "name": "Frank Radosti",
     "rating": 864,
-    "avgFinishPos": "10.5",
+    "avgFinishPos": 10.5,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39560,7 +39746,7 @@
   "francis_zavaleta": {
     "name": "Francis Zavaleta",
     "rating": 997,
-    "avgFinishPos": "5.0",
+    "avgFinishPos": 5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39605,7 +39791,7 @@
   "antonis_paparinopoulos": {
     "name": "Antonis Paparinopoulos",
     "rating": 1001,
-    "avgFinishPos": "15.0",
+    "avgFinishPos": 15,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39638,7 +39824,7 @@
   "peter_grau": {
     "name": "Peter Grau",
     "rating": 1013,
-    "avgFinishPos": "4.0",
+    "avgFinishPos": 4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39653,7 +39839,7 @@
   "alejandro_brown": {
     "name": "Alejandro Brown",
     "rating": 1006,
-    "avgFinishPos": "6.3",
+    "avgFinishPos": 6.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39698,7 +39884,7 @@
   "ricardo_gomez": {
     "name": "Ricardo Gomez",
     "rating": 991,
-    "avgFinishPos": "6.7",
+    "avgFinishPos": 6.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39725,7 +39911,7 @@
   "alan_santo": {
     "name": "Alan Santo",
     "rating": 974,
-    "avgFinishPos": "15.0",
+    "avgFinishPos": 15,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -39746,7 +39932,7 @@
   "santiago_gonzalez": {
     "name": "Santiago Gonzalez",
     "rating": 1040,
-    "avgFinishPos": "1.7",
+    "avgFinishPos": 1.7,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -39791,7 +39977,7 @@
   "jaz_whitfield": {
     "name": "Jaz Whitfield",
     "rating": 987,
-    "avgFinishPos": "7.7",
+    "avgFinishPos": 7.7,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -39818,7 +40004,7 @@
   "zachary_chauveau": {
     "name": "Zachary Chauveau",
     "rating": 984,
-    "avgFinishPos": "17.0",
+    "avgFinishPos": 14.4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39845,13 +40031,19 @@
         "rating": 984,
         "finishPos": 15,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 984,
+        "finishPos": 4,
+        "totalCars": 11
       }
     ]
   },
   "riley_koenig": {
     "name": "Riley Koenig",
     "rating": 1023,
-    "avgFinishPos": "11.5",
+    "avgFinishPos": 10,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39878,13 +40070,19 @@
         "rating": 1023,
         "finishPos": 2,
         "totalCars": 14
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1023,
+        "finishPos": 4,
+        "totalCars": 10
       }
     ]
   },
   "dean_clark": {
     "name": "Dean Clark",
     "rating": 959,
-    "avgFinishPos": "21.3",
+    "avgFinishPos": 21.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39911,7 +40109,7 @@
   "alan_smith": {
     "name": "Alan Smith",
     "rating": 1000,
-    "avgFinishPos": "15.5",
+    "avgFinishPos": 14.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39938,13 +40136,19 @@
         "rating": 1000,
         "finishPos": 8,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1000,
+        "finishPos": 9,
+        "totalCars": 11
       }
     ]
   },
   "simon_kingsbury": {
     "name": "Simon Kingsbury",
     "rating": 990,
-    "avgFinishPos": "11.0",
+    "avgFinishPos": 11,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -39965,7 +40169,7 @@
   "christian_dauger": {
     "name": "Christian Dauger",
     "rating": 995,
-    "avgFinishPos": "11.0",
+    "avgFinishPos": 11,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -39980,7 +40184,7 @@
   "daniel_forler": {
     "name": "Daniel Forler",
     "rating": 984,
-    "avgFinishPos": "12.5",
+    "avgFinishPos": 12.5,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -40001,7 +40205,7 @@
   "kavin_gahlaut": {
     "name": "Kavin Gahlaut",
     "rating": 961,
-    "avgFinishPos": "23.0",
+    "avgFinishPos": 17.7,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -40016,13 +40220,19 @@
         "rating": 961,
         "finishPos": 20,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 961,
+        "finishPos": 7,
+        "totalCars": 11
       }
     ]
   },
   "axel_la_flamme": {
     "name": "Axel La Flamme",
     "rating": 997,
-    "avgFinishPos": "15.0",
+    "avgFinishPos": 12.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -40037,13 +40247,19 @@
         "rating": 997,
         "finishPos": 7,
         "totalCars": 23
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 997,
+        "finishPos": 7,
+        "totalCars": 11
       }
     ]
   },
   "micha_leuvink": {
     "name": "Micha Leuvink",
     "rating": 979,
-    "avgFinishPos": "22.0",
+    "avgFinishPos": 22,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -40058,7 +40274,7 @@
   "hallam_voice": {
     "name": "Hallam Voice",
     "rating": 1010,
-    "avgFinishPos": "4.0",
+    "avgFinishPos": 4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -40067,6 +40283,21 @@
         "rating": 1010,
         "finishPos": 4,
         "totalCars": 14
+      }
+    ]
+  },
+  "alessandro_smeraldi": {
+    "name": "Alessandro Smeraldi",
+    "rating": 1000,
+    "avgFinishPos": 9,
+    "active": 1,
+    "visible": 1,
+    "racesHistory": [
+      {
+        "date": "2026/06/20",
+        "rating": 1000,
+        "finishPos": 9,
+        "totalCars": 11
       }
     ]
   }
