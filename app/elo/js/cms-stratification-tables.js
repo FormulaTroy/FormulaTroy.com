@@ -405,11 +405,19 @@ $(document).ready(function () {
     return ranges;
   }
 
+  // helper: get Elo ratings for rows currently shown in the DataTable
+  function getVisibleDriverRatings() {
+    if (activeDatatable) {
+      return activeDatatable.rows({ search: 'applied' }).data().toArray().map(row => row.rating || 0);
+    }
+    return eloDistributionGraphData.slice();
+  }
+
   // trigger: call the creation of the elo distribution graph after all of the array data is ready
-  function drawEloDistributionBarChart() {
+  function drawEloDistributionBarChart(ratings) {
 
     // split array into elo buckets by X range
-    const groupedData = groupEloRatings(eloDistributionGraphData, distributionGraphIncrements);
+    const groupedData = groupEloRatings(ratings || eloDistributionGraphData, distributionGraphIncrements);
 
     // set up chart vars
     const labels = Object.keys(groupedData);
@@ -417,6 +425,11 @@ $(document).ready(function () {
     const backgroundColors = Object.values(groupedData).map(range => range.color);
 
     // chart.js: draw bar chart
+    if (activeRatingBarChart) {
+      activeRatingBarChart.destroy();
+      activeRatingBarChart = null;
+    }
+
     const ratingBarChartCanvas = document.getElementById('ratingBarChart').getContext('2d');
 
     activeRatingBarChart = new Chart(ratingBarChartCanvas, {
@@ -921,7 +934,10 @@ $(document).ready(function () {
         ['10', '25', '50', '100', 'All']
       ],
       initComplete: function (settings) {
-        drawEloDistributionBarChart(); // after the table loads, call the chart draw function
+        drawEloDistributionBarChart(getVisibleDriverRatings()); // after the table loads, call the chart draw function
+        activeDatatable.on('draw', function () {
+          drawEloDistributionBarChart(getVisibleDriverRatings());
+        });
       }
     });
 
