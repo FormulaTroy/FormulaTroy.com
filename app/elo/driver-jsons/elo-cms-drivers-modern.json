@@ -289,6 +289,12 @@
         "totalCars": 23
       },
       {
+        "date": "2025/06/07",
+        "rating": 1218,
+        "finishPos": 5,
+        "totalCars": 16
+      },
+      {
         "date": "2025/06/12",
         "rating": 1220,
         "finishPos": 5,
@@ -1075,6 +1081,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 1073,
+        "finishPos": 7,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 1071,
         "finishPos": 14,
@@ -1085,6 +1097,12 @@
         "rating": 1077,
         "finishPos": 5,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1077,
+        "finishPos": 17,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -1103,6 +1121,12 @@
         "rating": 1047,
         "finishPos": 17,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1047,
+        "finishPos": 6,
+        "totalCars": 12
       },
       {
         "date": "2024/06/29",
@@ -1175,6 +1199,12 @@
         "rating": 982,
         "finishPos": 17,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 982,
+        "finishPos": 9,
+        "totalCars": 16
       },
       {
         "date": "2025/06/28",
@@ -1253,7 +1283,7 @@
   "james_walker": {
     "name": "James Walker",
     "rating": 1183,
-    "avgFinishPos": 5.4,
+    "avgFinishPos": 5.3,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -1348,6 +1378,12 @@
         "totalCars": 27
       },
       {
+        "date": "2024/03/23",
+        "rating": 1120,
+        "finishPos": 4,
+        "totalCars": 20
+      },
+      {
         "date": "2024/04/06",
         "rating": 1133,
         "finishPos": 3,
@@ -1364,6 +1400,12 @@
         "rating": 1135,
         "finishPos": 13,
         "totalCars": 24
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1135,
+        "finishPos": 4,
+        "totalCars": 10
       },
       {
         "date": "2024/06/27",
@@ -1490,6 +1532,12 @@
         "rating": 1163,
         "finishPos": 4,
         "totalCars": 13
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1163,
+        "finishPos": 2,
+        "totalCars": 11
       },
       {
         "date": "2025/06/12",
@@ -2702,7 +2750,7 @@
   "stuart_barge": {
     "name": "Stuart Barge",
     "rating": 876,
-    "avgFinishPos": 11.3,
+    "avgFinishPos": 11.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -2927,6 +2975,12 @@
         "rating": 992,
         "finishPos": 19,
         "totalCars": 32
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 992,
+        "finishPos": 8,
+        "totalCars": 12
       },
       {
         "date": "2024/02/08",
@@ -4124,7 +4178,7 @@
   "eugene_mazur": {
     "name": "Eugene Mazur",
     "rating": 1084,
-    "avgFinishPos": 10.5,
+    "avgFinishPos": 10.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -4457,6 +4511,12 @@
         "rating": 1005,
         "finishPos": 4,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1005,
+        "finishPos": 6,
+        "totalCars": 20
       },
       {
         "date": "2024/03/28",
@@ -6637,6 +6697,12 @@
         "totalCars": 16
       },
       {
+        "date": "2024/03/23",
+        "rating": 1392,
+        "finishPos": 1,
+        "totalCars": 22
+      },
+      {
         "date": "2024/04/04",
         "rating": 1394,
         "finishPos": 3,
@@ -6671,6 +6737,12 @@
         "rating": 1334,
         "finishPos": 11,
         "totalCars": 11
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1334,
+        "finishPos": 2,
+        "totalCars": 12
       },
       {
         "date": "2024/06/29",
@@ -6977,6 +7049,12 @@
         "rating": 1459,
         "finishPos": 1,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1459,
+        "finishPos": 1,
+        "totalCars": 16
       },
       {
         "date": "2025/06/12",
@@ -7774,6 +7852,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 1097,
+        "finishPos": 6,
+        "totalCars": 12
+      },
+      {
         "date": "2024/02/24",
         "rating": 1088,
         "finishPos": 12,
@@ -7790,6 +7874,12 @@
         "rating": 1103,
         "finishPos": 9,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1103,
+        "finishPos": 11,
+        "totalCars": 20
       },
       {
         "date": "2024/04/06",
@@ -7856,6 +7946,12 @@
         "rating": 1076,
         "finishPos": 14,
         "totalCars": 15
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1076,
+        "finishPos": 5,
+        "totalCars": 10
       },
       {
         "date": "2024/06/27",
@@ -7936,6 +8032,12 @@
         "totalCars": 9
       },
       {
+        "date": "2025/06/07",
+        "rating": 993,
+        "finishPos": 9,
+        "totalCars": 16
+      },
+      {
         "date": "2026/06/20",
         "rating": 993,
         "finishPos": 7,
@@ -7967,7 +8069,7 @@
   "jt_tami": {
     "name": "JT Tami",
     "rating": 1440,
-    "avgFinishPos": 3.2,
+    "avgFinishPos": 3.1,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -8470,6 +8572,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 1263,
+        "finishPos": 3,
+        "totalCars": 12
+      },
+      {
         "date": "2024/01/25",
         "rating": 1276,
         "finishPos": 3,
@@ -8522,6 +8630,12 @@
         "rating": 1325,
         "finishPos": 2,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1325,
+        "finishPos": 1,
+        "totalCars": 20
       },
       {
         "date": "2024/03/28",
@@ -8594,6 +8708,12 @@
         "rating": 1350,
         "finishPos": 9,
         "totalCars": 13
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1350,
+        "finishPos": 4,
+        "totalCars": 10
       },
       {
         "date": "2024/06/13",
@@ -9098,6 +9218,12 @@
         "rating": 1425,
         "finishPos": 2,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1425,
+        "finishPos": 2,
+        "totalCars": 11
       },
       {
         "date": "2025/06/12",
@@ -9848,7 +9974,7 @@
   "kyle_vesa": {
     "name": "Kyle Vesa",
     "rating": 1106,
-    "avgFinishPos": 5.3,
+    "avgFinishPos": 5.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -9883,6 +10009,12 @@
         "totalCars": 11
       },
       {
+        "date": "2024/01/20",
+        "rating": 1050,
+        "finishPos": 4,
+        "totalCars": 12
+      },
+      {
         "date": "2024/02/01",
         "rating": 1074,
         "finishPos": 5,
@@ -9901,6 +10033,12 @@
         "totalCars": 16
       },
       {
+        "date": "2024/03/23",
+        "rating": 1108,
+        "finishPos": 5,
+        "totalCars": 20
+      },
+      {
         "date": "2024/04/11",
         "rating": 1097,
         "finishPos": 11,
@@ -9911,6 +10049,12 @@
         "rating": 1106,
         "finishPos": 5,
         "totalCars": 21
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1106,
+        "finishPos": 6,
+        "totalCars": 10
       }
     ]
   },
@@ -10336,6 +10480,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 1043,
+        "finishPos": 13,
+        "totalCars": 17
+      },
+      {
         "date": "2024/01/25",
         "rating": 1038,
         "finishPos": 19,
@@ -10390,6 +10540,12 @@
         "totalCars": 27
       },
       {
+        "date": "2024/03/23",
+        "rating": 1034,
+        "finishPos": 12,
+        "totalCars": 22
+      },
+      {
         "date": "2024/03/28",
         "rating": 1041,
         "finishPos": 6,
@@ -10418,6 +10574,12 @@
         "rating": 1025,
         "finishPos": 17,
         "totalCars": 24
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1025,
+        "finishPos": 8,
+        "totalCars": 12
       },
       {
         "date": "2024/06/27",
@@ -10754,6 +10916,12 @@
         "rating": 1093,
         "finishPos": 8,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1093,
+        "finishPos": 7,
+        "totalCars": 16
       },
       {
         "date": "2025/06/12",
@@ -11485,6 +11653,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 1060,
+        "finishPos": 10,
+        "totalCars": 17
+      },
+      {
         "date": "2024/01/25",
         "rating": 1060,
         "finishPos": 16,
@@ -11495,6 +11669,12 @@
         "rating": 1071,
         "finishPos": 3,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1071,
+        "finishPos": 5,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -11945,7 +12125,7 @@
   "matthew_overton": {
     "name": "Matthew Overton",
     "rating": 904,
-    "avgFinishPos": 9.3,
+    "avgFinishPos": 9.2,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -12436,6 +12616,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 1074,
+        "finishPos": 3,
+        "totalCars": 12
+      },
+      {
         "date": "2024/01/25",
         "rating": 1041,
         "finishPos": 30,
@@ -12488,6 +12674,12 @@
         "rating": 1025,
         "finishPos": 3,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1025,
+        "finishPos": 4,
+        "totalCars": 20
       },
       {
         "date": "2024/03/28",
@@ -12560,6 +12752,12 @@
         "rating": 1015,
         "finishPos": 8,
         "totalCars": 13
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1015,
+        "finishPos": 4,
+        "totalCars": 10
       },
       {
         "date": "2024/06/13",
@@ -12872,6 +13070,12 @@
         "rating": 988,
         "finishPos": 4,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 988,
+        "finishPos": 2,
+        "totalCars": 11
       },
       {
         "date": "2025/06/12",
@@ -13436,7 +13640,7 @@
   "guilherme_bencke": {
     "name": "Guilherme Bencke",
     "rating": 864,
-    "avgFinishPos": 14.2,
+    "avgFinishPos": 14,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -13585,6 +13789,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 914,
+        "finishPos": 9,
+        "totalCars": 17
+      },
+      {
         "date": "2024/01/25",
         "rating": 918,
         "finishPos": 20,
@@ -13661,7 +13871,7 @@
   "jerry_chen": {
     "name": "Jerry Chen",
     "rating": 1031,
-    "avgFinishPos": 8.7,
+    "avgFinishPos": 8.8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -13972,6 +14182,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 1061,
+        "finishPos": 13,
+        "totalCars": 17
+      },
+      {
         "date": "2024/01/25",
         "rating": 1074,
         "finishPos": 10,
@@ -14026,6 +14242,12 @@
         "totalCars": 16
       },
       {
+        "date": "2024/03/23",
+        "rating": 1095,
+        "finishPos": 12,
+        "totalCars": 22
+      },
+      {
         "date": "2024/04/06",
         "rating": 1095,
         "finishPos": 14,
@@ -14066,6 +14288,12 @@
         "rating": 1090,
         "finishPos": 8,
         "totalCars": 15
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1090,
+        "finishPos": 8,
+        "totalCars": 12
       },
       {
         "date": "2024/06/27",
@@ -14192,6 +14420,12 @@
         "rating": 1041,
         "finishPos": 15,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1041,
+        "finishPos": 7,
+        "totalCars": 16
       },
       {
         "date": "2025/06/12",
@@ -14399,7 +14633,7 @@
   "jason_whited": {
     "name": "Jason Whited",
     "rating": 820,
-    "avgFinishPos": 12.9,
+    "avgFinishPos": 12.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -14960,6 +15194,12 @@
         "rating": 837,
         "finishPos": 11,
         "totalCars": 13
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 837,
+        "finishPos": 6,
+        "totalCars": 12
       },
       {
         "date": "2024/06/20",
@@ -15607,6 +15847,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 1028,
+        "finishPos": 14,
+        "totalCars": 17
+      },
+      {
         "date": "2024/01/25",
         "rating": 1026,
         "finishPos": 18,
@@ -15665,6 +15911,12 @@
         "rating": 1003,
         "finishPos": 9,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1003,
+        "finishPos": 16,
+        "totalCars": 22
       },
       {
         "date": "2024/03/28",
@@ -16565,7 +16817,7 @@
   "tom_mountjoy": {
     "name": "Tom Mountjoy",
     "rating": 891,
-    "avgFinishPos": 13.3,
+    "avgFinishPos": 13.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -16636,10 +16888,28 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 921,
+        "finishPos": 17,
+        "totalCars": 17
+      },
+      {
         "date": "2024/03/21",
         "rating": 911,
         "finishPos": 15,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 911,
+        "finishPos": 20,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 911,
+        "finishPos": 12,
+        "totalCars": 12
       },
       {
         "date": "2024/11/21",
@@ -16894,6 +17164,12 @@
         "totalCars": 27
       },
       {
+        "date": "2024/03/23",
+        "rating": 1177,
+        "finishPos": 6,
+        "totalCars": 22
+      },
+      {
         "date": "2024/04/06",
         "rating": 1185,
         "finishPos": 8,
@@ -16916,6 +17192,12 @@
         "rating": 1094,
         "finishPos": 24,
         "totalCars": 24
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1094,
+        "finishPos": 2,
+        "totalCars": 12
       },
       {
         "date": "2024/07/20",
@@ -17000,6 +17282,12 @@
         "rating": 1114,
         "finishPos": 14,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1114,
+        "finishPos": 5,
+        "totalCars": 16
       },
       {
         "date": "2025/06/26",
@@ -17845,6 +18133,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 945,
+        "finishPos": 7,
+        "totalCars": 12
+      },
+      {
         "date": "2024/01/25",
         "rating": 944,
         "finishPos": 21,
@@ -17903,6 +18197,12 @@
         "rating": 941,
         "finishPos": 11,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 941,
+        "finishPos": 15,
+        "totalCars": 20
       },
       {
         "date": "2024/04/04",
@@ -18521,6 +18821,12 @@
         "rating": 964,
         "finishPos": 12,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 964,
+        "finishPos": 10,
+        "totalCars": 16
       },
       {
         "date": "2025/06/12",
@@ -19633,6 +19939,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 949,
+        "finishPos": 9,
+        "totalCars": 12
+      },
+      {
         "date": "2024/02/24",
         "rating": 949,
         "finishPos": 11,
@@ -19643,6 +19955,12 @@
         "rating": 945,
         "finishPos": 18,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 945,
+        "finishPos": 14,
+        "totalCars": 20
       },
       {
         "date": "2024/04/06",
@@ -19811,6 +20129,12 @@
         "rating": 893,
         "finishPos": 9,
         "totalCars": 13
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 893,
+        "finishPos": 7,
+        "totalCars": 11
       },
       {
         "date": "2025/06/12",
@@ -20482,6 +20806,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 855,
+        "finishPos": 12,
+        "totalCars": 12
+      },
+      {
         "date": "2024/01/25",
         "rating": 854,
         "finishPos": 24,
@@ -20540,6 +20870,12 @@
         "rating": 847,
         "finishPos": 22,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 847,
+        "finishPos": 20,
+        "totalCars": 20
       },
       {
         "date": "2024/03/28",
@@ -20987,7 +21323,7 @@
   "barry_dimarzo": {
     "name": "Barry Dimarzo",
     "rating": 1021,
-    "avgFinishPos": 8.2,
+    "avgFinishPos": 9.6,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21026,6 +21362,12 @@
         "rating": 1021,
         "finishPos": 9,
         "totalCars": 24
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1021,
+        "finishPos": 18,
+        "totalCars": 20
       }
     ]
   },
@@ -21353,7 +21695,7 @@
   "ernest_bernaldo": {
     "name": "Ernest Bernaldo",
     "rating": 1011,
-    "avgFinishPos": 12.3,
+    "avgFinishPos": 11.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21374,6 +21716,12 @@
         "rating": 1014,
         "finishPos": 2,
         "totalCars": 20
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 1014,
+        "finishPos": 2,
+        "totalCars": 17
       },
       {
         "date": "2024/02/24",
@@ -21635,7 +21983,7 @@
   "elisio_netto": {
     "name": "Elisio Netto",
     "rating": 1096,
-    "avgFinishPos": 4.8,
+    "avgFinishPos": 4.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -21706,10 +22054,22 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 1125,
+        "finishPos": 1,
+        "totalCars": 12
+      },
+      {
         "date": "2024/03/21",
         "rating": 1096,
         "finishPos": 24,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1096,
+        "finishPos": 3,
+        "totalCars": 20
       }
     ]
   },
@@ -21853,6 +22213,12 @@
         "totalCars": 27
       },
       {
+        "date": "2024/03/23",
+        "rating": 1024,
+        "finishPos": 19,
+        "totalCars": 22
+      },
+      {
         "date": "2024/04/06",
         "rating": 1008,
         "finishPos": 24,
@@ -21941,6 +22307,12 @@
         "rating": 922,
         "finishPos": 13,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 922,
+        "finishPos": 8,
+        "totalCars": 16
       },
       {
         "date": "2025/06/28",
@@ -22262,7 +22634,7 @@
   "jamie_zolecki": {
     "name": "Jamie Zolecki",
     "rating": 971,
-    "avgFinishPos": 10.9,
+    "avgFinishPos": 10.4,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22375,10 +22747,28 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 980,
+        "finishPos": 6,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 980,
+        "finishPos": 11,
+        "totalCars": 20
+      },
+      {
         "date": "2024/04/06",
         "rating": 974,
         "finishPos": 15,
         "totalCars": 22
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 974,
+        "finishPos": 5,
+        "totalCars": 10
       },
       {
         "date": "2024/06/29",
@@ -22457,6 +22847,12 @@
         "rating": 971,
         "finishPos": 5,
         "totalCars": 19
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 971,
+        "finishPos": 4,
+        "totalCars": 11
       }
     ]
   },
@@ -22645,6 +23041,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 951,
+        "finishPos": 6,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 960,
         "finishPos": 7,
@@ -22655,6 +23057,12 @@
         "rating": 971,
         "finishPos": 11,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 971,
+        "finishPos": 12,
+        "totalCars": 20
       },
       {
         "date": "2024/04/06",
@@ -22685,6 +23093,12 @@
         "rating": 985,
         "finishPos": 4,
         "totalCars": 11
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 985,
+        "finishPos": 7,
+        "totalCars": 10
       },
       {
         "date": "2024/06/29",
@@ -22745,6 +23159,12 @@
         "rating": 996,
         "finishPos": 10,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 996,
+        "finishPos": 16,
+        "totalCars": 16
       },
       {
         "date": "2025/09/25",
@@ -22832,7 +23252,7 @@
   "dave_cours": {
     "name": "Dave Cours",
     "rating": 981,
-    "avgFinishPos": 12.2,
+    "avgFinishPos": 12.1,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -22877,6 +23297,12 @@
         "rating": 975,
         "finishPos": 31,
         "totalCars": 32
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 975,
+        "finishPos": 10,
+        "totalCars": 12
       },
       {
         "date": "2024/02/01",
@@ -23003,7 +23429,7 @@
   "philippe_dicartti": {
     "name": "Philippe Dicartti",
     "rating": 766,
-    "avgFinishPos": 15.9,
+    "avgFinishPos": 15.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -23200,6 +23626,12 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 840,
+        "finishPos": 7,
+        "totalCars": 17
+      },
+      {
         "date": "2024/01/25",
         "rating": 845,
         "finishPos": 22,
@@ -23264,6 +23696,12 @@
         "rating": 769,
         "finishPos": 11,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 769,
+        "finishPos": 15,
+        "totalCars": 16
       },
       {
         "date": "2025/06/12",
@@ -23402,7 +23840,7 @@
   "johnny_gutierrez": {
     "name": "Johnny Gutierrez",
     "rating": 1291,
-    "avgFinishPos": 4.5,
+    "avgFinishPos": 4.6,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -23527,6 +23965,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 1206,
+        "finishPos": 7,
+        "totalCars": 12
+      },
+      {
         "date": "2024/01/25",
         "rating": 1205,
         "finishPos": 11,
@@ -23585,6 +24029,12 @@
         "rating": 1265,
         "finishPos": 6,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1265,
+        "finishPos": 7,
+        "totalCars": 20
       },
       {
         "date": "2024/03/28",
@@ -23981,6 +24431,12 @@
         "rating": 1332,
         "finishPos": 6,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1332,
+        "finishPos": 10,
+        "totalCars": 16
       },
       {
         "date": "2025/06/12",
@@ -24800,7 +25256,7 @@
   "luciano_ichazo": {
     "name": "Luciano Ichazo",
     "rating": 1055,
-    "avgFinishPos": 7.1,
+    "avgFinishPos": 6.9,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -24905,6 +25361,12 @@
         "rating": 1011,
         "finishPos": 11,
         "totalCars": 13
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1011,
+        "finishPos": 3,
+        "totalCars": 11
       },
       {
         "date": "2025/06/12",
@@ -25748,6 +26210,12 @@
         "rating": 991,
         "finishPos": 3,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 991,
+        "finishPos": 5,
+        "totalCars": 11
       },
       {
         "date": "2025/06/12",
@@ -27473,7 +27941,7 @@
   "mike_bell": {
     "name": "Mike Bell",
     "rating": 1210,
-    "avgFinishPos": 5.1,
+    "avgFinishPos": 4.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -27508,10 +27976,22 @@
         "totalCars": 17
       },
       {
+        "date": "2024/01/20",
+        "rating": 1078,
+        "finishPos": 1,
+        "totalCars": 17
+      },
+      {
         "date": "2024/03/21",
         "rating": 1091,
         "finishPos": 2,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1091,
+        "finishPos": 3,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -27536,6 +28016,12 @@
         "rating": 1134,
         "finishPos": 5,
         "totalCars": 11
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1134,
+        "finishPos": 1,
+        "totalCars": 12
       },
       {
         "date": "2024/06/27",
@@ -27758,13 +28244,19 @@
         "rating": 1210,
         "finishPos": 7,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1210,
+        "finishPos": 2,
+        "totalCars": 16
       }
     ]
   },
   "jeffrey_elliss": {
     "name": "Jeffrey Elliss",
     "rating": 1001,
-    "avgFinishPos": 6.8,
+    "avgFinishPos": 7.2,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -27785,6 +28277,12 @@
         "rating": 990,
         "finishPos": 24,
         "totalCars": 24
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 990,
+        "finishPos": 11,
+        "totalCars": 17
       },
       {
         "date": "2024/10/22",
@@ -29288,7 +29786,7 @@
   "becky_ely-clark": {
     "name": "Becky Ely-Clark",
     "rating": 1146,
-    "avgFinishPos": 3.7,
+    "avgFinishPos": 3.8,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -29363,6 +29861,18 @@
         "rating": 1116,
         "finishPos": 15,
         "totalCars": 18
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1116,
+        "finishPos": 8,
+        "totalCars": 20
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1116,
+        "finishPos": 2,
+        "totalCars": 10
       },
       {
         "date": "2025/01/30",
@@ -29851,6 +30361,12 @@
         "totalCars": 32
       },
       {
+        "date": "2024/01/20",
+        "rating": 1078,
+        "finishPos": 8,
+        "totalCars": 17
+      },
+      {
         "date": "2024/01/25",
         "rating": 1101,
         "finishPos": 5,
@@ -29903,6 +30419,12 @@
         "rating": 1130,
         "finishPos": 5,
         "totalCars": 27
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1130,
+        "finishPos": 7,
+        "totalCars": 22
       },
       {
         "date": "2024/03/28",
@@ -29981,6 +30503,12 @@
         "rating": 1165,
         "finishPos": 2,
         "totalCars": 13
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1165,
+        "finishPos": 5,
+        "totalCars": 12
       },
       {
         "date": "2024/06/20",
@@ -30239,6 +30767,12 @@
         "rating": 1188,
         "finishPos": 5,
         "totalCars": 14
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1188,
+        "finishPos": 4,
+        "totalCars": 16
       },
       {
         "date": "2025/06/12",
@@ -30590,7 +31124,7 @@
   "josh_lipetri": {
     "name": "Josh Lipetri",
     "rating": 917,
-    "avgFinishPos": 15,
+    "avgFinishPos": 14.9,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -30691,6 +31225,12 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 996,
+        "finishPos": 9,
+        "totalCars": 12
+      },
+      {
         "date": "2024/01/25",
         "rating": 961,
         "finishPos": 34,
@@ -30739,6 +31279,12 @@
         "totalCars": 26
       },
       {
+        "date": "2024/03/23",
+        "rating": 924,
+        "finishPos": 17,
+        "totalCars": 20
+      },
+      {
         "date": "2024/04/06",
         "rating": 917,
         "finishPos": 17,
@@ -30773,7 +31319,7 @@
   "tom_lane": {
     "name": "Tom Lane",
     "rating": 1196,
-    "avgFinishPos": 6.7,
+    "avgFinishPos": 6.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -30802,6 +31348,12 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 1033,
+        "finishPos": 2,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 1056,
         "finishPos": 4,
@@ -30818,6 +31370,12 @@
         "rating": 1099,
         "finishPos": 4,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1099,
+        "finishPos": 4,
+        "totalCars": 12
       },
       {
         "date": "2024/06/29",
@@ -30880,6 +31438,12 @@
         "totalCars": 29
       },
       {
+        "date": "2025/06/07",
+        "rating": 1102,
+        "finishPos": 3,
+        "totalCars": 16
+      },
+      {
         "date": "2025/07/19",
         "rating": 1103,
         "finishPos": 11,
@@ -30926,7 +31490,7 @@
   "magnus_dahlgren": {
     "name": "Magnus Dahlgren",
     "rating": 1244,
-    "avgFinishPos": 6.5,
+    "avgFinishPos": 7,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -30955,10 +31519,22 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 1036,
+        "finishPos": 15,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 1048,
         "finishPos": 9,
         "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1048,
+        "finishPos": 14,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -30971,6 +31547,12 @@
         "rating": 1057,
         "finishPos": 15,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1057,
+        "finishPos": 10,
+        "totalCars": 12
       },
       {
         "date": "2024/07/20",
@@ -31037,6 +31619,12 @@
         "rating": 1165,
         "finishPos": 4,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1165,
+        "finishPos": 6,
+        "totalCars": 16
       },
       {
         "date": "2025/06/28",
@@ -31121,7 +31709,7 @@
   "timon_soovik": {
     "name": "Timon Soovik",
     "rating": 1171,
-    "avgFinishPos": 8.1,
+    "avgFinishPos": 7.8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -31150,10 +31738,22 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 1054,
+        "finishPos": 3,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 1035,
         "finishPos": 22,
         "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1035,
+        "finishPos": 10,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -31166,6 +31766,12 @@
         "rating": 1064,
         "finishPos": 6,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1064,
+        "finishPos": 3,
+        "totalCars": 12
       },
       {
         "date": "2024/06/29",
@@ -31232,6 +31838,12 @@
         "rating": 1130,
         "finishPos": 9,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1130,
+        "finishPos": 6,
+        "totalCars": 16
       },
       {
         "date": "2025/06/28",
@@ -31310,7 +31922,7 @@
   "wouter_de_bruijn": {
     "name": "Wouter de Bruijn",
     "rating": 1152,
-    "avgFinishPos": 6.6,
+    "avgFinishPos": 6.9,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -31339,10 +31951,22 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 1052,
+        "finishPos": 5,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 1072,
         "finishPos": 5,
         "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1072,
+        "finishPos": 8,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -31355,6 +31979,12 @@
         "rating": 1106,
         "finishPos": 3,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1106,
+        "finishPos": 7,
+        "totalCars": 12
       },
       {
         "date": "2024/07/20",
@@ -31453,6 +32083,12 @@
         "totalCars": 24
       },
       {
+        "date": "2025/06/07",
+        "rating": 1121,
+        "finishPos": 14,
+        "totalCars": 16
+      },
+      {
         "date": "2025/07/19",
         "rating": 1118,
         "finishPos": 12,
@@ -31538,7 +32174,7 @@
   "eric_moinet": {
     "name": "Eric Moinet",
     "rating": 895,
-    "avgFinishPos": 16.5,
+    "avgFinishPos": 15.8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -31567,10 +32203,22 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 971,
+        "finishPos": 13,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 947,
         "finishPos": 27,
         "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 947,
+        "finishPos": 18,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -31583,6 +32231,12 @@
         "rating": 934,
         "finishPos": 13,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 934,
+        "finishPos": 8,
+        "totalCars": 12
       },
       {
         "date": "2024/06/29",
@@ -31649,6 +32303,12 @@
         "rating": 904,
         "finishPos": 18,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 904,
+        "finishPos": 7,
+        "totalCars": 16
       },
       {
         "date": "2025/07/19",
@@ -31718,7 +32378,7 @@
   "benjamin_porteous-heath": {
     "name": "Benjamin Porteous-Heath",
     "rating": 881,
-    "avgFinishPos": 19.4,
+    "avgFinishPos": 18.5,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -31745,6 +32405,12 @@
         "rating": 964,
         "finishPos": 14,
         "totalCars": 20
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 964,
+        "finishPos": 12,
+        "totalCars": 17
       },
       {
         "date": "2024/02/24",
@@ -31795,6 +32461,12 @@
         "totalCars": 23
       },
       {
+        "date": "2025/06/07",
+        "rating": 902,
+        "finishPos": 13,
+        "totalCars": 16
+      },
+      {
         "date": "2026/02/07",
         "rating": 881,
         "finishPos": 29,
@@ -31805,7 +32477,7 @@
   "brandon_gant": {
     "name": "Brandon Gant",
     "rating": 1021,
-    "avgFinishPos": 8.4,
+    "avgFinishPos": 7.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -31826,6 +32498,12 @@
         "rating": 1009,
         "finishPos": 19,
         "totalCars": 20
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 1009,
+        "finishPos": 4,
+        "totalCars": 12
       },
       {
         "date": "2024/02/24",
@@ -31886,7 +32564,7 @@
   "matthew_buice": {
     "name": "Matthew Buice",
     "rating": 935,
-    "avgFinishPos": 13.8,
+    "avgFinishPos": 13.4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -31909,10 +32587,22 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 1005,
+        "finishPos": 11,
+        "totalCars": 12
+      },
+      {
         "date": "2024/02/24",
         "rating": 1016,
         "finishPos": 5,
         "totalCars": 18
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1016,
+        "finishPos": 13,
+        "totalCars": 20
       },
       {
         "date": "2024/04/06",
@@ -31925,6 +32615,12 @@
         "rating": 1004,
         "finishPos": 10,
         "totalCars": 21
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1004,
+        "finishPos": 10,
+        "totalCars": 10
       },
       {
         "date": "2024/06/29",
@@ -31979,6 +32675,12 @@
         "rating": 971,
         "finishPos": 20,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 971,
+        "finishPos": 11,
+        "totalCars": 16
       },
       {
         "date": "2025/06/28",
@@ -32039,7 +32741,7 @@
   "craig_pullen": {
     "name": "Craig Pullen",
     "rating": 907,
-    "avgFinishPos": 15.8,
+    "avgFinishPos": 15.5,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -32068,10 +32770,22 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 994,
+        "finishPos": 16,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 995,
         "finishPos": 15,
         "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 995,
+        "finishPos": 15,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -32084,6 +32798,12 @@
         "rating": 963,
         "finishPos": 27,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 963,
+        "finishPos": 11,
+        "totalCars": 12
       },
       {
         "date": "2024/06/29",
@@ -32126,7 +32846,7 @@
   "peter_meier": {
     "name": "Peter Meier",
     "rating": 981,
-    "avgFinishPos": 9.3,
+    "avgFinishPos": 9.4,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -32147,6 +32867,12 @@
         "rating": 992,
         "finishPos": 8,
         "totalCars": 21
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 992,
+        "finishPos": 10,
+        "totalCars": 20
       },
       {
         "date": "2024/04/06",
@@ -32203,6 +32929,12 @@
         "totalCars": 13
       },
       {
+        "date": "2025/06/07",
+        "rating": 1000,
+        "finishPos": 10,
+        "totalCars": 11
+      },
+      {
         "date": "2025/06/28",
         "rating": 1000,
         "finishPos": 8,
@@ -32255,7 +32987,7 @@
   "w._mike_buice": {
     "name": "W. Mike Buice",
     "rating": 878,
-    "avgFinishPos": 15.8,
+    "avgFinishPos": 15.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -32278,10 +33010,22 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 979,
+        "finishPos": 11,
+        "totalCars": 12
+      },
+      {
         "date": "2024/02/24",
         "rating": 989,
         "finishPos": 6,
         "totalCars": 18
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 989,
+        "finishPos": 19,
+        "totalCars": 20
       },
       {
         "date": "2024/04/06",
@@ -32294,6 +33038,12 @@
         "rating": 966,
         "finishPos": 15,
         "totalCars": 21
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 966,
+        "finishPos": 10,
+        "totalCars": 10
       },
       {
         "date": "2024/06/29",
@@ -32350,6 +33100,12 @@
         "totalCars": 24
       },
       {
+        "date": "2025/06/07",
+        "rating": 927,
+        "finishPos": 11,
+        "totalCars": 16
+      },
+      {
         "date": "2025/06/28",
         "rating": 918,
         "finishPos": 15,
@@ -32402,7 +33158,7 @@
   "adam_gray": {
     "name": "Adam Gray",
     "rating": 900,
-    "avgFinishPos": 13,
+    "avgFinishPos": 13.1,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -32419,10 +33175,22 @@
         "totalCars": 16
       },
       {
+        "date": "2024/01/20",
+        "rating": 968,
+        "finishPos": 16,
+        "totalCars": 17
+      },
+      {
         "date": "2024/02/24",
         "rating": 949,
         "finishPos": 25,
         "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 949,
+        "finishPos": 21,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -32435,6 +33203,12 @@
         "rating": 925,
         "finishPos": 20,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 925,
+        "finishPos": 11,
+        "totalCars": 12
       },
       {
         "date": "2024/08/24",
@@ -32483,6 +33257,12 @@
         "rating": 899,
         "finishPos": 10,
         "totalCars": 13
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 899,
+        "finishPos": 6,
+        "totalCars": 11
       },
       {
         "date": "2025/06/28",
@@ -34274,7 +35054,7 @@
   "yuki_takanashi": {
     "name": "Yuki Takanashi",
     "rating": 1010,
-    "avgFinishPos": 8.9,
+    "avgFinishPos": 8,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -34295,6 +35075,18 @@
         "rating": 1016,
         "finishPos": 3,
         "totalCars": 20
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 1016,
+        "finishPos": 8,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1016,
+        "finishPos": 2,
+        "totalCars": 10
       },
       {
         "date": "2024/06/29",
@@ -34352,7 +35144,7 @@
   "vasilis_katerinakis": {
     "name": "Vasilis Katerinakis",
     "rating": 952,
-    "avgFinishPos": 10,
+    "avgFinishPos": 9.5,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -34381,10 +35173,22 @@
         "totalCars": 18
       },
       {
+        "date": "2024/03/23",
+        "rating": 1002,
+        "finishPos": 9,
+        "totalCars": 20
+      },
+      {
         "date": "2024/04/06",
         "rating": 1008,
         "finishPos": 9,
         "totalCars": 22
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1008,
+        "finishPos": 3,
+        "totalCars": 10
       },
       {
         "date": "2024/06/29",
@@ -34433,6 +35237,12 @@
         "rating": 988,
         "finishPos": 10,
         "totalCars": 19
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 988,
+        "finishPos": 4,
+        "totalCars": 11
       },
       {
         "date": "2025/06/28",
@@ -34580,7 +35390,7 @@
   "alexander_schulz": {
     "name": "Alexander Schulz",
     "rating": 995,
-    "avgFinishPos": 13.1,
+    "avgFinishPos": 11.3,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -34589,6 +35399,12 @@
         "rating": 992,
         "finishPos": 15,
         "totalCars": 21
+      },
+      {
+        "date": "2024/01/20",
+        "rating": 992,
+        "finishPos": 3,
+        "totalCars": 17
       },
       {
         "date": "2024/02/24",
@@ -34601,6 +35417,12 @@
         "rating": 1000,
         "finishPos": 19,
         "totalCars": 32
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 3,
+        "totalCars": 12
       },
       {
         "date": "2024/10/19",
@@ -34706,7 +35528,7 @@
   "oliver_newman": {
     "name": "Oliver Newman",
     "rating": 1003,
-    "avgFinishPos": 6.2,
+    "avgFinishPos": 6.8,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -34717,10 +35539,28 @@
         "totalCars": 20
       },
       {
+        "date": "2024/01/20",
+        "rating": 996,
+        "finishPos": 11,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 996,
+        "finishPos": 11,
+        "totalCars": 22
+      },
+      {
         "date": "2024/04/27",
         "rating": 1021,
         "finishPos": 5,
         "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1021,
+        "finishPos": 9,
+        "totalCars": 12
       },
       {
         "date": "2024/09/07",
@@ -35131,6 +35971,12 @@
         "totalCars": 14
       },
       {
+        "date": "2025/06/07",
+        "rating": 893,
+        "finishPos": 9,
+        "totalCars": 11
+      },
+      {
         "date": "2025/06/12",
         "rating": 898,
         "finishPos": 4,
@@ -35405,6 +36251,975 @@
       }
     ]
   },
+  "daniel_hurlock": {
+    "name": "Daniel Hurlock",
+    "rating": 1245,
+    "avgFinishPos": 4.3,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 1,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 1012,
+        "finishPos": 10,
+        "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1012,
+        "finishPos": 4,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 1049,
+        "finishPos": 1,
+        "totalCars": 32
+      },
+      {
+        "date": "2024/04/27",
+        "rating": 1023,
+        "finishPos": 26,
+        "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1023,
+        "finishPos": 1,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 1045,
+        "finishPos": 3,
+        "totalCars": 24
+      },
+      {
+        "date": "2024/07/20",
+        "rating": 1067,
+        "finishPos": 4,
+        "totalCars": 26
+      },
+      {
+        "date": "2024/08/24",
+        "rating": 1089,
+        "finishPos": 1,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/09/07",
+        "rating": 1102,
+        "finishPos": 5,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/09/28",
+        "rating": 1078,
+        "finishPos": 20,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/10/19",
+        "rating": 1097,
+        "finishPos": 1,
+        "totalCars": 19
+      },
+      {
+        "date": "2024/10/22",
+        "rating": 1101,
+        "finishPos": 4,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/10/22",
+        "rating": 1109,
+        "finishPos": 2,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/10/29",
+        "rating": 1116,
+        "finishPos": 1,
+        "totalCars": 10
+      },
+      {
+        "date": "2024/10/29",
+        "rating": 1122,
+        "finishPos": 1,
+        "totalCars": 10
+      },
+      {
+        "date": "2024/11/09",
+        "rating": 1125,
+        "finishPos": 6,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/11/26",
+        "rating": 1130,
+        "finishPos": 1,
+        "totalCars": 8
+      },
+      {
+        "date": "2024/11/26",
+        "rating": 1136,
+        "finishPos": 1,
+        "totalCars": 8
+      },
+      {
+        "date": "2024/12/17",
+        "rating": 1130,
+        "finishPos": 7,
+        "totalCars": 10
+      },
+      {
+        "date": "2025/02/01",
+        "rating": 1156,
+        "finishPos": 1,
+        "totalCars": 31
+      },
+      {
+        "date": "2025/03/22",
+        "rating": 1169,
+        "finishPos": 6,
+        "totalCars": 28
+      },
+      {
+        "date": "2025/04/05",
+        "rating": 1187,
+        "finishPos": 2,
+        "totalCars": 24
+      },
+      {
+        "date": "2025/04/26",
+        "rating": 1210,
+        "finishPos": 1,
+        "totalCars": 29
+      },
+      {
+        "date": "2025/05/17",
+        "rating": 1223,
+        "finishPos": 3,
+        "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1223,
+        "finishPos": 2,
+        "totalCars": 16
+      },
+      {
+        "date": "2025/06/28",
+        "rating": 1231,
+        "finishPos": 3,
+        "totalCars": 16
+      },
+      {
+        "date": "2025/07/19",
+        "rating": 1245,
+        "finishPos": 2,
+        "totalCars": 23
+      }
+    ]
+  },
+  "jascha_schmidt": {
+    "name": "Jascha Schmidt",
+    "rating": 955,
+    "avgFinishPos": 19.3,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 4,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 981,
+        "finishPos": 24,
+        "totalCars": 28
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 955,
+        "finishPos": 30,
+        "totalCars": 32
+      }
+    ]
+  },
+  "michail_dinu": {
+    "name": "Michail Dinu",
+    "rating": 1059,
+    "avgFinishPos": 3.3,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 4,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 1033,
+        "finishPos": 1,
+        "totalCars": 28
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 1059,
+        "finishPos": 5,
+        "totalCars": 32
+      }
+    ]
+  },
+  "bradley_sellars": {
+    "name": "Bradley Sellars",
+    "rating": 1107,
+    "avgFinishPos": 5.6,
+    "active": 0,
+    "visible": 1,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 5,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 1020,
+        "finishPos": 9,
+        "totalCars": 32
+      },
+      {
+        "date": "2024/04/27",
+        "rating": 1050,
+        "finishPos": 2,
+        "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1050,
+        "finishPos": 7,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 1068,
+        "finishPos": 4,
+        "totalCars": 24
+      },
+      {
+        "date": "2024/09/07",
+        "rating": 1068,
+        "finishPos": 11,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/10/22",
+        "rating": 1070,
+        "finishPos": 5,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/10/22",
+        "rating": 1074,
+        "finishPos": 4,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/11/12",
+        "rating": 1080,
+        "finishPos": 1,
+        "totalCars": 7
+      },
+      {
+        "date": "2024/11/12",
+        "rating": 1077,
+        "finishPos": 5,
+        "totalCars": 7
+      },
+      {
+        "date": "2024/11/19",
+        "rating": 1080,
+        "finishPos": 2,
+        "totalCars": 7
+      },
+      {
+        "date": "2024/11/19",
+        "rating": 1082,
+        "finishPos": 2,
+        "totalCars": 6
+      },
+      {
+        "date": "2024/12/17",
+        "rating": 1090,
+        "finishPos": 1,
+        "totalCars": 10
+      },
+      {
+        "date": "2024/12/17",
+        "rating": 1098,
+        "finishPos": 1,
+        "totalCars": 10
+      },
+      {
+        "date": "2025/02/01",
+        "rating": 1111,
+        "finishPos": 4,
+        "totalCars": 22
+      },
+      {
+        "date": "2026/02/07",
+        "rating": 1127,
+        "finishPos": 6,
+        "totalCars": 29
+      },
+      {
+        "date": "2026/03/14",
+        "rating": 1142,
+        "finishPos": 5,
+        "totalCars": 27
+      },
+      {
+        "date": "2026/04/25",
+        "rating": 1107,
+        "finishPos": 27,
+        "totalCars": 27
+      }
+    ]
+  },
+  "eelco_bussink": {
+    "name": "Eelco Bussink",
+    "rating": 1024,
+    "avgFinishPos": 6,
+    "active": 0,
+    "visible": 1,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 5,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 997,
+        "finishPos": 15,
+        "totalCars": 24
+      },
+      {
+        "date": "2024/12/10",
+        "rating": 1002,
+        "finishPos": 1,
+        "totalCars": 5
+      },
+      {
+        "date": "2024/12/10",
+        "rating": 1006,
+        "finishPos": 1,
+        "totalCars": 4
+      },
+      {
+        "date": "2024/12/17",
+        "rating": 1014,
+        "finishPos": 2,
+        "totalCars": 10
+      },
+      {
+        "date": "2024/12/17",
+        "rating": 1022,
+        "finishPos": 2,
+        "totalCars": 10
+      },
+      {
+        "date": "2025/02/01",
+        "rating": 1012,
+        "finishPos": 16,
+        "totalCars": 22
+      },
+      {
+        "date": "2025/03/22",
+        "rating": 999,
+        "finishPos": 15,
+        "totalCars": 18
+      },
+      {
+        "date": "2025/06/28",
+        "rating": 1003,
+        "finishPos": 6,
+        "totalCars": 14
+      },
+      {
+        "date": "2025/07/19",
+        "rating": 1017,
+        "finishPos": 1,
+        "totalCars": 13
+      },
+      {
+        "date": "2025/08/30",
+        "rating": 1025,
+        "finishPos": 2,
+        "totalCars": 10
+      },
+      {
+        "date": "2025/09/27",
+        "rating": 1036,
+        "finishPos": 1,
+        "totalCars": 11
+      },
+      {
+        "date": "2025/10/25",
+        "rating": 1024,
+        "finishPos": 11,
+        "totalCars": 11
+      }
+    ]
+  },
+  "luke_goodlife": {
+    "name": "Luke Goodlife",
+    "rating": 925,
+    "avgFinishPos": 17.5,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 16,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 994,
+        "finishPos": 18,
+        "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 994,
+        "finishPos": 21,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/04/27",
+        "rating": 990,
+        "finishPos": 18,
+        "totalCars": 29
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 990,
+        "finishPos": 11,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 981,
+        "finishPos": 18,
+        "totalCars": 24
+      },
+      {
+        "date": "2024/07/20",
+        "rating": 967,
+        "finishPos": 22,
+        "totalCars": 26
+      },
+      {
+        "date": "2024/09/07",
+        "rating": 953,
+        "finishPos": 20,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/09/28",
+        "rating": 944,
+        "finishPos": 17,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/10/19",
+        "rating": 929,
+        "finishPos": 19,
+        "totalCars": 19
+      },
+      {
+        "date": "2024/11/09",
+        "rating": 925,
+        "finishPos": 13,
+        "totalCars": 17
+      }
+    ]
+  },
+  "peter_stefani": {
+    "name": "Peter Stefani",
+    "rating": 957,
+    "avgFinishPos": 14,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 17,
+        "totalCars": 17
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 983,
+        "finishPos": 23,
+        "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 983,
+        "finishPos": 22,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 964,
+        "finishPos": 27,
+        "totalCars": 32
+      },
+      {
+        "date": "2024/11/19",
+        "rating": 965,
+        "finishPos": 5,
+        "totalCars": 9
+      },
+      {
+        "date": "2024/11/19",
+        "rating": 964,
+        "finishPos": 5,
+        "totalCars": 8
+      },
+      {
+        "date": "2024/11/26",
+        "rating": 959,
+        "finishPos": 7,
+        "totalCars": 8
+      },
+      {
+        "date": "2024/11/26",
+        "rating": 957,
+        "finishPos": 6,
+        "totalCars": 8
+      }
+    ]
+  },
+  "david_jundt": {
+    "name": "David Jundt",
+    "rating": 1201,
+    "avgFinishPos": 3.1,
+    "active": 1,
+    "visible": 1,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 2,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 1018,
+        "finishPos": 2,
+        "totalCars": 18
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1018,
+        "finishPos": 2,
+        "totalCars": 20
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 1041,
+        "finishPos": 1,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/04/27",
+        "rating": 1062,
+        "finishPos": 1,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1062,
+        "finishPos": 1,
+        "totalCars": 10
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 1081,
+        "finishPos": 2,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/07/20",
+        "rating": 1092,
+        "finishPos": 4,
+        "totalCars": 18
+      },
+      {
+        "date": "2024/08/24",
+        "rating": 1106,
+        "finishPos": 1,
+        "totalCars": 15
+      },
+      {
+        "date": "2024/09/07",
+        "rating": 1115,
+        "finishPos": 4,
+        "totalCars": 18
+      },
+      {
+        "date": "2024/09/28",
+        "rating": 1128,
+        "finishPos": 3,
+        "totalCars": 19
+      },
+      {
+        "date": "2024/10/19",
+        "rating": 1111,
+        "finishPos": 15,
+        "totalCars": 16
+      },
+      {
+        "date": "2024/10/22",
+        "rating": 1105,
+        "finishPos": 8,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/10/22",
+        "rating": 1115,
+        "finishPos": 1,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/11/09",
+        "rating": 1130,
+        "finishPos": 1,
+        "totalCars": 17
+      },
+      {
+        "date": "2025/02/01",
+        "rating": 1146,
+        "finishPos": 2,
+        "totalCars": 22
+      },
+      {
+        "date": "2025/03/22",
+        "rating": 1157,
+        "finishPos": 2,
+        "totalCars": 18
+      },
+      {
+        "date": "2025/04/05",
+        "rating": 1166,
+        "finishPos": 1,
+        "totalCars": 13
+      },
+      {
+        "date": "2025/04/26",
+        "rating": 1177,
+        "finishPos": 2,
+        "totalCars": 19
+      },
+      {
+        "date": "2025/05/17",
+        "rating": 1184,
+        "finishPos": 2,
+        "totalCars": 13
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1184,
+        "finishPos": 1,
+        "totalCars": 11
+      },
+      {
+        "date": "2025/06/28",
+        "rating": 1191,
+        "finishPos": 2,
+        "totalCars": 14
+      },
+      {
+        "date": "2025/07/19",
+        "rating": 1195,
+        "finishPos": 3,
+        "totalCars": 13
+      },
+      {
+        "date": "2025/08/30",
+        "rating": 1201,
+        "finishPos": 1,
+        "totalCars": 10
+      },
+      {
+        "date": "2025/09/13",
+        "rating": 1206,
+        "finishPos": 1,
+        "totalCars": 8
+      },
+      {
+        "date": "2025/09/27",
+        "rating": 1210,
+        "finishPos": 2,
+        "totalCars": 11
+      },
+      {
+        "date": "2025/10/25",
+        "rating": 1214,
+        "finishPos": 2,
+        "totalCars": 11
+      },
+      {
+        "date": "2026/02/07",
+        "rating": 1215,
+        "finishPos": 5,
+        "totalCars": 15
+      },
+      {
+        "date": "2026/03/14",
+        "rating": 1196,
+        "finishPos": 14,
+        "totalCars": 16
+      },
+      {
+        "date": "2026/04/25",
+        "rating": 1198,
+        "finishPos": 5,
+        "totalCars": 15
+      },
+      {
+        "date": "2026/06/20",
+        "rating": 1198,
+        "finishPos": 3,
+        "totalCars": 10
+      },
+      {
+        "date": "2026/07/11",
+        "rating": 1201,
+        "finishPos": 4,
+        "totalCars": 13
+      }
+    ]
+  },
+  "joe_wilks": {
+    "name": "Joe Wilks",
+    "rating": 1003,
+    "avgFinishPos": 9.6,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 5,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 1016,
+        "finishPos": 3,
+        "totalCars": 18
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 1019,
+        "finishPos": 10,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/04/27",
+        "rating": 1001,
+        "finishPos": 19,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 1003,
+        "finishPos": 11,
+        "totalCars": 21
+      }
+    ]
+  },
+  "robert_strachan": {
+    "name": "Robert Strachan",
+    "rating": 1025,
+    "avgFinishPos": 8.1,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 6,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1000,
+        "finishPos": 16,
+        "totalCars": 20
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 1015,
+        "finishPos": 5,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1015,
+        "finishPos": 5,
+        "totalCars": 10
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 1025,
+        "finishPos": 7,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/10/19",
+        "rating": 1036,
+        "finishPos": 4,
+        "totalCars": 16
+      },
+      {
+        "date": "2024/11/09",
+        "rating": 1025,
+        "finishPos": 14,
+        "totalCars": 17
+      }
+    ]
+  },
+  "stephen_buice": {
+    "name": "Stephen Buice",
+    "rating": 967,
+    "avgFinishPos": 13.4,
+    "active": 1,
+    "visible": 1,
+    "racesHistory": [
+      {
+        "date": "2024/01/20",
+        "rating": 1000,
+        "finishPos": 11,
+        "totalCars": 12
+      },
+      {
+        "date": "2024/02/24",
+        "rating": 1002,
+        "finishPos": 9,
+        "totalCars": 18
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1002,
+        "finishPos": 19,
+        "totalCars": 20
+      },
+      {
+        "date": "2024/04/06",
+        "rating": 999,
+        "finishPos": 13,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/04/27",
+        "rating": 996,
+        "finishPos": 13,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 996,
+        "finishPos": 10,
+        "totalCars": 10
+      },
+      {
+        "date": "2024/06/29",
+        "rating": 985,
+        "finishPos": 17,
+        "totalCars": 21
+      },
+      {
+        "date": "2024/07/20",
+        "rating": 977,
+        "finishPos": 14,
+        "totalCars": 18
+      },
+      {
+        "date": "2024/08/24",
+        "rating": 968,
+        "finishPos": 13,
+        "totalCars": 15
+      },
+      {
+        "date": "2024/09/07",
+        "rating": 954,
+        "finishPos": 17,
+        "totalCars": 18
+      },
+      {
+        "date": "2024/09/28",
+        "rating": 956,
+        "finishPos": 11,
+        "totalCars": 19
+      },
+      {
+        "date": "2024/10/19",
+        "rating": 966,
+        "finishPos": 6,
+        "totalCars": 16
+      },
+      {
+        "date": "2024/11/09",
+        "rating": 963,
+        "finishPos": 12,
+        "totalCars": 17
+      },
+      {
+        "date": "2026/02/07",
+        "rating": 953,
+        "finishPos": 22,
+        "totalCars": 29
+      },
+      {
+        "date": "2026/03/14",
+        "rating": 959,
+        "finishPos": 14,
+        "totalCars": 27
+      },
+      {
+        "date": "2026/04/25",
+        "rating": 963,
+        "finishPos": 15,
+        "totalCars": 27
+      },
+      {
+        "date": "2026/05/16",
+        "rating": 967,
+        "finishPos": 12,
+        "totalCars": 23
+      }
+    ]
+  },
   "ben_kesby": {
     "name": "Ben Kesby",
     "rating": 1325,
@@ -35459,6 +37274,12 @@
         "rating": 1079,
         "finishPos": 13,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1079,
+        "finishPos": 2,
+        "totalCars": 22
       },
       {
         "date": "2024/03/28",
@@ -35531,6 +37352,12 @@
         "rating": 1135,
         "finishPos": 1,
         "totalCars": 13
+      },
+      {
+        "date": "2024/06/08",
+        "rating": 1135,
+        "finishPos": 5,
+        "totalCars": 12
       },
       {
         "date": "2024/06/13",
@@ -35851,6 +37678,12 @@
         "totalCars": 14
       },
       {
+        "date": "2025/06/07",
+        "rating": 1223,
+        "finishPos": 12,
+        "totalCars": 16
+      },
+      {
         "date": "2025/06/12",
         "rating": 1233,
         "finishPos": 1,
@@ -36050,31 +37883,10 @@
       }
     ]
   },
-  "michail_dinu": {
-    "name": "Michail Dinu",
-    "rating": 1059,
-    "avgFinishPos": 3,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 1033,
-        "finishPos": 1,
-        "totalCars": 28
-      },
-      {
-        "date": "2024/04/06",
-        "rating": 1059,
-        "finishPos": 5,
-        "totalCars": 32
-      }
-    ]
-  },
   "cameron_barker": {
     "name": "Cameron Barker",
     "rating": 1204,
-    "avgFinishPos": 5.8,
+    "avgFinishPos": 5.6,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -36083,6 +37895,12 @@
         "rating": 1028,
         "finishPos": 3,
         "totalCars": 28
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1028,
+        "finishPos": 6,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -36157,6 +37975,12 @@
         "totalCars": 23
       },
       {
+        "date": "2025/06/07",
+        "rating": 1151,
+        "finishPos": 1,
+        "totalCars": 16
+      },
+      {
         "date": "2025/06/28",
         "rating": 1163,
         "finishPos": 2,
@@ -36221,282 +38045,6 @@
       }
     ]
   },
-  "daniel_hurlock": {
-    "name": "Daniel Hurlock",
-    "rating": 1245,
-    "avgFinishPos": 4.7,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 1012,
-        "finishPos": 10,
-        "totalCars": 28
-      },
-      {
-        "date": "2024/04/06",
-        "rating": 1049,
-        "finishPos": 1,
-        "totalCars": 32
-      },
-      {
-        "date": "2024/04/27",
-        "rating": 1023,
-        "finishPos": 26,
-        "totalCars": 29
-      },
-      {
-        "date": "2024/06/29",
-        "rating": 1045,
-        "finishPos": 3,
-        "totalCars": 24
-      },
-      {
-        "date": "2024/07/20",
-        "rating": 1067,
-        "finishPos": 4,
-        "totalCars": 26
-      },
-      {
-        "date": "2024/08/24",
-        "rating": 1089,
-        "finishPos": 1,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/09/07",
-        "rating": 1102,
-        "finishPos": 5,
-        "totalCars": 22
-      },
-      {
-        "date": "2024/09/28",
-        "rating": 1078,
-        "finishPos": 20,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/10/19",
-        "rating": 1097,
-        "finishPos": 1,
-        "totalCars": 19
-      },
-      {
-        "date": "2024/10/22",
-        "rating": 1101,
-        "finishPos": 4,
-        "totalCars": 12
-      },
-      {
-        "date": "2024/10/22",
-        "rating": 1109,
-        "finishPos": 2,
-        "totalCars": 12
-      },
-      {
-        "date": "2024/10/29",
-        "rating": 1116,
-        "finishPos": 1,
-        "totalCars": 10
-      },
-      {
-        "date": "2024/10/29",
-        "rating": 1122,
-        "finishPos": 1,
-        "totalCars": 10
-      },
-      {
-        "date": "2024/11/09",
-        "rating": 1125,
-        "finishPos": 6,
-        "totalCars": 17
-      },
-      {
-        "date": "2024/11/26",
-        "rating": 1130,
-        "finishPos": 1,
-        "totalCars": 8
-      },
-      {
-        "date": "2024/11/26",
-        "rating": 1136,
-        "finishPos": 1,
-        "totalCars": 8
-      },
-      {
-        "date": "2024/12/17",
-        "rating": 1130,
-        "finishPos": 7,
-        "totalCars": 10
-      },
-      {
-        "date": "2025/02/01",
-        "rating": 1156,
-        "finishPos": 1,
-        "totalCars": 31
-      },
-      {
-        "date": "2025/03/22",
-        "rating": 1169,
-        "finishPos": 6,
-        "totalCars": 28
-      },
-      {
-        "date": "2025/04/05",
-        "rating": 1187,
-        "finishPos": 2,
-        "totalCars": 24
-      },
-      {
-        "date": "2025/04/26",
-        "rating": 1210,
-        "finishPos": 1,
-        "totalCars": 29
-      },
-      {
-        "date": "2025/05/17",
-        "rating": 1223,
-        "finishPos": 3,
-        "totalCars": 23
-      },
-      {
-        "date": "2025/06/28",
-        "rating": 1231,
-        "finishPos": 3,
-        "totalCars": 16
-      },
-      {
-        "date": "2025/07/19",
-        "rating": 1245,
-        "finishPos": 2,
-        "totalCars": 23
-      }
-    ]
-  },
-  "luke_goodlife": {
-    "name": "Luke Goodlife",
-    "rating": 925,
-    "avgFinishPos": 18.1,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 994,
-        "finishPos": 18,
-        "totalCars": 28
-      },
-      {
-        "date": "2024/04/27",
-        "rating": 990,
-        "finishPos": 18,
-        "totalCars": 29
-      },
-      {
-        "date": "2024/06/29",
-        "rating": 981,
-        "finishPos": 18,
-        "totalCars": 24
-      },
-      {
-        "date": "2024/07/20",
-        "rating": 967,
-        "finishPos": 22,
-        "totalCars": 26
-      },
-      {
-        "date": "2024/09/07",
-        "rating": 953,
-        "finishPos": 20,
-        "totalCars": 22
-      },
-      {
-        "date": "2024/09/28",
-        "rating": 944,
-        "finishPos": 17,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/10/19",
-        "rating": 929,
-        "finishPos": 19,
-        "totalCars": 19
-      },
-      {
-        "date": "2024/11/09",
-        "rating": 925,
-        "finishPos": 13,
-        "totalCars": 17
-      }
-    ]
-  },
-  "peter_stefani": {
-    "name": "Peter Stefani",
-    "rating": 957,
-    "avgFinishPos": 12.2,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 983,
-        "finishPos": 23,
-        "totalCars": 28
-      },
-      {
-        "date": "2024/04/06",
-        "rating": 964,
-        "finishPos": 27,
-        "totalCars": 32
-      },
-      {
-        "date": "2024/11/19",
-        "rating": 965,
-        "finishPos": 5,
-        "totalCars": 9
-      },
-      {
-        "date": "2024/11/19",
-        "rating": 964,
-        "finishPos": 5,
-        "totalCars": 8
-      },
-      {
-        "date": "2024/11/26",
-        "rating": 959,
-        "finishPos": 7,
-        "totalCars": 8
-      },
-      {
-        "date": "2024/11/26",
-        "rating": 957,
-        "finishPos": 6,
-        "totalCars": 8
-      }
-    ]
-  },
-  "jascha_schmidt": {
-    "name": "Jascha Schmidt",
-    "rating": 955,
-    "avgFinishPos": 27,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 981,
-        "finishPos": 24,
-        "totalCars": 28
-      },
-      {
-        "date": "2024/04/06",
-        "rating": 955,
-        "finishPos": 30,
-        "totalCars": 32
-      }
-    ]
-  },
   "william_snowden": {
     "name": "William Snowden",
     "rating": 1024,
@@ -36533,309 +38081,6 @@
         "rating": 1024,
         "finishPos": 5,
         "totalCars": 14
-      }
-    ]
-  },
-  "david_jundt": {
-    "name": "David Jundt",
-    "rating": 1201,
-    "avgFinishPos": 3.4,
-    "active": 1,
-    "visible": 1,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 1018,
-        "finishPos": 2,
-        "totalCars": 18
-      },
-      {
-        "date": "2024/04/06",
-        "rating": 1041,
-        "finishPos": 1,
-        "totalCars": 22
-      },
-      {
-        "date": "2024/04/27",
-        "rating": 1062,
-        "finishPos": 1,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/06/29",
-        "rating": 1081,
-        "finishPos": 2,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/07/20",
-        "rating": 1092,
-        "finishPos": 4,
-        "totalCars": 18
-      },
-      {
-        "date": "2024/08/24",
-        "rating": 1106,
-        "finishPos": 1,
-        "totalCars": 15
-      },
-      {
-        "date": "2024/09/07",
-        "rating": 1115,
-        "finishPos": 4,
-        "totalCars": 18
-      },
-      {
-        "date": "2024/09/28",
-        "rating": 1128,
-        "finishPos": 3,
-        "totalCars": 19
-      },
-      {
-        "date": "2024/10/19",
-        "rating": 1111,
-        "finishPos": 15,
-        "totalCars": 16
-      },
-      {
-        "date": "2024/10/22",
-        "rating": 1105,
-        "finishPos": 8,
-        "totalCars": 12
-      },
-      {
-        "date": "2024/10/22",
-        "rating": 1115,
-        "finishPos": 1,
-        "totalCars": 12
-      },
-      {
-        "date": "2024/11/09",
-        "rating": 1130,
-        "finishPos": 1,
-        "totalCars": 17
-      },
-      {
-        "date": "2025/02/01",
-        "rating": 1146,
-        "finishPos": 2,
-        "totalCars": 22
-      },
-      {
-        "date": "2025/03/22",
-        "rating": 1157,
-        "finishPos": 2,
-        "totalCars": 18
-      },
-      {
-        "date": "2025/04/05",
-        "rating": 1166,
-        "finishPos": 1,
-        "totalCars": 13
-      },
-      {
-        "date": "2025/04/26",
-        "rating": 1177,
-        "finishPos": 2,
-        "totalCars": 19
-      },
-      {
-        "date": "2025/05/17",
-        "rating": 1184,
-        "finishPos": 2,
-        "totalCars": 13
-      },
-      {
-        "date": "2025/06/28",
-        "rating": 1191,
-        "finishPos": 2,
-        "totalCars": 14
-      },
-      {
-        "date": "2025/07/19",
-        "rating": 1195,
-        "finishPos": 3,
-        "totalCars": 13
-      },
-      {
-        "date": "2025/08/30",
-        "rating": 1201,
-        "finishPos": 1,
-        "totalCars": 10
-      },
-      {
-        "date": "2025/09/13",
-        "rating": 1206,
-        "finishPos": 1,
-        "totalCars": 8
-      },
-      {
-        "date": "2025/09/27",
-        "rating": 1210,
-        "finishPos": 2,
-        "totalCars": 11
-      },
-      {
-        "date": "2025/10/25",
-        "rating": 1214,
-        "finishPos": 2,
-        "totalCars": 11
-      },
-      {
-        "date": "2026/02/07",
-        "rating": 1215,
-        "finishPos": 5,
-        "totalCars": 15
-      },
-      {
-        "date": "2026/03/14",
-        "rating": 1196,
-        "finishPos": 14,
-        "totalCars": 16
-      },
-      {
-        "date": "2026/04/25",
-        "rating": 1198,
-        "finishPos": 5,
-        "totalCars": 15
-      },
-      {
-        "date": "2026/06/20",
-        "rating": 1198,
-        "finishPos": 3,
-        "totalCars": 10
-      },
-      {
-        "date": "2026/07/11",
-        "rating": 1201,
-        "finishPos": 4,
-        "totalCars": 13
-      }
-    ]
-  },
-  "joe_wilks": {
-    "name": "Joe Wilks",
-    "rating": 1003,
-    "avgFinishPos": 10.8,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 1016,
-        "finishPos": 3,
-        "totalCars": 18
-      },
-      {
-        "date": "2024/04/06",
-        "rating": 1019,
-        "finishPos": 10,
-        "totalCars": 22
-      },
-      {
-        "date": "2024/04/27",
-        "rating": 1001,
-        "finishPos": 19,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/06/29",
-        "rating": 1003,
-        "finishPos": 11,
-        "totalCars": 21
-      }
-    ]
-  },
-  "stephen_buice": {
-    "name": "Stephen Buice",
-    "rating": 967,
-    "avgFinishPos": 13.4,
-    "active": 1,
-    "visible": 1,
-    "racesHistory": [
-      {
-        "date": "2024/02/24",
-        "rating": 1002,
-        "finishPos": 9,
-        "totalCars": 18
-      },
-      {
-        "date": "2024/04/06",
-        "rating": 999,
-        "finishPos": 13,
-        "totalCars": 22
-      },
-      {
-        "date": "2024/04/27",
-        "rating": 996,
-        "finishPos": 13,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/06/29",
-        "rating": 985,
-        "finishPos": 17,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/07/20",
-        "rating": 977,
-        "finishPos": 14,
-        "totalCars": 18
-      },
-      {
-        "date": "2024/08/24",
-        "rating": 968,
-        "finishPos": 13,
-        "totalCars": 15
-      },
-      {
-        "date": "2024/09/07",
-        "rating": 954,
-        "finishPos": 17,
-        "totalCars": 18
-      },
-      {
-        "date": "2024/09/28",
-        "rating": 956,
-        "finishPos": 11,
-        "totalCars": 19
-      },
-      {
-        "date": "2024/10/19",
-        "rating": 966,
-        "finishPos": 6,
-        "totalCars": 16
-      },
-      {
-        "date": "2024/11/09",
-        "rating": 963,
-        "finishPos": 12,
-        "totalCars": 17
-      },
-      {
-        "date": "2026/02/07",
-        "rating": 953,
-        "finishPos": 22,
-        "totalCars": 29
-      },
-      {
-        "date": "2026/03/14",
-        "rating": 959,
-        "finishPos": 14,
-        "totalCars": 27
-      },
-      {
-        "date": "2026/04/25",
-        "rating": 963,
-        "finishPos": 15,
-        "totalCars": 27
-      },
-      {
-        "date": "2026/05/16",
-        "rating": 967,
-        "finishPos": 12,
-        "totalCars": 23
       }
     ]
   },
@@ -37046,7 +38291,7 @@
   "ryan-paulbert_reyes": {
     "name": "Ryan-Paulbert Reyes",
     "rating": 968,
-    "avgFinishPos": 10.4,
+    "avgFinishPos": 10.3,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -37303,6 +38548,12 @@
         "totalCars": 14
       },
       {
+        "date": "2025/06/07",
+        "rating": 933,
+        "finishPos": 5,
+        "totalCars": 11
+      },
+      {
         "date": "2025/06/12",
         "rating": 941,
         "finishPos": 2,
@@ -37496,6 +38747,12 @@
         "rating": 1007,
         "finishPos": 6,
         "totalCars": 16
+      },
+      {
+        "date": "2024/03/23",
+        "rating": 1007,
+        "finishPos": 9,
+        "totalCars": 22
       },
       {
         "date": "2024/04/06",
@@ -37981,6 +39238,12 @@
         "totalCars": 13
       },
       {
+        "date": "2025/06/07",
+        "rating": 1056,
+        "finishPos": 8,
+        "totalCars": 11
+      },
+      {
         "date": "2025/06/12",
         "rating": 1055,
         "finishPos": 5,
@@ -38168,6 +39431,27 @@
       }
     ]
   },
+  "jaroslav_zacek": {
+    "name": "Jaroslav Zacek",
+    "rating": 994,
+    "avgFinishPos": 16,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/03/23",
+        "rating": 1000,
+        "finishPos": 13,
+        "totalCars": 22
+      },
+      {
+        "date": "2024/04/27",
+        "rating": 994,
+        "finishPos": 19,
+        "totalCars": 29
+      }
+    ]
+  },
   "luke_mitchell": {
     "name": "Luke Mitchell",
     "rating": 1059,
@@ -38213,115 +39497,10 @@
       }
     ]
   },
-  "bradley_sellars": {
-    "name": "Bradley Sellars",
-    "rating": 1107,
-    "avgFinishPos": 5.6,
-    "active": 0,
-    "visible": 1,
-    "racesHistory": [
-      {
-        "date": "2024/04/06",
-        "rating": 1020,
-        "finishPos": 9,
-        "totalCars": 32
-      },
-      {
-        "date": "2024/04/27",
-        "rating": 1050,
-        "finishPos": 2,
-        "totalCars": 29
-      },
-      {
-        "date": "2024/06/29",
-        "rating": 1068,
-        "finishPos": 4,
-        "totalCars": 24
-      },
-      {
-        "date": "2024/09/07",
-        "rating": 1068,
-        "finishPos": 11,
-        "totalCars": 22
-      },
-      {
-        "date": "2024/10/22",
-        "rating": 1070,
-        "finishPos": 5,
-        "totalCars": 12
-      },
-      {
-        "date": "2024/10/22",
-        "rating": 1074,
-        "finishPos": 4,
-        "totalCars": 12
-      },
-      {
-        "date": "2024/11/12",
-        "rating": 1080,
-        "finishPos": 1,
-        "totalCars": 7
-      },
-      {
-        "date": "2024/11/12",
-        "rating": 1077,
-        "finishPos": 5,
-        "totalCars": 7
-      },
-      {
-        "date": "2024/11/19",
-        "rating": 1080,
-        "finishPos": 2,
-        "totalCars": 7
-      },
-      {
-        "date": "2024/11/19",
-        "rating": 1082,
-        "finishPos": 2,
-        "totalCars": 6
-      },
-      {
-        "date": "2024/12/17",
-        "rating": 1090,
-        "finishPos": 1,
-        "totalCars": 10
-      },
-      {
-        "date": "2024/12/17",
-        "rating": 1098,
-        "finishPos": 1,
-        "totalCars": 10
-      },
-      {
-        "date": "2025/02/01",
-        "rating": 1111,
-        "finishPos": 4,
-        "totalCars": 22
-      },
-      {
-        "date": "2026/02/07",
-        "rating": 1127,
-        "finishPos": 6,
-        "totalCars": 29
-      },
-      {
-        "date": "2026/03/14",
-        "rating": 1142,
-        "finishPos": 5,
-        "totalCars": 27
-      },
-      {
-        "date": "2026/04/25",
-        "rating": 1107,
-        "finishPos": 27,
-        "totalCars": 27
-      }
-    ]
-  },
   "alexander_serraima": {
     "name": "Alexander Serraima",
     "rating": 998,
-    "avgFinishPos": 14.8,
+    "avgFinishPos": 13.3,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -38360,39 +39539,12 @@
         "rating": 998,
         "finishPos": 16,
         "totalCars": 29
-      }
-    ]
-  },
-  "robert_strachan": {
-    "name": "Robert Strachan",
-    "rating": 1025,
-    "avgFinishPos": 7.5,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/04/06",
-        "rating": 1015,
-        "finishPos": 5,
-        "totalCars": 22
       },
       {
-        "date": "2024/06/29",
-        "rating": 1025,
-        "finishPos": 7,
-        "totalCars": 21
-      },
-      {
-        "date": "2024/10/19",
-        "rating": 1036,
+        "date": "2025/06/07",
+        "rating": 998,
         "finishPos": 4,
         "totalCars": 16
-      },
-      {
-        "date": "2024/11/09",
-        "rating": 1025,
-        "finishPos": 14,
-        "totalCars": 17
       }
     ]
   },
@@ -38414,21 +39566,6 @@
         "rating": 1026,
         "finishPos": 4,
         "totalCars": 15
-      }
-    ]
-  },
-  "jaroslav_zacek": {
-    "name": "Jaroslav Zacek",
-    "rating": 994,
-    "avgFinishPos": 19,
-    "active": 0,
-    "visible": 0,
-    "racesHistory": [
-      {
-        "date": "2024/04/27",
-        "rating": 994,
-        "finishPos": 19,
-        "totalCars": 29
       }
     ]
   },
@@ -38756,10 +39893,130 @@
       }
     ]
   },
+  "antoni_serraima": {
+    "name": "Antoni Serraima",
+    "rating": 1000,
+    "avgFinishPos": 5,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 5,
+        "totalCars": 12
+      }
+    ]
+  },
+  "rainer_moelling": {
+    "name": "Rainer Moelling",
+    "rating": 1000,
+    "avgFinishPos": 9,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 9,
+        "totalCars": 12
+      }
+    ]
+  },
+  "giles_duncombe": {
+    "name": "Giles Duncombe",
+    "rating": 1000,
+    "avgFinishPos": 12,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 12,
+        "totalCars": 12
+      }
+    ]
+  },
+  "enzo_beninca": {
+    "name": "Enzo Beninca",
+    "rating": 1000,
+    "avgFinishPos": 3,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 3,
+        "totalCars": 10
+      }
+    ]
+  },
+  "bradley_gant": {
+    "name": "Bradley Gant",
+    "rating": 1000,
+    "avgFinishPos": 6,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 6,
+        "totalCars": 10
+      }
+    ]
+  },
+  "fabrizio_marazzi": {
+    "name": "Fabrizio Marazzi",
+    "rating": 1000,
+    "avgFinishPos": 8,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 8,
+        "totalCars": 10
+      }
+    ]
+  },
+  "mark_sunthonlap": {
+    "name": "Mark Sunthonlap",
+    "rating": 1000,
+    "avgFinishPos": 9,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 9,
+        "totalCars": 10
+      }
+    ]
+  },
+  "ramon_reyes": {
+    "name": "Ramon Reyes",
+    "rating": 1000,
+    "avgFinishPos": 9,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2024/06/08",
+        "rating": 1000,
+        "finishPos": 9,
+        "totalCars": 10
+      }
+    ]
+  },
   "ege_karabacak": {
     "name": "Ege Karabacak",
     "rating": 1142,
-    "avgFinishPos": 6.9,
+    "avgFinishPos": 7,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -38902,6 +40159,12 @@
         "totalCars": 8
       },
       {
+        "date": "2025/06/07",
+        "rating": 1105,
+        "finishPos": 12,
+        "totalCars": 16
+      },
+      {
         "date": "2025/06/12",
         "rating": 1115,
         "finishPos": 3,
@@ -38990,91 +40253,10 @@
       }
     ]
   },
-  "eelco_bussink": {
-    "name": "Eelco Bussink",
-    "rating": 1024,
-    "avgFinishPos": 6.1,
-    "active": 0,
-    "visible": 1,
-    "racesHistory": [
-      {
-        "date": "2024/06/29",
-        "rating": 997,
-        "finishPos": 15,
-        "totalCars": 24
-      },
-      {
-        "date": "2024/12/10",
-        "rating": 1002,
-        "finishPos": 1,
-        "totalCars": 5
-      },
-      {
-        "date": "2024/12/10",
-        "rating": 1006,
-        "finishPos": 1,
-        "totalCars": 4
-      },
-      {
-        "date": "2024/12/17",
-        "rating": 1014,
-        "finishPos": 2,
-        "totalCars": 10
-      },
-      {
-        "date": "2024/12/17",
-        "rating": 1022,
-        "finishPos": 2,
-        "totalCars": 10
-      },
-      {
-        "date": "2025/02/01",
-        "rating": 1012,
-        "finishPos": 16,
-        "totalCars": 22
-      },
-      {
-        "date": "2025/03/22",
-        "rating": 999,
-        "finishPos": 15,
-        "totalCars": 18
-      },
-      {
-        "date": "2025/06/28",
-        "rating": 1003,
-        "finishPos": 6,
-        "totalCars": 14
-      },
-      {
-        "date": "2025/07/19",
-        "rating": 1017,
-        "finishPos": 1,
-        "totalCars": 13
-      },
-      {
-        "date": "2025/08/30",
-        "rating": 1025,
-        "finishPos": 2,
-        "totalCars": 10
-      },
-      {
-        "date": "2025/09/27",
-        "rating": 1036,
-        "finishPos": 1,
-        "totalCars": 11
-      },
-      {
-        "date": "2025/10/25",
-        "rating": 1024,
-        "finishPos": 11,
-        "totalCars": 11
-      }
-    ]
-  },
   "daniel_scott": {
     "name": "Daniel Scott",
     "rating": 939,
-    "avgFinishPos": 15.3,
+    "avgFinishPos": 15.2,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -39125,6 +40307,12 @@
         "rating": 954,
         "finishPos": 20,
         "totalCars": 29
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 954,
+        "finishPos": 14,
+        "totalCars": 16
       },
       {
         "date": "2025/07/19",
@@ -39188,7 +40376,7 @@
   "robin_moelling": {
     "name": "Robin Moelling",
     "rating": 1105,
-    "avgFinishPos": 7.5,
+    "avgFinishPos": 7.9,
     "active": 0,
     "visible": 1,
     "racesHistory": [
@@ -39251,6 +40439,12 @@
         "rating": 1076,
         "finishPos": 8,
         "totalCars": 23
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 1076,
+        "finishPos": 14,
+        "totalCars": 16
       },
       {
         "date": "2025/07/19",
@@ -39404,7 +40598,7 @@
   "maximilian_putrafki": {
     "name": "Maximilian Putrafki",
     "rating": 970,
-    "avgFinishPos": 12.3,
+    "avgFinishPos": 11.7,
     "active": 1,
     "visible": 1,
     "racesHistory": [
@@ -39419,6 +40613,12 @@
         "rating": 965,
         "finishPos": 19,
         "totalCars": 19
+      },
+      {
+        "date": "2025/06/07",
+        "rating": 965,
+        "finishPos": 8,
+        "totalCars": 11
       },
       {
         "date": "2025/10/25",
@@ -40895,7 +42095,7 @@
   "alan_santo": {
     "name": "Alan Santo",
     "rating": 974,
-    "avgFinishPos": 15,
+    "avgFinishPos": 13.7,
     "active": 0,
     "visible": 0,
     "racesHistory": [
@@ -40906,10 +42106,31 @@
         "totalCars": 19
       },
       {
+        "date": "2025/06/07",
+        "rating": 983,
+        "finishPos": 11,
+        "totalCars": 11
+      },
+      {
         "date": "2025/06/28",
         "rating": 974,
         "finishPos": 12,
         "totalCars": 14
+      }
+    ]
+  },
+  "andi_schremser": {
+    "name": "Andi Schremser",
+    "rating": 1000,
+    "avgFinishPos": 15,
+    "active": 0,
+    "visible": 0,
+    "racesHistory": [
+      {
+        "date": "2025/06/07",
+        "rating": 1000,
+        "finishPos": 15,
+        "totalCars": 16
       }
     ]
   },
