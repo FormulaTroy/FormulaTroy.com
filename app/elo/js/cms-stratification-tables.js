@@ -805,7 +805,8 @@ $(document).ready(function () {
 
     // use the json file to generate the datatables display
     activeDatatable = $('#cms-strat-table').DataTable({
-      dom: 'Bfrtip',
+      // set column widths and responsive priorities for the page selector, buttons, and search bar
+      dom: '<"row align-items-center mb-3"<"col-md-4"l><"col-md-4 text-center"B><"col-md-4 d-flex justify-content-end"f>>rtip',
       // export to excel / csv buttons, show all drivers button
       buttons: [
         {
