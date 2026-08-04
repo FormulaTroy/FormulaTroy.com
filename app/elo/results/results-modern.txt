@@ -7627,3 +7627,72 @@ James Bowders
 Tom Nasella
 Frank Radosti
 Alexander McQuerry
+RACE DATE: 2026/07/18
+RESULT: HYPERCAR =============
+Ben Boorman
+Axel La Flamme
+Timon Soovik
+Tom Lane
+Magnus Dahlgren
+Jerry Chen
+Alan Smith
+Norm Graf
+Gilles Lalonde
+George Angelidis
+Dean Clark
+Hubert van Gashoven
+Eric Moinet
+Johnny Gutierrez
+Micah Locke
+Vinicius Goncalves
+RACE DATE: 2026/07/18
+RESULT: LMGT3 =============
+Daniel Kirby
+David Jundt
+JT Tami
+Allen Holden
+Brian Hall
+Vasilis Katerinakis
+Jon Uyan
+Matthew Overton
+Darrel Kruger
+Stephen Miller
+Maximilian Putrafki
+RACE DATE: 2026/07/23
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Micah Locke
+Matthew Overton
+Norm Graf
+Karl Strouhal
+James Bowders
+Darrel Kruger
+Frank Radosti
+Dino Lombardi
+Gilles Lalonde
+RACE DATE: 2026/07/30
+RESULT: UNIFIED CLASS =============
+Daniel Kirby
+JT Tami
+Paul Ibbotson
+Olivier Gervais
+Matthew Overton
+Gilles Lalonde
+Frank Radosti
+Karl Strouhal
+James Bowders
+Allen Holden
+Norm Graf
+RACE DATE: 2026/07/30
+RESULT: UNIFIED CLASS =============
+JT Tami
+Daniel Kirby
+Allen Holden
+Gilles Lalonde
+James Bowders
+Matthew Overton
+Karl Strouhal
+Paul Ibbotson
+Olivier Gervais
+Frank Radosti
